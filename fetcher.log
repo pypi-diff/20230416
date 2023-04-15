@@ -787,3 +787,47 @@
 [2023-04-16 01:44:10] INFO root fetch - main [MainThread]: End processing [madblog]: success
 [2023-04-16 01:44:14] INFO root fetch - main [MainThread]: End processing [cbra]: success
 [2023-04-16 01:44:14] INFO root fetch - main [MainThread]: Store serial: [17722576]
+[2023-04-16 01:49:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722576]
+[2023-04-16 01:49:22] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 01:49:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wwpdb.utils.dp
+[2023-04-16 01:49:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezpz4u
+[2023-04-16 01:49:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: madblog
+[2023-04-16 01:49:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crcengine
+[2023-04-16 01:49:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: madblog
+[2023-04-16 01:49:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: canonical
+[2023-04-16 01:49:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vollseg
+[2023-04-16 01:49:23] INFO root fetch - processPackages [crcengine]: New version: [0.4a2] Old Version: [0.3.3]
+[2023-04-16 01:49:23] INFO root fetch - processPackages [ezpz4u]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 01:49:23] INFO root fetch - processPackages [madblog]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-16 01:49:23] INFO root fetch - processPackages [madblog]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-16 01:49:23] INFO root fetch - processPackages [canonical]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-16 01:49:23] INFO root fetch - processPackages [wwpdb.utils.dp]: New version: [0.45] Old Version: [0.44.1]
+[2023-04-16 01:49:23] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 01:49:23] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 01:49:23] INFO root fetch - processPackages [ezpz4u]: Downloading https://files.pythonhosted.org/packages/cc/e1/95b7ebf9f733ae013e54946deb2dad33840522d43f445dadede3068265e3/ezpz4u-0.0.2.tar.gz
+[2023-04-16 01:49:23] INFO root fetch - processPackages [madblog]: executing diffoscope
+[2023-04-16 01:49:23] INFO root fetch - processPackages [madblog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madblog-0.2.8.tar.gz tmp/madblog-0.2.9.tar.gz --markdown 20230416/m/madblog/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-16 01:49:23] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 01:49:23] INFO root fetch - processPackages [canonical]: executing diffoscope
+[2023-04-16 01:49:23] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 01:49:23] INFO root fetch - processPackages [canonical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canonical-0.8.0.tar.gz tmp/canonical-0.9.0.tar.gz --markdown 20230416/c/canonical/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 01:49:23] INFO root fetch - processPackages [madblog]: executing diffoscope
+[2023-04-16 01:49:23] INFO root fetch - processPackages [madblog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madblog-0.2.8.tar.gz tmp/madblog-0.2.9.tar.gz --markdown 20230416/m/madblog/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-16 01:49:23] INFO root fetch - processPackages [crcengine]: Downloading https://files.pythonhosted.org/packages/46/ef/ad10bc5348314ed5ac48df5bc405b08a45dc1d880fc24eabbf79b02393c0/crcengine-0.3.3.tar.gz
+[2023-04-16 01:49:23] INFO root fetch - processPackages [wwpdb.utils.dp]: Downloading https://files.pythonhosted.org/packages/a3/76/5ec8b4050b5597effa2f28fbe2179abe6abdc92c5e5504365114b0e1de34/wwpdb.utils.dp-0.44.1.tar.gz
+[2023-04-16 01:49:23] INFO root fetch - processPackages [crcengine]: Downloading https://files.pythonhosted.org/packages/56/ea/4bff5d64e38057281934fd349f4dab3c1441a8659e1d35110bae0e2b7d43/crcengine-0.4a2.tar.gz
+[2023-04-16 01:49:23] INFO root fetch - processPackages [ezpz4u]: Downloading https://files.pythonhosted.org/packages/34/34/43d59d03eb8814387c9fbad10bb90f4d6df48207dfbc5f7a4b76773f9ca2/ezpz4u-0.0.3.tar.gz
+[2023-04-16 01:49:23] INFO root fetch - processPackages [wwpdb.utils.dp]: Downloading https://files.pythonhosted.org/packages/28/04/79f2543bb045ba9f9494fefa81b0c332d29bfe5a27100eaae3482255bf5f/wwpdb.utils.dp-0.45.tar.gz
+[2023-04-16 01:49:23] INFO root fetch - processPackages [crcengine]: executing diffoscope
+[2023-04-16 01:49:23] INFO root fetch - processPackages [crcengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crcengine-0.3.3.tar.gz tmp/crcengine-0.4a2.tar.gz --markdown 20230416/c/crcengine/0.3.3-0.4a2/diff.md --exclude *.pyd
+[2023-04-16 01:49:23] INFO root fetch - processPackages [ezpz4u]: executing diffoscope
+[2023-04-16 01:49:23] INFO root fetch - processPackages [ezpz4u]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezpz4u-0.0.2.tar.gz tmp/ezpz4u-0.0.3.tar.gz --markdown 20230416/e/ezpz4u/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 01:49:23] INFO root fetch - processPackages [wwpdb.utils.dp]: executing diffoscope
+[2023-04-16 01:49:23] INFO root fetch - processPackages [wwpdb.utils.dp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.utils.dp-0.44.1.tar.gz tmp/wwpdb.utils.dp-0.45.tar.gz --markdown 20230416/w/wwpdb.utils.dp/0.44.1-0.45/diff.md --exclude *.pyd
+[2023-04-16 01:49:24] INFO root fetch - main [MainThread]: End processing [canonical]: success
+[2023-04-16 01:49:24] INFO root fetch - main [MainThread]: End processing [madblog]: success
+[2023-04-16 01:49:24] INFO root fetch - main [MainThread]: End processing [crcengine]: success
+[2023-04-16 01:49:24] INFO root fetch - main [MainThread]: End processing [ezpz4u]: success
+[2023-04-16 01:49:24] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.dp]: success
+[2023-04-16 01:49:26] INFO root fetch - main [MainThread]: End processing [madblog]: success
+[2023-04-16 01:49:26] INFO root fetch - main [MainThread]: Store serial: [17722593]
