@@ -254,3 +254,17 @@
 [2023-04-16 00:31:34] INFO root fetch - main [MainThread]: End processing [pyfeyn2]: success
 [2023-04-16 00:31:34] INFO root fetch - main [MainThread]: End processing [feed-archiver]: success
 [2023-04-16 00:31:34] INFO root fetch - main [MainThread]: Store serial: [17722264]
+[2023-04-16 00:36:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722264]
+[2023-04-16 00:36:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-16 00:36:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vollseg
+[2023-04-16 00:36:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: syllabub
+[2023-04-16 00:36:43] INFO root fetch - processPackages [syllabub]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-16 00:36:43] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 00:36:43] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 00:36:43] INFO root fetch - processPackages [syllabub]: Downloading https://files.pythonhosted.org/packages/6e/c0/11226abfc67b688f0ec61fd672646fbdcfac82ac1fe81d3aa37b460df074/syllabub-0.1.6.tar.gz
+[2023-04-16 00:36:43] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 00:36:43] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 00:36:43] INFO root fetch - processPackages [syllabub]: executing diffoscope
+[2023-04-16 00:36:43] INFO root fetch - processPackages [syllabub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syllabub-0.1.5.tar.gz tmp/syllabub-0.1.6.tar.gz --markdown 20230416/s/syllabub/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-16 00:36:44] INFO root fetch - main [MainThread]: End processing [syllabub]: success
+[2023-04-16 00:36:44] INFO root fetch - main [MainThread]: Store serial: [17722271]
