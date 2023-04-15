@@ -343,3 +343,43 @@
 [2023-04-16 00:47:06] INFO root fetch - main [MainThread]: End processing [clipped]: success
 [2023-04-16 00:47:06] INFO root fetch - main [MainThread]: End processing [synspace]: success
 [2023-04-16 00:47:06] INFO root fetch - main [MainThread]: Store serial: [17722315]
+[2023-04-16 00:52:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722315]
+[2023-04-16 00:52:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 00:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ultiutils
+[2023-04-16 00:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-web-io
+[2023-04-16 00:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ecodata
+[2023-04-16 00:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: poe-api
+[2023-04-16 00:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pluthon
+[2023-04-16 00:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cbra
+[2023-04-16 00:52:17] INFO root fetch - processPackages [ultiutils]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-16 00:52:17] INFO root fetch - processPackages [python-web-io]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 00:52:17] INFO root fetch - processPackages [ecodata]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-16 00:52:17] INFO root fetch - processPackages [poe-api]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-16 00:52:17] INFO root fetch - processPackages [pluthon]: New version: [0.3.5] Old Version: [0.3.3]
+[2023-04-16 00:52:17] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a84]
+[2023-04-16 00:52:17] INFO root fetch - processPackages [poe-api]: executing diffoscope
+[2023-04-16 00:52:17] INFO root fetch - processPackages [poe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poe_api-0.2.8-py3-none-any.whl.zip tmp/poe_api-0.2.9-py3-none-any.whl.zip --markdown 20230416/p/poe-api/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-16 00:52:17] INFO root fetch - processPackages [cbra]: Downloading https://files.pythonhosted.org/packages/86/69/e295cb80dfed3d3ccfdddc8eb98f53b8f4e71c91b0d01840621a0767b454/cbra-2.0.0a84.tar.gz
+[2023-04-16 00:52:17] INFO root fetch - processPackages [python-web-io]: Downloading https://files.pythonhosted.org/packages/dc/8f/93ea01d4f23bf390fdb815e9fcf4a5b73fdec7e872895b14e09ea45f46d8/python_web_io-0.1.2.tar.gz
+[2023-04-16 00:52:17] INFO root fetch - processPackages [pluthon]: Downloading https://files.pythonhosted.org/packages/d7/ed/3cd8b5b6d4a95bc68021fb85a352d46a4f6558c82ba77c98718f0df2d409/pluthon-0.3.3.tar.gz
+[2023-04-16 00:52:18] INFO root fetch - processPackages [ecodata]: Downloading https://files.pythonhosted.org/packages/73/5d/55372dd6a03d6b9f775dc208eafaacfee57836b8b3feab06d7b21ac63589/ecodata-0.0.7.tar.gz
+[2023-04-16 00:52:18] INFO root fetch - processPackages [ultiutils]: Downloading https://files.pythonhosted.org/packages/11/a2/21bbd754eec1daf8318c2f252be4d3944c88691b1880c2e4b5259e81d536/ultiutils-1.1.1.tar.gz
+[2023-04-16 00:52:18] INFO root fetch - processPackages [python-web-io]: executing diffoscope
+[2023-04-16 00:52:18] INFO root fetch - processPackages [python-web-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_web_io-0.1.1.tar.gz tmp/python_web_io-0.1.2.tar.gz --markdown 20230416/p/python-web-io/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 00:52:18] INFO root fetch - processPackages [pluthon]: Downloading https://files.pythonhosted.org/packages/88/ae/14c0107d754b84d06ee78c08d088e4ae5aa8a4ad7a791cfae05f9eb91f16/pluthon-0.3.5.tar.gz
+[2023-04-16 00:52:18] INFO root fetch - processPackages [cbra]: Downloading https://files.pythonhosted.org/packages/e3/30/881c6ff6126ad5e84aee92c87271280498b0d03f3c7ad7ca93e0e0fd381b/cbra-3.0.0a7.tar.gz
+[2023-04-16 00:52:18] INFO root fetch - processPackages [ecodata]: executing diffoscope
+[2023-04-16 00:52:18] INFO root fetch - processPackages [ecodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecodata-0.0.6.tar.gz tmp/ecodata-0.0.7.tar.gz --markdown 20230416/e/ecodata/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-16 00:52:18] INFO root fetch - processPackages [ultiutils]: executing diffoscope
+[2023-04-16 00:52:18] INFO root fetch - processPackages [ultiutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultiutils-1.1.0.tar.gz tmp/ultiutils-1.1.1.tar.gz --markdown 20230416/u/ultiutils/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-16 00:52:18] INFO root fetch - processPackages [pluthon]: executing diffoscope
+[2023-04-16 00:52:18] INFO root fetch - processPackages [pluthon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pluthon-0.3.3.tar.gz tmp/pluthon-0.3.5.tar.gz --markdown 20230416/p/pluthon/0.3.3-0.3.5/diff.md --exclude *.pyd
+[2023-04-16 00:52:18] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-04-16 00:52:18] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a84.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230416/c/cbra/2.0.0a84-3.0.0a7/diff.md --exclude *.pyd
+[2023-04-16 00:52:19] INFO root fetch - main [MainThread]: End processing [python-web-io]: success
+[2023-04-16 00:52:19] INFO root fetch - main [MainThread]: End processing [poe-api]: success
+[2023-04-16 00:52:19] INFO root fetch - main [MainThread]: End processing [ultiutils]: success
+[2023-04-16 00:52:19] INFO root fetch - main [MainThread]: End processing [ecodata]: success
+[2023-04-16 00:52:19] INFO root fetch - main [MainThread]: End processing [pluthon]: success
+[2023-04-16 00:52:22] INFO root fetch - main [MainThread]: End processing [cbra]: success
+[2023-04-16 00:52:22] INFO root fetch - main [MainThread]: Store serial: [17722331]
