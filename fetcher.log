@@ -854,3 +854,28 @@
 [2023-04-16 01:54:36] INFO root fetch - main [MainThread]: End processing [wield.pytest]: success
 [2023-04-16 01:54:37] INFO root fetch - main [MainThread]: End processing [arkdata]: success
 [2023-04-16 01:54:37] INFO root fetch - main [MainThread]: Store serial: [17722603]
+[2023-04-16 01:59:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722603]
+[2023-04-16 01:59:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-16 01:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: talqual
+[2023-04-16 01:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pychromedriver
+[2023-04-16 01:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openhasp-config-manager
+[2023-04-16 01:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vollseg
+[2023-04-16 01:59:46] INFO root fetch - processPackages [talqual]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-16 01:59:46] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 01:59:46] INFO root fetch - processPackages [openhasp-config-manager]: New version: [0.5.0] Old Version: [0.4.8]
+[2023-04-16 01:59:46] INFO root fetch - processPackages [pychromedriver]: New version: [99.0] Old Version: [98.0]
+[2023-04-16 01:59:46] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 01:59:46] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 01:59:46] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 01:59:46] INFO root fetch - processPackages [talqual]: Downloading https://files.pythonhosted.org/packages/88/56/3d0586725eafa1352473b28da636ecaab0730f0e00d60ee7dead76bdad23/talqual-0.0.4-py3-none-any.whl
+[2023-04-16 01:59:46] INFO root fetch - processPackages [openhasp-config-manager]: Downloading https://files.pythonhosted.org/packages/f0/59/336135821414c38ede4e0904c8dd3fffd07af203914b5498cd2a585ec6fe/openhasp_config_manager-0.5.0.tar.gz
+[2023-04-16 01:59:46] INFO root fetch - processPackages [pychromedriver]: Downloading https://files.pythonhosted.org/packages/58/ea/4728c10bf3da86b82ff28be3159d8f9e15ecad5fc025edbeed8263f3a93a/pychromedriver-98.0.tar.gz
+[2023-04-16 01:59:46] INFO root fetch - processPackages [talqual]: executing diffoscope
+[2023-04-16 01:59:46] INFO root fetch - processPackages [talqual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talqual-0.0.3.tar.gz tmp/talqual-0.0.4-py3-none-any.whl.zip --markdown 20230416/t/talqual/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-16 01:59:46] INFO root fetch - processPackages [openhasp-config-manager]: executing diffoscope
+[2023-04-16 01:59:46] INFO root fetch - processPackages [openhasp-config-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openhasp_config_manager-0.4.8.tar.gz tmp/openhasp_config_manager-0.5.0.tar.gz --markdown 20230416/o/openhasp-config-manager/0.4.8-0.5.0/diff.md --exclude *.pyd
+[2023-04-16 01:59:47] WARNING root fetch - processPackages [pychromedriver]: Skipping package: exceeds size limit 24713510>=10485760
+[2023-04-16 01:59:47] INFO root fetch - main [MainThread]: End processing [pychromedriver] error
+[2023-04-16 01:59:47] INFO root fetch - main [MainThread]: End processing [talqual]: success
+[2023-04-16 01:59:48] INFO root fetch - main [MainThread]: End processing [openhasp-config-manager]: success
+[2023-04-16 01:59:48] INFO root fetch - main [MainThread]: Store serial: [17722624]
