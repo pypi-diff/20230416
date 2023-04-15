@@ -199,3 +199,58 @@
 [2023-04-16 00:25:48] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-04-16 00:26:14] INFO root fetch - main [MainThread]: End processing [glassppy]: success
 [2023-04-16 00:26:14] INFO root fetch - main [MainThread]: Store serial: [17722238]
+[2023-04-16 00:31:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722238]
+[2023-04-16 00:31:31] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 00:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bugbug
+[2023-04-16 00:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feed-archiver
+[2023-04-16 00:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: structio
+[2023-04-16 00:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dextools-python
+[2023-04-16 00:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: splatnet3-scraper
+[2023-04-16 00:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyfeyn2
+[2023-04-16 00:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: python-web-io
+[2023-04-16 00:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hebi
+[2023-04-16 00:31:31] INFO root fetch - processPackages [feed-archiver]: New version: [2.0.0b0] Old Version: [1.0.0b11]
+[2023-04-16 00:31:31] INFO root fetch - processPackages [python-web-io]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 00:31:31] INFO root fetch - processPackages [structio]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-04-16 00:31:31] INFO root fetch - processPackages [splatnet3-scraper]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-16 00:31:31] INFO root fetch - processPackages [pyfeyn2]: New version: [2.3.0] Old Version: [2.2.6]
+[2023-04-16 00:31:31] INFO root fetch - processPackages [bugbug]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 00:31:31] INFO root fetch - processPackages [dextools-python]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 00:31:31] INFO root fetch - processPackages [hebi]: New version: [0.2.0.0.12.5] Old Version: [0.1.1.0.9.9]
+[2023-04-16 00:31:31] INFO root fetch - processPackages [python-web-io]: Downloading https://files.pythonhosted.org/packages/16/2a/9acaa74d254e6d9a35c64cfcb886e25eeb8ede228c8f0ab5a3962bafd0b2/python_web_io-0.1.0.tar.gz
+[2023-04-16 00:31:31] INFO root fetch - processPackages [bugbug]: Downloading https://files.pythonhosted.org/packages/5b/6a/fc99f3a6e09827c698ee6eab2d88fea1cf94e1c6d0f0d04236a834ba423b/bugbug-0.0.98.tar.gz
+[2023-04-16 00:31:31] INFO root fetch - processPackages [splatnet3-scraper]: Downloading https://files.pythonhosted.org/packages/3c/97/3009f9c7e33a616a220d88fab1cfcd2780b7aadd490ad9804605d819e6f2/splatnet3_scraper-0.7.2.tar.gz
+[2023-04-16 00:31:31] INFO root fetch - processPackages [dextools-python]: Downloading https://files.pythonhosted.org/packages/4d/4d/2ba80132e49d2cfe246c8fc33c9fd49d7149bc461d713eb17d552f433816/dextools_python-0.1.1.tar.gz
+[2023-04-16 00:31:31] INFO root fetch - processPackages [feed-archiver]: Downloading https://files.pythonhosted.org/packages/5d/ab/888f70d8a90530f238995b23d7895d8f9b17cc50a04a7030d234bdb6066b/feed-archiver-2.0.0b0.tar.gz
+[2023-04-16 00:31:32] INFO root fetch - processPackages [hebi]: Downloading https://files.pythonhosted.org/packages/98/4d/609ebde96f3dd4e928abb667f77e1e09911bfc60991abc8092cdb6dbedb1/hebi-0.1.1.0.9.9.tar.gz
+[2023-04-16 00:31:32] INFO root fetch - processPackages [structio]: Downloading https://files.pythonhosted.org/packages/b9/3b/05efc91b83fd9e86f451c8b973d2f9fa885abd34498377086db8d3543a08/structio-1.1.5.tar.gz
+[2023-04-16 00:31:32] INFO root fetch - processPackages [pyfeyn2]: Downloading https://files.pythonhosted.org/packages/d1/56/9e62c7f1aed53fbd305d480e9c44381cc455099a1438fd15f14ae75916dd/pyfeyn2-2.3.0.tar.gz
+[2023-04-16 00:31:32] INFO root fetch - processPackages [splatnet3-scraper]: executing diffoscope
+[2023-04-16 00:31:32] INFO root fetch - processPackages [splatnet3-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splatnet3_scraper-0.7.1.tar.gz tmp/splatnet3_scraper-0.7.2.tar.gz --markdown 20230416/s/splatnet3-scraper/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-16 00:31:32] INFO root fetch - processPackages [feed-archiver]: executing diffoscope
+[2023-04-16 00:31:32] INFO root fetch - processPackages [feed-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feed-archiver-1.0.0b11.tar.gz tmp/feed-archiver-2.0.0b0.tar.gz --markdown 20230416/f/feed-archiver/1.0.0b11-2.0.0b0/diff.md --exclude *.pyd
+[2023-04-16 00:31:32] INFO root fetch - processPackages [dextools-python]: Downloading https://files.pythonhosted.org/packages/1f/22/a921f602af3571c639b0f62683717d706078b06aaa61493ecb3c2aa90a3b/dextools_python-0.1.2-py3-none-any.whl
+[2023-04-16 00:31:32] INFO root fetch - processPackages [python-web-io]: Downloading https://files.pythonhosted.org/packages/ba/aa/406cdd5126dcef3e479d09d5fa68203039e02ed4d3130c8b1c89a7c7f528/python_web_io-0.1.1.tar.gz
+[2023-04-16 00:31:32] INFO root fetch - processPackages [structio]: executing diffoscope
+[2023-04-16 00:31:32] INFO root fetch - processPackages [structio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structio-1.1.4.tar.gz tmp/structio-1.1.5.tar.gz --markdown 20230416/s/structio/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-04-16 00:31:32] INFO root fetch - processPackages [pyfeyn2]: executing diffoscope
+[2023-04-16 00:31:32] INFO root fetch - processPackages [pyfeyn2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfeyn2-2.2.6.tar.gz tmp/pyfeyn2-2.3.0.tar.gz --markdown 20230416/p/pyfeyn2/2.2.6-2.3.0/diff.md --exclude *.pyd
+[2023-04-16 00:31:32] INFO root fetch - processPackages [bugbug]: Downloading https://files.pythonhosted.org/packages/1b/68/2d9f5d88a3b137b0acc5c563e30de6711280c6bea1292fb42f4652b41c4b/bugbug-0.0.99.tar.gz
+[2023-04-16 00:31:32] INFO root fetch - processPackages [hebi]: Downloading https://files.pythonhosted.org/packages/96/d6/69f39dd9a19548786a9d043c09e9d5a7d30c1f3a399227bf740b2ff12fc9/hebi-0.2.0.0.12.5.tar.gz
+[2023-04-16 00:31:32] INFO root fetch - processPackages [dextools-python]: executing diffoscope
+[2023-04-16 00:31:32] INFO root fetch - processPackages [dextools-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dextools_python-0.1.1.tar.gz tmp/dextools_python-0.1.2-py3-none-any.whl.zip --markdown 20230416/d/dextools-python/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 00:31:32] INFO root fetch - processPackages [python-web-io]: executing diffoscope
+[2023-04-16 00:31:32] INFO root fetch - processPackages [python-web-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_web_io-0.1.0.tar.gz tmp/python_web_io-0.1.1.tar.gz --markdown 20230416/p/python-web-io/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 00:31:32] INFO root fetch - processPackages [bugbug]: executing diffoscope
+[2023-04-16 00:31:32] INFO root fetch - processPackages [bugbug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bugbug-0.0.98.tar.gz tmp/bugbug-0.0.99.tar.gz --markdown 20230416/b/bugbug/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 00:31:32] INFO root fetch - processPackages [hebi]: executing diffoscope
+[2023-04-16 00:31:32] INFO root fetch - processPackages [hebi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hebi-0.1.1.0.9.9.tar.gz tmp/hebi-0.2.0.0.12.5.tar.gz --markdown 20230416/h/hebi/0.1.1.0.9.9-0.2.0.0.12.5/diff.md --exclude *.pyd
+[2023-04-16 00:31:33] INFO root fetch - main [MainThread]: End processing [splatnet3-scraper]: success
+[2023-04-16 00:31:33] INFO root fetch - main [MainThread]: End processing [dextools-python]: success
+[2023-04-16 00:31:33] INFO root fetch - main [MainThread]: End processing [structio]: success
+[2023-04-16 00:31:33] INFO root fetch - main [MainThread]: End processing [python-web-io]: success
+[2023-04-16 00:31:33] INFO root fetch - main [MainThread]: End processing [hebi]: success
+[2023-04-16 00:31:34] INFO root fetch - main [MainThread]: End processing [bugbug]: success
+[2023-04-16 00:31:34] INFO root fetch - main [MainThread]: End processing [pyfeyn2]: success
+[2023-04-16 00:31:34] INFO root fetch - main [MainThread]: End processing [feed-archiver]: success
+[2023-04-16 00:31:34] INFO root fetch - main [MainThread]: Store serial: [17722264]
