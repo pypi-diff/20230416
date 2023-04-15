@@ -762,3 +762,28 @@
 [2023-04-16 01:38:59] INFO root fetch - main [MainThread]: End processing [yadr]: success
 [2023-04-16 01:39:00] INFO root fetch - main [MainThread]: End processing [projen]: success
 [2023-04-16 01:39:00] INFO root fetch - main [MainThread]: Store serial: [17722564]
+[2023-04-16 01:44:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722564]
+[2023-04-16 01:44:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-16 01:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: econdata
+[2023-04-16 01:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ai-talks
+[2023-04-16 01:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cbra
+[2023-04-16 01:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: madblog
+[2023-04-16 01:44:09] INFO root fetch - processPackages [ai-talks]: New version: [0.8.8.8] Old Version: [0.8.8.2]
+[2023-04-16 01:44:09] INFO root fetch - processPackages [madblog]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-16 01:44:09] WARNING root fetch - processPackages [econdata]: Skipping, unable to determine old version
+[2023-04-16 01:44:09] INFO root fetch - main [MainThread]: End processing [econdata] error
+[2023-04-16 01:44:09] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a85]
+[2023-04-16 01:44:09] INFO root fetch - processPackages [cbra]: Downloading https://files.pythonhosted.org/packages/5a/a9/dccdd35a77a44dec439a4f54565e284743f672b4bed92e084467aaffce62/cbra-2.0.0a85.tar.gz
+[2023-04-16 01:44:09] INFO root fetch - processPackages [madblog]: Downloading https://files.pythonhosted.org/packages/ed/b3/2c5a42942bc6ea230ecddff4c9ebdb21887926eab799eac2ae2f7a4a9a6b/madblog-0.2.8.tar.gz
+[2023-04-16 01:44:09] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/f9/8c/d271a68d4f64e41d711aa0a5ca34ff53356fcd225ac419396cbe34b59646/ai-talks-0.8.8.8.tar.gz
+[2023-04-16 01:44:09] INFO root fetch - processPackages [ai-talks]: executing diffoscope
+[2023-04-16 01:44:09] INFO root fetch - processPackages [ai-talks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai-talks-0.8.8.2.tar.gz tmp/ai-talks-0.8.8.8.tar.gz --markdown 20230416/a/ai-talks/0.8.8.2-0.8.8.8/diff.md --exclude *.pyd
+[2023-04-16 01:44:09] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-04-16 01:44:09] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a85.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230416/c/cbra/2.0.0a85-3.0.0a7/diff.md --exclude *.pyd
+[2023-04-16 01:44:09] INFO root fetch - processPackages [madblog]: Downloading https://files.pythonhosted.org/packages/04/1d/afedf727ff86588e120b14288d3e4d4b69c63b58c662ea13511f25738baa/madblog-0.2.9.tar.gz
+[2023-04-16 01:44:09] INFO root fetch - processPackages [madblog]: executing diffoscope
+[2023-04-16 01:44:09] INFO root fetch - processPackages [madblog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madblog-0.2.8.tar.gz tmp/madblog-0.2.9.tar.gz --markdown 20230416/m/madblog/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-16 01:44:10] INFO root fetch - main [MainThread]: End processing [ai-talks]: success
+[2023-04-16 01:44:10] INFO root fetch - main [MainThread]: End processing [madblog]: success
+[2023-04-16 01:44:14] INFO root fetch - main [MainThread]: End processing [cbra]: success
+[2023-04-16 01:44:14] INFO root fetch - main [MainThread]: Store serial: [17722576]
