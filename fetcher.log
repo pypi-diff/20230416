@@ -89,3 +89,33 @@
 [2023-04-16 00:09:14] INFO root fetch - main [MainThread]: End processing [talqual]: success
 [2023-04-16 00:09:14] INFO root fetch - main [MainThread]: End processing [pyalsaaudio]: success
 [2023-04-16 00:09:14] INFO root fetch - main [MainThread]: Store serial: [17722160]
+[2023-04-16 00:14:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722160]
+[2023-04-16 00:14:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-16 00:14:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydbantic
+[2023-04-16 00:14:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: barbell2-castor
+[2023-04-16 00:14:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: glassppy
+[2023-04-16 00:14:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: checkyoself
+[2023-04-16 00:14:26] INFO root fetch - processPackages [pydbantic]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 00:14:26] INFO root fetch - processPackages [barbell2-castor]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-16 00:14:26] INFO root fetch - processPackages [glassppy]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 00:14:26] INFO root fetch - processPackages [checkyoself]: New version: [0.1.4] Old Version: [0.0.3]
+[2023-04-16 00:14:26] INFO root fetch - processPackages [glassppy]: Downloading https://files.pythonhosted.org/packages/0c/8c/0055536b138c3bcfee1b2e2bd32b950b9ba2491eeb1f5b68499bbce4766e/glassppy-1.0.0-cp310-cp310-manylinux_2_34_x86_64.whl
+[2023-04-16 00:14:26] INFO root fetch - processPackages [pydbantic]: Downloading https://files.pythonhosted.org/packages/8e/d7/b05ffb5c488acc5d35daea574f3403cdc2149ad1954c2c0fd578633047c3/pydbantic-0.0.8-py3-none-any.whl
+[2023-04-16 00:14:26] INFO root fetch - processPackages [barbell2-castor]: Downloading https://files.pythonhosted.org/packages/37/f6/18b3d0266068a0d880cea920cd050debbc07e90628f4114c663e975dd952/barbell2_castor-0.5.0.tar.gz
+[2023-04-16 00:14:27] INFO root fetch - processPackages [checkyoself]: Downloading https://files.pythonhosted.org/packages/20/9f/406908cfa69fc65f1c67f83416e476634848482f82bc7f49dba6d883cd0c/checkyoself-0.0.3.tar.gz
+[2023-04-16 00:14:27] INFO root fetch - processPackages [barbell2-castor]: executing diffoscope
+[2023-04-16 00:14:27] INFO root fetch - processPackages [barbell2-castor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barbell2_castor-0.4.0.tar.gz tmp/barbell2_castor-0.5.0.tar.gz --markdown 20230416/b/barbell2-castor/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-16 00:14:27] INFO root fetch - processPackages [glassppy]: Downloading https://files.pythonhosted.org/packages/3a/33/c2af03c1cf1f77567e6ef90eef35908f058ceb79a0cdd2674ab7efaab897/glassppy-1.0.1-cp310-cp310-manylinux_2_34_x86_64.whl
+[2023-04-16 00:14:27] INFO root fetch - processPackages [pydbantic]: Downloading https://files.pythonhosted.org/packages/a4/3b/ccd032282cc0da2875ecc7a197af72e92f56c3da412ff60e784088d06b74/pydbantic-0.0.9-py3-none-any.whl
+[2023-04-16 00:14:27] INFO root fetch - processPackages [checkyoself]: Downloading https://files.pythonhosted.org/packages/2c/e8/0c4abfa14014880c2d46b9722f737002ecc09f19e2d160ef7ed1b0b07096/checkyoself-0.1.4.tar.gz
+[2023-04-16 00:14:27] INFO root fetch - processPackages [glassppy]: executing diffoscope
+[2023-04-16 00:14:27] INFO root fetch - processPackages [glassppy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glassppy-1.0.0-cp310-cp310-manylinux_2_34_x86_64.whl.zip tmp/glassppy-1.0.1-cp310-cp310-manylinux_2_34_x86_64.whl.zip --markdown 20230416/g/glassppy/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 00:14:27] INFO root fetch - processPackages [pydbantic]: executing diffoscope
+[2023-04-16 00:14:27] INFO root fetch - processPackages [pydbantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydbantic-0.0.8-py3-none-any.whl.zip tmp/pydbantic-0.0.9-py3-none-any.whl.zip --markdown 20230416/p/pydbantic/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 00:14:27] INFO root fetch - processPackages [checkyoself]: executing diffoscope
+[2023-04-16 00:14:27] INFO root fetch - processPackages [checkyoself]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkyoself-0.0.3.tar.gz tmp/checkyoself-0.1.4.tar.gz --markdown 20230416/c/checkyoself/0.0.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-16 00:14:28] INFO root fetch - main [MainThread]: End processing [barbell2-castor]: success
+[2023-04-16 00:14:28] INFO root fetch - main [MainThread]: End processing [checkyoself]: success
+[2023-04-16 00:14:36] INFO root fetch - main [MainThread]: End processing [pydbantic]: success
+[2023-04-16 00:14:55] INFO root fetch - main [MainThread]: End processing [glassppy]: success
+[2023-04-16 00:14:55] INFO root fetch - main [MainThread]: Store serial: [17722170]
