@@ -119,3 +119,40 @@
 [2023-04-16 00:14:36] INFO root fetch - main [MainThread]: End processing [pydbantic]: success
 [2023-04-16 00:14:55] INFO root fetch - main [MainThread]: End processing [glassppy]: success
 [2023-04-16 00:14:55] INFO root fetch - main [MainThread]: Store serial: [17722170]
+[2023-04-16 00:19:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722170]
+[2023-04-16 00:20:04] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 00:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clear-skies
+[2023-04-16 00:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opshin
+[2023-04-16 00:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: glassppy
+[2023-04-16 00:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mindspore-dev
+[2023-04-16 00:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: digimat.bac0
+[2023-04-16 00:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-web-io
+[2023-04-16 00:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vollseg
+[2023-04-16 00:20:04] INFO root fetch - processPackages [glassppy]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 00:20:04] WARNING root fetch - processPackages [python-web-io]: Skipping, unable to determine old version
+[2023-04-16 00:20:04] INFO root fetch - main [MainThread]: End processing [python-web-io] error
+[2023-04-16 00:20:04] INFO root fetch - processPackages [opshin]: New version: [0.9.15] Old Version: [0.9.14]
+[2023-04-16 00:20:04] WARNING root fetch - processPackages [digimat.bac0]: Skipping, unable to determine old version
+[2023-04-16 00:20:04] INFO root fetch - main [MainThread]: End processing [digimat.bac0] error
+[2023-04-16 00:20:04] INFO root fetch - processPackages [clear-skies]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-16 00:20:04] INFO root fetch - processPackages [mindspore-dev]: New version: [2.0.0rc1.dev20230416] Old Version: [2.0.0rc1.dev20230409]
+[2023-04-16 00:20:04] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 00:20:04] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 00:20:04] INFO root fetch - processPackages [opshin]: executing diffoscope
+[2023-04-16 00:20:04] INFO root fetch - processPackages [opshin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opshin-0.9.14.tar.gz tmp/opshin-0.9.15.tar.gz --markdown 20230416/o/opshin/0.9.14-0.9.15/diff.md --exclude *.pyd
+[2023-04-16 00:20:04] INFO root fetch - processPackages [clear-skies]: Downloading https://files.pythonhosted.org/packages/86/c6/5fc7f98d0b986c1fc7be0ee2f9821c93bff9852a85fc1b812fd0d36b5902/clear-skies-1.8.0.tar.gz
+[2023-04-16 00:20:04] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 00:20:04] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 00:20:04] INFO root fetch - processPackages [glassppy]: Downloading https://files.pythonhosted.org/packages/67/24/cd33884946de43f380d117e4f296ad3ee174ff908a5d4951fb05af04e876/glassppy-1.0.2-cp310-cp310-manylinux_2_34_x86_64.whl
+[2023-04-16 00:20:04] INFO root fetch - processPackages [mindspore-dev]: Downloading https://files.pythonhosted.org/packages/21/b7/4c29d267cc49af1bbdd91f8e3213147ee02a48b3c7f88e03861b290a54f0/mindspore_dev-2.0.0rc1.dev20230409-cp39-none-any.whl
+[2023-04-16 00:20:04] WARNING root fetch - processPackages [mindspore-dev]: Skipping package: exceeds size limit 245351829>=10485760
+[2023-04-16 00:20:04] INFO root fetch - main [MainThread]: End processing [mindspore-dev] error
+[2023-04-16 00:20:05] INFO root fetch - processPackages [clear-skies]: Downloading https://files.pythonhosted.org/packages/46/ff/38dd0872e0df49c2ac34c7256f311d26a829dd84c6f09be6ed0215107767/clear-skies-1.9.0.tar.gz
+[2023-04-16 00:20:05] INFO root fetch - processPackages [glassppy]: executing diffoscope
+[2023-04-16 00:20:05] INFO root fetch - processPackages [glassppy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glassppy-1.0.1-cp310-cp310-manylinux_2_34_x86_64.whl.zip tmp/glassppy-1.0.2-cp310-cp310-manylinux_2_34_x86_64.whl.zip --markdown 20230416/g/glassppy/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 00:20:05] INFO root fetch - processPackages [clear-skies]: executing diffoscope
+[2023-04-16 00:20:05] INFO root fetch - processPackages [clear-skies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clear-skies-1.8.0.tar.gz tmp/clear-skies-1.9.0.tar.gz --markdown 20230416/c/clear-skies/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-16 00:20:05] INFO root fetch - main [MainThread]: End processing [opshin]: success
+[2023-04-16 00:20:07] INFO root fetch - main [MainThread]: End processing [clear-skies]: success
+[2023-04-16 00:20:31] INFO root fetch - main [MainThread]: End processing [glassppy]: success
+[2023-04-16 00:20:31] INFO root fetch - main [MainThread]: Store serial: [17722198]
