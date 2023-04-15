@@ -595,3 +595,30 @@
 [2023-04-16 01:13:06] INFO root fetch - main [MainThread]: End processing [osmrx]: success
 [2023-04-16 01:13:06] INFO root fetch - main [MainThread]: End processing [spleaf]: success
 [2023-04-16 01:13:06] INFO root fetch - main [MainThread]: Store serial: [17722443]
+[2023-04-16 01:18:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722443]
+[2023-04-16 01:18:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 01:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymodelextractor
+[2023-04-16 01:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ecodata
+[2023-04-16 01:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tgpt
+[2023-04-16 01:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vollseg
+[2023-04-16 01:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: client-bank-1c
+[2023-04-16 01:18:14] INFO root fetch - processPackages [pymodelextractor]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-16 01:18:14] INFO root fetch - processPackages [ecodata]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-16 01:18:14] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 01:18:14] WARNING root fetch - processPackages [client-bank-1c]: Skipping, unable to determine old version
+[2023-04-16 01:18:14] INFO root fetch - main [MainThread]: End processing [client-bank-1c] error
+[2023-04-16 01:18:14] WARNING root fetch - processPackages [tgpt]: Skipping, unable to determine old version
+[2023-04-16 01:18:14] INFO root fetch - main [MainThread]: End processing [tgpt] error
+[2023-04-16 01:18:14] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 01:18:14] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 01:18:14] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 01:18:14] INFO root fetch - processPackages [pymodelextractor]: Downloading https://files.pythonhosted.org/packages/27/27/d46c9f8564f940a64b64c8cfa298234f8df54af47363e0565dced27e53e8/pymodelextractor-0.9.8.tar.gz
+[2023-04-16 01:18:14] INFO root fetch - processPackages [ecodata]: Downloading https://files.pythonhosted.org/packages/f8/6b/51f51e2a5456c9199f1a588827ab85408062d7386c72cd26f4b0b99f8183/ecodata-0.1.3.tar.gz
+[2023-04-16 01:18:14] INFO root fetch - processPackages [ecodata]: executing diffoscope
+[2023-04-16 01:18:14] INFO root fetch - processPackages [ecodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecodata-0.1.2.tar.gz tmp/ecodata-0.1.3.tar.gz --markdown 20230416/e/ecodata/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-16 01:18:14] INFO root fetch - processPackages [pymodelextractor]: Downloading https://files.pythonhosted.org/packages/ec/8b/cbb34eb2a55ada32a65c0b38f8c293b53c323b3cd374386159cbe324e93f/pymodelextractor-0.9.9.tar.gz
+[2023-04-16 01:18:14] INFO root fetch - processPackages [pymodelextractor]: executing diffoscope
+[2023-04-16 01:18:14] INFO root fetch - processPackages [pymodelextractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymodelextractor-0.9.8.tar.gz tmp/pymodelextractor-0.9.9.tar.gz --markdown 20230416/p/pymodelextractor/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-16 01:18:15] INFO root fetch - main [MainThread]: End processing [ecodata]: success
+[2023-04-16 01:18:15] INFO root fetch - main [MainThread]: End processing [pymodelextractor]: success
+[2023-04-16 01:18:15] INFO root fetch - main [MainThread]: Store serial: [17722462]
