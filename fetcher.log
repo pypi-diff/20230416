@@ -520,3 +520,44 @@
 [2023-04-16 01:02:45] INFO root fetch - main [MainThread]: End processing [ai-talks]: success
 [2023-04-16 01:02:45] INFO root fetch - main [MainThread]: End processing [ai-talks]: success
 [2023-04-16 01:02:45] INFO root fetch - main [MainThread]: Store serial: [17722400]
+[2023-04-16 01:07:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722400]
+[2023-04-16 01:07:54] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vollseg
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ecodata
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: csoundengine
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: VR.Hercules
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arkdriver
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: biscuit-entities
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ecodata
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ecodata]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 01:07:54] WARNING root fetch - processPackages [biscuit-entities]: Skipping, unable to determine old version
+[2023-04-16 01:07:54] INFO root fetch - main [MainThread]: End processing [biscuit-entities] error
+[2023-04-16 01:07:54] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 01:07:54] INFO root fetch - processPackages [VR.Hercules]: New version: [1.1.30] Old Version: [1.1.29]
+[2023-04-16 01:07:54] INFO root fetch - processPackages [csoundengine]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-16 01:07:54] INFO root fetch - processPackages [arkdriver]: New version: [1.0.1] Old Version: [0.1.9]
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ecodata]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 01:07:54] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 01:07:54] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 01:07:54] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ecodata]: Downloading https://files.pythonhosted.org/packages/3f/19/b2e9d0267bfa2643ced3d78914052a55d69bb3ceb5158ec2f1cee7bb109a/ecodata-0.1.0.tar.gz
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ecodata]: Downloading https://files.pythonhosted.org/packages/3f/19/b2e9d0267bfa2643ced3d78914052a55d69bb3ceb5158ec2f1cee7bb109a/ecodata-0.1.0.tar.gz
+[2023-04-16 01:07:54] INFO root fetch - processPackages [csoundengine]: executing diffoscope
+[2023-04-16 01:07:54] INFO root fetch - processPackages [csoundengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csoundengine-1.9.0.tar.gz tmp/csoundengine-1.9.1.tar.gz --markdown 20230416/c/csoundengine/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-16 01:07:54] INFO root fetch - processPackages [VR.Hercules]: Downloading https://files.pythonhosted.org/packages/89/54/75857269a2ba749245e8a60d63137e154a40e18f7ca0ca748a7ab94f0dff/VR.Hercules-1.1.30.tar.gz
+[2023-04-16 01:07:54] INFO root fetch - processPackages [arkdriver]: Downloading https://files.pythonhosted.org/packages/8e/3d/51d7f99d18b55cfcf9c130506a663b9bb167ff882bb6eb89f8b5855724ba/arkdriver-0.1.9.tar.gz
+[2023-04-16 01:07:54] INFO root fetch - processPackages [VR.Hercules]: executing diffoscope
+[2023-04-16 01:07:54] INFO root fetch - processPackages [VR.Hercules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VR.Hercules-1.1.29.tar.gz tmp/VR.Hercules-1.1.30.tar.gz --markdown 20230416/V/VR.Hercules/1.1.29-1.1.30/diff.md --exclude *.pyd
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ecodata]: Downloading https://files.pythonhosted.org/packages/42/5d/aa2e070bfa15f182cd9ff58fbd6311fb7f9a6c6b69a5f76ca7d9fb29d6d9/ecodata-0.1.1.tar.gz
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ecodata]: Downloading https://files.pythonhosted.org/packages/42/5d/aa2e070bfa15f182cd9ff58fbd6311fb7f9a6c6b69a5f76ca7d9fb29d6d9/ecodata-0.1.1.tar.gz
+[2023-04-16 01:07:54] WARNING root fetch - processPackages [arkdriver]: Skipping package: exceeds size limit 23411229>=10485760
+[2023-04-16 01:07:54] INFO root fetch - main [MainThread]: End processing [arkdriver] error
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ecodata]: executing diffoscope
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ecodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecodata-0.1.0.tar.gz tmp/ecodata-0.1.1.tar.gz --markdown 20230416/e/ecodata/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ecodata]: executing diffoscope
+[2023-04-16 01:07:54] INFO root fetch - processPackages [ecodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecodata-0.1.0.tar.gz tmp/ecodata-0.1.1.tar.gz --markdown 20230416/e/ecodata/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 01:07:55] INFO root fetch - main [MainThread]: End processing [VR.Hercules]: success
+[2023-04-16 01:07:55] INFO root fetch - main [MainThread]: End processing [csoundengine]: success
+[2023-04-16 01:07:55] INFO root fetch - main [MainThread]: End processing [ecodata]: success
+[2023-04-16 01:07:55] INFO root fetch - main [MainThread]: End processing [ecodata]: success
+[2023-04-16 01:07:55] INFO root fetch - main [MainThread]: Store serial: [17722429]
