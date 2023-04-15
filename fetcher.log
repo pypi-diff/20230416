@@ -725,3 +725,40 @@
 [2023-04-16 01:33:48] INFO root fetch - main [MainThread]: End processing [wield.declarative]: success
 [2023-04-16 01:33:49] INFO root fetch - main [MainThread]: End processing [arkdriver]: success
 [2023-04-16 01:33:49] INFO root fetch - main [MainThread]: Store serial: [17722530]
+[2023-04-16 01:38:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722530]
+[2023-04-16 01:38:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 01:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yadr
+[2023-04-16 01:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ai-talks
+[2023-04-16 01:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: webint-system
+[2023-04-16 01:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: indiek-core
+[2023-04-16 01:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: projen
+[2023-04-16 01:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vollseg
+[2023-04-16 01:38:57] INFO root fetch - processPackages [ai-talks]: New version: [0.8.8.2] Old Version: [0.8.8.1]
+[2023-04-16 01:38:57] INFO root fetch - processPackages [yadr]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 01:38:57] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 01:38:57] WARNING root fetch - processPackages [indiek-core]: Skipping, unable to determine old version
+[2023-04-16 01:38:57] INFO root fetch - main [MainThread]: End processing [indiek-core] error
+[2023-04-16 01:38:57] INFO root fetch - processPackages [webint-system]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 01:38:57] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-04-16 01:38:57] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 01:38:57] INFO root fetch - processPackages [yadr]: Downloading https://files.pythonhosted.org/packages/f2/50/02658810d0fcd71a223fbb5148627285fc84b9232b89abc251f015e957aa/yadr-0.1.1.tar.gz
+[2023-04-16 01:38:57] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 01:38:57] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 01:38:57] INFO root fetch - processPackages [webint-system]: Downloading https://files.pythonhosted.org/packages/30/67/d43f0fecd1e99eeddcc8101d7d4bd180d80209403829994e7b96e33f6cc8/webint_system-0.0.8.tar.gz
+[2023-04-16 01:38:57] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/ff/1d/caa0ce5bd7aeb94fd716c5c34f32e87b03169146efcbbf240c4182755e51/ai-talks-0.8.8.2.tar.gz
+[2023-04-16 01:38:57] INFO root fetch - processPackages [projen]: Downloading https://files.pythonhosted.org/packages/ce/49/8d0875fd46d32b42ce93e5014d26cffc8a31bf69b96a163c695d1d9c84d7/projen-0.71.9.tar.gz
+[2023-04-16 01:38:57] INFO root fetch - processPackages [yadr]: Downloading https://files.pythonhosted.org/packages/1b/46/ae623eb6dd7bff8109b1ad1af949643e183e25eb563a3f1881d41a42dd6c/yadr-0.1.2.tar.gz
+[2023-04-16 01:38:57] INFO root fetch - processPackages [ai-talks]: executing diffoscope
+[2023-04-16 01:38:57] INFO root fetch - processPackages [ai-talks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai-talks-0.8.8.1.tar.gz tmp/ai-talks-0.8.8.2.tar.gz --markdown 20230416/a/ai-talks/0.8.8.1-0.8.8.2/diff.md --exclude *.pyd
+[2023-04-16 01:38:58] INFO root fetch - processPackages [yadr]: executing diffoscope
+[2023-04-16 01:38:58] INFO root fetch - processPackages [yadr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yadr-0.1.1.tar.gz tmp/yadr-0.1.2.tar.gz --markdown 20230416/y/yadr/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 01:38:58] INFO root fetch - processPackages [webint-system]: Downloading https://files.pythonhosted.org/packages/d1/b4/e335025d4168f20dd2dc59415a160701706ae8d7ea7579f99ec871e6efc6/webint_system-0.0.9.tar.gz
+[2023-04-16 01:38:58] INFO root fetch - processPackages [webint-system]: executing diffoscope
+[2023-04-16 01:38:58] INFO root fetch - processPackages [webint-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint_system-0.0.8.tar.gz tmp/webint_system-0.0.9.tar.gz --markdown 20230416/w/webint-system/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 01:38:58] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-04-16 01:38:58] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230416/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-04-16 01:38:58] INFO root fetch - main [MainThread]: End processing [ai-talks]: success
+[2023-04-16 01:38:59] INFO root fetch - main [MainThread]: End processing [webint-system]: success
+[2023-04-16 01:38:59] INFO root fetch - main [MainThread]: End processing [yadr]: success
+[2023-04-16 01:39:00] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-04-16 01:39:00] INFO root fetch - main [MainThread]: Store serial: [17722564]
