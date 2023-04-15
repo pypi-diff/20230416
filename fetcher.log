@@ -650,3 +650,43 @@
 [2023-04-16 01:23:27] INFO root fetch - main [MainThread]: End processing [sigmatools]: success
 [2023-04-16 01:23:28] INFO root fetch - main [MainThread]: End processing [projen]: success
 [2023-04-16 01:23:28] INFO root fetch - main [MainThread]: Store serial: [17722473]
+[2023-04-16 01:28:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722473]
+[2023-04-16 01:28:36] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 01:28:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vollseg
+[2023-04-16 01:28:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyvalhalla
+[2023-04-16 01:28:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cell-gears
+[2023-04-16 01:28:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: canonical
+[2023-04-16 01:28:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: slg-dev-ops
+[2023-04-16 01:28:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: awc-cli
+[2023-04-16 01:28:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ai-talks
+[2023-04-16 01:28:37] INFO root fetch - processPackages [canonical]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-16 01:28:37] INFO root fetch - processPackages [ai-talks]: New version: [0.8.8.1] Old Version: [0.8.8]
+[2023-04-16 01:28:37] INFO root fetch - processPackages [pyvalhalla]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-04-16 01:28:37] INFO root fetch - processPackages [slg-dev-ops]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-16 01:28:37] INFO root fetch - processPackages [cell-gears]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 01:28:37] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 01:28:37] WARNING root fetch - processPackages [awc-cli]: Skipping, unable to determine old version
+[2023-04-16 01:28:37] INFO root fetch - main [MainThread]: End processing [awc-cli] error
+[2023-04-16 01:28:37] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 01:28:37] INFO root fetch - processPackages [slg-dev-ops]: executing diffoscope
+[2023-04-16 01:28:37] INFO root fetch - processPackages [slg-dev-ops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slg-dev-ops-1.8.0.tar.gz tmp/slg-dev-ops-1.9.0.tar.gz --markdown 20230416/s/slg-dev-ops/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-16 01:28:37] INFO root fetch - processPackages [canonical]: executing diffoscope
+[2023-04-16 01:28:37] INFO root fetch - processPackages [canonical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canonical-0.8.0.tar.gz tmp/canonical-0.9.0.tar.gz --markdown 20230416/c/canonical/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 01:28:37] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 01:28:37] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 01:28:37] INFO root fetch - processPackages [cell-gears]: Downloading https://files.pythonhosted.org/packages/46/d6/2d226b34ba45815f9d31c9a8e71601713aca92f6f4376d3e1724d571f471/cell-gears-0.0.2.tar.gz
+[2023-04-16 01:28:37] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/b6/2e/e4c8cf5053c775277bed675874d3c8d68c4ff17d4f31f6dcaf2a66b9e7f7/ai-talks-0.8.8.1.tar.gz
+[2023-04-16 01:28:37] INFO root fetch - processPackages [pyvalhalla]: Downloading https://files.pythonhosted.org/packages/6b/ac/df224976dcc574e0a93c851de85d6e62ef5cfb02aa0c907adeaab5a195ca/pyvalhalla-3.1.1-cp39-cp39-win_amd64.whl
+[2023-04-16 01:28:37] INFO root fetch - processPackages [cell-gears]: Downloading https://files.pythonhosted.org/packages/bc/76/93a2848c9283e87f470b277fb20ab0258d6741749550e3d4f1f563e5b560/cell-gears-0.0.3.tar.gz
+[2023-04-16 01:28:37] INFO root fetch - processPackages [ai-talks]: executing diffoscope
+[2023-04-16 01:28:37] INFO root fetch - processPackages [ai-talks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai-talks-0.8.8.tar.gz tmp/ai-talks-0.8.8.1.tar.gz --markdown 20230416/a/ai-talks/0.8.8-0.8.8.1/diff.md --exclude *.pyd
+[2023-04-16 01:28:37] INFO root fetch - processPackages [cell-gears]: executing diffoscope
+[2023-04-16 01:28:37] INFO root fetch - processPackages [cell-gears]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cell-gears-0.0.2.tar.gz tmp/cell-gears-0.0.3.tar.gz --markdown 20230416/c/cell-gears/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 01:28:37] INFO root fetch - processPackages [pyvalhalla]: executing diffoscope
+[2023-04-16 01:28:37] INFO root fetch - processPackages [pyvalhalla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvalhalla-3.1.0-cp39-cp39-win_amd64.whl.zip tmp/pyvalhalla-3.1.1-cp39-cp39-win_amd64.whl.zip --markdown 20230416/p/pyvalhalla/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-04-16 01:28:38] INFO root fetch - main [MainThread]: End processing [slg-dev-ops]: success
+[2023-04-16 01:28:38] INFO root fetch - main [MainThread]: End processing [canonical]: success
+[2023-04-16 01:28:38] INFO root fetch - main [MainThread]: End processing [ai-talks]: success
+[2023-04-16 01:28:38] INFO root fetch - main [MainThread]: End processing [cell-gears]: success
+[2023-04-16 01:28:38] INFO root fetch - main [MainThread]: End processing [pyvalhalla]: success
+[2023-04-16 01:28:38] INFO root fetch - main [MainThread]: Store serial: [17722507]
