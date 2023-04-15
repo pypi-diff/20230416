@@ -156,3 +156,46 @@
 [2023-04-16 00:20:07] INFO root fetch - main [MainThread]: End processing [clear-skies]: success
 [2023-04-16 00:20:31] INFO root fetch - main [MainThread]: End processing [glassppy]: success
 [2023-04-16 00:20:31] INFO root fetch - main [MainThread]: Store serial: [17722198]
+[2023-04-16 00:25:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722198]
+[2023-04-16 00:25:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 00:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inkscape_figure_manager
+[2023-04-16 00:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygpsclient
+[2023-04-16 00:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chalkpy
+[2023-04-16 00:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ml-swissknife
+[2023-04-16 00:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: glassppy
+[2023-04-16 00:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: clara-ai
+[2023-04-16 00:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: akinator.py
+[2023-04-16 00:25:42] INFO root fetch - processPackages [glassppy]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-16 00:25:42] WARNING root fetch - processPackages [inkscape_figure_manager]: Skipping, unable to determine old version
+[2023-04-16 00:25:42] INFO root fetch - main [MainThread]: End processing [inkscape_figure_manager] error
+[2023-04-16 00:25:42] INFO root fetch - processPackages [ml-swissknife]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 00:25:42] INFO root fetch - processPackages [clara-ai]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-16 00:25:42] INFO root fetch - processPackages [pygpsclient]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-04-16 00:25:42] INFO root fetch - processPackages [akinator.py]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-16 00:25:42] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-16 00:25:42] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-16 00:25:42] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230416/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-16 00:25:42] INFO root fetch - processPackages [glassppy]: Downloading https://files.pythonhosted.org/packages/81/2d/93dd93d87bd1d1c65cf4ae2d45482543c3fa678c57c8270880faec6b0f7e/glassppy-1.0.3-cp310-cp310-manylinux_2_34_x86_64.whl
+[2023-04-16 00:25:42] INFO root fetch - processPackages [clara-ai]: Downloading https://files.pythonhosted.org/packages/51/ec/3788ffedbb9e926eae41e2766520ceea78845c641cde902e48540ac48a15/clara_ai-0.0.6.tar.gz
+[2023-04-16 00:25:42] INFO root fetch - processPackages [ml-swissknife]: Downloading https://files.pythonhosted.org/packages/1b/f4/84ef806d3a7f356b575f39eb9be97b23911451400063cb3fb76034f13aa9/ml-swissknife-0.1.8.tar.gz
+[2023-04-16 00:25:42] INFO root fetch - processPackages [pygpsclient]: Downloading https://files.pythonhosted.org/packages/dc/43/85dbc5084855024d469eb19f9e798a808deff2658423606454080545f672/PyGPSClient-1.3.8.tar.gz
+[2023-04-16 00:25:42] INFO root fetch - processPackages [clara-ai]: executing diffoscope
+[2023-04-16 00:25:42] INFO root fetch - processPackages [clara-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clara_ai-0.0.5.tar.gz tmp/clara_ai-0.0.6.tar.gz --markdown 20230416/c/clara-ai/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-16 00:25:42] INFO root fetch - processPackages [akinator.py]: Downloading https://files.pythonhosted.org/packages/8a/c3/be798266e3dc4894fc8273fe1587183ec58f3c9d74f61826d9779d714477/akinator.py-0.2.3.tar.gz
+[2023-04-16 00:25:42] INFO root fetch - processPackages [glassppy]: executing diffoscope
+[2023-04-16 00:25:42] INFO root fetch - processPackages [glassppy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glassppy-1.0.2-cp310-cp310-manylinux_2_34_x86_64.whl.zip tmp/glassppy-1.0.3-cp310-cp310-manylinux_2_34_x86_64.whl.zip --markdown 20230416/g/glassppy/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-16 00:25:42] INFO root fetch - processPackages [akinator.py]: executing diffoscope
+[2023-04-16 00:25:42] INFO root fetch - processPackages [akinator.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akinator.py-0.2.2.tar.gz tmp/akinator.py-0.2.3.tar.gz --markdown 20230416/a/akinator.py/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-16 00:25:43] INFO root fetch - processPackages [pygpsclient]: Downloading https://files.pythonhosted.org/packages/e5/bd/8454c188f3af9cf23396bb9676d469014b1e5f12800e67c79cc7554b5208/PyGPSClient-1.3.9.tar.gz
+[2023-04-16 00:25:43] INFO root fetch - processPackages [ml-swissknife]: Downloading https://files.pythonhosted.org/packages/81/67/73dace4381e667d1d9ada5a6606ba4e01274506497c4b2338ef2bf1bc6d9/ml-swissknife-0.1.9.tar.gz
+[2023-04-16 00:25:43] INFO root fetch - processPackages [pygpsclient]: executing diffoscope
+[2023-04-16 00:25:43] INFO root fetch - processPackages [pygpsclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGPSClient-1.3.8.tar.gz tmp/PyGPSClient-1.3.9.tar.gz --markdown 20230416/p/pygpsclient/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-04-16 00:25:43] INFO root fetch - main [MainThread]: End processing [clara-ai]: success
+[2023-04-16 00:25:43] INFO root fetch - processPackages [ml-swissknife]: executing diffoscope
+[2023-04-16 00:25:43] INFO root fetch - processPackages [ml-swissknife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-swissknife-0.1.8.tar.gz tmp/ml-swissknife-0.1.9.tar.gz --markdown 20230416/m/ml-swissknife/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 00:25:44] INFO root fetch - main [MainThread]: End processing [akinator.py]: success
+[2023-04-16 00:25:44] INFO root fetch - main [MainThread]: End processing [pygpsclient]: success
+[2023-04-16 00:25:45] INFO root fetch - main [MainThread]: End processing [ml-swissknife]: success
+[2023-04-16 00:25:48] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-04-16 00:26:14] INFO root fetch - main [MainThread]: End processing [glassppy]: success
+[2023-04-16 00:26:14] INFO root fetch - main [MainThread]: Store serial: [17722238]
