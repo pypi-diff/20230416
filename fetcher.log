@@ -13790,3 +13790,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 22:47:07] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
 [2023-04-16 22:47:12] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-16 22:47:12] INFO root fetch - main [MainThread]: Store serial: [17730132]
+[2023-04-16 22:52:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17730132]
+[2023-04-16 22:52:21] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 22:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cagen
+[2023-04-16 22:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: murfey
+[2023-04-16 22:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-lambda-layer-wget
+[2023-04-16 22:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otoe
+[2023-04-16 22:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-sns-notify
+[2023-04-16 22:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-lambda-layer-curl
+[2023-04-16 22:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-lambda-layer-zip
+[2023-04-16 22:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pygeoweaver
+[2023-04-16 22:52:21] INFO root fetch - processPackages [murfey]: New version: [0.7.8] Old Version: [0.7.7]
+[2023-04-16 22:52:21] INFO root fetch - processPackages [otoe]: New version: [0.0.7.post1] Old Version: [0.0.7]
+[2023-04-16 22:52:21] INFO root fetch - processPackages [cagen]: New version: [0.2.0a3] Old Version: [0.2.0a2]
+[2023-04-16 22:52:21] INFO root fetch - processPackages [pygeoweaver]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-16 22:52:21] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-16 22:52:21] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 22:52:21] INFO root fetch - processPackages [cdk-lambda-layer-zip]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-16 22:52:21] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-16 22:52:21] INFO root fetch - processPackages [cdk-lambda-layer-zip]: executing diffoscope
+[2023-04-16 22:52:21] INFO root fetch - processPackages [cdk-lambda-layer-zip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-zip-2.0.98.tar.gz tmp/cdk-lambda-layer-zip-2.0.99.tar.gz --markdown 20230416/c/cdk-lambda-layer-zip/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-16 22:52:21] INFO root fetch - processPackages [pygeoweaver]: Downloading https://files.pythonhosted.org/packages/53/d7/e3771a721fc5a8e472c6074dea7f0e55f526f99a797cdaf4fa988a6304bf/pygeoweaver-0.6.0.tar.gz
+[2023-04-16 22:52:21] INFO root fetch - processPackages [otoe]: Downloading https://files.pythonhosted.org/packages/75/99/726e8b2c3bccf16216858a170d90a5a98746470f09c4d8d13ff1d1aa94be/otoe-0.0.7.tar.gz
+[2023-04-16 22:52:21] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/63/7d/ec62f3b7c0e08e1437b2036911a0d42b75ee30ea2cbb819399bdf8b55111/cdk-sns-notify-0.0.98.tar.gz
+[2023-04-16 22:52:21] INFO root fetch - processPackages [cagen]: Downloading https://files.pythonhosted.org/packages/8d/0b/1f665496f501ce5792b174e67c003b87dd1efb15db701fd61a8f690f6ca9/cagen-0.2.0a3.tar.gz
+[2023-04-16 22:52:21] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-04-16 22:52:21] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230416/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-16 22:52:21] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-04-16 22:52:21] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230416/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-16 22:52:21] INFO root fetch - processPackages [murfey]: Downloading https://files.pythonhosted.org/packages/06/4f/a37cd48a24edf35edbbeafaa3f929ada933d8ace6f309321972545424ec5/murfey-0.7.8.tar.gz
+[2023-04-16 22:52:22] INFO root fetch - processPackages [cagen]: executing diffoscope
+[2023-04-16 22:52:22] INFO root fetch - processPackages [cagen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cagen-0.2.0a2.tar.gz tmp/cagen-0.2.0a3.tar.gz --markdown 20230416/c/cagen/0.2.0a2-0.2.0a3/diff.md --exclude *.pyd
+[2023-04-16 22:52:22] INFO root fetch - processPackages [otoe]: Downloading https://files.pythonhosted.org/packages/34/62/8ac2b707a81b1ea9943a5cb0224fee97011251c051cea6b087b8bebc175d/otoe-0.0.7.post1.tar.gz
+[2023-04-16 22:52:22] INFO root fetch - processPackages [pygeoweaver]: Downloading https://files.pythonhosted.org/packages/c6/f2/14a06280ceb2bb12b797a9a58f373af213937ca1a8c1e13805d826d37b8e/pygeoweaver-0.6.1.tar.gz
+[2023-04-16 22:52:22] INFO root fetch - processPackages [murfey]: executing diffoscope
+[2023-04-16 22:52:22] INFO root fetch - processPackages [murfey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/murfey-0.7.7.tar.gz tmp/murfey-0.7.8.tar.gz --markdown 20230416/m/murfey/0.7.7-0.7.8/diff.md --exclude *.pyd
+[2023-04-16 22:52:22] INFO root fetch - processPackages [otoe]: executing diffoscope
+[2023-04-16 22:52:22] INFO root fetch - processPackages [otoe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otoe-0.0.7.tar.gz tmp/otoe-0.0.7.post1.tar.gz --markdown 20230416/o/otoe/0.0.7-0.0.7.post1/diff.md --exclude *.pyd
+[2023-04-16 22:52:22] INFO root fetch - processPackages [pygeoweaver]: executing diffoscope
+[2023-04-16 22:52:22] INFO root fetch - processPackages [pygeoweaver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygeoweaver-0.6.0.tar.gz tmp/pygeoweaver-0.6.1.tar.gz --markdown 20230416/p/pygeoweaver/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-16 22:52:22] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/18/81/3593e022c53913815c1207f0d20763efc2764992a13c81d641f3a01edf7d/cdk-sns-notify-0.0.99.tar.gz
+[2023-04-16 22:52:22] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2023-04-16 22:52:22] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20230416/c/cdk-sns-notify/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 22:52:23] INFO root fetch - main [MainThread]: End processing [cagen]: success
+[2023-04-16 22:52:23] INFO root fetch - main [MainThread]: End processing [otoe]: success
+[2023-04-16 22:52:23] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2023-04-16 22:52:23] INFO root fetch - main [MainThread]: End processing [pygeoweaver]: success
+[2023-04-16 22:52:23] INFO root fetch - main [MainThread]: End processing [murfey]: success
+[2023-04-16 22:52:25] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-zip]: success
+[2023-04-16 22:52:26] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-04-16 22:52:28] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-04-16 22:52:28] INFO root fetch - main [MainThread]: Store serial: [17730156]
