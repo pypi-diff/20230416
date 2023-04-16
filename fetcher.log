@@ -13461,3 +13461,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 22:05:29] INFO root fetch - main [MainThread]: End processing [forml]: success
 [2023-04-16 22:05:30] INFO root fetch - main [MainThread]: End processing [folio-migration-tools]: success
 [2023-04-16 22:05:30] INFO root fetch - main [MainThread]: Store serial: [17729862]
+[2023-04-16 22:10:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729862]
+[2023-04-16 22:10:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 22:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: backtrader
+[2023-04-16 22:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openschema
+[2023-04-16 22:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: safeoutput
+[2023-04-16 22:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xia-engine-terraform
+[2023-04-16 22:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygeoweaver
+[2023-04-16 22:10:40] INFO root fetch - processPackages [openschema]: New version: [0.6.dev2] Old Version: [0.6.dev1]
+[2023-04-16 22:10:40] INFO root fetch - processPackages [safeoutput]: New version: [2.1] Old Version: [2.0]
+[2023-04-16 22:10:40] INFO root fetch - processPackages [backtrader]: New version: [1.9.77.123] Old Version: [1.9.76.123]
+[2023-04-16 22:10:40] INFO root fetch - processPackages [xia-engine-terraform]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-16 22:10:40] WARNING root fetch - processPackages [pygeoweaver]: Skipping, unable to determine old version
+[2023-04-16 22:10:40] INFO root fetch - main [MainThread]: End processing [pygeoweaver] error
+[2023-04-16 22:10:40] INFO root fetch - processPackages [openschema]: Downloading https://files.pythonhosted.org/packages/bb/14/d593786b07abbe13a845cac23c5754a8132b1d8b3d75248f3803979a6e96/openschema-0.6.dev1-py3-none-any.whl
+[2023-04-16 22:10:40] INFO root fetch - processPackages [backtrader]: Downloading https://files.pythonhosted.org/packages/1a/bf/78aadd993e2719d6764603465fde163ba6ec15cf0e81f13e39ca13451348/backtrader-1.9.76.123-py2.py3-none-any.whl
+[2023-04-16 22:10:41] INFO root fetch - processPackages [safeoutput]: Downloading https://files.pythonhosted.org/packages/de/60/f152425a4a86b6b4736f5ae609f1f84c0a8b0cc1fdf3dbf1d8af3fe7befb/safeoutput-2.0.tar.gz
+[2023-04-16 22:10:41] INFO root fetch - processPackages [xia-engine-terraform]: Downloading https://files.pythonhosted.org/packages/f0/91/e36760ce25752aa0b524fe27ecb465b5cfb02d78508ec36b34516255e804/xia_engine_terraform-0.0.4-cp39-none-macosx_11_0_x86_64.whl
+[2023-04-16 22:10:41] INFO root fetch - processPackages [safeoutput]: Downloading https://files.pythonhosted.org/packages/dc/d2/c67517dc8ace00b18db39d249812f10e94561c5fb8822325a55aca36601d/safeoutput-2.1.tar.gz
+[2023-04-16 22:10:41] INFO root fetch - processPackages [backtrader]: Downloading https://files.pythonhosted.org/packages/00/65/1d746a36fe271b894dfcf3354fa176776cd477988497f2ed014aa37fb023/backtrader-1.9.77.123-py2.py3-none-any.whl
+[2023-04-16 22:10:41] INFO root fetch - processPackages [openschema]: Downloading https://files.pythonhosted.org/packages/93/84/c627fda4c5955672df9cbf97cb2790d0c12a4b0c93274e15a244056d7a5a/openschema-0.6.dev2-py3-none-any.whl
+[2023-04-16 22:10:41] INFO root fetch - processPackages [xia-engine-terraform]: executing diffoscope
+[2023-04-16 22:10:41] INFO root fetch - processPackages [xia-engine-terraform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine_terraform-0.0.2-cp39-none-win_amd64.whl.zip tmp/xia_engine_terraform-0.0.4-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230416/x/xia-engine-terraform/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-16 22:10:41] INFO root fetch - processPackages [backtrader]: executing diffoscope
+[2023-04-16 22:10:41] INFO root fetch - processPackages [backtrader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backtrader-1.9.76.123-py2.py3-none-any.whl.zip tmp/backtrader-1.9.77.123-py2.py3-none-any.whl.zip --markdown 20230416/b/backtrader/1.9.76.123-1.9.77.123/diff.md --exclude *.pyd
+[2023-04-16 22:10:41] INFO root fetch - processPackages [safeoutput]: executing diffoscope
+[2023-04-16 22:10:41] INFO root fetch - processPackages [safeoutput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safeoutput-2.0.tar.gz tmp/safeoutput-2.1.tar.gz --markdown 20230416/s/safeoutput/2.0-2.1/diff.md --exclude *.pyd
+[2023-04-16 22:10:41] INFO root fetch - processPackages [openschema]: executing diffoscope
+[2023-04-16 22:10:41] INFO root fetch - processPackages [openschema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openschema-0.6.dev1-py3-none-any.whl.zip tmp/openschema-0.6.dev2-py3-none-any.whl.zip --markdown 20230416/o/openschema/0.6.dev1-0.6.dev2/diff.md --exclude *.pyd
+[2023-04-16 22:10:42] INFO root fetch - main [MainThread]: End processing [xia-engine-terraform]: success
+[2023-04-16 22:10:42] INFO root fetch - main [MainThread]: End processing [safeoutput]: success
+[2023-04-16 22:10:42] INFO root fetch - main [MainThread]: End processing [openschema]: success
+[2023-04-16 22:10:46] INFO root fetch - main [MainThread]: End processing [backtrader]: success
+[2023-04-16 22:10:46] INFO root fetch - main [MainThread]: Store serial: [17729885]
