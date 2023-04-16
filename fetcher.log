@@ -12733,3 +12733,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 20:46:57] INFO root fetch - main [MainThread]: End processing [gator-core]: success
 [2023-04-16 20:47:11] INFO root fetch - main [MainThread]: End processing [svg-flatten-wasi]: success
 [2023-04-16 20:47:11] INFO root fetch - main [MainThread]: Store serial: [17729431]
+[2023-04-16 20:52:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729431]
+[2023-04-16 20:52:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-16 20:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: extr
+[2023-04-16 20:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiogram-ext
+[2023-04-16 20:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: feloopy
+[2023-04-16 20:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ssb-sgis
+[2023-04-16 20:52:22] INFO root fetch - processPackages [ssb-sgis]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-16 20:52:22] INFO root fetch - processPackages [extr]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-16 20:52:22] INFO root fetch - processPackages [aiogram-ext]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 20:52:22] INFO root fetch - processPackages [feloopy]: New version: [0.2.31] Old Version: [0.2.3]
+[2023-04-16 20:52:22] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-16 20:52:22] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.0.8.tar.gz tmp/aiogram-ext-0.0.9.tar.gz --markdown 20230416/a/aiogram-ext/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 20:52:22] INFO root fetch - processPackages [feloopy]: Downloading https://files.pythonhosted.org/packages/cd/ee/31fbca5077842a651fe2477eadf7bf0def6cd880cda65014e7760a3228ba/feloopy-0.2.3.tar.gz
+[2023-04-16 20:52:22] INFO root fetch - processPackages [ssb-sgis]: Downloading https://files.pythonhosted.org/packages/69/1b/ae7e834586cb2ca18e8249d2562a680e50549c9b290d6ecb6b936a44f566/ssb_sgis-0.1.7.tar.gz
+[2023-04-16 20:52:22] INFO root fetch - processPackages [extr]: Downloading https://files.pythonhosted.org/packages/b6/f2/584112c0a0e819dd5b51ac31bd4d8da1adcc1bf612b8898ff43504e4bf43/extr-0.0.7.tar.gz
+[2023-04-16 20:52:22] INFO root fetch - processPackages [feloopy]: Downloading https://files.pythonhosted.org/packages/d0/61/2fc357a110eb488a5633537fad351222877b5c158c692762696ab24de6fc/feloopy-0.2.31.tar.gz
+[2023-04-16 20:52:22] INFO root fetch - processPackages [ssb-sgis]: Downloading https://files.pythonhosted.org/packages/43/72/e24a5ed9bdcbc37d7ef6a9a157389b1c6105293a4d5dcf908db0119bb0f4/ssb_sgis-0.1.8.tar.gz
+[2023-04-16 20:52:22] INFO root fetch - processPackages [extr]: executing diffoscope
+[2023-04-16 20:52:22] INFO root fetch - processPackages [extr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extr-0.0.6.tar.gz tmp/extr-0.0.7.tar.gz --markdown 20230416/e/extr/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-16 20:52:23] INFO root fetch - processPackages [ssb-sgis]: executing diffoscope
+[2023-04-16 20:52:23] INFO root fetch - processPackages [ssb-sgis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssb_sgis-0.1.7.tar.gz tmp/ssb_sgis-0.1.8.tar.gz --markdown 20230416/s/ssb-sgis/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-16 20:52:23] INFO root fetch - processPackages [feloopy]: executing diffoscope
+[2023-04-16 20:52:23] INFO root fetch - processPackages [feloopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feloopy-0.2.3.tar.gz tmp/feloopy-0.2.31.tar.gz --markdown 20230416/f/feloopy/0.2.3-0.2.31/diff.md --exclude *.pyd
+[2023-04-16 20:52:23] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-16 20:52:23] INFO root fetch - main [MainThread]: End processing [extr]: success
+[2023-04-16 20:52:24] INFO root fetch - main [MainThread]: End processing [ssb-sgis]: success
+[2023-04-16 20:52:24] INFO root fetch - main [MainThread]: End processing [feloopy]: success
+[2023-04-16 20:52:24] INFO root fetch - main [MainThread]: Store serial: [17729446]
