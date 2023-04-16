@@ -2913,3 +2913,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 06:17:19] INFO root fetch - processPackages [nb-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nb-cli-1.1.1.tar.gz tmp/nb-cli-1.1.2.tar.gz --markdown 20230416/n/nb-cli/1.1.1-1.1.2/diff.md --exclude *.pyd
 [2023-04-16 06:17:21] INFO root fetch - main [MainThread]: End processing [nb-cli]: success
 [2023-04-16 06:17:21] INFO root fetch - main [MainThread]: Store serial: [17723625]
+[2023-04-16 06:22:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723625]
+[2023-04-16 06:22:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 06:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twitch-archiver
+[2023-04-16 06:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SynackAPI
+[2023-04-16 06:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oneinstance
+[2023-04-16 06:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plotfish2
+[2023-04-16 06:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edynamics
+[2023-04-16 06:22:29] WARNING root fetch - processPackages [oneinstance]: Skipping, unable to determine old version
+[2023-04-16 06:22:29] INFO root fetch - processPackages [SynackAPI]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-16 06:22:29] INFO root fetch - processPackages [twitch-archiver]: New version: [3.0.0.dev4] Old Version: [3.0.0.dev1]
+[2023-04-16 06:22:29] INFO root fetch - main [MainThread]: End processing [oneinstance] error
+[2023-04-16 06:22:29] INFO root fetch - processPackages [edynamics]: New version: [0.3.9] Old Version: [0.1.3]
+[2023-04-16 06:22:29] WARNING root fetch - processPackages [plotfish2]: Skipping, unable to determine old version
+[2023-04-16 06:22:29] INFO root fetch - main [MainThread]: End processing [plotfish2] error
+[2023-04-16 06:22:30] INFO root fetch - processPackages [edynamics]: Downloading https://files.pythonhosted.org/packages/01/e4/987b3242a426430a255024ed08bd365f46296bb7f6a0e7d5bdd914c673e2/edynamics-0.1.3.tar.gz
+[2023-04-16 06:22:30] INFO root fetch - processPackages [SynackAPI]: Downloading https://files.pythonhosted.org/packages/a2/61/27f41755fb20de0f3881ea14ea216d3634d56cdcc262eb0ccfeda449f33d/SynackAPI-0.4.1.tar.gz
+[2023-04-16 06:22:30] INFO root fetch - processPackages [twitch-archiver]: Downloading https://files.pythonhosted.org/packages/b5/92/c9b591679b62431af891bc2a72ee95ce5998b07dd068eb6b0f7936e4b557/twitch-archiver-3.0.0.dev1.tar.gz
+[2023-04-16 06:22:30] INFO root fetch - processPackages [edynamics]: Downloading https://files.pythonhosted.org/packages/b2/d2/a3bf819aa4210ad3ea2000d3e24660a853437dc01ca85d13ae191ee7715d/edynamics-0.3.9.tar.gz
+[2023-04-16 06:22:30] INFO root fetch - processPackages [SynackAPI]: Downloading https://files.pythonhosted.org/packages/08/6e/e568b412d4efd41ab463482bb0146d0e49bd16430085e0bc297c6b2656e9/SynackAPI-0.4.2.tar.gz
+[2023-04-16 06:22:30] INFO root fetch - processPackages [twitch-archiver]: Downloading https://files.pythonhosted.org/packages/9c/84/9616d3071a31b07a41f72d4c1145a47fe0b0a24eae7a830a51cb89bdd683/twitch-archiver-3.0.0.dev4.tar.gz
+[2023-04-16 06:22:30] INFO root fetch - processPackages [edynamics]: executing diffoscope
+[2023-04-16 06:22:30] INFO root fetch - processPackages [edynamics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edynamics-0.1.3.tar.gz tmp/edynamics-0.3.9.tar.gz --markdown 20230416/e/edynamics/0.1.3-0.3.9/diff.md --exclude *.pyd
+[2023-04-16 06:22:30] INFO root fetch - processPackages [twitch-archiver]: executing diffoscope
+[2023-04-16 06:22:30] INFO root fetch - processPackages [twitch-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitch-archiver-3.0.0.dev1.tar.gz tmp/twitch-archiver-3.0.0.dev4.tar.gz --markdown 20230416/t/twitch-archiver/3.0.0.dev1-3.0.0.dev4/diff.md --exclude *.pyd
+[2023-04-16 06:22:30] INFO root fetch - processPackages [SynackAPI]: executing diffoscope
+[2023-04-16 06:22:30] INFO root fetch - processPackages [SynackAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SynackAPI-0.4.1.tar.gz tmp/SynackAPI-0.4.2.tar.gz --markdown 20230416/S/SynackAPI/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-16 06:22:31] INFO root fetch - main [MainThread]: End processing [edynamics]: success
+[2023-04-16 06:22:31] INFO root fetch - main [MainThread]: End processing [twitch-archiver]: success
+[2023-04-16 06:22:31] INFO root fetch - main [MainThread]: End processing [SynackAPI]: success
+[2023-04-16 06:22:31] INFO root fetch - main [MainThread]: Store serial: [17723646]
