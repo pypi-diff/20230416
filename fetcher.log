@@ -5658,3 +5658,62 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 10:26:40] INFO root fetch - main [MainThread]: End processing [pyobjc-framework-PHASE]: success
 [2023-04-16 10:26:40] INFO root fetch - main [MainThread]: End processing [pyobjc-framework-Photos]: success
 [2023-04-16 10:26:40] INFO root fetch - main [MainThread]: Store serial: [17725145]
+[2023-04-16 10:31:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17725145]
+[2023-04-16 10:31:52] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 10:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyobjc-framework-PhotosUI
+[2023-04-16 10:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyobjc-framework-PreferencePanes
+[2023-04-16 10:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyobjc-framework-PubSub
+[2023-04-16 10:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyobjc-framework-PushKit
+[2023-04-16 10:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kicad-package-manager
+[2023-04-16 10:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyobjc-framework-Quartz
+[2023-04-16 10:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: chgksuite
+[2023-04-16 10:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyenv-validator
+[2023-04-16 10:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: simple-file-process
+[2023-04-16 10:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pynarrator
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PubSub]: New version: [9.1b1] Old Version: [9.1]
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pynarrator]: New version: [0.0.1.9] Old Version: [0.0.1.8]
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PhotosUI]: New version: [9.1b1] Old Version: [9.1]
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PushKit]: New version: [9.1b1] Old Version: [9.1]
+[2023-04-16 10:31:53] WARNING root fetch - processPackages [pyenv-validator]: Skipping, unable to determine old version
+[2023-04-16 10:31:53] INFO root fetch - processPackages [kicad-package-manager]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 10:31:53] INFO root fetch - processPackages [chgksuite]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-16 10:31:53] INFO root fetch - main [MainThread]: End processing [pyenv-validator] error
+[2023-04-16 10:31:53] WARNING root fetch - processPackages [simple-file-process]: Skipping, unable to determine old version
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PreferencePanes]: New version: [9.1b1] Old Version: [9.1]
+[2023-04-16 10:31:53] INFO root fetch - main [MainThread]: End processing [simple-file-process] error
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-Quartz]: New version: [9.1b1] Old Version: [9.1]
+[2023-04-16 10:31:53] INFO root fetch - processPackages [kicad-package-manager]: executing diffoscope
+[2023-04-16 10:31:53] INFO root fetch - processPackages [kicad-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kicad_package_manager-0.0.8.tar.gz tmp/kicad_package_manager-0.0.9.tar.gz --markdown 20230416/k/kicad-package-manager/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 10:31:53] INFO root fetch - processPackages [chgksuite]: executing diffoscope
+[2023-04-16 10:31:53] INFO root fetch - processPackages [chgksuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chgksuite-0.9.0.tar.gz tmp/chgksuite-0.9.1.tar.gz --markdown 20230416/c/chgksuite/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PubSub]: Downloading https://files.pythonhosted.org/packages/b9/6a/9450d5837070a339571c14a6e2716de91d49cd69073edfa8b1177e228d25/pyobjc_framework_PubSub-9.1-py2.py3-none-any.whl
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PhotosUI]: Downloading https://files.pythonhosted.org/packages/65/85/4d26a6bb4c31a232b0db0a04d341527c9111ebed204cef81066bb77b4dc6/pyobjc_framework_PhotosUI-9.1-cp36-abi3-macosx_11_0_universal2.whl
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PushKit]: Downloading https://files.pythonhosted.org/packages/28/ab/f70e4930842f4819bc1eb6c3f4a07a55d2df632c31870a2157955eac3c78/pyobjc_framework_PushKit-9.1-cp36-abi3-macosx_11_0_universal2.whl
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PreferencePanes]: Downloading https://files.pythonhosted.org/packages/a0/b0/9332058571709170edb81dda83a49dcb97a18537efa9508fac8ec3f8fc65/pyobjc_framework_PreferencePanes-9.1-py2.py3-none-any.whl
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-Quartz]: Downloading https://files.pythonhosted.org/packages/8b/dc/193af5f5e818bbffd52164e8a3c6b2e173fefd9364402d4d6671a51a2c3d/pyobjc_framework_Quartz-9.1-cp38-cp38-macosx_10_9_x86_64.whl
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pynarrator]: executing diffoscope
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pynarrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynarrator-0.0.1.8.tar.gz tmp/pynarrator-0.0.1.9.tar.gz --markdown 20230416/p/pynarrator/0.0.1.8-0.0.1.9/diff.md --exclude *.pyd
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-Quartz]: Downloading https://files.pythonhosted.org/packages/3d/7f/b87012c558554b4e630a1627a02f04a2c515d444c60e3e230bd3d71a34ec/pyobjc-framework-Quartz-9.1b1.tar.gz
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PhotosUI]: Downloading https://files.pythonhosted.org/packages/c4/2d/4be00d22bedec3a39e168d8cd076c70ea78d310a6b05157782d5d51b05d7/pyobjc-framework-PhotosUI-9.1b1.tar.gz
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PubSub]: Downloading https://files.pythonhosted.org/packages/c5/30/00b51afc9384f996aa41ee5607d5ba75ad62ff002005a1b5e9e6e93a6826/pyobjc-framework-PubSub-9.1b1.tar.gz
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PhotosUI]: executing diffoscope
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PubSub]: executing diffoscope
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PhotosUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobjc_framework_PhotosUI-9.1-cp36-abi3-macosx_11_0_universal2.whl.zip tmp/pyobjc-framework-PhotosUI-9.1b1.tar.gz --markdown 20230416/p/pyobjc-framework-PhotosUI/9.1-9.1b1/diff.md --exclude *.pyd
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PubSub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobjc_framework_PubSub-9.1-py2.py3-none-any.whl.zip tmp/pyobjc-framework-PubSub-9.1b1.tar.gz --markdown 20230416/p/pyobjc-framework-PubSub/9.1-9.1b1/diff.md --exclude *.pyd
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PreferencePanes]: Downloading https://files.pythonhosted.org/packages/61/78/009ec8351ab0fa789d492bf56e62f737f21936c5969113c363554ac74657/pyobjc-framework-PreferencePanes-9.1b1.tar.gz
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PushKit]: Downloading https://files.pythonhosted.org/packages/69/89/7c0fa141cf3a81417e5216314e977c488f805287cc7f9fc3f5ff4c7ea853/pyobjc-framework-PushKit-9.1b1.tar.gz
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PreferencePanes]: executing diffoscope
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PreferencePanes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobjc_framework_PreferencePanes-9.1-py2.py3-none-any.whl.zip tmp/pyobjc-framework-PreferencePanes-9.1b1.tar.gz --markdown 20230416/p/pyobjc-framework-PreferencePanes/9.1-9.1b1/diff.md --exclude *.pyd
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PushKit]: executing diffoscope
+[2023-04-16 10:31:53] INFO root fetch - processPackages [pyobjc-framework-PushKit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobjc_framework_PushKit-9.1-cp36-abi3-macosx_11_0_universal2.whl.zip tmp/pyobjc-framework-PushKit-9.1b1.tar.gz --markdown 20230416/p/pyobjc-framework-PushKit/9.1-9.1b1/diff.md --exclude *.pyd
+[2023-04-16 10:31:54] INFO root fetch - processPackages [pyobjc-framework-Quartz]: executing diffoscope
+[2023-04-16 10:31:54] INFO root fetch - processPackages [pyobjc-framework-Quartz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobjc_framework_Quartz-9.1-cp38-cp38-macosx_10_9_x86_64.whl.zip tmp/pyobjc-framework-Quartz-9.1b1.tar.gz --markdown 20230416/p/pyobjc-framework-Quartz/9.1-9.1b1/diff.md --exclude *.pyd
+[2023-04-16 10:31:54] INFO root fetch - main [MainThread]: End processing [pynarrator]: success
+[2023-04-16 10:31:54] INFO root fetch - main [MainThread]: End processing [kicad-package-manager]: success
+[2023-04-16 10:31:54] INFO root fetch - main [MainThread]: End processing [chgksuite]: success
+[2023-04-16 10:31:54] INFO root fetch - main [MainThread]: End processing [pyobjc-framework-PubSub]: success
+[2023-04-16 10:31:54] INFO root fetch - main [MainThread]: End processing [pyobjc-framework-PhotosUI]: success
+[2023-04-16 10:31:54] INFO root fetch - main [MainThread]: End processing [pyobjc-framework-PushKit]: success
+[2023-04-16 10:31:55] INFO root fetch - main [MainThread]: End processing [pyobjc-framework-PreferencePanes]: success
+[2023-04-16 10:31:57] INFO root fetch - main [MainThread]: End processing [pyobjc-framework-Quartz]: success
+[2023-04-16 10:31:57] INFO root fetch - main [MainThread]: Store serial: [17725182]
