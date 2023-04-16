@@ -7719,3 +7719,69 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 13:52:09] INFO root fetch - main [MainThread]: End processing [feedcrawler]: success
 [2023-04-16 13:52:10] INFO root fetch - main [MainThread]: End processing [fhempy]: success
 [2023-04-16 13:52:10] INFO root fetch - main [MainThread]: Store serial: [17726486]
+[2023-04-16 13:57:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726486]
+[2023-04-16 13:57:18] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 13:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: knowledge-graph
+[2023-04-16 13:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textadventure
+[2023-04-16 13:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyAltiumRunTop
+[2023-04-16 13:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: altb
+[2023-04-16 13:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vollseg
+[2023-04-16 13:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tplink-omada-client
+[2023-04-16 13:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jogos-python
+[2023-04-16 13:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: polyfactory
+[2023-04-16 13:57:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyhOn
+[2023-04-16 13:57:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: feynmodel
+[2023-04-16 13:57:19] INFO root fetch - processPackages [PyAltiumRunTop]: New version: [0.2.4.4] Old Version: [0.2.4.3]
+[2023-04-16 13:57:19] INFO root fetch - processPackages [jogos-python]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-16 13:57:19] INFO root fetch - processPackages [textadventure]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 13:57:19] INFO root fetch - processPackages [feynmodel]: New version: [0.0.4] Old Version: [0.0.0.1]
+[2023-04-16 13:57:19] INFO root fetch - processPackages [knowledge-graph]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 13:57:19] INFO root fetch - processPackages [altb]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-16 13:57:19] INFO root fetch - processPackages [pyhOn]: New version: [0.8.0b5] Old Version: [0.8.0b4]
+[2023-04-16 13:57:19] INFO root fetch - processPackages [tplink-omada-client]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-16 13:57:19] INFO root fetch - processPackages [polyfactory]: New version: [2.0.0a1] Old Version: [2.0.0]
+[2023-04-16 13:57:19] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 13:57:19] INFO root fetch - processPackages [PyAltiumRunTop]: executing diffoscope
+[2023-04-16 13:57:19] INFO root fetch - processPackages [PyAltiumRunTop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAltiumRunTop-0.2.4.3.tar.gz tmp/PyAltiumRunTop-0.2.4.4.tar.gz --markdown 20230416/P/PyAltiumRunTop/0.2.4.3-0.2.4.4/diff.md --exclude *.pyd
+[2023-04-16 13:57:19] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 13:57:19] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 13:57:19] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 13:57:19] INFO root fetch - processPackages [polyfactory]: Downloading https://files.pythonhosted.org/packages/dd/70/2713c2087d3c664d518d5be01e06bf30530ecd51f27c09b3777a6a81e93b/polyfactory-2.0.0.tar.gz
+[2023-04-16 13:57:19] INFO root fetch - processPackages [feynmodel]: Downloading https://files.pythonhosted.org/packages/a6/22/3d5d4ac391fc49420735031515196727701581d206f387025fed5d998fb5/feynmodel-0.0.0.1.tar.gz
+[2023-04-16 13:57:19] INFO root fetch - processPackages [jogos-python]: Downloading https://files.pythonhosted.org/packages/68/30/f8f9acc427e8f7c54eb0cda302185a2936f7f67d59a04cc41ee20f5e22a8/jogos_python-0.9.0.tar.gz
+[2023-04-16 13:57:19] INFO root fetch - processPackages [altb]: Downloading https://files.pythonhosted.org/packages/83/a7/6adbb99be2de484b6a7d9f807052f0ad8b3a3d7d69e25bded048eba0de5a/altb-0.5.1.tar.gz
+[2023-04-16 13:57:19] INFO root fetch - processPackages [tplink-omada-client]: Downloading https://files.pythonhosted.org/packages/00/cd/3379afa671f1b18fdbac6f703d57d4da689d1f097139eded0a0ae9490c12/tplink_omada_client-1.2.3.tar.gz
+[2023-04-16 13:57:19] INFO root fetch - processPackages [pyhOn]: Downloading https://files.pythonhosted.org/packages/2e/d4/2e271351067718f5a3c785c555200e725e8832de9b058ad4a1be271e1e52/pyhOn-0.8.0b5.tar.gz
+[2023-04-16 13:57:19] INFO root fetch - processPackages [textadventure]: Downloading https://files.pythonhosted.org/packages/3c/25/15a4911eab61a4304ed0cf2929f38af573d5abb8ad7b36a3ee2bafff9292/textadventure-0.0.3.tar.gz
+[2023-04-16 13:57:19] INFO root fetch - processPackages [knowledge-graph]: Downloading https://files.pythonhosted.org/packages/47/90/475dd8feb480ff2b78563036de729dc01cbf5b25b2ac993862c1e62c8e47/knowledge-graph-0.0.8.tar.gz
+[2023-04-16 13:57:19] INFO root fetch - processPackages [textadventure]: executing diffoscope
+[2023-04-16 13:57:19] INFO root fetch - processPackages [textadventure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textadventure-0.0.2.tar.gz tmp/textadventure-0.0.3.tar.gz --markdown 20230416/t/textadventure/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 13:57:19] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-04-16 13:57:19] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.8.0b4.tar.gz tmp/pyhOn-0.8.0b5.tar.gz --markdown 20230416/p/pyhOn/0.8.0b4-0.8.0b5/diff.md --exclude *.pyd
+[2023-04-16 13:57:19] INFO root fetch - processPackages [tplink-omada-client]: executing diffoscope
+[2023-04-16 13:57:19] INFO root fetch - processPackages [tplink-omada-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tplink_omada_client-1.2.2.tar.gz tmp/tplink_omada_client-1.2.3.tar.gz --markdown 20230416/t/tplink-omada-client/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-16 13:57:19] INFO root fetch - processPackages [polyfactory]: Downloading https://files.pythonhosted.org/packages/5b/e0/395e5ccd88e1a31d6ab60b43d9174c4c434b1f5ecc3fb81c471183a2b7c3/polyfactory-2.0.0a1.tar.gz
+[2023-04-16 13:57:19] INFO root fetch - processPackages [altb]: Downloading https://files.pythonhosted.org/packages/a2/09/9a2664a740d4b9c06262cf648cf6982dad6a56f7f1142e149ff2a2532e38/altb-0.5.2.tar.gz
+[2023-04-16 13:57:19] INFO root fetch - processPackages [feynmodel]: Downloading https://files.pythonhosted.org/packages/bc/17/5eca56b427f5b87a3b9b6028d51102eea39d3d1652beecd829e44ed0fd8c/feynmodel-0.0.4.tar.gz
+[2023-04-16 13:57:19] INFO root fetch - processPackages [altb]: executing diffoscope
+[2023-04-16 13:57:19] INFO root fetch - processPackages [altb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altb-0.5.1.tar.gz tmp/altb-0.5.2.tar.gz --markdown 20230416/a/altb/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-16 13:57:19] INFO root fetch - processPackages [polyfactory]: executing diffoscope
+[2023-04-16 13:57:19] INFO root fetch - processPackages [polyfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyfactory-2.0.0.tar.gz tmp/polyfactory-2.0.0a1.tar.gz --markdown 20230416/p/polyfactory/2.0.0-2.0.0a1/diff.md --exclude *.pyd
+[2023-04-16 13:57:19] INFO root fetch - processPackages [knowledge-graph]: Downloading https://files.pythonhosted.org/packages/9c/cf/8eb769891bf4b0813c7674ef29fbcd29b2c6cd65fec1ce5091bab2354116/knowledge-graph-0.0.9.tar.gz
+[2023-04-16 13:57:19] INFO root fetch - processPackages [jogos-python]: Downloading https://files.pythonhosted.org/packages/3e/b1/ed789c121bb392f6bb30c01e629e8eae6cd04621ac3f9f6c835e2caa7478/jogos_python-0.9.1.tar.gz
+[2023-04-16 13:57:19] INFO root fetch - processPackages [feynmodel]: executing diffoscope
+[2023-04-16 13:57:19] INFO root fetch - processPackages [feynmodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feynmodel-0.0.0.1.tar.gz tmp/feynmodel-0.0.4.tar.gz --markdown 20230416/f/feynmodel/0.0.0.1-0.0.4/diff.md --exclude *.pyd
+[2023-04-16 13:57:19] INFO root fetch - processPackages [knowledge-graph]: executing diffoscope
+[2023-04-16 13:57:19] INFO root fetch - processPackages [knowledge-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledge-graph-0.0.8.tar.gz tmp/knowledge-graph-0.0.9.tar.gz --markdown 20230416/k/knowledge-graph/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 13:57:19] INFO root fetch - processPackages [jogos-python]: executing diffoscope
+[2023-04-16 13:57:19] INFO root fetch - processPackages [jogos-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jogos_python-0.9.0.tar.gz tmp/jogos_python-0.9.1.tar.gz --markdown 20230416/j/jogos-python/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-16 13:57:20] INFO root fetch - main [MainThread]: End processing [PyAltiumRunTop]: success
+[2023-04-16 13:57:20] INFO root fetch - main [MainThread]: End processing [textadventure]: success
+[2023-04-16 13:57:21] INFO root fetch - main [MainThread]: End processing [altb]: success
+[2023-04-16 13:57:21] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-04-16 13:57:21] INFO root fetch - main [MainThread]: End processing [polyfactory]: success
+[2023-04-16 13:57:21] INFO root fetch - main [MainThread]: End processing [feynmodel]: success
+[2023-04-16 13:57:21] INFO root fetch - main [MainThread]: End processing [jogos-python]: success
+[2023-04-16 13:57:21] INFO root fetch - main [MainThread]: End processing [tplink-omada-client]: success
+[2023-04-16 13:57:21] INFO root fetch - main [MainThread]: End processing [knowledge-graph]: success
+[2023-04-16 13:57:21] INFO root fetch - main [MainThread]: Store serial: [17726517]
