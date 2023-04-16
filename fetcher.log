@@ -2143,3 +2143,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 03:58:32] INFO root fetch - main [MainThread]: End processing [pyBibX]: success
 [2023-04-16 03:58:33] INFO root fetch - main [MainThread]: End processing [dynesty]: success
 [2023-04-16 03:58:33] INFO root fetch - main [MainThread]: Store serial: [17723219]
+[2023-04-16 04:03:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723219]
+[2023-04-16 04:03:42] INFO root fetch - main [MainThread]: No changed packages found
+[2023-04-16 04:08:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723219]
+[2023-04-16 04:08:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-16 04:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lockstep
+[2023-04-16 04:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arkdriver
+[2023-04-16 04:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rsrch
+[2023-04-16 04:08:48] WARNING root fetch - processPackages [rsrch]: Skipping, unable to determine old version
+[2023-04-16 04:08:48] INFO root fetch - main [MainThread]: End processing [rsrch] error
+[2023-04-16 04:08:48] INFO root fetch - processPackages [arkdriver]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-16 04:08:48] WARNING root fetch - processPackages [lockstep]: Skipping, unable to determine old version
+[2023-04-16 04:08:48] INFO root fetch - main [MainThread]: End processing [lockstep] error
+[2023-04-16 04:08:48] INFO root fetch - processPackages [arkdriver]: Downloading https://files.pythonhosted.org/packages/dd/ce/30c4bb90cee1df5c1ffed0e83b9a385446c66d3d3092445fcb853bb99c7d/arkdriver-1.0.3.tar.gz
+[2023-04-16 04:08:48] INFO root fetch - processPackages [arkdriver]: Downloading https://files.pythonhosted.org/packages/60/70/afc2d872c78574ad4a6639cd99f60b6f141530029e4b3435accb2db8da22/arkdriver-1.0.4.tar.gz
+[2023-04-16 04:08:48] INFO root fetch - processPackages [arkdriver]: executing diffoscope
+[2023-04-16 04:08:48] INFO root fetch - processPackages [arkdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdriver-1.0.3.tar.gz tmp/arkdriver-1.0.4.tar.gz --markdown 20230416/a/arkdriver/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-16 04:08:49] INFO root fetch - main [MainThread]: End processing [arkdriver]: success
+[2023-04-16 04:08:49] INFO root fetch - main [MainThread]: Store serial: [17723231]
