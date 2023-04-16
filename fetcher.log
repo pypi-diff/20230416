@@ -3071,3 +3071,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 06:48:26] INFO root fetch - processPackages [evolutionary-forest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evolutionary_forest-0.2.0.tar.gz tmp/evolutionary_forest-0.2.1.tar.gz --markdown 20230416/e/evolutionary-forest/0.2.0-0.2.1/diff.md --exclude *.pyd
 [2023-04-16 06:48:28] INFO root fetch - main [MainThread]: End processing [evolutionary-forest]: success
 [2023-04-16 06:48:28] INFO root fetch - main [MainThread]: Store serial: [17723740]
+[2023-04-16 06:53:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723740]
+[2023-04-16 06:53:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 06:53:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robotoff
+[2023-04-16 06:53:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mahermap
+[2023-04-16 06:53:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo13-addon-iot-output-oca
+[2023-04-16 06:53:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo13-addon-iot-oca
+[2023-04-16 06:53:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-iot-output-oca
+[2023-04-16 06:53:37] WARNING root fetch - processPackages [mahermap]: Skipping, unable to determine old version
+[2023-04-16 06:53:37] INFO root fetch - main [MainThread]: End processing [mahermap] error
+[2023-04-16 06:53:37] INFO root fetch - processPackages [robotoff]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-16 06:53:37] INFO root fetch - processPackages [odoo14-addon-iot-output-oca]: New version: [14.0.1.0.3.dev5] Old Version: [14.0.1.0.3.dev4]
+[2023-04-16 06:53:37] INFO root fetch - processPackages [odoo13-addon-iot-output-oca]: New version: [13.0.2.0.1.dev5] Old Version: [13.0.2.0.1.dev4]
+[2023-04-16 06:53:37] INFO root fetch - processPackages [odoo13-addon-iot-oca]: New version: [13.0.2.0.1.dev6] Old Version: [13.0.2.0.1.dev5]
+[2023-04-16 06:53:37] INFO root fetch - processPackages [robotoff]: Downloading https://files.pythonhosted.org/packages/97/2d/802b25e2a99b4e32817db6209a101aaeb4d0eeab04f3b86a286cbd7ac847/robotoff-1.8.0.tar.gz
+[2023-04-16 06:53:37] INFO root fetch - processPackages [odoo14-addon-iot-output-oca]: Downloading https://files.pythonhosted.org/packages/f6/6f/2b2f468f7bb38a67e4b7753d7c6e8a611df9a3f2e3f73f4560a9c1688b64/odoo14_addon_iot_output_oca-14.0.1.0.3.dev4-py3-none-any.whl
+[2023-04-16 06:53:37] INFO root fetch - processPackages [odoo13-addon-iot-output-oca]: Downloading https://files.pythonhosted.org/packages/c5/ff/6e9ca55129d48bd64fa8e433722ee49e4fc13d7fa0cbfdf3fa6515c0c23f/odoo13_addon_iot_output_oca-13.0.2.0.1.dev4-py3-none-any.whl
+[2023-04-16 06:53:37] INFO root fetch - processPackages [odoo13-addon-iot-oca]: Downloading https://files.pythonhosted.org/packages/43/c2/a0ff901de26d1022e84c678715237baaf4dfca11fcf05e74b6c7fb6c39ae/odoo13_addon_iot_oca-13.0.2.0.1.dev5-py3-none-any.whl
+[2023-04-16 06:53:38] INFO root fetch - processPackages [odoo13-addon-iot-output-oca]: Downloading https://files.pythonhosted.org/packages/3a/21/43002669d2f8f66a284d833efbc0ff8863516dc1fd25baeb1c5fbb421dd7/odoo13_addon_iot_output_oca-13.0.2.0.1.dev5-py3-none-any.whl
+[2023-04-16 06:53:38] INFO root fetch - processPackages [robotoff]: Downloading https://files.pythonhosted.org/packages/bb/09/e5af42025b94f90a533b2fac4c071f8c173ae662ff39587b46e8342c60b1/robotoff-1.9.0.tar.gz
+[2023-04-16 06:53:38] INFO root fetch - processPackages [odoo13-addon-iot-oca]: Downloading https://files.pythonhosted.org/packages/77/6b/9a32b387ef0087a9b1cba6464097fcf8d8186ac2dd9bd366e453244c5172/odoo13_addon_iot_oca-13.0.2.0.1.dev6-py3-none-any.whl
+[2023-04-16 06:53:38] INFO root fetch - processPackages [odoo14-addon-iot-output-oca]: Downloading https://files.pythonhosted.org/packages/8c/91/0c8b1230a49858a2f9f7060a8bccda7ed29bc104c30de8eb00bcf1a71c87/odoo14_addon_iot_output_oca-14.0.1.0.3.dev5-py3-none-any.whl
+[2023-04-16 06:53:38] INFO root fetch - processPackages [robotoff]: executing diffoscope
+[2023-04-16 06:53:38] INFO root fetch - processPackages [robotoff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotoff-1.8.0.tar.gz tmp/robotoff-1.9.0.tar.gz --markdown 20230416/r/robotoff/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-16 06:53:38] INFO root fetch - processPackages [odoo13-addon-iot-output-oca]: executing diffoscope
+[2023-04-16 06:53:38] INFO root fetch - processPackages [odoo13-addon-iot-output-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_iot_output_oca-13.0.2.0.1.dev4-py3-none-any.whl.zip tmp/odoo13_addon_iot_output_oca-13.0.2.0.1.dev5-py3-none-any.whl.zip --markdown 20230416/o/odoo13-addon-iot-output-oca/13.0.2.0.1.dev4-13.0.2.0.1.dev5/diff.md --exclude *.pyd
+[2023-04-16 06:53:38] INFO root fetch - processPackages [odoo13-addon-iot-oca]: executing diffoscope
+[2023-04-16 06:53:38] INFO root fetch - processPackages [odoo13-addon-iot-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_iot_oca-13.0.2.0.1.dev5-py3-none-any.whl.zip tmp/odoo13_addon_iot_oca-13.0.2.0.1.dev6-py3-none-any.whl.zip --markdown 20230416/o/odoo13-addon-iot-oca/13.0.2.0.1.dev5-13.0.2.0.1.dev6/diff.md --exclude *.pyd
+[2023-04-16 06:53:38] INFO root fetch - processPackages [odoo14-addon-iot-output-oca]: executing diffoscope
+[2023-04-16 06:53:38] INFO root fetch - processPackages [odoo14-addon-iot-output-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_iot_output_oca-14.0.1.0.3.dev4-py3-none-any.whl.zip tmp/odoo14_addon_iot_output_oca-14.0.1.0.3.dev5-py3-none-any.whl.zip --markdown 20230416/o/odoo14-addon-iot-output-oca/14.0.1.0.3.dev4-14.0.1.0.3.dev5/diff.md --exclude *.pyd
+[2023-04-16 06:53:39] INFO root fetch - main [MainThread]: End processing [odoo13-addon-iot-output-oca]: success
+[2023-04-16 06:53:39] INFO root fetch - main [MainThread]: End processing [odoo13-addon-iot-oca]: success
+[2023-04-16 06:53:39] INFO root fetch - main [MainThread]: End processing [robotoff]: success
+[2023-04-16 06:53:48] INFO root fetch - main [MainThread]: End processing [odoo14-addon-iot-output-oca]: success
+[2023-04-16 06:53:48] INFO root fetch - main [MainThread]: Store serial: [17723753]
