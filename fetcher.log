@@ -2598,3 +2598,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 05:27:01] INFO root fetch - main [MainThread]: End processing [jmdrs]: success
 [2023-04-16 05:27:01] INFO root fetch - main [MainThread]: End processing [dopt]: success
 [2023-04-16 05:27:01] INFO root fetch - main [MainThread]: Store serial: [17723451]
+[2023-04-16 05:32:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723451]
+[2023-04-16 05:32:09] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 05:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jmdrs
+[2023-04-16 05:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pr-review-bot
+[2023-04-16 05:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chibi-apache
+[2023-04-16 05:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ledes-parser
+[2023-04-16 05:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo12-addon-sale-commission
+[2023-04-16 05:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo13-addon-sale-commission
+[2023-04-16 05:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: chatgpt-tool-hub
+[2023-04-16 05:32:10] INFO root fetch - processPackages [odoo13-addon-sale-commission]: New version: [13.0.1.8.1.dev4] Old Version: [13.0.1.8.1.dev3]
+[2023-04-16 05:32:10] INFO root fetch - processPackages [odoo12-addon-sale-commission]: New version: [12.0.3.3.2.99.dev3] Old Version: [12.0.3.3.2.99.dev2]
+[2023-04-16 05:32:10] INFO root fetch - processPackages [jmdrs]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-16 05:32:10] WARNING root fetch - processPackages [pr-review-bot]: Skipping, unable to determine old version
+[2023-04-16 05:32:10] INFO root fetch - main [MainThread]: End processing [pr-review-bot] error
+[2023-04-16 05:32:10] INFO root fetch - processPackages [chibi-apache]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 05:32:10] INFO root fetch - processPackages [chatgpt-tool-hub]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-04-16 05:32:10] INFO root fetch - processPackages [ledes-parser]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-16 05:32:10] INFO root fetch - processPackages [chatgpt-tool-hub]: executing diffoscope
+[2023-04-16 05:32:10] INFO root fetch - processPackages [chatgpt-tool-hub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt-tool-hub-0.3.7.tar.gz tmp/chatgpt-tool-hub-0.3.9.tar.gz --markdown 20230416/c/chatgpt-tool-hub/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-04-16 05:32:10] INFO root fetch - processPackages [chibi-apache]: Downloading https://files.pythonhosted.org/packages/bc/90/cd4b974fad830f328fa6a3708e9cb61ededb852c322dfe54c3a2019cbe0b/chibi_apache-0.0.1.tar.gz
+[2023-04-16 05:32:10] INFO root fetch - processPackages [jmdrs]: Downloading https://files.pythonhosted.org/packages/76/f5/ef67d4f5bade63cbb241f04daf8fe01a55a4eb5a75d3c903c1222deb3069/jmdrs-1.0.6.tar.gz
+[2023-04-16 05:32:10] INFO root fetch - processPackages [odoo13-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/cd/42/497fe606fa582505924495defc66e4a760f2631018413f7a32cf4c94234c/odoo13_addon_sale_commission-13.0.1.8.1.dev3-py3-none-any.whl
+[2023-04-16 05:32:10] INFO root fetch - processPackages [odoo12-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/77/27/5acd77bcee44d587b85f37d3a00e07dd9447a273a0ea721f1f62aaa9e71f/odoo12_addon_sale_commission-12.0.3.3.2.99.dev2-py3-none-any.whl
+[2023-04-16 05:32:10] INFO root fetch - processPackages [ledes-parser]: Downloading https://files.pythonhosted.org/packages/59/b4/75591fd55cc232fb31fe08be507ba2b0109a2fe61aace65449548841738c/ledes-parser-0.3.2.tar.gz
+[2023-04-16 05:32:10] INFO root fetch - processPackages [ledes-parser]: executing diffoscope
+[2023-04-16 05:32:10] INFO root fetch - processPackages [ledes-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ledes-parser-0.3.1.tar.gz tmp/ledes-parser-0.3.2.tar.gz --markdown 20230416/l/ledes-parser/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-16 05:32:10] INFO root fetch - processPackages [jmdrs]: executing diffoscope
+[2023-04-16 05:32:10] INFO root fetch - processPackages [chibi-apache]: Downloading https://files.pythonhosted.org/packages/22/a4/4658b7cae355b39033483b33c3df63599174e913011f922a9eb0e3c946d9/chibi_apache-0.0.2.tar.gz
+[2023-04-16 05:32:10] INFO root fetch - processPackages [jmdrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jmdrs-1.0.5.tar.gz tmp/jmdrs-1.0.6.tar.gz --markdown 20230416/j/jmdrs/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-16 05:32:10] INFO root fetch - processPackages [chibi-apache]: executing diffoscope
+[2023-04-16 05:32:10] INFO root fetch - processPackages [chibi-apache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chibi_apache-0.0.1.tar.gz tmp/chibi_apache-0.0.2.tar.gz --markdown 20230416/c/chibi-apache/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 05:32:10] INFO root fetch - processPackages [odoo13-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/b7/0e/6235954e9fcf7c25c8c548d7430d2a80a6897499824dbff184f50b2be099/odoo13_addon_sale_commission-13.0.1.8.1.dev4-py3-none-any.whl
+[2023-04-16 05:32:10] INFO root fetch - processPackages [odoo12-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/86/02/256effb382cc09b6c4af333da5392840a0cfa53182870cc9d7d76a6b8f93/odoo12_addon_sale_commission-12.0.3.3.2.99.dev3-py3-none-any.whl
+[2023-04-16 05:32:10] INFO root fetch - processPackages [odoo13-addon-sale-commission]: executing diffoscope
+[2023-04-16 05:32:10] INFO root fetch - processPackages [odoo13-addon-sale-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_sale_commission-13.0.1.8.1.dev3-py3-none-any.whl.zip tmp/odoo13_addon_sale_commission-13.0.1.8.1.dev4-py3-none-any.whl.zip --markdown 20230416/o/odoo13-addon-sale-commission/13.0.1.8.1.dev3-13.0.1.8.1.dev4/diff.md --exclude *.pyd
+[2023-04-16 05:32:10] INFO root fetch - processPackages [odoo12-addon-sale-commission]: executing diffoscope
+[2023-04-16 05:32:10] INFO root fetch - processPackages [odoo12-addon-sale-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_sale_commission-12.0.3.3.2.99.dev2-py3-none-any.whl.zip tmp/odoo12_addon_sale_commission-12.0.3.3.2.99.dev3-py3-none-any.whl.zip --markdown 20230416/o/odoo12-addon-sale-commission/12.0.3.3.2.99.dev2-12.0.3.3.2.99.dev3/diff.md --exclude *.pyd
+[2023-04-16 05:32:11] INFO root fetch - main [MainThread]: End processing [jmdrs]: success
+[2023-04-16 05:32:11] INFO root fetch - main [MainThread]: End processing [ledes-parser]: success
+[2023-04-16 05:32:11] INFO root fetch - main [MainThread]: End processing [chibi-apache]: success
+[2023-04-16 05:32:11] INFO root fetch - main [MainThread]: End processing [chatgpt-tool-hub]: success
+[2023-04-16 05:32:12] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-commission]: success
+[2023-04-16 05:32:12] INFO root fetch - main [MainThread]: End processing [odoo13-addon-sale-commission]: success
+[2023-04-16 05:32:12] INFO root fetch - main [MainThread]: Store serial: [17723473]
