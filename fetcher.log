@@ -3008,3 +3008,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 06:32:55] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
 [2023-04-16 06:32:55] INFO root fetch - main [MainThread]: End processing [xsget]: success
 [2023-04-16 06:32:55] INFO root fetch - main [MainThread]: Store serial: [17723706]
+[2023-04-16 06:38:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723706]
+[2023-04-16 06:38:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 06:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: groundingdino
+[2023-04-16 06:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: so-vits-svc-fork
+[2023-04-16 06:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: comic-ocr
+[2023-04-16 06:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: media-downloader
+[2023-04-16 06:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gameyamlspiderandgenerator
+[2023-04-16 06:38:05] INFO root fetch - processPackages [gameyamlspiderandgenerator]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-16 06:38:05] INFO root fetch - processPackages [media-downloader]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-16 06:38:05] INFO root fetch - processPackages [comic-ocr]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-16 06:38:05] WARNING root fetch - processPackages [groundingdino]: Skipping, unable to determine old version
+[2023-04-16 06:38:05] INFO root fetch - main [MainThread]: End processing [groundingdino] error
+[2023-04-16 06:38:05] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.9.0] Old Version: [3.8.1]
+[2023-04-16 06:38:05] INFO root fetch - processPackages [gameyamlspiderandgenerator]: Downloading https://files.pythonhosted.org/packages/0e/da/66bbc730c01a967a640dc5e5bc980b30d018cb4eda02ef17d8387ca39b8e/gameyamlspiderandgenerator-1.1.1.tar.gz
+[2023-04-16 06:38:05] INFO root fetch - processPackages [comic-ocr]: Downloading https://files.pythonhosted.org/packages/6b/8a/ff99de4b4b30fedcd2f687942ac1b5e31b9e2d8dcdad396c6e197caac07f/comic-ocr-0.1.2.tar.gz
+[2023-04-16 06:38:05] INFO root fetch - processPackages [media-downloader]: Downloading https://files.pythonhosted.org/packages/3f/e8/3fce5334a7ce5c9328b4961352164755b96ef8e1f598fb2e737ab2a29e98/media_downloader-0.3.0-py2.py3-none-any.whl
+[2023-04-16 06:38:05] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/f4/21/9abe2dc236b0a4fdd1b702ba9cd04c471dd4f1169ad07fdb8613f67e201a/so_vits_svc_fork-3.9.0.tar.gz
+[2023-04-16 06:38:05] INFO root fetch - processPackages [gameyamlspiderandgenerator]: executing diffoscope
+[2023-04-16 06:38:05] INFO root fetch - processPackages [gameyamlspiderandgenerator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gameyamlspiderandgenerator-1.1.0.tar.gz tmp/gameyamlspiderandgenerator-1.1.1.tar.gz --markdown 20230416/g/gameyamlspiderandgenerator/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-16 06:38:05] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-16 06:38:05] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.8.1.tar.gz tmp/so_vits_svc_fork-3.9.0.tar.gz --markdown 20230416/s/so-vits-svc-fork/3.8.1-3.9.0/diff.md --exclude *.pyd
+[2023-04-16 06:38:05] INFO root fetch - processPackages [media-downloader]: Downloading https://files.pythonhosted.org/packages/1c/7d/3e57a91a7d13380f13ca288d1862b2f84e4c0a7db4c8fa407830a9f4fa62/media_downloader-0.4.0-py2.py3-none-any.whl
+[2023-04-16 06:38:05] INFO root fetch - processPackages [comic-ocr]: Downloading https://files.pythonhosted.org/packages/10/23/f8673cfd90c08fd71262d5da8d5d1bb3e345ecba2b235a3a0a45897e5bd9/comic-ocr-0.1.3.tar.gz
+[2023-04-16 06:38:05] INFO root fetch - processPackages [media-downloader]: executing diffoscope
+[2023-04-16 06:38:05] INFO root fetch - processPackages [media-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_downloader-0.3.0-py2.py3-none-any.whl.zip tmp/media_downloader-0.4.0-py2.py3-none-any.whl.zip --markdown 20230416/m/media-downloader/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-16 06:38:05] INFO root fetch - processPackages [comic-ocr]: executing diffoscope
+[2023-04-16 06:38:05] INFO root fetch - processPackages [comic-ocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comic-ocr-0.1.2.tar.gz tmp/comic-ocr-0.1.3.tar.gz --markdown 20230416/c/comic-ocr/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-16 06:38:06] INFO root fetch - main [MainThread]: End processing [gameyamlspiderandgenerator]: success
+[2023-04-16 06:38:06] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-16 06:38:06] INFO root fetch - main [MainThread]: End processing [media-downloader]: success
+[2023-04-16 06:38:06] INFO root fetch - main [MainThread]: End processing [comic-ocr]: success
+[2023-04-16 06:38:06] INFO root fetch - main [MainThread]: Store serial: [17723721]
