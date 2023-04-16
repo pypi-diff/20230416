@@ -10500,3 +10500,69 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 17:20:42] INFO root fetch - main [MainThread]: End processing [artemis-common]: success
 [2023-04-16 17:20:44] INFO root fetch - main [MainThread]: End processing [cbra]: success
 [2023-04-16 17:20:44] INFO root fetch - main [MainThread]: Store serial: [17728076]
+[2023-04-16 17:25:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728076]
+[2023-04-16 17:25:53] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-16 17:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langchain-utils
+[2023-04-16 17:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: varvamp
+[2023-04-16 17:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geolens
+[2023-04-16 17:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gbd-tools
+[2023-04-16 17:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llama-api-server
+[2023-04-16 17:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ma-nish
+[2023-04-16 17:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-models-connect
+[2023-04-16 17:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: SynackAPI
+[2023-04-16 17:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dxsp
+[2023-04-16 17:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: calibrating
+[2023-04-16 17:25:53] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-16 17:25:53] INFO root fetch - processPackages [varvamp]: New version: [0.5] Old Version: [0.4]
+[2023-04-16 17:25:53] INFO root fetch - processPackages [odoo-models-connect]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 17:25:53] INFO root fetch - processPackages [SynackAPI]: New version: [0.4.6] Old Version: [0.4.4]
+[2023-04-16 17:25:53] WARNING root fetch - processPackages [geolens]: Skipping, unable to determine old version
+[2023-04-16 17:25:53] INFO root fetch - processPackages [geolens]: Start processing: aistac-foundation
+[2023-04-16 17:25:53] INFO root fetch - main [MainThread]: End processing [geolens] error
+[2023-04-16 17:25:53] INFO root fetch - processPackages [ma-nish]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-16 17:25:53] INFO root fetch - processPackages [llama-api-server]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-16 17:25:53] INFO root fetch - processPackages [dxsp]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-16 17:25:53] INFO root fetch - processPackages [gbd-tools]: New version: [4.4.0] Old Version: [4.3.9]
+[2023-04-16 17:25:53] INFO root fetch - processPackages [aistac-foundation]: New version: [2.9.7] Old Version: [2.9.6]
+[2023-04-16 17:25:53] INFO root fetch - processPackages [calibrating]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-04-16 17:25:53] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-16 17:25:53] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.3.8.tar.gz tmp/langchain_utils-0.3.9.tar.gz --markdown 20230416/l/langchain-utils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-16 17:25:53] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-16 17:25:53] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.1.0.tar.gz tmp/dxsp-1.2.0.tar.gz --markdown 20230416/d/dxsp/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-16 17:25:53] INFO root fetch - processPackages [varvamp]: Downloading https://files.pythonhosted.org/packages/43/a0/b4dd556eceaee3a4ef3963747bd0b0be931723c059c885dfccce5bcc6447/varvamp-0.4.tar.gz
+[2023-04-16 17:25:53] INFO root fetch - processPackages [aistac-foundation]: executing diffoscope
+[2023-04-16 17:25:53] INFO root fetch - processPackages [aistac-foundation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aistac-foundation-2.9.6.tar.gz tmp/aistac-foundation-2.9.7.tar.gz --markdown 20230416/a/aistac-foundation/2.9.6-2.9.7/diff.md --exclude *.pyd
+[2023-04-16 17:25:54] INFO root fetch - processPackages [SynackAPI]: Downloading https://files.pythonhosted.org/packages/40/bd/88e5f012153c09520abae646ce6736f6c207eef64d1158627526c38d0ed3/SynackAPI-0.4.4.tar.gz
+[2023-04-16 17:25:54] INFO root fetch - processPackages [odoo-models-connect]: Downloading https://files.pythonhosted.org/packages/9b/62/61d174a90f2abaab1f6d1fa32899ae3dd67d929d289ec87331b5d8a1fdb9/odoo_models_connect-0.1.2.tar.gz
+[2023-04-16 17:25:54] INFO root fetch - processPackages [ma-nish]: Downloading https://files.pythonhosted.org/packages/a8/8c/19d0db248696f8bd1e05160f2b9788edc90972919d39ab492ab4316d15db/ma-nish-0.5.0.tar.gz
+[2023-04-16 17:25:54] INFO root fetch - processPackages [gbd-tools]: Downloading https://files.pythonhosted.org/packages/d7/db/078d56875daefa7096eb33d017034020d2dd162f1ae88094f7709b569c2c/gbd_tools-4.4.0.tar.gz
+[2023-04-16 17:25:54] INFO root fetch - processPackages [llama-api-server]: Downloading https://files.pythonhosted.org/packages/df/07/3c2f11818bc98af533a63b2861bde9e2e161875ae3a1460d62845e547049/llama_api_server-0.2.2.tar.gz
+[2023-04-16 17:25:54] INFO root fetch - processPackages [odoo-models-connect]: executing diffoscope
+[2023-04-16 17:25:54] INFO root fetch - processPackages [odoo-models-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_models_connect-0.1.1.tar.gz tmp/odoo_models_connect-0.1.2.tar.gz --markdown 20230416/o/odoo-models-connect/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 17:25:54] INFO root fetch - processPackages [calibrating]: Downloading https://files.pythonhosted.org/packages/17/35/ea69e6783524b8268b0cfca5dcff8f3e71442c7de5c45a033ba17885dfa1/calibrating-0.6.5.tar.gz
+[2023-04-16 17:25:54] INFO root fetch - processPackages [ma-nish]: Downloading https://files.pythonhosted.org/packages/ce/02/5aa48addbd4f900385e9c048f335169df45ce1b5e9f24baa8e79674bb8d5/ma-nish-0.6.0.tar.gz
+[2023-04-16 17:25:54] INFO root fetch - processPackages [gbd-tools]: executing diffoscope
+[2023-04-16 17:25:54] INFO root fetch - processPackages [gbd-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gbd_tools-4.3.9.tar.gz tmp/gbd_tools-4.4.0.tar.gz --markdown 20230416/g/gbd-tools/4.3.9-4.4.0/diff.md --exclude *.pyd
+[2023-04-16 17:25:54] INFO root fetch - processPackages [varvamp]: Downloading https://files.pythonhosted.org/packages/37/95/3c0de6e0d1816a958ad612a2b94f68a26795ed302e9d84041775f9cf6872/varvamp-0.5.tar.gz
+[2023-04-16 17:25:54] INFO root fetch - processPackages [SynackAPI]: Downloading https://files.pythonhosted.org/packages/ef/6b/13790ee1d36a336d2a9388749427f9f632d2d395afea43e75a1ebc9ea512/SynackAPI-0.4.6.tar.gz
+[2023-04-16 17:25:54] INFO root fetch - processPackages [llama-api-server]: executing diffoscope
+[2023-04-16 17:25:54] INFO root fetch - processPackages [llama-api-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_api_server-0.2.1.tar.gz tmp/llama_api_server-0.2.2.tar.gz --markdown 20230416/l/llama-api-server/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-16 17:25:54] INFO root fetch - processPackages [calibrating]: executing diffoscope
+[2023-04-16 17:25:54] INFO root fetch - processPackages [calibrating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calibrating-0.6.4.tar.gz tmp/calibrating-0.6.5.tar.gz --markdown 20230416/c/calibrating/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-04-16 17:25:54] INFO root fetch - processPackages [ma-nish]: executing diffoscope
+[2023-04-16 17:25:54] INFO root fetch - processPackages [ma-nish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ma-nish-0.5.0.tar.gz tmp/ma-nish-0.6.0.tar.gz --markdown 20230416/m/ma-nish/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-16 17:25:54] INFO root fetch - processPackages [SynackAPI]: executing diffoscope
+[2023-04-16 17:25:54] INFO root fetch - processPackages [SynackAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SynackAPI-0.4.4.tar.gz tmp/SynackAPI-0.4.6.tar.gz --markdown 20230416/S/SynackAPI/0.4.4-0.4.6/diff.md --exclude *.pyd
+[2023-04-16 17:25:54] INFO root fetch - processPackages [varvamp]: executing diffoscope
+[2023-04-16 17:25:54] INFO root fetch - processPackages [varvamp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/varvamp-0.4.tar.gz tmp/varvamp-0.5.tar.gz --markdown 20230416/v/varvamp/0.4-0.5/diff.md --exclude *.pyd
+[2023-04-16 17:25:55] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-16 17:25:55] INFO root fetch - main [MainThread]: End processing [langchain-utils]: success
+[2023-04-16 17:25:55] INFO root fetch - main [MainThread]: End processing [odoo-models-connect]: success
+[2023-04-16 17:25:55] INFO root fetch - main [MainThread]: End processing [llama-api-server]: success
+[2023-04-16 17:25:55] INFO root fetch - main [MainThread]: End processing [ma-nish]: success
+[2023-04-16 17:25:56] INFO root fetch - main [MainThread]: End processing [varvamp]: success
+[2023-04-16 17:25:56] INFO root fetch - main [MainThread]: End processing [calibrating]: success
+[2023-04-16 17:25:57] INFO root fetch - main [MainThread]: End processing [SynackAPI]: success
+[2023-04-16 17:25:57] INFO root fetch - main [MainThread]: End processing [gbd-tools]: success
+[2023-04-16 17:25:57] INFO root fetch - main [MainThread]: End processing [aistac-foundation]: success
+[2023-04-16 17:25:57] INFO root fetch - main [MainThread]: Store serial: [17728108]
