@@ -14530,3 +14530,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 23:40:40] INFO root fetch - main [MainThread]: End processing [peek-plugin-graphdb]: success
 [2023-04-16 23:40:41] INFO root fetch - main [MainThread]: End processing [peek-plugin-diagram]: success
 [2023-04-16 23:40:41] INFO root fetch - main [MainThread]: Store serial: [17730467]
+[2023-04-16 23:45:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17730467]
+[2023-04-16 23:45:49] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 23:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: playwright-recaptcha
+[2023-04-16 23:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: network-scanner-kbk
+[2023-04-16 23:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sprocket-boxcars-py
+[2023-04-16 23:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nowcasting-datamodel
+[2023-04-16 23:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bygg
+[2023-04-16 23:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flake8-checker
+[2023-04-16 23:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bloodyAD
+[2023-04-16 23:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rasa-model-report
+[2023-04-16 23:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: autobloody
+[2023-04-16 23:45:49] INFO root fetch - processPackages [playwright-recaptcha]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-04-16 23:45:49] INFO root fetch - processPackages [bloodyAD]: New version: [1.0.0] Old Version: [0.2.6]
+[2023-04-16 23:45:49] WARNING root fetch - processPackages [sprocket-boxcars-py]: Skipping, unable to determine old version
+[2023-04-16 23:45:49] INFO root fetch - processPackages [bygg]: New version: [0.0.dev2] Old Version: [0.0.dev1]
+[2023-04-16 23:45:49] INFO root fetch - main [MainThread]: End processing [sprocket-boxcars-py] error
+[2023-04-16 23:45:49] INFO root fetch - processPackages [rasa-model-report]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-04-16 23:45:49] INFO root fetch - processPackages [network-scanner-kbk]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 23:45:49] WARNING root fetch - processPackages [flake8-checker]: Skipping, unable to determine old version
+[2023-04-16 23:45:49] INFO root fetch - main [MainThread]: End processing [flake8-checker] error
+[2023-04-16 23:45:49] INFO root fetch - processPackages [nowcasting-datamodel]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-04-16 23:45:50] INFO root fetch - processPackages [autobloody]: New version: [0.1.6] Old Version: [0.1.3]
+[2023-04-16 23:45:50] INFO root fetch - processPackages [network-scanner-kbk]: Downloading https://files.pythonhosted.org/packages/06/ca/8ad9349799f985d02f2c923205c31f43647ed031b7e4eac728510787c14f/network_scanner_kbk-0.0.1.tar.gz
+[2023-04-16 23:45:50] INFO root fetch - processPackages [bloodyAD]: Downloading https://files.pythonhosted.org/packages/b4/32/7a1e80d8afa35410f2179475ced28b49d34d5af3060da406a8f92acf484d/bloodyAD-0.2.6.tar.gz
+[2023-04-16 23:45:50] INFO root fetch - processPackages [bygg]: Downloading https://files.pythonhosted.org/packages/23/b4/f6becf6b493910c124d448f042bf01edbde6e767ab0cc244513e95369858/bygg-0.0.dev1.tar.gz
+[2023-04-16 23:45:50] INFO root fetch - processPackages [playwright-recaptcha]: Downloading https://files.pythonhosted.org/packages/31/99/2a37b2b2a5b8b27571a51e359d82a431ee98a8db502b05ef7b75ee53bafb/playwright-recaptcha-0.1.3.tar.gz
+[2023-04-16 23:45:50] INFO root fetch - processPackages [rasa-model-report]: Downloading https://files.pythonhosted.org/packages/ab/6f/8e9fa96a7d853847e523d93a90cc63eb19f7ce589cd0b3c9541f6c1fdd4b/rasa-model-report-1.3.3.tar.gz
+[2023-04-16 23:45:50] INFO root fetch - processPackages [nowcasting-datamodel]: Downloading https://files.pythonhosted.org/packages/0c/ed/99c7bc7d65b445f9043ed3fcf20da13ed366d14a82532e4618e86efa5db5/nowcasting_datamodel-1.3.6.tar.gz
+[2023-04-16 23:45:50] INFO root fetch - processPackages [autobloody]: Downloading https://files.pythonhosted.org/packages/3f/f5/47ede5a24c5f5680cfcc211c84f490bd996c9ab1ba8c863c71a96b96edb6/autobloody-0.1.3.tar.gz
+[2023-04-16 23:45:50] INFO root fetch - processPackages [nowcasting-datamodel]: executing diffoscope
+[2023-04-16 23:45:50] INFO root fetch - processPackages [nowcasting-datamodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nowcasting_datamodel-1.3.5.tar.gz tmp/nowcasting_datamodel-1.3.6.tar.gz --markdown 20230416/n/nowcasting-datamodel/1.3.5-1.3.6/diff.md --exclude *.pyd
+[2023-04-16 23:45:50] INFO root fetch - processPackages [bloodyAD]: Downloading https://files.pythonhosted.org/packages/c6/2c/f30ba9225e9b03241ec26004bfb7831095247d0e426f32d0e8d6151965ff/bloodyAD-1.0.0.tar.gz
+[2023-04-16 23:45:50] INFO root fetch - processPackages [playwright-recaptcha]: Downloading https://files.pythonhosted.org/packages/c8/02/1643d9e341574456894a8bbce8edc55b896bbb7746360f1489e4d8a401e7/playwright-recaptcha-0.2.0.tar.gz
+[2023-04-16 23:45:50] INFO root fetch - processPackages [autobloody]: Downloading https://files.pythonhosted.org/packages/cc/5e/e790d64e6a8cfaec8abdcfa05408a4a488ebc2731c21a6607f4418454fd1/autobloody-0.1.6.tar.gz
+[2023-04-16 23:45:50] INFO root fetch - processPackages [network-scanner-kbk]: Downloading https://files.pythonhosted.org/packages/1e/ba/8a91a4a290a190334a323d58bb8bc8bcdd204beb86ffdd512d7cb0d76670/network_scanner_kbk-0.0.2.tar.gz
+[2023-04-16 23:45:50] INFO root fetch - processPackages [bygg]: Downloading https://files.pythonhosted.org/packages/9e/19/cbf70ce9937ea2b4a171d114aca5ceb3c171fb7a0de8224c63dc19d40389/bygg-0.0.dev2.tar.gz
+[2023-04-16 23:45:50] INFO root fetch - processPackages [rasa-model-report]: Downloading https://files.pythonhosted.org/packages/54/7b/1bb55c5fbbc1b3f635ad7a1dce1b9697db82be85a043b7eec3ef505ed2ff/rasa-model-report-1.3.4.tar.gz
+[2023-04-16 23:45:50] INFO root fetch - processPackages [playwright-recaptcha]: executing diffoscope
+[2023-04-16 23:45:50] INFO root fetch - processPackages [playwright-recaptcha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playwright-recaptcha-0.1.3.tar.gz tmp/playwright-recaptcha-0.2.0.tar.gz --markdown 20230416/p/playwright-recaptcha/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 23:45:50] INFO root fetch - processPackages [autobloody]: executing diffoscope
+[2023-04-16 23:45:50] INFO root fetch - processPackages [autobloody]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autobloody-0.1.3.tar.gz tmp/autobloody-0.1.6.tar.gz --markdown 20230416/a/autobloody/0.1.3-0.1.6/diff.md --exclude *.pyd
+[2023-04-16 23:45:50] INFO root fetch - processPackages [bloodyAD]: executing diffoscope
+[2023-04-16 23:45:50] INFO root fetch - processPackages [bloodyAD]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bloodyAD-0.2.6.tar.gz tmp/bloodyAD-1.0.0.tar.gz --markdown 20230416/b/bloodyAD/0.2.6-1.0.0/diff.md --exclude *.pyd
+[2023-04-16 23:45:50] INFO root fetch - processPackages [bygg]: executing diffoscope
+[2023-04-16 23:45:50] INFO root fetch - processPackages [bygg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bygg-0.0.dev1.tar.gz tmp/bygg-0.0.dev2.tar.gz --markdown 20230416/b/bygg/0.0.dev1-0.0.dev2/diff.md --exclude *.pyd
+[2023-04-16 23:45:50] INFO root fetch - processPackages [network-scanner-kbk]: executing diffoscope
+[2023-04-16 23:45:50] INFO root fetch - processPackages [network-scanner-kbk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/network_scanner_kbk-0.0.1.tar.gz tmp/network_scanner_kbk-0.0.2.tar.gz --markdown 20230416/n/network-scanner-kbk/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 23:45:50] INFO root fetch - processPackages [rasa-model-report]: executing diffoscope
+[2023-04-16 23:45:50] INFO root fetch - processPackages [rasa-model-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rasa-model-report-1.3.3.tar.gz tmp/rasa-model-report-1.3.4.tar.gz --markdown 20230416/r/rasa-model-report/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-04-16 23:45:51] INFO root fetch - main [MainThread]: End processing [nowcasting-datamodel]: success
+[2023-04-16 23:45:52] INFO root fetch - main [MainThread]: End processing [bygg]: success
+[2023-04-16 23:45:52] INFO root fetch - main [MainThread]: End processing [playwright-recaptcha]: success
+[2023-04-16 23:45:52] INFO root fetch - main [MainThread]: End processing [network-scanner-kbk]: success
+[2023-04-16 23:45:52] INFO root fetch - main [MainThread]: End processing [bloodyAD]: success
+[2023-04-16 23:45:52] INFO root fetch - main [MainThread]: End processing [autobloody]: success
+[2023-04-16 23:45:52] INFO root fetch - main [MainThread]: End processing [rasa-model-report]: success
+[2023-04-16 23:45:52] INFO root fetch - main [MainThread]: Store serial: [17730496]
