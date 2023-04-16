@@ -12214,3 +12214,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 19:48:51] INFO root fetch - processPackages [packitos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packitos-0.8.1.tar.gz tmp/packitos-0.9.0.tar.gz --markdown 20230416/p/packitos/0.8.1-0.9.0/diff.md --exclude *.pyd
 [2023-04-16 19:48:54] INFO root fetch - main [MainThread]: End processing [packitos]: success
 [2023-04-16 19:48:54] INFO root fetch - main [MainThread]: Store serial: [17729133]
+[2023-04-16 19:53:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729133]
+[2023-04-16 19:54:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 19:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cmtg
+[2023-04-16 19:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aihandler
+[2023-04-16 19:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: feed-archiver
+[2023-04-16 19:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: paper-jsoneditor
+[2023-04-16 19:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: EdgeGPT
+[2023-04-16 19:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: paper-streamfield
+[2023-04-16 19:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cointables
+[2023-04-16 19:54:03] INFO root fetch - processPackages [feed-archiver]: New version: [2.0.0b1] Old Version: [2.0.0b0]
+[2023-04-16 19:54:03] INFO root fetch - processPackages [EdgeGPT]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 19:54:03] WARNING root fetch - processPackages [cmtg]: Skipping, unable to determine old version
+[2023-04-16 19:54:03] INFO root fetch - processPackages [paper-jsoneditor]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-16 19:54:03] INFO root fetch - processPackages [paper-streamfield]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-16 19:54:03] INFO root fetch - main [MainThread]: End processing [cmtg] error
+[2023-04-16 19:54:03] WARNING root fetch - processPackages [cointables]: Skipping, unable to determine old version
+[2023-04-16 19:54:03] INFO root fetch - processPackages [aihandler]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-04-16 19:54:03] INFO root fetch - main [MainThread]: End processing [cointables] error
+[2023-04-16 19:54:03] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-04-16 19:54:03] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.1.8.tar.gz tmp/EdgeGPT-0.1.9.tar.gz --markdown 20230416/E/EdgeGPT/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 19:54:03] INFO root fetch - processPackages [feed-archiver]: executing diffoscope
+[2023-04-16 19:54:03] INFO root fetch - processPackages [feed-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feed-archiver-2.0.0b0.tar.gz tmp/feed-archiver-2.0.0b1.tar.gz --markdown 20230416/f/feed-archiver/2.0.0b0-2.0.0b1/diff.md --exclude *.pyd
+[2023-04-16 19:54:03] INFO root fetch - processPackages [aihandler]: Downloading https://files.pythonhosted.org/packages/39/25/94291136aa8df3eabe61847d9bbef7347a737f53fb1c34b0205a2a1a30c0/aihandler-1.9.2.tar.gz
+[2023-04-16 19:54:03] INFO root fetch - processPackages [paper-streamfield]: Downloading https://files.pythonhosted.org/packages/95/09/b39cb643aaf07a6703c0c22dca63ff01ab0c6ca0c0e1aea397bebbeeead5/paper-streamfield-0.3.0.tar.gz
+[2023-04-16 19:54:03] INFO root fetch - processPackages [paper-jsoneditor]: Downloading https://files.pythonhosted.org/packages/e2/8f/288fe3c1ca55a4ab229741a6d233877ee4f6dc00841ca4db860584913a8e/paper-jsoneditor-0.3.0.tar.gz
+[2023-04-16 19:54:03] INFO root fetch - processPackages [aihandler]: executing diffoscope
+[2023-04-16 19:54:03] INFO root fetch - processPackages [aihandler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aihandler-1.9.1.tar.gz tmp/aihandler-1.9.2.tar.gz --markdown 20230416/a/aihandler/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-04-16 19:54:04] INFO root fetch - processPackages [paper-streamfield]: Downloading https://files.pythonhosted.org/packages/a3/0b/dcd70fa169b06d611fd8adc807c8b8ee80d328c1a14fbd45f67d085d586d/paper-streamfield-0.4.0.tar.gz
+[2023-04-16 19:54:04] INFO root fetch - processPackages [paper-streamfield]: executing diffoscope
+[2023-04-16 19:54:04] INFO root fetch - processPackages [paper-streamfield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-streamfield-0.3.0.tar.gz tmp/paper-streamfield-0.4.0.tar.gz --markdown 20230416/p/paper-streamfield/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-16 19:54:04] INFO root fetch - processPackages [paper-jsoneditor]: Downloading https://files.pythonhosted.org/packages/f4/33/9849795922e4f9f6a7606a8caa183fdabb83156698ba2be153ab5da20151/paper-jsoneditor-0.4.0.tar.gz
+[2023-04-16 19:54:04] INFO root fetch - processPackages [paper-jsoneditor]: executing diffoscope
+[2023-04-16 19:54:04] INFO root fetch - processPackages [paper-jsoneditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-jsoneditor-0.3.0.tar.gz tmp/paper-jsoneditor-0.4.0.tar.gz --markdown 20230416/p/paper-jsoneditor/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-16 19:54:04] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-04-16 19:54:05] INFO root fetch - main [MainThread]: End processing [aihandler]: success
+[2023-04-16 19:54:05] INFO root fetch - main [MainThread]: End processing [feed-archiver]: success
+[2023-04-16 19:54:05] INFO root fetch - main [MainThread]: End processing [paper-streamfield]: success
+[2023-04-16 19:54:35] INFO root fetch - main [MainThread]: End processing [paper-jsoneditor]: success
+[2023-04-16 19:54:35] INFO root fetch - main [MainThread]: Store serial: [17729159]
