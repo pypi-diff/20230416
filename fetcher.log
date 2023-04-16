@@ -2509,3 +2509,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 05:06:17] INFO root fetch - main [MainThread]: End processing [odoo13-addon-purchase-batch-invoicing]: success
 [2023-04-16 05:06:17] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-invoice-supplierinfo-update]: success
 [2023-04-16 05:06:17] INFO root fetch - main [MainThread]: Store serial: [17723399]
+[2023-04-16 05:11:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723399]
+[2023-04-16 05:11:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-16 05:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ai4sqlite3
+[2023-04-16 05:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chibi-apache
+[2023-04-16 05:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: GANDLF
+[2023-04-16 05:11:27] WARNING root fetch - processPackages [ai4sqlite3]: Skipping, unable to determine old version
+[2023-04-16 05:11:27] INFO root fetch - main [MainThread]: End processing [ai4sqlite3] error
+[2023-04-16 05:11:27] WARNING root fetch - processPackages [chibi-apache]: Skipping, unable to determine old version
+[2023-04-16 05:11:27] INFO root fetch - main [MainThread]: End processing [chibi-apache] error
+[2023-04-16 05:11:27] INFO root fetch - processPackages [GANDLF]: New version: [0.0.16.dev20230416] Old Version: [0.0.16.dev20230415]
+[2023-04-16 05:11:27] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/9a/51/5aeaacdd6ab200f042892526f359e3ff0b45cb61606158f78526d5563eb3/GANDLF-0.0.16.dev20230416.tar.gz
+[2023-04-16 05:11:27] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-04-16 05:11:27] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.16.dev20230415.tar.gz tmp/GANDLF-0.0.16.dev20230416.tar.gz --markdown 20230416/G/GANDLF/0.0.16.dev20230415-0.0.16.dev20230416/diff.md --exclude *.pyd
+[2023-04-16 05:11:29] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-04-16 05:11:29] INFO root fetch - main [MainThread]: Store serial: [17723414]
