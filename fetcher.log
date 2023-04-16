@@ -1797,3 +1797,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 03:11:44] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.8.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230416/c/cdk-sops-secrets/1.2.8-1.2.9/diff.md --exclude *.pyd
 [2023-04-16 03:11:46] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
 [2023-04-16 03:11:46] INFO root fetch - main [MainThread]: Store serial: [17723039]
+[2023-04-16 03:16:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723039]
+[2023-04-16 03:16:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-16 03:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: web-browser
+[2023-04-16 03:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mb-pytorch
+[2023-04-16 03:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kicad-package-manager
+[2023-04-16 03:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-lambda-subminute
+[2023-04-16 03:16:54] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304160116] Old Version: [1.0.202304151245]
+[2023-04-16 03:16:54] INFO root fetch - processPackages [cdk-lambda-subminute]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-16 03:16:54] INFO root fetch - processPackages [kicad-package-manager]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 03:16:54] WARNING root fetch - processPackages [web-browser]: Skipping, unable to determine old version
+[2023-04-16 03:16:54] INFO root fetch - main [MainThread]: End processing [web-browser] error
+[2023-04-16 03:16:54] INFO root fetch - processPackages [cdk-lambda-subminute]: Downloading https://files.pythonhosted.org/packages/e5/12/963a9c9137cb30feaf66b7d9cb7a08a6ea591ebef038343c3b132f84bba7/cdk_lambda_subminute-2.0.98.tar.gz
+[2023-04-16 03:16:54] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/09/4e/06f6a282148cbc60fcab986736025527beae8d5abc69487f729d89f78904/mb_pytorch-1.0.202304151245-py3-none-any.whl
+[2023-04-16 03:16:54] INFO root fetch - processPackages [cdk-lambda-subminute]: Downloading https://files.pythonhosted.org/packages/72/85/0d48595efd9bc93c2b767982602157ef78a97896735d1d14075242ba3a9f/cdk_lambda_subminute-2.0.99.tar.gz
+[2023-04-16 03:16:54] INFO root fetch - processPackages [cdk-lambda-subminute]: executing diffoscope
+[2023-04-16 03:16:54] INFO root fetch - processPackages [cdk-lambda-subminute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_lambda_subminute-2.0.98.tar.gz tmp/cdk_lambda_subminute-2.0.99.tar.gz --markdown 20230416/c/cdk-lambda-subminute/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-16 03:16:54] INFO root fetch - processPackages [kicad-package-manager]: Downloading https://files.pythonhosted.org/packages/45/b7/811777fdf66128baae928a10888e9d219222bfa1bae88090c015066eb822/kicad_package_manager-0.0.3.tar.gz
+[2023-04-16 03:16:54] INFO root fetch - processPackages [kicad-package-manager]: executing diffoscope
+[2023-04-16 03:16:54] INFO root fetch - processPackages [kicad-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kicad_package_manager-0.0.2.tar.gz tmp/kicad_package_manager-0.0.3.tar.gz --markdown 20230416/k/kicad-package-manager/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 03:16:54] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/51/75/297f945d4bc69857479949e3074f775cbfea8ec6920d01917ebe38af2635/mb_pytorch-1.0.202304160116-py3-none-any.whl
+[2023-04-16 03:16:55] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-16 03:16:55] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304151245-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304160116-py3-none-any.whl.zip --markdown 20230416/m/mb-pytorch/1.0.202304151245-1.0.202304160116/diff.md --exclude *.pyd
+[2023-04-16 03:16:55] INFO root fetch - main [MainThread]: End processing [kicad-package-manager]: success
+[2023-04-16 03:16:55] INFO root fetch - main [MainThread]: End processing [cdk-lambda-subminute]: success
+[2023-04-16 03:16:56] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2023-04-16 03:16:56] INFO root fetch - main [MainThread]: Store serial: [17723052]
