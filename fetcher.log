@@ -6381,3 +6381,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 11:14:47] INFO root fetch - main [MainThread]: End processing [pydwf]: success
 [2023-04-16 11:14:51] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2023-04-16 11:14:51] INFO root fetch - main [MainThread]: Store serial: [17725564]
+[2023-04-16 11:19:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17725564]
+[2023-04-16 11:20:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 11:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2023-04-16 11:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2023-04-16 11:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PySide2-Fluent-Widgets
+[2023-04-16 11:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xia-fields
+[2023-04-16 11:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jsonrpc-py
+[2023-04-16 11:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mage-ai
+[2023-04-16 11:20:04] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-16 11:20:04] INFO root fetch - processPackages [xia-fields]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-16 11:20:04] INFO root fetch - processPackages [mage-ai]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-16 11:20:04] INFO root fetch - processPackages [jsonrpc-py]: New version: [3.0.0] Old Version: [2.5.1]
+[2023-04-16 11:20:04] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-16 11:20:04] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-16 11:20:04] INFO root fetch - processPackages [mage-ai]: executing diffoscope
+[2023-04-16 11:20:04] INFO root fetch - processPackages [jsonrpc-py]: Downloading https://files.pythonhosted.org/packages/1e/9f/a064bdf8d42e4399728632a02e527d9266eb717df3aefb638759f3784e95/jsonrpc-py-2.5.1.tar.gz
+[2023-04-16 11:20:04] INFO root fetch - processPackages [mage-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mage-ai-0.8.8.tar.gz tmp/mage-ai-0.8.9.tar.gz --markdown 20230416/m/mage-ai/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-16 11:20:04] INFO root fetch - processPackages [xia-fields]: Downloading https://files.pythonhosted.org/packages/13/01/a1d5c58c885f5dd888bd94729da506d09819bfc82b1cb21df34b1099bb19/xia_fields-0.3.4-cp39-none-win_amd64.whl
+[2023-04-16 11:20:04] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/4a/29/3ee3f702232d8be7b399db8f4395539340d1eb818d8fb1ff59d4c5987b5e/PySide2-Fluent-Widgets-0.7.1.tar.gz
+[2023-04-16 11:20:04] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-16 11:20:04] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230416/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-16 11:20:04] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-16 11:20:04] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230416/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-16 11:20:05] INFO root fetch - processPackages [jsonrpc-py]: Downloading https://files.pythonhosted.org/packages/ff/f1/e6ce936830c92afb302fa6a9a2ea3aebf5189d4b3ad545b2529c04c401a9/jsonrpc-py-3.0.0.tar.gz
+[2023-04-16 11:20:05] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: executing diffoscope
+[2023-04-16 11:20:05] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide2-Fluent-Widgets-0.7.0.tar.gz tmp/PySide2-Fluent-Widgets-0.7.1.tar.gz --markdown 20230416/P/PySide2-Fluent-Widgets/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-16 11:20:05] INFO root fetch - processPackages [jsonrpc-py]: executing diffoscope
+[2023-04-16 11:20:05] INFO root fetch - processPackages [jsonrpc-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonrpc-py-2.5.1.tar.gz tmp/jsonrpc-py-3.0.0.tar.gz --markdown 20230416/j/jsonrpc-py/2.5.1-3.0.0/diff.md --exclude *.pyd
+[2023-04-16 11:20:05] INFO root fetch - processPackages [xia-fields]: Downloading https://files.pythonhosted.org/packages/2e/18/3f730637b809ffe340145f31a3dd0fdc68f70f377f040afd6fa1cf670c96/xia_fields-0.3.5-cp39-none-macosx_11_0_x86_64.whl
+[2023-04-16 11:20:05] INFO root fetch - processPackages [xia-fields]: executing diffoscope
+[2023-04-16 11:20:05] INFO root fetch - processPackages [xia-fields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_fields-0.3.4-cp39-none-win_amd64.whl.zip tmp/xia_fields-0.3.5-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230416/x/xia-fields/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-16 11:20:06] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-16 11:20:06] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-16 11:20:06] INFO root fetch - main [MainThread]: End processing [jsonrpc-py]: success
+[2023-04-16 11:20:06] INFO root fetch - main [MainThread]: End processing [xia-fields]: success
+[2023-04-16 11:20:08] INFO root fetch - main [MainThread]: End processing [PySide2-Fluent-Widgets]: success
+[2023-04-16 11:20:15] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
+[2023-04-16 11:20:15] INFO root fetch - main [MainThread]: Store serial: [17725585]
