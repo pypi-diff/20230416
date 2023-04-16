@@ -8904,3 +8904,65 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 15:00:36] INFO root fetch - main [MainThread]: End processing [syft]: success
 [2023-04-16 15:01:13] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-04-16 15:01:13] INFO root fetch - main [MainThread]: Store serial: [17727072]
+[2023-04-16 15:06:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727072]
+[2023-04-16 15:06:22] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 15:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agstoolbox
+[2023-04-16 15:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: image-reward
+[2023-04-16 15:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spiderYa
+[2023-04-16 15:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyntone
+[2023-04-16 15:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-stdlib
+[2023-04-16 15:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: goastpy
+[2023-04-16 15:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-numpy
+[2023-04-16 15:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: frasa
+[2023-04-16 15:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyifdm
+[2023-04-16 15:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nbdev-pandas
+[2023-04-16 15:06:22] INFO root fetch - processPackages [image-reward]: New version: [0.996] Old Version: [0.995]
+[2023-04-16 15:06:22] INFO root fetch - processPackages [agstoolbox]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-04-16 15:06:22] INFO root fetch - processPackages [pyntone]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-16 15:06:22] WARNING root fetch - processPackages [spiderYa]: Skipping, unable to determine old version
+[2023-04-16 15:06:22] INFO root fetch - processPackages [goastpy]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 15:06:22] INFO root fetch - main [MainThread]: End processing [spiderYa] error
+[2023-04-16 15:06:22] INFO root fetch - processPackages [frasa]: New version: [0.1.50] Old Version: [0.1.4]
+[2023-04-16 15:06:22] INFO root fetch - processPackages [pyifdm]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 15:06:22] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 15:06:22] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 15:06:22] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 15:06:22] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/98/87/63589be12597f803b244774d84a9ea692b222197c5daa0598fdefdc2b8d1/image-reward-0.995.tar.gz
+[2023-04-16 15:06:22] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-16 15:06:22] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230416/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 15:06:22] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-04-16 15:06:22] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230416/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 15:06:22] INFO root fetch - processPackages [agstoolbox]: Downloading https://files.pythonhosted.org/packages/28/d3/3d7beb031d497002da603c88a16be15c66777993e2b9062df530b80a230b/agstoolbox-0.3.9.tar.gz
+[2023-04-16 15:06:22] INFO root fetch - processPackages [goastpy]: Downloading https://files.pythonhosted.org/packages/ea/83/76dfcbc49585273baaac43d62f7f62c30a12a6d1d23940e3057f0f2f3585/goastpy-0.1.0.tar.gz
+[2023-04-16 15:06:22] INFO root fetch - processPackages [pyntone]: Downloading https://files.pythonhosted.org/packages/28/9d/b4d83bafa8de6e2135dbb5bcb5bd6971bd2daa84f6d7e79a310cc5fe1b8c/pyntone-0.2.1.tar.gz
+[2023-04-16 15:06:22] INFO root fetch - processPackages [frasa]: Downloading https://files.pythonhosted.org/packages/93/31/1c8da7a6e8c6ea52b0dd6d12db08f1cf349417f82c1a7e4f2b9d58c0267f/frasa-0.1.50.tar.gz
+[2023-04-16 15:06:22] INFO root fetch - processPackages [pyifdm]: Downloading https://files.pythonhosted.org/packages/a7/d6/79fa7c95ad026ab3ad1e904631b2618ad4cb8686f3fa02721b196c607a6c/pyifdm-1.0.0.tar.gz
+[2023-04-16 15:06:22] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-04-16 15:06:22] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230416/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 15:06:22] INFO root fetch - processPackages [frasa]: executing diffoscope
+[2023-04-16 15:06:22] INFO root fetch - processPackages [frasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frasa-0.1.4.tar.gz tmp/frasa-0.1.50.tar.gz --markdown 20230416/f/frasa/0.1.4-0.1.50/diff.md --exclude *.pyd
+[2023-04-16 15:06:22] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/90/eb/98ebbbf1b80df532b1df0833e87875cbe01441d1de8abce8c59a1e49ffb8/image-reward-0.996.tar.gz
+[2023-04-16 15:06:22] INFO root fetch - processPackages [agstoolbox]: Downloading https://files.pythonhosted.org/packages/62/a0/3bd6c3317da21b98b917e5105b107130bc6b88c241eea70922f1a305ff80/agstoolbox-0.4.0.tar.gz
+[2023-04-16 15:06:22] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-16 15:06:22] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-0.995.tar.gz tmp/image-reward-0.996.tar.gz --markdown 20230416/i/image-reward/0.995-0.996/diff.md --exclude *.pyd
+[2023-04-16 15:06:22] INFO root fetch - processPackages [goastpy]: Downloading https://files.pythonhosted.org/packages/69/a4/c08758ce83abc016e71796dc1c1dca923d5a361fe84d1f51944b350a2070/goastpy-0.1.1.tar.gz
+[2023-04-16 15:06:22] INFO root fetch - processPackages [pyifdm]: Downloading https://files.pythonhosted.org/packages/f1/1c/76c493369649df7db62e584416dd31bf53bcafa92d66aa2a5f8b7b892f95/pyifdm-1.0.1.tar.gz
+[2023-04-16 15:06:22] INFO root fetch - processPackages [agstoolbox]: executing diffoscope
+[2023-04-16 15:06:22] INFO root fetch - processPackages [agstoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agstoolbox-0.3.9.tar.gz tmp/agstoolbox-0.4.0.tar.gz --markdown 20230416/a/agstoolbox/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-04-16 15:06:22] INFO root fetch - processPackages [goastpy]: executing diffoscope
+[2023-04-16 15:06:22] INFO root fetch - processPackages [pyntone]: Downloading https://files.pythonhosted.org/packages/e7/7e/cda9db2416b44e90ca7435051105100dca3282deb98e9587a9fc3efb8a77/pyntone-0.2.2.tar.gz
+[2023-04-16 15:06:22] INFO root fetch - processPackages [goastpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goastpy-0.1.0.tar.gz tmp/goastpy-0.1.1.tar.gz --markdown 20230416/g/goastpy/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 15:06:22] INFO root fetch - processPackages [pyifdm]: executing diffoscope
+[2023-04-16 15:06:22] INFO root fetch - processPackages [pyifdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyifdm-1.0.0.tar.gz tmp/pyifdm-1.0.1.tar.gz --markdown 20230416/p/pyifdm/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 15:06:22] INFO root fetch - processPackages [pyntone]: executing diffoscope
+[2023-04-16 15:06:22] INFO root fetch - processPackages [pyntone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyntone-0.2.1.tar.gz tmp/pyntone-0.2.2.tar.gz --markdown 20230416/p/pyntone/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-16 15:06:23] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-04-16 15:06:23] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-04-16 15:06:23] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-04-16 15:06:24] INFO root fetch - main [MainThread]: End processing [goastpy]: success
+[2023-04-16 15:06:24] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-16 15:06:24] INFO root fetch - main [MainThread]: End processing [pyntone]: success
+[2023-04-16 15:06:24] INFO root fetch - main [MainThread]: End processing [pyifdm]: success
+[2023-04-16 15:06:25] INFO root fetch - main [MainThread]: End processing [agstoolbox]: success
+[2023-04-16 15:06:26] INFO root fetch - main [MainThread]: End processing [frasa]: success
+[2023-04-16 15:06:26] INFO root fetch - main [MainThread]: Store serial: [17727125]
