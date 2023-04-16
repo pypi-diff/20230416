@@ -11845,3 +11845,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 19:11:50] INFO root fetch - main [MainThread]: End processing [profyle]: success
 [2023-04-16 19:11:51] INFO root fetch - main [MainThread]: End processing [uncms]: success
 [2023-04-16 19:11:51] INFO root fetch - main [MainThread]: Store serial: [17728928]
+[2023-04-16 19:16:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728928]
+[2023-04-16 19:17:00] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chatgpt-tool-hub
+[2023-04-16 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfibaro
+[2023-04-16 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycart
+[2023-04-16 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hyperparse
+[2023-04-16 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datamodel-code-generator
+[2023-04-16 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prunerr
+[2023-04-16 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: OmniBridge
+[2023-04-16 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spanishconjugator
+[2023-04-16 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: spanishconjugator
+[2023-04-16 19:17:00] INFO root fetch - processPackages [pycart]: New version: [0.1.21] Old Version: [0.1.20]
+[2023-04-16 19:17:00] INFO root fetch - processPackages [chatgpt-tool-hub]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-04-16 19:17:00] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 19:17:00] INFO root fetch - processPackages [pyfibaro]: New version: [0.7.0] Old Version: [0.6.9]
+[2023-04-16 19:17:00] INFO root fetch - processPackages [hyperparse]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 19:17:00] INFO root fetch - processPackages [prunerr]: New version: [1.1.1b0] Old Version: [1.1.1]
+[2023-04-16 19:17:00] INFO root fetch - processPackages [datamodel-code-generator]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-16 19:17:00] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-16 19:17:00] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-16 19:17:00] INFO root fetch - processPackages [chatgpt-tool-hub]: executing diffoscope
+[2023-04-16 19:17:00] INFO root fetch - processPackages [chatgpt-tool-hub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt-tool-hub-0.3.7.tar.gz tmp/chatgpt-tool-hub-0.3.9.tar.gz --markdown 20230416/c/chatgpt-tool-hub/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-04-16 19:17:00] INFO root fetch - processPackages [pycart]: Downloading https://files.pythonhosted.org/packages/5b/09/4935b886fa93121f88d22aff97ef1bfb873c2f6105dd9b12c12b7a141019/pycart-0.1.20.tar.gz
+[2023-04-16 19:17:00] INFO root fetch - processPackages [prunerr]: Downloading https://files.pythonhosted.org/packages/7e/36/d276831ade5afe70b2d6b09fa13ebf76bcc11ddfaf7b9c7e8eae8f1c2d53/prunerr-1.1.1.tar.gz
+[2023-04-16 19:17:00] INFO root fetch - processPackages [pyfibaro]: Downloading https://files.pythonhosted.org/packages/1c/25/e55f7deee78d8a1e6d6f5413b599b070243f574d4ecd1bd7f30066d057e4/pyfibaro-0.6.9.tar.gz
+[2023-04-16 19:17:00] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-16 19:17:00] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230416/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 19:17:00] INFO root fetch - processPackages [datamodel-code-generator]: Downloading https://files.pythonhosted.org/packages/4a/d9/15bc464ce307254a4d330683427526d5e0601c774b66371809d42cc26da1/datamodel-code-generator-0.9.3.tar.gz
+[2023-04-16 19:17:00] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-16 19:17:00] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230416/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-16 19:17:00] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-16 19:17:00] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230416/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-16 19:17:00] INFO root fetch - processPackages [prunerr]: executing diffoscope
+[2023-04-16 19:17:00] INFO root fetch - processPackages [prunerr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prunerr-1.1.1.tar.gz tmp/prunerr-1.1.1b0.tar.gz --markdown 20230416/p/prunerr/1.1.1-1.1.1b0/diff.md --exclude *.pyd
+[2023-04-16 19:17:00] WARNING root fetch - processPackages [pycart]: Skipping package: exceeds size limit 33006993>=10485760
+[2023-04-16 19:17:00] INFO root fetch - main [MainThread]: End processing [pycart] error
+[2023-04-16 19:17:00] INFO root fetch - processPackages [hyperparse]: Downloading https://files.pythonhosted.org/packages/f0/6d/7120faaaa8718d1067181bf39e41ffaebc2d221ed4486c5a0be3016c0b08/hyperparse-0.0.3.tar.gz
+[2023-04-16 19:17:00] INFO root fetch - processPackages [hyperparse]: executing diffoscope
+[2023-04-16 19:17:00] INFO root fetch - processPackages [hyperparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperparse-0.0.2.tar.gz tmp/hyperparse-0.0.3.tar.gz --markdown 20230416/h/hyperparse/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 19:17:00] INFO root fetch - processPackages [pyfibaro]: Downloading https://files.pythonhosted.org/packages/8a/a5/73be161f81fa2d517d5775f6e9ae206cb1f2083fc79900791bff4d83e0a9/pyfibaro-0.7.0.tar.gz
+[2023-04-16 19:17:00] INFO root fetch - processPackages [pyfibaro]: executing diffoscope
+[2023-04-16 19:17:00] INFO root fetch - processPackages [pyfibaro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfibaro-0.6.9.tar.gz tmp/pyfibaro-0.7.0.tar.gz --markdown 20230416/p/pyfibaro/0.6.9-0.7.0/diff.md --exclude *.pyd
+[2023-04-16 19:17:00] INFO root fetch - processPackages [datamodel-code-generator]: Downloading https://files.pythonhosted.org/packages/4b/a5/18901fbbea50ced634d0cd3b2a12aac3d0a1dbd732418657fc54983b6e59/datamodel-code-generator-0.9.4.tar.gz
+[2023-04-16 19:17:01] INFO root fetch - processPackages [datamodel-code-generator]: executing diffoscope
+[2023-04-16 19:17:01] INFO root fetch - processPackages [datamodel-code-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamodel-code-generator-0.9.3.tar.gz tmp/datamodel-code-generator-0.9.4.tar.gz --markdown 20230416/d/datamodel-code-generator/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-16 19:17:01] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-16 19:17:02] INFO root fetch - main [MainThread]: End processing [hyperparse]: success
+[2023-04-16 19:17:02] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-16 19:17:02] INFO root fetch - main [MainThread]: End processing [pyfibaro]: success
+[2023-04-16 19:17:02] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-16 19:17:03] INFO root fetch - main [MainThread]: End processing [chatgpt-tool-hub]: success
+[2023-04-16 19:17:04] INFO root fetch - main [MainThread]: End processing [datamodel-code-generator]: success
+[2023-04-16 19:17:04] INFO root fetch - main [MainThread]: End processing [prunerr]: success
+[2023-04-16 19:17:04] INFO root fetch - main [MainThread]: Store serial: [17728954]
