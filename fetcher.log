@@ -1459,3 +1459,60 @@
 [2023-04-16 02:39:19] INFO root fetch - main [MainThread]: End processing [django-reusable]: success
 [2023-04-16 02:39:19] INFO root fetch - main [MainThread]: End processing [hassle]: success
 [2023-04-16 02:39:19] INFO root fetch - main [MainThread]: Store serial: [17722901]
+[2023-04-16 02:44:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722901]
+[2023-04-16 02:44:28] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 02:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: awc-cli
+[2023-04-16 02:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-comprehend-s3olap
+[2023-04-16 02:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-cruddy-framework
+[2023-04-16 02:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tfds-nightly
+[2023-04-16 02:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stable-ts
+[2023-04-16 02:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-snowflake
+[2023-04-16 02:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kubric-nightly
+[2023-04-16 02:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: projen
+[2023-04-16 02:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ai-talks
+[2023-04-16 02:44:28] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-16 02:44:28] INFO root fetch - processPackages [awc-cli]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 02:44:28] INFO root fetch - processPackages [stable-ts]: New version: [2.4.0] Old Version: [2.3.1]
+[2023-04-16 02:44:28] INFO root fetch - processPackages [fastapi-cruddy-framework]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-16 02:44:28] INFO root fetch - processPackages [django-snowflake]: New version: [4.2b1] Old Version: [4.2a1]
+[2023-04-16 02:44:28] INFO root fetch - processPackages [ai-talks]: New version: [0.8.993] Old Version: [0.8.992]
+[2023-04-16 02:44:28] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-16 02:44:28] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-04-16 02:44:28] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-04-16 02:44:28] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202304150044] Old Version: [4.9.2.dev202304140044]
+[2023-04-16 02:44:28] INFO root fetch - processPackages [kubric-nightly]: Downloading https://files.pythonhosted.org/packages/80/9c/f8a36b87409bd8bb7977d9b4fb5062be7f7d329808a81deb7941bb7146ef/kubric-nightly-2023.4.8.tar.gz
+[2023-04-16 02:44:28] INFO root fetch - processPackages [ai-talks]: executing diffoscope
+[2023-04-16 02:44:28] INFO root fetch - processPackages [ai-talks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai-talks-0.8.992.tar.gz tmp/ai-talks-0.8.993.tar.gz --markdown 20230416/a/ai-talks/0.8.992-0.8.993/diff.md --exclude *.pyd
+[2023-04-16 02:44:28] INFO root fetch - processPackages [fastapi-cruddy-framework]: Downloading https://files.pythonhosted.org/packages/86/b4/987d57d8928b500cc057351984d7ce660b56c87e3da2442a87c75bc2a674/fastapi_cruddy_framework-0.0.6.tar.gz
+[2023-04-16 02:44:28] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-04-16 02:44:28] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202304140044.tar.gz tmp/tfds-nightly-4.9.2.dev202304150044.tar.gz --markdown 20230416/t/tfds-nightly/4.9.2.dev202304140044-4.9.2.dev202304150044/diff.md --exclude *.pyd
+[2023-04-16 02:44:28] INFO root fetch - processPackages [stable-ts]: Downloading https://files.pythonhosted.org/packages/e4/05/457d3cdabb0a68709bc662827e82a51c5f4b8af7e9adbc209e7f265f554e/stable-ts-2.3.1.tar.gz
+[2023-04-16 02:44:28] INFO root fetch - processPackages [django-snowflake]: Downloading https://files.pythonhosted.org/packages/29/7a/be39fe34f8aea763f4ab1fa3fcddb75e84f384dad178112cf5602fedb25b/django-snowflake-4.2a1.tar.gz
+[2023-04-16 02:44:28] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-04-16 02:44:28] INFO root fetch - main [MainThread]: End processing [cdk-comprehend-s3olap] error
+[2023-04-16 02:44:28] INFO root fetch - processPackages [awc-cli]: Downloading https://files.pythonhosted.org/packages/05/db/0d5439a562dc0cdab04d4ff7f781d3327616e0114985324e68d18ee5fd12/awc_cli-1.0.2-py2.py3-none-any.whl
+[2023-04-16 02:44:28] INFO root fetch - processPackages [kubric-nightly]: Downloading https://files.pythonhosted.org/packages/63/e7/0df7f3b58e6879d03aae81e8afada87e8b042cbd794282867a6e66fa4fdf/kubric-nightly-2023.4.9.tar.gz
+[2023-04-16 02:44:28] INFO root fetch - processPackages [awc-cli]: executing diffoscope
+[2023-04-16 02:44:28] INFO root fetch - processPackages [awc-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awc_cli-1.0.1-py2.py3-none-any.whl.zip tmp/awc_cli-1.0.2-py2.py3-none-any.whl.zip --markdown 20230416/a/awc-cli/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 02:44:28] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-04-16 02:44:28] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.4.8.tar.gz tmp/kubric-nightly-2023.4.9.tar.gz --markdown 20230416/k/kubric-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-16 02:44:28] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-04-16 02:44:28] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230416/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-04-16 02:44:28] INFO root fetch - processPackages [stable-ts]: Downloading https://files.pythonhosted.org/packages/86/1e/c5f03fd0cd70510c4047d2d7370984bde5a412f565b6679a7d3b4f9a66e2/stable-ts-2.4.0.tar.gz
+[2023-04-16 02:44:28] INFO root fetch - processPackages [fastapi-cruddy-framework]: Downloading https://files.pythonhosted.org/packages/eb/f0/c237dcd29aa5b55477c54af2ceeb0e9f86266a372f51d15027122c03928e/fastapi_cruddy_framework-0.0.7.tar.gz
+[2023-04-16 02:44:28] INFO root fetch - processPackages [stable-ts]: executing diffoscope
+[2023-04-16 02:44:28] INFO root fetch - processPackages [stable-ts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stable-ts-2.3.1.tar.gz tmp/stable-ts-2.4.0.tar.gz --markdown 20230416/s/stable-ts/2.3.1-2.4.0/diff.md --exclude *.pyd
+[2023-04-16 02:44:28] INFO root fetch - processPackages [fastapi-cruddy-framework]: executing diffoscope
+[2023-04-16 02:44:28] INFO root fetch - processPackages [fastapi-cruddy-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_cruddy_framework-0.0.6.tar.gz tmp/fastapi_cruddy_framework-0.0.7.tar.gz --markdown 20230416/f/fastapi-cruddy-framework/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-16 02:44:28] INFO root fetch - processPackages [django-snowflake]: Downloading https://files.pythonhosted.org/packages/6f/ad/1f315004d8039f04d6e2ae4d2450d9aefaa95a9ed532d7ce0527630028d0/django-snowflake-4.2b1.tar.gz
+[2023-04-16 02:44:28] INFO root fetch - processPackages [django-snowflake]: executing diffoscope
+[2023-04-16 02:44:28] INFO root fetch - processPackages [django-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-snowflake-4.2a1.tar.gz tmp/django-snowflake-4.2b1.tar.gz --markdown 20230416/d/django-snowflake/4.2a1-4.2b1/diff.md --exclude *.pyd
+[2023-04-16 02:44:29] INFO root fetch - main [MainThread]: End processing [awc-cli]: success
+[2023-04-16 02:44:30] INFO root fetch - main [MainThread]: End processing [ai-talks]: success
+[2023-04-16 02:44:30] INFO root fetch - main [MainThread]: End processing [stable-ts]: success
+[2023-04-16 02:44:30] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-04-16 02:44:30] INFO root fetch - main [MainThread]: End processing [django-snowflake]: success
+[2023-04-16 02:44:30] INFO root fetch - main [MainThread]: End processing [fastapi-cruddy-framework]: success
+[2023-04-16 02:44:31] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-04-16 02:44:40] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-04-16 02:44:40] INFO root fetch - main [MainThread]: Store serial: [17722926]
