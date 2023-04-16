@@ -13182,3 +13182,23 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 21:34:12] INFO root fetch - main [MainThread]: End processing [nowcasting-datamodel]: success
 [2023-04-16 21:34:19] INFO root fetch - main [MainThread]: End processing [meter-digits-recognizer]: success
 [2023-04-16 21:34:19] INFO root fetch - main [MainThread]: Store serial: [17729696]
+[2023-04-16 21:39:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729696]
+[2023-04-16 21:39:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-16 21:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hugging-py-face
+[2023-04-16 21:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbutils-mp
+[2023-04-16 21:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FFmpyg-DavidRodriguezSoaresCUI
+[2023-04-16 21:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: automatic-meter-reader
+[2023-04-16 21:39:28] INFO root fetch - processPackages [lbutils-mp]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-16 21:39:28] WARNING root fetch - processPackages [hugging-py-face]: Skipping, unable to determine old version
+[2023-04-16 21:39:28] INFO root fetch - main [MainThread]: End processing [hugging-py-face] error
+[2023-04-16 21:39:28] INFO root fetch - processPackages [automatic-meter-reader]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 21:39:28] WARNING root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: Skipping, unable to determine old version
+[2023-04-16 21:39:28] INFO root fetch - main [MainThread]: End processing [FFmpyg-DavidRodriguezSoaresCUI] error
+[2023-04-16 21:39:28] INFO root fetch - processPackages [automatic-meter-reader]: executing diffoscope
+[2023-04-16 21:39:28] INFO root fetch - processPackages [automatic-meter-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automatic-meter-reader-1.0.1.tar.gz tmp/automatic-meter-reader-1.0.2.tar.gz --markdown 20230416/a/automatic-meter-reader/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 21:39:28] INFO root fetch - processPackages [lbutils-mp]: Downloading https://files.pythonhosted.org/packages/82/a7/afc37d294bdc2b9f1547db4dedc610bbcdaef7c9976923ec1e3adedaf228/lbutils-mp-0.2.4.tar.gz
+[2023-04-16 21:39:28] INFO root fetch - processPackages [lbutils-mp]: executing diffoscope
+[2023-04-16 21:39:28] INFO root fetch - processPackages [lbutils-mp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbutils-mp-0.2.3.tar.gz tmp/lbutils-mp-0.2.4.tar.gz --markdown 20230416/l/lbutils-mp/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-16 21:39:29] INFO root fetch - main [MainThread]: End processing [automatic-meter-reader]: success
+[2023-04-16 21:39:29] INFO root fetch - main [MainThread]: End processing [lbutils-mp]: success
+[2023-04-16 21:39:29] INFO root fetch - main [MainThread]: Store serial: [17729710]
