@@ -14231,3 +14231,132 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 23:30:00] INFO root fetch - main [MainThread]: End processing [pyunifiprotect]: success
 [2023-04-16 23:30:05] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
 [2023-04-16 23:30:05] INFO root fetch - main [MainThread]: Store serial: [17730340]
+[2023-04-16 23:35:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17730340]
+[2023-04-16 23:35:14] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-04-16 23:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sabledocs
+[2023-04-16 23:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-document-page-reference
+[2023-04-16 23:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: georise
+[2023-04-16 23:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-document-page-reference
+[2023-04-16 23:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sabledocs
+[2023-04-16 23:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chessmaker
+[2023-04-16 23:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: example-package-Oui
+[2023-04-16 23:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lemoncheesecake
+[2023-04-16 23:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: qpd
+[2023-04-16 23:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: arkdriver
+[2023-04-16 23:35:14] INFO root fetch - processPackages [odoo14-addon-document-page-reference]: New version: [14.0.1.2.0] Old Version: [14.0.1.1.1.dev3]
+[2023-04-16 23:35:14] INFO root fetch - processPackages [lemoncheesecake]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-16 23:35:14] INFO root fetch - processPackages [georise]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 23:35:14] INFO root fetch - processPackages [qpd]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-16 23:35:14] INFO root fetch - processPackages [odoo-addon-document-page-reference]: New version: [15.0.1.1.0] Old Version: [15.0.1.0.1.3]
+[2023-04-16 23:35:14] INFO root fetch - processPackages [sabledocs]: New version: [0.1.96] Old Version: [0.1.91]
+[2023-04-16 23:35:14] INFO root fetch - processPackages [sabledocs]: New version: [0.1.96] Old Version: [0.1.91]
+[2023-04-16 23:35:14] WARNING root fetch - processPackages [example-package-Oui]: Skipping, unable to determine old version
+[2023-04-16 23:35:14] INFO root fetch - processPackages [chessmaker]: New version: [0.3.0] Old Version: [0.2]
+[2023-04-16 23:35:14] INFO root fetch - processPackages [example-package-Oui]: Start processing: sabledocs
+[2023-04-16 23:35:14] INFO root fetch - main [MainThread]: End processing [example-package-Oui] error
+[2023-04-16 23:35:14] INFO root fetch - processPackages [arkdriver]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-16 23:35:14] INFO root fetch - processPackages [sabledocs]: New version: [0.1.96] Old Version: [0.1.91]
+[2023-04-16 23:35:14] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/ee/30/0f998d3900f66bb73653b710702f28adfe4b58a64a6f828e3b01b0b234ed/sabledocs-0.1.91.tar.gz
+[2023-04-16 23:35:14] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/ee/30/0f998d3900f66bb73653b710702f28adfe4b58a64a6f828e3b01b0b234ed/sabledocs-0.1.91.tar.gz
+[2023-04-16 23:35:14] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/ee/30/0f998d3900f66bb73653b710702f28adfe4b58a64a6f828e3b01b0b234ed/sabledocs-0.1.91.tar.gz
+[2023-04-16 23:35:14] INFO root fetch - processPackages [odoo-addon-document-page-reference]: Downloading https://files.pythonhosted.org/packages/86/02/345462f169d3c386b51a71875fee14e60c31cbcd3e0c847f9391b882f850/odoo_addon_document_page_reference-15.0.1.0.1.3-py3-none-any.whl
+[2023-04-16 23:35:14] INFO root fetch - processPackages [odoo14-addon-document-page-reference]: Downloading https://files.pythonhosted.org/packages/79/0d/be15d2768142773216d626b18185201903e7ef1e76aace8e90b631d9286b/odoo14_addon_document_page_reference-14.0.1.1.1.dev3-py3-none-any.whl
+[2023-04-16 23:35:14] INFO root fetch - processPackages [qpd]: Downloading https://files.pythonhosted.org/packages/50/b8/f8efaf128624d9b5b4a0d0b489c4c239135117b1a1cd57c4133d3cfbdc96/qpd-0.4.0.tar.gz
+[2023-04-16 23:35:14] INFO root fetch - processPackages [arkdriver]: Downloading https://files.pythonhosted.org/packages/10/25/626e8d29474c6afa59cda97beac33b6881cff35ca24a0b29aabe9bac1e1b/arkdriver-1.0.5.tar.gz
+[2023-04-16 23:35:14] INFO root fetch - processPackages [lemoncheesecake]: Downloading https://files.pythonhosted.org/packages/e5/b2/1f7c5b31e7813a054fb9bd4b919f64f189fd7b9fbe0eb75b6d2cd930b898/lemoncheesecake-1.9.0.tar.gz
+[2023-04-16 23:35:15] INFO root fetch - processPackages [georise]: Downloading https://files.pythonhosted.org/packages/a7/f3/aa14e4579e7f94af3306951f8c0c28f7fd681b9238f1b12b6874e0fd9694/georise-0.0.3.tar.gz
+[2023-04-16 23:35:15] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/38/e2/c0bc9e124b8416491f7dfde3807043d49bc5a8cf5e30c189d75dcbdf6cf3/sabledocs-0.1.96.tar.gz
+[2023-04-16 23:35:15] INFO root fetch - processPackages [arkdriver]: executing diffoscope
+[2023-04-16 23:35:15] INFO root fetch - processPackages [arkdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdriver-1.0.4.tar.gz tmp/arkdriver-1.0.5.tar.gz --markdown 20230416/a/arkdriver/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-16 23:35:15] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/38/e2/c0bc9e124b8416491f7dfde3807043d49bc5a8cf5e30c189d75dcbdf6cf3/sabledocs-0.1.96.tar.gz
+[2023-04-16 23:35:15] INFO root fetch - processPackages [georise]: executing diffoscope
+[2023-04-16 23:35:15] INFO root fetch - processPackages [georise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/georise-0.0.2.tar.gz tmp/georise-0.0.3.tar.gz --markdown 20230416/g/georise/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 23:35:15] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/38/e2/c0bc9e124b8416491f7dfde3807043d49bc5a8cf5e30c189d75dcbdf6cf3/sabledocs-0.1.96.tar.gz
+[2023-04-16 23:35:15] INFO root fetch - processPackages [chessmaker]: Downloading https://files.pythonhosted.org/packages/05/6d/59b391fea696cdaaac4b341caf06579b6a45cdf6731d65418161f28839c8/chessmaker-0.3.0.tar.gz
+[2023-04-16 23:35:15] INFO root fetch - processPackages [odoo14-addon-document-page-reference]: Downloading https://files.pythonhosted.org/packages/db/dd/419bae5a18e913b3fd75e62b757d3edf1e1252a7ba19b0813c8584c44804/odoo14_addon_document_page_reference-14.0.1.2.0-py3-none-any.whl
+[2023-04-16 23:35:15] INFO root fetch - processPackages [odoo-addon-document-page-reference]: Downloading https://files.pythonhosted.org/packages/cf/0d/f3e4bdd97a4d43196b3bbafad3871ef0a6e9d439951fb3467ea83237091a/odoo_addon_document_page_reference-15.0.1.1.0-py3-none-any.whl
+[2023-04-16 23:35:15] INFO root fetch - processPackages [odoo14-addon-document-page-reference]: executing diffoscope
+[2023-04-16 23:35:15] INFO root fetch - processPackages [odoo14-addon-document-page-reference]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_document_page_reference-14.0.1.1.1.dev3-py3-none-any.whl.zip tmp/odoo14_addon_document_page_reference-14.0.1.2.0-py3-none-any.whl.zip --markdown 20230416/o/odoo14-addon-document-page-reference/14.0.1.1.1.dev3-14.0.1.2.0/diff.md --exclude *.pyd
+[2023-04-16 23:35:15] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-16 23:35:15] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.91.tar.gz tmp/sabledocs-0.1.96.tar.gz --markdown 20230416/s/sabledocs/0.1.91-0.1.96/diff.md --exclude *.pyd
+[2023-04-16 23:35:15] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-16 23:35:15] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.91.tar.gz tmp/sabledocs-0.1.96.tar.gz --markdown 20230416/s/sabledocs/0.1.91-0.1.96/diff.md --exclude *.pyd
+[2023-04-16 23:35:15] INFO root fetch - processPackages [qpd]: Downloading https://files.pythonhosted.org/packages/40/df/9476d41c38587f41fb963e6ea5accd263a10734c881447d8ee8bcf2cc90d/qpd-0.4.1.tar.gz
+[2023-04-16 23:35:15] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-16 23:35:15] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.91.tar.gz tmp/sabledocs-0.1.96.tar.gz --markdown 20230416/s/sabledocs/0.1.91-0.1.96/diff.md --exclude *.pyd
+[2023-04-16 23:35:15] INFO root fetch - processPackages [chessmaker]: executing diffoscope
+[2023-04-16 23:35:15] INFO root fetch - processPackages [chessmaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chessmaker-0.2.tar.gz tmp/chessmaker-0.3.0.tar.gz --markdown 20230416/c/chessmaker/0.2-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 23:35:15] INFO root fetch - processPackages [odoo-addon-document-page-reference]: executing diffoscope
+[2023-04-16 23:35:15] INFO root fetch - processPackages [odoo-addon-document-page-reference]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_document_page_reference-15.0.1.0.1.3-py3-none-any.whl.zip tmp/odoo_addon_document_page_reference-15.0.1.1.0-py3-none-any.whl.zip --markdown 20230416/o/odoo-addon-document-page-reference/15.0.1.0.1.3-15.0.1.1.0/diff.md --exclude *.pyd
+[2023-04-16 23:35:15] INFO root fetch - processPackages [lemoncheesecake]: Downloading https://files.pythonhosted.org/packages/27/1d/c1856f39c7586aabf0662f00fc9956ef185ed6ffc4353624a2234e1589cb/lemoncheesecake-1.9.1.tar.gz
+[2023-04-16 23:35:15] INFO root fetch - processPackages [qpd]: executing diffoscope
+[2023-04-16 23:35:15] INFO root fetch - processPackages [qpd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qpd-0.4.0.tar.gz tmp/qpd-0.4.1.tar.gz --markdown 20230416/q/qpd/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-16 23:35:15] INFO root fetch - processPackages [lemoncheesecake]: executing diffoscope
+[2023-04-16 23:35:15] INFO root fetch - processPackages [lemoncheesecake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lemoncheesecake-1.9.0.tar.gz tmp/lemoncheesecake-1.9.1.tar.gz --markdown 20230416/l/lemoncheesecake/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-16 23:35:16] INFO root fetch - processPackages [georise]: Start processing: ib110hw
+[2023-04-16 23:35:16] INFO root fetch - main [MainThread]: End processing [georise]: success
+[2023-04-16 23:35:16] INFO root fetch - processPackages [ib110hw]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 23:35:16] INFO root fetch - processPackages [ib110hw]: Downloading https://files.pythonhosted.org/packages/ff/9c/818ae92be6291992a0a67493df34ed0d3fac9e9d8cf3c3b1db4957b6e355/ib110hw-0.1.1.tar.gz
+[2023-04-16 23:35:16] INFO root fetch - processPackages [ib110hw]: executing diffoscope
+[2023-04-16 23:35:16] INFO root fetch - processPackages [ib110hw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ib110hw-0.1.0.tar.gz tmp/ib110hw-0.1.1.tar.gz --markdown 20230416/i/ib110hw/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 23:35:16] INFO root fetch - processPackages [odoo14-addon-document-page-reference]: Start processing: peek-abstract-chunked-data-loader
+[2023-04-16 23:35:16] INFO root fetch - main [MainThread]: End processing [odoo14-addon-document-page-reference]: success
+[2023-04-16 23:35:16] INFO root fetch - processPackages [peek-abstract-chunked-data-loader]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-16 23:35:16] INFO root fetch - processPackages [arkdriver]: Start processing: peek-abstract-chunked-index
+[2023-04-16 23:35:16] INFO root fetch - main [MainThread]: End processing [arkdriver]: success
+[2023-04-16 23:35:17] INFO root fetch - processPackages [peek-abstract-chunked-index]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-16 23:35:17] INFO root fetch - processPackages [odoo-addon-document-page-reference]: Start processing: peek-admin-doc
+[2023-04-16 23:35:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-document-page-reference]: success
+[2023-04-16 23:35:17] INFO root fetch - processPackages [peek-admin-doc]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-16 23:35:17] INFO root fetch - processPackages [peek-abstract-chunked-data-loader]: executing diffoscope
+[2023-04-16 23:35:17] INFO root fetch - processPackages [peek-abstract-chunked-data-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-abstract-chunked-data-loader-3.3.3.tar.gz tmp/peek-abstract-chunked-data-loader-3.4.0.tar.gz --markdown 20230416/p/peek-abstract-chunked-data-loader/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-16 23:35:17] INFO root fetch - processPackages [qpd]: Start processing: peek-admin-app
+[2023-04-16 23:35:17] INFO root fetch - main [MainThread]: End processing [qpd]: success
+[2023-04-16 23:35:17] INFO root fetch - processPackages [peek-abstract-chunked-index]: executing diffoscope
+[2023-04-16 23:35:17] INFO root fetch - processPackages [peek-abstract-chunked-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-abstract-chunked-index-3.3.3.tar.gz tmp/peek-abstract-chunked-index-3.4.0.tar.gz --markdown 20230416/p/peek-abstract-chunked-index/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-16 23:35:17] INFO root fetch - processPackages [peek-admin-app]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-16 23:35:17] INFO root fetch - processPackages [peek-admin-doc]: executing diffoscope
+[2023-04-16 23:35:17] INFO root fetch - processPackages [peek-admin-doc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-admin-doc-3.3.3.tar.gz tmp/peek-admin-doc-3.4.0.tar.gz --markdown 20230416/p/peek-admin-doc/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-16 23:35:17] INFO root fetch - processPackages [sabledocs]: Start processing: peek-agent-service
+[2023-04-16 23:35:17] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-16 23:35:17] INFO root fetch - processPackages [peek-agent-service]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-16 23:35:17] INFO root fetch - processPackages [sabledocs]: Start processing: peek-core-device
+[2023-04-16 23:35:17] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-16 23:35:17] INFO root fetch - processPackages [peek-admin-app]: executing diffoscope
+[2023-04-16 23:35:17] INFO root fetch - processPackages [peek-admin-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-admin-app-3.3.3.tar.gz tmp/peek-admin-app-3.4.0.tar.gz --markdown 20230416/p/peek-admin-app/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-16 23:35:18] INFO root fetch - processPackages [lemoncheesecake]: Start processing: peek-core-docdb
+[2023-04-16 23:35:18] INFO root fetch - main [MainThread]: End processing [lemoncheesecake]: success
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-core-device]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-core-docdb]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-agent-service]: executing diffoscope
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-agent-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-agent-service-3.3.3.tar.gz tmp/peek-agent-service-3.4.0.tar.gz --markdown 20230416/p/peek-agent-service/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-16 23:35:18] INFO root fetch - processPackages [ib110hw]: Start processing: peek-core-email
+[2023-04-16 23:35:18] INFO root fetch - main [MainThread]: End processing [ib110hw]: success
+[2023-04-16 23:35:18] INFO root fetch - processPackages [chessmaker]: Start processing: peek-core-search
+[2023-04-16 23:35:18] INFO root fetch - main [MainThread]: End processing [chessmaker]: success
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-core-email]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-core-search]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-core-device]: executing diffoscope
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-core-device]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-core-device-3.3.3.tar.gz tmp/peek-core-device-3.4.0.tar.gz --markdown 20230416/p/peek-core-device/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-core-docdb]: executing diffoscope
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-core-docdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-core-docdb-3.3.3.tar.gz tmp/peek-core-docdb-3.4.0.tar.gz --markdown 20230416/p/peek-core-docdb/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-16 23:35:18] INFO root fetch - processPackages [sabledocs]: Start processing: peek-core-user
+[2023-04-16 23:35:18] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-core-email]: executing diffoscope
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-core-email]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-core-email-3.3.3.tar.gz tmp/peek-core-email-3.4.0.tar.gz --markdown 20230416/p/peek-core-email/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-core-user]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-core-search]: executing diffoscope
+[2023-04-16 23:35:18] INFO root fetch - processPackages [peek-core-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-core-search-3.3.3.tar.gz tmp/peek-core-search-3.4.0.tar.gz --markdown 20230416/p/peek-core-search/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-16 23:35:18] INFO root fetch - main [MainThread]: End processing [peek-admin-doc]: success
+[2023-04-16 23:35:19] INFO root fetch - processPackages [peek-core-user]: executing diffoscope
+[2023-04-16 23:35:19] INFO root fetch - processPackages [peek-core-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-core-user-3.3.3.tar.gz tmp/peek-core-user-3.4.0.tar.gz --markdown 20230416/p/peek-core-user/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-16 23:35:19] INFO root fetch - main [MainThread]: End processing [peek-abstract-chunked-data-loader]: success
+[2023-04-16 23:35:19] INFO root fetch - main [MainThread]: End processing [peek-admin-app]: success
+[2023-04-16 23:35:19] INFO root fetch - main [MainThread]: End processing [peek-agent-service]: success
+[2023-04-16 23:35:19] INFO root fetch - main [MainThread]: End processing [peek-abstract-chunked-index]: success
+[2023-04-16 23:35:20] INFO root fetch - main [MainThread]: End processing [peek-core-email]: success
+[2023-04-16 23:35:21] INFO root fetch - main [MainThread]: End processing [peek-core-search]: success
+[2023-04-16 23:35:21] INFO root fetch - main [MainThread]: End processing [peek-core-user]: success
+[2023-04-16 23:35:22] INFO root fetch - main [MainThread]: End processing [peek-core-docdb]: success
+[2023-04-16 23:35:22] INFO root fetch - main [MainThread]: End processing [peek-core-device]: success
+[2023-04-16 23:35:22] INFO root fetch - main [MainThread]: Store serial: [17730392]
