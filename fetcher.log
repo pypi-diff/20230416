@@ -3244,3 +3244,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 07:12:52] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
 [2023-04-16 07:12:52] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
 [2023-04-16 07:12:52] INFO root fetch - main [MainThread]: Store serial: [17723818]
+[2023-04-16 07:17:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723818]
+[2023-04-16 07:18:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 07:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: buildarr-prowlarr
+[2023-04-16 07:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mls-api
+[2023-04-16 07:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wsgi-lineprof
+[2023-04-16 07:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bot-lens
+[2023-04-16 07:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sob
+[2023-04-16 07:18:01] INFO root fetch - processPackages [wsgi-lineprof]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-16 07:18:01] INFO root fetch - processPackages [mls-api]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-16 07:18:01] WARNING root fetch - processPackages [bot-lens]: Skipping, unable to determine old version
+[2023-04-16 07:18:01] INFO root fetch - processPackages [buildarr-prowlarr]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-16 07:18:01] INFO root fetch - main [MainThread]: End processing [bot-lens] error
+[2023-04-16 07:18:01] INFO root fetch - processPackages [sob]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-16 07:18:01] INFO root fetch - processPackages [wsgi-lineprof]: Downloading https://files.pythonhosted.org/packages/92/01/b3dc0d6277f57f159523e48a18c0d08646963add7ea0b56039cc97b06472/wsgi_lineprof-0.8.0.tar.gz
+[2023-04-16 07:18:01] INFO root fetch - processPackages [buildarr-prowlarr]: Downloading https://files.pythonhosted.org/packages/9a/99/1be9a5b451f2f3b2c01013985d672a9e557738707b4552d4403ca4b645fb/buildarr_prowlarr-0.1.1.tar.gz
+[2023-04-16 07:18:01] INFO root fetch - processPackages [mls-api]: Downloading https://files.pythonhosted.org/packages/e3/cd/5cce670d5a8d9435d567eb2d78e92e3f7f3abc279aa292b13fb08cb25490/mls-api-1.0.9.tar.gz
+[2023-04-16 07:18:01] INFO root fetch - processPackages [mls-api]: executing diffoscope
+[2023-04-16 07:18:01] INFO root fetch - processPackages [mls-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mls-api-1.0.8.tar.gz tmp/mls-api-1.0.9.tar.gz --markdown 20230416/m/mls-api/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-16 07:18:01] INFO root fetch - processPackages [sob]: Downloading https://files.pythonhosted.org/packages/68/0b/18d1e5972567a1b3660ba9733a5c03b2b71fca688a5aa5470a0e42a09190/sob-1.8.0.tar.gz
+[2023-04-16 07:18:01] INFO root fetch - processPackages [buildarr-prowlarr]: Downloading https://files.pythonhosted.org/packages/b5/b3/8f17980a0ed08ac9fd38c347d15ef9d7c0e9c31d725517a8285c44aad8e9/buildarr_prowlarr-0.2.0.tar.gz
+[2023-04-16 07:18:01] INFO root fetch - processPackages [buildarr-prowlarr]: executing diffoscope
+[2023-04-16 07:18:01] INFO root fetch - processPackages [buildarr-prowlarr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildarr_prowlarr-0.1.1.tar.gz tmp/buildarr_prowlarr-0.2.0.tar.gz --markdown 20230416/b/buildarr-prowlarr/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 07:18:01] INFO root fetch - processPackages [wsgi-lineprof]: Downloading https://files.pythonhosted.org/packages/3b/a3/4a3fe59c05c2e360e79f22d15b88e448bf35982a3955d684364309ff1e08/wsgi_lineprof-0.9.0.tar.gz
+[2023-04-16 07:18:01] INFO root fetch - processPackages [wsgi-lineprof]: executing diffoscope
+[2023-04-16 07:18:01] INFO root fetch - processPackages [wsgi-lineprof]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wsgi_lineprof-0.8.0.tar.gz tmp/wsgi_lineprof-0.9.0.tar.gz --markdown 20230416/w/wsgi-lineprof/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 07:18:02] INFO root fetch - processPackages [sob]: Downloading https://files.pythonhosted.org/packages/0a/91/66740726cd91782b276f3988fdbe597428377437c72a2be9b03340cbbd72/sob-1.9.0.tar.gz
+[2023-04-16 07:18:02] INFO root fetch - processPackages [sob]: executing diffoscope
+[2023-04-16 07:18:02] INFO root fetch - processPackages [sob]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sob-1.8.0.tar.gz tmp/sob-1.9.0.tar.gz --markdown 20230416/s/sob/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-16 07:18:02] INFO root fetch - main [MainThread]: End processing [mls-api]: success
+[2023-04-16 07:18:02] INFO root fetch - main [MainThread]: End processing [buildarr-prowlarr]: success
+[2023-04-16 07:18:02] INFO root fetch - main [MainThread]: End processing [wsgi-lineprof]: success
+[2023-04-16 07:18:03] INFO root fetch - main [MainThread]: End processing [sob]: success
+[2023-04-16 07:18:03] INFO root fetch - main [MainThread]: Store serial: [17723871]
