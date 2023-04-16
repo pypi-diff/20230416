@@ -12576,3 +12576,55 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 20:25:54] INFO root fetch - main [MainThread]: End processing [RIFT]: success
 [2023-04-16 20:25:56] INFO root fetch - main [MainThread]: End processing [appdaemon]: success
 [2023-04-16 20:25:56] INFO root fetch - main [MainThread]: Store serial: [17729354]
+[2023-04-16 20:31:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729354]
+[2023-04-16 20:31:05] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 20:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyawskit
+[2023-04-16 20:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vhdx-2-zvol
+[2023-04-16 20:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FairDynamicRec
+[2023-04-16 20:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gerbolyze
+[2023-04-16 20:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: minecraft-utilities-api
+[2023-04-16 20:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vollseg-napari-trackmate
+[2023-04-16 20:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: python-dlt
+[2023-04-16 20:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pd-db-wrangler
+[2023-04-16 20:31:05] INFO root fetch - processPackages [gerbolyze]: New version: [3.1.4] Old Version: [3.0.9]
+[2023-04-16 20:31:05] INFO root fetch - processPackages [vhdx-2-zvol]: New version: [0.4] Old Version: [0.3]
+[2023-04-16 20:31:05] INFO root fetch - processPackages [pyawskit]: New version: [0.1.67] Old Version: [0.1.66]
+[2023-04-16 20:31:05] INFO root fetch - processPackages [vollseg-napari-trackmate]: New version: [2.1.4] Old Version: [2.1.3]
+[2023-04-16 20:31:05] WARNING root fetch - processPackages [minecraft-utilities-api]: Skipping, unable to determine old version
+[2023-04-16 20:31:05] INFO root fetch - main [MainThread]: End processing [minecraft-utilities-api] error
+[2023-04-16 20:31:05] INFO root fetch - processPackages [python-dlt]: New version: [0.2.0a9] Old Version: [0.2.0a8]
+[2023-04-16 20:31:05] INFO root fetch - processPackages [FairDynamicRec]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 20:31:06] INFO root fetch - processPackages [pd-db-wrangler]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-16 20:31:06] INFO root fetch - processPackages [gerbolyze]: Downloading https://files.pythonhosted.org/packages/44/76/0ddb5de753586d93ecd92cc2c45da9bbc2940150859295feb6d3a47711a4/gerbolyze-3.0.9.tar.gz
+[2023-04-16 20:31:06] INFO root fetch - processPackages [FairDynamicRec]: Downloading https://files.pythonhosted.org/packages/5d/b7/0a6c7ebde474948885ba888d63dc08a38814d289f5ec95dc9a06d7ff1e8a/FairDynamicRec-0.0.98.tar.gz
+[2023-04-16 20:31:06] INFO root fetch - processPackages [vollseg-napari-trackmate]: Downloading https://files.pythonhosted.org/packages/4c/5e/04f9d6a05ced466c29f3620dc37741e7cfe37149950617f3408e19272324/vollseg-napari-trackmate-2.1.4.tar.gz
+[2023-04-16 20:31:06] INFO root fetch - processPackages [pyawskit]: Downloading https://files.pythonhosted.org/packages/46/d2/78df889e7c1de6d8879043a0e542d64c279034ed2e79d22fbfb2cfdcc2c7/pyawskit-0.1.67.tar.gz
+[2023-04-16 20:31:06] INFO root fetch - processPackages [pd-db-wrangler]: Downloading https://files.pythonhosted.org/packages/b9/4e/7f0d09a9f3904a49538916541f8e930e75da92dcae579a788619c4a4c2e9/pd_db_wrangler-0.8.0.tar.gz
+[2023-04-16 20:31:06] INFO root fetch - processPackages [vhdx-2-zvol]: Downloading https://files.pythonhosted.org/packages/fa/9b/c80182773a501336d441f331ab8f7a83061535a72d1b4932394711c2641f/vhdx_2_zvol-0.4.tar.gz
+[2023-04-16 20:31:06] INFO root fetch - processPackages [pyawskit]: executing diffoscope
+[2023-04-16 20:31:06] INFO root fetch - processPackages [pyawskit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyawskit-0.1.66.tar.gz tmp/pyawskit-0.1.67.tar.gz --markdown 20230416/p/pyawskit/0.1.66-0.1.67/diff.md --exclude *.pyd
+[2023-04-16 20:31:06] INFO root fetch - processPackages [vollseg-napari-trackmate]: executing diffoscope
+[2023-04-16 20:31:06] INFO root fetch - processPackages [vollseg-napari-trackmate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vollseg-napari-trackmate-2.1.3.tar.gz tmp/vollseg-napari-trackmate-2.1.4.tar.gz --markdown 20230416/v/vollseg-napari-trackmate/2.1.3-2.1.4/diff.md --exclude *.pyd
+[2023-04-16 20:31:06] INFO root fetch - processPackages [python-dlt]: Downloading https://files.pythonhosted.org/packages/14/c8/2731306652f98ce20be95dc9bf379f9cf35d087a285ba804dae6b2f6d2e5/python_dlt-0.2.0a8.tar.gz
+[2023-04-16 20:31:06] INFO root fetch - processPackages [vhdx-2-zvol]: executing diffoscope
+[2023-04-16 20:31:06] INFO root fetch - processPackages [vhdx-2-zvol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vhdx_2_zvol-0.3.tar.gz tmp/vhdx_2_zvol-0.4.tar.gz --markdown 20230416/v/vhdx-2-zvol/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-16 20:31:06] INFO root fetch - processPackages [gerbolyze]: Downloading https://files.pythonhosted.org/packages/4d/8b/07867c699f2935462f6acddf77d524c6ed679856837061f88e14e70cf280/gerbolyze-3.1.4.tar.gz
+[2023-04-16 20:31:06] INFO root fetch - processPackages [python-dlt]: Downloading https://files.pythonhosted.org/packages/2d/69/d219b168cad322ca0d36fa1f8921dc0adc5a1937ca297aaca12fc6e41b86/python_dlt-0.2.0a9.tar.gz
+[2023-04-16 20:31:06] INFO root fetch - processPackages [pd-db-wrangler]: Downloading https://files.pythonhosted.org/packages/59/1e/1599fedd49a6c1808c1244559fcee25bc091f36fb1110a174632d8ab7361/pd_db_wrangler-0.9.0.tar.gz
+[2023-04-16 20:31:06] INFO root fetch - processPackages [gerbolyze]: executing diffoscope
+[2023-04-16 20:31:06] INFO root fetch - processPackages [gerbolyze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gerbolyze-3.0.9.tar.gz tmp/gerbolyze-3.1.4.tar.gz --markdown 20230416/g/gerbolyze/3.0.9-3.1.4/diff.md --exclude *.pyd
+[2023-04-16 20:31:07] INFO root fetch - processPackages [python-dlt]: executing diffoscope
+[2023-04-16 20:31:07] INFO root fetch - processPackages [python-dlt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_dlt-0.2.0a8.tar.gz tmp/python_dlt-0.2.0a9.tar.gz --markdown 20230416/p/python-dlt/0.2.0a8-0.2.0a9/diff.md --exclude *.pyd
+[2023-04-16 20:31:07] INFO root fetch - processPackages [pd-db-wrangler]: executing diffoscope
+[2023-04-16 20:31:07] INFO root fetch - processPackages [pd-db-wrangler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pd_db_wrangler-0.8.0.tar.gz tmp/pd_db_wrangler-0.9.0.tar.gz --markdown 20230416/p/pd-db-wrangler/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 20:31:07] INFO root fetch - main [MainThread]: End processing [vhdx-2-zvol]: success
+[2023-04-16 20:31:07] INFO root fetch - main [MainThread]: End processing [pyawskit]: success
+[2023-04-16 20:31:07] INFO root fetch - main [MainThread]: End processing [vollseg-napari-trackmate]: success
+[2023-04-16 20:31:07] INFO root fetch - processPackages [FairDynamicRec]: Downloading https://files.pythonhosted.org/packages/83/63/c6137ab0913afef21e2751c395ace9e2696ac32c771145c8a208c41bbfe1/FairDynamicRec-0.0.99.tar.gz
+[2023-04-16 20:31:08] INFO root fetch - main [MainThread]: End processing [gerbolyze]: success
+[2023-04-16 20:31:08] INFO root fetch - main [MainThread]: End processing [pd-db-wrangler]: success
+[2023-04-16 20:31:09] INFO root fetch - processPackages [FairDynamicRec]: executing diffoscope
+[2023-04-16 20:31:09] INFO root fetch - processPackages [FairDynamicRec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FairDynamicRec-0.0.98.tar.gz tmp/FairDynamicRec-0.0.99.tar.gz --markdown 20230416/F/FairDynamicRec/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 20:31:09] INFO root fetch - main [MainThread]: End processing [python-dlt]: success
+[2023-04-16 20:31:12] INFO root fetch - main [MainThread]: End processing [FairDynamicRec]: success
+[2023-04-16 20:31:12] INFO root fetch - main [MainThread]: Store serial: [17729379]
