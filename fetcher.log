@@ -3159,3 +3159,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 06:59:00] INFO root fetch - main [MainThread]: End processing [unvtray]: success
 [2023-04-16 06:59:32] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-04-16 06:59:32] INFO root fetch - main [MainThread]: Store serial: [17723782]
+[2023-04-16 07:04:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723782]
+[2023-04-16 07:04:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 07:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flash-attn
+[2023-04-16 07:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapid-pe
+[2023-04-16 07:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-l10n-brazil
+[2023-04-16 07:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tflite-model-maker-nightly
+[2023-04-16 07:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multi-model-server
+[2023-04-16 07:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: langful
+[2023-04-16 07:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: poshare
+[2023-04-16 07:04:44] INFO root fetch - processPackages [flash-attn]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 07:04:44] INFO root fetch - processPackages [rapid-pe]: New version: [0.0.7.dev20230416] Old Version: [0.0.7.dev20230415]
+[2023-04-16 07:04:44] INFO root fetch - processPackages [langful]: New version: [0.24] Old Version: [0.23]
+[2023-04-16 07:04:44] INFO root fetch - processPackages [poshare]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 07:04:44] INFO root fetch - processPackages [odoo-addons-oca-l10n-brazil]: New version: [16.0.20230228.0] Old Version: [16.0.20230227.0]
+[2023-04-16 07:04:44] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230416] Old Version: [1.1.8b20230415]
+[2023-04-16 07:04:44] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202304150508] Old Version: [0.4.3.dev202304140508]
+[2023-04-16 07:04:44] INFO root fetch - processPackages [poshare]: executing diffoscope
+[2023-04-16 07:04:44] INFO root fetch - processPackages [poshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poshare-0.1.0.tar.gz tmp/poshare-0.2.0.tar.gz --markdown 20230416/p/poshare/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 07:04:44] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-04-16 07:04:44] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202304140508.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202304150508.tar.gz --markdown 20230416/t/tflite-model-maker-nightly/0.4.3.dev202304140508-0.4.3.dev202304150508/diff.md --exclude *.pyd
+[2023-04-16 07:04:44] INFO root fetch - processPackages [odoo-addons-oca-l10n-brazil]: Downloading https://files.pythonhosted.org/packages/ea/aa/bb870b6f3e793029b505b581993edd537536c1680a24331176a891482552/odoo_addons_oca_l10n_brazil-16.0.20230227.0-py3-none-any.whl
+[2023-04-16 07:04:45] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/de/c9/5fa31688888a2d771abfa229d14bbe65df84e4a68c441226e7bb6967e2fc/rapid_pe-0.0.7.dev20230416.tar.gz
+[2023-04-16 07:04:45] INFO root fetch - processPackages [langful]: Downloading https://files.pythonhosted.org/packages/c2/62/8ea45d895d22f2ab796dacf423564cfcee5255e15a6675da5b70e5eaf74c/langful-0.24-py2.py3-none-any.whl
+[2023-04-16 07:04:45] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/27/60/837369095cfbb569142da3fcc0455735aa7e5209690a0608338d4b506715/multi_model_server-1.1.8b20230416-py2.py3-none-any.whl
+[2023-04-16 07:04:45] INFO root fetch - processPackages [flash-attn]: Downloading https://files.pythonhosted.org/packages/b2/e9/2d689d1fe3585c0167265eed3239f4e26bb4f2c691037a960724a919cde2/flash_attn-1.0.2.tar.gz
+[2023-04-16 07:04:45] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-04-16 07:04:45] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.0.7.dev20230415.tar.gz tmp/rapid_pe-0.0.7.dev20230416.tar.gz --markdown 20230416/r/rapid-pe/0.0.7.dev20230415-0.0.7.dev20230416/diff.md --exclude *.pyd
+[2023-04-16 07:04:45] INFO root fetch - processPackages [langful]: executing diffoscope
+[2023-04-16 07:04:45] INFO root fetch - processPackages [langful]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langful-0.23-py2.py3-none-any.whl.zip tmp/langful-0.24-py2.py3-none-any.whl.zip --markdown 20230416/l/langful/0.23-0.24/diff.md --exclude *.pyd
+[2023-04-16 07:04:45] INFO root fetch - processPackages [odoo-addons-oca-l10n-brazil]: Downloading https://files.pythonhosted.org/packages/4e/ce/6c882dc9dd2adcb4db0e47bfb25fc92cb572e1854785c640817b55066b76/odoo_addons_oca_l10n_brazil-16.0.20230228.0-py3-none-any.whl
+[2023-04-16 07:04:45] INFO root fetch - processPackages [flash-attn]: executing diffoscope
+[2023-04-16 07:04:45] INFO root fetch - processPackages [flash-attn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flash_attn-1.0.1.tar.gz tmp/flash_attn-1.0.2.tar.gz --markdown 20230416/f/flash-attn/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 07:04:45] INFO root fetch - processPackages [odoo-addons-oca-l10n-brazil]: executing diffoscope
+[2023-04-16 07:04:45] INFO root fetch - processPackages [odoo-addons-oca-l10n-brazil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_l10n_brazil-16.0.20230227.0-py3-none-any.whl.zip tmp/odoo_addons_oca_l10n_brazil-16.0.20230228.0-py3-none-any.whl.zip --markdown 20230416/o/odoo-addons-oca-l10n-brazil/16.0.20230227.0-16.0.20230228.0/diff.md --exclude *.pyd
+[2023-04-16 07:04:45] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-04-16 07:04:45] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230415-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230416-py2.py3-none-any.whl.zip --markdown 20230416/m/multi-model-server/1.1.8b20230415-1.1.8b20230416/diff.md --exclude *.pyd
+[2023-04-16 07:04:46] INFO root fetch - main [MainThread]: End processing [poshare]: success
+[2023-04-16 07:04:46] INFO root fetch - main [MainThread]: End processing [langful]: success
+[2023-04-16 07:04:46] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-04-16 07:04:46] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-l10n-brazil]: success
+[2023-04-16 07:04:50] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-04-16 07:05:50] INFO root fetch - main [MainThread]: End processing [flash-attn]: success
+[2023-04-16 07:07:40] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-04-16 07:07:40] INFO root fetch - main [MainThread]: Store serial: [17723799]
