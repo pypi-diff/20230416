@@ -2943,3 +2943,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 06:22:31] INFO root fetch - main [MainThread]: End processing [twitch-archiver]: success
 [2023-04-16 06:22:31] INFO root fetch - main [MainThread]: End processing [SynackAPI]: success
 [2023-04-16 06:22:31] INFO root fetch - main [MainThread]: Store serial: [17723646]
+[2023-04-16 06:27:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723646]
+[2023-04-16 06:27:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 06:27:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickstart-vdk
+[2023-04-16 06:27:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crackerjack
+[2023-04-16 06:27:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snowflake-connector-python-nightly
+[2023-04-16 06:27:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GridPythonModule
+[2023-04-16 06:27:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: so-vits-svc-fork
+[2023-04-16 06:27:40] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.838558221.dev9256] Old Version: [0.2.838186637.dev9255]
+[2023-04-16 06:27:40] WARNING root fetch - processPackages [crackerjack]: Skipping, unable to determine old version
+[2023-04-16 06:27:40] INFO root fetch - main [MainThread]: End processing [crackerjack] error
+[2023-04-16 06:27:40] WARNING root fetch - processPackages [GridPythonModule]: Skipping, unable to determine old version
+[2023-04-16 06:27:40] INFO root fetch - main [MainThread]: End processing [GridPythonModule] error
+[2023-04-16 06:27:40] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.8.1] Old Version: [3.8.0]
+[2023-04-16 06:27:40] INFO root fetch - processPackages [snowflake-connector-python-nightly]: New version: [2023.4.7] Old Version: [2023.4.6]
+[2023-04-16 06:27:40] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/04/4c/16a2533bfb9e38254cca43e7e4254f528fc95f6cc910d162d04b1bfa8bf8/quickstart-vdk-0.2.838558221.dev9256.tar.gz
+[2023-04-16 06:27:40] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/86/bd/efeff75b6f8f3aa0a9a626e1fc7111b3e210c5a12a0e69011daf1bf05107/so_vits_svc_fork-3.8.1.tar.gz
+[2023-04-16 06:27:40] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-16 06:27:40] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.8.0.tar.gz tmp/so_vits_svc_fork-3.8.1.tar.gz --markdown 20230416/s/so-vits-svc-fork/3.8.0-3.8.1/diff.md --exclude *.pyd
+[2023-04-16 06:27:40] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2023-04-16 06:27:40] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.838186637.dev9255.tar.gz tmp/quickstart-vdk-0.2.838558221.dev9256.tar.gz --markdown 20230416/q/quickstart-vdk/0.2.838186637.dev9255-0.2.838558221.dev9256/diff.md --exclude *.pyd
+[2023-04-16 06:27:40] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Downloading https://files.pythonhosted.org/packages/79/4f/ad9c1e8c8da6d34a0adcb526ea4eebb89d0f84724db7a3d55c5797497662/snowflake-connector-python-nightly-2023.4.6.tar.gz
+[2023-04-16 06:27:41] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Downloading https://files.pythonhosted.org/packages/b6/2c/ae6ad5be4f4381238126f4781cb802830351da9b01d90747652771f37191/snowflake-connector-python-nightly-2023.4.7.tar.gz
+[2023-04-16 06:27:41] INFO root fetch - processPackages [snowflake-connector-python-nightly]: executing diffoscope
+[2023-04-16 06:27:41] INFO root fetch - processPackages [snowflake-connector-python-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snowflake-connector-python-nightly-2023.4.6.tar.gz tmp/snowflake-connector-python-nightly-2023.4.7.tar.gz --markdown 20230416/s/snowflake-connector-python-nightly/2023.4.6-2023.4.7/diff.md --exclude *.pyd
+[2023-04-16 06:27:41] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2023-04-16 06:27:41] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-16 06:27:43] INFO root fetch - main [MainThread]: End processing [snowflake-connector-python-nightly]: success
+[2023-04-16 06:27:43] INFO root fetch - main [MainThread]: Store serial: [17723690]
