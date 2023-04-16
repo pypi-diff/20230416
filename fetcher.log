@@ -7936,3 +7936,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 14:13:08] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2023-04-16 14:13:12] INFO root fetch - main [MainThread]: End processing [polyaxon-sdk]: success
 [2023-04-16 14:13:12] INFO root fetch - main [MainThread]: Store serial: [17726585]
+[2023-04-16 14:18:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726585]
+[2023-04-16 14:18:22] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 14:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyqgraf
+[2023-04-16 14:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: image-reward
+[2023-04-16 14:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiogram-dialog
+[2023-04-16 14:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfollower
+[2023-04-16 14:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zescator
+[2023-04-16 14:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: auraboros
+[2023-04-16 14:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rssfixer
+[2023-04-16 14:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mnest
+[2023-04-16 14:18:22] INFO root fetch - processPackages [aiogram-dialog]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2023-04-16 14:18:22] WARNING root fetch - processPackages [zescator]: Skipping, unable to determine old version
+[2023-04-16 14:18:22] INFO root fetch - main [MainThread]: End processing [zescator] error
+[2023-04-16 14:18:22] INFO root fetch - processPackages [image-reward]: New version: [0.992] Old Version: [0.991]
+[2023-04-16 14:18:22] WARNING root fetch - processPackages [rssfixer]: Skipping, unable to determine old version
+[2023-04-16 14:18:22] INFO root fetch - processPackages [auraboros]: New version: [0.9.0a0] Old Version: [0.8.0a0]
+[2023-04-16 14:18:22] INFO root fetch - main [MainThread]: End processing [rssfixer] error
+[2023-04-16 14:18:22] INFO root fetch - processPackages [pyqgraf]: New version: [0.0.9] Old Version: [0.0.6]
+[2023-04-16 14:18:22] INFO root fetch - processPackages [pyfollower]: New version: [0.1.1] Old Version: [0.0.1]
+[2023-04-16 14:18:22] WARNING root fetch - processPackages [mnest]: Skipping, unable to determine old version
+[2023-04-16 14:18:22] INFO root fetch - main [MainThread]: End processing [mnest] error
+[2023-04-16 14:18:22] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/64/5c/84293411b6bdaf07ff852c3087f19e62873fdd1d29b414109068b41af5b9/image-reward-0.991.tar.gz
+[2023-04-16 14:18:22] INFO root fetch - processPackages [auraboros]: executing diffoscope
+[2023-04-16 14:18:22] INFO root fetch - processPackages [auraboros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auraboros-0.8.0a0.tar.gz tmp/auraboros-0.9.0a0.tar.gz --markdown 20230416/a/auraboros/0.8.0a0-0.9.0a0/diff.md --exclude *.pyd
+[2023-04-16 14:18:22] INFO root fetch - processPackages [pyqgraf]: Downloading https://files.pythonhosted.org/packages/9f/c5/6d356e9709af4322578cdffd2af991eeb07d400ab29b11d345bca855b9eb/pyqgraf-0.0.6.tar.gz
+[2023-04-16 14:18:22] INFO root fetch - processPackages [aiogram-dialog]: Downloading https://files.pythonhosted.org/packages/ca/58/a5eebb03900ea91f6bfef4415b0cdcbaf9ac8757a58f8fa715b8074f2028/aiogram_dialog-2.0.0b8-py3-none-any.whl
+[2023-04-16 14:18:22] INFO root fetch - processPackages [pyfollower]: Downloading https://files.pythonhosted.org/packages/08/7a/a2d6e58be1b86fe35653a6d8d687e2ce8fd29239ef3b83b588abe5a20200/pyfollower-0.0.1.tar.gz
+[2023-04-16 14:18:22] INFO root fetch - processPackages [pyqgraf]: Downloading https://files.pythonhosted.org/packages/70/18/65c37721f12d2f6ba7c7b573b4b8b2f314a9df6d45922195e2e387ffb637/pyqgraf-0.0.9.tar.gz
+[2023-04-16 14:18:22] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/2e/8b/735fa0179b91e1f70dc04844a18821010cf163538a4fada7d5d6fa343280/image-reward-0.992.tar.gz
+[2023-04-16 14:18:22] INFO root fetch - processPackages [pyfollower]: Downloading https://files.pythonhosted.org/packages/4c/21/0869d4e2ed2cd70e37bc4ce97619d1928f2782e65010cdf0e4f58c0f32cd/pyfollower-0.1.1-cp38-cp38-win_amd64.whl
+[2023-04-16 14:18:22] INFO root fetch - processPackages [aiogram-dialog]: Downloading https://files.pythonhosted.org/packages/41/8f/95c3c13124dc4ec951f50e22cae6fa670904709a6790f8ccccb06c85629b/aiogram_dialog-2.0.0b9-py3-none-any.whl
+[2023-04-16 14:18:22] INFO root fetch - processPackages [pyqgraf]: executing diffoscope
+[2023-04-16 14:18:22] INFO root fetch - processPackages [pyqgraf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqgraf-0.0.6.tar.gz tmp/pyqgraf-0.0.9.tar.gz --markdown 20230416/p/pyqgraf/0.0.6-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 14:18:23] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-16 14:18:23] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-0.991.tar.gz tmp/image-reward-0.992.tar.gz --markdown 20230416/i/image-reward/0.991-0.992/diff.md --exclude *.pyd
+[2023-04-16 14:18:23] INFO root fetch - processPackages [aiogram-dialog]: executing diffoscope
+[2023-04-16 14:18:23] INFO root fetch - processPackages [aiogram-dialog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram_dialog-2.0.0b8-py3-none-any.whl.zip tmp/aiogram_dialog-2.0.0b9-py3-none-any.whl.zip --markdown 20230416/a/aiogram-dialog/2.0.0b8-2.0.0b9/diff.md --exclude *.pyd
+[2023-04-16 14:18:23] INFO root fetch - processPackages [pyfollower]: executing diffoscope
+[2023-04-16 14:18:23] INFO root fetch - processPackages [pyfollower]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfollower-0.0.1.tar.gz tmp/pyfollower-0.1.1-cp38-cp38-win_amd64.whl.zip --markdown 20230416/p/pyfollower/0.0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 14:18:24] INFO root fetch - main [MainThread]: End processing [pyqgraf]: success
+[2023-04-16 14:18:24] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-16 14:18:24] INFO root fetch - main [MainThread]: End processing [pyfollower]: success
+[2023-04-16 14:18:24] INFO root fetch - main [MainThread]: End processing [aiogram-dialog]: success
+[2023-04-16 14:18:24] INFO root fetch - main [MainThread]: End processing [auraboros]: success
+[2023-04-16 14:18:24] INFO root fetch - main [MainThread]: Store serial: [17726612]
