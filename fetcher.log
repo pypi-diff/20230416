@@ -3832,3 +3832,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 08:26:10] INFO root fetch - main [MainThread]: End processing [sprocket-carball]: success
 [2023-04-16 08:26:10] INFO root fetch - main [MainThread]: End processing [sprocket-carball]: success
 [2023-04-16 08:26:10] INFO root fetch - main [MainThread]: Store serial: [17724216]
+[2023-04-16 08:31:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724216]
+[2023-04-16 08:31:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 08:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbterd
+[2023-04-16 08:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymathematics
+[2023-04-16 08:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netin
+[2023-04-16 08:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: osbeautify
+[2023-04-16 08:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyfollower
+[2023-04-16 08:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ach-file
+[2023-04-16 08:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: digital-unit
+[2023-04-16 08:31:19] INFO root fetch - processPackages [pymathematics]: New version: [2023.4.16.1] Old Version: [2023.4.16]
+[2023-04-16 08:31:19] WARNING root fetch - processPackages [pyfollower]: Skipping, unable to determine old version
+[2023-04-16 08:31:19] INFO root fetch - main [MainThread]: End processing [pyfollower] error
+[2023-04-16 08:31:19] WARNING root fetch - processPackages [osbeautify]: Skipping, unable to determine old version
+[2023-04-16 08:31:19] INFO root fetch - main [MainThread]: End processing [osbeautify] error
+[2023-04-16 08:31:19] WARNING root fetch - processPackages [netin]: Skipping, unable to determine old version
+[2023-04-16 08:31:19] INFO root fetch - main [MainThread]: End processing [netin] error
+[2023-04-16 08:31:19] INFO root fetch - processPackages [dbterd]: New version: [1.1.0b1] Old Version: [1.0.0]
+[2023-04-16 08:31:19] INFO root fetch - processPackages [ach-file]: New version: [0.1.6b0] Old Version: [0.1.5b0]
+[2023-04-16 08:31:19] INFO root fetch - processPackages [digital-unit]: New version: [1.2] Old Version: [1.1]
+[2023-04-16 08:31:19] INFO root fetch - processPackages [pymathematics]: Downloading https://files.pythonhosted.org/packages/6a/e6/ea8f335436c2655256defba77dd16e8fa3ad2a1f5d62dbe461cb14f8eb84/pymathematics-2023.4.16.tar.gz
+[2023-04-16 08:31:19] INFO root fetch - processPackages [digital-unit]: executing diffoscope
+[2023-04-16 08:31:19] INFO root fetch - processPackages [digital-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digital_unit-1.1.tar.gz tmp/digital_unit-1.2.tar.gz --markdown 20230416/d/digital-unit/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-16 08:31:19] INFO root fetch - processPackages [dbterd]: Downloading https://files.pythonhosted.org/packages/0e/68/48d4970bf352d1a5100bdd3292431d0277fb204f7721eed95948a50b93a2/dbterd-1.0.0.tar.gz
+[2023-04-16 08:31:19] INFO root fetch - processPackages [ach-file]: Downloading https://files.pythonhosted.org/packages/7d/ff/f0f7d8617b39a6ca2d0bef2b97b11fee344d72505e60a7e808c73996f565/ach-file-0.1.5b0.tar.gz
+[2023-04-16 08:31:19] INFO root fetch - processPackages [dbterd]: Downloading https://files.pythonhosted.org/packages/3b/62/c0d6576a49756099d16e80a93515e3b52d677393d498592f584ce81bb1c1/dbterd-1.1.0b1.tar.gz
+[2023-04-16 08:31:19] INFO root fetch - processPackages [pymathematics]: Downloading https://files.pythonhosted.org/packages/03/3c/c629e665c277d31cce28992a189ff2a63e1442b90cef5f85079cf5d2d0bb/pymathematics-2023.4.16.1.tar.gz
+[2023-04-16 08:31:19] INFO root fetch - processPackages [ach-file]: Downloading https://files.pythonhosted.org/packages/be/34/27aa865752bb870bd662fbf0d5127da0457ae3d3611ce72a51122937f8d0/ach-file-0.1.6b0.tar.gz
+[2023-04-16 08:31:19] INFO root fetch - processPackages [dbterd]: executing diffoscope
+[2023-04-16 08:31:19] INFO root fetch - processPackages [dbterd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbterd-1.0.0.tar.gz tmp/dbterd-1.1.0b1.tar.gz --markdown 20230416/d/dbterd/1.0.0-1.1.0b1/diff.md --exclude *.pyd
+[2023-04-16 08:31:19] INFO root fetch - processPackages [pymathematics]: executing diffoscope
+[2023-04-16 08:31:19] INFO root fetch - processPackages [pymathematics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymathematics-2023.4.16.tar.gz tmp/pymathematics-2023.4.16.1.tar.gz --markdown 20230416/p/pymathematics/2023.4.16-2023.4.16.1/diff.md --exclude *.pyd
+[2023-04-16 08:31:19] INFO root fetch - processPackages [ach-file]: executing diffoscope
+[2023-04-16 08:31:19] INFO root fetch - processPackages [ach-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ach-file-0.1.5b0.tar.gz tmp/ach-file-0.1.6b0.tar.gz --markdown 20230416/a/ach-file/0.1.5b0-0.1.6b0/diff.md --exclude *.pyd
+[2023-04-16 08:31:20] INFO root fetch - main [MainThread]: End processing [digital-unit]: success
+[2023-04-16 08:31:20] INFO root fetch - main [MainThread]: End processing [pymathematics]: success
+[2023-04-16 08:31:20] INFO root fetch - main [MainThread]: End processing [dbterd]: success
+[2023-04-16 08:31:20] INFO root fetch - main [MainThread]: End processing [ach-file]: success
+[2023-04-16 08:31:20] INFO root fetch - main [MainThread]: Store serial: [17724239]
