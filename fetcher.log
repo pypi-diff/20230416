@@ -12670,3 +12670,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 20:36:23] INFO root fetch - main [MainThread]: End processing [fenrirWeb]: success
 [2023-04-16 20:36:31] INFO root fetch - main [MainThread]: End processing [accurating]: success
 [2023-04-16 20:36:31] INFO root fetch - main [MainThread]: Store serial: [17729402]
+[2023-04-16 20:41:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729402]
+[2023-04-16 20:41:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-16 20:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: terka
+[2023-04-16 20:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyspread
+[2023-04-16 20:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Orange3-Tools
+[2023-04-16 20:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easyexplore
+[2023-04-16 20:41:41] INFO root fetch - processPackages [pyspread]: New version: [2.2] Old Version: [2.1.1]
+[2023-04-16 20:41:41] INFO root fetch - processPackages [terka]: New version: [1.6.0] Old Version: [1.5.5]
+[2023-04-16 20:41:41] WARNING root fetch - processPackages [Orange3-Tools]: Skipping, unable to determine old version
+[2023-04-16 20:41:41] INFO root fetch - main [MainThread]: End processing [Orange3-Tools] error
+[2023-04-16 20:41:41] INFO root fetch - processPackages [easyexplore]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-04-16 20:41:41] INFO root fetch - processPackages [pyspread]: Downloading https://files.pythonhosted.org/packages/78/96/fa75ef4ae7418995d88b2dc04f639e640d2c51ddf6b47f917da7dd00f3a8/pyspread-2.1.1.tar.gz
+[2023-04-16 20:41:41] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/09/24/a772d77aa0e20d7994a74e3db7d00aa6c487ddbf1f8b11ae9758fcaf73c2/terka-1.5.5.tar.gz
+[2023-04-16 20:41:41] INFO root fetch - processPackages [easyexplore]: Downloading https://files.pythonhosted.org/packages/22/ac/900324a2f6aa37cca31d2f65fabcc9a84bc90ea3c32239cb6231dac06fdf/easyexplore-0.7.3.tar.gz
+[2023-04-16 20:41:42] INFO root fetch - processPackages [pyspread]: Downloading https://files.pythonhosted.org/packages/1d/fe/70d47863090e551eaaae84867453b4f2a51493748257344a5087f7dc9eca/pyspread-2.2.tar.gz
+[2023-04-16 20:41:42] INFO root fetch - processPackages [easyexplore]: Downloading https://files.pythonhosted.org/packages/94/d1/ef8855b0162a01a248c5d82e7820cba6997877eeca9cd537cfe405307ac7/easyexplore-0.7.4.tar.gz
+[2023-04-16 20:41:42] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/ba/a2/800de0bcade31f77bd7e7f1af05711708054a2bdf5e2964e88a87bebfcff/terka-1.6.0.tar.gz
+[2023-04-16 20:41:42] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-04-16 20:41:42] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.5.5.tar.gz tmp/terka-1.6.0.tar.gz --markdown 20230416/t/terka/1.5.5-1.6.0/diff.md --exclude *.pyd
+[2023-04-16 20:41:42] INFO root fetch - processPackages [easyexplore]: executing diffoscope
+[2023-04-16 20:41:42] INFO root fetch - processPackages [easyexplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyexplore-0.7.3.tar.gz tmp/easyexplore-0.7.4.tar.gz --markdown 20230416/e/easyexplore/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-04-16 20:41:42] INFO root fetch - processPackages [pyspread]: executing diffoscope
+[2023-04-16 20:41:42] INFO root fetch - processPackages [pyspread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspread-2.1.1.tar.gz tmp/pyspread-2.2.tar.gz --markdown 20230416/p/pyspread/2.1.1-2.2/diff.md --exclude *.pyd
+[2023-04-16 20:41:43] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-04-16 20:41:43] INFO root fetch - main [MainThread]: End processing [easyexplore]: success
+[2023-04-16 20:41:47] INFO root fetch - main [MainThread]: End processing [pyspread]: success
+[2023-04-16 20:41:47] INFO root fetch - main [MainThread]: Store serial: [17729418]
