@@ -3870,3 +3870,71 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 08:31:20] INFO root fetch - main [MainThread]: End processing [dbterd]: success
 [2023-04-16 08:31:20] INFO root fetch - main [MainThread]: End processing [ach-file]: success
 [2023-04-16 08:31:20] INFO root fetch - main [MainThread]: Store serial: [17724239]
+[2023-04-16 08:36:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724239]
+[2023-04-16 08:36:29] INFO root fetch - main [MainThread]: No changed packages found
+[2023-04-16 08:41:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724240]
+[2023-04-16 08:41:35] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-16 08:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: splatnet3-scraper
+[2023-04-16 08:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-universal-paginator
+[2023-04-16 08:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: randog
+[2023-04-16 08:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: checkov
+[2023-04-16 08:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: EuclidSearchPackage
+[2023-04-16 08:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hkfdb
+[2023-04-16 08:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: oai-tools
+[2023-04-16 08:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lctutil
+[2023-04-16 08:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: take-it-easy
+[2023-04-16 08:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ddsasddwwaaa
+[2023-04-16 08:41:35] INFO root fetch - processPackages [randog]: New version: [0.4.0] Old Version: [0.3.0.0]
+[2023-04-16 08:41:35] INFO root fetch - processPackages [django-universal-paginator]: New version: [1.2.0] Old Version: [1.1.3]
+[2023-04-16 08:41:35] INFO root fetch - processPackages [splatnet3-scraper]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-04-16 08:41:35] WARNING root fetch - processPackages [lctutil]: Skipping, unable to determine old version
+[2023-04-16 08:41:35] INFO root fetch - processPackages [lctutil]: Start processing: EuclidSearchPackage
+[2023-04-16 08:41:35] INFO root fetch - main [MainThread]: End processing [lctutil] error
+[2023-04-16 08:41:35] WARNING root fetch - processPackages [ddsasddwwaaa]: Skipping, unable to determine old version
+[2023-04-16 08:41:35] INFO root fetch - main [MainThread]: End processing [ddsasddwwaaa] error
+[2023-04-16 08:41:35] WARNING root fetch - processPackages [take-it-easy]: Skipping, unable to determine old version
+[2023-04-16 08:41:35] INFO root fetch - processPackages [hkfdb]: New version: [2.6] Old Version: [2.5]
+[2023-04-16 08:41:35] INFO root fetch - main [MainThread]: End processing [take-it-easy] error
+[2023-04-16 08:41:35] INFO root fetch - processPackages [oai-tools]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 08:41:35] INFO root fetch - processPackages [EuclidSearchPackage]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-04-16 08:41:35] INFO root fetch - processPackages [EuclidSearchPackage]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-04-16 08:41:35] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-16 08:41:35] INFO root fetch - processPackages [randog]: Downloading https://files.pythonhosted.org/packages/1d/b1/7f04609c7bf1892c135fbe731447e4e3e1a3b2cc635bd668313c4fa1ac64/randog-0.3.0.0.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [django-universal-paginator]: Downloading https://files.pythonhosted.org/packages/d9/c8/9b9bfe1fa0cef37e69f8ceeb8f67d9ace2e4baa9890932cbceba9c3a8f77/django_universal_paginator-1.1.3.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [hkfdb]: Downloading https://files.pythonhosted.org/packages/e7/06/687b788b122348b9e127641dac0fb76767fc5888843b5f899352db985a50/hkfdb-2.5.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [EuclidSearchPackage]: Downloading https://files.pythonhosted.org/packages/91/c9/514c9f1a9b202dfcb79eff4bcddf437f47c6de1b93c071bf552fb697ad45/EuclidSearchPackage-0.5.1.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [splatnet3-scraper]: Downloading https://files.pythonhosted.org/packages/56/61/a8e8002ac867157dc0be99a40b959f3fea1c4a57a113b61e7b3d0df51623/splatnet3_scraper-0.7.4.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [EuclidSearchPackage]: Downloading https://files.pythonhosted.org/packages/91/c9/514c9f1a9b202dfcb79eff4bcddf437f47c6de1b93c071bf552fb697ad45/EuclidSearchPackage-0.5.1.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/8f/c0/b3713d4cbc03ff63d42af6bc96060bf07ac510f578af21d0beb23a58ebd5/checkov-2.3.98.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [splatnet3-scraper]: executing diffoscope
+[2023-04-16 08:41:35] INFO root fetch - processPackages [splatnet3-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splatnet3_scraper-0.7.3.tar.gz tmp/splatnet3_scraper-0.7.4.tar.gz --markdown 20230416/s/splatnet3-scraper/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-04-16 08:41:35] INFO root fetch - processPackages [django-universal-paginator]: Downloading https://files.pythonhosted.org/packages/f8/b5/398b857c20ecc8cd8dd1c1261af6c7116ae727e57008a548391c5f706bf7/django_universal_paginator-1.2.0.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [oai-tools]: Downloading https://files.pythonhosted.org/packages/63/0c/2132f363196bb7b8124aa4c63e538d53a6aa30f8a53f5fcfe2dd9c918769/oai_tools-0.1.2.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [randog]: Downloading https://files.pythonhosted.org/packages/5e/7e/b8ddd03aab69cc002cb660a2319d18dced0b93429d27124b6cfdcad69d93/randog-0.4.0.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [django-universal-paginator]: executing diffoscope
+[2023-04-16 08:41:35] INFO root fetch - processPackages [django-universal-paginator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_universal_paginator-1.1.3.tar.gz tmp/django_universal_paginator-1.2.0.tar.gz --markdown 20230416/d/django-universal-paginator/1.1.3-1.2.0/diff.md --exclude *.pyd
+[2023-04-16 08:41:35] INFO root fetch - processPackages [oai-tools]: executing diffoscope
+[2023-04-16 08:41:35] INFO root fetch - processPackages [oai-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oai_tools-0.1.1.tar.gz tmp/oai_tools-0.1.2.tar.gz --markdown 20230416/o/oai-tools/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 08:41:35] INFO root fetch - processPackages [hkfdb]: Downloading https://files.pythonhosted.org/packages/74/d3/afb9860848bb2068a45ce69c7a0c22c958660a6c0d36ffd1476ee9849468/hkfdb-2.6.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [EuclidSearchPackage]: Downloading https://files.pythonhosted.org/packages/6a/c6/d30410355148c2e754f034a4729f0bd40eca223939e0337070df5e832e3b/EuclidSearchPackage-0.6.0.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [EuclidSearchPackage]: Downloading https://files.pythonhosted.org/packages/6a/c6/d30410355148c2e754f034a4729f0bd40eca223939e0337070df5e832e3b/EuclidSearchPackage-0.6.0.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [randog]: executing diffoscope
+[2023-04-16 08:41:35] INFO root fetch - processPackages [randog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/randog-0.3.0.0.tar.gz tmp/randog-0.4.0.tar.gz --markdown 20230416/r/randog/0.3.0.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-16 08:41:35] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/36/b2/faea7cf4d04d72880327d7e73a0327922cb8cd1c61a51e8fd38f344e9f2f/checkov-2.3.99.tar.gz
+[2023-04-16 08:41:35] INFO root fetch - processPackages [EuclidSearchPackage]: executing diffoscope
+[2023-04-16 08:41:35] INFO root fetch - processPackages [EuclidSearchPackage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EuclidSearchPackage-0.5.1.tar.gz tmp/EuclidSearchPackage-0.6.0.tar.gz --markdown 20230416/E/EuclidSearchPackage/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-04-16 08:41:35] INFO root fetch - processPackages [EuclidSearchPackage]: executing diffoscope
+[2023-04-16 08:41:35] INFO root fetch - processPackages [EuclidSearchPackage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EuclidSearchPackage-0.5.1.tar.gz tmp/EuclidSearchPackage-0.6.0.tar.gz --markdown 20230416/E/EuclidSearchPackage/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-04-16 08:41:35] INFO root fetch - processPackages [hkfdb]: executing diffoscope
+[2023-04-16 08:41:35] INFO root fetch - processPackages [hkfdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hkfdb-2.5.tar.gz tmp/hkfdb-2.6.tar.gz --markdown 20230416/h/hkfdb/2.5-2.6/diff.md --exclude *.pyd
+[2023-04-16 08:41:35] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-16 08:41:35] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230416/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-16 08:41:37] INFO root fetch - main [MainThread]: End processing [oai-tools]: success
+[2023-04-16 08:41:37] INFO root fetch - main [MainThread]: End processing [hkfdb]: success
+[2023-04-16 08:41:37] INFO root fetch - main [MainThread]: End processing [django-universal-paginator]: success
+[2023-04-16 08:41:37] INFO root fetch - main [MainThread]: End processing [randog]: success
+[2023-04-16 08:41:37] INFO root fetch - main [MainThread]: End processing [splatnet3-scraper]: success
+[2023-04-16 08:41:37] INFO root fetch - main [MainThread]: End processing [EuclidSearchPackage]: success
+[2023-04-16 08:41:37] INFO root fetch - main [MainThread]: End processing [EuclidSearchPackage]: success
+[2023-04-16 08:42:16] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-04-16 08:42:16] INFO root fetch - main [MainThread]: Store serial: [17724274]
