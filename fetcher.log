@@ -7090,3 +7090,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 12:34:34] INFO root fetch - main [MainThread]: End processing [torch-snippets]: success
 [2023-04-16 12:34:56] INFO root fetch - main [MainThread]: End processing [pytextrust]: success
 [2023-04-16 12:34:56] INFO root fetch - main [MainThread]: Store serial: [17726093]
+[2023-04-16 12:40:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726093]
+[2023-04-16 12:40:08] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 12:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myPyllant
+[2023-04-16 12:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatgpt-tool-hub
+[2023-04-16 12:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nimocr
+[2023-04-16 12:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oneai
+[2023-04-16 12:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: digimat.bac0
+[2023-04-16 12:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: clipped
+[2023-04-16 12:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alipay-sdk-python
+[2023-04-16 12:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vollseg
+[2023-04-16 12:40:08] INFO root fetch - processPackages [oneai]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-16 12:40:08] INFO root fetch - processPackages [nimocr]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-16 12:40:08] INFO root fetch - processPackages [digimat.bac0]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 12:40:08] INFO root fetch - processPackages [myPyllant]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-16 12:40:08] INFO root fetch - processPackages [chatgpt-tool-hub]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-04-16 12:40:08] INFO root fetch - processPackages [clipped]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 12:40:08] INFO root fetch - processPackages [alipay-sdk-python]: New version: [3.6.72] Old Version: [3.6.598]
+[2023-04-16 12:40:08] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 12:40:08] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 12:40:08] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 12:40:08] INFO root fetch - processPackages [digimat.bac0]: Downloading https://files.pythonhosted.org/packages/90/1f/8b7f947d82dd13146999fe187fa334692873029ccd1f85b42914ef3fccf7/digimat.bac0-0.0.3.tar.gz
+[2023-04-16 12:40:08] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 12:40:08] INFO root fetch - processPackages [oneai]: Downloading https://files.pythonhosted.org/packages/89/0a/916602909edf1a6e1b661edd45fea91d4c79d5b47c0e06ab35b279a9464b/oneai-0.9.8.tar.gz
+[2023-04-16 12:40:08] INFO root fetch - processPackages [alipay-sdk-python]: Downloading https://files.pythonhosted.org/packages/22/78/0403358a7e0f8f02ea2bdc68be9f36e0d91062b152f5578ec591612986c1/alipay-sdk-python-3.6.598.tar.gz
+[2023-04-16 12:40:08] INFO root fetch - processPackages [nimocr]: Downloading https://files.pythonhosted.org/packages/4e/fd/b14ef13fdc3bdbb9c38917c9e512afa8181cc5e9763b84ba662acf719a3f/nimocr-0.1.tar.gz
+[2023-04-16 12:40:08] INFO root fetch - processPackages [clipped]: Downloading https://files.pythonhosted.org/packages/0a/49/925303b81d45b8fb35076cb14c79469b2fd259b6e96163881df995cd7928/clipped-0.1.1.tar.gz
+[2023-04-16 12:40:08] INFO root fetch - processPackages [myPyllant]: Downloading https://files.pythonhosted.org/packages/f8/01/df52cf0c4be3ba66cab2e9b857a872d7d57d544ea71f31b9b3090610b13d/mypyllant-0.2.2.tar.gz
+[2023-04-16 12:40:08] INFO root fetch - processPackages [digimat.bac0]: executing diffoscope
+[2023-04-16 12:40:08] INFO root fetch - processPackages [digimat.bac0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digimat.bac0-0.0.2.tar.gz tmp/digimat.bac0-0.0.3.tar.gz --markdown 20230416/d/digimat.bac0/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 12:40:08] INFO root fetch - processPackages [chatgpt-tool-hub]: executing diffoscope
+[2023-04-16 12:40:08] INFO root fetch - processPackages [chatgpt-tool-hub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt-tool-hub-0.3.7.tar.gz tmp/chatgpt-tool-hub-0.3.9.tar.gz --markdown 20230416/c/chatgpt-tool-hub/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-04-16 12:40:08] INFO root fetch - processPackages [clipped]: executing diffoscope
+[2023-04-16 12:40:08] INFO root fetch - processPackages [clipped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipped-0.1.0.tar.gz tmp/clipped-0.1.1.tar.gz --markdown 20230416/c/clipped/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 12:40:09] INFO root fetch - processPackages [myPyllant]: executing diffoscope
+[2023-04-16 12:40:09] INFO root fetch - processPackages [myPyllant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypyllant-0.2.1.tar.gz tmp/mypyllant-0.2.2.tar.gz --markdown 20230416/m/myPyllant/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-16 12:40:09] INFO root fetch - processPackages [nimocr]: Downloading https://files.pythonhosted.org/packages/cf/c8/99900643425a269c13dbe77b6c30c3a1f1114076019855cd6e3a5302b45f/nimocr-0.1.1.tar.gz
+[2023-04-16 12:40:09] INFO root fetch - processPackages [oneai]: Downloading https://files.pythonhosted.org/packages/a8/be/4f8d749fd967478a2b1fff1577b187c9e85d1892517acbe16a8cdf91e094/oneai-0.9.9.tar.gz
+[2023-04-16 12:40:09] INFO root fetch - processPackages [nimocr]: executing diffoscope
+[2023-04-16 12:40:09] INFO root fetch - processPackages [nimocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nimocr-0.1.tar.gz tmp/nimocr-0.1.1.tar.gz --markdown 20230416/n/nimocr/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 12:40:09] INFO root fetch - processPackages [alipay-sdk-python]: Downloading https://files.pythonhosted.org/packages/1a/44/c1026b1a03c94307814aabb95ba597b7d8a69d4a1e1380d2e5d9942fbc05/alipay-sdk-python-3.6.72.tar.gz
+[2023-04-16 12:40:09] INFO root fetch - processPackages [oneai]: executing diffoscope
+[2023-04-16 12:40:09] INFO root fetch - processPackages [oneai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oneai-0.9.8.tar.gz tmp/oneai-0.9.9.tar.gz --markdown 20230416/o/oneai/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-16 12:40:10] INFO root fetch - main [MainThread]: End processing [digimat.bac0]: success
+[2023-04-16 12:40:10] INFO root fetch - main [MainThread]: End processing [myPyllant]: success
+[2023-04-16 12:40:10] INFO root fetch - main [MainThread]: End processing [clipped]: success
+[2023-04-16 12:40:10] INFO root fetch - processPackages [alipay-sdk-python]: executing diffoscope
+[2023-04-16 12:40:10] INFO root fetch - processPackages [alipay-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alipay-sdk-python-3.6.598.tar.gz tmp/alipay-sdk-python-3.6.72.tar.gz --markdown 20230416/a/alipay-sdk-python/3.6.598-3.6.72/diff.md --exclude *.pyd
+[2023-04-16 12:40:10] INFO root fetch - main [MainThread]: End processing [chatgpt-tool-hub]: success
+[2023-04-16 12:40:10] INFO root fetch - main [MainThread]: End processing [nimocr]: success
+[2023-04-16 12:40:11] INFO root fetch - main [MainThread]: End processing [oneai]: success
+[2023-04-16 12:43:10] ERROR root fetch - processPackages [alipay-sdk-python]: Timeout during execution of pkgdiff
+[2023-04-16 12:43:10] INFO root fetch - main [MainThread]: End processing [alipay-sdk-python] error
+[2023-04-16 12:43:10] INFO root fetch - main [MainThread]: Store serial: [17726117]
