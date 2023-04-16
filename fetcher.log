@@ -9169,3 +9169,71 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 15:22:06] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
 [2023-04-16 15:22:11] INFO root fetch - main [MainThread]: End processing [psij-zmq]: success
 [2023-04-16 15:22:11] INFO root fetch - main [MainThread]: Store serial: [17727233]
+[2023-04-16 15:27:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727233]
+[2023-04-16 15:27:21] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-16 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: image-reward
+[2023-04-16 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oddrn-generator
+[2023-04-16 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bridgecrew
+[2023-04-16 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: feedcrawler
+[2023-04-16 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pynamer
+[2023-04-16 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: psij-zmq
+[2023-04-16 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gbd-tools
+[2023-04-16 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: khoj-assistant
+[2023-04-16 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: doveseed
+[2023-04-16 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: digital-unit
+[2023-04-16 15:27:21] INFO root fetch - processPackages [image-reward]: New version: [1.0] Old Version: [0.94]
+[2023-04-16 15:27:21] WARNING root fetch - processPackages [pynamer]: Skipping, unable to determine old version
+[2023-04-16 15:27:21] INFO root fetch - processPackages [pynamer]: Start processing: aishell
+[2023-04-16 15:27:21] INFO root fetch - main [MainThread]: End processing [pynamer] error
+[2023-04-16 15:27:21] INFO root fetch - processPackages [gbd-tools]: New version: [4.3.6] Old Version: [4.3.5]
+[2023-04-16 15:27:21] INFO root fetch - processPackages [psij-zmq]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-16 15:27:21] INFO root fetch - processPackages [doveseed]: New version: [2.0.0a0] Old Version: [1.1.0a7]
+[2023-04-16 15:27:21] INFO root fetch - processPackages [digital-unit]: New version: [1.4b1] Old Version: [1.4b0]
+[2023-04-16 15:27:21] INFO root fetch - processPackages [oddrn-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 15:27:21] INFO root fetch - processPackages [feedcrawler]: New version: [18.0.4] Old Version: [18.0.3]
+[2023-04-16 15:27:21] INFO root fetch - processPackages [aishell]: New version: [2023.4.16] Old Version: [2023.4.11]
+[2023-04-16 15:27:21] INFO root fetch - processPackages [khoj-assistant]: New version: [0.6.1.dev3] Old Version: [0.6.0]
+[2023-04-16 15:27:22] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-16 15:27:22] INFO root fetch - processPackages [aishell]: executing diffoscope
+[2023-04-16 15:27:22] INFO root fetch - processPackages [aishell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aishell-2023.4.11.tar.gz tmp/aishell-2023.4.16.tar.gz --markdown 20230416/a/aishell/2023.4.11-2023.4.16/diff.md --exclude *.pyd
+[2023-04-16 15:27:22] INFO root fetch - processPackages [gbd-tools]: Downloading https://files.pythonhosted.org/packages/c5/9b/cfacbf693655bbd6df7026922d71fd87e4c8deade0a8d4c05aa7a7022ef7/gbd_tools-4.3.5.tar.gz
+[2023-04-16 15:27:22] INFO root fetch - processPackages [psij-zmq]: Downloading https://files.pythonhosted.org/packages/df/d0/638cc1bba1c3755b5e740ca846341cdb8e89decf35f169ddccacd18d755e/psij-zmq-0.5.0.tar.gz
+[2023-04-16 15:27:22] INFO root fetch - processPackages [doveseed]: Downloading https://files.pythonhosted.org/packages/3e/83/239d44c88325d9c9a9ad750743046f04a6133bac245af4a918a54e71dbc3/doveseed-1.1.0a7.tar.gz
+[2023-04-16 15:27:22] INFO root fetch - processPackages [oddrn-generator]: Downloading https://files.pythonhosted.org/packages/3c/34/699cecf0046ed3a9658b2cc8dee7ad28f76ab3f13dc6bbcba8d01e63adca/oddrn-generator-0.1.8.tar.gz
+[2023-04-16 15:27:22] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/e6/e8/6868d3f987280c2a13bd2c8eb969e54ce97890c53649d4cec485856413e9/khoj_assistant-0.6.0.tar.gz
+[2023-04-16 15:27:22] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-16 15:27:22] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230416/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-16 15:27:22] INFO root fetch - processPackages [feedcrawler]: Downloading https://files.pythonhosted.org/packages/67/29/e26ff2fec1cb33048468abc8c6bb1bdbfd48bd282715e530c61a53417ae0/feedcrawler-18.0.4.tar.gz
+[2023-04-16 15:27:22] INFO root fetch - processPackages [digital-unit]: Downloading https://files.pythonhosted.org/packages/70/45/8e79f9e67698b699fe776e6eb4f7b88b9eab389a33c657b171fae37562a7/digital_unit-1.4b1.tar.gz
+[2023-04-16 15:27:22] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/1c/07/e83d89745a889c5f1895d833c0ca59c188cd7c13a806b84e922640468a7c/image-reward-1.0.tar.gz
+[2023-04-16 15:27:22] INFO root fetch - processPackages [psij-zmq]: executing diffoscope
+[2023-04-16 15:27:22] INFO root fetch - processPackages [psij-zmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psij-zmq-0.4.0.tar.gz tmp/psij-zmq-0.5.0.tar.gz --markdown 20230416/p/psij-zmq/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-16 15:27:22] INFO root fetch - processPackages [feedcrawler]: executing diffoscope
+[2023-04-16 15:27:22] INFO root fetch - processPackages [feedcrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feedcrawler-18.0.3.tar.gz tmp/feedcrawler-18.0.4.tar.gz --markdown 20230416/f/feedcrawler/18.0.3-18.0.4/diff.md --exclude *.pyd
+[2023-04-16 15:27:22] INFO root fetch - processPackages [gbd-tools]: Downloading https://files.pythonhosted.org/packages/a9/fc/ebc40feaddb07f4d0724e61acc0068811014c518a3808b4e125f3a05bcfc/gbd_tools-4.3.6.tar.gz
+[2023-04-16 15:27:22] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/0f/a8/05312ce38561c00955be838befff335d7e46a003048808d4c19086190429/khoj_assistant-0.6.1.dev3.tar.gz
+[2023-04-16 15:27:22] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-16 15:27:22] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-0.94.tar.gz tmp/image-reward-1.0.tar.gz --markdown 20230416/i/image-reward/0.94-1.0/diff.md --exclude *.pyd
+[2023-04-16 15:27:22] INFO root fetch - processPackages [digital-unit]: executing diffoscope
+[2023-04-16 15:27:22] INFO root fetch - processPackages [digital-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digital_unit-1.4b0.tar.gz tmp/digital_unit-1.4b1.tar.gz --markdown 20230416/d/digital-unit/1.4b0-1.4b1/diff.md --exclude *.pyd
+[2023-04-16 15:27:22] INFO root fetch - processPackages [doveseed]: Downloading https://files.pythonhosted.org/packages/a8/1b/0d079cb644c349ea449d645bd753dd9bd2b702bab8d8043dcd23c1008ce2/doveseed-2.0.0a0.tar.gz
+[2023-04-16 15:27:22] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2023-04-16 15:27:22] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-0.6.0.tar.gz tmp/khoj_assistant-0.6.1.dev3.tar.gz --markdown 20230416/k/khoj-assistant/0.6.0-0.6.1.dev3/diff.md --exclude *.pyd
+[2023-04-16 15:27:22] INFO root fetch - processPackages [doveseed]: executing diffoscope
+[2023-04-16 15:27:22] INFO root fetch - processPackages [doveseed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doveseed-1.1.0a7.tar.gz tmp/doveseed-2.0.0a0.tar.gz --markdown 20230416/d/doveseed/1.1.0a7-2.0.0a0/diff.md --exclude *.pyd
+[2023-04-16 15:27:22] INFO root fetch - processPackages [gbd-tools]: executing diffoscope
+[2023-04-16 15:27:22] INFO root fetch - processPackages [gbd-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gbd_tools-4.3.5.tar.gz tmp/gbd_tools-4.3.6.tar.gz --markdown 20230416/g/gbd-tools/4.3.5-4.3.6/diff.md --exclude *.pyd
+[2023-04-16 15:27:22] INFO root fetch - processPackages [oddrn-generator]: Downloading https://files.pythonhosted.org/packages/2a/2e/c01483d58b0cf1c450eb92f93a9180e3d71bda2dfe4cbe678bad80d62bfb/oddrn-generator-0.1.9.tar.gz
+[2023-04-16 15:27:23] INFO root fetch - processPackages [oddrn-generator]: executing diffoscope
+[2023-04-16 15:27:23] INFO root fetch - processPackages [oddrn-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oddrn-generator-0.1.8.tar.gz tmp/oddrn-generator-0.1.9.tar.gz --markdown 20230416/o/oddrn-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 15:27:23] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-16 15:27:23] INFO root fetch - main [MainThread]: End processing [psij-zmq]: success
+[2023-04-16 15:27:23] INFO root fetch - main [MainThread]: End processing [aishell]: success
+[2023-04-16 15:27:23] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-16 15:27:23] INFO root fetch - main [MainThread]: End processing [digital-unit]: success
+[2023-04-16 15:27:24] INFO root fetch - main [MainThread]: End processing [doveseed]: success
+[2023-04-16 15:27:24] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2023-04-16 15:27:24] INFO root fetch - main [MainThread]: End processing [feedcrawler]: success
+[2023-04-16 15:27:24] INFO root fetch - main [MainThread]: End processing [oddrn-generator]: success
+[2023-04-16 15:27:25] INFO root fetch - main [MainThread]: End processing [gbd-tools]: success
+[2023-04-16 15:27:25] INFO root fetch - main [MainThread]: Store serial: [17727284]
