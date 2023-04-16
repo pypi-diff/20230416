@@ -2903,3 +2903,13 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 06:12:06] INFO root fetch - processPackages [mp-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mp-api-0.9.0.tar.gz tmp/mp-api-0.9.1.tar.gz --markdown 20230416/m/mp-api/0.9.0-0.9.1/diff.md --exclude *.pyd
 [2023-04-16 06:12:10] INFO root fetch - main [MainThread]: End processing [mp-api]: success
 [2023-04-16 06:12:10] INFO root fetch - main [MainThread]: Store serial: [17723622]
+[2023-04-16 06:17:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723622]
+[2023-04-16 06:17:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-16 06:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nb-cli
+[2023-04-16 06:17:19] INFO root fetch - processPackages [nb-cli]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-16 06:17:19] INFO root fetch - processPackages [nb-cli]: Downloading https://files.pythonhosted.org/packages/a0/2a/41de7860e9b5638e8b7a2f14256a4aea4e536742349a84f4f6ab2efdb52c/nb-cli-1.1.1.tar.gz
+[2023-04-16 06:17:19] INFO root fetch - processPackages [nb-cli]: Downloading https://files.pythonhosted.org/packages/a9/a4/d93a67f1d02fb4516dc7dd34302f33f7ac4ade39f991b35f3342820f56e2/nb-cli-1.1.2.tar.gz
+[2023-04-16 06:17:19] INFO root fetch - processPackages [nb-cli]: executing diffoscope
+[2023-04-16 06:17:19] INFO root fetch - processPackages [nb-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nb-cli-1.1.1.tar.gz tmp/nb-cli-1.1.2.tar.gz --markdown 20230416/n/nb-cli/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-16 06:17:21] INFO root fetch - main [MainThread]: End processing [nb-cli]: success
+[2023-04-16 06:17:21] INFO root fetch - main [MainThread]: Store serial: [17723625]
