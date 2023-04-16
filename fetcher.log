@@ -12025,3 +12025,87 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 19:32:48] INFO root fetch - main [MainThread]: End processing [feed-archiver]: success
 [2023-04-16 19:32:48] INFO root fetch - main [MainThread]: End processing [uvicore]: success
 [2023-04-16 19:32:48] INFO root fetch - main [MainThread]: Store serial: [17729032]
+[2023-04-16 19:37:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729032]
+[2023-04-16 19:37:57] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-16 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: doji-core
+[2023-04-16 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatgpt-tool-hub
+[2023-04-16 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trame-vtk
+[2023-04-16 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sunnyday-IZPy
+[2023-04-16 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: best-sort
+[2023-04-16 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tmpeco
+[2023-04-16 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: search-algos
+[2023-04-16 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hat-syslog
+[2023-04-16 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sundew
+[2023-04-16 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: compoundwidgets
+[2023-04-16 19:37:57] INFO root fetch - processPackages [doji-core]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-16 19:37:57] INFO root fetch - processPackages [chatgpt-tool-hub]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-04-16 19:37:57] INFO root fetch - processPackages [compoundwidgets]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-16 19:37:57] INFO root fetch - processPackages [trame-vtk]: New version: [2.4.4] Old Version: [2.4.3]
+[2023-04-16 19:37:57] WARNING root fetch - processPackages [tmpeco]: Skipping, unable to determine old version
+[2023-04-16 19:37:57] INFO root fetch - processPackages [tmpeco]: Start processing: newrelic-sb-sdk
+[2023-04-16 19:37:57] INFO root fetch - processPackages [sundew]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-04-16 19:37:57] INFO root fetch - main [MainThread]: End processing [tmpeco] error
+[2023-04-16 19:37:57] INFO root fetch - processPackages [search-algos]: New version: [0.1] Old Version: [0.0.4]
+[2023-04-16 19:37:57] INFO root fetch - processPackages [hat-syslog]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-16 19:37:57] INFO root fetch - processPackages [best-sort]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-16 19:37:57] INFO root fetch - processPackages [newrelic-sb-sdk]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-16 19:37:57] WARNING root fetch - processPackages [sunnyday-IZPy]: Skipping, unable to determine old version
+[2023-04-16 19:37:57] INFO root fetch - processPackages [sunnyday-IZPy]: Start processing: httpdbg
+[2023-04-16 19:37:57] INFO root fetch - main [MainThread]: End processing [sunnyday-IZPy] error
+[2023-04-16 19:37:57] INFO root fetch - processPackages [httpdbg]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-04-16 19:37:57] INFO root fetch - processPackages [search-algos]: Downloading https://files.pythonhosted.org/packages/4f/35/54a5a736f79da659612afb48ec0cdc8e5bb00d5a8a3337070c595469b7f9/search-algos-0.0.4.tar.gz
+[2023-04-16 19:37:57] INFO root fetch - processPackages [best-sort]: Downloading https://files.pythonhosted.org/packages/e0/0f/243c639b9fdedfd2d8b0c8b13920e1bfe57de8405ba68db33049ffd71901/best-sort-0.0.6.tar.gz
+[2023-04-16 19:37:57] INFO root fetch - processPackages [trame-vtk]: Downloading https://files.pythonhosted.org/packages/2c/cf/e4c2aca60228072d46e71b3611c05a5cc160137d509d3dd864d6b872a9f6/trame-vtk-2.4.3.tar.gz
+[2023-04-16 19:37:57] INFO root fetch - processPackages [hat-syslog]: Downloading https://files.pythonhosted.org/packages/d9/dd/17207dc0147ec4af65ba1a2aec6d23a6bbc6b7d64f8b63767437db5c9ff9/hat_syslog-0.7.2-cp38.cp39.cp310.cp311-none-any.whl
+[2023-04-16 19:37:57] INFO root fetch - processPackages [newrelic-sb-sdk]: Downloading https://files.pythonhosted.org/packages/94/ef/396430251cdfbd6e750bbbb8cd348e0bf9b2cc201d109b6b74f589279904/newrelic_sb_sdk-0.2.0.tar.gz
+[2023-04-16 19:37:57] INFO root fetch - processPackages [sundew]: Downloading https://files.pythonhosted.org/packages/ce/9d/cb904080024a8d20efcf42213b2cbac9222a236583d7ac281d76662c684a/sundew-0.1.3.tar.gz
+[2023-04-16 19:37:57] INFO root fetch - processPackages [hat-syslog]: executing diffoscope
+[2023-04-16 19:37:57] INFO root fetch - processPackages [hat-syslog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hat_syslog-0.7.1-cp38.cp39.cp310.cp311-none-any.whl.zip tmp/hat_syslog-0.7.2-cp38.cp39.cp310.cp311-none-any.whl.zip --markdown 20230416/h/hat-syslog/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-16 19:37:57] INFO root fetch - processPackages [chatgpt-tool-hub]: executing diffoscope
+[2023-04-16 19:37:57] INFO root fetch - processPackages [chatgpt-tool-hub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt-tool-hub-0.3.7.tar.gz tmp/chatgpt-tool-hub-0.3.9.tar.gz --markdown 20230416/c/chatgpt-tool-hub/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-04-16 19:37:57] INFO root fetch - processPackages [doji-core]: Downloading https://files.pythonhosted.org/packages/28/76/da1a00712e6eb2a419fc711dbd87fb37ab35f4e3f4f89c587f9527e6afa6/doji_core-0.1.3.tar.gz
+[2023-04-16 19:37:57] INFO root fetch - processPackages [compoundwidgets]: Downloading https://files.pythonhosted.org/packages/58/3f/885cd46bd0a6928df50a95ddd58327816205f896feba7b4e8ffecf4da265/compoundwidgets-0.2.1.tar.gz
+[2023-04-16 19:37:57] INFO root fetch - processPackages [search-algos]: executing diffoscope
+[2023-04-16 19:37:57] INFO root fetch - processPackages [search-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/search-algos-0.0.4.tar.gz tmp/search-algos-0.1.tar.gz --markdown 20230416/s/search-algos/0.0.4-0.1/diff.md --exclude *.pyd
+[2023-04-16 19:37:57] INFO root fetch - processPackages [httpdbg]: Downloading https://files.pythonhosted.org/packages/1b/a3/7ed2c38b442075d27c204ae158c8a5530b5bc2a235e643230cc563cf6229/httpdbg-0.8.5.tar.gz
+[2023-04-16 19:37:57] INFO root fetch - processPackages [compoundwidgets]: executing diffoscope
+[2023-04-16 19:37:57] INFO root fetch - processPackages [compoundwidgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compoundwidgets-0.2.0.tar.gz tmp/compoundwidgets-0.2.1.tar.gz --markdown 20230416/c/compoundwidgets/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-16 19:37:58] INFO root fetch - processPackages [doji-core]: executing diffoscope
+[2023-04-16 19:37:58] INFO root fetch - processPackages [doji-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doji_core-0.1.2.tar.gz tmp/doji_core-0.1.3.tar.gz --markdown 20230416/d/doji-core/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-16 19:37:58] INFO root fetch - processPackages [best-sort]: Downloading https://files.pythonhosted.org/packages/ea/42/4c5cf435b3c7141ace4380c098c1da8d79f46528ed058dfe068b4de5468c/best-sort-0.0.7.tar.gz
+[2023-04-16 19:37:58] INFO root fetch - processPackages [trame-vtk]: Downloading https://files.pythonhosted.org/packages/db/6f/b76e660e1a2d4b75c43fa15b0aba4c5cce5c3c24a559a1e1dae7380211c6/trame-vtk-2.4.4.tar.gz
+[2023-04-16 19:37:58] INFO root fetch - processPackages [sundew]: Downloading https://files.pythonhosted.org/packages/e7/d5/96ac7408cbf7f3f0076938cf2a4ea27a2634b59c86aca792fb6deb91e945/sundew-0.2.0.tar.gz
+[2023-04-16 19:37:58] INFO root fetch - processPackages [httpdbg]: Downloading https://files.pythonhosted.org/packages/b7/73/efb34ac06e425eb86724d0adc4860d55bd8a6ef41114ccd9bd3d400e2dc7/httpdbg-0.9.0.tar.gz
+[2023-04-16 19:37:58] INFO root fetch - processPackages [sundew]: executing diffoscope
+[2023-04-16 19:37:58] INFO root fetch - processPackages [sundew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sundew-0.1.3.tar.gz tmp/sundew-0.2.0.tar.gz --markdown 20230416/s/sundew/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 19:37:58] INFO root fetch - processPackages [best-sort]: executing diffoscope
+[2023-04-16 19:37:58] INFO root fetch - processPackages [best-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/best-sort-0.0.6.tar.gz tmp/best-sort-0.0.7.tar.gz --markdown 20230416/b/best-sort/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-16 19:37:58] INFO root fetch - processPackages [httpdbg]: executing diffoscope
+[2023-04-16 19:37:58] INFO root fetch - processPackages [newrelic-sb-sdk]: Downloading https://files.pythonhosted.org/packages/6d/4d/664c7a54889eb67b7c41d37b119d2621ac1fec8632b8e375662f75304d5f/newrelic_sb_sdk-0.3.0.tar.gz
+[2023-04-16 19:37:58] INFO root fetch - processPackages [httpdbg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/httpdbg-0.8.5.tar.gz tmp/httpdbg-0.9.0.tar.gz --markdown 20230416/h/httpdbg/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 19:37:58] INFO root fetch - processPackages [trame-vtk]: executing diffoscope
+[2023-04-16 19:37:58] INFO root fetch - processPackages [trame-vtk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trame-vtk-2.4.3.tar.gz tmp/trame-vtk-2.4.4.tar.gz --markdown 20230416/t/trame-vtk/2.4.3-2.4.4/diff.md --exclude *.pyd
+[2023-04-16 19:37:58] INFO root fetch - processPackages [newrelic-sb-sdk]: executing diffoscope
+[2023-04-16 19:37:58] INFO root fetch - processPackages [newrelic-sb-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/newrelic_sb_sdk-0.2.0.tar.gz tmp/newrelic_sb_sdk-0.3.0.tar.gz --markdown 20230416/n/newrelic-sb-sdk/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 19:37:59] INFO root fetch - processPackages [search-algos]: Start processing: certora-cli-alpha-master
+[2023-04-16 19:37:59] INFO root fetch - main [MainThread]: End processing [search-algos]: success
+[2023-04-16 19:37:59] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230416.17.6.264431] Old Version: [20230416.17.40.471512]
+[2023-04-16 19:37:59] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/93/82/3b8fa959f615d3627f773c25525e744a1ff28fe5a8a7d3aa41077c839487/certora-cli-alpha-master-20230416.17.40.471512.tar.gz
+[2023-04-16 19:37:59] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38004407>=10485760
+[2023-04-16 19:37:59] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: vollseg-napari-trackmate
+[2023-04-16 19:37:59] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-16 19:37:59] INFO root fetch - processPackages [vollseg-napari-trackmate]: New version: [2.1.0] Old Version: [2.0.9]
+[2023-04-16 19:37:59] INFO root fetch - main [MainThread]: End processing [doji-core]: success
+[2023-04-16 19:37:59] INFO root fetch - processPackages [vollseg-napari-trackmate]: Downloading https://files.pythonhosted.org/packages/ee/be/de4212af5a1615ace57b17a81e4164bc3c3c878e4de74eddebb2fd9a02a3/vollseg-napari-trackmate-2.0.9.tar.gz
+[2023-04-16 19:37:59] INFO root fetch - main [MainThread]: End processing [sundew]: success
+[2023-04-16 19:37:59] INFO root fetch - main [MainThread]: End processing [chatgpt-tool-hub]: success
+[2023-04-16 19:38:00] INFO root fetch - main [MainThread]: End processing [best-sort]: success
+[2023-04-16 19:38:00] INFO root fetch - processPackages [vollseg-napari-trackmate]: executing diffoscope
+[2023-04-16 19:38:00] INFO root fetch - processPackages [vollseg-napari-trackmate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vollseg-napari-trackmate-2.0.9.tar.gz tmp/vollseg-napari-trackmate-2.1.0.tar.gz --markdown 20230416/v/vollseg-napari-trackmate/2.0.9-2.1.0/diff.md --exclude *.pyd
+[2023-04-16 19:38:00] INFO root fetch - main [MainThread]: End processing [httpdbg]: success
+[2023-04-16 19:38:01] INFO root fetch - main [MainThread]: End processing [vollseg-napari-trackmate]: success
+[2023-04-16 19:38:01] INFO root fetch - main [MainThread]: End processing [hat-syslog]: success
+[2023-04-16 19:38:01] INFO root fetch - main [MainThread]: End processing [newrelic-sb-sdk]: success
+[2023-04-16 19:38:02] INFO root fetch - main [MainThread]: End processing [trame-vtk]: success
+[2023-04-16 19:38:08] INFO root fetch - main [MainThread]: End processing [compoundwidgets]: success
+[2023-04-16 19:38:08] INFO root fetch - main [MainThread]: Store serial: [17729075]
