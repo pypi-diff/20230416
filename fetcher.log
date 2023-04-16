@@ -11962,3 +11962,66 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 19:27:32] INFO root fetch - main [MainThread]: End processing [fastHDMI]: success
 [2023-04-16 19:27:35] INFO root fetch - main [MainThread]: End processing [phanterpwa]: success
 [2023-04-16 19:27:35] INFO root fetch - main [MainThread]: Store serial: [17728994]
+[2023-04-16 19:32:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728994]
+[2023-04-16 19:32:44] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-16 19:32:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmpecondata
+[2023-04-16 19:32:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gptj.cpp
+[2023-04-16 19:32:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiogram-ext
+[2023-04-16 19:32:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uvicore
+[2023-04-16 19:32:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stress-injector
+[2023-04-16 19:32:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pycolonies
+[2023-04-16 19:32:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ohmyi3
+[2023-04-16 19:32:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nobuco
+[2023-04-16 19:32:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cagen
+[2023-04-16 19:32:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: feed-archiver
+[2023-04-16 19:32:44] WARNING root fetch - processPackages [tmpecondata]: Skipping, unable to determine old version
+[2023-04-16 19:32:44] WARNING root fetch - processPackages [gptj.cpp]: Skipping, unable to determine old version
+[2023-04-16 19:32:44] INFO root fetch - processPackages [aiogram-ext]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 19:32:44] INFO root fetch - processPackages [tmpecondata]: Start processing: doji-core
+[2023-04-16 19:32:44] INFO root fetch - main [MainThread]: End processing [tmpecondata] error
+[2023-04-16 19:32:44] INFO root fetch - processPackages [stress-injector]: New version: [0.5] Old Version: [0.4a0]
+[2023-04-16 19:32:44] INFO root fetch - processPackages [gptj.cpp]: Start processing: chatgpt-tool-hub
+[2023-04-16 19:32:44] INFO root fetch - main [MainThread]: End processing [gptj.cpp] error
+[2023-04-16 19:32:44] INFO root fetch - processPackages [cagen]: New version: [0.2.0a2] Old Version: [0.2.0a1]
+[2023-04-16 19:32:44] WARNING root fetch - processPackages [pycolonies]: Skipping, unable to determine old version
+[2023-04-16 19:32:44] INFO root fetch - processPackages [uvicore]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 19:32:44] WARNING root fetch - processPackages [ohmyi3]: Skipping, unable to determine old version
+[2023-04-16 19:32:44] INFO root fetch - processPackages [doji-core]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 19:32:44] INFO root fetch - processPackages [feed-archiver]: New version: [2.0.0b1] Old Version: [2.0.0b0]
+[2023-04-16 19:32:44] INFO root fetch - processPackages [nobuco]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 19:32:44] INFO root fetch - main [MainThread]: End processing [pycolonies] error
+[2023-04-16 19:32:44] INFO root fetch - main [MainThread]: End processing [ohmyi3] error
+[2023-04-16 19:32:44] INFO root fetch - processPackages [chatgpt-tool-hub]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-04-16 19:32:44] INFO root fetch - processPackages [chatgpt-tool-hub]: executing diffoscope
+[2023-04-16 19:32:44] INFO root fetch - processPackages [chatgpt-tool-hub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt-tool-hub-0.3.7.tar.gz tmp/chatgpt-tool-hub-0.3.9.tar.gz --markdown 20230416/c/chatgpt-tool-hub/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-04-16 19:32:44] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-16 19:32:44] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.0.8.tar.gz tmp/aiogram-ext-0.0.9.tar.gz --markdown 20230416/a/aiogram-ext/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 19:32:44] INFO root fetch - processPackages [uvicore]: Downloading https://files.pythonhosted.org/packages/23/97/ab3720abfdeb888e34dc7c32bec75444708227c7860482000ee3d6a292fb/uvicore-0.1.8.tar.gz
+[2023-04-16 19:32:44] INFO root fetch - processPackages [cagen]: Downloading https://files.pythonhosted.org/packages/40/01/61a381a07793138cd82a101e734f50c79aaf937fdfd03c2baea14c0b5fe2/cagen-0.2.0a2.tar.gz
+[2023-04-16 19:32:44] INFO root fetch - processPackages [feed-archiver]: Downloading https://files.pythonhosted.org/packages/16/87/1f54c2399569763b62fc15f2f986740b86d3fbd9cfcb911b7ce4e9c4be5a/feed-archiver-2.0.0b1.tar.gz
+[2023-04-16 19:32:44] INFO root fetch - processPackages [nobuco]: Downloading https://files.pythonhosted.org/packages/25/9c/9939547e69e6cc40edfdea235cf58a86bdd2073ac0ef6b62707275c04961/nobuco-0.1.0.tar.gz
+[2023-04-16 19:32:44] INFO root fetch - processPackages [doji-core]: Downloading https://files.pythonhosted.org/packages/9b/ce/e2deb54c8cb01883502ca4deb76329a134d6fe98a569780b82e9df813480/doji_core-0.1.2.tar.gz
+[2023-04-16 19:32:44] INFO root fetch - processPackages [stress-injector]: Downloading https://files.pythonhosted.org/packages/f6/21/22de54b6fd03307a59f7dbb8903fac4458acda7b4e5ca2739d901269a36d/stress_injector-0.5-py3-none-any.whl
+[2023-04-16 19:32:45] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-16 19:32:45] INFO root fetch - processPackages [doji-core]: executing diffoscope
+[2023-04-16 19:32:45] INFO root fetch - processPackages [doji-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doji_core-0.1.1.tar.gz tmp/doji_core-0.1.2.tar.gz --markdown 20230416/d/doji-core/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 19:32:45] INFO root fetch - processPackages [stress-injector]: executing diffoscope
+[2023-04-16 19:32:45] INFO root fetch - processPackages [stress-injector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stress_injector-0.4a0-py3-none-any.whl.zip tmp/stress_injector-0.5-py3-none-any.whl.zip --markdown 20230416/s/stress-injector/0.4a0-0.5/diff.md --exclude *.pyd
+[2023-04-16 19:32:46] INFO root fetch - processPackages [cagen]: executing diffoscope
+[2023-04-16 19:32:46] INFO root fetch - processPackages [cagen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cagen-0.2.0a1.tar.gz tmp/cagen-0.2.0a2.tar.gz --markdown 20230416/c/cagen/0.2.0a1-0.2.0a2/diff.md --exclude *.pyd
+[2023-04-16 19:32:46] INFO root fetch - processPackages [nobuco]: Downloading https://files.pythonhosted.org/packages/ea/6a/2530677ecbc33784a846471a11304b86e41e5564399991413630667ea1d8/nobuco-0.1.1.tar.gz
+[2023-04-16 19:32:46] INFO root fetch - processPackages [uvicore]: Downloading https://files.pythonhosted.org/packages/1c/1e/0df72d3d15b6e47459a2614315a046ce72f7274b2ca745998f542704497f/uvicore-0.1.9.tar.gz
+[2023-04-16 19:32:46] INFO root fetch - processPackages [feed-archiver]: executing diffoscope
+[2023-04-16 19:32:46] INFO root fetch - processPackages [feed-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feed-archiver-2.0.0b0.tar.gz tmp/feed-archiver-2.0.0b1.tar.gz --markdown 20230416/f/feed-archiver/2.0.0b0-2.0.0b1/diff.md --exclude *.pyd
+[2023-04-16 19:32:46] INFO root fetch - main [MainThread]: End processing [chatgpt-tool-hub]: success
+[2023-04-16 19:32:46] INFO root fetch - processPackages [nobuco]: executing diffoscope
+[2023-04-16 19:32:46] INFO root fetch - processPackages [nobuco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nobuco-0.1.0.tar.gz tmp/nobuco-0.1.1.tar.gz --markdown 20230416/n/nobuco/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 19:32:46] INFO root fetch - processPackages [uvicore]: executing diffoscope
+[2023-04-16 19:32:46] INFO root fetch - processPackages [uvicore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uvicore-0.1.8.tar.gz tmp/uvicore-0.1.9.tar.gz --markdown 20230416/u/uvicore/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 19:32:47] INFO root fetch - main [MainThread]: End processing [stress-injector]: success
+[2023-04-16 19:32:47] INFO root fetch - main [MainThread]: End processing [doji-core]: success
+[2023-04-16 19:32:47] INFO root fetch - main [MainThread]: End processing [cagen]: success
+[2023-04-16 19:32:47] INFO root fetch - main [MainThread]: End processing [nobuco]: success
+[2023-04-16 19:32:48] INFO root fetch - main [MainThread]: End processing [feed-archiver]: success
+[2023-04-16 19:32:48] INFO root fetch - main [MainThread]: End processing [uvicore]: success
+[2023-04-16 19:32:48] INFO root fetch - main [MainThread]: Store serial: [17729032]
