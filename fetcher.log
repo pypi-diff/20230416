@@ -4384,3 +4384,127 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 09:27:31] INFO root fetch - main [MainThread]: End processing [odoo13-addon-sale-cancel-reason]: success
 [2023-04-16 09:27:34] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
 [2023-04-16 09:27:34] INFO root fetch - main [MainThread]: Store serial: [17724509]
+[2023-04-16 09:32:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724509]
+[2023-04-16 09:32:43] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-16 09:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo13-addon-sale-isolated-quotation
+[2023-04-16 09:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-sale-rental
+[2023-04-16 09:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wild-time-data
+[2023-04-16 09:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-binexport
+[2023-04-16 09:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo12-addon-sale-product-set
+[2023-04-16 09:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo13-addon-sale-product-set
+[2023-04-16 09:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: skdoc
+[2023-04-16 09:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hkkang-utils
+[2023-04-16 09:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tl-typewriter
+[2023-04-16 09:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: prefab-classes
+[2023-04-16 09:32:43] INFO root fetch - processPackages [odoo13-addon-sale-isolated-quotation]: New version: [13.0.1.1.1.dev2] Old Version: [13.0.1.1.1.dev1]
+[2023-04-16 09:32:43] INFO root fetch - processPackages [odoo12-addon-sale-rental]: New version: [12.0.1.1.1.99.dev6] Old Version: [12.0.1.1.1.99.dev5]
+[2023-04-16 09:32:43] INFO root fetch - processPackages [wild-time-data]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-16 09:32:43] WARNING root fetch - processPackages [skdoc]: Skipping, unable to determine old version
+[2023-04-16 09:32:43] INFO root fetch - processPackages [skdoc]: Start processing: image-reward
+[2023-04-16 09:32:43] INFO root fetch - main [MainThread]: End processing [skdoc] error
+[2023-04-16 09:32:43] WARNING root fetch - processPackages [python-binexport]: Skipping, unable to determine old version
+[2023-04-16 09:32:43] INFO root fetch - processPackages [python-binexport]: Start processing: lalsuite
+[2023-04-16 09:32:43] INFO root fetch - main [MainThread]: End processing [python-binexport] error
+[2023-04-16 09:32:43] INFO root fetch - processPackages [tl-typewriter]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 09:32:43] INFO root fetch - processPackages [hkkang-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 09:32:43] INFO root fetch - processPackages [prefab-classes]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-16 09:32:43] INFO root fetch - processPackages [odoo13-addon-sale-product-set]: New version: [13.0.1.4.2.dev3] Old Version: [13.0.1.4.2.dev2]
+[2023-04-16 09:32:43] INFO root fetch - processPackages [odoo12-addon-sale-product-set]: New version: [12.0.1.3.2.99.dev4] Old Version: [12.0.1.3.2.99.dev3]
+[2023-04-16 09:32:43] INFO root fetch - processPackages [image-reward]: New version: [0.98] Old Version: [0.97]
+[2023-04-16 09:32:43] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-04-16 09:32:43] INFO root fetch - processPackages [odoo12-addon-sale-rental]: Downloading https://files.pythonhosted.org/packages/fc/54/3f2155f1b2c1670fb5462331fde610b7a7842ec5d29a62f043b08fd423b5/odoo12_addon_sale_rental-12.0.1.1.1.99.dev5-py3-none-any.whl
+[2023-04-16 09:32:43] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-16 09:32:43] INFO root fetch - processPackages [odoo13-addon-sale-isolated-quotation]: Downloading https://files.pythonhosted.org/packages/1a/6b/7275669116a2c5e2e4a8126b87ab219f2014157a77564d6a7dc85037d900/odoo13_addon_sale_isolated_quotation-13.0.1.1.1.dev1-py3-none-any.whl
+[2023-04-16 09:32:43] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/95/dc/1dbc4f2d3fcda0b1380d3c767f353edffc260f9be96171fc88996bd93fac/image-reward-0.97.tar.gz
+[2023-04-16 09:32:43] INFO root fetch - processPackages [tl-typewriter]: Downloading https://files.pythonhosted.org/packages/3c/7d/2cff76d4a5f587844b08ce45cbfbc9a41267af847480e9486ea886867bda/tl_typewriter-0.1.2.tar.gz
+[2023-04-16 09:32:43] INFO root fetch - processPackages [hkkang-utils]: Downloading https://files.pythonhosted.org/packages/c8/45/40aed3904c28ffc5c6a151584dc21c78c8b2ce1c8ba6f1cb75c90b3615e7/hkkang_utils-0.1.8.tar.gz
+[2023-04-16 09:32:43] INFO root fetch - processPackages [odoo13-addon-sale-product-set]: Downloading https://files.pythonhosted.org/packages/bc/ba/126d15a65a367675487855d32021983423d10da27c6af896a0516d44b217/odoo13_addon_sale_product_set-13.0.1.4.2.dev2-py3-none-any.whl
+[2023-04-16 09:32:43] INFO root fetch - processPackages [wild-time-data]: Downloading https://files.pythonhosted.org/packages/37/6a/320d027e32dfc46e53f2abbdc8b466f1a7791adfdeac72666556254b340f/wild_time_data-0.0.4.tar.gz
+[2023-04-16 09:32:43] INFO root fetch - processPackages [prefab-classes]: Downloading https://files.pythonhosted.org/packages/e7/ad/ac9ea4516dd33c9c250bb9180f74719a59f7c0735f350ef508c79dd63d56/prefab_classes-0.9.1.tar.gz
+[2023-04-16 09:32:43] INFO root fetch - processPackages [odoo12-addon-sale-product-set]: Downloading https://files.pythonhosted.org/packages/a8/43/0c9ccc2fb59ac53dba5c4df6dc7ec6ffa4373bdbf1dea83ae5be6e8e4e8d/odoo12_addon_sale_product_set-12.0.1.3.2.99.dev3-py3-none-any.whl
+[2023-04-16 09:32:44] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-04-16 09:32:44] INFO root fetch - processPackages [lalsuite]: Start processing: odoo14-addon-sale-cancel-reason
+[2023-04-16 09:32:44] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo14-addon-sale-cancel-reason]: New version: [14.0.1.1.1.dev3] Old Version: [14.0.1.1.1.dev2]
+[2023-04-16 09:32:44] INFO root fetch - processPackages [tl-typewriter]: executing diffoscope
+[2023-04-16 09:32:44] INFO root fetch - processPackages [tl-typewriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tl_typewriter-0.1.1.tar.gz tmp/tl_typewriter-0.1.2.tar.gz --markdown 20230416/t/tl-typewriter/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 09:32:44] INFO root fetch - processPackages [hkkang-utils]: Downloading https://files.pythonhosted.org/packages/f0/59/97d4cb14d60df518a25048e27ce7e4417bbb76c61c28dd718b8de3fd9c6f/hkkang_utils-0.1.9.tar.gz
+[2023-04-16 09:32:44] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/d5/89/d4d091bc75f24d964ba9daa750b42168b13939a61ba8d532645bc6c6a559/image-reward-0.98.tar.gz
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo14-addon-sale-cancel-reason]: Downloading https://files.pythonhosted.org/packages/cf/9e/108ce3641ea1b5356b26c49adb32fcb4557a85e75138f3b00e5fca322de6/odoo14_addon_sale_cancel_reason-14.0.1.1.1.dev2-py3-none-any.whl
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo12-addon-sale-rental]: Downloading https://files.pythonhosted.org/packages/77/41/a7c689ffee6dd5d9cf1c51392049606c152ed4315eb9e0f6a6200c41f5e1/odoo12_addon_sale_rental-12.0.1.1.1.99.dev6-py3-none-any.whl
+[2023-04-16 09:32:44] INFO root fetch - processPackages [prefab-classes]: Downloading https://files.pythonhosted.org/packages/c0/55/d83fa5491ebca40a8954873687d7521ea1adbe65f80e8e47c32142768e49/prefab_classes-0.9.2.tar.gz
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo13-addon-sale-product-set]: Downloading https://files.pythonhosted.org/packages/20/f8/870f4bc66bc043815c70251dfbf58325a53357870550bb1d18c33ebf1578/odoo13_addon_sale_product_set-13.0.1.4.2.dev3-py3-none-any.whl
+[2023-04-16 09:32:44] INFO root fetch - processPackages [wild-time-data]: Downloading https://files.pythonhosted.org/packages/e1/7a/8254de7e7b96af9cc5205aa0230aeb6169eae1676b95a190047924ed97f2/wild_time_data-0.0.5.tar.gz
+[2023-04-16 09:32:44] INFO root fetch - processPackages [hkkang-utils]: executing diffoscope
+[2023-04-16 09:32:44] INFO root fetch - processPackages [hkkang-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hkkang_utils-0.1.8.tar.gz tmp/hkkang_utils-0.1.9.tar.gz --markdown 20230416/h/hkkang-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo12-addon-sale-product-set]: Downloading https://files.pythonhosted.org/packages/f2/48/452846978c34e369ec5b309496d5fee76d0a7f21f7e8ab9eb0e56618b1de/odoo12_addon_sale_product_set-12.0.1.3.2.99.dev4-py3-none-any.whl
+[2023-04-16 09:32:44] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-16 09:32:44] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-0.97.tar.gz tmp/image-reward-0.98.tar.gz --markdown 20230416/i/image-reward/0.97-0.98/diff.md --exclude *.pyd
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo13-addon-sale-isolated-quotation]: Downloading https://files.pythonhosted.org/packages/0b/b4/dc081834bd6dc3361e027638fd6162bf35437bad53e78289c9b77273f488/odoo13_addon_sale_isolated_quotation-13.0.1.1.1.dev2-py3-none-any.whl
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo12-addon-sale-rental]: executing diffoscope
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo12-addon-sale-rental]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_sale_rental-12.0.1.1.1.99.dev5-py3-none-any.whl.zip tmp/odoo12_addon_sale_rental-12.0.1.1.1.99.dev6-py3-none-any.whl.zip --markdown 20230416/o/odoo12-addon-sale-rental/12.0.1.1.1.99.dev5-12.0.1.1.1.99.dev6/diff.md --exclude *.pyd
+[2023-04-16 09:32:44] INFO root fetch - processPackages [prefab-classes]: executing diffoscope
+[2023-04-16 09:32:44] INFO root fetch - processPackages [prefab-classes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prefab_classes-0.9.1.tar.gz tmp/prefab_classes-0.9.2.tar.gz --markdown 20230416/p/prefab-classes/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-16 09:32:44] INFO root fetch - processPackages [wild-time-data]: executing diffoscope
+[2023-04-16 09:32:44] INFO root fetch - processPackages [wild-time-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wild_time_data-0.0.4.tar.gz tmp/wild_time_data-0.0.5.tar.gz --markdown 20230416/w/wild-time-data/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo14-addon-sale-cancel-reason]: Downloading https://files.pythonhosted.org/packages/f3/2e/d9043b2a50b24c15bbf5282588bfe881587320cbfb12c74b7b743941885b/odoo14_addon_sale_cancel_reason-14.0.1.1.1.dev3-py3-none-any.whl
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo13-addon-sale-product-set]: executing diffoscope
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo13-addon-sale-product-set]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_sale_product_set-13.0.1.4.2.dev2-py3-none-any.whl.zip tmp/odoo13_addon_sale_product_set-13.0.1.4.2.dev3-py3-none-any.whl.zip --markdown 20230416/o/odoo13-addon-sale-product-set/13.0.1.4.2.dev2-13.0.1.4.2.dev3/diff.md --exclude *.pyd
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo12-addon-sale-product-set]: executing diffoscope
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo12-addon-sale-product-set]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_sale_product_set-12.0.1.3.2.99.dev3-py3-none-any.whl.zip tmp/odoo12_addon_sale_product_set-12.0.1.3.2.99.dev4-py3-none-any.whl.zip --markdown 20230416/o/odoo12-addon-sale-product-set/12.0.1.3.2.99.dev3-12.0.1.3.2.99.dev4/diff.md --exclude *.pyd
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo13-addon-sale-isolated-quotation]: executing diffoscope
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo13-addon-sale-isolated-quotation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_sale_isolated_quotation-13.0.1.1.1.dev1-py3-none-any.whl.zip tmp/odoo13_addon_sale_isolated_quotation-13.0.1.1.1.dev2-py3-none-any.whl.zip --markdown 20230416/o/odoo13-addon-sale-isolated-quotation/13.0.1.1.1.dev1-13.0.1.1.1.dev2/diff.md --exclude *.pyd
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo14-addon-sale-cancel-reason]: executing diffoscope
+[2023-04-16 09:32:44] INFO root fetch - processPackages [odoo14-addon-sale-cancel-reason]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_sale_cancel_reason-14.0.1.1.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_sale_cancel_reason-14.0.1.1.1.dev3-py3-none-any.whl.zip --markdown 20230416/o/odoo14-addon-sale-cancel-reason/14.0.1.1.1.dev2-14.0.1.1.1.dev3/diff.md --exclude *.pyd
+[2023-04-16 09:32:45] INFO root fetch - processPackages [tl-typewriter]: Start processing: ssss
+[2023-04-16 09:32:45] INFO root fetch - main [MainThread]: End processing [tl-typewriter]: success
+[2023-04-16 09:32:45] INFO root fetch - processPackages [ssss]: New version: [0.0.0a4] Old Version: [0.0.0a3]
+[2023-04-16 09:32:45] INFO root fetch - processPackages [ssss]: Downloading https://files.pythonhosted.org/packages/c5/d9/06c962f51224467442e56b93a93653e54cd9a7d7bd98b6d76d6e81511b90/ssss-0.0.0a3.tar.gz
+[2023-04-16 09:32:45] INFO root fetch - processPackages [hkkang-utils]: Start processing: meta-person
+[2023-04-16 09:32:45] INFO root fetch - main [MainThread]: End processing [hkkang-utils]: success
+[2023-04-16 09:32:45] INFO root fetch - processPackages [meta-person]: New version: [3.4.16] Old Version: [2.9.28]
+[2023-04-16 09:32:46] INFO root fetch - processPackages [ssss]: Downloading https://files.pythonhosted.org/packages/b4/1a/81ae877dadf2de33c52d869aba57d6e125d830ff68c1cf4207106b3ef15b/ssss-0.0.0a4.tar.gz
+[2023-04-16 09:32:46] INFO root fetch - processPackages [meta-person]: Downloading https://files.pythonhosted.org/packages/e3/b4/2546de4882f41a79f26971753ca85018e57f446afb3850c71e63205328e4/meta-person-2.9.28.tar.gz
+[2023-04-16 09:32:46] INFO root fetch - processPackages [ssss]: executing diffoscope
+[2023-04-16 09:32:46] INFO root fetch - processPackages [ssss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssss-0.0.0a3.tar.gz tmp/ssss-0.0.0a4.tar.gz --markdown 20230416/s/ssss/0.0.0a3-0.0.0a4/diff.md --exclude *.pyd
+[2023-04-16 09:32:46] INFO root fetch - processPackages [odoo13-addon-sale-isolated-quotation]: Start processing: odoo-addon-sale-rental
+[2023-04-16 09:32:46] INFO root fetch - main [MainThread]: End processing [odoo13-addon-sale-isolated-quotation]: success
+[2023-04-16 09:32:46] INFO root fetch - processPackages [meta-person]: Downloading https://files.pythonhosted.org/packages/2e/cc/ff8c4fc76497ca4ee29fd289507ba47c19f8e9b6fb71ae17e516acf84542/meta-person-3.4.16.tar.gz
+[2023-04-16 09:32:46] INFO root fetch - processPackages [odoo-addon-sale-rental]: New version: [15.0.1.0.1.7] Old Version: [15.0.1.0.1.6]
+[2023-04-16 09:32:46] INFO root fetch - processPackages [image-reward]: Start processing: search-algos
+[2023-04-16 09:32:46] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-16 09:32:46] INFO root fetch - processPackages [search-algos]: New version: [0.1] Old Version: [0.0.1]
+[2023-04-16 09:32:46] INFO root fetch - processPackages [meta-person]: executing diffoscope
+[2023-04-16 09:32:46] INFO root fetch - processPackages [meta-person]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta-person-2.9.28.tar.gz tmp/meta-person-3.4.16.tar.gz --markdown 20230416/m/meta-person/2.9.28-3.4.16/diff.md --exclude *.pyd
+[2023-04-16 09:32:46] INFO root fetch - processPackages [prefab-classes]: Start processing: pinuccio
+[2023-04-16 09:32:46] INFO root fetch - main [MainThread]: End processing [prefab-classes]: success
+[2023-04-16 09:32:46] INFO root fetch - processPackages [odoo14-addon-sale-cancel-reason]: Start processing: newnewid
+[2023-04-16 09:32:46] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-cancel-reason]: success
+[2023-04-16 09:32:46] INFO root fetch - processPackages [odoo-addon-sale-rental]: Downloading https://files.pythonhosted.org/packages/78/51/63458d571aa03fd6c27c4591e17360cdd81ae0319fda9c3bed3c5db4e8de/odoo_addon_sale_rental-15.0.1.0.1.6-py3-none-any.whl
+[2023-04-16 09:32:46] WARNING root fetch - processPackages [newnewid]: Skipping, unable to determine old version
+[2023-04-16 09:32:46] INFO root fetch - processPackages [newnewid]: Start processing: zintor
+[2023-04-16 09:32:46] INFO root fetch - main [MainThread]: End processing [newnewid] error
+[2023-04-16 09:32:46] INFO root fetch - processPackages [pinuccio]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 09:32:46] INFO root fetch - processPackages [zintor]: New version: [0.0.19] Old Version: [0.0.18]
+[2023-04-16 09:32:46] INFO root fetch - processPackages [zintor]: executing diffoscope
+[2023-04-16 09:32:46] INFO root fetch - processPackages [zintor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zintor-0.0.18.tar.gz tmp/zintor-0.0.19.tar.gz --markdown 20230416/z/zintor/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2023-04-16 09:32:46] INFO root fetch - main [MainThread]: End processing [odoo13-addon-sale-product-set]: success
+[2023-04-16 09:32:46] INFO root fetch - processPackages [search-algos]: executing diffoscope
+[2023-04-16 09:32:46] INFO root fetch - processPackages [search-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/search-algos-0.0.1.tar.gz tmp/search-algos-0.1.tar.gz --markdown 20230416/s/search-algos/0.0.1-0.1/diff.md --exclude *.pyd
+[2023-04-16 09:32:46] INFO root fetch - processPackages [pinuccio]: Downloading https://files.pythonhosted.org/packages/31/20/b09b848aca03081fe4c059443c01d7be1ba9ac12795475fe255544e3e074/pinuccio-0.0.8.tar.gz
+[2023-04-16 09:32:46] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-rental]: success
+[2023-04-16 09:32:46] INFO root fetch - main [MainThread]: End processing [wild-time-data]: success
+[2023-04-16 09:32:46] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-product-set]: success
+[2023-04-16 09:32:47] INFO root fetch - processPackages [odoo-addon-sale-rental]: Downloading https://files.pythonhosted.org/packages/a3/a6/957be90cd113021aa72ef8b130fbbb1ced77638ef5f96b32d6110c1b5177/odoo_addon_sale_rental-15.0.1.0.1.7-py3-none-any.whl
+[2023-04-16 09:32:47] INFO root fetch - processPackages [pinuccio]: Downloading https://files.pythonhosted.org/packages/a2/0b/6a95a7c5aa593bc704bcd07d05458c4b6bca5a7ad3f6d3d7e529a1eb592e/pinuccio-0.0.9.tar.gz
+[2023-04-16 09:32:47] INFO root fetch - processPackages [pinuccio]: executing diffoscope
+[2023-04-16 09:32:47] INFO root fetch - processPackages [pinuccio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinuccio-0.0.8.tar.gz tmp/pinuccio-0.0.9.tar.gz --markdown 20230416/p/pinuccio/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 09:32:47] INFO root fetch - processPackages [odoo-addon-sale-rental]: executing diffoscope
+[2023-04-16 09:32:47] INFO root fetch - processPackages [odoo-addon-sale-rental]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_rental-15.0.1.0.1.6-py3-none-any.whl.zip tmp/odoo_addon_sale_rental-15.0.1.0.1.7-py3-none-any.whl.zip --markdown 20230416/o/odoo-addon-sale-rental/15.0.1.0.1.6-15.0.1.0.1.7/diff.md --exclude *.pyd
+[2023-04-16 09:32:47] INFO root fetch - main [MainThread]: End processing [ssss]: success
+[2023-04-16 09:32:47] INFO root fetch - main [MainThread]: End processing [search-algos]: success
+[2023-04-16 09:32:47] INFO root fetch - main [MainThread]: End processing [zintor]: success
+[2023-04-16 09:32:48] INFO root fetch - main [MainThread]: End processing [meta-person]: success
+[2023-04-16 09:32:48] INFO root fetch - main [MainThread]: End processing [pinuccio]: success
+[2023-04-16 09:32:49] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-rental]: success
+[2023-04-16 09:32:49] INFO root fetch - main [MainThread]: Store serial: [17724580]
