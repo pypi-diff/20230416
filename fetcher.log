@@ -14103,3 +14103,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 23:13:49] INFO root fetch - main [MainThread]: End processing [blaster-server]: success
 [2023-04-16 23:14:19] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-04-16 23:14:19] INFO root fetch - main [MainThread]: Store serial: [17730286]
+[2023-04-16 23:19:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17730286]
+[2023-04-16 23:19:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 23:19:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rolv
+[2023-04-16 23:19:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simple-flask-restful
+[2023-04-16 23:19:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jaxrie
+[2023-04-16 23:19:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RateMyProfessorAPI
+[2023-04-16 23:19:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lamindb
+[2023-04-16 23:19:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: clown-sort
+[2023-04-16 23:19:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bmb-martlet-organization-client
+[2023-04-16 23:19:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: edc-crf
+[2023-04-16 23:19:27] INFO root fetch - processPackages [rolv]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 23:19:27] INFO root fetch - processPackages [simple-flask-restful]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 23:19:27] INFO root fetch - processPackages [RateMyProfessorAPI]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-04-16 23:19:27] INFO root fetch - processPackages [jaxrie]: New version: [9] Old Version: [8]
+[2023-04-16 23:19:27] INFO root fetch - processPackages [clown-sort]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-04-16 23:19:27] INFO root fetch - processPackages [bmb-martlet-organization-client]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-16 23:19:28] INFO root fetch - processPackages [lamindb]: New version: [0.9.6] Old Version: [0.9.4]
+[2023-04-16 23:19:28] INFO root fetch - processPackages [edc-crf]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-16 23:19:28] INFO root fetch - processPackages [bmb-martlet-organization-client]: executing diffoscope
+[2023-04-16 23:19:28] INFO root fetch - processPackages [bmb-martlet-organization-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmb_martlet_organization_client-0.98.0-py3-none-any.whl.zip tmp/bmb_martlet_organization_client-0.99.0-py3-none-any.whl.zip --markdown 20230416/b/bmb-martlet-organization-client/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-16 23:19:28] INFO root fetch - processPackages [simple-flask-restful]: Downloading https://files.pythonhosted.org/packages/1a/57/e296e799a86aee5f78cc336ceddba0a34d2361fd27b5492af69127b45a09/simple_flask_restful-0.1.0.tar.gz
+[2023-04-16 23:19:28] INFO root fetch - processPackages [jaxrie]: executing diffoscope
+[2023-04-16 23:19:28] INFO root fetch - processPackages [jaxrie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxrie-8.tar.gz tmp/jaxrie-9.tar.gz --markdown 20230416/j/jaxrie/8-9/diff.md --exclude *.pyd
+[2023-04-16 23:19:28] INFO root fetch - processPackages [rolv]: Downloading https://files.pythonhosted.org/packages/16/19/892f62517461d08c262cb49d8aa1efe742b12debf9fef247e727607e50b4/rolv-0.0.2.tar.gz
+[2023-04-16 23:19:28] INFO root fetch - processPackages [RateMyProfessorAPI]: Downloading https://files.pythonhosted.org/packages/60/ed/c39b4b6c3aefdad72f933277c46e8bd0aa43c8cece691a5f21926d2bc651/RateMyProfessorAPI-1.3.3.tar.gz
+[2023-04-16 23:19:28] INFO root fetch - processPackages [lamindb]: Downloading https://files.pythonhosted.org/packages/15/74/34148a2f59ec5fafeee3ffbc599388444e1e8d22d525c0b2e244aa151fef/lamindb-0.9.4.tar.gz
+[2023-04-16 23:19:28] INFO root fetch - processPackages [edc-crf]: Downloading https://files.pythonhosted.org/packages/9f/43/46d337ba0341ece46f0a66fee395d021c6f03113afeb7fdf40b3ce1e5401/edc_crf-0.3.8-py3-none-any.whl
+[2023-04-16 23:19:28] INFO root fetch - processPackages [clown-sort]: Downloading https://files.pythonhosted.org/packages/f4/4f/ae0eb501750634a2f486120aed7f3fb868c9bd55ffb6c1bc8fa3345f7db0/clown_sort-1.3.2.tar.gz
+[2023-04-16 23:19:28] INFO root fetch - processPackages [RateMyProfessorAPI]: Downloading https://files.pythonhosted.org/packages/d6/e9/e89562c3cab81f1657e853406ca90c884fb3d6f8df6608e29b9a29e69853/RateMyProfessorAPI-1.3.4.tar.gz
+[2023-04-16 23:19:28] INFO root fetch - processPackages [rolv]: Downloading https://files.pythonhosted.org/packages/f1/af/b44b908fade1d2788e7c7c9266ab404ba01cf5c3ef5607601d37a64be080/rolv-0.0.3.tar.gz
+[2023-04-16 23:19:28] INFO root fetch - processPackages [lamindb]: Downloading https://files.pythonhosted.org/packages/a8/dd/da42b7dd3f39064fda6a4977c93f1a040eefa69ef3a3cefd7b4b8d13efb6/lamindb-0.9.6.tar.gz
+[2023-04-16 23:19:28] INFO root fetch - processPackages [simple-flask-restful]: Downloading https://files.pythonhosted.org/packages/e5/ac/acc5117088bfbc434466602308f87b6f3958d74b9e8cfb0f990c97c3349d/simple_flask_restful-0.2.0.tar.gz
+[2023-04-16 23:19:28] INFO root fetch - processPackages [RateMyProfessorAPI]: executing diffoscope
+[2023-04-16 23:19:28] INFO root fetch - processPackages [RateMyProfessorAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RateMyProfessorAPI-1.3.3.tar.gz tmp/RateMyProfessorAPI-1.3.4.tar.gz --markdown 20230416/R/RateMyProfessorAPI/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-04-16 23:19:28] INFO root fetch - processPackages [rolv]: executing diffoscope
+[2023-04-16 23:19:28] INFO root fetch - processPackages [rolv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rolv-0.0.2.tar.gz tmp/rolv-0.0.3.tar.gz --markdown 20230416/r/rolv/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 23:19:28] INFO root fetch - processPackages [clown-sort]: executing diffoscope
+[2023-04-16 23:19:28] INFO root fetch - processPackages [clown-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clown_sort-1.3.1.tar.gz tmp/clown_sort-1.3.2.tar.gz --markdown 20230416/c/clown-sort/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-16 23:19:28] INFO root fetch - processPackages [lamindb]: executing diffoscope
+[2023-04-16 23:19:28] INFO root fetch - processPackages [lamindb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamindb-0.9.4.tar.gz tmp/lamindb-0.9.6.tar.gz --markdown 20230416/l/lamindb/0.9.4-0.9.6/diff.md --exclude *.pyd
+[2023-04-16 23:19:28] INFO root fetch - processPackages [simple-flask-restful]: executing diffoscope
+[2023-04-16 23:19:28] INFO root fetch - processPackages [simple-flask-restful]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_flask_restful-0.1.0.tar.gz tmp/simple_flask_restful-0.2.0.tar.gz --markdown 20230416/s/simple-flask-restful/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 23:19:28] INFO root fetch - processPackages [edc-crf]: Downloading https://files.pythonhosted.org/packages/b6/a7/7e05c659d42d9ae792cb30294e365867a55188a3ac718ae22613a5b641d5/edc_crf-0.3.9-py3-none-any.whl
+[2023-04-16 23:19:29] INFO root fetch - main [MainThread]: End processing [jaxrie]: success
+[2023-04-16 23:19:29] INFO root fetch - processPackages [edc-crf]: executing diffoscope
+[2023-04-16 23:19:29] INFO root fetch - processPackages [edc-crf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_crf-0.3.8-py3-none-any.whl.zip tmp/edc_crf-0.3.9-py3-none-any.whl.zip --markdown 20230416/e/edc-crf/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-16 23:19:29] INFO root fetch - main [MainThread]: End processing [rolv]: success
+[2023-04-16 23:19:30] INFO root fetch - main [MainThread]: End processing [simple-flask-restful]: success
+[2023-04-16 23:19:30] INFO root fetch - main [MainThread]: End processing [RateMyProfessorAPI]: success
+[2023-04-16 23:19:30] INFO root fetch - main [MainThread]: End processing [clown-sort]: success
+[2023-04-16 23:19:30] INFO root fetch - main [MainThread]: End processing [lamindb]: success
+[2023-04-16 23:19:30] INFO root fetch - main [MainThread]: End processing [edc-crf]: success
+[2023-04-16 23:19:33] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
+[2023-04-16 23:19:33] INFO root fetch - main [MainThread]: Store serial: [17730309]
