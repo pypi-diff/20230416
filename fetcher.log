@@ -3061,3 +3061,13 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 06:43:17] INFO root fetch - main [MainThread]: End processing [jaxrie]: success
 [2023-04-16 06:43:17] INFO root fetch - main [MainThread]: End processing [comic-ocr]: success
 [2023-04-16 06:43:17] INFO root fetch - main [MainThread]: Store serial: [17723737]
+[2023-04-16 06:48:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723737]
+[2023-04-16 06:48:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-16 06:48:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: evolutionary-forest
+[2023-04-16 06:48:25] INFO root fetch - processPackages [evolutionary-forest]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-16 06:48:25] INFO root fetch - processPackages [evolutionary-forest]: Downloading https://files.pythonhosted.org/packages/22/70/f307b522eff472250d56a4c0e45c2bb4f52cb45e61a361b586ab5a8add1e/evolutionary_forest-0.2.0.tar.gz
+[2023-04-16 06:48:26] INFO root fetch - processPackages [evolutionary-forest]: Downloading https://files.pythonhosted.org/packages/6d/e9/f0d466f118b06522a1f69e20ecb8d7d499308d33d31aa6748224bf4221d8/evolutionary_forest-0.2.1.tar.gz
+[2023-04-16 06:48:26] INFO root fetch - processPackages [evolutionary-forest]: executing diffoscope
+[2023-04-16 06:48:26] INFO root fetch - processPackages [evolutionary-forest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evolutionary_forest-0.2.0.tar.gz tmp/evolutionary_forest-0.2.1.tar.gz --markdown 20230416/e/evolutionary-forest/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-16 06:48:28] INFO root fetch - main [MainThread]: End processing [evolutionary-forest]: success
+[2023-04-16 06:48:28] INFO root fetch - main [MainThread]: Store serial: [17723740]
