@@ -3340,3 +3340,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 07:28:24] INFO root fetch - main [MainThread]: End processing [chatgpt-proxy]: success
 [2023-04-16 07:28:25] INFO root fetch - main [MainThread]: End processing [photoshow]: success
 [2023-04-16 07:28:25] INFO root fetch - main [MainThread]: Store serial: [17723922]
+[2023-04-16 07:33:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723922]
+[2023-04-16 07:33:34] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 07:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: so-vits-svc-fork
+[2023-04-16 07:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: digital-unit
+[2023-04-16 07:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sphinxawesome-theme
+[2023-04-16 07:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robotoff
+[2023-04-16 07:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sob
+[2023-04-16 07:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-adapter-kaiheila
+[2023-04-16 07:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: foliolib
+[2023-04-16 07:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: arxivterminal
+[2023-04-16 07:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mls-api
+[2023-04-16 07:33:34] INFO root fetch - processPackages [sphinxawesome-theme]: New version: [4.0.3] Old Version: [4.0.2]
+[2023-04-16 07:33:34] INFO root fetch - processPackages [robotoff]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-16 07:33:34] WARNING root fetch - processPackages [digital-unit]: Skipping, unable to determine old version
+[2023-04-16 07:33:34] INFO root fetch - main [MainThread]: End processing [digital-unit] error
+[2023-04-16 07:33:34] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-04-16 07:33:35] INFO root fetch - processPackages [arxivterminal]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-16 07:33:35] INFO root fetch - processPackages [nonebot-adapter-kaiheila]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-16 07:33:35] INFO root fetch - processPackages [mls-api]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-16 07:33:35] INFO root fetch - processPackages [foliolib]: New version: [0.3.2a1] Old Version: [0.3.1a1]
+[2023-04-16 07:33:35] INFO root fetch - processPackages [sob]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-16 07:33:35] INFO root fetch - processPackages [sob]: executing diffoscope
+[2023-04-16 07:33:35] INFO root fetch - processPackages [sob]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sob-1.8.0.tar.gz tmp/sob-1.9.0.tar.gz --markdown 20230416/s/sob/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-16 07:33:35] INFO root fetch - processPackages [robotoff]: executing diffoscope
+[2023-04-16 07:33:35] INFO root fetch - processPackages [robotoff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotoff-1.8.0.tar.gz tmp/robotoff-1.9.0.tar.gz --markdown 20230416/r/robotoff/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-16 07:33:35] INFO root fetch - processPackages [sphinxawesome-theme]: Downloading https://files.pythonhosted.org/packages/73/75/238ba733079bb68852bd4cfc398a2ed96bb0429f7119b83d713eac8083ab/sphinxawesome_theme-4.0.2.tar.gz
+[2023-04-16 07:33:35] INFO root fetch - processPackages [mls-api]: executing diffoscope
+[2023-04-16 07:33:35] INFO root fetch - processPackages [mls-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mls-api-1.0.8.tar.gz tmp/mls-api-1.0.9.tar.gz --markdown 20230416/m/mls-api/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-16 07:33:35] INFO root fetch - processPackages [nonebot-adapter-kaiheila]: Downloading https://files.pythonhosted.org/packages/ac/a6/dd3f7be3edf0aa3f28ee481f3857615641ff84722561cc4eb50913c2c7d9/nonebot_adapter_kaiheila-0.2.5.tar.gz
+[2023-04-16 07:33:35] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/b5/1e/79bb70994dc38527ae098b89192ceaac0ad2346d6ab79c15e82d7031432f/so_vits_svc_fork-3.9.1.tar.gz
+[2023-04-16 07:33:35] INFO root fetch - processPackages [arxivterminal]: Downloading https://files.pythonhosted.org/packages/5b/b8/c23ea191899b6cb670c69ebbd6cef69bef4eff3743ed6fd0a6130585fdf0/arxivterminal-0.3.0.tar.gz
+[2023-04-16 07:33:35] INFO root fetch - processPackages [foliolib]: Downloading https://files.pythonhosted.org/packages/2d/7e/e57318a4496646e6f0d670e558f9153cc9f1cdc8f1bb082b84b9b12a6fc3/foliolib-0.3.1a1.tar.gz
+[2023-04-16 07:33:35] INFO root fetch - processPackages [arxivterminal]: executing diffoscope
+[2023-04-16 07:33:35] INFO root fetch - processPackages [arxivterminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arxivterminal-0.2.0.tar.gz tmp/arxivterminal-0.3.0.tar.gz --markdown 20230416/a/arxivterminal/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 07:33:35] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-16 07:33:35] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.9.0.tar.gz tmp/so_vits_svc_fork-3.9.1.tar.gz --markdown 20230416/s/so-vits-svc-fork/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-04-16 07:33:35] INFO root fetch - processPackages [nonebot-adapter-kaiheila]: Downloading https://files.pythonhosted.org/packages/4c/c2/c2f6b81ad3df1238b91caf05156945be0f9d3e54b856918c4203c3eac6f6/nonebot_adapter_kaiheila-0.2.6.tar.gz
+[2023-04-16 07:33:35] INFO root fetch - processPackages [sphinxawesome-theme]: Downloading https://files.pythonhosted.org/packages/6b/66/cb65e15e8929b6542fb80df034908f2c79f643abfa51c42f3946f2082fe0/sphinxawesome_theme-4.0.3.tar.gz
+[2023-04-16 07:33:35] INFO root fetch - processPackages [nonebot-adapter-kaiheila]: executing diffoscope
+[2023-04-16 07:33:35] INFO root fetch - processPackages [nonebot-adapter-kaiheila]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_adapter_kaiheila-0.2.5.tar.gz tmp/nonebot_adapter_kaiheila-0.2.6.tar.gz --markdown 20230416/n/nonebot-adapter-kaiheila/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-16 07:33:35] INFO root fetch - processPackages [sphinxawesome-theme]: executing diffoscope
+[2023-04-16 07:33:35] INFO root fetch - processPackages [sphinxawesome-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxawesome_theme-4.0.2.tar.gz tmp/sphinxawesome_theme-4.0.3.tar.gz --markdown 20230416/s/sphinxawesome-theme/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2023-04-16 07:33:35] INFO root fetch - processPackages [foliolib]: Downloading https://files.pythonhosted.org/packages/49/78/14f0f403c18a433c97383f67ff322201630edbd67b7ec9dc33f164691aa4/foliolib-0.3.2a1.tar.gz
+[2023-04-16 07:33:35] INFO root fetch - processPackages [foliolib]: executing diffoscope
+[2023-04-16 07:33:35] INFO root fetch - processPackages [foliolib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foliolib-0.3.1a1.tar.gz tmp/foliolib-0.3.2a1.tar.gz --markdown 20230416/f/foliolib/0.3.1a1-0.3.2a1/diff.md --exclude *.pyd
+[2023-04-16 07:33:36] INFO root fetch - main [MainThread]: End processing [mls-api]: success
+[2023-04-16 07:33:36] INFO root fetch - main [MainThread]: End processing [sob]: success
+[2023-04-16 07:33:36] INFO root fetch - main [MainThread]: End processing [arxivterminal]: success
+[2023-04-16 07:33:36] INFO root fetch - main [MainThread]: End processing [nonebot-adapter-kaiheila]: success
+[2023-04-16 07:33:37] INFO root fetch - main [MainThread]: End processing [foliolib]: success
+[2023-04-16 07:33:37] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-16 07:33:38] INFO root fetch - main [MainThread]: End processing [sphinxawesome-theme]: success
+[2023-04-16 07:33:38] INFO root fetch - main [MainThread]: End processing [robotoff]: success
+[2023-04-16 07:33:38] INFO root fetch - main [MainThread]: Store serial: [17723950]
