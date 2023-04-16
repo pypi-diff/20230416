@@ -2880,3 +2880,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 06:06:54] INFO root fetch - main [MainThread]: End processing [domain-admin]: success
 [2023-04-16 06:06:55] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
 [2023-04-16 06:06:55] INFO root fetch - main [MainThread]: Store serial: [17723613]
+[2023-04-16 06:12:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723613]
+[2023-04-16 06:12:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-16 06:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pr-review-bot
+[2023-04-16 06:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mp-api
+[2023-04-16 06:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: write-the
+[2023-04-16 06:12:05] INFO root fetch - processPackages [pr-review-bot]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-16 06:12:05] INFO root fetch - processPackages [mp-api]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-16 06:12:05] INFO root fetch - processPackages [write-the]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 06:12:05] INFO root fetch - processPackages [pr-review-bot]: Downloading https://files.pythonhosted.org/packages/1d/3c/8791cf3828d6aa51fa6f148e06c9864d46eef55643fdc01fe07984631af5/pr-review-bot-0.1.1.tar.gz
+[2023-04-16 06:12:05] INFO root fetch - processPackages [mp-api]: Downloading https://files.pythonhosted.org/packages/d0/3b/c0f76330b2f702efab6d6b22672c31c3a367b6d2af4b70db241a553c0097/mp-api-0.9.0.tar.gz
+[2023-04-16 06:12:05] INFO root fetch - processPackages [write-the]: Downloading https://files.pythonhosted.org/packages/c1/72/d913fefce40002206dde393b24a3aba628c46dc3053c945e725d3b1f1a4c/write_the-0.2.0.tar.gz
+[2023-04-16 06:12:05] INFO root fetch - processPackages [write-the]: executing diffoscope
+[2023-04-16 06:12:05] INFO root fetch - processPackages [write-the]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/write_the-0.1.0.tar.gz tmp/write_the-0.2.0.tar.gz --markdown 20230416/w/write-the/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 06:12:05] INFO root fetch - processPackages [pr-review-bot]: Downloading https://files.pythonhosted.org/packages/93/5f/c08ed1a07348479ad927510f2a3303b15a090f42606b7b194051ea6af929/pr-review-bot-0.2.0.tar.gz
+[2023-04-16 06:12:06] INFO root fetch - processPackages [pr-review-bot]: executing diffoscope
+[2023-04-16 06:12:06] INFO root fetch - processPackages [pr-review-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pr-review-bot-0.1.1.tar.gz tmp/pr-review-bot-0.2.0.tar.gz --markdown 20230416/p/pr-review-bot/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 06:12:06] INFO root fetch - processPackages [mp-api]: Downloading https://files.pythonhosted.org/packages/6c/0e/759b93c4da8606f9bb1b3db9c592fb1b8eeaddcd0f0b6a2d901b6889bc2f/mp-api-0.9.1.tar.gz
+[2023-04-16 06:12:06] INFO root fetch - main [MainThread]: End processing [write-the]: success
+[2023-04-16 06:12:06] INFO root fetch - main [MainThread]: End processing [pr-review-bot]: success
+[2023-04-16 06:12:06] INFO root fetch - processPackages [mp-api]: executing diffoscope
+[2023-04-16 06:12:06] INFO root fetch - processPackages [mp-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mp-api-0.9.0.tar.gz tmp/mp-api-0.9.1.tar.gz --markdown 20230416/m/mp-api/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-16 06:12:10] INFO root fetch - main [MainThread]: End processing [mp-api]: success
+[2023-04-16 06:12:10] INFO root fetch - main [MainThread]: Store serial: [17723622]
