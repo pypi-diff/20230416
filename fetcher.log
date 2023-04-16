@@ -10447,3 +10447,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 17:15:12] INFO root fetch - main [MainThread]: End processing [pyttb]: success
 [2023-04-16 17:15:30] INFO root fetch - main [MainThread]: End processing [zenoml]: success
 [2023-04-16 17:15:30] INFO root fetch - main [MainThread]: Store serial: [17728053]
+[2023-04-16 17:20:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728053]
+[2023-04-16 17:20:39] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 17:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hond
+[2023-04-16 17:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: embedbase
+[2023-04-16 17:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: to-cloud-run
+[2023-04-16 17:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: artemis-common
+[2023-04-16 17:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: thread-manager-py
+[2023-04-16 17:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cbra
+[2023-04-16 17:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pylint-keyword-only-args-plugin
+[2023-04-16 17:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyPhasesML
+[2023-04-16 17:20:40] INFO root fetch - processPackages [hond]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-16 17:20:40] INFO root fetch - processPackages [to-cloud-run]: New version: [1.1] Old Version: [1.0]
+[2023-04-16 17:20:40] INFO root fetch - processPackages [pyPhasesML]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-16 17:20:40] INFO root fetch - processPackages [thread-manager-py]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-16 17:20:40] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a88]
+[2023-04-16 17:20:40] INFO root fetch - processPackages [artemis-common]: New version: [0.3.5b0] Old Version: [0.3.4b0]
+[2023-04-16 17:20:40] INFO root fetch - processPackages [embedbase]: New version: [1.0.1] Old Version: [0.9.9]
+[2023-04-16 17:20:40] INFO root fetch - processPackages [pylint-keyword-only-args-plugin]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-16 17:20:40] INFO root fetch - processPackages [pyPhasesML]: executing diffoscope
+[2023-04-16 17:20:40] INFO root fetch - processPackages [pyPhasesML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPhasesML-0.4.6.tar.gz tmp/pyPhasesML-0.4.7.tar.gz --markdown 20230416/p/pyPhasesML/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-16 17:20:40] INFO root fetch - processPackages [to-cloud-run]: Downloading https://files.pythonhosted.org/packages/c8/49/da9bc68354539ba968f5a67413746d4117dc5979c99d6403c63e54de2376/to-cloud-run-1.0.tar.gz
+[2023-04-16 17:20:40] INFO root fetch - processPackages [cbra]: Downloading https://files.pythonhosted.org/packages/10/16/510b2a36e1799b5d724b068c3792b848a6d0e6c24d657d0914ca9a0909e2/cbra-2.0.0a88.tar.gz
+[2023-04-16 17:20:40] INFO root fetch - processPackages [hond]: Downloading https://files.pythonhosted.org/packages/bc/44/8989d7d404f20f9669bef2b08dc81e495ad96ac7a53a89dcfe70be801e5e/hond-2.0.1.tar.gz
+[2023-04-16 17:20:40] INFO root fetch - processPackages [embedbase]: Downloading https://files.pythonhosted.org/packages/5b/d3/a7e1942339ab0d96f3a39b2bc381be9774657e6c2ec8204825e0afd6e49e/embedbase-0.9.9.tar.gz
+[2023-04-16 17:20:40] INFO root fetch - processPackages [thread-manager-py]: Downloading https://files.pythonhosted.org/packages/69/25/08e74e4895fce47d2cca6341217783bcaa4f51a40b4212bffd106ad9a577/thread-manager-py-0.2.0.tar.gz
+[2023-04-16 17:20:40] INFO root fetch - processPackages [artemis-common]: Downloading https://files.pythonhosted.org/packages/34/a4/9868143c4e7c91862b5be09b0e4987a72456b04a1b275976fa313b9aedd0/artemis-common-0.3.5b0.tar.gz
+[2023-04-16 17:20:40] INFO root fetch - processPackages [hond]: executing diffoscope
+[2023-04-16 17:20:40] INFO root fetch - processPackages [hond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hond-2.0.0.tar.gz tmp/hond-2.0.1.tar.gz --markdown 20230416/h/hond/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-16 17:20:40] INFO root fetch - processPackages [to-cloud-run]: Downloading https://files.pythonhosted.org/packages/48/ae/0b3fd4315140e4bea9c8a9b9af3bdf6386f693805dc74db3d347d9cb9367/to-cloud-run-1.1.tar.gz
+[2023-04-16 17:20:40] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-04-16 17:20:40] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a88.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230416/c/cbra/2.0.0a88-3.0.0a7/diff.md --exclude *.pyd
+[2023-04-16 17:20:40] INFO root fetch - processPackages [artemis-common]: executing diffoscope
+[2023-04-16 17:20:40] INFO root fetch - processPackages [artemis-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/artemis-common-0.3.4b0.tar.gz tmp/artemis-common-0.3.5b0.tar.gz --markdown 20230416/a/artemis-common/0.3.4b0-0.3.5b0/diff.md --exclude *.pyd
+[2023-04-16 17:20:40] INFO root fetch - processPackages [embedbase]: Downloading https://files.pythonhosted.org/packages/2a/53/a07749ca84f5de661caf2cc016e44ed9bd92cb90753bd3bd131b166108f0/embedbase-1.0.1.tar.gz
+[2023-04-16 17:20:40] INFO root fetch - processPackages [pylint-keyword-only-args-plugin]: Downloading https://files.pythonhosted.org/packages/3b/7d/cdbe022799c1d19faef64ef77e9cf0455b1ff24da2af2f25b5c33f5be477/pylint_keyword_only_args_plugin-0.2.3.tar.gz
+[2023-04-16 17:20:40] INFO root fetch - processPackages [embedbase]: executing diffoscope
+[2023-04-16 17:20:40] INFO root fetch - processPackages [embedbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedbase-0.9.9.tar.gz tmp/embedbase-1.0.1.tar.gz --markdown 20230416/e/embedbase/0.9.9-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 17:20:40] INFO root fetch - processPackages [thread-manager-py]: Downloading https://files.pythonhosted.org/packages/69/ab/83c9913bea2dcdc7e31489437221b29fcfc8ed08afe9d5fa106e00e8e63a/thread-manager-py-0.3.0.tar.gz
+[2023-04-16 17:20:40] INFO root fetch - processPackages [to-cloud-run]: executing diffoscope
+[2023-04-16 17:20:40] INFO root fetch - processPackages [to-cloud-run]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/to-cloud-run-1.0.tar.gz tmp/to-cloud-run-1.1.tar.gz --markdown 20230416/t/to-cloud-run/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-16 17:20:40] INFO root fetch - processPackages [pylint-keyword-only-args-plugin]: executing diffoscope
+[2023-04-16 17:20:40] INFO root fetch - processPackages [pylint-keyword-only-args-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylint_keyword_only_args_plugin-0.2.2.tar.gz tmp/pylint_keyword_only_args_plugin-0.2.3.tar.gz --markdown 20230416/p/pylint-keyword-only-args-plugin/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-16 17:20:40] INFO root fetch - processPackages [thread-manager-py]: executing diffoscope
+[2023-04-16 17:20:40] INFO root fetch - processPackages [thread-manager-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thread-manager-py-0.2.0.tar.gz tmp/thread-manager-py-0.3.0.tar.gz --markdown 20230416/t/thread-manager-py/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 17:20:41] INFO root fetch - main [MainThread]: End processing [pyPhasesML]: success
+[2023-04-16 17:20:41] INFO root fetch - main [MainThread]: End processing [hond]: success
+[2023-04-16 17:20:41] INFO root fetch - main [MainThread]: End processing [to-cloud-run]: success
+[2023-04-16 17:20:41] INFO root fetch - main [MainThread]: End processing [thread-manager-py]: success
+[2023-04-16 17:20:41] INFO root fetch - main [MainThread]: End processing [pylint-keyword-only-args-plugin]: success
+[2023-04-16 17:20:42] INFO root fetch - main [MainThread]: End processing [embedbase]: success
+[2023-04-16 17:20:42] INFO root fetch - main [MainThread]: End processing [artemis-common]: success
+[2023-04-16 17:20:44] INFO root fetch - main [MainThread]: End processing [cbra]: success
+[2023-04-16 17:20:44] INFO root fetch - main [MainThread]: Store serial: [17728076]
