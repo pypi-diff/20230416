@@ -14157,3 +14157,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 23:19:30] INFO root fetch - main [MainThread]: End processing [edc-crf]: success
 [2023-04-16 23:19:33] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
 [2023-04-16 23:19:33] INFO root fetch - main [MainThread]: Store serial: [17730309]
+[2023-04-16 23:24:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17730309]
+[2023-04-16 23:24:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 23:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygeoweaver
+[2023-04-16 23:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bmb-martlet-organization-client
+[2023-04-16 23:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-web-io
+[2023-04-16 23:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maccabistats
+[2023-04-16 23:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymarkdownlnt
+[2023-04-16 23:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tuneflow-py
+[2023-04-16 23:24:42] INFO root fetch - processPackages [maccabistats]: New version: [2.9.5] Old Version: [2.9.4]
+[2023-04-16 23:24:42] INFO root fetch - processPackages [python-web-io]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 23:24:42] INFO root fetch - processPackages [pygeoweaver]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-16 23:24:43] INFO root fetch - processPackages [bmb-martlet-organization-client]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-16 23:24:43] INFO root fetch - processPackages [pymarkdownlnt]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-16 23:24:43] INFO root fetch - processPackages [tuneflow-py]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-04-16 23:24:43] INFO root fetch - processPackages [python-web-io]: executing diffoscope
+[2023-04-16 23:24:43] INFO root fetch - processPackages [python-web-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_web_io-0.1.8.tar.gz tmp/python_web_io-0.1.9.tar.gz --markdown 20230416/p/python-web-io/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 23:24:43] INFO root fetch - processPackages [maccabistats]: Downloading https://files.pythonhosted.org/packages/25/59/f8c7b6f474a1385d13f689642c68c6fc2f9ab28e14dccfe4fc8e999dfa90/maccabistats-2.9.4-py3-none-any.whl
+[2023-04-16 23:24:43] INFO root fetch - processPackages [bmb-martlet-organization-client]: executing diffoscope
+[2023-04-16 23:24:43] INFO root fetch - processPackages [bmb-martlet-organization-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmb_martlet_organization_client-0.98.0-py3-none-any.whl.zip tmp/bmb_martlet_organization_client-0.99.0-py3-none-any.whl.zip --markdown 20230416/b/bmb-martlet-organization-client/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-16 23:24:43] INFO root fetch - processPackages [pygeoweaver]: Downloading https://files.pythonhosted.org/packages/3c/57/beea6e2c84acaeb13d000d3e3b41dea7974117d0100e3939c9ec74c64f5a/pygeoweaver-0.6.2.tar.gz
+[2023-04-16 23:24:43] INFO root fetch - processPackages [pygeoweaver]: executing diffoscope
+[2023-04-16 23:24:43] INFO root fetch - processPackages [pygeoweaver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygeoweaver-0.6.1.tar.gz tmp/pygeoweaver-0.6.2.tar.gz --markdown 20230416/p/pygeoweaver/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-16 23:24:43] INFO root fetch - processPackages [pymarkdownlnt]: Downloading https://files.pythonhosted.org/packages/a3/94/6adcb1867afbe385082c2f2689db8f40cba7af716d2105651a23f845bbe4/pymarkdownlnt-0.9.8.tar.gz
+[2023-04-16 23:24:43] INFO root fetch - processPackages [tuneflow-py]: Downloading https://files.pythonhosted.org/packages/76/a4/3b1cdc4ef2bb6017dd7074c6be9d02a299c47971f7a5853496b5a1cd6254/tuneflow-py-0.5.1.tar.gz
+[2023-04-16 23:24:43] INFO root fetch - processPackages [tuneflow-py]: Downloading https://files.pythonhosted.org/packages/68/00/f62411777dab89898bebe64559c238c51f846d3ede5fe9dbe4a8bccdb377/tuneflow-py-0.6.0.tar.gz
+[2023-04-16 23:24:43] INFO root fetch - processPackages [maccabistats]: Downloading https://files.pythonhosted.org/packages/3a/81/f1641238f5d505b3e351e8de6a0e9ea86be243d3ab61cb015b05b1297846/maccabistats-2.9.5-py3-none-any.whl
+[2023-04-16 23:24:43] INFO root fetch - processPackages [pymarkdownlnt]: Downloading https://files.pythonhosted.org/packages/8f/76/a53b85aa14a0478296d962d41d6a138019a37a47c6b213567ef63c0154dc/pymarkdownlnt-0.9.9.tar.gz
+[2023-04-16 23:24:43] INFO root fetch - processPackages [tuneflow-py]: executing diffoscope
+[2023-04-16 23:24:43] INFO root fetch - processPackages [tuneflow-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuneflow-py-0.5.1.tar.gz tmp/tuneflow-py-0.6.0.tar.gz --markdown 20230416/t/tuneflow-py/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-04-16 23:24:43] INFO root fetch - processPackages [pymarkdownlnt]: executing diffoscope
+[2023-04-16 23:24:43] INFO root fetch - processPackages [pymarkdownlnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymarkdownlnt-0.9.8.tar.gz tmp/pymarkdownlnt-0.9.9.tar.gz --markdown 20230416/p/pymarkdownlnt/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-16 23:24:43] INFO root fetch - processPackages [maccabistats]: executing diffoscope
+[2023-04-16 23:24:43] INFO root fetch - processPackages [maccabistats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maccabistats-2.9.4-py3-none-any.whl.zip tmp/maccabistats-2.9.5-py3-none-any.whl.zip --markdown 20230416/m/maccabistats/2.9.4-2.9.5/diff.md --exclude *.pyd
+[2023-04-16 23:24:44] INFO root fetch - main [MainThread]: End processing [python-web-io]: success
+[2023-04-16 23:24:44] INFO root fetch - main [MainThread]: End processing [pygeoweaver]: success
+[2023-04-16 23:24:45] INFO root fetch - main [MainThread]: End processing [maccabistats]: success
+[2023-04-16 23:24:45] INFO root fetch - main [MainThread]: End processing [tuneflow-py]: success
+[2023-04-16 23:24:46] INFO root fetch - main [MainThread]: End processing [pymarkdownlnt]: success
+[2023-04-16 23:24:47] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
+[2023-04-16 23:24:47] INFO root fetch - main [MainThread]: Store serial: [17730325]
