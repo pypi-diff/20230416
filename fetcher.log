@@ -12918,3 +12918,64 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 21:08:14] INFO root fetch - main [MainThread]: End processing [sunnyday-IZPy]: success
 [2023-04-16 21:08:14] INFO root fetch - main [MainThread]: End processing [seleniumuser]: success
 [2023-04-16 21:08:14] INFO root fetch - main [MainThread]: Store serial: [17729518]
+[2023-04-16 21:13:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729518]
+[2023-04-16 21:13:23] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-16 21:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysui
+[2023-04-16 21:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unipi-control-os-helpers
+[2023-04-16 21:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gator-core
+[2023-04-16 21:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webslides
+[2023-04-16 21:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sql-automations
+[2023-04-16 21:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: editshare-flow-api
+[2023-04-16 21:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: DCLS
+[2023-04-16 21:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bandripper
+[2023-04-16 21:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-awesomplete
+[2023-04-16 21:13:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tplink-omada-client
+[2023-04-16 21:13:23] WARNING root fetch - processPackages [unipi-control-os-helpers]: Skipping, unable to determine old version
+[2023-04-16 21:13:23] INFO root fetch - processPackages [pysui]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-16 21:13:23] INFO root fetch - processPackages [unipi-control-os-helpers]: Start processing: drup
+[2023-04-16 21:13:23] WARNING root fetch - processPackages [editshare-flow-api]: Skipping, unable to determine old version
+[2023-04-16 21:13:23] INFO root fetch - processPackages [webslides]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-04-16 21:13:23] INFO root fetch - main [MainThread]: End processing [unipi-control-os-helpers] error
+[2023-04-16 21:13:23] INFO root fetch - main [MainThread]: End processing [editshare-flow-api] error
+[2023-04-16 21:13:23] INFO root fetch - processPackages [bandripper]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-16 21:13:23] INFO root fetch - processPackages [gator-core]: New version: [2.0.0rc9] Old Version: [2.0.0rc8]
+[2023-04-16 21:13:23] INFO root fetch - processPackages [DCLS]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-16 21:13:23] INFO root fetch - processPackages [tplink-omada-client]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-16 21:13:23] INFO root fetch - processPackages [sql-automations]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 21:13:23] INFO root fetch - processPackages [django-awesomplete]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-16 21:13:24] INFO root fetch - processPackages [gator-core]: executing diffoscope
+[2023-04-16 21:13:24] INFO root fetch - processPackages [gator-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gator_core-2.0.0rc8.tar.gz tmp/gator_core-2.0.0rc9.tar.gz --markdown 20230416/g/gator-core/2.0.0rc8-2.0.0rc9/diff.md --exclude *.pyd
+[2023-04-16 21:13:24] WARNING root fetch - processPackages [drup]: Skipping, unable to determine old version
+[2023-04-16 21:13:24] INFO root fetch - main [MainThread]: End processing [drup] error
+[2023-04-16 21:13:24] INFO root fetch - processPackages [sql-automations]: Downloading https://files.pythonhosted.org/packages/e5/78/58790636aa6158d6464fa4e246945a11480f1fea4a025e9596f621160d22/sql_automations-0.0.1.tar.gz
+[2023-04-16 21:13:24] INFO root fetch - processPackages [tplink-omada-client]: Downloading https://files.pythonhosted.org/packages/3f/6d/c74244e74e449400f7fc6d7e6366bc949722d6a56d97971f3d16496b2ac8/tplink_omada_client-1.2.4.tar.gz
+[2023-04-16 21:13:24] INFO root fetch - processPackages [bandripper]: Downloading https://files.pythonhosted.org/packages/bd/d1/cd20ee955139dc40d2c0ba2908a5ccb8062f2ba628faf47cd4ae54025fc5/bandripper-0.1.4.tar.gz
+[2023-04-16 21:13:24] INFO root fetch - processPackages [DCLS]: Downloading https://files.pythonhosted.org/packages/25/52/debe12687e330e101b0336c3bf768a4e6fb78b7da1ffde9b855f45528225/dcls-0.0.3.tar.gz
+[2023-04-16 21:13:24] INFO root fetch - processPackages [django-awesomplete]: Downloading https://files.pythonhosted.org/packages/07/50/185833f6c7198eec6b9c379912cd0cf4bb2033a940f88becb9bdf3b1f7e1/django-awesomplete-0.5.1.tar.gz
+[2023-04-16 21:13:24] INFO root fetch - processPackages [tplink-omada-client]: executing diffoscope
+[2023-04-16 21:13:24] INFO root fetch - processPackages [tplink-omada-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tplink_omada_client-1.2.3.tar.gz tmp/tplink_omada_client-1.2.4.tar.gz --markdown 20230416/t/tplink-omada-client/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-16 21:13:24] INFO root fetch - processPackages [webslides]: Downloading https://files.pythonhosted.org/packages/37/16/75712b77168496fee6a1fa304b0f44eab52eedc4acebf6b422d6c3e13d64/webslides-0.5.6.tar.gz
+[2023-04-16 21:13:24] INFO root fetch - processPackages [sql-automations]: Downloading https://files.pythonhosted.org/packages/2b/6b/cc9c4682c3969e2096dbac709c340137ddd349155e55f439309b5f0d7165/sql_automations-0.0.2-py3-none-any.whl
+[2023-04-16 21:13:24] INFO root fetch - processPackages [pysui]: executing diffoscope
+[2023-04-16 21:13:24] INFO root fetch - processPackages [pysui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysui-0.8.0-py3-none-any.whl.zip tmp/pysui-0.9.0-py3-none-any.whl.zip --markdown 20230416/p/pysui/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 21:13:24] INFO root fetch - processPackages [webslides]: executing diffoscope
+[2023-04-16 21:13:24] INFO root fetch - processPackages [webslides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webslides-0.5.5.tar.gz tmp/webslides-0.5.6.tar.gz --markdown 20230416/w/webslides/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-04-16 21:13:24] INFO root fetch - processPackages [DCLS]: Downloading https://files.pythonhosted.org/packages/a2/8e/5eb13738351eed481c1987660cdc19b0d407d6f85f2cf9db6e1dd38d0772/dcls-0.0.4.tar.gz
+[2023-04-16 21:13:24] INFO root fetch - processPackages [bandripper]: Downloading https://files.pythonhosted.org/packages/2f/ad/0a2b5ea18bebd7ac22ed2e154da49999dca4f8a56278916af8d4f76407da/bandripper-0.1.5.tar.gz
+[2023-04-16 21:13:24] INFO root fetch - processPackages [django-awesomplete]: Downloading https://files.pythonhosted.org/packages/a5/94/1a3cb3f24c20b6e12c5029e7c84ad012beb49b7f0aecfe636a4926eaafbb/django-awesomplete-0.5.2.tar.gz
+[2023-04-16 21:13:24] INFO root fetch - processPackages [sql-automations]: executing diffoscope
+[2023-04-16 21:13:24] INFO root fetch - processPackages [sql-automations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sql_automations-0.0.1.tar.gz tmp/sql_automations-0.0.2-py3-none-any.whl.zip --markdown 20230416/s/sql-automations/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 21:13:24] INFO root fetch - processPackages [bandripper]: executing diffoscope
+[2023-04-16 21:13:24] INFO root fetch - processPackages [bandripper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bandripper-0.1.4.tar.gz tmp/bandripper-0.1.5.tar.gz --markdown 20230416/b/bandripper/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-16 21:13:24] INFO root fetch - processPackages [django-awesomplete]: executing diffoscope
+[2023-04-16 21:13:24] INFO root fetch - processPackages [django-awesomplete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-awesomplete-0.5.1.tar.gz tmp/django-awesomplete-0.5.2.tar.gz --markdown 20230416/d/django-awesomplete/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-16 21:13:24] WARNING root fetch - processPackages [DCLS]: Skipping package: exceeds size limit 23402860>=10485760
+[2023-04-16 21:13:24] INFO root fetch - main [MainThread]: End processing [DCLS] error
+[2023-04-16 21:13:25] INFO root fetch - main [MainThread]: End processing [gator-core]: success
+[2023-04-16 21:13:25] INFO root fetch - main [MainThread]: End processing [sql-automations]: success
+[2023-04-16 21:13:25] INFO root fetch - main [MainThread]: End processing [webslides]: success
+[2023-04-16 21:13:25] INFO root fetch - main [MainThread]: End processing [tplink-omada-client]: success
+[2023-04-16 21:13:25] INFO root fetch - main [MainThread]: End processing [bandripper]: success
+[2023-04-16 21:13:25] INFO root fetch - main [MainThread]: End processing [pysui]: success
+[2023-04-16 21:13:26] INFO root fetch - main [MainThread]: End processing [django-awesomplete]: success
+[2023-04-16 21:13:26] INFO root fetch - main [MainThread]: Store serial: [17729553]
