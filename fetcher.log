@@ -6689,3 +6689,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 11:51:38] INFO root fetch - main [MainThread]: End processing [kodi-nfo-generator]: success
 [2023-04-16 11:51:39] INFO root fetch - main [MainThread]: End processing [aiooss2]: success
 [2023-04-16 11:51:39] INFO root fetch - main [MainThread]: Store serial: [17725775]
+[2023-04-16 11:56:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17725775]
+[2023-04-16 11:56:49] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 11:56:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xia-engine
+[2023-04-16 11:56:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-spacy-redact-message
+[2023-04-16 11:56:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aa-buybackprogram
+[2023-04-16 11:56:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pheno-utils
+[2023-04-16 11:56:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pandasflow
+[2023-04-16 11:56:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prysk
+[2023-04-16 11:56:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flarespy
+[2023-04-16 11:56:49] WARNING root fetch - processPackages [py-spacy-redact-message]: Skipping, unable to determine old version
+[2023-04-16 11:56:49] INFO root fetch - main [MainThread]: End processing [py-spacy-redact-message] error
+[2023-04-16 11:56:49] INFO root fetch - processPackages [pheno-utils]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 11:56:49] INFO root fetch - processPackages [prysk]: New version: [0.9] Old Version: [0.14.0]
+[2023-04-16 11:56:49] INFO root fetch - processPackages [aa-buybackprogram]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-16 11:56:49] INFO root fetch - processPackages [flarespy]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-16 11:56:49] WARNING root fetch - processPackages [pandasflow]: Skipping, unable to determine old version
+[2023-04-16 11:56:49] INFO root fetch - main [MainThread]: End processing [pandasflow] error
+[2023-04-16 11:56:49] INFO root fetch - processPackages [xia-engine]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-16 11:56:49] INFO root fetch - processPackages [pheno-utils]: executing diffoscope
+[2023-04-16 11:56:49] INFO root fetch - processPackages [pheno-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pheno-utils-0.0.8.tar.gz tmp/pheno-utils-0.0.9.tar.gz --markdown 20230416/p/pheno-utils/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 11:56:49] INFO root fetch - processPackages [prysk]: Downloading https://files.pythonhosted.org/packages/e5/1b/ac82208f1095a04bf3cd04d97232d2ee501b49c7174bd3b8d93f12e2ab70/prysk-0.14.0.tar.gz
+[2023-04-16 11:56:49] INFO root fetch - processPackages [flarespy]: executing diffoscope
+[2023-04-16 11:56:49] INFO root fetch - processPackages [flarespy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flarespy-0.5.1.tar.gz tmp/flarespy-0.5.2.tar.gz --markdown 20230416/f/flarespy/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-16 11:56:49] INFO root fetch - processPackages [aa-buybackprogram]: Downloading https://files.pythonhosted.org/packages/84/42/9e4ae98bd058e77c16f9ab541b4801b84526f02ec1458bade6a4cc9acf3f/aa-buybackprogram-1.9.0.tar.gz
+[2023-04-16 11:56:49] INFO root fetch - processPackages [xia-engine]: executing diffoscope
+[2023-04-16 11:56:49] INFO root fetch - processPackages [xia-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine-0.6.8-cp39-none-win_amd64.whl.zip tmp/xia_engine-0.6.9-cp39-none-win_amd64.whl.zip --markdown 20230416/x/xia-engine/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-16 11:56:50] INFO root fetch - processPackages [aa-buybackprogram]: Downloading https://files.pythonhosted.org/packages/aa/f0/45941023cd842a420d73f54d15d47e712e7a5815ac9f550a1e9f51d1310b/aa-buybackprogram-1.9.1.tar.gz
+[2023-04-16 11:56:50] INFO root fetch - processPackages [prysk]: Downloading https://files.pythonhosted.org/packages/3e/ca/f5f7097be50b13aa9ddb8045cf91eb9fa36951b78317a99f126aa06fc957/prysk-0.9.tar.gz
+[2023-04-16 11:56:50] INFO root fetch - processPackages [aa-buybackprogram]: executing diffoscope
+[2023-04-16 11:56:50] INFO root fetch - processPackages [aa-buybackprogram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-buybackprogram-1.9.0.tar.gz tmp/aa-buybackprogram-1.9.1.tar.gz --markdown 20230416/a/aa-buybackprogram/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-16 11:56:50] INFO root fetch - processPackages [prysk]: executing diffoscope
+[2023-04-16 11:56:50] INFO root fetch - processPackages [prysk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prysk-0.14.0.tar.gz tmp/prysk-0.9.tar.gz --markdown 20230416/p/prysk/0.14.0-0.9/diff.md --exclude *.pyd
+[2023-04-16 11:56:50] INFO root fetch - main [MainThread]: End processing [flarespy]: success
+[2023-04-16 11:56:50] INFO root fetch - main [MainThread]: End processing [xia-engine]: success
+[2023-04-16 11:56:51] INFO root fetch - main [MainThread]: End processing [pheno-utils]: success
+[2023-04-16 11:56:51] INFO root fetch - main [MainThread]: End processing [prysk]: success
+[2023-04-16 11:56:51] INFO root fetch - main [MainThread]: End processing [aa-buybackprogram]: success
+[2023-04-16 11:56:51] INFO root fetch - main [MainThread]: Store serial: [17725811]
