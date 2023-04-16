@@ -10706,3 +10706,105 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 17:42:41] INFO root fetch - processPackages [wrap-rocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wrap_rocks-0.3.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/wrap_rocks-0.3.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230416/w/wrap-rocks/0.3.3-0.3.4/diff.md --exclude *.pyd
 [2023-04-16 17:43:42] INFO root fetch - main [MainThread]: End processing [wrap-rocks]: success
 [2023-04-16 17:43:42] INFO root fetch - main [MainThread]: Store serial: [17728181]
+[2023-04-16 17:48:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728181]
+[2023-04-16 17:49:01] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-16 17:49:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aa-bulletin-board
+[2023-04-16 17:49:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Apycula
+[2023-04-16 17:49:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drf-social-oauth2
+[2023-04-16 17:49:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dratio
+[2023-04-16 17:49:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kcli
+[2023-04-16 17:49:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: napari-hello
+[2023-04-16 17:49:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: doveseed
+[2023-04-16 17:49:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: calibdiff
+[2023-04-16 17:49:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: test-stest-setst-sets-11111
+[2023-04-16 17:49:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: flowcontainer
+[2023-04-16 17:49:01] WARNING root fetch - processPackages [napari-hello]: Skipping, unable to determine old version
+[2023-04-16 17:49:01] INFO root fetch - processPackages [napari-hello]: Start processing: pyrovelocity
+[2023-04-16 17:49:01] INFO root fetch - main [MainThread]: End processing [napari-hello] error
+[2023-04-16 17:49:01] INFO root fetch - processPackages [dratio]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 17:49:01] INFO root fetch - processPackages [doveseed]: New version: [2.0.0a4] Old Version: [2.0.0a3]
+[2023-04-16 17:49:01] INFO root fetch - processPackages [Apycula]: New version: [0.8] Old Version: [0.7]
+[2023-04-16 17:49:01] WARNING root fetch - processPackages [test-stest-setst-sets-11111]: Skipping, unable to determine old version
+[2023-04-16 17:49:01] INFO root fetch - processPackages [test-stest-setst-sets-11111]: Start processing: dknovautils
+[2023-04-16 17:49:01] INFO root fetch - main [MainThread]: End processing [test-stest-setst-sets-11111] error
+[2023-04-16 17:49:01] INFO root fetch - processPackages [aa-bulletin-board]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-16 17:49:01] INFO root fetch - processPackages [pyrovelocity]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 17:49:01] WARNING root fetch - processPackages [calibdiff]: Skipping, unable to determine old version
+[2023-04-16 17:49:01] INFO root fetch - processPackages [calibdiff]: Start processing: argrelay
+[2023-04-16 17:49:01] INFO root fetch - main [MainThread]: End processing [calibdiff] error
+[2023-04-16 17:49:01] INFO root fetch - processPackages [drf-social-oauth2]: New version: [2.0.0] Old Version: [1.3.0]
+[2023-04-16 17:49:01] INFO root fetch - processPackages [dknovautils]: New version: [0.0.3] Old Version: [0.0.22]
+[2023-04-16 17:49:01] INFO root fetch - processPackages [flowcontainer]: New version: [6.5] Old Version: [6.4]
+[2023-04-16 17:49:01] INFO root fetch - processPackages [kcli]: New version: [99.0.202304161549] Old Version: [99.0.202304151543]
+[2023-04-16 17:49:01] INFO root fetch - processPackages [argrelay]: New version: [0.0.0.dev9] Old Version: [0.0.0.dev8]
+[2023-04-16 17:49:02] INFO root fetch - processPackages [flowcontainer]: Downloading https://files.pythonhosted.org/packages/2f/45/3e19cc700f1f498c012914391f6b966e94705a9d77c1b52bf446c3fc425a/flowcontainer-6.4.tar.gz
+[2023-04-16 17:49:02] WARNING root fetch - processPackages [argrelay]: fallback to get urls: [0.0.0.dev8]
+[2023-04-16 17:49:02] INFO root fetch - processPackages [doveseed]: Downloading https://files.pythonhosted.org/packages/d8/55/c6265f283ea75fd9b5224cf0f0f5a0b5441ccd8262008bb7c450171e5ae8/doveseed-2.0.0a3.tar.gz
+[2023-04-16 17:49:02] INFO root fetch - processPackages [dratio]: Downloading https://files.pythonhosted.org/packages/9f/90/4aefb2980b0b608114ed60fc07acceaf525fe5ea7982ba73c09d1f5d2b1e/dratio-0.0.8.tar.gz
+[2023-04-16 17:49:02] INFO root fetch - processPackages [dknovautils]: Downloading https://files.pythonhosted.org/packages/8f/34/af7018f6f4245a2c7dde62a526b4f652d68de4088879509cb8dca0f7915c/dknovautils-0.0.22.tar.gz
+[2023-04-16 17:49:02] INFO root fetch - processPackages [drf-social-oauth2]: Downloading https://files.pythonhosted.org/packages/20/f4/e790d4964b78a8a1a0991145017fef04a97a5f108f01093a5dd0056ddf1b/drf-social-oauth2-1.3.0.tar.gz
+[2023-04-16 17:49:02] INFO root fetch - processPackages [Apycula]: Downloading https://files.pythonhosted.org/packages/0f/ca/2159161cc365625d19146dab0e11251f48d94cb383597b5675c5e23589f1/Apycula-0.7.tar.gz
+[2023-04-16 17:49:02] INFO root fetch - processPackages [pyrovelocity]: Downloading https://files.pythonhosted.org/packages/dc/eb/2aeacbed44d39e7407f6c9fccc2eebe8c39455b090fcf953a5571d03e9fc/pyrovelocity-0.1.1.tar.gz
+[2023-04-16 17:49:02] WARNING root fetch - processPackages [argrelay]: None
+[2023-04-16 17:49:02] WARNING root fetch - processPackages [argrelay]: None
+[2023-04-16 17:49:02] WARNING root fetch - processPackages [argrelay]: unable to get url for both version [0.0.0.dev8]
+[2023-04-16 17:49:02] WARNING root fetch - processPackages [argrelay]: None
+[2023-04-16 17:49:02] INFO root fetch - processPackages [argrelay]: Start processing: PHX
+[2023-04-16 17:49:02] INFO root fetch - main [MainThread]: End processing [argrelay] error
+[2023-04-16 17:49:02] INFO root fetch - processPackages [PHX]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-16 17:49:02] INFO root fetch - processPackages [aa-bulletin-board]: Downloading https://files.pythonhosted.org/packages/ed/8c/67b82685b64520827e7db5aa62a2a13a3e7c847b4bff2f977f8863cea3fb/aa_bulletin_board-1.9.0.tar.gz
+[2023-04-16 17:49:02] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/86/88/8835ff5cf63a8442fcea420fd5678e1637a2e018dcf7021449d77386de5e/kcli-99.0.202304161549-py3-none-any.whl
+[2023-04-16 17:49:02] INFO root fetch - processPackages [flowcontainer]: Downloading https://files.pythonhosted.org/packages/a9/5b/bf1db71677ad875a6723e6059ceb3f209680195efbb566ec5a6f390572ed/flowcontainer-6.5.tar.gz
+[2023-04-16 17:49:02] INFO root fetch - processPackages [PHX]: executing diffoscope
+[2023-04-16 17:49:02] INFO root fetch - processPackages [PHX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PHX-1.8.1.tar.gz tmp/PHX-1.9.0.tar.gz --markdown 20230416/P/PHX/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-16 17:49:02] INFO root fetch - processPackages [dknovautils]: executing diffoscope
+[2023-04-16 17:49:02] INFO root fetch - processPackages [dknovautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dknovautils-0.0.22.tar.gz tmp/dknovautils-0.0.3.tar.gz --markdown 20230416/d/dknovautils/0.0.22-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 17:49:02] INFO root fetch - processPackages [drf-social-oauth2]: Downloading https://files.pythonhosted.org/packages/4d/f0/17b757f96f75f3f1897d9125e8fb3ba6640abe74123b4d45183783ce67f8/drf-social-oauth2-2.0.0.tar.gz
+[2023-04-16 17:49:02] INFO root fetch - processPackages [dratio]: Downloading https://files.pythonhosted.org/packages/9e/45/319047fb0cc78ea0faa858cc39f567247b59fa855588408223ad9993ed1d/dratio-0.0.9.tar.gz
+[2023-04-16 17:49:02] INFO root fetch - processPackages [pyrovelocity]: Downloading https://files.pythonhosted.org/packages/77/b1/341961a43708c4fe4923c10806daf182bfa872d91cf0c499bed7a0c76e2f/pyrovelocity-0.1.2.tar.gz
+[2023-04-16 17:49:02] INFO root fetch - processPackages [doveseed]: Downloading https://files.pythonhosted.org/packages/04/e3/8e322d1519891dc57ef3d44aaa454cb5b96f421453345a34a09800107cb5/doveseed-2.0.0a4.tar.gz
+[2023-04-16 17:49:02] INFO root fetch - processPackages [aa-bulletin-board]: executing diffoscope
+[2023-04-16 17:49:02] INFO root fetch - processPackages [aa-bulletin-board]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_bulletin_board-1.8.0.tar.gz tmp/aa_bulletin_board-1.9.0.tar.gz --markdown 20230416/a/aa-bulletin-board/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-16 17:49:02] INFO root fetch - processPackages [flowcontainer]: executing diffoscope
+[2023-04-16 17:49:02] INFO root fetch - processPackages [flowcontainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowcontainer-6.4.tar.gz tmp/flowcontainer-6.5.tar.gz --markdown 20230416/f/flowcontainer/6.4-6.5/diff.md --exclude *.pyd
+[2023-04-16 17:49:02] INFO root fetch - processPackages [dratio]: executing diffoscope
+[2023-04-16 17:49:02] INFO root fetch - processPackages [dratio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dratio-0.0.8.tar.gz tmp/dratio-0.0.9.tar.gz --markdown 20230416/d/dratio/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 17:49:02] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-16 17:49:02] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304151543-py3-none-any.whl.zip tmp/kcli-99.0.202304161549-py3-none-any.whl.zip --markdown 20230416/k/kcli/99.0.202304151543-99.0.202304161549/diff.md --exclude *.pyd
+[2023-04-16 17:49:02] INFO root fetch - processPackages [drf-social-oauth2]: executing diffoscope
+[2023-04-16 17:49:02] INFO root fetch - processPackages [drf-social-oauth2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf-social-oauth2-1.3.0.tar.gz tmp/drf-social-oauth2-2.0.0.tar.gz --markdown 20230416/d/drf-social-oauth2/1.3.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-16 17:49:02] INFO root fetch - processPackages [doveseed]: executing diffoscope
+[2023-04-16 17:49:02] INFO root fetch - processPackages [doveseed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doveseed-2.0.0a3.tar.gz tmp/doveseed-2.0.0a4.tar.gz --markdown 20230416/d/doveseed/2.0.0a3-2.0.0a4/diff.md --exclude *.pyd
+[2023-04-16 17:49:02] INFO root fetch - processPackages [pyrovelocity]: executing diffoscope
+[2023-04-16 17:49:02] INFO root fetch - processPackages [pyrovelocity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrovelocity-0.1.1.tar.gz tmp/pyrovelocity-0.1.2.tar.gz --markdown 20230416/p/pyrovelocity/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 17:49:03] INFO root fetch - processPackages [Apycula]: Downloading https://files.pythonhosted.org/packages/73/9c/64c125f9102af4883518d691fc93e5b4402785bb361b89faee8c36694177/Apycula-0.8.tar.gz
+[2023-04-16 17:49:03] INFO root fetch - processPackages [dknovautils]: Start processing: lycoris-lora
+[2023-04-16 17:49:03] INFO root fetch - main [MainThread]: End processing [dknovautils]: success
+[2023-04-16 17:49:03] INFO root fetch - processPackages [lycoris-lora]: New version: [0.1.6.dev1] Old Version: [0.1.5.dev5]
+[2023-04-16 17:49:03] INFO root fetch - processPackages [lycoris-lora]: Downloading https://files.pythonhosted.org/packages/01/0f/9c9e9d5f12332b4b46371037edc66fb7fc9659d7d61a63c44ab769aafb3b/lycoris_lora-0.1.5.dev5.tar.gz
+[2023-04-16 17:49:04] INFO root fetch - processPackages [flowcontainer]: Start processing: lnschema_core
+[2023-04-16 17:49:04] INFO root fetch - main [MainThread]: End processing [flowcontainer]: success
+[2023-04-16 17:49:04] INFO root fetch - processPackages [lnschema_core]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-16 17:49:04] INFO root fetch - processPackages [dratio]: Start processing: mini-python
+[2023-04-16 17:49:04] INFO root fetch - main [MainThread]: End processing [dratio]: success
+[2023-04-16 17:49:04] WARNING root fetch - processPackages [mini-python]: Skipping, unable to determine old version
+[2023-04-16 17:49:04] INFO root fetch - main [MainThread]: End processing [mini-python] error
+[2023-04-16 17:49:04] INFO root fetch - main [MainThread]: End processing [drf-social-oauth2]: success
+[2023-04-16 17:49:04] INFO root fetch - processPackages [lnschema_core]: Downloading https://files.pythonhosted.org/packages/7a/53/1459e32f6943488250f623718aeb560351a142d81c57a5fc8ef6b0dd1680/lnschema_core-0.8.1.tar.gz
+[2023-04-16 17:49:04] INFO root fetch - processPackages [lycoris-lora]: Downloading https://files.pythonhosted.org/packages/cb/b5/31a4a709ff6e641650048d9deb3a23a6c43944bee21a82fd706fc37922ac/lycoris_lora-0.1.6.dev1.tar.gz
+[2023-04-16 17:49:04] INFO root fetch - main [MainThread]: End processing [aa-bulletin-board]: success
+[2023-04-16 17:49:04] INFO root fetch - main [MainThread]: End processing [pyrovelocity]: success
+[2023-04-16 17:49:04] INFO root fetch - main [MainThread]: End processing [doveseed]: success
+[2023-04-16 17:49:04] INFO root fetch - processPackages [lycoris-lora]: executing diffoscope
+[2023-04-16 17:49:04] INFO root fetch - processPackages [lycoris-lora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lycoris_lora-0.1.5.dev5.tar.gz tmp/lycoris_lora-0.1.6.dev1.tar.gz --markdown 20230416/l/lycoris-lora/0.1.5.dev5-0.1.6.dev1/diff.md --exclude *.pyd
+[2023-04-16 17:49:04] INFO root fetch - processPackages [lnschema_core]: Downloading https://files.pythonhosted.org/packages/39/cd/cc4d91db21934f66692bedcbdb15fc2c82698c7cc9d0288133e8fa2f5cee/lnschema_core-0.9.0.tar.gz
+[2023-04-16 17:49:04] INFO root fetch - processPackages [lnschema_core]: executing diffoscope
+[2023-04-16 17:49:04] INFO root fetch - processPackages [lnschema_core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_core-0.8.1.tar.gz tmp/lnschema_core-0.9.0.tar.gz --markdown 20230416/l/lnschema_core/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 17:49:04] INFO root fetch - processPackages [Apycula]: executing diffoscope
+[2023-04-16 17:49:04] INFO root fetch - processPackages [Apycula]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Apycula-0.7.tar.gz tmp/Apycula-0.8.tar.gz --markdown 20230416/A/Apycula/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-16 17:49:05] INFO root fetch - main [MainThread]: End processing [lycoris-lora]: success
+[2023-04-16 17:49:05] INFO root fetch - main [MainThread]: End processing [lnschema_core]: success
+[2023-04-16 17:49:06] INFO root fetch - main [MainThread]: End processing [PHX]: success
+[2023-04-16 17:49:11] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-16 17:49:51] INFO root fetch - main [MainThread]: End processing [Apycula]: success
+[2023-04-16 17:49:51] INFO root fetch - main [MainThread]: Store serial: [17728235]
