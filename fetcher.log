@@ -8064,3 +8064,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 14:23:37] INFO root fetch - main [MainThread]: End processing [deci-lab-client]: success
 [2023-04-16 14:23:37] INFO root fetch - main [MainThread]: End processing [erscipcard]: success
 [2023-04-16 14:23:37] INFO root fetch - main [MainThread]: Store serial: [17726653]
+[2023-04-16 14:28:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726653]
+[2023-04-16 14:28:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 14:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: griffe
+[2023-04-16 14:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: image-reward
+[2023-04-16 14:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pdm-dotenv
+[2023-04-16 14:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest-maybe-context
+[2023-04-16 14:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: digital-unit
+[2023-04-16 14:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: image-reward
+[2023-04-16 14:28:47] INFO root fetch - processPackages [pdm-dotenv]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 14:28:47] INFO root fetch - processPackages [image-reward]: New version: [0.994] Old Version: [0.993]
+[2023-04-16 14:28:47] INFO root fetch - processPackages [image-reward]: New version: [0.994] Old Version: [0.993]
+[2023-04-16 14:28:47] INFO root fetch - processPackages [digital-unit]: New version: [1.4b0] Old Version: [1.3]
+[2023-04-16 14:28:47] WARNING root fetch - processPackages [pytest-maybe-context]: Skipping, unable to determine old version
+[2023-04-16 14:28:47] INFO root fetch - main [MainThread]: End processing [pytest-maybe-context] error
+[2023-04-16 14:28:47] INFO root fetch - processPackages [griffe]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-16 14:28:47] INFO root fetch - processPackages [digital-unit]: Downloading https://files.pythonhosted.org/packages/f5/a8/3a52b784639df56a7a9afcd37542d8d5b7d8a0a0693582df7a7d717a381f/digital_unit-1.3.tar.gz
+[2023-04-16 14:28:47] INFO root fetch - processPackages [pdm-dotenv]: Downloading https://files.pythonhosted.org/packages/d5/aa/4d502d904488eeb124745b9f200658aec885239647dc651ebf0d3eff0907/pdm_dotenv-0.1.0.tar.gz
+[2023-04-16 14:28:48] INFO root fetch - processPackages [griffe]: Downloading https://files.pythonhosted.org/packages/32/dd/bc07e7e6b53772e9c44c34a18ca7e4ceb99b58bfb2c2f72f7913e3f0d303/griffe-0.8.0.tar.gz
+[2023-04-16 14:28:48] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/c3/47/29d5e03c9e06b3ffc0c92488d18c7c1b07bc8bc58e2188c24aa730f38aa8/image-reward-0.994.tar.gz
+[2023-04-16 14:28:48] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/c3/47/29d5e03c9e06b3ffc0c92488d18c7c1b07bc8bc58e2188c24aa730f38aa8/image-reward-0.994.tar.gz
+[2023-04-16 14:28:48] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-16 14:28:48] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-0.993.tar.gz tmp/image-reward-0.994.tar.gz --markdown 20230416/i/image-reward/0.993-0.994/diff.md --exclude *.pyd
+[2023-04-16 14:28:48] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-16 14:28:48] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-0.993.tar.gz tmp/image-reward-0.994.tar.gz --markdown 20230416/i/image-reward/0.993-0.994/diff.md --exclude *.pyd
+[2023-04-16 14:28:48] INFO root fetch - processPackages [digital-unit]: Downloading https://files.pythonhosted.org/packages/3c/d2/cc17f1093eb5c71f2ef397b8af552818ca80dda79df6b3badc3fe23e8ef6/digital_unit-1.4b0.tar.gz
+[2023-04-16 14:28:48] INFO root fetch - processPackages [pdm-dotenv]: Downloading https://files.pythonhosted.org/packages/fc/1c/7993c5bc36186e6d1bb475525812697eea93a6e53523b1ba5a974df290db/pdm_dotenv-0.2.0.tar.gz
+[2023-04-16 14:28:48] INFO root fetch - processPackages [pdm-dotenv]: executing diffoscope
+[2023-04-16 14:28:48] INFO root fetch - processPackages [pdm-dotenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm_dotenv-0.1.0.tar.gz tmp/pdm_dotenv-0.2.0.tar.gz --markdown 20230416/p/pdm-dotenv/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 14:28:48] INFO root fetch - processPackages [digital-unit]: executing diffoscope
+[2023-04-16 14:28:48] INFO root fetch - processPackages [digital-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digital_unit-1.3.tar.gz tmp/digital_unit-1.4b0.tar.gz --markdown 20230416/d/digital-unit/1.3-1.4b0/diff.md --exclude *.pyd
+[2023-04-16 14:28:48] INFO root fetch - processPackages [griffe]: Downloading https://files.pythonhosted.org/packages/97/67/6905162d0aeccc0a65143c6fda9d6510d04561725f6df7df71457a053c3d/griffe-0.9.0.tar.gz
+[2023-04-16 14:28:48] INFO root fetch - processPackages [griffe]: executing diffoscope
+[2023-04-16 14:28:48] INFO root fetch - processPackages [griffe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffe-0.8.0.tar.gz tmp/griffe-0.9.0.tar.gz --markdown 20230416/g/griffe/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 14:28:49] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-16 14:28:49] INFO root fetch - main [MainThread]: End processing [pdm-dotenv]: success
+[2023-04-16 14:28:49] INFO root fetch - main [MainThread]: End processing [digital-unit]: success
+[2023-04-16 14:28:49] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-16 14:28:50] INFO root fetch - main [MainThread]: End processing [griffe]: success
+[2023-04-16 14:28:50] INFO root fetch - main [MainThread]: Store serial: [17726670]
