@@ -7280,3 +7280,53 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 12:59:00] INFO root fetch - main [MainThread]: End processing [py-spacy-redact-message]: success
 [2023-04-16 12:59:00] INFO root fetch - main [MainThread]: End processing [py-spacy-redact-message]: success
 [2023-04-16 12:59:00] INFO root fetch - main [MainThread]: Store serial: [17726187]
+[2023-04-16 13:04:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726187]
+[2023-04-16 13:04:09] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 13:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: croydon
+[2023-04-16 13:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pciw.py
+[2023-04-16 13:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TextAdventures
+[2023-04-16 13:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-cookie-consent-gutsh
+[2023-04-16 13:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ScaleConvertion
+[2023-04-16 13:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nimocr
+[2023-04-16 13:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: SEKKAYBOT
+[2023-04-16 13:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vollseg
+[2023-04-16 13:04:09] WARNING root fetch - processPackages [TextAdventures]: Skipping, unable to determine old version
+[2023-04-16 13:04:09] INFO root fetch - main [MainThread]: End processing [TextAdventures] error
+[2023-04-16 13:04:09] INFO root fetch - processPackages [ScaleConvertion]: New version: [0.5] Old Version: [0.4]
+[2023-04-16 13:04:09] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 13:04:09] INFO root fetch - processPackages [django-cookie-consent-gutsh]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-16 13:04:09] INFO root fetch - processPackages [croydon]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-16 13:04:09] INFO root fetch - processPackages [pciw.py]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-16 13:04:09] INFO root fetch - processPackages [nimocr]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 13:04:09] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 13:04:09] INFO root fetch - processPackages [SEKKAYBOT]: New version: [0.22.264] Old Version: [0.22.263]
+[2023-04-16 13:04:09] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 13:04:09] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 13:04:09] INFO root fetch - processPackages [pciw.py]: Downloading https://files.pythonhosted.org/packages/be/dc/d48ed7b4b204332249235baf66406474d3c7e4e1afec8ceb78fe0e4338d3/pciw.py-0.9.4-py39-none-win_amd64.whl
+[2023-04-16 13:04:09] INFO root fetch - processPackages [croydon]: Downloading https://files.pythonhosted.org/packages/8f/23/59276ea8901c9d7e6d675111626865c10bbda893cddb6cf2144637c0d607/croydon-0.9.0.tar.gz
+[2023-04-16 13:04:09] INFO root fetch - processPackages [nimocr]: Downloading https://files.pythonhosted.org/packages/c6/12/4113d89a17b0b8f45b0f4ace15764942b8793e2dc152431746eb40016786/nimocr-0.1.2.tar.gz
+[2023-04-16 13:04:09] INFO root fetch - processPackages [django-cookie-consent-gutsh]: Downloading https://files.pythonhosted.org/packages/6d/a1/97fe2894e7f2a59c410c9b77de55b778f670098129899ece7f500c61a46a/django-cookie_consent_gutsh-1.0.0.tar.gz
+[2023-04-16 13:04:09] INFO root fetch - processPackages [SEKKAYBOT]: Downloading https://files.pythonhosted.org/packages/aa/63/5c82a015bb6bdaf962474f3396657bcf40d6e68e64803cbb07b1e0c124bf/SEKKAYBOT-0.22.263.tar.gz
+[2023-04-16 13:04:09] INFO root fetch - processPackages [nimocr]: executing diffoscope
+[2023-04-16 13:04:09] INFO root fetch - processPackages [nimocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nimocr-0.1.1.tar.gz tmp/nimocr-0.1.2.tar.gz --markdown 20230416/n/nimocr/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 13:04:09] INFO root fetch - processPackages [django-cookie-consent-gutsh]: executing diffoscope
+[2023-04-16 13:04:09] INFO root fetch - processPackages [django-cookie-consent-gutsh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-cookie_consent_gutsh-0.1.0.tar.gz tmp/django-cookie_consent_gutsh-1.0.0.tar.gz --markdown 20230416/d/django-cookie-consent-gutsh/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-16 13:04:09] INFO root fetch - processPackages [pciw.py]: Downloading https://files.pythonhosted.org/packages/0e/9b/0e8b2e7855bb115d3fa39b8ce9778e88350d19e16a3ac0004ede5a5af17c/pciw.py-0.9.5-py39-none-win_amd64.whl
+[2023-04-16 13:04:09] INFO root fetch - processPackages [ScaleConvertion]: Downloading https://files.pythonhosted.org/packages/ad/8b/8c359e4dc7edc1735eddf368a7677ef70d651a7bc961cf5a04e0cba670b6/ScaleConvertion-0.4.tar.gz
+[2023-04-16 13:04:09] INFO root fetch - processPackages [croydon]: Downloading https://files.pythonhosted.org/packages/0f/a7/2941c78a03d5afe7b6cd8bb571d61a9caa4a3c07479b0bd17ea6c4f2aba6/croydon-0.9.1.tar.gz
+[2023-04-16 13:04:09] INFO root fetch - processPackages [SEKKAYBOT]: Downloading https://files.pythonhosted.org/packages/a0/a8/32e92e184aef6cd66d4492e55de8a39cfcb528e64da1823dad76ea766465/SEKKAYBOT-0.22.264.tar.gz
+[2023-04-16 13:04:09] INFO root fetch - processPackages [croydon]: executing diffoscope
+[2023-04-16 13:04:09] INFO root fetch - processPackages [croydon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croydon-0.9.0.tar.gz tmp/croydon-0.9.1.tar.gz --markdown 20230416/c/croydon/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-16 13:04:09] INFO root fetch - processPackages [pciw.py]: executing diffoscope
+[2023-04-16 13:04:09] INFO root fetch - processPackages [pciw.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pciw.py-0.9.4-py39-none-win_amd64.whl.zip tmp/pciw.py-0.9.5-py39-none-win_amd64.whl.zip --markdown 20230416/p/pciw.py/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-16 13:04:09] INFO root fetch - processPackages [ScaleConvertion]: Downloading https://files.pythonhosted.org/packages/f3/e5/5f88544fce95bc15e45289273bbd0b12d47a0aaeb2a7cd059dbe73a3475e/ScaleConvertion-0.5.tar.gz
+[2023-04-16 13:04:10] INFO root fetch - processPackages [SEKKAYBOT]: executing diffoscope
+[2023-04-16 13:04:10] INFO root fetch - processPackages [SEKKAYBOT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SEKKAYBOT-0.22.263.tar.gz tmp/SEKKAYBOT-0.22.264.tar.gz --markdown 20230416/S/SEKKAYBOT/0.22.263-0.22.264/diff.md --exclude *.pyd
+[2023-04-16 13:04:10] WARNING root fetch - processPackages [ScaleConvertion]: Skipping package: exceeds size limit 51920830>=10485760
+[2023-04-16 13:04:10] INFO root fetch - main [MainThread]: End processing [ScaleConvertion] error
+[2023-04-16 13:04:10] INFO root fetch - main [MainThread]: End processing [django-cookie-consent-gutsh]: success
+[2023-04-16 13:04:10] INFO root fetch - main [MainThread]: End processing [nimocr]: success
+[2023-04-16 13:04:11] INFO root fetch - main [MainThread]: End processing [pciw.py]: success
+[2023-04-16 13:04:11] INFO root fetch - main [MainThread]: End processing [SEKKAYBOT]: success
+[2023-04-16 13:04:11] INFO root fetch - main [MainThread]: End processing [croydon]: success
+[2023-04-16 13:04:11] INFO root fetch - main [MainThread]: Store serial: [17726212]
