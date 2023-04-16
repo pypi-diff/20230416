@@ -11578,3 +11578,40 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 18:42:47] INFO root fetch - main [MainThread]: End processing [pygameHat]: success
 [2023-04-16 18:42:48] INFO root fetch - main [MainThread]: End processing [opendal]: success
 [2023-04-16 18:42:48] INFO root fetch - main [MainThread]: Store serial: [17728787]
+[2023-04-16 18:47:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728787]
+[2023-04-16 18:47:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 18:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mechanical-bull
+[2023-04-16 18:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: raman-fitting
+[2023-04-16 18:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Planes2D
+[2023-04-16 18:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: psychonaut
+[2023-04-16 18:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: modal-client
+[2023-04-16 18:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: transformers-supporter
+[2023-04-16 18:47:57] INFO root fetch - processPackages [raman-fitting]: New version: [0.7.0] Old Version: [0.6.18]
+[2023-04-16 18:47:57] INFO root fetch - processPackages [mechanical-bull]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-16 18:47:57] WARNING root fetch - processPackages [psychonaut]: Skipping, unable to determine old version
+[2023-04-16 18:47:57] INFO root fetch - main [MainThread]: End processing [psychonaut] error
+[2023-04-16 18:47:57] INFO root fetch - processPackages [Planes2D]: New version: [1.1] Old Version: [1.0]
+[2023-04-16 18:47:57] INFO root fetch - processPackages [transformers-supporter]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 18:47:57] INFO root fetch - processPackages [modal-client]: New version: [0.48.1864] Old Version: [0.48.1862]
+[2023-04-16 18:47:57] INFO root fetch - processPackages [transformers-supporter]: executing diffoscope
+[2023-04-16 18:47:57] INFO root fetch - processPackages [transformers-supporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformers-supporter-0.0.8.tar.gz tmp/transformers-supporter-0.0.9.tar.gz --markdown 20230416/t/transformers-supporter/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 18:47:57] INFO root fetch - processPackages [raman-fitting]: Downloading https://files.pythonhosted.org/packages/58/21/0837138c460990a8a7b259fdf513916ae83c75bea1b7e2a8a27f54107683/raman_fitting-0.6.18.tar.gz
+[2023-04-16 18:47:57] INFO root fetch - processPackages [Planes2D]: Downloading https://files.pythonhosted.org/packages/b4/8c/a498a0fd5b4141c5841406dfbd2bd8a457a47440bc2247821fb6cd69b866/Planes2D-1.0.tar.gz
+[2023-04-16 18:47:58] INFO root fetch - processPackages [mechanical-bull]: Downloading https://files.pythonhosted.org/packages/45/0d/e9dc83590f54c8aa8e6cd2d2625864b1d7ea3e00e343d53e3173bb0a6ab1/mechanical_bull-0.0.4.tar.gz
+[2023-04-16 18:47:58] INFO root fetch - processPackages [Planes2D]: Downloading https://files.pythonhosted.org/packages/52/d1/e563a19475d47323cfacab1ec1ddbe4e58f10a229f108eb0e587f7d34e72/Planes2D-1.1.tar.gz
+[2023-04-16 18:47:58] INFO root fetch - processPackages [mechanical-bull]: executing diffoscope
+[2023-04-16 18:47:58] INFO root fetch - processPackages [mechanical-bull]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mechanical_bull-0.0.3.tar.gz tmp/mechanical_bull-0.0.4.tar.gz --markdown 20230416/m/mechanical-bull/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-16 18:47:58] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/1e/57/7e8987003f14b3832be647611d67fa2bb4a5173a0c52938c7a858c63e1a3/modal_client-0.48.1864-py3-none-any.whl
+[2023-04-16 18:47:58] INFO root fetch - processPackages [Planes2D]: executing diffoscope
+[2023-04-16 18:47:58] INFO root fetch - processPackages [Planes2D]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Planes2D-1.0.tar.gz tmp/Planes2D-1.1.tar.gz --markdown 20230416/P/Planes2D/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-16 18:47:58] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2023-04-16 18:47:58] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.48.1862-py3-none-any.whl.zip tmp/modal_client-0.48.1864-py3-none-any.whl.zip --markdown 20230416/m/modal-client/0.48.1862-0.48.1864/diff.md --exclude *.pyd
+[2023-04-16 18:47:58] INFO root fetch - processPackages [raman-fitting]: Downloading https://files.pythonhosted.org/packages/df/c2/0390c9079ca4504a8dc7442f2177cd9054d0f173e4829ec749e7eb0b8328/raman_fitting-0.7.0.tar.gz
+[2023-04-16 18:47:58] INFO root fetch - processPackages [raman-fitting]: executing diffoscope
+[2023-04-16 18:47:58] INFO root fetch - processPackages [raman-fitting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raman_fitting-0.6.18.tar.gz tmp/raman_fitting-0.7.0.tar.gz --markdown 20230416/r/raman-fitting/0.6.18-0.7.0/diff.md --exclude *.pyd
+[2023-04-16 18:47:59] INFO root fetch - main [MainThread]: End processing [transformers-supporter]: success
+[2023-04-16 18:47:59] INFO root fetch - main [MainThread]: End processing [Planes2D]: success
+[2023-04-16 18:47:59] INFO root fetch - main [MainThread]: End processing [mechanical-bull]: success
+[2023-04-16 18:48:00] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2023-04-16 18:48:00] INFO root fetch - main [MainThread]: End processing [raman-fitting]: success
+[2023-04-16 18:48:00] INFO root fetch - main [MainThread]: Store serial: [17728809]
