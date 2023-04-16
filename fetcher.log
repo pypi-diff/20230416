@@ -6637,3 +6637,55 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 11:46:27] INFO root fetch - main [MainThread]: End processing [butler-connect]: success
 [2023-04-16 11:46:27] INFO root fetch - main [MainThread]: End processing [mgo-serializer]: success
 [2023-04-16 11:46:27] INFO root fetch - main [MainThread]: Store serial: [17725730]
+[2023-04-16 11:51:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17725730]
+[2023-04-16 11:51:36] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 11:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: habmapslib
+[2023-04-16 11:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pheno-utils
+[2023-04-16 11:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TBGDL
+[2023-04-16 11:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiooss2
+[2023-04-16 11:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xj-user
+[2023-04-16 11:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fast-depends
+[2023-04-16 11:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PythonGPT
+[2023-04-16 11:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kodi-nfo-generator
+[2023-04-16 11:51:36] INFO root fetch - processPackages [aiooss2]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-16 11:51:36] INFO root fetch - processPackages [habmapslib]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-16 11:51:36] INFO root fetch - processPackages [pheno-utils]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 11:51:36] WARNING root fetch - processPackages [PythonGPT]: Skipping, unable to determine old version
+[2023-04-16 11:51:36] INFO root fetch - processPackages [fast-depends]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 11:51:36] INFO root fetch - main [MainThread]: End processing [PythonGPT] error
+[2023-04-16 11:51:36] INFO root fetch - processPackages [TBGDL]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-16 11:51:36] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-16 11:51:36] INFO root fetch - processPackages [kodi-nfo-generator]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 11:51:36] INFO root fetch - processPackages [pheno-utils]: executing diffoscope
+[2023-04-16 11:51:36] INFO root fetch - processPackages [pheno-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pheno-utils-0.0.8.tar.gz tmp/pheno-utils-0.0.9.tar.gz --markdown 20230416/p/pheno-utils/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 11:51:37] INFO root fetch - processPackages [fast-depends]: Downloading https://files.pythonhosted.org/packages/d8/b2/47ad428cfe8d87347c9f57ff4428ddbd3ee69ce5bde63db3ad8fd85c0758/fast_depends-1.0.0.tar.gz
+[2023-04-16 11:51:37] INFO root fetch - processPackages [habmapslib]: Downloading https://files.pythonhosted.org/packages/5a/8a/c629a003ebb6a175f9c3ec6b2a9ee546c0991fe83a0ba9c36a21c1ffb59f/habmapslib-2.0.1.tar.gz
+[2023-04-16 11:51:37] INFO root fetch - processPackages [aiooss2]: Downloading https://files.pythonhosted.org/packages/0c/28/55463697cacc9a66c00c43e2e5d28ff0ad39339ae3975617db60f85e390a/aiooss2-0.2.3.tar.gz
+[2023-04-16 11:51:37] INFO root fetch - processPackages [TBGDL]: Downloading https://files.pythonhosted.org/packages/70/77/23cafb840c880f1130e6c6fa38841e71a79b3b70242cec11aee1998c7c99/TBGDL-1.0.2.tar.gz
+[2023-04-16 11:51:37] INFO root fetch - processPackages [xj-user]: Downloading https://files.pythonhosted.org/packages/26/be/e0d28eecf05fff47ab8dc5bf0e46eff90f3cee3ae03596f052698e5df93d/xj_user-1.2.98.tar.gz
+[2023-04-16 11:51:37] INFO root fetch - processPackages [habmapslib]: executing diffoscope
+[2023-04-16 11:51:37] INFO root fetch - processPackages [habmapslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/habmapslib-2.0.0.tar.gz tmp/habmapslib-2.0.1.tar.gz --markdown 20230416/h/habmapslib/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-16 11:51:37] INFO root fetch - processPackages [kodi-nfo-generator]: Downloading https://files.pythonhosted.org/packages/1a/18/fb44b8e8c65d342453ab06e3ff8130c563c42f7140f657805707cf37973f/kodi-nfo-generator-0.0.8.tar.gz
+[2023-04-16 11:51:37] INFO root fetch - processPackages [fast-depends]: Downloading https://files.pythonhosted.org/packages/1c/fa/eb89325aa447e86826b1fe4bf714eb64a4baf6649e53f0572887aa2b6124/fast_depends-1.0.1.tar.gz
+[2023-04-16 11:51:37] INFO root fetch - processPackages [xj-user]: Downloading https://files.pythonhosted.org/packages/f9/79/9b7536f52cd2a21b092678ce5bc888a17a7c527cef9ae891d864354f2e5c/xj_user-1.2.99.tar.gz
+[2023-04-16 11:51:37] INFO root fetch - processPackages [aiooss2]: Downloading https://files.pythonhosted.org/packages/2e/b0/a527b95f210e9781fb64c6e3b23712b7d16cd8ff1ded275eaf45e6c29a50/aiooss2-0.2.4.tar.gz
+[2023-04-16 11:51:37] INFO root fetch - processPackages [TBGDL]: Downloading https://files.pythonhosted.org/packages/6b/5c/d8a01da024dd7ab5ff2de91a13919a6fc35683403bd4f16e16151fc8c159/TBGDL-1.0.3.tar.gz
+[2023-04-16 11:51:37] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-04-16 11:51:37] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230416/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-16 11:51:37] INFO root fetch - processPackages [fast-depends]: executing diffoscope
+[2023-04-16 11:51:37] INFO root fetch - processPackages [fast-depends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_depends-1.0.0.tar.gz tmp/fast_depends-1.0.1.tar.gz --markdown 20230416/f/fast-depends/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 11:51:37] INFO root fetch - processPackages [aiooss2]: executing diffoscope
+[2023-04-16 11:51:37] INFO root fetch - processPackages [aiooss2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiooss2-0.2.3.tar.gz tmp/aiooss2-0.2.4.tar.gz --markdown 20230416/a/aiooss2/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-16 11:51:37] INFO root fetch - processPackages [TBGDL]: executing diffoscope
+[2023-04-16 11:51:37] INFO root fetch - processPackages [TBGDL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TBGDL-1.0.2.tar.gz tmp/TBGDL-1.0.3.tar.gz --markdown 20230416/T/TBGDL/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-16 11:51:37] INFO root fetch - processPackages [kodi-nfo-generator]: Downloading https://files.pythonhosted.org/packages/b2/93/eb000554b5a05fdaf58348aee5d934c10e2b7a749b880fcb93f5b71441b5/kodi-nfo-generator-0.0.9.tar.gz
+[2023-04-16 11:51:37] INFO root fetch - processPackages [kodi-nfo-generator]: executing diffoscope
+[2023-04-16 11:51:37] INFO root fetch - processPackages [kodi-nfo-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodi-nfo-generator-0.0.8.tar.gz tmp/kodi-nfo-generator-0.0.9.tar.gz --markdown 20230416/k/kodi-nfo-generator/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 11:51:38] INFO root fetch - main [MainThread]: End processing [habmapslib]: success
+[2023-04-16 11:51:38] INFO root fetch - main [MainThread]: End processing [TBGDL]: success
+[2023-04-16 11:51:38] INFO root fetch - main [MainThread]: End processing [fast-depends]: success
+[2023-04-16 11:51:38] INFO root fetch - main [MainThread]: End processing [xj-user]: success
+[2023-04-16 11:51:38] INFO root fetch - main [MainThread]: End processing [pheno-utils]: success
+[2023-04-16 11:51:38] INFO root fetch - main [MainThread]: End processing [kodi-nfo-generator]: success
+[2023-04-16 11:51:39] INFO root fetch - main [MainThread]: End processing [aiooss2]: success
+[2023-04-16 11:51:39] INFO root fetch - main [MainThread]: Store serial: [17725775]
