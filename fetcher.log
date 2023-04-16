@@ -6326,3 +6326,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 11:09:27] INFO root fetch - main [MainThread]: End processing [aa-opcalendar]: success
 [2023-04-16 11:09:29] INFO root fetch - main [MainThread]: End processing [PySide6-Fluent-Widgets]: success
 [2023-04-16 11:09:29] INFO root fetch - main [MainThread]: Store serial: [17725527]
+[2023-04-16 11:14:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17725527]
+[2023-04-16 11:14:39] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 11:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: omniunibot
+[2023-04-16 11:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyPhasesML
+[2023-04-16 11:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tbp-nightly
+[2023-04-16 11:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dingraia
+[2023-04-16 11:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly
+[2023-04-16 11:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdxbasics
+[2023-04-16 11:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pydwf
+[2023-04-16 11:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lstmcpipe
+[2023-04-16 11:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bridgecrew
+[2023-04-16 11:14:40] INFO root fetch - processPackages [omniunibot]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-16 11:14:40] WARNING root fetch - processPackages [dingraia]: Skipping, unable to determine old version
+[2023-04-16 11:14:40] INFO root fetch - main [MainThread]: End processing [dingraia] error
+[2023-04-16 11:14:40] INFO root fetch - processPackages [lstmcpipe]: New version: [0.9.0] Old Version: [0.8.6]
+[2023-04-16 11:14:40] INFO root fetch - processPackages [pyPhasesML]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-16 11:14:40] INFO root fetch - processPackages [cdxbasics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-16 11:14:40] INFO root fetch - processPackages [pydwf]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-16 11:14:40] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-04-16 11:14:40] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-16 11:14:40] INFO root fetch - processPackages [tf-nightly]: New version: [2.13.0.dev20230416] Old Version: [2.13.0.dev20230415]
+[2023-04-16 11:14:40] INFO root fetch - processPackages [omniunibot]: Downloading https://files.pythonhosted.org/packages/05/00/37dce9d3c9c27d2da2a1032f73cc167e973e9329df58b9509ca40655df79/omniunibot-0.0.4.tar.gz
+[2023-04-16 11:14:40] INFO root fetch - processPackages [lstmcpipe]: Downloading https://files.pythonhosted.org/packages/1e/d3/5f900af8b623bd8dba4dc0ab83b7c2a5feb6f71a79f8452d8e17dd9459d4/lstmcpipe-0.8.6.tar.gz
+[2023-04-16 11:14:40] INFO root fetch - processPackages [pydwf]: Downloading https://files.pythonhosted.org/packages/e8/e3/73515590306773b7ff8aa4dd4d91bb1bda59a7baf3a154ee1c08445e7940/pydwf-1.1.8.tar.gz
+[2023-04-16 11:14:40] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-04-16 11:14:40] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230416/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-04-16 11:14:40] INFO root fetch - processPackages [cdxbasics]: executing diffoscope
+[2023-04-16 11:14:40] INFO root fetch - processPackages [cdxbasics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdxbasics-0.2.8.tar.gz tmp/cdxbasics-0.2.9.tar.gz --markdown 20230416/c/cdxbasics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-16 11:14:40] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-16 11:14:40] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230416/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-16 11:14:40] INFO root fetch - processPackages [pyPhasesML]: Downloading https://files.pythonhosted.org/packages/f6/a2/faf560c77a7a2dc8e7fbfdba9d94918bd750858e0f604d2f6b1d98cdf385/pyPhasesML-0.4.7.tar.gz
+[2023-04-16 11:14:40] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/6b/ea/8af5a44ebce0aa92a5176b53d5e95bf92439d818f167f16fea92301be221/tf_nightly-2.13.0.dev20230415-cp39-cp39-win_amd64.whl
+[2023-04-16 11:14:40] INFO root fetch - processPackages [omniunibot]: Downloading https://files.pythonhosted.org/packages/d0/61/548c09d9da71631a719f39c6f3ae9c990d54081bbbc14a4cfee44d49cc31/omniunibot-0.0.5.tar.gz
+[2023-04-16 11:14:40] INFO root fetch - processPackages [pyPhasesML]: executing diffoscope
+[2023-04-16 11:14:40] INFO root fetch - processPackages [pyPhasesML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPhasesML-0.4.6.tar.gz tmp/pyPhasesML-0.4.7.tar.gz --markdown 20230416/p/pyPhasesML/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-16 11:14:40] INFO root fetch - processPackages [lstmcpipe]: Downloading https://files.pythonhosted.org/packages/ed/b9/ca49b58d5587b7b8ece5ff55c93ebb007ca0594eb70f0bfd62c7284e23cc/lstmcpipe-0.9.0.tar.gz
+[2023-04-16 11:14:40] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/bf/a7/8a750ec124d9381092dd3fe87c9e8863d23bb4d482e17a80f6ca6f8e463d/tf_nightly-2.13.0.dev20230416-cp39-cp39-win_amd64.whl
+[2023-04-16 11:14:40] INFO root fetch - processPackages [omniunibot]: executing diffoscope
+[2023-04-16 11:14:40] INFO root fetch - processPackages [omniunibot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omniunibot-0.0.4.tar.gz tmp/omniunibot-0.0.5.tar.gz --markdown 20230416/o/omniunibot/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-16 11:14:40] INFO root fetch - processPackages [lstmcpipe]: executing diffoscope
+[2023-04-16 11:14:40] INFO root fetch - processPackages [lstmcpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lstmcpipe-0.8.6.tar.gz tmp/lstmcpipe-0.9.0.tar.gz --markdown 20230416/l/lstmcpipe/0.8.6-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 11:14:40] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2023-04-16 11:14:40] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.13.0.dev20230415-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.13.0.dev20230416-cp39-cp39-win_amd64.whl.zip --markdown 20230416/t/tf-nightly/2.13.0.dev20230415-2.13.0.dev20230416/diff.md --exclude *.pyd
+[2023-04-16 11:14:41] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-16 11:14:41] INFO root fetch - main [MainThread]: End processing [pyPhasesML]: success
+[2023-04-16 11:14:41] INFO root fetch - main [MainThread]: End processing [omniunibot]: success
+[2023-04-16 11:14:42] INFO root fetch - main [MainThread]: End processing [cdxbasics]: success
+[2023-04-16 11:14:42] INFO root fetch - processPackages [pydwf]: Downloading https://files.pythonhosted.org/packages/6a/11/6ca4e12095cf52c2729e4560fcc38174c6f183c36a37af626d803293293f/pydwf-1.1.9.tar.gz
+[2023-04-16 11:14:42] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2023-04-16 11:14:42] INFO root fetch - main [MainThread]: End processing [lstmcpipe]: success
+[2023-04-16 11:14:43] INFO root fetch - processPackages [pydwf]: executing diffoscope
+[2023-04-16 11:14:43] INFO root fetch - processPackages [pydwf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydwf-1.1.8.tar.gz tmp/pydwf-1.1.9.tar.gz --markdown 20230416/p/pydwf/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-16 11:14:47] INFO root fetch - main [MainThread]: End processing [pydwf]: success
+[2023-04-16 11:14:51] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-04-16 11:14:51] INFO root fetch - main [MainThread]: Store serial: [17725564]
