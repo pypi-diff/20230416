@@ -10357,3 +10357,93 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 17:09:43] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
 [2023-04-16 17:09:57] INFO root fetch - main [MainThread]: End processing [dvadmin-third]: success
 [2023-04-16 17:09:57] INFO root fetch - main [MainThread]: Store serial: [17728005]
+[2023-04-16 17:15:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728005]
+[2023-04-16 17:15:08] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-16 17:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: revChatGPT
+[2023-04-16 17:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sphere-base
+[2023-04-16 17:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: makerlabs
+[2023-04-16 17:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zndraw
+[2023-04-16 17:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zenoml
+[2023-04-16 17:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mgz
+[2023-04-16 17:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: to-cloud-run
+[2023-04-16 17:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: agnmol
+[2023-04-16 17:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: graphsignal
+[2023-04-16 17:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: langchain-utils
+[2023-04-16 17:15:08] INFO root fetch - processPackages [zndraw]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 17:15:08] INFO root fetch - processPackages [sphere-base]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 17:15:08] INFO root fetch - processPackages [makerlabs]: New version: [0.32] Old Version: [0.31]
+[2023-04-16 17:15:08] INFO root fetch - processPackages [agnmol]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 17:15:08] WARNING root fetch - processPackages [to-cloud-run]: Skipping, unable to determine old version
+[2023-04-16 17:15:08] INFO root fetch - processPackages [mgz]: New version: [1.8.9] Old Version: [1.8.8]
+[2023-04-16 17:15:08] INFO root fetch - processPackages [to-cloud-run]: Start processing: simple-openai
+[2023-04-16 17:15:08] INFO root fetch - processPackages [graphsignal]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-16 17:15:08] INFO root fetch - main [MainThread]: End processing [to-cloud-run] error
+[2023-04-16 17:15:08] INFO root fetch - processPackages [zenoml]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-16 17:15:08] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-16 17:15:08] INFO root fetch - processPackages [revChatGPT]: New version: [4.2.3] Old Version: [4.2.2]
+[2023-04-16 17:15:08] INFO root fetch - processPackages [simple-openai]: New version: [1.0.0] Old Version: [0.0.3]
+[2023-04-16 17:15:08] INFO root fetch - processPackages [zenoml]: Downloading https://files.pythonhosted.org/packages/b1/89/91212fbf400e30c751191dfc588c484b5b435a669082bccd586e93aa93f6/zenoml-0.4.5.tar.gz
+[2023-04-16 17:15:08] INFO root fetch - processPackages [agnmol]: Downloading https://files.pythonhosted.org/packages/cb/bc/6a4aa8f6338dc3f050bfe0e2f3f44eab6b235a001051c5667eb6bdbe6473/agnmol-1.0.0.tar.gz
+[2023-04-16 17:15:08] INFO root fetch - processPackages [mgz]: Downloading https://files.pythonhosted.org/packages/3f/c1/01499b2c7a7e8ca67a4e3d16d6c237de4b8d8b103d08d090f99b6fbe6ece/mgz-1.8.8.tar.gz
+[2023-04-16 17:15:08] INFO root fetch - processPackages [sphere-base]: Downloading https://files.pythonhosted.org/packages/c4/43/a178cc8d2562013828253a3f2bed22bce81557bf943b2d5a6a185b34af42/sphere_base-0.1.1.tar.gz
+[2023-04-16 17:15:08] INFO root fetch - processPackages [graphsignal]: Downloading https://files.pythonhosted.org/packages/8a/ce/6c4ad532d461693620e6155f4cc8c8495b148d9bef62b7204619e41f19ec/graphsignal-0.9.4.tar.gz
+[2023-04-16 17:15:08] INFO root fetch - processPackages [zndraw]: Downloading https://files.pythonhosted.org/packages/66/fc/71f7b2e695cb885db3ff600c3bdc7417b1326c1a9a81db64d78b7197d561/zndraw-0.1.0.tar.gz
+[2023-04-16 17:15:08] INFO root fetch - processPackages [simple-openai]: Downloading https://files.pythonhosted.org/packages/34/26/9ad7a82abfaa4d0c205cc6d688d05057a0c5b900b64a51c94759fcf090ea/simple-openai-1.0.0.tar.gz
+[2023-04-16 17:15:08] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/63/0e/317f42fd6beca0466b76c5d01f5c0c92fd286de4ddc3cae62ef2fa3c8b2e/revChatGPT-4.2.3.tar.gz
+[2023-04-16 17:15:08] INFO root fetch - processPackages [makerlabs]: Downloading https://files.pythonhosted.org/packages/71/6c/20dff9a8aefb2e562ea31b206effd31a42593a31c277839b7c9cd88f8d14/makerlabs-0.32.tar.gz
+[2023-04-16 17:15:08] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/ed/42/38265ed6803431868e658a5078f79ccb848d32899c882250d9f4c0d0e4a0/langchain_utils-0.3.8.tar.gz
+[2023-04-16 17:15:08] INFO root fetch - processPackages [sphere-base]: executing diffoscope
+[2023-04-16 17:15:08] INFO root fetch - processPackages [sphere-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphere_base-0.1.0.tar.gz tmp/sphere_base-0.1.1.tar.gz --markdown 20230416/s/sphere-base/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 17:15:08] INFO root fetch - processPackages [simple-openai]: executing diffoscope
+[2023-04-16 17:15:08] INFO root fetch - processPackages [simple-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-openai-0.0.3.tar.gz tmp/simple-openai-1.0.0.tar.gz --markdown 20230416/s/simple-openai/0.0.3-1.0.0/diff.md --exclude *.pyd
+[2023-04-16 17:15:09] INFO root fetch - processPackages [agnmol]: Downloading https://files.pythonhosted.org/packages/8e/76/eb2ce4d8a67a09b96eb7dca4e8e090885f872e182be7c3d4cf26627bd060/agnmol-1.0.1.tar.gz
+[2023-04-16 17:15:09] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-04-16 17:15:09] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-4.2.2.tar.gz tmp/revChatGPT-4.2.3.tar.gz --markdown 20230416/r/revChatGPT/4.2.2-4.2.3/diff.md --exclude *.pyd
+[2023-04-16 17:15:09] INFO root fetch - processPackages [mgz]: Downloading https://files.pythonhosted.org/packages/af/28/845205c817682a35883ecd3b20e9e09be17f8e08dd38fd1ee3a194f8499f/mgz-1.8.9.tar.gz
+[2023-04-16 17:15:09] INFO root fetch - processPackages [zenoml]: Downloading https://files.pythonhosted.org/packages/19/16/16620d191cce4bc5a98de0efad022ceb6690247bccfe8ddbf1645c8330a4/zenoml-0.4.6.tar.gz
+[2023-04-16 17:15:09] INFO root fetch - processPackages [zndraw]: Downloading https://files.pythonhosted.org/packages/d8/1b/339c6e958948be1b5ae80f79231218bffe7e15672d6d6d19cdcbfc8ac2be/zndraw-0.1.1.tar.gz
+[2023-04-16 17:15:09] INFO root fetch - processPackages [makerlabs]: executing diffoscope
+[2023-04-16 17:15:09] INFO root fetch - processPackages [makerlabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/makerlabs-0.31.tar.gz tmp/makerlabs-0.32.tar.gz --markdown 20230416/m/makerlabs/0.31-0.32/diff.md --exclude *.pyd
+[2023-04-16 17:15:09] INFO root fetch - processPackages [agnmol]: executing diffoscope
+[2023-04-16 17:15:09] INFO root fetch - processPackages [agnmol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agnmol-1.0.0.tar.gz tmp/agnmol-1.0.1.tar.gz --markdown 20230416/a/agnmol/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 17:15:09] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/d9/96/f800f28c9ccf7aaee9fee12181bc183690e4a5ac5f366cca776e8daa302a/langchain_utils-0.3.9.tar.gz
+[2023-04-16 17:15:09] INFO root fetch - processPackages [mgz]: executing diffoscope
+[2023-04-16 17:15:09] INFO root fetch - processPackages [mgz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mgz-1.8.8.tar.gz tmp/mgz-1.8.9.tar.gz --markdown 20230416/m/mgz/1.8.8-1.8.9/diff.md --exclude *.pyd
+[2023-04-16 17:15:09] INFO root fetch - processPackages [zndraw]: executing diffoscope
+[2023-04-16 17:15:09] INFO root fetch - processPackages [zndraw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zndraw-0.1.0.tar.gz tmp/zndraw-0.1.1.tar.gz --markdown 20230416/z/zndraw/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 17:15:09] INFO root fetch - processPackages [zenoml]: executing diffoscope
+[2023-04-16 17:15:09] INFO root fetch - processPackages [zenoml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenoml-0.4.5.tar.gz tmp/zenoml-0.4.6.tar.gz --markdown 20230416/z/zenoml/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-16 17:15:09] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-16 17:15:09] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.3.8.tar.gz tmp/langchain_utils-0.3.9.tar.gz --markdown 20230416/l/langchain-utils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-16 17:15:09] INFO root fetch - processPackages [graphsignal]: Downloading https://files.pythonhosted.org/packages/63/9a/d9360e506d4b48251d07845d69b0a9facd3465a3c270adacda14a215a8a8/graphsignal-0.9.5.tar.gz
+[2023-04-16 17:15:09] INFO root fetch - processPackages [graphsignal]: executing diffoscope
+[2023-04-16 17:15:09] INFO root fetch - processPackages [graphsignal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphsignal-0.9.4.tar.gz tmp/graphsignal-0.9.5.tar.gz --markdown 20230416/g/graphsignal/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-16 17:15:10] INFO root fetch - processPackages [simple-openai]: Start processing: pycocotools-stubs
+[2023-04-16 17:15:10] INFO root fetch - main [MainThread]: End processing [simple-openai]: success
+[2023-04-16 17:15:10] INFO root fetch - processPackages [pycocotools-stubs]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 17:15:10] INFO root fetch - processPackages [agnmol]: Start processing: pyttb
+[2023-04-16 17:15:10] INFO root fetch - main [MainThread]: End processing [agnmol]: success
+[2023-04-16 17:15:10] INFO root fetch - processPackages [makerlabs]: Start processing: odbc2orm
+[2023-04-16 17:15:10] INFO root fetch - main [MainThread]: End processing [makerlabs]: success
+[2023-04-16 17:15:10] INFO root fetch - processPackages [odbc2orm]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-16 17:15:10] INFO root fetch - processPackages [pyttb]: New version: [1.6.0] Old Version: [1.5.1]
+[2023-04-16 17:15:10] INFO root fetch - processPackages [pycocotools-stubs]: Downloading https://files.pythonhosted.org/packages/0a/4d/3bac0ce1fa2e5008452330966c44f374a04c78e34848fbe947d6fa956ad0/pycocotools_stubs-0.0.1.tar.gz
+[2023-04-16 17:15:10] INFO root fetch - main [MainThread]: End processing [zndraw]: success
+[2023-04-16 17:15:10] INFO root fetch - main [MainThread]: End processing [langchain-utils]: success
+[2023-04-16 17:15:11] INFO root fetch - processPackages [pycocotools-stubs]: Downloading https://files.pythonhosted.org/packages/60/f5/e5f0ab53c8455aa2c8d9d2480c5ee8dbdab9b8bbfe86aae0f80ec5da0c2f/pycocotools_stubs-0.0.2.tar.gz
+[2023-04-16 17:15:11] INFO root fetch - processPackages [odbc2orm]: executing diffoscope
+[2023-04-16 17:15:11] INFO root fetch - processPackages [odbc2orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odbc2orm-1.0.3.tar.gz tmp/odbc2orm-1.0.4.tar.gz --markdown 20230416/o/odbc2orm/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-16 17:15:11] INFO root fetch - processPackages [pyttb]: Downloading https://files.pythonhosted.org/packages/b2/83/8c55be9ad4b5e73310b6417ced5287a938c588a80b177707fa3fbe869f86/pyttb-1.6.0.tar.gz
+[2023-04-16 17:15:11] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
+[2023-04-16 17:15:11] INFO root fetch - processPackages [pycocotools-stubs]: executing diffoscope
+[2023-04-16 17:15:11] INFO root fetch - processPackages [pycocotools-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycocotools_stubs-0.0.1.tar.gz tmp/pycocotools_stubs-0.0.2.tar.gz --markdown 20230416/p/pycocotools-stubs/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 17:15:11] INFO root fetch - processPackages [pyttb]: executing diffoscope
+[2023-04-16 17:15:11] INFO root fetch - processPackages [pyttb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyttb-1.5.1.tar.gz tmp/pyttb-1.6.0.tar.gz --markdown 20230416/p/pyttb/1.5.1-1.6.0/diff.md --exclude *.pyd
+[2023-04-16 17:15:11] INFO root fetch - main [MainThread]: End processing [sphere-base]: success
+[2023-04-16 17:15:12] INFO root fetch - main [MainThread]: End processing [odbc2orm]: success
+[2023-04-16 17:15:12] INFO root fetch - main [MainThread]: End processing [graphsignal]: success
+[2023-04-16 17:15:12] INFO root fetch - main [MainThread]: End processing [mgz]: success
+[2023-04-16 17:15:12] INFO root fetch - main [MainThread]: End processing [pycocotools-stubs]: success
+[2023-04-16 17:15:12] INFO root fetch - main [MainThread]: End processing [pyttb]: success
+[2023-04-16 17:15:30] INFO root fetch - main [MainThread]: End processing [zenoml]: success
+[2023-04-16 17:15:30] INFO root fetch - main [MainThread]: Store serial: [17728053]
