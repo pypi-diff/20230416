@@ -13604,3 +13604,52 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 22:21:09] INFO root fetch - main [MainThread]: End processing [leuci-map]: success
 [2023-04-16 22:21:09] INFO root fetch - main [MainThread]: End processing [environment-framework]: success
 [2023-04-16 22:21:09] INFO root fetch - main [MainThread]: Store serial: [17729946]
+[2023-04-16 22:26:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729946]
+[2023-04-16 22:26:18] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 22:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: roblox-python-wrapper
+[2023-04-16 22:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cupid
+[2023-04-16 22:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: osmrx
+[2023-04-16 22:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stim
+[2023-04-16 22:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stimcirq
+[2023-04-16 22:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sinter
+[2023-04-16 22:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: netznoe-smartmeter-portal-api
+[2023-04-16 22:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: drup
+[2023-04-16 22:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cressida
+[2023-04-16 22:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: jeff-api
+[2023-04-16 22:26:18] INFO root fetch - processPackages [jeff-api]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-16 22:26:18] WARNING root fetch - processPackages [netznoe-smartmeter-portal-api]: Skipping, unable to determine old version
+[2023-04-16 22:26:18] WARNING root fetch - processPackages [cupid]: Skipping, unable to determine old version
+[2023-04-16 22:26:18] INFO root fetch - main [MainThread]: End processing [netznoe-smartmeter-portal-api] error
+[2023-04-16 22:26:18] INFO root fetch - processPackages [osmrx]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-16 22:26:18] INFO root fetch - processPackages [drup]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 22:26:18] WARNING root fetch - processPackages [cressida]: Skipping, unable to determine old version
+[2023-04-16 22:26:18] INFO root fetch - main [MainThread]: End processing [cupid] error
+[2023-04-16 22:26:18] INFO root fetch - main [MainThread]: End processing [cressida] error
+[2023-04-16 22:26:18] WARNING root fetch - processPackages [roblox-python-wrapper]: Skipping, unable to determine old version
+[2023-04-16 22:26:18] INFO root fetch - main [MainThread]: End processing [roblox-python-wrapper] error
+[2023-04-16 22:26:18] INFO root fetch - processPackages [sinter]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-04-16 22:26:18] INFO root fetch - processPackages [stimcirq]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-04-16 22:26:18] INFO root fetch - processPackages [stim]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-04-16 22:26:18] INFO root fetch - processPackages [jeff-api]: Downloading https://files.pythonhosted.org/packages/76/d3/073afe609e024218967aebbb2a4580d14890f60a3ca84b7ac6d975653d4c/jeff_api-1.0.3.tar.gz
+[2023-04-16 22:26:18] INFO root fetch - processPackages [sinter]: executing diffoscope
+[2023-04-16 22:26:18] INFO root fetch - processPackages [sinter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinter-1.9.dev1656756326.tar.gz tmp/sinter-1.9.dev1657429876.tar.gz --markdown 20230416/s/sinter/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-04-16 22:26:18] INFO root fetch - processPackages [stimcirq]: executing diffoscope
+[2023-04-16 22:26:18] INFO root fetch - processPackages [stimcirq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stimcirq-1.9.dev1656756326.tar.gz tmp/stimcirq-1.9.dev1657429876.tar.gz --markdown 20230416/s/stimcirq/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-04-16 22:26:18] INFO root fetch - processPackages [drup]: Downloading https://files.pythonhosted.org/packages/55/a6/1c64fd0a8c60b6a16814195567179666f7efdd80aa21ba9a738e64b4ea13/drup-1.0.2.tar.gz
+[2023-04-16 22:26:18] INFO root fetch - processPackages [osmrx]: Downloading https://files.pythonhosted.org/packages/47/03/0bf90f3a41b611f04db54e8297dc4e4b9617cdbb89bdd10b64115e2ea9c1/osmrx-0.1.0.tar.gz
+[2023-04-16 22:26:18] INFO root fetch - processPackages [stim]: executing diffoscope
+[2023-04-16 22:26:18] INFO root fetch - processPackages [stim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stim-1.9.dev1656756326.tar.gz tmp/stim-1.9.dev1657429876.tar.gz --markdown 20230416/s/stim/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-04-16 22:26:18] INFO root fetch - processPackages [jeff-api]: Downloading https://files.pythonhosted.org/packages/2c/a4/a1d470557f364c72255773010c1b09a994cee1d4a6fa3e96c9b588e336a1/jeff_api-1.0.4.tar.gz
+[2023-04-16 22:26:18] INFO root fetch - processPackages [drup]: executing diffoscope
+[2023-04-16 22:26:18] INFO root fetch - processPackages [drup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drup-1.0.1.tar.gz tmp/drup-1.0.2.tar.gz --markdown 20230416/d/drup/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 22:26:18] INFO root fetch - processPackages [osmrx]: executing diffoscope
+[2023-04-16 22:26:18] INFO root fetch - processPackages [osmrx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osmrx-0.0.9.tar.gz tmp/osmrx-0.1.0.tar.gz --markdown 20230416/o/osmrx/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-16 22:26:18] INFO root fetch - processPackages [jeff-api]: executing diffoscope
+[2023-04-16 22:26:18] INFO root fetch - processPackages [jeff-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeff_api-1.0.3.tar.gz tmp/jeff_api-1.0.4.tar.gz --markdown 20230416/j/jeff-api/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-16 22:26:19] INFO root fetch - main [MainThread]: End processing [sinter]: success
+[2023-04-16 22:26:20] INFO root fetch - main [MainThread]: End processing [jeff-api]: success
+[2023-04-16 22:26:20] INFO root fetch - main [MainThread]: End processing [osmrx]: success
+[2023-04-16 22:26:20] INFO root fetch - main [MainThread]: End processing [drup]: success
+[2023-04-16 22:26:20] INFO root fetch - main [MainThread]: End processing [stimcirq]: success
+[2023-04-16 22:26:21] INFO root fetch - main [MainThread]: End processing [stim]: success
+[2023-04-16 22:26:21] INFO root fetch - main [MainThread]: Store serial: [17730017]
