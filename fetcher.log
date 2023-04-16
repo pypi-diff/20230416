@@ -9418,3 +9418,98 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 15:43:19] INFO root fetch - main [MainThread]: End processing [lumigo-core]: success
 [2023-04-16 15:43:23] INFO root fetch - main [MainThread]: End processing [frasa]: success
 [2023-04-16 15:43:23] INFO root fetch - main [MainThread]: Store serial: [17727414]
+[2023-04-16 15:48:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727414]
+[2023-04-16 15:48:31] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-16 15:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: merkl
+[2023-04-16 15:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dknovautils
+[2023-04-16 15:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dtn7zero
+[2023-04-16 15:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: frasa
+[2023-04-16 15:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: doveseed
+[2023-04-16 15:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: feffery-utils-components
+[2023-04-16 15:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: py-partiql-parser
+[2023-04-16 15:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: memphis-py-beta
+[2023-04-16 15:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bitstring
+[2023-04-16 15:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: memphis-py
+[2023-04-16 15:48:31] INFO root fetch - processPackages [merkl]: New version: [0.5] Old Version: [0.4]
+[2023-04-16 15:48:31] INFO root fetch - processPackages [dknovautils]: New version: [0.0.3] Old Version: [0.0.21]
+[2023-04-16 15:48:31] INFO root fetch - processPackages [frasa]: New version: [0.1.52] Old Version: [0.1.51]
+[2023-04-16 15:48:31] INFO root fetch - processPackages [doveseed]: New version: [2.0.0a1] Old Version: [2.0.0a0]
+[2023-04-16 15:48:31] INFO root fetch - processPackages [py-partiql-parser]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-16 15:48:31] INFO root fetch - processPackages [bitstring]: New version: [4.0.2] Old Version: [4.0.1]
+[2023-04-16 15:48:31] INFO root fetch - processPackages [dtn7zero]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 15:48:31] INFO root fetch - processPackages [memphis-py]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 15:48:31] INFO root fetch - processPackages [feffery-utils-components]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 15:48:31] INFO root fetch - processPackages [memphis-py-beta]: New version: [1.0.2] Old Version: [0.3.5]
+[2023-04-16 15:48:31] INFO root fetch - processPackages [dknovautils]: Downloading https://files.pythonhosted.org/packages/f3/c7/cd4da2137cff0c504df08f1fa95c6256db595be01bebc2169fbabdf8cca9/dknovautils-0.0.21.tar.gz
+[2023-04-16 15:48:31] INFO root fetch - processPackages [bitstring]: Downloading https://files.pythonhosted.org/packages/d2/64/e733b18349be383a4b7859c865d6c9e5ccc5845e9b4258504055607ec1cb/bitstring-4.0.1.tar.gz
+[2023-04-16 15:48:31] INFO root fetch - processPackages [dtn7zero]: Downloading https://files.pythonhosted.org/packages/88/c2/b6ba95d340dcb79b742b9b01585bc8fbcde08836238de29d375770b600f0/dtn7zero-0.0.2.tar.gz
+[2023-04-16 15:48:31] INFO root fetch - processPackages [merkl]: Downloading https://files.pythonhosted.org/packages/42/d6/c7c512076af999516ae24ff4e5e561117bcbe93d3d297a45e8e7eeb7debf/merkl-0.4.tar.gz
+[2023-04-16 15:48:31] INFO root fetch - processPackages [frasa]: Downloading https://files.pythonhosted.org/packages/51/91/27997e8907acd58937ac5197b4e8958bdb5ebd08b741c5a5e5f889c7c9d5/frasa-0.1.52.tar.gz
+[2023-04-16 15:48:31] INFO root fetch - processPackages [feffery-utils-components]: Downloading https://files.pythonhosted.org/packages/de/96/c96aa6adddcd6fd9f27b3298b19cc4a7d4fe00f9211b9990796e008f4048/feffery_utils_components-0.1.8.tar.gz
+[2023-04-16 15:48:31] INFO root fetch - processPackages [memphis-py]: Downloading https://files.pythonhosted.org/packages/83/46/8ec4884e51a0b4227fa5684fe9b09159054962f66bf614d41f74c262dfd7/memphis-py-1.0.0.tar.gz
+[2023-04-16 15:48:31] INFO root fetch - processPackages [memphis-py-beta]: Downloading https://files.pythonhosted.org/packages/05/24/63102143408a62873b90b320855f116d1829fd0b668c59064e42502acd88/memphis-py-beta-0.3.5.tar.gz
+[2023-04-16 15:48:31] INFO root fetch - processPackages [doveseed]: Downloading https://files.pythonhosted.org/packages/7c/0b/17cbaa72b206c1f71dac71315982b8974d2dba08dcea713500e5540311db/doveseed-2.0.0a1.tar.gz
+[2023-04-16 15:48:32] INFO root fetch - processPackages [py-partiql-parser]: Downloading https://files.pythonhosted.org/packages/9a/75/d86c9f4cf746a99eb61724653aefc90dd10f38bfcc3f9afb16b6e9a3fe2c/py-partiql-parser-0.3.0.tar.gz
+[2023-04-16 15:48:32] INFO root fetch - processPackages [bitstring]: Downloading https://files.pythonhosted.org/packages/b5/f1/f55f568ef587fe7a74f46a9ae869dbbda10575b2a404c831d2bc0567b7de/bitstring-4.0.2.tar.gz
+[2023-04-16 15:48:32] INFO root fetch - processPackages [dknovautils]: executing diffoscope
+[2023-04-16 15:48:32] INFO root fetch - processPackages [doveseed]: executing diffoscope
+[2023-04-16 15:48:32] INFO root fetch - processPackages [dknovautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dknovautils-0.0.21.tar.gz tmp/dknovautils-0.0.3.tar.gz --markdown 20230416/d/dknovautils/0.0.21-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 15:48:32] INFO root fetch - processPackages [doveseed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doveseed-2.0.0a0.tar.gz tmp/doveseed-2.0.0a1.tar.gz --markdown 20230416/d/doveseed/2.0.0a0-2.0.0a1/diff.md --exclude *.pyd
+[2023-04-16 15:48:32] INFO root fetch - processPackages [dtn7zero]: Downloading https://files.pythonhosted.org/packages/9d/d5/ca1d97d4eed7011d953c1b0c3c9b831b2be4e45c4a4fd020e00e3ea169de/dtn7zero-0.0.3.tar.gz
+[2023-04-16 15:48:32] INFO root fetch - processPackages [py-partiql-parser]: executing diffoscope
+[2023-04-16 15:48:32] INFO root fetch - processPackages [py-partiql-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-partiql-parser-0.2.1.tar.gz tmp/py-partiql-parser-0.3.0.tar.gz --markdown 20230416/p/py-partiql-parser/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 15:48:32] INFO root fetch - processPackages [merkl]: Downloading https://files.pythonhosted.org/packages/44/a5/585fb690e4d92fb0f90c7dea03f2f2a7317f3b3dd01ce9858d93295e85aa/merkl-0.5.tar.gz
+[2023-04-16 15:48:32] INFO root fetch - processPackages [memphis-py]: Downloading https://files.pythonhosted.org/packages/e4/36/4b10e46ff3ef601563984e870c18468b16470e502403e8b8f84f900cb4b9/memphis-py-1.0.1.tar.gz
+[2023-04-16 15:48:32] INFO root fetch - processPackages [bitstring]: executing diffoscope
+[2023-04-16 15:48:32] INFO root fetch - processPackages [memphis-py-beta]: Downloading https://files.pythonhosted.org/packages/65/e8/07dfd771f3d91efd5042456094e4c6aaf01e528a0958215d74957e8d094e/memphis-py-beta-1.0.2.tar.gz
+[2023-04-16 15:48:32] INFO root fetch - processPackages [bitstring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitstring-4.0.1.tar.gz tmp/bitstring-4.0.2.tar.gz --markdown 20230416/b/bitstring/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2023-04-16 15:48:32] INFO root fetch - processPackages [dtn7zero]: executing diffoscope
+[2023-04-16 15:48:32] INFO root fetch - processPackages [dtn7zero]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtn7zero-0.0.2.tar.gz tmp/dtn7zero-0.0.3.tar.gz --markdown 20230416/d/dtn7zero/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 15:48:32] INFO root fetch - processPackages [feffery-utils-components]: Downloading https://files.pythonhosted.org/packages/1f/d9/6f34d4e669b8680ade17307c54cd9434749de6071eb8c106d0ab9b0a728a/feffery_utils_components-0.1.9.tar.gz
+[2023-04-16 15:48:32] INFO root fetch - processPackages [memphis-py]: executing diffoscope
+[2023-04-16 15:48:32] INFO root fetch - processPackages [memphis-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memphis-py-1.0.0.tar.gz tmp/memphis-py-1.0.1.tar.gz --markdown 20230416/m/memphis-py/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 15:48:32] INFO root fetch - processPackages [merkl]: executing diffoscope
+[2023-04-16 15:48:32] INFO root fetch - processPackages [merkl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/merkl-0.4.tar.gz tmp/merkl-0.5.tar.gz --markdown 20230416/m/merkl/0.4-0.5/diff.md --exclude *.pyd
+[2023-04-16 15:48:32] INFO root fetch - processPackages [memphis-py-beta]: executing diffoscope
+[2023-04-16 15:48:32] INFO root fetch - processPackages [memphis-py-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memphis-py-beta-0.3.5.tar.gz tmp/memphis-py-beta-1.0.2.tar.gz --markdown 20230416/m/memphis-py-beta/0.3.5-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 15:48:32] INFO root fetch - processPackages [feffery-utils-components]: executing diffoscope
+[2023-04-16 15:48:32] INFO root fetch - processPackages [feffery-utils-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feffery_utils_components-0.1.8.tar.gz tmp/feffery_utils_components-0.1.9.tar.gz --markdown 20230416/f/feffery-utils-components/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 15:48:32] INFO root fetch - processPackages [frasa]: executing diffoscope
+[2023-04-16 15:48:32] INFO root fetch - processPackages [frasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frasa-0.1.51.tar.gz tmp/frasa-0.1.52.tar.gz --markdown 20230416/f/frasa/0.1.51-0.1.52/diff.md --exclude *.pyd
+[2023-04-16 15:48:33] INFO root fetch - processPackages [dknovautils]: Start processing: auraboros
+[2023-04-16 15:48:33] INFO root fetch - main [MainThread]: End processing [dknovautils]: success
+[2023-04-16 15:48:33] INFO root fetch - processPackages [auraboros]: New version: [0.9.0a0] Old Version: [0.8.0a0]
+[2023-04-16 15:48:33] INFO root fetch - processPackages [doveseed]: Start processing: apidevtools
+[2023-04-16 15:48:33] INFO root fetch - main [MainThread]: End processing [doveseed]: success
+[2023-04-16 15:48:33] INFO root fetch - processPackages [apidevtools]: New version: [3.1.8] Old Version: [3.1.7]
+[2023-04-16 15:48:33] INFO root fetch - processPackages [auraboros]: executing diffoscope
+[2023-04-16 15:48:33] INFO root fetch - processPackages [auraboros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auraboros-0.8.0a0.tar.gz tmp/auraboros-0.9.0a0.tar.gz --markdown 20230416/a/auraboros/0.8.0a0-0.9.0a0/diff.md --exclude *.pyd
+[2023-04-16 15:48:33] INFO root fetch - processPackages [apidevtools]: Downloading https://files.pythonhosted.org/packages/34/cd/c87b0065c9b6e0ff956d09462cff564e7ecd18c91d78bc7e00d5d1c4f3c8/apidevtools-3.1.7.tar.gz
+[2023-04-16 15:48:34] INFO root fetch - processPackages [bitstring]: Start processing: plainlog
+[2023-04-16 15:48:34] INFO root fetch - main [MainThread]: End processing [bitstring]: success
+[2023-04-16 15:48:34] INFO root fetch - processPackages [memphis-py-beta]: Start processing: anyon
+[2023-04-16 15:48:34] INFO root fetch - main [MainThread]: End processing [memphis-py-beta]: success
+[2023-04-16 15:48:34] INFO root fetch - processPackages [apidevtools]: Downloading https://files.pythonhosted.org/packages/d4/01/59783c79528bef7de899c3e7d568bc4d0562a4e4c0e7d0723421a9b8b688/apidevtools-3.1.8.tar.gz
+[2023-04-16 15:48:34] INFO root fetch - processPackages [plainlog]: New version: [0.1.3] Old Version: [0.1.1]
+[2023-04-16 15:48:34] INFO root fetch - main [MainThread]: End processing [py-partiql-parser]: success
+[2023-04-16 15:48:34] INFO root fetch - processPackages [anyon]: New version: [3.1.16] Old Version: [3.1.15]
+[2023-04-16 15:48:34] INFO root fetch - main [MainThread]: End processing [memphis-py]: success
+[2023-04-16 15:48:34] INFO root fetch - processPackages [apidevtools]: executing diffoscope
+[2023-04-16 15:48:34] INFO root fetch - processPackages [apidevtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apidevtools-3.1.7.tar.gz tmp/apidevtools-3.1.8.tar.gz --markdown 20230416/a/apidevtools/3.1.7-3.1.8/diff.md --exclude *.pyd
+[2023-04-16 15:48:34] INFO root fetch - processPackages [plainlog]: Downloading https://files.pythonhosted.org/packages/cf/e2/09a98900ce1b8bdde20b3ce7c225460d0c748796f27989a8663edf03dd6e/plainlog-0.1.1.tar.gz
+[2023-04-16 15:48:34] INFO root fetch - main [MainThread]: End processing [dtn7zero]: success
+[2023-04-16 15:48:34] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/dc/80/f779b41cae645cbdcf6c903200709ad54b81c60bd75bc90b5d6e4f229b91/anyon-3.1.15-cp311-cp311-win_amd64.whl
+[2023-04-16 15:48:34] INFO root fetch - main [MainThread]: End processing [merkl]: success
+[2023-04-16 15:48:34] INFO root fetch - processPackages [plainlog]: Downloading https://files.pythonhosted.org/packages/99/2a/134c72601a81cc82c5b838403886cc42351fd47976d2de1e43b37d706d00/plainlog-0.1.3.tar.gz
+[2023-04-16 15:48:34] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/60/04/9bd59f3a98ef12f80706c7b49c90918a8f1f39bedfdc4f1019eb5025528a/anyon-3.1.16-cp311-cp311-win_amd64.whl
+[2023-04-16 15:48:34] INFO root fetch - processPackages [plainlog]: executing diffoscope
+[2023-04-16 15:48:34] INFO root fetch - processPackages [plainlog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plainlog-0.1.1.tar.gz tmp/plainlog-0.1.3.tar.gz --markdown 20230416/p/plainlog/0.1.1-0.1.3/diff.md --exclude *.pyd
+[2023-04-16 15:48:34] INFO root fetch - processPackages [anyon]: executing diffoscope
+[2023-04-16 15:48:34] INFO root fetch - processPackages [anyon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyon-3.1.15-cp311-cp311-win_amd64.whl.zip tmp/anyon-3.1.16-cp311-cp311-win_amd64.whl.zip --markdown 20230416/a/anyon/3.1.15-3.1.16/diff.md --exclude *.pyd
+[2023-04-16 15:48:35] INFO root fetch - main [MainThread]: End processing [apidevtools]: success
+[2023-04-16 15:48:35] INFO root fetch - main [MainThread]: End processing [anyon]: success
+[2023-04-16 15:48:35] INFO root fetch - main [MainThread]: End processing [plainlog]: success
+[2023-04-16 15:48:37] INFO root fetch - main [MainThread]: End processing [frasa]: success
+[2023-04-16 15:48:37] INFO root fetch - main [MainThread]: End processing [auraboros]: success
+[2023-04-16 15:48:45] INFO root fetch - main [MainThread]: End processing [feffery-utils-components]: success
+[2023-04-16 15:48:45] INFO root fetch - main [MainThread]: Store serial: [17727457]
