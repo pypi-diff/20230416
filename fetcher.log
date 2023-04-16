@@ -12979,3 +12979,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 21:13:25] INFO root fetch - main [MainThread]: End processing [pysui]: success
 [2023-04-16 21:13:26] INFO root fetch - main [MainThread]: End processing [django-awesomplete]: success
 [2023-04-16 21:13:26] INFO root fetch - main [MainThread]: Store serial: [17729553]
+[2023-04-16 21:18:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729553]
+[2023-04-16 21:18:35] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 21:18:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FlipperNested
+[2023-04-16 21:18:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openexr-tools
+[2023-04-16 21:18:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TheengsGateway
+[2023-04-16 21:18:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypdf
+[2023-04-16 21:18:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pydae
+[2023-04-16 21:18:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SrbAI
+[2023-04-16 21:18:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: balcony
+[2023-04-16 21:18:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: OmniBridge
+[2023-04-16 21:18:35] INFO root fetch - processPackages [pydae]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-16 21:18:35] INFO root fetch - processPackages [SrbAI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 21:18:35] INFO root fetch - processPackages [pypdf]: New version: [3.8.0] Old Version: [3.7.1]
+[2023-04-16 21:18:35] WARNING root fetch - processPackages [openexr-tools]: Skipping, unable to determine old version
+[2023-04-16 21:18:35] INFO root fetch - main [MainThread]: End processing [openexr-tools] error
+[2023-04-16 21:18:35] INFO root fetch - processPackages [balcony]: New version: [0.0.9] Old Version: [0.0.82]
+[2023-04-16 21:18:35] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 21:18:35] INFO root fetch - processPackages [TheengsGateway]: New version: [1.0.0] Old Version: [0.9.0]
+[2023-04-16 21:18:35] INFO root fetch - processPackages [FlipperNested]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-16 21:18:35] INFO root fetch - processPackages [SrbAI]: executing diffoscope
+[2023-04-16 21:18:35] INFO root fetch - processPackages [SrbAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SrbAI-0.0.8.tar.gz tmp/SrbAI-0.0.9.tar.gz --markdown 20230416/S/SrbAI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 21:18:36] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-16 21:18:36] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230416/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 21:18:36] INFO root fetch - processPackages [pydae]: Downloading https://files.pythonhosted.org/packages/7d/df/18fbeeac68b8076a40737405fc9638efb381a7dae1ccdfa520fe3810b1cd/pydae-0.8.0.tar.gz
+[2023-04-16 21:18:36] INFO root fetch - processPackages [TheengsGateway]: Downloading https://files.pythonhosted.org/packages/2a/65/9991f5f0e3e84d25f8faf212229e93a1fecef958e5fd37bdc04eb7aa1123/TheengsGateway-0.9.0.tar.gz
+[2023-04-16 21:18:36] INFO root fetch - processPackages [balcony]: Downloading https://files.pythonhosted.org/packages/0e/f1/fbeb67000d9b1114b1a068672b7adad5168d38ab9f219d6e465934933ff6/balcony-0.0.82.tar.gz
+[2023-04-16 21:18:36] INFO root fetch - processPackages [pypdf]: Downloading https://files.pythonhosted.org/packages/ef/2a/55d48c9aa674dbdf1232f9047737fd251003364d6b0c6b4f6dcdc9124bf6/pypdf-3.7.1.tar.gz
+[2023-04-16 21:18:36] INFO root fetch - processPackages [FlipperNested]: Downloading https://files.pythonhosted.org/packages/ca/6b/93506450e812cf32989f0291363ca1b345d5929b5aab0add36b5bda4fa9a/FlipperNested-1.9.1.tar.gz
+[2023-04-16 21:18:36] INFO root fetch - processPackages [balcony]: executing diffoscope
+[2023-04-16 21:18:36] INFO root fetch - processPackages [balcony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balcony-0.0.82.tar.gz tmp/balcony-0.0.9.tar.gz --markdown 20230416/b/balcony/0.0.82-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 21:18:36] INFO root fetch - processPackages [TheengsGateway]: Downloading https://files.pythonhosted.org/packages/fd/42/cafe15308eb872404590b662e78ee8962d9428433b25667a562e1e0e79ef/TheengsGateway-1.0.0.tar.gz
+[2023-04-16 21:18:36] INFO root fetch - processPackages [FlipperNested]: executing diffoscope
+[2023-04-16 21:18:36] INFO root fetch - processPackages [FlipperNested]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlipperNested-1.9.0.tar.gz tmp/FlipperNested-1.9.1.tar.gz --markdown 20230416/F/FlipperNested/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-16 21:18:36] INFO root fetch - processPackages [pypdf]: Downloading https://files.pythonhosted.org/packages/5c/d9/ed3be966a7086071e30f56f191e7bd6069a6b4bc236f03aaa5d6d78a6796/pypdf-3.8.0.tar.gz
+[2023-04-16 21:18:36] INFO root fetch - processPackages [TheengsGateway]: executing diffoscope
+[2023-04-16 21:18:36] INFO root fetch - processPackages [TheengsGateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheengsGateway-0.9.0.tar.gz tmp/TheengsGateway-1.0.0.tar.gz --markdown 20230416/T/TheengsGateway/0.9.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-16 21:18:36] WARNING root fetch - processPackages [pydae]: Skipping package: exceeds size limit 76279170>=10485760
+[2023-04-16 21:18:36] INFO root fetch - main [MainThread]: End processing [pydae] error
+[2023-04-16 21:18:36] INFO root fetch - processPackages [pypdf]: executing diffoscope
+[2023-04-16 21:18:36] INFO root fetch - processPackages [pypdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypdf-3.7.1.tar.gz tmp/pypdf-3.8.0.tar.gz --markdown 20230416/p/pypdf/3.7.1-3.8.0/diff.md --exclude *.pyd
+[2023-04-16 21:18:37] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-16 21:18:37] INFO root fetch - main [MainThread]: End processing [balcony]: success
+[2023-04-16 21:18:37] INFO root fetch - main [MainThread]: End processing [SrbAI]: success
+[2023-04-16 21:18:37] INFO root fetch - main [MainThread]: End processing [FlipperNested]: success
+[2023-04-16 21:18:37] INFO root fetch - main [MainThread]: End processing [TheengsGateway]: success
+[2023-04-16 21:18:39] INFO root fetch - main [MainThread]: End processing [pypdf]: success
+[2023-04-16 21:18:39] INFO root fetch - main [MainThread]: Store serial: [17729607]
