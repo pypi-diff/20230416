@@ -1711,3 +1711,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 02:55:51] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
 [2023-04-16 02:56:07] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2023-04-16 02:56:07] INFO root fetch - main [MainThread]: Store serial: [17722983]
+[2023-04-16 03:01:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722983]
+[2023-04-16 03:01:17] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 03:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aemcmc-nightly
+[2023-04-16 03:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tts-arranger
+[2023-04-16 03:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyagrum-nightly
+[2023-04-16 03:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flake8-keyword-params
+[2023-04-16 03:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyristic
+[2023-04-16 03:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-lambda-layer-curl
+[2023-04-16 03:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: onvif-zeep-async
+[2023-04-16 03:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: python-web-io
+[2023-04-16 03:01:17] INFO root fetch - processPackages [pyristic]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-16 03:01:17] INFO root fetch - processPackages [onvif-zeep-async]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-16 03:01:17] WARNING root fetch - processPackages [flake8-keyword-params]: Skipping, unable to determine old version
+[2023-04-16 03:01:17] INFO root fetch - main [MainThread]: End processing [flake8-keyword-params] error
+[2023-04-16 03:01:17] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-16 03:01:17] INFO root fetch - processPackages [python-web-io]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-16 03:01:17] INFO root fetch - processPackages [tts-arranger]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-16 03:01:18] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2023-04-16 03:01:18] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-04-16 03:01:18] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-1.2.8.tar.gz tmp/onvif-zeep-async-1.2.9.tar.gz --markdown 20230416/o/onvif-zeep-async/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-16 03:01:18] INFO root fetch - processPackages [aemcmc-nightly]: New version: [0.0.8.dev20230416] Old Version: [0.0.8.dev20230415]
+[2023-04-16 03:01:18] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.7.1.9.dev202304151681314159] Old Version: [1.7.1.9.dev202304141681314159]
+[2023-04-16 03:01:18] INFO root fetch - processPackages [python-web-io]: Downloading https://files.pythonhosted.org/packages/c2/6b/798ad640a78fbaa90e84df1aea32af074d478b6ef0c30b9147bce9caabcc/python_web_io-0.1.8.tar.gz
+[2023-04-16 03:01:18] INFO root fetch - processPackages [pyristic]: Downloading https://files.pythonhosted.org/packages/e6/8c/e45d115295bd52c091b6b3017ead6d6e53270f738c6e27d8fefdadfdaa21/pyristic-1.4.0.tar.gz
+[2023-04-16 03:01:18] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-04-16 03:01:18] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.7.1.9.dev202304141681314159-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.7.1.9.dev202304151681314159-cp39-cp39-win_amd64.whl.zip --markdown 20230416/p/pyagrum-nightly/1.7.1.9.dev202304141681314159-1.7.1.9.dev202304151681314159/diff.md --exclude *.pyd
+[2023-04-16 03:01:18] INFO root fetch - processPackages [python-web-io]: executing diffoscope
+[2023-04-16 03:01:18] INFO root fetch - processPackages [python-web-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_web_io-0.1.7.tar.gz tmp/python_web_io-0.1.8.tar.gz --markdown 20230416/p/python-web-io/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-16 03:01:18] INFO root fetch - processPackages [tts-arranger]: Downloading https://files.pythonhosted.org/packages/b3/51/8d17df19a0ba55d496608c0d1a4ce9cc1c7e15749f7191017a56d2906909/tts_arranger-0.1.4.tar.gz
+[2023-04-16 03:01:18] INFO root fetch - processPackages [tts-arranger]: executing diffoscope
+[2023-04-16 03:01:18] INFO root fetch - processPackages [tts-arranger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tts_arranger-0.1.3.tar.gz tmp/tts_arranger-0.1.4.tar.gz --markdown 20230416/t/tts-arranger/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-16 03:01:18] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2023-04-16 03:01:18] INFO root fetch - processPackages [aemcmc-nightly]: Downloading https://files.pythonhosted.org/packages/43/2c/94c8b1d15f83d3ef1c2c20a0e774831d2f0f9c44b46796f5e4699d29a1e9/aemcmc-nightly-0.0.8.dev20230416.tar.gz
+[2023-04-16 03:01:18] INFO root fetch - processPackages [pyristic]: Downloading https://files.pythonhosted.org/packages/70/0f/a146e3b529b77ab5c2970999d8c4039c5b6584e70a627e5ae87c55ca0a28/pyristic-1.4.1.tar.gz
+[2023-04-16 03:01:18] INFO root fetch - processPackages [aemcmc-nightly]: executing diffoscope
+[2023-04-16 03:01:18] INFO root fetch - processPackages [aemcmc-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aemcmc-nightly-0.0.8.dev20230415.tar.gz tmp/aemcmc-nightly-0.0.8.dev20230416.tar.gz --markdown 20230416/a/aemcmc-nightly/0.0.8.dev20230415-0.0.8.dev20230416/diff.md --exclude *.pyd
+[2023-04-16 03:01:18] INFO root fetch - processPackages [pyristic]: executing diffoscope
+[2023-04-16 03:01:18] INFO root fetch - processPackages [pyristic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyristic-1.4.0.tar.gz tmp/pyristic-1.4.1.tar.gz --markdown 20230416/p/pyristic/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-16 03:01:18] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-04-16 03:01:18] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230416/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-16 03:01:19] INFO root fetch - main [MainThread]: End processing [python-web-io]: success
+[2023-04-16 03:01:19] INFO root fetch - main [MainThread]: End processing [tts-arranger]: success
+[2023-04-16 03:01:19] INFO root fetch - main [MainThread]: End processing [aemcmc-nightly]: success
+[2023-04-16 03:01:19] INFO root fetch - main [MainThread]: End processing [pyristic]: success
+[2023-04-16 03:01:20] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-04-16 03:01:20] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-04-16 03:01:21] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-04-16 03:01:21] INFO root fetch - main [MainThread]: Store serial: [17723025]
