@@ -9513,3 +9513,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 15:48:37] INFO root fetch - main [MainThread]: End processing [auraboros]: success
 [2023-04-16 15:48:45] INFO root fetch - main [MainThread]: End processing [feffery-utils-components]: success
 [2023-04-16 15:48:45] INFO root fetch - main [MainThread]: Store serial: [17727457]
+[2023-04-16 15:53:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727457]
+[2023-04-16 15:53:56] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 15:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odbc2orm
+[2023-04-16 15:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdbr
+[2023-04-16 15:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metalcompute
+[2023-04-16 15:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mixed-methods
+[2023-04-16 15:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pybrownies
+[2023-04-16 15:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spiderYa
+[2023-04-16 15:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lamda
+[2023-04-16 15:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: intersight
+[2023-04-16 15:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyawskit
+[2023-04-16 15:53:56] INFO root fetch - processPackages [pdbr]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-04-16 15:53:56] INFO root fetch - processPackages [spiderYa]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 15:53:56] INFO root fetch - processPackages [metalcompute]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-16 15:53:56] INFO root fetch - processPackages [pyawskit]: New version: [0.1.61] Old Version: [0.1.60]
+[2023-04-16 15:53:56] WARNING root fetch - processPackages [mixed-methods]: Skipping, unable to determine old version
+[2023-04-16 15:53:56] INFO root fetch - processPackages [intersight]: New version: [1.0.9.6484] Old Version: [1.0.9.6207]
+[2023-04-16 15:53:56] INFO root fetch - main [MainThread]: End processing [mixed-methods] error
+[2023-04-16 15:53:56] WARNING root fetch - processPackages [pybrownies]: Skipping, unable to determine old version
+[2023-04-16 15:53:56] INFO root fetch - processPackages [lamda]: New version: [3.98] Old Version: [3.95]
+[2023-04-16 15:53:56] INFO root fetch - main [MainThread]: End processing [pybrownies] error
+[2023-04-16 15:53:56] INFO root fetch - processPackages [odbc2orm]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 15:53:56] INFO root fetch - processPackages [spiderYa]: executing diffoscope
+[2023-04-16 15:53:56] INFO root fetch - processPackages [spiderYa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderYa-0.0.8.tar.gz tmp/spiderYa-0.0.9.tar.gz --markdown 20230416/s/spiderYa/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 15:53:56] INFO root fetch - processPackages [pyawskit]: Downloading https://files.pythonhosted.org/packages/69/8e/041558e030980b380fa424aebec2293ca39c7e012b12632718df524c5b49/pyawskit-0.1.60.tar.gz
+[2023-04-16 15:53:56] INFO root fetch - processPackages [odbc2orm]: Downloading https://files.pythonhosted.org/packages/1a/9f/f404bbf5f02e9427e32ef65f74604e4d4f3803a693dcb9cae9e7c962eb78/odbc2orm-1.0.0.tar.gz
+[2023-04-16 15:53:56] INFO root fetch - processPackages [intersight]: Downloading https://files.pythonhosted.org/packages/ff/40/daaa754993e7cb8462afdc89a9772328cc5717951e766da83fa93944e043/intersight-1.0.9.6207.tar.gz
+[2023-04-16 15:53:56] INFO root fetch - processPackages [metalcompute]: Downloading https://files.pythonhosted.org/packages/2b/e3/2f076d6522743396d0adc07c51cc8f84bb7633b99844c11fee0d33a4e035/metalcompute-0.2.3.tar.gz
+[2023-04-16 15:53:56] INFO root fetch - processPackages [lamda]: Downloading https://files.pythonhosted.org/packages/55/ce/d37b8e98e7f5d7d6224c924a71c3c700cbebdc43ca21d463645b70f2f71b/lamda-3.95.tar.gz
+[2023-04-16 15:53:56] INFO root fetch - processPackages [pdbr]: Downloading https://files.pythonhosted.org/packages/59/ce/0269d569bccad53095f985e4c3c9f390f087328f82cc749b9982883b7fb3/pdbr-0.8.5.tar.gz
+[2023-04-16 15:53:56] INFO root fetch - processPackages [odbc2orm]: Downloading https://files.pythonhosted.org/packages/ac/d1/a214320bc6d28016e67b9f98bd0199bbb83813e2219b72d1465f888a6ce2/odbc2orm-1.0.1.tar.gz
+[2023-04-16 15:53:56] INFO root fetch - processPackages [pdbr]: executing diffoscope
+[2023-04-16 15:53:56] INFO root fetch - processPackages [pdbr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdbr-0.8.4.tar.gz tmp/pdbr-0.8.5.tar.gz --markdown 20230416/p/pdbr/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-04-16 15:53:56] INFO root fetch - processPackages [metalcompute]: Downloading https://files.pythonhosted.org/packages/84/af/5412f208b516cf3dc718abf583b6cb88b3bd35d0ac9c5e2c1c7e1160454f/metalcompute-0.2.4.tar.gz
+[2023-04-16 15:53:56] INFO root fetch - processPackages [pyawskit]: Downloading https://files.pythonhosted.org/packages/5b/ce/bf8661cee61b5d15771a68a72b796bbe05bed9f63f3e2c480f227df3e644/pyawskit-0.1.61.tar.gz
+[2023-04-16 15:53:56] INFO root fetch - processPackages [odbc2orm]: executing diffoscope
+[2023-04-16 15:53:56] INFO root fetch - processPackages [odbc2orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odbc2orm-1.0.0.tar.gz tmp/odbc2orm-1.0.1.tar.gz --markdown 20230416/o/odbc2orm/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 15:53:56] INFO root fetch - processPackages [lamda]: Downloading https://files.pythonhosted.org/packages/00/9b/1b904a0fab1729c8362cf8016753b8bf51ff43c84e928412aa6c5fcc6eb2/lamda-3.98.tar.gz
+[2023-04-16 15:53:56] INFO root fetch - processPackages [metalcompute]: executing diffoscope
+[2023-04-16 15:53:56] INFO root fetch - processPackages [metalcompute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metalcompute-0.2.3.tar.gz tmp/metalcompute-0.2.4.tar.gz --markdown 20230416/m/metalcompute/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-16 15:53:56] INFO root fetch - processPackages [lamda]: executing diffoscope
+[2023-04-16 15:53:56] INFO root fetch - processPackages [lamda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamda-3.95.tar.gz tmp/lamda-3.98.tar.gz --markdown 20230416/l/lamda/3.95-3.98/diff.md --exclude *.pyd
+[2023-04-16 15:53:57] INFO root fetch - processPackages [pyawskit]: executing diffoscope
+[2023-04-16 15:53:57] INFO root fetch - processPackages [pyawskit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyawskit-0.1.60.tar.gz tmp/pyawskit-0.1.61.tar.gz --markdown 20230416/p/pyawskit/0.1.60-0.1.61/diff.md --exclude *.pyd
+[2023-04-16 15:53:57] WARNING root fetch - processPackages [intersight]: Skipping package: exceeds size limit 16195201>=10485760
+[2023-04-16 15:53:57] INFO root fetch - main [MainThread]: End processing [intersight] error
+[2023-04-16 15:53:57] INFO root fetch - main [MainThread]: End processing [pdbr]: success
+[2023-04-16 15:53:58] INFO root fetch - main [MainThread]: End processing [odbc2orm]: success
+[2023-04-16 15:53:58] INFO root fetch - main [MainThread]: End processing [metalcompute]: success
+[2023-04-16 15:53:58] INFO root fetch - main [MainThread]: End processing [pyawskit]: success
+[2023-04-16 15:53:58] INFO root fetch - main [MainThread]: End processing [lamda]: success
+[2023-04-16 15:53:59] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
+[2023-04-16 15:53:59] INFO root fetch - main [MainThread]: Store serial: [17727496]
