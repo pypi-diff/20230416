@@ -13407,3 +13407,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 22:00:15] INFO root fetch - main [MainThread]: End processing [macicons]: success
 [2023-04-16 22:00:15] INFO root fetch - main [MainThread]: End processing [ohmyi3]: success
 [2023-04-16 22:00:15] INFO root fetch - main [MainThread]: Store serial: [17729835]
+[2023-04-16 22:05:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729835]
+[2023-04-16 22:05:26] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 22:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MinecraftSkyblockAPI
+[2023-04-16 22:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drup
+[2023-04-16 22:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: folio-migration-tools
+[2023-04-16 22:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: meteo-qc
+[2023-04-16 22:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: forml
+[2023-04-16 22:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jeff-api
+[2023-04-16 22:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: weightwatcher
+[2023-04-16 22:05:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aim-ui
+[2023-04-16 22:05:26] INFO root fetch - processPackages [drup]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 22:05:27] INFO root fetch - processPackages [MinecraftSkyblockAPI]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-16 22:05:27] INFO root fetch - processPackages [jeff-api]: New version: [1.0.0] Old Version: [0.2.9]
+[2023-04-16 22:05:27] INFO root fetch - processPackages [forml]: New version: [0.92] Old Version: [0.91]
+[2023-04-16 22:05:27] INFO root fetch - processPackages [weightwatcher]: New version: [0.7.1.5] Old Version: [0.7.1.4]
+[2023-04-16 22:05:27] INFO root fetch - processPackages [meteo-qc]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-04-16 22:05:27] INFO root fetch - processPackages [folio-migration-tools]: New version: [1.7.9rc2] Old Version: [1.7.9rc1]
+[2023-04-16 22:05:27] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0.dev3] Old Version: [4.0.0.dev2]
+[2023-04-16 22:05:27] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/d6/c0/8412600d01de28dac29fc7f2821e1c045150709439ee3cb7a4fd3bce8312/aim-ui-4.0.0.dev2.tar.gz
+[2023-04-16 22:05:27] INFO root fetch - processPackages [drup]: Downloading https://files.pythonhosted.org/packages/8d/03/e11ea3ad7ab3e3b50a688fe1b39b077bc71e0b679783ce66cd8a02f3f485/drup-1.0.0.tar.gz
+[2023-04-16 22:05:27] INFO root fetch - processPackages [MinecraftSkyblockAPI]: Downloading https://files.pythonhosted.org/packages/7c/e2/d01ffa56002dc1560bcb44770e40416c619586d9ddc001fbf9f85fd7dcca/MinecraftSkyblockAPI-0.2.2.tar.gz
+[2023-04-16 22:05:27] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 27060349>=10485760
+[2023-04-16 22:05:27] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2023-04-16 22:05:27] INFO root fetch - processPackages [jeff-api]: Downloading https://files.pythonhosted.org/packages/57/0a/8de3f251540eb079da81752378bf621abe2b04586bed3b46c8857e72ddab/jeff_api-0.2.9.tar.gz
+[2023-04-16 22:05:27] INFO root fetch - processPackages [weightwatcher]: Downloading https://files.pythonhosted.org/packages/4f/4a/7e5ad5fc623d0dbf62bf05d723072f13acc3977baeb62bb60ef15255ef6d/weightwatcher-0.7.1.5.tar.gz
+[2023-04-16 22:05:27] INFO root fetch - processPackages [meteo-qc]: Downloading https://files.pythonhosted.org/packages/18/ae/792fd163029989fd2dd9f8a226b3d1b94aeec56925d85a1225685938af9b/meteo_qc-0.3.2.tar.gz
+[2023-04-16 22:05:27] INFO root fetch - processPackages [forml]: Downloading https://files.pythonhosted.org/packages/ec/bc/5b195fa85ea3bcac5496bb2398a86999913549c4f045e4a7be5d5a7e60f6/forml-0.91-py3-none-any.whl
+[2023-04-16 22:05:27] INFO root fetch - processPackages [MinecraftSkyblockAPI]: Downloading https://files.pythonhosted.org/packages/15/31/16d77d44cf255d39ef57b385d408c976a093e02df2074a6e48f32c4a1ba6/MinecraftSkyblockAPI-0.2.3.tar.gz
+[2023-04-16 22:05:27] INFO root fetch - processPackages [folio-migration-tools]: executing diffoscope
+[2023-04-16 22:05:27] INFO root fetch - processPackages [folio-migration-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/folio_migration_tools-1.7.9rc1.tar.gz tmp/folio_migration_tools-1.7.9rc2.tar.gz --markdown 20230416/f/folio-migration-tools/1.7.9rc1-1.7.9rc2/diff.md --exclude *.pyd
+[2023-04-16 22:05:27] INFO root fetch - processPackages [weightwatcher]: executing diffoscope
+[2023-04-16 22:05:27] INFO root fetch - processPackages [weightwatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weightwatcher-0.7.1.4-py3.9.egg tmp/weightwatcher-0.7.1.5.tar.gz --markdown 20230416/w/weightwatcher/0.7.1.4-0.7.1.5/diff.md --exclude *.pyd
+[2023-04-16 22:05:27] INFO root fetch - processPackages [jeff-api]: Downloading https://files.pythonhosted.org/packages/4a/83/0698bcd014635c9ecc60e752a1f95539a1ec0df9c78a0602ca0beee5980a/jeff_api-1.0.0.tar.gz
+[2023-04-16 22:05:27] INFO root fetch - processPackages [drup]: Downloading https://files.pythonhosted.org/packages/30/e5/51f3020f8c475fcb7ebd80e60418d40128e8c7ebb8cde83b6406d7aa1440/drup-1.0.1.tar.gz
+[2023-04-16 22:05:27] INFO root fetch - processPackages [MinecraftSkyblockAPI]: executing diffoscope
+[2023-04-16 22:05:27] INFO root fetch - processPackages [MinecraftSkyblockAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MinecraftSkyblockAPI-0.2.2.tar.gz tmp/MinecraftSkyblockAPI-0.2.3.tar.gz --markdown 20230416/M/MinecraftSkyblockAPI/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-16 22:05:27] INFO root fetch - processPackages [forml]: Downloading https://files.pythonhosted.org/packages/4c/57/f869723fb995a5e5787416838a7a37dccca62c38d677ec5bf0ad0454fcd0/forml-0.92-py3-none-any.whl
+[2023-04-16 22:05:27] INFO root fetch - processPackages [meteo-qc]: Downloading https://files.pythonhosted.org/packages/db/14/6a6ab6e3d55142d476ce6fc14ced4a46f965bc094e9bcb83e77635dfb1cc/meteo_qc-0.4.0.tar.gz
+[2023-04-16 22:05:27] INFO root fetch - processPackages [jeff-api]: executing diffoscope
+[2023-04-16 22:05:27] INFO root fetch - processPackages [jeff-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeff_api-0.2.9.tar.gz tmp/jeff_api-1.0.0.tar.gz --markdown 20230416/j/jeff-api/0.2.9-1.0.0/diff.md --exclude *.pyd
+[2023-04-16 22:05:27] INFO root fetch - processPackages [drup]: executing diffoscope
+[2023-04-16 22:05:27] INFO root fetch - processPackages [drup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drup-1.0.0.tar.gz tmp/drup-1.0.1.tar.gz --markdown 20230416/d/drup/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 22:05:27] INFO root fetch - processPackages [forml]: executing diffoscope
+[2023-04-16 22:05:27] INFO root fetch - processPackages [forml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forml-0.91-py3-none-any.whl.zip tmp/forml-0.92-py3-none-any.whl.zip --markdown 20230416/f/forml/0.91-0.92/diff.md --exclude *.pyd
+[2023-04-16 22:05:27] INFO root fetch - processPackages [meteo-qc]: executing diffoscope
+[2023-04-16 22:05:27] INFO root fetch - processPackages [meteo-qc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meteo_qc-0.3.2.tar.gz tmp/meteo_qc-0.4.0.tar.gz --markdown 20230416/m/meteo-qc/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-04-16 22:05:28] INFO root fetch - main [MainThread]: End processing [MinecraftSkyblockAPI]: success
+[2023-04-16 22:05:28] INFO root fetch - main [MainThread]: End processing [weightwatcher]: success
+[2023-04-16 22:05:28] INFO root fetch - main [MainThread]: End processing [jeff-api]: success
+[2023-04-16 22:05:29] INFO root fetch - main [MainThread]: End processing [drup]: success
+[2023-04-16 22:05:29] INFO root fetch - main [MainThread]: End processing [meteo-qc]: success
+[2023-04-16 22:05:29] INFO root fetch - main [MainThread]: End processing [forml]: success
+[2023-04-16 22:05:30] INFO root fetch - main [MainThread]: End processing [folio-migration-tools]: success
+[2023-04-16 22:05:30] INFO root fetch - main [MainThread]: Store serial: [17729862]
