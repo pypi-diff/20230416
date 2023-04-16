@@ -3800,3 +3800,35 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 08:20:51] INFO root fetch - main [MainThread]: End processing [stim]: success
 [2023-04-16 08:20:57] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2023-04-16 08:20:57] INFO root fetch - main [MainThread]: Store serial: [17724184]
+[2023-04-16 08:26:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724184]
+[2023-04-16 08:26:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 08:26:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robotpy-photonvision
+[2023-04-16 08:26:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fast-depends
+[2023-04-16 08:26:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: digital-unit
+[2023-04-16 08:26:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sprocket-carball
+[2023-04-16 08:26:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sprocket-carball
+[2023-04-16 08:26:07] INFO root fetch - processPackages [sprocket-carball]: New version: [0.8] Old Version: [0.7.5]
+[2023-04-16 08:26:07] WARNING root fetch - processPackages [fast-depends]: Skipping, unable to determine old version
+[2023-04-16 08:26:07] INFO root fetch - main [MainThread]: End processing [fast-depends] error
+[2023-04-16 08:26:07] INFO root fetch - processPackages [sprocket-carball]: New version: [0.8] Old Version: [0.7.5]
+[2023-04-16 08:26:07] INFO root fetch - processPackages [digital-unit]: New version: [1.2] Old Version: [1.1]
+[2023-04-16 08:26:07] INFO root fetch - processPackages [robotpy-photonvision]: New version: [2023.4.2] Old Version: [2023.4.1]
+[2023-04-16 08:26:08] INFO root fetch - processPackages [sprocket-carball]: Downloading https://files.pythonhosted.org/packages/e4/e2/a8431fe6718237eb02b5efb9923e6306191a992954768355583799e4505d/sprocket_carball-0.7.5.tar.gz
+[2023-04-16 08:26:08] INFO root fetch - processPackages [sprocket-carball]: Downloading https://files.pythonhosted.org/packages/e4/e2/a8431fe6718237eb02b5efb9923e6306191a992954768355583799e4505d/sprocket_carball-0.7.5.tar.gz
+[2023-04-16 08:26:08] INFO root fetch - processPackages [digital-unit]: Downloading https://files.pythonhosted.org/packages/7e/3b/730b7cc04f0019c83b7b429062d9cf38ec5cda17b42c3104e5ac5f28013c/digital_unit-1.2.tar.gz
+[2023-04-16 08:26:08] INFO root fetch - processPackages [robotpy-photonvision]: Downloading https://files.pythonhosted.org/packages/45/9e/5035c8d0838095b739583a78e824343d151b83b73034cefcbd7aca3f3d06/robotpy-photonvision-2023.4.2.tar.gz
+[2023-04-16 08:26:08] INFO root fetch - processPackages [digital-unit]: executing diffoscope
+[2023-04-16 08:26:08] INFO root fetch - processPackages [digital-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digital_unit-1.1.tar.gz tmp/digital_unit-1.2.tar.gz --markdown 20230416/d/digital-unit/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-16 08:26:08] INFO root fetch - processPackages [robotpy-photonvision]: executing diffoscope
+[2023-04-16 08:26:08] INFO root fetch - processPackages [robotpy-photonvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotpy-photonvision-2023.4.1.tar.gz tmp/robotpy-photonvision-2023.4.2.tar.gz --markdown 20230416/r/robotpy-photonvision/2023.4.1-2023.4.2/diff.md --exclude *.pyd
+[2023-04-16 08:26:08] INFO root fetch - processPackages [sprocket-carball]: Downloading https://files.pythonhosted.org/packages/2a/b1/4b633806f9b155cdd6deafb070eddc64a7bbf5ba01aadf582a7802a87230/sprocket_carball-0.8.tar.gz
+[2023-04-16 08:26:08] INFO root fetch - processPackages [sprocket-carball]: Downloading https://files.pythonhosted.org/packages/2a/b1/4b633806f9b155cdd6deafb070eddc64a7bbf5ba01aadf582a7802a87230/sprocket_carball-0.8.tar.gz
+[2023-04-16 08:26:08] INFO root fetch - processPackages [sprocket-carball]: executing diffoscope
+[2023-04-16 08:26:08] INFO root fetch - processPackages [sprocket-carball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprocket_carball-0.7.5.tar.gz tmp/sprocket_carball-0.8.tar.gz --markdown 20230416/s/sprocket-carball/0.7.5-0.8/diff.md --exclude *.pyd
+[2023-04-16 08:26:08] INFO root fetch - processPackages [sprocket-carball]: executing diffoscope
+[2023-04-16 08:26:08] INFO root fetch - processPackages [sprocket-carball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprocket_carball-0.7.5.tar.gz tmp/sprocket_carball-0.8.tar.gz --markdown 20230416/s/sprocket-carball/0.7.5-0.8/diff.md --exclude *.pyd
+[2023-04-16 08:26:09] INFO root fetch - main [MainThread]: End processing [digital-unit]: success
+[2023-04-16 08:26:09] INFO root fetch - main [MainThread]: End processing [robotpy-photonvision]: success
+[2023-04-16 08:26:10] INFO root fetch - main [MainThread]: End processing [sprocket-carball]: success
+[2023-04-16 08:26:10] INFO root fetch - main [MainThread]: End processing [sprocket-carball]: success
+[2023-04-16 08:26:10] INFO root fetch - main [MainThread]: Store serial: [17724216]
