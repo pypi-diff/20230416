@@ -12628,3 +12628,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 20:31:09] INFO root fetch - main [MainThread]: End processing [python-dlt]: success
 [2023-04-16 20:31:12] INFO root fetch - main [MainThread]: End processing [FairDynamicRec]: success
 [2023-04-16 20:31:12] INFO root fetch - main [MainThread]: Store serial: [17729379]
+[2023-04-16 20:36:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729379]
+[2023-04-16 20:36:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 20:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: accurating
+[2023-04-16 20:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: panel
+[2023-04-16 20:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xia-engine
+[2023-04-16 20:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fenrirWeb
+[2023-04-16 20:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aihandler
+[2023-04-16 20:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bybitHTTPX
+[2023-04-16 20:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: accurating
+[2023-04-16 20:36:21] INFO root fetch - processPackages [accurating]: New version: [0.2] Old Version: [0.1.1]
+[2023-04-16 20:36:21] INFO root fetch - processPackages [aihandler]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-04-16 20:36:21] INFO root fetch - processPackages [fenrirWeb]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-16 20:36:21] INFO root fetch - processPackages [accurating]: New version: [0.2] Old Version: [0.1.1]
+[2023-04-16 20:36:21] INFO root fetch - processPackages [xia-engine]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-16 20:36:21] INFO root fetch - processPackages [panel]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-04-16 20:36:21] WARNING root fetch - processPackages [bybitHTTPX]: Skipping, unable to determine old version
+[2023-04-16 20:36:21] INFO root fetch - main [MainThread]: End processing [bybitHTTPX] error
+[2023-04-16 20:36:21] INFO root fetch - processPackages [accurating]: Downloading https://files.pythonhosted.org/packages/b6/db/a3bb9737adc1bcd51038b651e0c869e8e8ce490854ff57b7e84e6a9e39ef/accurating-0.1.1.tar.gz
+[2023-04-16 20:36:21] INFO root fetch - processPackages [aihandler]: Downloading https://files.pythonhosted.org/packages/65/26/000ab688f915cfad3846010e80e2844ad96c0d689ad1685c3666ca1f45bb/aihandler-1.9.3.tar.gz
+[2023-04-16 20:36:21] INFO root fetch - processPackages [accurating]: Downloading https://files.pythonhosted.org/packages/b6/db/a3bb9737adc1bcd51038b651e0c869e8e8ce490854ff57b7e84e6a9e39ef/accurating-0.1.1.tar.gz
+[2023-04-16 20:36:21] INFO root fetch - processPackages [panel]: Downloading https://files.pythonhosted.org/packages/82/cd/5c3589614bd7d434187d91ec69d6d3a7efd54282dd676f0da56ee1776ce2/panel-1.0.0b8.tar.gz
+[2023-04-16 20:36:21] WARNING root fetch - processPackages [panel]: Skipping package: exceeds size limit 25160245>=10485760
+[2023-04-16 20:36:21] INFO root fetch - main [MainThread]: End processing [panel] error
+[2023-04-16 20:36:21] INFO root fetch - processPackages [aihandler]: executing diffoscope
+[2023-04-16 20:36:21] INFO root fetch - processPackages [aihandler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aihandler-1.9.2.tar.gz tmp/aihandler-1.9.3.tar.gz --markdown 20230416/a/aihandler/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-04-16 20:36:21] INFO root fetch - processPackages [fenrirWeb]: Downloading https://files.pythonhosted.org/packages/b4/66/a97d4fbf237918a80324a6e9ad2957a22e16b442fc926a13ffa50936e574/fenrirWeb-0.5.0.tar.gz
+[2023-04-16 20:36:21] INFO root fetch - processPackages [accurating]: Downloading https://files.pythonhosted.org/packages/bf/82/8457734fb1a37e8062a3797ee4bcb38d97a0621926009212968438d9ea10/accurating-0.2.tar.gz
+[2023-04-16 20:36:21] INFO root fetch - processPackages [accurating]: Downloading https://files.pythonhosted.org/packages/bf/82/8457734fb1a37e8062a3797ee4bcb38d97a0621926009212968438d9ea10/accurating-0.2.tar.gz
+[2023-04-16 20:36:21] INFO root fetch - processPackages [xia-engine]: executing diffoscope
+[2023-04-16 20:36:21] INFO root fetch - processPackages [xia-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine-0.6.8-cp39-none-win_amd64.whl.zip tmp/xia_engine-0.6.9-cp39-none-win_amd64.whl.zip --markdown 20230416/x/xia-engine/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-16 20:36:21] INFO root fetch - processPackages [accurating]: executing diffoscope
+[2023-04-16 20:36:21] INFO root fetch - processPackages [accurating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accurating-0.1.1.tar.gz tmp/accurating-0.2.tar.gz --markdown 20230416/a/accurating/0.1.1-0.2/diff.md --exclude *.pyd
+[2023-04-16 20:36:21] INFO root fetch - processPackages [accurating]: executing diffoscope
+[2023-04-16 20:36:21] INFO root fetch - processPackages [accurating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accurating-0.1.1.tar.gz tmp/accurating-0.2.tar.gz --markdown 20230416/a/accurating/0.1.1-0.2/diff.md --exclude *.pyd
+[2023-04-16 20:36:21] INFO root fetch - processPackages [fenrirWeb]: executing diffoscope
+[2023-04-16 20:36:21] INFO root fetch - processPackages [fenrirWeb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fenrirWeb-0.4.0.tar.gz tmp/fenrirWeb-0.5.0.tar.gz --markdown 20230416/f/fenrirWeb/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-16 20:36:22] INFO root fetch - main [MainThread]: End processing [accurating]: success
+[2023-04-16 20:36:22] INFO root fetch - main [MainThread]: End processing [xia-engine]: success
+[2023-04-16 20:36:23] INFO root fetch - main [MainThread]: End processing [aihandler]: success
+[2023-04-16 20:36:23] INFO root fetch - main [MainThread]: End processing [fenrirWeb]: success
+[2023-04-16 20:36:31] INFO root fetch - main [MainThread]: End processing [accurating]: success
+[2023-04-16 20:36:31] INFO root fetch - main [MainThread]: Store serial: [17729402]
