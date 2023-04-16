@@ -1787,3 +1787,13 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 03:06:31] INFO root fetch - main [MainThread]: End processing [kicad-package-manager]: success
 [2023-04-16 03:06:31] INFO root fetch - main [MainThread]: End processing [noiftimer]: success
 [2023-04-16 03:06:31] INFO root fetch - main [MainThread]: Store serial: [17723036]
+[2023-04-16 03:11:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723036]
+[2023-04-16 03:11:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-16 03:11:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-sops-secrets
+[2023-04-16 03:11:40] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-16 03:11:40] INFO root fetch - processPackages [cdk-sops-secrets]: Downloading https://files.pythonhosted.org/packages/6e/fc/1d1f06d3fdc85e566e25a04f54c3dcce3ee181d6658c2aa41de5936e2a7c/cdk-sops-secrets-1.2.8.tar.gz
+[2023-04-16 03:11:42] INFO root fetch - processPackages [cdk-sops-secrets]: Downloading https://files.pythonhosted.org/packages/01/0b/1803112e00d59ac489cc1729df4cdb28f6e126e536d4bdf2e3cf8badc7af/cdk-sops-secrets-1.2.9.tar.gz
+[2023-04-16 03:11:44] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-04-16 03:11:44] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.8.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230416/c/cdk-sops-secrets/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-16 03:11:46] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-04-16 03:11:46] INFO root fetch - main [MainThread]: Store serial: [17723039]
