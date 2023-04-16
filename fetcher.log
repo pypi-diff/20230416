@@ -3313,3 +3313,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 07:23:14] INFO root fetch - main [MainThread]: End processing [robotoff]: success
 [2023-04-16 07:23:14] INFO root fetch - main [MainThread]: End processing [unvtray]: success
 [2023-04-16 07:23:14] INFO root fetch - main [MainThread]: Store serial: [17723910]
+[2023-04-16 07:28:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723910]
+[2023-04-16 07:28:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-16 07:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chatgpt-proxy
+[2023-04-16 07:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crazy-thursday
+[2023-04-16 07:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: statgis
+[2023-04-16 07:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: photoshow
+[2023-04-16 07:28:23] INFO root fetch - processPackages [photoshow]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-16 07:28:23] INFO root fetch - processPackages [chatgpt-proxy]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 07:28:23] INFO root fetch - processPackages [statgis]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-16 07:28:23] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-16 07:28:23] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-16 07:28:23] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230416/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-16 07:28:23] INFO root fetch - processPackages [photoshow]: Downloading https://files.pythonhosted.org/packages/11/30/47966304bb77b183a820363eab6ecd0b572dba407bdf8de0bcdad17aec95/photoshow-1.0.7.tar.gz
+[2023-04-16 07:28:23] INFO root fetch - processPackages [statgis]: Downloading https://files.pythonhosted.org/packages/85/e5/f19bb4f992321266badd50aa4fd4cbaed94aa72337e9e4b923d5ac549362/statgis-1.0.7.tar.gz
+[2023-04-16 07:28:23] INFO root fetch - processPackages [chatgpt-proxy]: Downloading https://files.pythonhosted.org/packages/29/26/81bdb009c4973479faf0cbe8ec11f230eb75fc4809b25076e0429cdd38a0/chatgpt-proxy-0.2.0.tar.gz
+[2023-04-16 07:28:23] INFO root fetch - processPackages [statgis]: executing diffoscope
+[2023-04-16 07:28:23] INFO root fetch - processPackages [statgis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statgis-1.0.6.tar.gz tmp/statgis-1.0.7.tar.gz --markdown 20230416/s/statgis/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-16 07:28:23] INFO root fetch - processPackages [photoshow]: Downloading https://files.pythonhosted.org/packages/8d/27/d9bd0cb275f565c6c08f58993cde61d6a7774aa5ae98d950ec137747f2aa/photoshow-1.0.8.tar.gz
+[2023-04-16 07:28:24] INFO root fetch - processPackages [chatgpt-proxy]: executing diffoscope
+[2023-04-16 07:28:24] INFO root fetch - processPackages [chatgpt-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt-proxy-0.1.0.tar.gz tmp/chatgpt-proxy-0.2.0.tar.gz --markdown 20230416/c/chatgpt-proxy/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 07:28:24] INFO root fetch - processPackages [photoshow]: executing diffoscope
+[2023-04-16 07:28:24] INFO root fetch - processPackages [photoshow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/photoshow-1.0.7.tar.gz tmp/photoshow-1.0.8.tar.gz --markdown 20230416/p/photoshow/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-16 07:28:24] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-16 07:28:24] INFO root fetch - main [MainThread]: End processing [statgis]: success
+[2023-04-16 07:28:24] INFO root fetch - main [MainThread]: End processing [chatgpt-proxy]: success
+[2023-04-16 07:28:25] INFO root fetch - main [MainThread]: End processing [photoshow]: success
+[2023-04-16 07:28:25] INFO root fetch - main [MainThread]: Store serial: [17723922]
