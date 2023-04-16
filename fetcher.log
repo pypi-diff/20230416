@@ -4572,3 +4572,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 09:43:48] INFO root fetch - main [MainThread]: End processing [tl-typewriter]: success
 [2023-04-16 09:43:57] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2023-04-16 09:43:57] INFO root fetch - main [MainThread]: Store serial: [17724619]
+[2023-04-16 09:49:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724619]
+[2023-04-16 09:49:06] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 09:49:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skdoc
+[2023-04-16 09:49:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vollseg
+[2023-04-16 09:49:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-ocpi
+[2023-04-16 09:49:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bridgecrew
+[2023-04-16 09:49:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: report-env
+[2023-04-16 09:49:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tf-nightly-cpu
+[2023-04-16 09:49:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hyperdb-python
+[2023-04-16 09:49:06] INFO root fetch - processPackages [skdoc]: New version: [0.0.1.2] Old Version: [0.0.1.1]
+[2023-04-16 09:49:06] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 09:49:06] WARNING root fetch - processPackages [report-env]: Skipping, unable to determine old version
+[2023-04-16 09:49:06] INFO root fetch - main [MainThread]: End processing [report-env] error
+[2023-04-16 09:49:06] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 09:49:06] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-16 09:49:06] WARNING root fetch - processPackages [hyperdb-python]: Skipping, unable to determine old version
+[2023-04-16 09:49:06] INFO root fetch - main [MainThread]: End processing [hyperdb-python] error
+[2023-04-16 09:49:06] INFO root fetch - processPackages [py-ocpi]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-16 09:49:06] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.13.0.dev20230416] Old Version: [2.13.0.dev20230415]
+[2023-04-16 09:49:06] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 09:49:06] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 09:49:06] INFO root fetch - processPackages [skdoc]: Downloading https://files.pythonhosted.org/packages/5a/01/c0db1cc03f05603b47e3999f18e0723e1b2c78b58a44f346bb03caafa35a/skdoc-0.0.1.1-py3-none-any.whl
+[2023-04-16 09:49:06] INFO root fetch - processPackages [py-ocpi]: Downloading https://files.pythonhosted.org/packages/5f/fe/f966b48cf1bda3cb8d773a4bb48422c0e4db434ea2b07bdb3c2a84596957/py_ocpi-0.3.0.tar.gz
+[2023-04-16 09:49:06] INFO root fetch - processPackages [skdoc]: Downloading https://files.pythonhosted.org/packages/a9/e9/0cb569c78c2ce60d9253df594e21ba478963cf0d55077af80d8171e39a39/skdoc-0.0.1.2-py3-none-any.whl
+[2023-04-16 09:49:06] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-16 09:49:06] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230416/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-16 09:49:06] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/52/59/abf960e537430546b6ce09b8546923d3badbe60347230bba6bd513dafc87/tf_nightly_cpu-2.13.0.dev20230416-cp39-cp39-win_amd64.whl
+[2023-04-16 09:49:06] INFO root fetch - processPackages [skdoc]: executing diffoscope
+[2023-04-16 09:49:06] INFO root fetch - processPackages [skdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skdoc-0.0.1.1-py3-none-any.whl.zip tmp/skdoc-0.0.1.2-py3-none-any.whl.zip --markdown 20230416/s/skdoc/0.0.1.1-0.0.1.2/diff.md --exclude *.pyd
+[2023-04-16 09:49:06] INFO root fetch - processPackages [py-ocpi]: Downloading https://files.pythonhosted.org/packages/ed/4b/ef5681a06c1ca4c67bf992d33f1b51abf8653d9ac7c3137629a308f57275/py_ocpi-0.3.1.tar.gz
+[2023-04-16 09:49:07] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-04-16 09:49:07] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.13.0.dev20230415-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.13.0.dev20230416-cp39-cp39-win_amd64.whl.zip --markdown 20230416/t/tf-nightly-cpu/2.13.0.dev20230415-2.13.0.dev20230416/diff.md --exclude *.pyd
+[2023-04-16 09:49:07] INFO root fetch - processPackages [py-ocpi]: executing diffoscope
+[2023-04-16 09:49:07] INFO root fetch - processPackages [py-ocpi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_ocpi-0.3.0.tar.gz tmp/py_ocpi-0.3.1.tar.gz --markdown 20230416/p/py-ocpi/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-16 09:49:07] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-16 09:49:07] INFO root fetch - main [MainThread]: End processing [skdoc]: success
+[2023-04-16 09:49:07] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2023-04-16 09:49:08] INFO root fetch - main [MainThread]: End processing [py-ocpi]: success
+[2023-04-16 09:49:08] INFO root fetch - main [MainThread]: Store serial: [17724644]
