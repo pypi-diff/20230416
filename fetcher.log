@@ -13841,3 +13841,64 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 22:52:26] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
 [2023-04-16 22:52:28] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2023-04-16 22:52:28] INFO root fetch - main [MainThread]: Store serial: [17730156]
+[2023-04-16 22:57:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17730156]
+[2023-04-16 22:57:37] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 22:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astroid
+[2023-04-16 22:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaxrie
+[2023-04-16 22:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moto
+[2023-04-16 22:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-sale-coupon-reward-fixed-price
+[2023-04-16 22:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nlp-uncertainty-zoo
+[2023-04-16 22:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: currensees
+[2023-04-16 22:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: quicksampleYentim0519
+[2023-04-16 22:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: oauthAPImojang
+[2023-04-16 22:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: caddo-tool
+[2023-04-16 22:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dbxconfig
+[2023-04-16 22:57:37] INFO root fetch - processPackages [jaxrie]: New version: [9] Old Version: [8]
+[2023-04-16 22:57:37] INFO root fetch - processPackages [odoo14-addon-sale-coupon-reward-fixed-price]: New version: [14.0.1.0.1.dev5] Old Version: [14.0.1.0.1.dev4]
+[2023-04-16 22:57:37] INFO root fetch - processPackages [oauthAPImojang]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-16 22:57:37] INFO root fetch - processPackages [nlp-uncertainty-zoo]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 22:57:37] WARNING root fetch - processPackages [quicksampleYentim0519]: Skipping, unable to determine old version
+[2023-04-16 22:57:37] INFO root fetch - processPackages [currensees]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-16 22:57:37] INFO root fetch - main [MainThread]: End processing [quicksampleYentim0519] error
+[2023-04-16 22:57:37] INFO root fetch - processPackages [caddo-tool]: New version: [0.9.1] Old Version: [0.8.1]
+[2023-04-16 22:57:37] INFO root fetch - processPackages [astroid]: New version: [2.9.3] Old Version: [2.9.2]
+[2023-04-16 22:57:37] INFO root fetch - processPackages [moto]: New version: [4.1.8.dev9] Old Version: [4.1.8.dev8]
+[2023-04-16 22:57:37] WARNING root fetch - processPackages [dbxconfig]: Skipping, unable to determine old version
+[2023-04-16 22:57:37] INFO root fetch - main [MainThread]: End processing [dbxconfig] error
+[2023-04-16 22:57:37] INFO root fetch - processPackages [odoo14-addon-sale-coupon-reward-fixed-price]: Downloading https://files.pythonhosted.org/packages/b9/d4/99326c08276def1662d79ab2c75af067c8719ee5cf77dcc378265206ee19/odoo14_addon_sale_coupon_reward_fixed_price-14.0.1.0.1.dev4-py3-none-any.whl
+[2023-04-16 22:57:37] INFO root fetch - processPackages [nlp-uncertainty-zoo]: Downloading https://files.pythonhosted.org/packages/1a/5d/955e57ca04ac60078fe767fe0a1a3e873919a32be12f4cf9fa98b0a04b37/nlp-uncertainty-zoo-1.0.1.tar.gz
+[2023-04-16 22:57:37] INFO root fetch - processPackages [jaxrie]: executing diffoscope
+[2023-04-16 22:57:37] INFO root fetch - processPackages [jaxrie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxrie-8.tar.gz tmp/jaxrie-9.tar.gz --markdown 20230416/j/jaxrie/8-9/diff.md --exclude *.pyd
+[2023-04-16 22:57:37] INFO root fetch - processPackages [currensees]: Downloading https://files.pythonhosted.org/packages/ff/93/00596492e3fc9a847ad5766e8b0d111f2c02a0d6f55bee0ca6158aed83bc/currensees-1.0.4.tar.gz
+[2023-04-16 22:57:37] INFO root fetch - processPackages [caddo-tool]: Downloading https://files.pythonhosted.org/packages/a4/ea/6d87ec289f9de72a334a801282049393b431466b3ed7fdf7104d4f1ed91a/caddo-tool-0.8.1.tar.gz
+[2023-04-16 22:57:37] INFO root fetch - processPackages [oauthAPImojang]: Downloading https://files.pythonhosted.org/packages/bb/2d/3b8805edd5847b0deeee951debd56a68646918c22aa69243b7aad9e47cd6/oauthAPImojang-0.2.7.tar.gz
+[2023-04-16 22:57:37] INFO root fetch - processPackages [astroid]: Downloading https://files.pythonhosted.org/packages/f4/2b/06f31f8e57cef68b2b0fe6c12c8d6972de12fbe843bb0e15f9d4d3a1c492/astroid-2.9.2.tar.gz
+[2023-04-16 22:57:37] INFO root fetch - processPackages [oauthAPImojang]: Downloading https://files.pythonhosted.org/packages/4a/94/41637ed064640ee63d467997993114d721c10e89ec372b741bdb58b02a6c/oauthAPImojang-0.2.8.tar.gz
+[2023-04-16 22:57:37] INFO root fetch - processPackages [currensees]: Downloading https://files.pythonhosted.org/packages/73/32/5e8111813fbb10fdcd0a664f1c0b358a361bf071598a3dbd859a4b8b0837/currensees-1.0.5.tar.gz
+[2023-04-16 22:57:37] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-16 22:57:37] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.8.dev8.tar.gz tmp/moto-4.1.8.dev9.tar.gz --markdown 20230416/m/moto/4.1.8.dev8-4.1.8.dev9/diff.md --exclude *.pyd
+[2023-04-16 22:57:37] INFO root fetch - processPackages [caddo-tool]: Downloading https://files.pythonhosted.org/packages/b5/42/be9fc736d6308fe5cca7cb0e940b302018b8cbd070e132ca014ca4f6a91f/caddo-tool-0.9.1.tar.gz
+[2023-04-16 22:57:37] INFO root fetch - processPackages [nlp-uncertainty-zoo]: Downloading https://files.pythonhosted.org/packages/df/35/9d39ba0d42e4557cf5db8d8bfa0c23b487f7397499841553fa4fcdf9dae6/nlp-uncertainty-zoo-1.0.2.tar.gz
+[2023-04-16 22:57:37] INFO root fetch - processPackages [oauthAPImojang]: executing diffoscope
+[2023-04-16 22:57:37] INFO root fetch - processPackages [oauthAPImojang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oauthAPImojang-0.2.7.tar.gz tmp/oauthAPImojang-0.2.8.tar.gz --markdown 20230416/o/oauthAPImojang/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-16 22:57:37] INFO root fetch - processPackages [odoo14-addon-sale-coupon-reward-fixed-price]: Downloading https://files.pythonhosted.org/packages/27/35/748d4d3e431e1062680bbb72fd4d3a071c186f42133f4fb5476f6de64b04/odoo14_addon_sale_coupon_reward_fixed_price-14.0.1.0.1.dev5-py3-none-any.whl
+[2023-04-16 22:57:37] INFO root fetch - processPackages [currensees]: executing diffoscope
+[2023-04-16 22:57:37] INFO root fetch - processPackages [currensees]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/currensees-1.0.4.tar.gz tmp/currensees-1.0.5.tar.gz --markdown 20230416/c/currensees/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-16 22:57:37] INFO root fetch - processPackages [astroid]: Downloading https://files.pythonhosted.org/packages/2d/be/33923f5dee9f7119abbaa688833b0c71c2ef4b66af3b06ffc64fc8c341ae/astroid-2.9.3.tar.gz
+[2023-04-16 22:57:37] INFO root fetch - processPackages [caddo-tool]: executing diffoscope
+[2023-04-16 22:57:37] INFO root fetch - processPackages [caddo-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caddo-tool-0.8.1.tar.gz tmp/caddo-tool-0.9.1.tar.gz --markdown 20230416/c/caddo-tool/0.8.1-0.9.1/diff.md --exclude *.pyd
+[2023-04-16 22:57:37] INFO root fetch - processPackages [nlp-uncertainty-zoo]: executing diffoscope
+[2023-04-16 22:57:37] INFO root fetch - processPackages [nlp-uncertainty-zoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlp-uncertainty-zoo-1.0.1.tar.gz tmp/nlp-uncertainty-zoo-1.0.2.tar.gz --markdown 20230416/n/nlp-uncertainty-zoo/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 22:57:37] INFO root fetch - processPackages [odoo14-addon-sale-coupon-reward-fixed-price]: executing diffoscope
+[2023-04-16 22:57:37] INFO root fetch - processPackages [odoo14-addon-sale-coupon-reward-fixed-price]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_sale_coupon_reward_fixed_price-14.0.1.0.1.dev4-py3-none-any.whl.zip tmp/odoo14_addon_sale_coupon_reward_fixed_price-14.0.1.0.1.dev5-py3-none-any.whl.zip --markdown 20230416/o/odoo14-addon-sale-coupon-reward-fixed-price/14.0.1.0.1.dev4-14.0.1.0.1.dev5/diff.md --exclude *.pyd
+[2023-04-16 22:57:38] INFO root fetch - processPackages [astroid]: executing diffoscope
+[2023-04-16 22:57:38] INFO root fetch - processPackages [astroid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astroid-2.9.2.tar.gz tmp/astroid-2.9.3.tar.gz --markdown 20230416/a/astroid/2.9.2-2.9.3/diff.md --exclude *.pyd
+[2023-04-16 22:57:38] INFO root fetch - main [MainThread]: End processing [jaxrie]: success
+[2023-04-16 22:57:38] INFO root fetch - main [MainThread]: End processing [oauthAPImojang]: success
+[2023-04-16 22:57:39] INFO root fetch - main [MainThread]: End processing [caddo-tool]: success
+[2023-04-16 22:57:39] INFO root fetch - main [MainThread]: End processing [currensees]: success
+[2023-04-16 22:57:39] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-coupon-reward-fixed-price]: success
+[2023-04-16 22:57:39] INFO root fetch - main [MainThread]: End processing [nlp-uncertainty-zoo]: success
+[2023-04-16 22:57:39] INFO root fetch - main [MainThread]: End processing [astroid]: success
+[2023-04-16 22:58:12] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-04-16 22:58:12] INFO root fetch - main [MainThread]: Store serial: [17730190]
