@@ -7674,3 +7674,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 13:46:20] INFO root fetch - main [MainThread]: End processing [textadventure]: success
 [2023-04-16 13:46:57] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-04-16 13:46:57] INFO root fetch - main [MainThread]: Store serial: [17726466]
+[2023-04-16 13:52:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726466]
+[2023-04-16 13:52:05] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 13:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-shiftmanager
+[2023-04-16 13:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyAltiumRunTop
+[2023-04-16 13:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cullinan
+[2023-04-16 13:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: feedcrawler
+[2023-04-16 13:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fhempy
+[2023-04-16 13:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wxr2md
+[2023-04-16 13:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: python-property-based-testing
+[2023-04-16 13:52:05] INFO root fetch - processPackages [py-shiftmanager]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-16 13:52:05] INFO root fetch - processPackages [cullinan]: New version: [0.50a1] Old Version: [0.50]
+[2023-04-16 13:52:05] INFO root fetch - processPackages [feedcrawler]: New version: [18.0.3] Old Version: [18.0.2]
+[2023-04-16 13:52:05] INFO root fetch - processPackages [PyAltiumRunTop]: New version: [0.2.4.4] Old Version: [0.2.4.3]
+[2023-04-16 13:52:05] INFO root fetch - processPackages [wxr2md]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 13:52:05] INFO root fetch - processPackages [fhempy]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-16 13:52:05] ERROR root fetch - processPackages [python-property-based-testing]: Unable to get metadata: No such project 'python-property-based-testing'
+[2023-04-16 13:52:05] INFO root fetch - main [MainThread]: End processing [python-property-based-testing] error
+[2023-04-16 13:52:05] INFO root fetch - processPackages [PyAltiumRunTop]: executing diffoscope
+[2023-04-16 13:52:05] INFO root fetch - processPackages [PyAltiumRunTop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAltiumRunTop-0.2.4.3.tar.gz tmp/PyAltiumRunTop-0.2.4.4.tar.gz --markdown 20230416/P/PyAltiumRunTop/0.2.4.3-0.2.4.4/diff.md --exclude *.pyd
+[2023-04-16 13:52:05] INFO root fetch - processPackages [feedcrawler]: Downloading https://files.pythonhosted.org/packages/0f/09/5eb9a77336753134089aa32a8ccf15553e39f81ae2f11d4e6c465ae1b950/feedcrawler-18.0.2.tar.gz
+[2023-04-16 13:52:05] INFO root fetch - processPackages [cullinan]: Downloading https://files.pythonhosted.org/packages/c1/9f/9f74f92d99d5e6c13da28c30e778de3f37aa850a557a7f7893658c06d125/cullinan-0.50.tar.gz
+[2023-04-16 13:52:06] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/d2/9f/6c8a1b574ab9ebcb16717b47728d87e796444aafde42304c0ca6f1aa435c/fhempy-0.1.98.tar.gz
+[2023-04-16 13:52:06] INFO root fetch - processPackages [wxr2md]: Downloading https://files.pythonhosted.org/packages/6d/3e/e395dfbfab163dd0c2bb6f71063d0b8db9a2138606879dcd483b6c1787eb/wxr2md-0.1.0.tar.gz
+[2023-04-16 13:52:06] INFO root fetch - processPackages [py-shiftmanager]: Downloading https://files.pythonhosted.org/packages/b6/98/012882ba9feb0f3896672ee6c15544d388e878e78fde43dd0cc4400cb429/py_shiftmanager-0.1.6.tar.gz
+[2023-04-16 13:52:06] INFO root fetch - processPackages [feedcrawler]: Downloading https://files.pythonhosted.org/packages/1d/4e/ae3e47374b42d7061d5ca9e8283f53d2ef73b6d5c1f24a6f0d51f6a2038c/feedcrawler-18.0.3.tar.gz
+[2023-04-16 13:52:06] INFO root fetch - processPackages [feedcrawler]: executing diffoscope
+[2023-04-16 13:52:06] INFO root fetch - processPackages [feedcrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feedcrawler-18.0.2.tar.gz tmp/feedcrawler-18.0.3.tar.gz --markdown 20230416/f/feedcrawler/18.0.2-18.0.3/diff.md --exclude *.pyd
+[2023-04-16 13:52:06] INFO root fetch - processPackages [cullinan]: Downloading https://files.pythonhosted.org/packages/aa/f0/3dcbf4926b247ad2d3aae81a75764e9fe6a01d302197d195413faea15b18/cullinan-0.50a1-py3-none-any.whl
+[2023-04-16 13:52:06] INFO root fetch - processPackages [py-shiftmanager]: executing diffoscope
+[2023-04-16 13:52:06] INFO root fetch - processPackages [py-shiftmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_shiftmanager-0.1.5.tar.gz tmp/py_shiftmanager-0.1.6.tar.gz --markdown 20230416/p/py-shiftmanager/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-16 13:52:06] INFO root fetch - processPackages [cullinan]: executing diffoscope
+[2023-04-16 13:52:06] INFO root fetch - processPackages [cullinan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cullinan-0.50.tar.gz tmp/cullinan-0.50a1-py3-none-any.whl.zip --markdown 20230416/c/cullinan/0.50-0.50a1/diff.md --exclude *.pyd
+[2023-04-16 13:52:06] INFO root fetch - processPackages [wxr2md]: Downloading https://files.pythonhosted.org/packages/24/79/1817bfb0697083e53c59bd5f6a7533b7a528d22c2f55370cc25b01bc1af1/wxr2md-0.2.0.tar.gz
+[2023-04-16 13:52:06] INFO root fetch - processPackages [wxr2md]: executing diffoscope
+[2023-04-16 13:52:06] INFO root fetch - processPackages [wxr2md]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wxr2md-0.1.0.tar.gz tmp/wxr2md-0.2.0.tar.gz --markdown 20230416/w/wxr2md/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 13:52:06] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/10/f0/a98a9f9c84c66f700cf969aeda5c6d9fa1047cde3a99fc922c76be9e951e/fhempy-0.1.99.tar.gz
+[2023-04-16 13:52:07] INFO root fetch - main [MainThread]: End processing [PyAltiumRunTop]: success
+[2023-04-16 13:52:07] INFO root fetch - main [MainThread]: End processing [cullinan]: success
+[2023-04-16 13:52:07] INFO root fetch - main [MainThread]: End processing [py-shiftmanager]: success
+[2023-04-16 13:52:07] INFO root fetch - main [MainThread]: End processing [wxr2md]: success
+[2023-04-16 13:52:07] INFO root fetch - processPackages [fhempy]: executing diffoscope
+[2023-04-16 13:52:07] INFO root fetch - processPackages [fhempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhempy-0.1.98.tar.gz tmp/fhempy-0.1.99.tar.gz --markdown 20230416/f/fhempy/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-16 13:52:09] INFO root fetch - main [MainThread]: End processing [feedcrawler]: success
+[2023-04-16 13:52:10] INFO root fetch - main [MainThread]: End processing [fhempy]: success
+[2023-04-16 13:52:10] INFO root fetch - main [MainThread]: Store serial: [17726486]
