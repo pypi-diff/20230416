@@ -1984,3 +1984,76 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 03:37:42] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
 [2023-04-16 03:37:43] INFO root fetch - main [MainThread]: End processing [happy-learning]: success
 [2023-04-16 03:37:43] INFO root fetch - main [MainThread]: Store serial: [17723136]
+[2023-04-16 03:42:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723136]
+[2023-04-16 03:42:52] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-16 03:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-django
+[2023-04-16 03:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kicad-package-manager
+[2023-04-16 03:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: connpy
+[2023-04-16 03:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: proactive
+[2023-04-16 03:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: poe-api
+[2023-04-16 03:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ywh-collab
+[2023-04-16 03:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: proactive-jupyter-kernel
+[2023-04-16 03:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nbdev-apl
+[2023-04-16 03:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sweetrpg-web-core
+[2023-04-16 03:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: kicad-package-manager
+[2023-04-16 03:42:52] INFO root fetch - processPackages [connpy]: New version: [3.0.6] Old Version: [3.0.5]
+[2023-04-16 03:42:53] INFO root fetch - processPackages [kicad-package-manager]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-16 03:42:53] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 03:42:53] INFO root fetch - processPackages [poe-api]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-16 03:42:53] WARNING root fetch - processPackages [ywh-collab]: Skipping, unable to determine old version
+[2023-04-16 03:42:53] INFO root fetch - processPackages [ywh-collab]: Start processing: arkcloud
+[2023-04-16 03:42:53] INFO root fetch - main [MainThread]: End processing [ywh-collab] error
+[2023-04-16 03:42:53] INFO root fetch - processPackages [kicad-package-manager]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-16 03:42:53] INFO root fetch - processPackages [kicad-package-manager]: Downloading https://files.pythonhosted.org/packages/0c/67/1dc5db283eafc65283a2a065a31e25003bc9861fdc0ff494cbf80ed0dfae/kicad_package_manager-0.0.5.tar.gz
+[2023-04-16 03:42:53] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 03:42:53] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-04-16 03:42:53] INFO root fetch - processPackages [connpy]: Downloading https://files.pythonhosted.org/packages/9d/f4/91360cb9d9a6b77ac1af32d75c97fd2167daedabd5a30e71d90dcedec3f2/connpy-3.0.6.tar.gz
+[2023-04-16 03:42:53] INFO root fetch - processPackages [arkcloud]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 03:42:53] INFO root fetch - processPackages [kicad-package-manager]: Downloading https://files.pythonhosted.org/packages/0c/67/1dc5db283eafc65283a2a065a31e25003bc9861fdc0ff494cbf80ed0dfae/kicad_package_manager-0.0.5.tar.gz
+[2023-04-16 03:42:53] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.716] Old Version: [0.0.715]
+[2023-04-16 03:42:53] INFO root fetch - processPackages [connpy]: executing diffoscope
+[2023-04-16 03:42:53] INFO root fetch - processPackages [connpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connpy-3.0.5.tar.gz tmp/connpy-3.0.6.tar.gz --markdown 20230416/c/connpy/3.0.5-3.0.6/diff.md --exclude *.pyd
+[2023-04-16 03:42:53] INFO root fetch - processPackages [poe-api]: executing diffoscope
+[2023-04-16 03:42:53] INFO root fetch - processPackages [poe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poe_api-0.2.8-py3-none-any.whl.zip tmp/poe_api-0.2.9-py3-none-any.whl.zip --markdown 20230416/p/poe-api/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-16 03:42:53] INFO root fetch - processPackages [proactive-jupyter-kernel]: Downloading https://files.pythonhosted.org/packages/2f/bc/886004d2f6edca874f61f16aaba9985e6b38f5c62e3a9638165dad1ae89e/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip
+[2023-04-16 03:42:53] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-04-16 03:42:53] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230416/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 03:42:53] INFO root fetch - processPackages [kicad-package-manager]: Downloading https://files.pythonhosted.org/packages/e6/9f/abfa45dc1f6cec0b2696a8cfbc18974b3dd32f400c5c91bcab30787a8f2c/kicad_package_manager-0.0.6.tar.gz
+[2023-04-16 03:42:53] INFO root fetch - processPackages [kicad-package-manager]: Downloading https://files.pythonhosted.org/packages/e6/9f/abfa45dc1f6cec0b2696a8cfbc18974b3dd32f400c5c91bcab30787a8f2c/kicad_package_manager-0.0.6.tar.gz
+[2023-04-16 03:42:53] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-16 03:42:53] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230416/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 03:42:53] INFO root fetch - processPackages [kicad-package-manager]: executing diffoscope
+[2023-04-16 03:42:53] INFO root fetch - processPackages [kicad-package-manager]: executing diffoscope
+[2023-04-16 03:42:53] INFO root fetch - processPackages [kicad-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kicad_package_manager-0.0.5.tar.gz tmp/kicad_package_manager-0.0.6.tar.gz --markdown 20230416/k/kicad-package-manager/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-16 03:42:53] INFO root fetch - processPackages [kicad-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kicad_package_manager-0.0.5.tar.gz tmp/kicad_package_manager-0.0.6.tar.gz --markdown 20230416/k/kicad-package-manager/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-16 03:42:53] INFO root fetch - processPackages [arkcloud]: Downloading https://files.pythonhosted.org/packages/b3/ec/d2a2b4291c54f5291c6888530407fabdb17d975762eced4c5b9cd572941f/arkcloud-0.0.8.tar.gz
+[2023-04-16 03:42:53] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/02/85/a9439376672125e520d4f3a6718f63e0524a1e21a5cf2f7b4be9dad6912b/nbdev-apl-0.0.716.tar.gz
+[2023-04-16 03:42:53] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-16 03:42:53] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.715.tar.gz tmp/nbdev-apl-0.0.716.tar.gz --markdown 20230416/n/nbdev-apl/0.0.715-0.0.716/diff.md --exclude *.pyd
+[2023-04-16 03:42:53] INFO root fetch - processPackages [proactive-jupyter-kernel]: Downloading https://files.pythonhosted.org/packages/b1/93/020f781eacfc72831423f0159f4e4e5afdb02a21db391853b68ce7631de6/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip
+[2023-04-16 03:42:53] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-04-16 03:42:53] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230416/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-04-16 03:42:53] INFO root fetch - processPackages [proactive]: New version: [8.4.11] Old Version: [8.4.10]
+[2023-04-16 03:42:53] INFO root fetch - processPackages [proactive]: Downloading https://files.pythonhosted.org/packages/36/67/8f2441cbc911f3a57a2168b0e419b0751450a04c18791e6ba642af1085d8/proactive-8.4.10.zip
+[2023-04-16 03:42:53] WARNING root fetch - processPackages [proactive]: Skipping package: exceeds size limit 18979361>=10485760
+[2023-04-16 03:42:53] INFO root fetch - processPackages [proactive]: Start processing: karpyncho-reload-urls
+[2023-04-16 03:42:53] INFO root fetch - main [MainThread]: End processing [proactive] error
+[2023-04-16 03:42:53] INFO root fetch - processPackages [arkcloud]: Downloading https://files.pythonhosted.org/packages/1f/38/f26ec1fa20c495b0c570b60d5a9a9b4a10054993dec7a4c0e681e0992c0e/arkcloud-0.0.9.tar.gz
+[2023-04-16 03:42:53] INFO root fetch - processPackages [karpyncho-reload-urls]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 03:42:54] INFO root fetch - processPackages [arkcloud]: executing diffoscope
+[2023-04-16 03:42:54] INFO root fetch - processPackages [arkcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkcloud-0.0.8.tar.gz tmp/arkcloud-0.0.9.tar.gz --markdown 20230416/a/arkcloud/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 03:42:54] INFO root fetch - processPackages [karpyncho-reload-urls]: Downloading https://files.pythonhosted.org/packages/92/42/f37935ef17d66019d6fac50778d66cd698374cc00aaece434e002c059617/karpyncho-reload-urls-0.1.0.tar.gz
+[2023-04-16 03:42:54] INFO root fetch - processPackages [karpyncho-reload-urls]: Downloading https://files.pythonhosted.org/packages/5e/0f/2ba078e0f29dbb35c2372af7fdf5064ebf5cd97ef41e8b1fad91c3994a37/karpyncho-reload-urls-0.1.1.tar.gz
+[2023-04-16 03:42:54] INFO root fetch - processPackages [karpyncho-reload-urls]: executing diffoscope
+[2023-04-16 03:42:54] INFO root fetch - processPackages [karpyncho-reload-urls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karpyncho-reload-urls-0.1.0.tar.gz tmp/karpyncho-reload-urls-0.1.1.tar.gz --markdown 20230416/k/karpyncho-reload-urls/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 03:42:54] INFO root fetch - main [MainThread]: End processing [poe-api]: success
+[2023-04-16 03:42:54] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-04-16 03:42:54] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-04-16 03:42:55] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-04-16 03:42:55] INFO root fetch - main [MainThread]: End processing [kicad-package-manager]: success
+[2023-04-16 03:42:55] INFO root fetch - main [MainThread]: End processing [kicad-package-manager]: success
+[2023-04-16 03:42:55] INFO root fetch - main [MainThread]: End processing [connpy]: success
+[2023-04-16 03:42:55] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-04-16 03:42:55] INFO root fetch - main [MainThread]: End processing [arkcloud]: success
+[2023-04-16 03:42:55] INFO root fetch - main [MainThread]: End processing [karpyncho-reload-urls]: success
+[2023-04-16 03:42:55] INFO root fetch - main [MainThread]: Store serial: [17723174]
