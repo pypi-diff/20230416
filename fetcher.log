@@ -3450,3 +3450,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 07:44:00] INFO root fetch - main [MainThread]: End processing [autoutils]: success
 [2023-04-16 07:44:00] INFO root fetch - main [MainThread]: End processing [sparrow-order-lib]: success
 [2023-04-16 07:44:00] INFO root fetch - main [MainThread]: Store serial: [17723976]
+[2023-04-16 07:49:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723976]
+[2023-04-16 07:49:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-16 07:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: manga2pdf
+[2023-04-16 07:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bot-lens
+[2023-04-16 07:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oaas-sdk-py
+[2023-04-16 07:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sparrow-order-lib
+[2023-04-16 07:49:09] INFO root fetch - processPackages [manga2pdf]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-04-16 07:49:09] INFO root fetch - processPackages [bot-lens]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-16 07:49:09] INFO root fetch - processPackages [oaas-sdk-py]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-16 07:49:09] INFO root fetch - processPackages [sparrow-order-lib]: New version: [0.1.9] Old Version: [0.1.81]
+[2023-04-16 07:49:09] INFO root fetch - processPackages [manga2pdf]: Downloading https://files.pythonhosted.org/packages/f2/f1/6fbff718263e5f0736788803b55e654ecc498f47623cf8a255e7d6ca3e7f/manga2pdf-0.0.4.tar.gz
+[2023-04-16 07:49:09] INFO root fetch - processPackages [bot-lens]: Downloading https://files.pythonhosted.org/packages/7d/77/7ac2aa023f6b09787ac6236c1bbd05507b1c64d69291d50996c37d939c57/bot_lens-0.0.3.tar.gz
+[2023-04-16 07:49:09] INFO root fetch - processPackages [oaas-sdk-py]: Downloading https://files.pythonhosted.org/packages/24/c7/142fe14607b4eb1765c9169681a66ee3c9d394942ab25509ed18bc490bb8/oaas_sdk_py-0.1.4.tar.gz
+[2023-04-16 07:49:09] INFO root fetch - processPackages [sparrow-order-lib]: Downloading https://files.pythonhosted.org/packages/a1/1a/abe8401ac938a21f933ecf7f97f8962e11bf7ec135bd2a4c29d915258f38/sparrow-order-lib-0.1.81.tar.gz
+[2023-04-16 07:49:09] INFO root fetch - processPackages [manga2pdf]: Downloading https://files.pythonhosted.org/packages/c0/62/3e13c566337b86a2d66c8c8227d65672fbff5a29b05b22a9f805f14b64c1/manga2pdf-0.1.0.tar.gz
+[2023-04-16 07:49:09] INFO root fetch - processPackages [oaas-sdk-py]: executing diffoscope
+[2023-04-16 07:49:09] INFO root fetch - processPackages [oaas-sdk-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oaas_sdk_py-0.1.3.tar.gz tmp/oaas_sdk_py-0.1.4.tar.gz --markdown 20230416/o/oaas-sdk-py/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-16 07:49:09] INFO root fetch - processPackages [bot-lens]: Downloading https://files.pythonhosted.org/packages/47/dc/eec3b4726e0cf1b7a82863c4d546147881e4ce13856e6dbcd3e2e18b03b8/bot_lens-0.0.4.tar.gz
+[2023-04-16 07:49:10] INFO root fetch - processPackages [sparrow-order-lib]: executing diffoscope
+[2023-04-16 07:49:10] INFO root fetch - processPackages [sparrow-order-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow-order-lib-0.1.81.tar.gz tmp/sparrow-order-lib-0.1.9.tar.gz --markdown 20230416/s/sparrow-order-lib/0.1.81-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 07:49:10] INFO root fetch - processPackages [manga2pdf]: executing diffoscope
+[2023-04-16 07:49:10] INFO root fetch - processPackages [manga2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manga2pdf-0.0.4.tar.gz tmp/manga2pdf-0.1.0.tar.gz --markdown 20230416/m/manga2pdf/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-04-16 07:49:10] INFO root fetch - processPackages [bot-lens]: executing diffoscope
+[2023-04-16 07:49:10] INFO root fetch - processPackages [bot-lens]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot_lens-0.0.3.tar.gz tmp/bot_lens-0.0.4.tar.gz --markdown 20230416/b/bot-lens/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-16 07:49:10] INFO root fetch - main [MainThread]: End processing [oaas-sdk-py]: success
+[2023-04-16 07:49:11] INFO root fetch - main [MainThread]: End processing [manga2pdf]: success
+[2023-04-16 07:49:11] INFO root fetch - main [MainThread]: End processing [bot-lens]: success
+[2023-04-16 07:49:11] INFO root fetch - main [MainThread]: End processing [sparrow-order-lib]: success
+[2023-04-16 07:49:11] INFO root fetch - main [MainThread]: Store serial: [17723987]
