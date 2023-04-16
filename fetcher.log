@@ -12462,3 +12462,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 20:15:29] INFO root fetch - main [MainThread]: End processing [paper-admin]: success
 [2023-04-16 20:15:30] INFO root fetch - main [MainThread]: End processing [tator]: success
 [2023-04-16 20:15:30] INFO root fetch - main [MainThread]: Store serial: [17729295]
+[2023-04-16 20:20:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729295]
+[2023-04-16 20:20:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 20:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vollseg-napari-trackmate
+[2023-04-16 20:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anylabeling
+[2023-04-16 20:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-master
+[2023-04-16 20:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfobal
+[2023-04-16 20:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pycjson
+[2023-04-16 20:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aistac-foundation
+[2023-04-16 20:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: llamabot
+[2023-04-16 20:20:39] INFO root fetch - processPackages [vollseg-napari-trackmate]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-16 20:20:39] INFO root fetch - processPackages [anylabeling]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-16 20:20:39] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230416.18.20.792419] Old Version: [20230416.17.6.264431]
+[2023-04-16 20:20:39] WARNING root fetch - processPackages [pycjson]: Skipping, unable to determine old version
+[2023-04-16 20:20:39] INFO root fetch - processPackages [pyfobal]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 20:20:39] INFO root fetch - main [MainThread]: End processing [pycjson] error
+[2023-04-16 20:20:39] INFO root fetch - processPackages [aistac-foundation]: New version: [2.9.7] Old Version: [2.9.6]
+[2023-04-16 20:20:39] INFO root fetch - processPackages [llamabot]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-04-16 20:20:39] INFO root fetch - processPackages [aistac-foundation]: executing diffoscope
+[2023-04-16 20:20:39] INFO root fetch - processPackages [aistac-foundation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aistac-foundation-2.9.6.tar.gz tmp/aistac-foundation-2.9.7.tar.gz --markdown 20230416/a/aistac-foundation/2.9.6-2.9.7/diff.md --exclude *.pyd
+[2023-04-16 20:20:39] INFO root fetch - processPackages [vollseg-napari-trackmate]: Downloading https://files.pythonhosted.org/packages/97/03/3b597709f1fe275a5947f2f2c748d8d83bcd568e072a5a6d9b49ddd67edf/vollseg-napari-trackmate-2.1.2.tar.gz
+[2023-04-16 20:20:39] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/85/f6/4c3f1c7d0631eabdc24075ccc7457d4b724af051d23fb948299744b89d80/certora-cli-alpha-master-20230416.17.6.264431.tar.gz
+[2023-04-16 20:20:39] INFO root fetch - processPackages [anylabeling]: Downloading https://files.pythonhosted.org/packages/d0/89/32de9293fed2d963b9ae8af6670839d933387888d8629176762f5e497875/anylabeling-0.2.7.tar.gz
+[2023-04-16 20:20:39] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38003677>=10485760
+[2023-04-16 20:20:39] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-16 20:20:39] INFO root fetch - processPackages [pyfobal]: Downloading https://files.pythonhosted.org/packages/55/b9/ca4b91a576d0a3c685c7e0c59a648b064cce9d1383206adaf29f9342641c/pyfobal-0.1.2.tar.gz
+[2023-04-16 20:20:39] INFO root fetch - processPackages [llamabot]: Downloading https://files.pythonhosted.org/packages/6b/96/2d14fee9c663c0979914f1fe6c8476145abc4b490064e84477c3d6d017c3/llamabot-0.0.6.tar.gz
+[2023-04-16 20:20:39] INFO root fetch - processPackages [pyfobal]: executing diffoscope
+[2023-04-16 20:20:39] INFO root fetch - processPackages [pyfobal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfobal-0.1.1.tar.gz tmp/pyfobal-0.1.2.tar.gz --markdown 20230416/p/pyfobal/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 20:20:39] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-16 20:20:39] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.2.6.tar.gz tmp/anylabeling-0.2.7.tar.gz --markdown 20230416/a/anylabeling/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-16 20:20:39] INFO root fetch - processPackages [vollseg-napari-trackmate]: executing diffoscope
+[2023-04-16 20:20:39] INFO root fetch - processPackages [vollseg-napari-trackmate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vollseg-napari-trackmate-2.1.1.tar.gz tmp/vollseg-napari-trackmate-2.1.2.tar.gz --markdown 20230416/v/vollseg-napari-trackmate/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-16 20:20:40] INFO root fetch - processPackages [llamabot]: Downloading https://files.pythonhosted.org/packages/31/05/7d4721877f2dde80d5bd40c84773d24b5486a794e78758d5c6c51a0e0ee0/llamabot-0.0.8.tar.gz
+[2023-04-16 20:20:40] INFO root fetch - processPackages [llamabot]: executing diffoscope
+[2023-04-16 20:20:40] INFO root fetch - processPackages [llamabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llamabot-0.0.6.tar.gz tmp/llamabot-0.0.8.tar.gz --markdown 20230416/l/llamabot/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-04-16 20:20:41] INFO root fetch - main [MainThread]: End processing [pyfobal]: success
+[2023-04-16 20:20:41] INFO root fetch - main [MainThread]: End processing [aistac-foundation]: success
+[2023-04-16 20:20:41] INFO root fetch - main [MainThread]: End processing [llamabot]: success
+[2023-04-16 20:20:41] INFO root fetch - main [MainThread]: End processing [vollseg-napari-trackmate]: success
+[2023-04-16 20:20:41] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
+[2023-04-16 20:20:41] INFO root fetch - main [MainThread]: Store serial: [17729319]
