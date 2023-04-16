@@ -11758,3 +11758,90 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 19:06:36] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2023-04-16 19:06:36] INFO root fetch - main [MainThread]: End processing [netron] error
 [2023-04-16 19:06:36] INFO root fetch - main [MainThread]: Store serial: [17728879]
+[2023-04-16 19:11:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728879]
+[2023-04-16 19:11:45] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-16 19:11:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyawskit
+[2023-04-16 19:11:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygpsclient
+[2023-04-16 19:11:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BlaApi
+[2023-04-16 19:11:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spycy-aneeshdurg
+[2023-04-16 19:11:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mls-api
+[2023-04-16 19:11:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pypdl
+[2023-04-16 19:11:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fresco
+[2023-04-16 19:11:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-plugin-naturel-gpt
+[2023-04-16 19:11:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: psychoevals
+[2023-04-16 19:11:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyawskit
+[2023-04-16 19:11:45] INFO root fetch - processPackages [pyawskit]: New version: [0.1.64] Old Version: [0.1.63]
+[2023-04-16 19:11:45] WARNING root fetch - processPackages [spycy-aneeshdurg]: Skipping, unable to determine old version
+[2023-04-16 19:11:45] INFO root fetch - processPackages [BlaApi]: New version: [1.2] Old Version: [1.1.1]
+[2023-04-16 19:11:45] INFO root fetch - processPackages [spycy-aneeshdurg]: Start processing: NinjaTools
+[2023-04-16 19:11:45] INFO root fetch - main [MainThread]: End processing [spycy-aneeshdurg] error
+[2023-04-16 19:11:45] INFO root fetch - processPackages [mls-api]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-04-16 19:11:45] INFO root fetch - processPackages [pypdl]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-16 19:11:45] INFO root fetch - processPackages [pyawskit]: New version: [0.1.64] Old Version: [0.1.63]
+[2023-04-16 19:11:45] INFO root fetch - processPackages [pygpsclient]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-04-16 19:11:46] INFO root fetch - processPackages [fresco]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-04-16 19:11:46] INFO root fetch - processPackages [psychoevals]: New version: [0.7] Old Version: [0.6]
+[2023-04-16 19:11:46] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: New version: [2.1.3] Old Version: [2.1.2]
+[2023-04-16 19:11:46] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pyawskit]: Downloading https://files.pythonhosted.org/packages/04/52/ef4d8b4a3428a580cefe7460f22f162615fb8bd731e835be3386e8aec5dd/pyawskit-0.1.63.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pyawskit]: Downloading https://files.pythonhosted.org/packages/04/52/ef4d8b4a3428a580cefe7460f22f162615fb8bd731e835be3386e8aec5dd/pyawskit-0.1.63.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pypdl]: Downloading https://files.pythonhosted.org/packages/8e/6d/3efca106791b6c8981348650592965226fad5e3956aeb8bf5e70d4afeaf0/pypdl-0.0.5.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [fresco]: Downloading https://files.pythonhosted.org/packages/5c/a2/b7887bed558b44623f2103a1387ddb168b485e63865fc75fdb7d3d17fd34/fresco-3.1.0.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [NinjaTools]: Downloading https://files.pythonhosted.org/packages/ca/7f/a36a5538a5100fa15d02bbd755fd23241035a68e6019b99cb8d273c32a61/NinjaTools-0.8.9.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [BlaApi]: Downloading https://files.pythonhosted.org/packages/4a/92/4e9cedbb0543fa466063f578edb50f8ec44f2a6da150a42a8895f3871589/BlaApi-1.2.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [mls-api]: Downloading https://files.pythonhosted.org/packages/f6/a8/b1511debd7052205533d872f5e14730a9a702feccbcb43e42229a2b860e4/mls-api-1.5.0.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: Downloading https://files.pythonhosted.org/packages/83/22/4267424d62646a05b1bf473857b77f199f6e40f5e4745fb78060cbf2c8d8/nonebot_plugin_naturel_gpt-2.1.3.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [psychoevals]: Downloading https://files.pythonhosted.org/packages/03/4e/8ca072e3940be92512a59510f0a90f0a619dd155fed3b053b82b31edb562/psychoevals-0.7.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pyawskit]: Downloading https://files.pythonhosted.org/packages/6c/3a/6c2f3b5000636382a3a0496a13c31519ea09279d3e50677ee76e376ca80f/pyawskit-0.1.64.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pyawskit]: Downloading https://files.pythonhosted.org/packages/6c/3a/6c2f3b5000636382a3a0496a13c31519ea09279d3e50677ee76e376ca80f/pyawskit-0.1.64.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pygpsclient]: executing diffoscope
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pygpsclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGPSClient-1.3.8.tar.gz tmp/PyGPSClient-1.3.9.tar.gz --markdown 20230416/p/pygpsclient/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pypdl]: Downloading https://files.pythonhosted.org/packages/1c/09/9955d473b75078a55b8bc3d771af73c060c6cd26a256b54dff5bc954b067/pypdl-0.0.6.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [mls-api]: executing diffoscope
+[2023-04-16 19:11:46] INFO root fetch - processPackages [mls-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mls-api-1.4.0.tar.gz tmp/mls-api-1.5.0.tar.gz --markdown 20230416/m/mls-api/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-04-16 19:11:46] INFO root fetch - processPackages [fresco]: Downloading https://files.pythonhosted.org/packages/c7/94/58875010aefa6a9291ae4bfce0fc2b14539d9997e691dafc147b189b40fb/fresco-3.2.0.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [BlaApi]: executing diffoscope
+[2023-04-16 19:11:46] INFO root fetch - processPackages [BlaApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BlaApi-1.1.1.tar.gz tmp/BlaApi-1.2.tar.gz --markdown 20230416/B/BlaApi/1.1.1-1.2/diff.md --exclude *.pyd
+[2023-04-16 19:11:46] INFO root fetch - processPackages [psychoevals]: executing diffoscope
+[2023-04-16 19:11:46] INFO root fetch - processPackages [psychoevals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychoevals-0.6.tar.gz tmp/psychoevals-0.7.tar.gz --markdown 20230416/p/psychoevals/0.6-0.7/diff.md --exclude *.pyd
+[2023-04-16 19:11:46] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: executing diffoscope
+[2023-04-16 19:11:46] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_naturel_gpt-2.1.2.tar.gz tmp/nonebot_plugin_naturel_gpt-2.1.3.tar.gz --markdown 20230416/n/nonebot-plugin-naturel-gpt/2.1.2-2.1.3/diff.md --exclude *.pyd
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pyawskit]: executing diffoscope
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pyawskit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyawskit-0.1.63.tar.gz tmp/pyawskit-0.1.64.tar.gz --markdown 20230416/p/pyawskit/0.1.63-0.1.64/diff.md --exclude *.pyd
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pyawskit]: executing diffoscope
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pyawskit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyawskit-0.1.63.tar.gz tmp/pyawskit-0.1.64.tar.gz --markdown 20230416/p/pyawskit/0.1.63-0.1.64/diff.md --exclude *.pyd
+[2023-04-16 19:11:46] INFO root fetch - processPackages [NinjaTools]: Downloading https://files.pythonhosted.org/packages/36/c3/2d22ecaadfc1cbe57118895684bc799aa1ff33706a5a09e130728af4cd83/NinjaTools-0.9.0.tar.gz
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pypdl]: executing diffoscope
+[2023-04-16 19:11:46] INFO root fetch - processPackages [pypdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypdl-0.0.5.tar.gz tmp/pypdl-0.0.6.tar.gz --markdown 20230416/p/pypdl/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-16 19:11:46] INFO root fetch - processPackages [fresco]: executing diffoscope
+[2023-04-16 19:11:46] INFO root fetch - processPackages [fresco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fresco-3.1.0.tar.gz tmp/fresco-3.2.0.tar.gz --markdown 20230416/f/fresco/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-04-16 19:11:46] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2023-04-16 19:11:46] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20230416/N/NinjaTools/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 19:11:48] INFO root fetch - processPackages [BlaApi]: Start processing: uncms
+[2023-04-16 19:11:48] INFO root fetch - main [MainThread]: End processing [BlaApi]: success
+[2023-04-16 19:11:48] INFO root fetch - processPackages [uncms]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-16 19:11:48] INFO root fetch - processPackages [uncms]: Downloading https://files.pythonhosted.org/packages/45/88/dd9193d9b1335e2cc50d24dfccd9d2fc88dee0045a3b4e7f556cbaf4c709/uncms-0.0.7.tar.gz
+[2023-04-16 19:11:48] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: Start processing: tmp-econdata
+[2023-04-16 19:11:48] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-naturel-gpt]: success
+[2023-04-16 19:11:48] INFO root fetch - processPackages [pyawskit]: Start processing: profyle
+[2023-04-16 19:11:48] INFO root fetch - main [MainThread]: End processing [pyawskit]: success
+[2023-04-16 19:11:48] WARNING root fetch - processPackages [tmp-econdata]: Skipping, unable to determine old version
+[2023-04-16 19:11:48] INFO root fetch - main [MainThread]: End processing [tmp-econdata] error
+[2023-04-16 19:11:48] INFO root fetch - main [MainThread]: End processing [pygpsclient]: success
+[2023-04-16 19:11:48] INFO root fetch - processPackages [profyle]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 19:11:48] INFO root fetch - processPackages [uncms]: Downloading https://files.pythonhosted.org/packages/e8/f6/464b52229ffdc0b2b307b0aaf5a667d315b0947fdc821f380fd207feab21/uncms-0.0.8.tar.gz
+[2023-04-16 19:11:48] INFO root fetch - main [MainThread]: End processing [mls-api]: success
+[2023-04-16 19:11:48] INFO root fetch - main [MainThread]: End processing [psychoevals]: success
+[2023-04-16 19:11:48] INFO root fetch - processPackages [profyle]: Downloading https://files.pythonhosted.org/packages/13/e8/29c96dfdadf52b2ea023470e229066227002bb2ac5ceb985fedf994d0a31/profyle-0.0.8.tar.gz
+[2023-04-16 19:11:48] INFO root fetch - main [MainThread]: End processing [pyawskit]: success
+[2023-04-16 19:11:48] INFO root fetch - main [MainThread]: End processing [pypdl]: success
+[2023-04-16 19:11:48] INFO root fetch - main [MainThread]: End processing [NinjaTools]: success
+[2023-04-16 19:11:48] INFO root fetch - processPackages [uncms]: executing diffoscope
+[2023-04-16 19:11:48] INFO root fetch - processPackages [uncms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uncms-0.0.7.tar.gz tmp/uncms-0.0.8.tar.gz --markdown 20230416/u/uncms/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-16 19:11:48] INFO root fetch - main [MainThread]: End processing [fresco]: success
+[2023-04-16 19:11:49] INFO root fetch - processPackages [profyle]: Downloading https://files.pythonhosted.org/packages/08/ce/92c447024855c1b61a283a97f606dc9f3705fb0f14e28208627666ed29bd/profyle-0.0.9.tar.gz
+[2023-04-16 19:11:49] INFO root fetch - processPackages [profyle]: executing diffoscope
+[2023-04-16 19:11:49] INFO root fetch - processPackages [profyle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profyle-0.0.8.tar.gz tmp/profyle-0.0.9.tar.gz --markdown 20230416/p/profyle/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 19:11:50] INFO root fetch - main [MainThread]: End processing [profyle]: success
+[2023-04-16 19:11:51] INFO root fetch - main [MainThread]: End processing [uncms]: success
+[2023-04-16 19:11:51] INFO root fetch - main [MainThread]: Store serial: [17728928]
