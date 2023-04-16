@@ -11917,3 +11917,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 19:22:16] INFO root fetch - main [MainThread]: End processing [aa-forum]: success
 [2023-04-16 19:22:21] INFO root fetch - main [MainThread]: End processing [omfit-classes]: success
 [2023-04-16 19:22:21] INFO root fetch - main [MainThread]: Store serial: [17728964]
+[2023-04-16 19:27:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728964]
+[2023-04-16 19:27:30] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 19:27:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiogram-ext
+[2023-04-16 19:27:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crazy-thursday
+[2023-04-16 19:27:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastHDMI
+[2023-04-16 19:27:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastHDMI
+[2023-04-16 19:27:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tmp-econdata
+[2023-04-16 19:27:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: quota-notifier
+[2023-04-16 19:27:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: phanterpwa
+[2023-04-16 19:27:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: moss-emspy
+[2023-04-16 19:27:30] INFO root fetch - processPackages [aiogram-ext]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 19:27:30] WARNING root fetch - processPackages [quota-notifier]: Skipping, unable to determine old version
+[2023-04-16 19:27:30] INFO root fetch - processPackages [fastHDMI]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-16 19:27:30] INFO root fetch - main [MainThread]: End processing [quota-notifier] error
+[2023-04-16 19:27:30] INFO root fetch - processPackages [moss-emspy]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-04-16 19:27:30] INFO root fetch - processPackages [fastHDMI]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-16 19:27:30] ERROR root fetch - processPackages [tmp-econdata]: Unable to get metadata: No such project 'tmp-econdata'
+[2023-04-16 19:27:30] INFO root fetch - main [MainThread]: End processing [tmp-econdata] error
+[2023-04-16 19:27:30] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-16 19:27:30] INFO root fetch - processPackages [phanterpwa]: New version: [13.12.8] Old Version: [13.12.7]
+[2023-04-16 19:27:30] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-16 19:27:30] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.0.8.tar.gz tmp/aiogram-ext-0.0.9.tar.gz --markdown 20230416/a/aiogram-ext/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 19:27:30] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-16 19:27:30] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230416/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-16 19:27:30] INFO root fetch - processPackages [moss-emspy]: Downloading https://files.pythonhosted.org/packages/a9/37/447777245cf58f6e73b8d977af3f4cdd1ba908238bb17ec5f717fef4f671/moss_emspy-2.3.0.tar.gz
+[2023-04-16 19:27:31] INFO root fetch - processPackages [fastHDMI]: Downloading https://files.pythonhosted.org/packages/fa/e3/cceb50b777aab4e3c7ac411d33bab66fded61420d73554736001600a889e/fastHDMI-1.2.8.tar.gz
+[2023-04-16 19:27:31] INFO root fetch - processPackages [fastHDMI]: Downloading https://files.pythonhosted.org/packages/fa/e3/cceb50b777aab4e3c7ac411d33bab66fded61420d73554736001600a889e/fastHDMI-1.2.8.tar.gz
+[2023-04-16 19:27:31] INFO root fetch - processPackages [phanterpwa]: executing diffoscope
+[2023-04-16 19:27:31] INFO root fetch - processPackages [phanterpwa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phanterpwa-13.12.7.tar.gz tmp/phanterpwa-13.12.8.tar.gz --markdown 20230416/p/phanterpwa/13.12.7-13.12.8/diff.md --exclude *.pyd
+[2023-04-16 19:27:31] INFO root fetch - processPackages [moss-emspy]: Downloading https://files.pythonhosted.org/packages/33/7e/3492249be816c4f005b6e50a5bdafa50b12232953aed014c6f92a26692ff/moss_emspy-2.4.0.tar.gz
+[2023-04-16 19:27:31] INFO root fetch - processPackages [moss-emspy]: executing diffoscope
+[2023-04-16 19:27:31] INFO root fetch - processPackages [moss-emspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moss_emspy-2.3.0.tar.gz tmp/moss_emspy-2.4.0.tar.gz --markdown 20230416/m/moss-emspy/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-04-16 19:27:31] INFO root fetch - processPackages [fastHDMI]: Downloading https://files.pythonhosted.org/packages/12/43/8ac2fd73c67b3439fd241697c244ac55242a5f5cd386b3581750a0fa94e1/fastHDMI-1.2.9.tar.gz
+[2023-04-16 19:27:31] INFO root fetch - processPackages [fastHDMI]: Downloading https://files.pythonhosted.org/packages/12/43/8ac2fd73c67b3439fd241697c244ac55242a5f5cd386b3581750a0fa94e1/fastHDMI-1.2.9.tar.gz
+[2023-04-16 19:27:31] INFO root fetch - processPackages [fastHDMI]: executing diffoscope
+[2023-04-16 19:27:31] INFO root fetch - processPackages [fastHDMI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastHDMI-1.2.8.tar.gz tmp/fastHDMI-1.2.9.tar.gz --markdown 20230416/f/fastHDMI/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-16 19:27:31] INFO root fetch - processPackages [fastHDMI]: executing diffoscope
+[2023-04-16 19:27:31] INFO root fetch - processPackages [fastHDMI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastHDMI-1.2.8.tar.gz tmp/fastHDMI-1.2.9.tar.gz --markdown 20230416/f/fastHDMI/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-16 19:27:31] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-16 19:27:32] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-16 19:27:32] INFO root fetch - main [MainThread]: End processing [moss-emspy]: success
+[2023-04-16 19:27:32] INFO root fetch - main [MainThread]: End processing [fastHDMI]: success
+[2023-04-16 19:27:32] INFO root fetch - main [MainThread]: End processing [fastHDMI]: success
+[2023-04-16 19:27:35] INFO root fetch - main [MainThread]: End processing [phanterpwa]: success
+[2023-04-16 19:27:35] INFO root fetch - main [MainThread]: Store serial: [17728994]
