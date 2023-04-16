@@ -9987,3 +9987,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 16:31:35] INFO root fetch - main [MainThread]: End processing [PGAPy]: success
 [2023-04-16 16:31:35] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
 [2023-04-16 16:31:35] INFO root fetch - main [MainThread]: Store serial: [17727751]
+[2023-04-16 16:36:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727751]
+[2023-04-16 16:36:44] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 16:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simple-openai
+[2023-04-16 16:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gentrace-py
+[2023-04-16 16:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: file-memoizer
+[2023-04-16 16:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: image-reward
+[2023-04-16 16:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vollseg
+[2023-04-16 16:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mdformat-wikilink
+[2023-04-16 16:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: strplus
+[2023-04-16 16:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pipcolorlibraryV1
+[2023-04-16 16:36:44] INFO root fetch - processPackages [mdformat-wikilink]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 16:36:44] WARNING root fetch - processPackages [simple-openai]: Skipping, unable to determine old version
+[2023-04-16 16:36:44] INFO root fetch - main [MainThread]: End processing [simple-openai] error
+[2023-04-16 16:36:44] INFO root fetch - processPackages [image-reward]: New version: [1.1] Old Version: [1.0]
+[2023-04-16 16:36:44] INFO root fetch - processPackages [file-memoizer]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-04-16 16:36:44] INFO root fetch - processPackages [gentrace-py]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-04-16 16:36:44] INFO root fetch - processPackages [strplus]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 16:36:44] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 16:36:44] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 16:36:44] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 16:36:44] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 16:36:44] WARNING root fetch - processPackages [pipcolorlibraryV1]: Skipping, unable to determine old version
+[2023-04-16 16:36:44] INFO root fetch - main [MainThread]: End processing [pipcolorlibraryV1] error
+[2023-04-16 16:36:44] INFO root fetch - processPackages [file-memoizer]: Downloading https://files.pythonhosted.org/packages/36/b8/2f079110d437319d3d6a47edbd8419f20d550b8ccd5c589b4311457a0165/file_memoizer-0.3.2.tar.gz
+[2023-04-16 16:36:44] INFO root fetch - processPackages [mdformat-wikilink]: Downloading https://files.pythonhosted.org/packages/01/ab/6d9a706a0a8a64ddf4c6dbb1d312150342d3fb6e3ea1238648629810451b/mdformat_wikilink-0.1.0.tar.gz
+[2023-04-16 16:36:44] INFO root fetch - processPackages [strplus]: Downloading https://files.pythonhosted.org/packages/b3/92/16a1f379cac87d9cf047579646b6265534eb6191ace0aa258fefb27b39ea/strplus-0.0.9.tar.gz
+[2023-04-16 16:36:44] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/03/19/d95e847e52f082b0f452a597d8010582ebc96f03d48af0619a53eb389d01/image-reward-1.1.tar.gz
+[2023-04-16 16:36:44] INFO root fetch - processPackages [gentrace-py]: Downloading https://files.pythonhosted.org/packages/32/60/bacb85189cb254d65cc21236f65c253fe9e456b34f3625d38cd6ab62accf/gentrace_py-0.3.0.tar.gz
+[2023-04-16 16:36:44] INFO root fetch - processPackages [strplus]: executing diffoscope
+[2023-04-16 16:36:44] INFO root fetch - processPackages [strplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strplus-0.0.8.tar.gz tmp/strplus-0.0.9.tar.gz --markdown 20230416/s/strplus/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 16:36:44] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-16 16:36:44] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-1.0.tar.gz tmp/image-reward-1.1.tar.gz --markdown 20230416/i/image-reward/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-16 16:36:44] INFO root fetch - processPackages [mdformat-wikilink]: Downloading https://files.pythonhosted.org/packages/1b/55/ba42261769d78388554d68abe5a57ddf3a736221e5dce72b5a88d7140fc4/mdformat_wikilink-0.1.1.tar.gz
+[2023-04-16 16:36:44] INFO root fetch - processPackages [gentrace-py]: executing diffoscope
+[2023-04-16 16:36:44] INFO root fetch - processPackages [gentrace-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gentrace_py-0.2.2.tar.gz tmp/gentrace_py-0.3.0.tar.gz --markdown 20230416/g/gentrace-py/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 16:36:44] INFO root fetch - processPackages [file-memoizer]: Downloading https://files.pythonhosted.org/packages/30/ef/92a4d50e6c7eb78171fba75c524c2b079406925a8966d8dfbfa1774e6a25/file_memoizer-0.4.0.tar.gz
+[2023-04-16 16:36:44] INFO root fetch - processPackages [mdformat-wikilink]: executing diffoscope
+[2023-04-16 16:36:44] INFO root fetch - processPackages [mdformat-wikilink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdformat_wikilink-0.1.0.tar.gz tmp/mdformat_wikilink-0.1.1.tar.gz --markdown 20230416/m/mdformat-wikilink/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 16:36:44] INFO root fetch - processPackages [file-memoizer]: executing diffoscope
+[2023-04-16 16:36:44] INFO root fetch - processPackages [file-memoizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_memoizer-0.3.2.tar.gz tmp/file_memoizer-0.4.0.tar.gz --markdown 20230416/f/file-memoizer/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-04-16 16:36:45] INFO root fetch - main [MainThread]: End processing [strplus]: success
+[2023-04-16 16:36:45] INFO root fetch - main [MainThread]: End processing [mdformat-wikilink]: success
+[2023-04-16 16:36:45] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-16 16:36:45] INFO root fetch - main [MainThread]: End processing [file-memoizer]: success
+[2023-04-16 16:36:46] INFO root fetch - main [MainThread]: End processing [gentrace-py]: success
+[2023-04-16 16:36:46] INFO root fetch - main [MainThread]: Store serial: [17727779]
