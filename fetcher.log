@@ -6727,3 +6727,55 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 11:56:51] INFO root fetch - main [MainThread]: End processing [prysk]: success
 [2023-04-16 11:56:51] INFO root fetch - main [MainThread]: End processing [aa-buybackprogram]: success
 [2023-04-16 11:56:51] INFO root fetch - main [MainThread]: Store serial: [17725811]
+[2023-04-16 12:01:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17725811]
+[2023-04-16 12:02:00] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 12:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: write-the
+[2023-04-16 12:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mergeconfigs
+[2023-04-16 12:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: haki-sensortower
+[2023-04-16 12:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: keego-haki
+[2023-04-16 12:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mgo-serializer
+[2023-04-16 12:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyinterpolate
+[2023-04-16 12:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pydicts
+[2023-04-16 12:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pecg
+[2023-04-16 12:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vollseg
+[2023-04-16 12:02:00] INFO root fetch - processPackages [write-the]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-16 12:02:00] INFO root fetch - processPackages [mergeconfigs]: New version: [0.9] Old Version: [0.8]
+[2023-04-16 12:02:00] WARNING root fetch - processPackages [haki-sensortower]: Skipping, unable to determine old version
+[2023-04-16 12:02:00] INFO root fetch - main [MainThread]: End processing [haki-sensortower] error
+[2023-04-16 12:02:00] INFO root fetch - processPackages [mgo-serializer]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 12:02:00] INFO root fetch - processPackages [pydicts]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-16 12:02:00] INFO root fetch - processPackages [pecg]: New version: [2.0.0] Old Version: [1.1.9]
+[2023-04-16 12:02:00] WARNING root fetch - processPackages [keego-haki]: Skipping, unable to determine old version
+[2023-04-16 12:02:00] INFO root fetch - main [MainThread]: End processing [keego-haki] error
+[2023-04-16 12:02:00] INFO root fetch - processPackages [pyinterpolate]: New version: [0.4.1] Old Version: [0.4]
+[2023-04-16 12:02:00] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 12:02:00] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 12:02:00] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 12:02:00] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 12:02:00] INFO root fetch - processPackages [pydicts]: Downloading https://files.pythonhosted.org/packages/da/85/012b5a4217148ab69a1c5c5d8dbfe01e83b9564fb5f8e3b9cfa1fa709edf/pydicts-0.2.0.tar.gz
+[2023-04-16 12:02:00] INFO root fetch - processPackages [mgo-serializer]: Downloading https://files.pythonhosted.org/packages/30/b5/203321773b282f796d885a591320d02f0ed4851137652e509f5cffaebe5c/mgo_serializer-0.1.2.tar.gz
+[2023-04-16 12:02:00] INFO root fetch - processPackages [pecg]: Downloading https://files.pythonhosted.org/packages/85/fc/407557e6a5ad40ac02402df8bfba40a60aee49e7925d655e59166b26adc5/pecg-1.1.9.tar.gz
+[2023-04-16 12:02:00] INFO root fetch - processPackages [mergeconfigs]: Downloading https://files.pythonhosted.org/packages/e9/15/e5d938745545ae658f733a5e7f6a450d387580a8ac24ca27a4f7d54c656e/mergeconfigs-0.8.tar.gz
+[2023-04-16 12:02:00] INFO root fetch - processPackages [write-the]: Downloading https://files.pythonhosted.org/packages/1f/66/76aa3ec9079d3738c74ef3cacc2b8a5df0658ca1ff636383d05db98ac750/write_the-0.3.0.tar.gz
+[2023-04-16 12:02:00] INFO root fetch - processPackages [pyinterpolate]: Downloading https://files.pythonhosted.org/packages/5c/d7/e9d66386ce65c02e4a82b4ef5b51187b215024519fc0cb8e3b7ea7c2491d/pyinterpolate-0.4.tar.gz
+[2023-04-16 12:02:00] WARNING root fetch - processPackages [pecg]: Skipping package: exceeds size limit 26252978>=10485760
+[2023-04-16 12:02:00] INFO root fetch - main [MainThread]: End processing [pecg] error
+[2023-04-16 12:02:00] INFO root fetch - processPackages [mgo-serializer]: executing diffoscope
+[2023-04-16 12:02:00] INFO root fetch - processPackages [mgo-serializer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mgo_serializer-0.1.1.tar.gz tmp/mgo_serializer-0.1.2.tar.gz --markdown 20230416/m/mgo-serializer/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 12:02:00] INFO root fetch - processPackages [write-the]: executing diffoscope
+[2023-04-16 12:02:00] INFO root fetch - processPackages [write-the]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/write_the-0.2.0.tar.gz tmp/write_the-0.3.0.tar.gz --markdown 20230416/w/write-the/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 12:02:01] INFO root fetch - processPackages [pydicts]: Downloading https://files.pythonhosted.org/packages/22/14/5eb903757da47c6e84f314e7f9721e6741375c66f3f4cc6937d15ce9de99/pydicts-0.3.0.tar.gz
+[2023-04-16 12:02:01] INFO root fetch - processPackages [pydicts]: executing diffoscope
+[2023-04-16 12:02:01] INFO root fetch - processPackages [pydicts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydicts-0.2.0.tar.gz tmp/pydicts-0.3.0.tar.gz --markdown 20230416/p/pydicts/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 12:02:01] INFO root fetch - processPackages [pyinterpolate]: Downloading https://files.pythonhosted.org/packages/ec/64/2b5a83b456e3776896d7faa0b04fd54ababaf19ece08372736ef4907c345/pyinterpolate-0.4.1.tar.gz
+[2023-04-16 12:02:01] INFO root fetch - processPackages [pyinterpolate]: executing diffoscope
+[2023-04-16 12:02:01] INFO root fetch - processPackages [pyinterpolate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinterpolate-0.4.tar.gz tmp/pyinterpolate-0.4.1.tar.gz --markdown 20230416/p/pyinterpolate/0.4-0.4.1/diff.md --exclude *.pyd
+[2023-04-16 12:02:01] INFO root fetch - processPackages [mergeconfigs]: Downloading https://files.pythonhosted.org/packages/99/f9/a738ae4d8957640ba45420b082e1ce44ceab06226e123ad2f9e2381c7782/mergeconfigs-0.9.tar.gz
+[2023-04-16 12:02:01] INFO root fetch - processPackages [mergeconfigs]: executing diffoscope
+[2023-04-16 12:02:01] INFO root fetch - processPackages [mergeconfigs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mergeconfigs-0.8.tar.gz tmp/mergeconfigs-0.9.tar.gz --markdown 20230416/m/mergeconfigs/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-16 12:02:02] INFO root fetch - main [MainThread]: End processing [pydicts]: success
+[2023-04-16 12:02:02] INFO root fetch - main [MainThread]: End processing [mgo-serializer]: success
+[2023-04-16 12:02:02] INFO root fetch - main [MainThread]: End processing [write-the]: success
+[2023-04-16 12:02:02] INFO root fetch - main [MainThread]: End processing [pyinterpolate]: success
+[2023-04-16 12:02:11] INFO root fetch - main [MainThread]: End processing [mergeconfigs]: success
+[2023-04-16 12:02:11] INFO root fetch - main [MainThread]: Store serial: [17725861]
