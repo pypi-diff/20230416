@@ -6837,3 +6837,92 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 12:07:23] INFO root fetch - main [MainThread]: End processing [deebot-client]: success
 [2023-04-16 12:07:25] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-04-16 12:07:25] INFO root fetch - main [MainThread]: Store serial: [17725900]
+[2023-04-16 12:12:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17725900]
+[2023-04-16 12:12:34] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-16 12:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: policyengine-us
+[2023-04-16 12:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arrendatools-plantillas
+[2023-04-16 12:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysymbolcheck
+[2023-04-16 12:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tftest
+[2023-04-16 12:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: poocr
+[2023-04-16 12:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xia-fields
+[2023-04-16 12:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: oelint-parser
+[2023-04-16 12:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: base-template-cli
+[2023-04-16 12:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vollseg
+[2023-04-16 12:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dxsp
+[2023-04-16 12:12:34] INFO root fetch - processPackages [pysymbolcheck]: New version: [2.7.5] Old Version: [2.7.4]
+[2023-04-16 12:12:34] INFO root fetch - processPackages [tftest]: New version: [1.8.3] Old Version: [1.8.2]
+[2023-04-16 12:12:34] INFO root fetch - processPackages [poocr]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-16 12:12:34] WARNING root fetch - processPackages [arrendatools-plantillas]: Skipping, unable to determine old version
+[2023-04-16 12:12:34] INFO root fetch - processPackages [arrendatools-plantillas]: Start processing: cdxbasics
+[2023-04-16 12:12:34] INFO root fetch - main [MainThread]: End processing [arrendatools-plantillas] error
+[2023-04-16 12:12:34] INFO root fetch - processPackages [oelint-parser]: New version: [2.9.5] Old Version: [2.9.4]
+[2023-04-16 12:12:34] INFO root fetch - processPackages [policyengine-us]: New version: [0.293.0] Old Version: [0.292.0]
+[2023-04-16 12:12:34] INFO root fetch - processPackages [base-template-cli]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-04-16 12:12:34] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 12:12:34] INFO root fetch - processPackages [dxsp]: New version: [1.1.0] Old Version: [1.0.9]
+[2023-04-16 12:12:34] INFO root fetch - processPackages [xia-fields]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-16 12:12:34] INFO root fetch - processPackages [cdxbasics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-16 12:12:34] INFO root fetch - processPackages [cdxbasics]: executing diffoscope
+[2023-04-16 12:12:34] INFO root fetch - processPackages [cdxbasics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdxbasics-0.2.8.tar.gz tmp/cdxbasics-0.2.9.tar.gz --markdown 20230416/c/cdxbasics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-16 12:12:34] INFO root fetch - processPackages [poocr]: Downloading https://files.pythonhosted.org/packages/a2/68/49b804e4653c37b1f07617d5f6bd2546fd7caae8593ad3d4deab7e1a315f/poocr-0.0.3.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [pysymbolcheck]: Downloading https://files.pythonhosted.org/packages/14/f5/a36fc0824d3fd4789554f5924200f49e462b28782a17ce11037e0a67ac48/pysymbolcheck-2.7.4.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [oelint-parser]: Downloading https://files.pythonhosted.org/packages/94/b6/e4734c1d6894ff631afe67f0fd1fa37f3cbd6c81163a061593626bf70d4f/oelint_parser-2.9.4.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/f8/e1/8cf5e46d7413d971bf6a2d25b61be81f65e25c9d0dd92268866320acf897/dxsp-1.1.0.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [base-template-cli]: Downloading https://files.pythonhosted.org/packages/7c/33/83c7db1959ea2c4957f1f1c2d1169c8b2b44c8b564576aa3b58ed59d2bb6/base_template_cli-3.0.0.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [xia-fields]: Downloading https://files.pythonhosted.org/packages/7a/19/5b6f05932f6055e5772531a4188540be463de1a050b9efdc34b34ad79a18/xia_fields-0.3.5-cp39-none-win_amd64.whl
+[2023-04-16 12:12:34] INFO root fetch - processPackages [tftest]: Downloading https://files.pythonhosted.org/packages/54/f2/ea9cc56b81c79aac1c5a56c6a5951b5c8c7920add8b264866b35ba09eb38/tftest-1.8.2.tar.gz
+[2023-04-16 12:12:34] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 12:12:34] INFO root fetch - processPackages [vollseg]: Start processing: pandasflow
+[2023-04-16 12:12:34] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/c5/a2/42d6940eb7c46bacf99371b9e67141f68c29fa14f1b91128f23aa7a27128/policyengine-us-0.292.0.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 12:12:34] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-16 12:12:34] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.0.9.tar.gz tmp/dxsp-1.1.0.tar.gz --markdown 20230416/d/dxsp/1.0.9-1.1.0/diff.md --exclude *.pyd
+[2023-04-16 12:12:34] INFO root fetch - processPackages [pandasflow]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-16 12:12:34] INFO root fetch - processPackages [pysymbolcheck]: Downloading https://files.pythonhosted.org/packages/bd/a6/7738a613f2c9ff8261e8b147008231e4051657574cf9e2423a543d314b9b/pysymbolcheck-2.7.5.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [pandasflow]: Downloading https://files.pythonhosted.org/packages/46/56/7a05c3335b59c6bde62a06fe4daae49bf1f164c6543326e401df39081a6c/pandasflow-0.1.5.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [poocr]: Downloading https://files.pythonhosted.org/packages/6d/35/1ac79f87c660345cc64091b39e5400fecf2f83da602dba5ec19414853134/poocr-0.0.4.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [xia-fields]: Downloading https://files.pythonhosted.org/packages/cf/e2/401e97e87c83e1bcc11eca4a350d8fdc66ab83e24bfa0f17141f1de6cc21/xia_fields-0.3.6-cp39-none-macosx_11_0_x86_64.whl
+[2023-04-16 12:12:34] INFO root fetch - processPackages [poocr]: executing diffoscope
+[2023-04-16 12:12:34] INFO root fetch - processPackages [poocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poocr-0.0.3.tar.gz tmp/poocr-0.0.4.tar.gz --markdown 20230416/p/poocr/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-16 12:12:34] INFO root fetch - processPackages [pysymbolcheck]: executing diffoscope
+[2023-04-16 12:12:34] INFO root fetch - processPackages [pysymbolcheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysymbolcheck-2.7.4.tar.gz tmp/pysymbolcheck-2.7.5.tar.gz --markdown 20230416/p/pysymbolcheck/2.7.4-2.7.5/diff.md --exclude *.pyd
+[2023-04-16 12:12:34] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/88/7d/fc0b78de3efcab83ee090760de93cf3b7f86dfab7e55c944b8a829eb2b72/policyengine-us-0.293.0.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [oelint-parser]: Downloading https://files.pythonhosted.org/packages/07/61/2ce3e6c1de6076cda9affd5f26c504802802804df80957ed87341e01b0da/oelint_parser-2.9.5.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [tftest]: Downloading https://files.pythonhosted.org/packages/5d/20/dbadb56ef496f2124bd335d7b8a9263afe5d6bfbaebd02c3f19fec01526b/tftest-1.8.3.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [xia-fields]: executing diffoscope
+[2023-04-16 12:12:34] INFO root fetch - processPackages [xia-fields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_fields-0.3.5-cp39-none-win_amd64.whl.zip tmp/xia_fields-0.3.6-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230416/x/xia-fields/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-16 12:12:34] INFO root fetch - processPackages [base-template-cli]: Downloading https://files.pythonhosted.org/packages/55/8c/a5fb57fb70f57afc8d8da8b6bd28ed8596b6a577f64b2dc03a4d82e60037/base_template_cli-3.0.1.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [pandasflow]: Downloading https://files.pythonhosted.org/packages/bb/91/714a7887fccfeb23ab3c1c9a92e6de42c0bad01e7a8911949f0fc0152fa8/pandasflow-0.1.6.tar.gz
+[2023-04-16 12:12:34] INFO root fetch - processPackages [tftest]: executing diffoscope
+[2023-04-16 12:12:34] INFO root fetch - processPackages [tftest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tftest-1.8.2.tar.gz tmp/tftest-1.8.3.tar.gz --markdown 20230416/t/tftest/1.8.2-1.8.3/diff.md --exclude *.pyd
+[2023-04-16 12:12:34] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-16 12:12:34] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.292.0.tar.gz tmp/policyengine-us-0.293.0.tar.gz --markdown 20230416/p/policyengine-us/0.292.0-0.293.0/diff.md --exclude *.pyd
+[2023-04-16 12:12:34] INFO root fetch - processPackages [pandasflow]: executing diffoscope
+[2023-04-16 12:12:34] INFO root fetch - processPackages [pandasflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandasflow-0.1.5.tar.gz tmp/pandasflow-0.1.6.tar.gz --markdown 20230416/p/pandasflow/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-16 12:12:34] INFO root fetch - processPackages [oelint-parser]: executing diffoscope
+[2023-04-16 12:12:34] INFO root fetch - processPackages [oelint-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oelint_parser-2.9.4.tar.gz tmp/oelint_parser-2.9.5.tar.gz --markdown 20230416/o/oelint-parser/2.9.4-2.9.5/diff.md --exclude *.pyd
+[2023-04-16 12:12:34] INFO root fetch - processPackages [base-template-cli]: executing diffoscope
+[2023-04-16 12:12:34] INFO root fetch - processPackages [base-template-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/base_template_cli-3.0.0.tar.gz tmp/base_template_cli-3.0.1.tar.gz --markdown 20230416/b/base-template-cli/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-04-16 12:12:35] INFO root fetch - processPackages [dxsp]: Start processing: xata
+[2023-04-16 12:12:35] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-16 12:12:35] INFO root fetch - processPackages [xata]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-16 12:12:35] INFO root fetch - processPackages [cdxbasics]: Start processing: GrePT
+[2023-04-16 12:12:35] INFO root fetch - main [MainThread]: End processing [cdxbasics]: success
+[2023-04-16 12:12:35] INFO root fetch - processPackages [GrePT]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-16 12:12:35] INFO root fetch - processPackages [GrePT]: executing diffoscope
+[2023-04-16 12:12:35] INFO root fetch - processPackages [GrePT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GrePT-1.0.2.tar.gz tmp/GrePT-1.1.0.tar.gz --markdown 20230416/G/GrePT/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-16 12:12:35] INFO root fetch - processPackages [xata]: Downloading https://files.pythonhosted.org/packages/17/b0/729ba4932ab8b8fe7a551686e2777950bc4f529cadadb87b745d7d0fea19/xata-0.9.1.tar.gz
+[2023-04-16 12:12:36] INFO root fetch - processPackages [xata]: executing diffoscope
+[2023-04-16 12:12:36] INFO root fetch - processPackages [xata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xata-0.9.0.tar.gz tmp/xata-0.9.1.tar.gz --markdown 20230416/x/xata/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-16 12:12:36] INFO root fetch - main [MainThread]: End processing [poocr]: success
+[2023-04-16 12:12:36] INFO root fetch - main [MainThread]: End processing [xia-fields]: success
+[2023-04-16 12:12:36] INFO root fetch - main [MainThread]: End processing [pysymbolcheck]: success
+[2023-04-16 12:12:36] INFO root fetch - main [MainThread]: End processing [oelint-parser]: success
+[2023-04-16 12:12:36] INFO root fetch - main [MainThread]: End processing [pandasflow]: success
+[2023-04-16 12:12:36] INFO root fetch - main [MainThread]: End processing [tftest]: success
+[2023-04-16 12:12:37] INFO root fetch - main [MainThread]: End processing [GrePT]: success
+[2023-04-16 12:12:37] INFO root fetch - main [MainThread]: End processing [xata]: success
+[2023-04-16 12:12:37] INFO root fetch - main [MainThread]: End processing [base-template-cli]: success
+[2023-04-16 12:13:48] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-04-16 12:13:48] INFO root fetch - main [MainThread]: Store serial: [17725947]
