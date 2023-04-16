@@ -2282,3 +2282,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 04:29:49] INFO root fetch - processPackages [monailabel-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monailabel_weekly-0.5.dev2315-py3-none-any.whl.zip tmp/monailabel_weekly-0.5.dev2316-py3-none-any.whl.zip --markdown 20230416/m/monailabel-weekly/0.5.dev2315-0.5.dev2316/diff.md --exclude *.pyd
 [2023-04-16 04:29:57] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
 [2023-04-16 04:29:57] INFO root fetch - main [MainThread]: Store serial: [17723291]
+[2023-04-16 04:35:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723291]
+[2023-04-16 04:35:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-16 04:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: html4quiz
+[2023-04-16 04:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vocode
+[2023-04-16 04:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ledes-parser
+[2023-04-16 04:35:06] INFO root fetch - processPackages [ledes-parser]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-16 04:35:06] INFO root fetch - processPackages [html4quiz]: New version: [0.0.25] Old Version: [0.0.24]
+[2023-04-16 04:35:06] INFO root fetch - processPackages [vocode]: New version: [0.1.95] Old Version: [0.1.94]
+[2023-04-16 04:35:06] INFO root fetch - processPackages [ledes-parser]: Downloading https://files.pythonhosted.org/packages/7e/15/7390971d6ff4f063f7d2767166e602aa1d93c05ca89820018e17efb5bdee/ledes-parser-0.2.2.tar.gz
+[2023-04-16 04:35:06] INFO root fetch - processPackages [vocode]: Downloading https://files.pythonhosted.org/packages/55/f4/6787558215b08ca651c61cdd83c1de36a02abeb3cd4b8aa7078de80364f7/vocode-0.1.95.tar.gz
+[2023-04-16 04:35:06] INFO root fetch - processPackages [html4quiz]: Downloading https://files.pythonhosted.org/packages/e3/50/3509289b977bea404ac9cf3ab35a4b5574791a95d9757ccd2fe1c9562173/html4quiz-0.0.25.tar.gz
+[2023-04-16 04:35:07] INFO root fetch - processPackages [ledes-parser]: Downloading https://files.pythonhosted.org/packages/dd/83/2a8a5a8c59b4852c6293a405e4cf203b4560fe7bdc64779b1b1f1facd070/ledes-parser-0.2.3.tar.gz
+[2023-04-16 04:35:07] INFO root fetch - processPackages [html4quiz]: executing diffoscope
+[2023-04-16 04:35:07] INFO root fetch - processPackages [html4quiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html4quiz-0.0.24.tar.gz tmp/html4quiz-0.0.25.tar.gz --markdown 20230416/h/html4quiz/0.0.24-0.0.25/diff.md --exclude *.pyd
+[2023-04-16 04:35:07] INFO root fetch - processPackages [ledes-parser]: executing diffoscope
+[2023-04-16 04:35:07] INFO root fetch - processPackages [ledes-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ledes-parser-0.2.2.tar.gz tmp/ledes-parser-0.2.3.tar.gz --markdown 20230416/l/ledes-parser/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-16 04:35:07] INFO root fetch - processPackages [vocode]: executing diffoscope
+[2023-04-16 04:35:07] INFO root fetch - processPackages [vocode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocode-0.1.94.tar.gz tmp/vocode-0.1.95.tar.gz --markdown 20230416/v/vocode/0.1.94-0.1.95/diff.md --exclude *.pyd
+[2023-04-16 04:35:08] INFO root fetch - main [MainThread]: End processing [html4quiz]: success
+[2023-04-16 04:35:08] INFO root fetch - main [MainThread]: End processing [ledes-parser]: success
+[2023-04-16 04:35:09] INFO root fetch - main [MainThread]: End processing [vocode]: success
+[2023-04-16 04:35:09] INFO root fetch - main [MainThread]: Store serial: [17723301]
