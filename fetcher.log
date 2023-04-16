@@ -4184,3 +4184,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 09:06:42] INFO root fetch - main [MainThread]: End processing [mlrun]: success
 [2023-04-16 09:06:48] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2023-04-16 09:06:48] INFO root fetch - main [MainThread]: Store serial: [17724401]
+[2023-04-16 09:11:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724401]
+[2023-04-16 09:11:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 09:11:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qdls
+[2023-04-16 09:11:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-hub-nightly
+[2023-04-16 09:11:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfollower
+[2023-04-16 09:11:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SrbAI
+[2023-04-16 09:11:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lctutil
+[2023-04-16 09:11:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tfq-nightly
+[2023-04-16 09:11:56] WARNING root fetch - processPackages [qdls]: Skipping, unable to determine old version
+[2023-04-16 09:11:56] INFO root fetch - main [MainThread]: End processing [qdls] error
+[2023-04-16 09:11:56] INFO root fetch - processPackages [SrbAI]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-16 09:11:56] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-04-16 09:11:56] INFO root fetch - processPackages [lctutil]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 09:11:56] WARNING root fetch - processPackages [pyfollower]: Skipping, unable to determine old version
+[2023-04-16 09:11:56] INFO root fetch - main [MainThread]: End processing [pyfollower] error
+[2023-04-16 09:11:56] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230415] Old Version: [0.7.3.dev20230414]
+[2023-04-16 09:11:56] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/15/5c/773135ae3970e070209059376479693ebe11327af8907d4405030d133585/tfq_nightly-0.7.3.dev20230414-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-16 09:11:56] INFO root fetch - processPackages [lctutil]: executing diffoscope
+[2023-04-16 09:11:56] INFO root fetch - processPackages [lctutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lctutil-0.1.0.tar.gz tmp/lctutil-0.2.0.tar.gz --markdown 20230416/l/lctutil/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 09:11:57] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-04-16 09:11:57] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230416/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-04-16 09:11:57] INFO root fetch - processPackages [SrbAI]: Downloading https://files.pythonhosted.org/packages/f5/66/4c200148965ae434c0f09407f26b4902794f436a6c4c283e3db1ed747af1/SrbAI-0.0.3.tar.gz
+[2023-04-16 09:11:57] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819850>=10485760
+[2023-04-16 09:11:57] INFO root fetch - main [MainThread]: End processing [tfq-nightly] error
+[2023-04-16 09:11:57] INFO root fetch - processPackages [SrbAI]: Downloading https://files.pythonhosted.org/packages/43/0d/594d8814b703367e86c78af6ebac28e43b11eea9e01c43c5fb4f6844b259/SrbAI-0.0.4.tar.gz
+[2023-04-16 09:11:57] INFO root fetch - processPackages [SrbAI]: executing diffoscope
+[2023-04-16 09:11:57] INFO root fetch - processPackages [SrbAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SrbAI-0.0.3.tar.gz tmp/SrbAI-0.0.4.tar.gz --markdown 20230416/S/SrbAI/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-16 09:11:57] INFO root fetch - main [MainThread]: End processing [lctutil]: success
+[2023-04-16 09:11:57] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-04-16 09:11:58] INFO root fetch - main [MainThread]: End processing [SrbAI]: success
+[2023-04-16 09:11:58] INFO root fetch - main [MainThread]: Store serial: [17724422]
