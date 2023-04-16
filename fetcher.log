@@ -14197,3 +14197,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 23:24:46] INFO root fetch - main [MainThread]: End processing [pymarkdownlnt]: success
 [2023-04-16 23:24:47] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
 [2023-04-16 23:24:47] INFO root fetch - main [MainThread]: Store serial: [17730325]
+[2023-04-16 23:29:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17730325]
+[2023-04-16 23:29:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 23:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sabledocs
+[2023-04-16 23:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prettyqt
+[2023-04-16 23:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sabledocs
+[2023-04-16 23:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jaxrie
+[2023-04-16 23:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyunifiprotect
+[2023-04-16 23:29:57] INFO root fetch - processPackages [jaxrie]: New version: [9] Old Version: [8]
+[2023-04-16 23:29:57] INFO root fetch - processPackages [sabledocs]: New version: [0.1.84] Old Version: [0.1.80]
+[2023-04-16 23:29:57] INFO root fetch - processPackages [jaxrie]: executing diffoscope
+[2023-04-16 23:29:57] INFO root fetch - processPackages [jaxrie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxrie-8.tar.gz tmp/jaxrie-9.tar.gz --markdown 20230416/j/jaxrie/8-9/diff.md --exclude *.pyd
+[2023-04-16 23:29:57] INFO root fetch - processPackages [prettyqt]: New version: [1.6.0] Old Version: [1.5.0]
+[2023-04-16 23:29:57] INFO root fetch - processPackages [sabledocs]: New version: [0.1.88] Old Version: [0.1.84]
+[2023-04-16 23:29:57] INFO root fetch - processPackages [pyunifiprotect]: New version: [4.8.0] Old Version: [4.7.0]
+[2023-04-16 23:29:57] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/e0/c4/365694a0efc689ec633e5ed55a17b4e72b3314de989609bca5c2f8ed0764/sabledocs-0.1.80.tar.gz
+[2023-04-16 23:29:57] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/57/ac/6a0c36db372a8a21bae24dff99054cd13a944d8f50a1955525a83666e106/sabledocs-0.1.84.tar.gz
+[2023-04-16 23:29:57] INFO root fetch - processPackages [pyunifiprotect]: Downloading https://files.pythonhosted.org/packages/65/0c/245a62078c7d7a09d4f5ae810a10c7cc7bf8161965e08ac05a6eea2490c2/pyunifiprotect-4.7.0.tar.gz
+[2023-04-16 23:29:57] INFO root fetch - processPackages [prettyqt]: Downloading https://files.pythonhosted.org/packages/cb/02/7001d37e7c59e922ab5c991020a7c4131d9c785228d39e55dea8415cf4a1/prettyqt-1.6.0.tar.gz
+[2023-04-16 23:29:57] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-16 23:29:57] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.80.tar.gz tmp/sabledocs-0.1.84.tar.gz --markdown 20230416/s/sabledocs/0.1.80-0.1.84/diff.md --exclude *.pyd
+[2023-04-16 23:29:57] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/8e/ae/e0ae17426ff09189c236a0152254fa37f3fbb75900b2c0aec67a36186550/sabledocs-0.1.88.tar.gz
+[2023-04-16 23:29:58] INFO root fetch - processPackages [pyunifiprotect]: Downloading https://files.pythonhosted.org/packages/57/33/744954c10a039d2cbf561a05d97faf04feac2050c9fd38147ffdc3db1c05/pyunifiprotect-4.8.0.tar.gz
+[2023-04-16 23:29:58] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-16 23:29:58] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.84.tar.gz tmp/sabledocs-0.1.88.tar.gz --markdown 20230416/s/sabledocs/0.1.84-0.1.88/diff.md --exclude *.pyd
+[2023-04-16 23:29:58] INFO root fetch - processPackages [pyunifiprotect]: executing diffoscope
+[2023-04-16 23:29:58] INFO root fetch - processPackages [pyunifiprotect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyunifiprotect-4.7.0.tar.gz tmp/pyunifiprotect-4.8.0.tar.gz --markdown 20230416/p/pyunifiprotect/4.7.0-4.8.0/diff.md --exclude *.pyd
+[2023-04-16 23:29:58] INFO root fetch - processPackages [prettyqt]: executing diffoscope
+[2023-04-16 23:29:58] INFO root fetch - processPackages [prettyqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettyqt-1.5.0.tar.gz tmp/prettyqt-1.6.0.tar.gz --markdown 20230416/p/prettyqt/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2023-04-16 23:29:58] INFO root fetch - main [MainThread]: End processing [jaxrie]: success
+[2023-04-16 23:29:59] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-16 23:29:59] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-16 23:30:00] INFO root fetch - main [MainThread]: End processing [pyunifiprotect]: success
+[2023-04-16 23:30:05] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
+[2023-04-16 23:30:05] INFO root fetch - main [MainThread]: Store serial: [17730340]
