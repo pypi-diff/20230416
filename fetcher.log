@@ -13902,3 +13902,76 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 22:57:39] INFO root fetch - main [MainThread]: End processing [astroid]: success
 [2023-04-16 22:58:12] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-04-16 22:58:12] INFO root fetch - main [MainThread]: Store serial: [17730190]
+[2023-04-16 23:03:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17730190]
+[2023-04-16 23:03:20] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-16 23:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nif-dumper
+[2023-04-16 23:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ocr-ops
+[2023-04-16 23:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llama-inference
+[2023-04-16 23:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ib110hw
+[2023-04-16 23:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: georise
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: textadventure
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mongomock-motor
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: oauthAPImojang
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: edc-pdutils
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cagen
+[2023-04-16 23:03:21] INFO root fetch - processPackages [nif-dumper]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 23:03:21] INFO root fetch - processPackages [georise]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ocr-ops]: New version: [0.0.0.4.2.5] Old Version: [0.0.0.4.2.4]
+[2023-04-16 23:03:21] INFO root fetch - processPackages [llama-inference]: New version: [0.0.2.post1] Old Version: [0.0.2]
+[2023-04-16 23:03:21] INFO root fetch - processPackages [mongomock-motor]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 23:03:21] INFO root fetch - processPackages [oauthAPImojang]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ib110hw]: New version: [0.1.0] Old Version: [0.0.6]
+[2023-04-16 23:03:21] INFO root fetch - processPackages [textadventure]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-16 23:03:21] INFO root fetch - processPackages [cagen]: New version: [0.2.0a3] Old Version: [0.2.0a2]
+[2023-04-16 23:03:21] INFO root fetch - processPackages [edc-pdutils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-16 23:03:21] INFO root fetch - processPackages [cagen]: executing diffoscope
+[2023-04-16 23:03:21] INFO root fetch - processPackages [cagen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cagen-0.2.0a2.tar.gz tmp/cagen-0.2.0a3.tar.gz --markdown 20230416/c/cagen/0.2.0a2-0.2.0a3/diff.md --exclude *.pyd
+[2023-04-16 23:03:21] INFO root fetch - processPackages [mongomock-motor]: Downloading https://files.pythonhosted.org/packages/f1/c2/2229a441be05bf7504619796f5e75c2ca6edfae90af06c946a72d8c72d70/mongomock_motor-0.0.8.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ib110hw]: Downloading https://files.pythonhosted.org/packages/ca/6c/d520d16e3e3774199e46703fefd50a3169d9db2eff6036b96bd7f9fd33c4/ib110hw-0.0.6.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [nif-dumper]: Downloading https://files.pythonhosted.org/packages/95/4b/680fc42789ab89e15fcd5b8a5bd929bae4b923c531d2e0b14a2f775f3c06/nif-dumper-1.0.1.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [georise]: Downloading https://files.pythonhosted.org/packages/87/48/67fd54c86d2b14860b329126394872ac2ba6f35a64ab34a855cbe87b321e/georise-0.0.1.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [oauthAPImojang]: Downloading https://files.pythonhosted.org/packages/94/e5/5fc21e539ac0027f1fbbe06a601d49e3f157912fddb38e42873cc4ca432f/oauthAPImojang-0.2.9.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ocr-ops]: Downloading https://files.pythonhosted.org/packages/24/fc/360b9be6d0e47c0e54846c5f7d82535547fdea7a525d8cb81f67b3b4b03d/ocr-ops-0.0.0.4.2.4.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [textadventure]: Downloading https://files.pythonhosted.org/packages/7b/e8/842b348784a9f3a28aef401c428e0644fa307e980e7d033ce8419a4ea4ee/textadventure-0.0.4.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [llama-inference]: Downloading https://files.pythonhosted.org/packages/61/88/a530f9014f6b1103f3b3fa563527dfa81880cc4eb8b5d28ff1a8ff706051/llama_inference-0.0.2.post1.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [textadventure]: executing diffoscope
+[2023-04-16 23:03:21] INFO root fetch - processPackages [textadventure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textadventure-0.0.3.tar.gz tmp/textadventure-0.0.4.tar.gz --markdown 20230416/t/textadventure/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-16 23:03:21] INFO root fetch - processPackages [llama-inference]: executing diffoscope
+[2023-04-16 23:03:21] INFO root fetch - processPackages [llama-inference]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_inference-0.0.2.tar.gz tmp/llama_inference-0.0.2.post1.tar.gz --markdown 20230416/l/llama-inference/0.0.2-0.0.2.post1/diff.md --exclude *.pyd
+[2023-04-16 23:03:21] INFO root fetch - processPackages [oauthAPImojang]: executing diffoscope
+[2023-04-16 23:03:21] INFO root fetch - processPackages [oauthAPImojang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oauthAPImojang-0.2.8.tar.gz tmp/oauthAPImojang-0.2.9.tar.gz --markdown 20230416/o/oauthAPImojang/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-16 23:03:21] INFO root fetch - processPackages [georise]: Downloading https://files.pythonhosted.org/packages/bf/e0/7de0f96bac4977da5e0cccdd05423f9fc28a099a811be348c6ae9c9b7542/georise-0.0.2.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ocr-ops]: Downloading https://files.pythonhosted.org/packages/74/d9/addeb92de007341834f32394c43a5ed0be3d0ec59985a2c124b8a605b680/ocr-ops-0.0.0.4.2.5.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [edc-pdutils]: Downloading https://files.pythonhosted.org/packages/ac/92/c41cc262cff276e79b8cc3813b19bcf9131456c1d51710f77276875aa803/edc-pdutils-0.3.8.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [mongomock-motor]: Downloading https://files.pythonhosted.org/packages/f1/7f/6e0a504df18fa6cf757242a9c6d70b10e0fa916a02990d65a7fba92cf922/mongomock_motor-0.0.9.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ib110hw]: Downloading https://files.pythonhosted.org/packages/ab/e5/ba315d0975aa764b674ecacd5dc9f28e73b2f1082fdecfd382f1d0bf8f4b/ib110hw-0.1.0.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [georise]: executing diffoscope
+[2023-04-16 23:03:21] INFO root fetch - processPackages [georise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/georise-0.0.1.tar.gz tmp/georise-0.0.2.tar.gz --markdown 20230416/g/georise/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 23:03:21] INFO root fetch - processPackages [nif-dumper]: Downloading https://files.pythonhosted.org/packages/a2/85/f442d9f28c6a81976863b47f233a58477f3969821b6c1f73b2882b12a54f/nif-dumper-1.0.2.tar.gz
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ocr-ops]: executing diffoscope
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ocr-ops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocr-ops-0.0.0.4.2.4.tar.gz tmp/ocr-ops-0.0.0.4.2.5.tar.gz --markdown 20230416/o/ocr-ops/0.0.0.4.2.4-0.0.0.4.2.5/diff.md --exclude *.pyd
+[2023-04-16 23:03:21] INFO root fetch - processPackages [mongomock-motor]: executing diffoscope
+[2023-04-16 23:03:21] INFO root fetch - processPackages [mongomock-motor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongomock_motor-0.0.8.tar.gz tmp/mongomock_motor-0.0.9.tar.gz --markdown 20230416/m/mongomock-motor/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ib110hw]: executing diffoscope
+[2023-04-16 23:03:21] INFO root fetch - processPackages [ib110hw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ib110hw-0.0.6.tar.gz tmp/ib110hw-0.1.0.tar.gz --markdown 20230416/i/ib110hw/0.0.6-0.1.0/diff.md --exclude *.pyd
+[2023-04-16 23:03:21] INFO root fetch - processPackages [nif-dumper]: executing diffoscope
+[2023-04-16 23:03:21] INFO root fetch - processPackages [nif-dumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nif-dumper-1.0.1.tar.gz tmp/nif-dumper-1.0.2.tar.gz --markdown 20230416/n/nif-dumper/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 23:03:21] INFO root fetch - processPackages [edc-pdutils]: Downloading https://files.pythonhosted.org/packages/b4/3d/d7a4580ab240013e057e0ed96a7fafca5197d37130b9896166ea0d9cc200/edc-pdutils-0.3.9.tar.gz
+[2023-04-16 23:03:22] INFO root fetch - processPackages [edc-pdutils]: executing diffoscope
+[2023-04-16 23:03:22] INFO root fetch - processPackages [edc-pdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-pdutils-0.3.8.tar.gz tmp/edc-pdutils-0.3.9.tar.gz --markdown 20230416/e/edc-pdutils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-16 23:03:22] INFO root fetch - processPackages [textadventure]: Start processing: pygpt-net
+[2023-04-16 23:03:22] INFO root fetch - main [MainThread]: End processing [textadventure]: success
+[2023-04-16 23:03:22] INFO root fetch - processPackages [pygpt-net]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-16 23:03:22] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2023-04-16 23:03:22] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt-net-0.9.4.tar.gz tmp/pygpt-net-0.9.5.tar.gz --markdown 20230416/p/pygpt-net/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-16 23:03:22] INFO root fetch - main [MainThread]: End processing [cagen]: success
+[2023-04-16 23:03:23] INFO root fetch - main [MainThread]: End processing [oauthAPImojang]: success
+[2023-04-16 23:03:23] INFO root fetch - main [MainThread]: End processing [llama-inference]: success
+[2023-04-16 23:03:23] INFO root fetch - main [MainThread]: End processing [mongomock-motor]: success
+[2023-04-16 23:03:23] INFO root fetch - main [MainThread]: End processing [nif-dumper]: success
+[2023-04-16 23:03:23] INFO root fetch - main [MainThread]: End processing [georise]: success
+[2023-04-16 23:03:23] INFO root fetch - main [MainThread]: End processing [ib110hw]: success
+[2023-04-16 23:03:24] INFO root fetch - main [MainThread]: End processing [ocr-ops]: success
+[2023-04-16 23:03:24] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2023-04-16 23:03:24] INFO root fetch - main [MainThread]: End processing [edc-pdutils]: success
+[2023-04-16 23:03:24] INFO root fetch - main [MainThread]: Store serial: [17730224]
