@@ -12387,3 +12387,78 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 20:10:16] INFO root fetch - main [MainThread]: End processing [pyds-cli]: success
 [2023-04-16 20:10:17] INFO root fetch - main [MainThread]: End processing [jupyterlab-code-formatter]: success
 [2023-04-16 20:10:17] INFO root fetch - main [MainThread]: Store serial: [17729257]
+[2023-04-16 20:15:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729257]
+[2023-04-16 20:15:25] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-16 20:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: telescope-sdk
+[2023-04-16 20:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pip_and_pip_tools
+[2023-04-16 20:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyds-cli
+[2023-04-16 20:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: latex-ml-helper
+[2023-04-16 20:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: blaster-server
+[2023-04-16 20:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: simpleworkspace
+[2023-04-16 20:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: terraformation
+[2023-04-16 20:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: paper-admin
+[2023-04-16 20:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tator
+[2023-04-16 20:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyapikey
+[2023-04-16 20:15:25] INFO root fetch - processPackages [pip_and_pip_tools]: New version: [6.6.2] Old Version: [6.13.0]
+[2023-04-16 20:15:25] INFO root fetch - processPackages [telescope-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 20:15:25] INFO root fetch - processPackages [pyapikey]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-16 20:15:25] INFO root fetch - processPackages [blaster-server]: New version: [0.0.425] Old Version: [0.0.424b0]
+[2023-04-16 20:15:25] INFO root fetch - processPackages [pyds-cli]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-16 20:15:25] WARNING root fetch - processPackages [terraformation]: Skipping, unable to determine old version
+[2023-04-16 20:15:25] INFO root fetch - processPackages [latex-ml-helper]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 20:15:25] INFO root fetch - processPackages [terraformation]: Start processing: pyawskit
+[2023-04-16 20:15:25] INFO root fetch - main [MainThread]: End processing [terraformation] error
+[2023-04-16 20:15:25] INFO root fetch - processPackages [tator]: New version: [1.0.0] Old Version: [0.9.6]
+[2023-04-16 20:15:25] INFO root fetch - processPackages [simpleworkspace]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-04-16 20:15:25] INFO root fetch - processPackages [paper-admin]: New version: [6.0.0rc2] Old Version: [6.0.0rc1]
+[2023-04-16 20:15:25] INFO root fetch - processPackages [pyawskit]: New version: [0.1.65] Old Version: [0.1.64]
+[2023-04-16 20:15:25] INFO root fetch - processPackages [pyawskit]: executing diffoscope
+[2023-04-16 20:15:25] INFO root fetch - processPackages [pyawskit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyawskit-0.1.64.tar.gz tmp/pyawskit-0.1.65.tar.gz --markdown 20230416/p/pyawskit/0.1.64-0.1.65/diff.md --exclude *.pyd
+[2023-04-16 20:15:25] INFO root fetch - processPackages [pip_and_pip_tools]: Downloading https://files.pythonhosted.org/packages/88/91/27e5644b2c026a2b5c71d4fc623bbc53dc19f928adfb3646509a7e2d2c57/pip_and_pip_tools-6.13.0.tar.gz
+[2023-04-16 20:15:25] INFO root fetch - processPackages [blaster-server]: Downloading https://files.pythonhosted.org/packages/b7/35/ccb5a450c123ec81410b857834c2560f49443e321f87eb39c5c3e11f351d/blaster-server-0.0.424b0.tar.gz
+[2023-04-16 20:15:25] INFO root fetch - processPackages [tator]: Downloading https://files.pythonhosted.org/packages/1d/84/7ae04b9ce035f783afcc3071ffda4c79b53d9e2ffa389b9b7a55d3bb1bd6/tator-0.9.6.tar.gz
+[2023-04-16 20:15:25] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2023-04-16 20:15:25] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleWorkspace-1.1.98-py3-none-any.whl.zip tmp/SimpleWorkspace-1.1.99-py3-none-any.whl.zip --markdown 20230416/s/simpleworkspace/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-04-16 20:15:26] INFO root fetch - processPackages [telescope-sdk]: Downloading https://files.pythonhosted.org/packages/54/a7/775080f9207b9b2addc9ec2bad02d9935f1341c8f2a1e5872ce9322753cc/telescope_sdk-0.1.8.tar.gz
+[2023-04-16 20:15:26] INFO root fetch - processPackages [pyds-cli]: Downloading https://files.pythonhosted.org/packages/37/24/064c9bef79aa0c59122f259ccc495e1a47793a5cc1876f8e479a67c5b78d/pyds-cli-0.1.6.tar.gz
+[2023-04-16 20:15:26] INFO root fetch - processPackages [latex-ml-helper]: Downloading https://files.pythonhosted.org/packages/b0/d1/abae0220fa651aa66de53b2ee8216d0031b8a0ac38cb8422e4f28b08e65c/latex_ml_helper-0.0.3.tar.gz
+[2023-04-16 20:15:26] INFO root fetch - processPackages [paper-admin]: Downloading https://files.pythonhosted.org/packages/79/8a/98a915f34e9561e8d603d7d143a6062b642cd18f917022fd5e3b4c567b6c/paper-admin-6.0.0rc2.tar.gz
+[2023-04-16 20:15:26] INFO root fetch - processPackages [pyds-cli]: executing diffoscope
+[2023-04-16 20:15:26] INFO root fetch - processPackages [pyds-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyds-cli-0.1.5.tar.gz tmp/pyds-cli-0.1.6.tar.gz --markdown 20230416/p/pyds-cli/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-16 20:15:26] INFO root fetch - processPackages [latex-ml-helper]: executing diffoscope
+[2023-04-16 20:15:26] INFO root fetch - processPackages [latex-ml-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latex_ml_helper-0.0.2.tar.gz tmp/latex_ml_helper-0.0.3.tar.gz --markdown 20230416/l/latex-ml-helper/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 20:15:26] INFO root fetch - processPackages [pyapikey]: Downloading https://files.pythonhosted.org/packages/da/31/cbdc8ce30dbadfc08a0236076fd181fd33111d7a69db4728e87b535e019a/pyapikey-0.0.8.tar.gz
+[2023-04-16 20:15:26] INFO root fetch - processPackages [pip_and_pip_tools]: Downloading https://files.pythonhosted.org/packages/d1/ab/e5892c23c17dc2c55392186e0cb21a71f1b3acb0d8210ab5575daaf5d532/pip_and_pip_tools-6.6.2.tar.gz
+[2023-04-16 20:15:26] INFO root fetch - processPackages [pyapikey]: executing diffoscope
+[2023-04-16 20:15:26] INFO root fetch - processPackages [pyapikey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyapikey-0.0.7.tar.gz tmp/pyapikey-0.0.8.tar.gz --markdown 20230416/p/pyapikey/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-16 20:15:26] INFO root fetch - processPackages [blaster-server]: Downloading https://files.pythonhosted.org/packages/e3/a6/df2f14c79b8c850a49b269e2e6e68e36cb45974d4985e6c0063b76f73a7f/blaster-server-0.0.425.tar.gz
+[2023-04-16 20:15:26] INFO root fetch - processPackages [telescope-sdk]: Downloading https://files.pythonhosted.org/packages/0a/bb/38861a90d251e67f2517742bb238c8e3c1fcddda5f965901c92e3e9a1b3d/telescope_sdk-0.1.9.tar.gz
+[2023-04-16 20:15:26] INFO root fetch - processPackages [blaster-server]: executing diffoscope
+[2023-04-16 20:15:26] INFO root fetch - processPackages [blaster-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blaster-server-0.0.424b0.tar.gz tmp/blaster-server-0.0.425.tar.gz --markdown 20230416/b/blaster-server/0.0.424b0-0.0.425/diff.md --exclude *.pyd
+[2023-04-16 20:15:26] INFO root fetch - processPackages [telescope-sdk]: executing diffoscope
+[2023-04-16 20:15:26] INFO root fetch - processPackages [telescope-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telescope_sdk-0.1.8.tar.gz tmp/telescope_sdk-0.1.9.tar.gz --markdown 20230416/t/telescope-sdk/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 20:15:26] INFO root fetch - processPackages [tator]: Downloading https://files.pythonhosted.org/packages/23/2b/64dd96d711327aaf4aa0c9e23023d6a8d44c36afd1d968460e5f18270638/tator-1.0.0.tar.gz
+[2023-04-16 20:15:26] INFO root fetch - processPackages [paper-admin]: executing diffoscope
+[2023-04-16 20:15:26] INFO root fetch - processPackages [paper-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-admin-6.0.0rc1.tar.gz tmp/paper-admin-6.0.0rc2.tar.gz --markdown 20230416/p/paper-admin/6.0.0rc1-6.0.0rc2/diff.md --exclude *.pyd
+[2023-04-16 20:15:26] INFO root fetch - processPackages [pip_and_pip_tools]: executing diffoscope
+[2023-04-16 20:15:26] INFO root fetch - processPackages [pip_and_pip_tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip_and_pip_tools-6.13.0.tar.gz tmp/pip_and_pip_tools-6.6.2.tar.gz --markdown 20230416/p/pip_and_pip_tools/6.13.0-6.6.2/diff.md --exclude *.pyd
+[2023-04-16 20:15:26] INFO root fetch - processPackages [tator]: executing diffoscope
+[2023-04-16 20:15:26] INFO root fetch - processPackages [tator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tator-0.9.6.tar.gz tmp/tator-1.0.0.tar.gz --markdown 20230416/t/tator/0.9.6-1.0.0/diff.md --exclude *.pyd
+[2023-04-16 20:15:27] INFO root fetch - processPackages [pyawskit]: Start processing: socketmap-sql
+[2023-04-16 20:15:27] INFO root fetch - main [MainThread]: End processing [pyawskit]: success
+[2023-04-16 20:15:27] INFO root fetch - processPackages [socketmap-sql]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 20:15:27] INFO root fetch - main [MainThread]: End processing [latex-ml-helper]: success
+[2023-04-16 20:15:27] INFO root fetch - main [MainThread]: End processing [simpleworkspace]: success
+[2023-04-16 20:15:27] INFO root fetch - processPackages [socketmap-sql]: Downloading https://files.pythonhosted.org/packages/70/ad/b0171b23444ff5c9b9ff7f7c658b8e2f27777b8292719093dc987a6508ba/socketmap_sql-0.1.0-py3-none-any.whl
+[2023-04-16 20:15:27] INFO root fetch - main [MainThread]: End processing [pyapikey]: success
+[2023-04-16 20:15:27] INFO root fetch - main [MainThread]: End processing [pyds-cli]: success
+[2023-04-16 20:15:28] INFO root fetch - processPackages [socketmap-sql]: Downloading https://files.pythonhosted.org/packages/d8/b8/26b189e746f2a35faaba6da68b54c39fbbca65d510423284e35d07aa3ebd/socketmap-sql-0.2.0.tar.gz
+[2023-04-16 20:15:28] INFO root fetch - main [MainThread]: End processing [telescope-sdk]: success
+[2023-04-16 20:15:28] INFO root fetch - main [MainThread]: End processing [pip_and_pip_tools]: success
+[2023-04-16 20:15:28] INFO root fetch - main [MainThread]: End processing [blaster-server]: success
+[2023-04-16 20:15:28] INFO root fetch - processPackages [socketmap-sql]: executing diffoscope
+[2023-04-16 20:15:28] INFO root fetch - processPackages [socketmap-sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socketmap_sql-0.1.0-py3-none-any.whl.zip tmp/socketmap-sql-0.2.0.tar.gz --markdown 20230416/s/socketmap-sql/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 20:15:28] INFO root fetch - main [MainThread]: End processing [socketmap-sql]: success
+[2023-04-16 20:15:29] INFO root fetch - main [MainThread]: End processing [paper-admin]: success
+[2023-04-16 20:15:30] INFO root fetch - main [MainThread]: End processing [tator]: success
+[2023-04-16 20:15:30] INFO root fetch - main [MainThread]: Store serial: [17729295]
