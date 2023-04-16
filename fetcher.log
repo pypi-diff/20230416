@@ -13328,3 +13328,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 21:49:51] INFO root fetch - main [MainThread]: End processing [nsk-backupr]: success
 [2023-04-16 21:49:51] INFO root fetch - main [MainThread]: End processing [nsk-backupr]: success
 [2023-04-16 21:49:51] INFO root fetch - main [MainThread]: Store serial: [17729784]
+[2023-04-16 21:54:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729784]
+[2023-04-16 21:55:01] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 21:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beam-ds
+[2023-04-16 21:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beam-ds
+[2023-04-16 21:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beam-ds
+[2023-04-16 21:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MinecraftSkyblockAPI
+[2023-04-16 21:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crcengine
+[2023-04-16 21:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: skatepark-lib
+[2023-04-16 21:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fastapi-all-out
+[2023-04-16 21:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aihandler
+[2023-04-16 21:55:01] INFO root fetch - processPackages [beam-ds]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-16 21:55:01] INFO root fetch - processPackages [fastapi-all-out]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-16 21:55:01] INFO root fetch - processPackages [beam-ds]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-16 21:55:01] INFO root fetch - processPackages [skatepark-lib]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-16 21:55:01] INFO root fetch - processPackages [beam-ds]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-16 21:55:01] INFO root fetch - processPackages [aihandler]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-04-16 21:55:01] WARNING root fetch - processPackages [MinecraftSkyblockAPI]: Skipping, unable to determine old version
+[2023-04-16 21:55:01] INFO root fetch - main [MainThread]: End processing [MinecraftSkyblockAPI] error
+[2023-04-16 21:55:01] INFO root fetch - processPackages [crcengine]: New version: [0.4a2] Old Version: [0.4.0]
+[2023-04-16 21:55:01] INFO root fetch - processPackages [fastapi-all-out]: executing diffoscope
+[2023-04-16 21:55:01] INFO root fetch - processPackages [fastapi-all-out]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_all_out-0.2.1.tar.gz tmp/fastapi_all_out-0.2.2.tar.gz --markdown 20230416/f/fastapi-all-out/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-16 21:55:01] INFO root fetch - processPackages [aihandler]: executing diffoscope
+[2023-04-16 21:55:01] INFO root fetch - processPackages [aihandler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aihandler-1.9.2.tar.gz tmp/aihandler-1.9.3.tar.gz --markdown 20230416/a/aihandler/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-04-16 21:55:01] INFO root fetch - processPackages [beam-ds]: Downloading https://files.pythonhosted.org/packages/1c/4e/ec4b47d563d10fd93459564c5a7afbbd801a3bb9e37277f9ee4193abc940/beam-ds-2.0.1.tar.gz
+[2023-04-16 21:55:01] INFO root fetch - processPackages [beam-ds]: Downloading https://files.pythonhosted.org/packages/1c/4e/ec4b47d563d10fd93459564c5a7afbbd801a3bb9e37277f9ee4193abc940/beam-ds-2.0.1.tar.gz
+[2023-04-16 21:55:01] INFO root fetch - processPackages [beam-ds]: Downloading https://files.pythonhosted.org/packages/1c/4e/ec4b47d563d10fd93459564c5a7afbbd801a3bb9e37277f9ee4193abc940/beam-ds-2.0.1.tar.gz
+[2023-04-16 21:55:01] INFO root fetch - processPackages [crcengine]: Downloading https://files.pythonhosted.org/packages/dc/de/54cb2d3c7f74b259c7af49e97315bc796191b6512edd5a6aa43e8fcc8a79/crcengine-0.4.0.tar.gz
+[2023-04-16 21:55:01] INFO root fetch - processPackages [skatepark-lib]: executing diffoscope
+[2023-04-16 21:55:01] INFO root fetch - processPackages [skatepark-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skatepark_lib-0.9.0.tar.gz tmp/skatepark_lib-0.9.1.tar.gz --markdown 20230416/s/skatepark-lib/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-16 21:55:01] INFO root fetch - processPackages [crcengine]: executing diffoscope
+[2023-04-16 21:55:01] INFO root fetch - processPackages [crcengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crcengine-0.4.0.tar.gz tmp/crcengine-0.4a2.tar.gz --markdown 20230416/c/crcengine/0.4.0-0.4a2/diff.md --exclude *.pyd
+[2023-04-16 21:55:01] INFO root fetch - processPackages [beam-ds]: Downloading https://files.pythonhosted.org/packages/2e/ec/3c29ee254a37624dbc3288021216bd3255aa4475b0b12163fc9b4c6cfbd7/beam-ds-2.0.2.tar.gz
+[2023-04-16 21:55:01] INFO root fetch - processPackages [beam-ds]: Downloading https://files.pythonhosted.org/packages/2e/ec/3c29ee254a37624dbc3288021216bd3255aa4475b0b12163fc9b4c6cfbd7/beam-ds-2.0.2.tar.gz
+[2023-04-16 21:55:01] INFO root fetch - processPackages [beam-ds]: Downloading https://files.pythonhosted.org/packages/2e/ec/3c29ee254a37624dbc3288021216bd3255aa4475b0b12163fc9b4c6cfbd7/beam-ds-2.0.2.tar.gz
+[2023-04-16 21:55:02] INFO root fetch - processPackages [beam-ds]: executing diffoscope
+[2023-04-16 21:55:02] INFO root fetch - processPackages [beam-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beam-ds-2.0.1.tar.gz tmp/beam-ds-2.0.2.tar.gz --markdown 20230416/b/beam-ds/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-16 21:55:02] INFO root fetch - processPackages [beam-ds]: executing diffoscope
+[2023-04-16 21:55:02] INFO root fetch - processPackages [beam-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beam-ds-2.0.1.tar.gz tmp/beam-ds-2.0.2.tar.gz --markdown 20230416/b/beam-ds/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-16 21:55:02] INFO root fetch - processPackages [beam-ds]: executing diffoscope
+[2023-04-16 21:55:02] INFO root fetch - processPackages [beam-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beam-ds-2.0.1.tar.gz tmp/beam-ds-2.0.2.tar.gz --markdown 20230416/b/beam-ds/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-16 21:55:02] INFO root fetch - main [MainThread]: End processing [crcengine]: success
+[2023-04-16 21:55:03] INFO root fetch - main [MainThread]: End processing [aihandler]: success
+[2023-04-16 21:55:03] INFO root fetch - main [MainThread]: End processing [fastapi-all-out]: success
+[2023-04-16 21:55:03] INFO root fetch - main [MainThread]: End processing [skatepark-lib]: success
+[2023-04-16 21:55:03] INFO root fetch - main [MainThread]: End processing [beam-ds]: success
+[2023-04-16 21:55:03] INFO root fetch - main [MainThread]: End processing [beam-ds]: success
+[2023-04-16 21:55:03] INFO root fetch - main [MainThread]: End processing [beam-ds]: success
+[2023-04-16 21:55:03] INFO root fetch - main [MainThread]: Store serial: [17729809]
