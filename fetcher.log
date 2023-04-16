@@ -1421,3 +1421,41 @@
 [2023-04-16 02:34:05] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230416/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
 [2023-04-16 02:34:07] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
 [2023-04-16 02:34:07] INFO root fetch - main [MainThread]: Store serial: [17722881]
+[2023-04-16 02:39:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722881]
+[2023-04-16 02:39:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-reusable
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sql-automations
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hassle
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ai-talks
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ai-talks
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pylity
+[2023-04-16 02:39:17] WARNING root fetch - processPackages [sql-automations]: Skipping, unable to determine old version
+[2023-04-16 02:39:17] INFO root fetch - main [MainThread]: End processing [sql-automations] error
+[2023-04-16 02:39:17] INFO root fetch - processPackages [django-reusable]: New version: [9.2] Old Version: [9.1]
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ai-talks]: New version: [0.8.993] Old Version: [0.8.992]
+[2023-04-16 02:39:17] INFO root fetch - processPackages [hassle]: New version: [2.6.0] Old Version: [2.5.0]
+[2023-04-16 02:39:17] INFO root fetch - processPackages [pylity]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ai-talks]: New version: [0.8.993] Old Version: [0.8.992]
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/36/9c/011e64e67c4e03f6351a3dbe3404e81a39d381c323440d66f28251984699/ai-talks-0.8.992.tar.gz
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/36/9c/011e64e67c4e03f6351a3dbe3404e81a39d381c323440d66f28251984699/ai-talks-0.8.992.tar.gz
+[2023-04-16 02:39:17] INFO root fetch - processPackages [pylity]: Downloading https://files.pythonhosted.org/packages/9e/32/f70453b3cf865a552015a2730e123bf5d37827dd9cbbacd12712eae82463/pylity-0.0.6.tar.gz
+[2023-04-16 02:39:17] INFO root fetch - processPackages [hassle]: Downloading https://files.pythonhosted.org/packages/bf/41/8ed647e9d30e94cf1d0b91ddc007c460d5c721ed75579d5a91dec585874d/hassle-2.6.0.tar.gz
+[2023-04-16 02:39:17] INFO root fetch - processPackages [pylity]: executing diffoscope
+[2023-04-16 02:39:17] INFO root fetch - processPackages [pylity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylity-0.0.5.tar.gz tmp/pylity-0.0.6.tar.gz --markdown 20230416/p/pylity/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-16 02:39:17] INFO root fetch - processPackages [django-reusable]: Downloading https://files.pythonhosted.org/packages/8a/1b/01fa66560839cf6488544b9ccbf6e8e55870e7021ff7f8f2b379f87c56e4/django-reusable-9.2.tar.gz
+[2023-04-16 02:39:17] INFO root fetch - processPackages [hassle]: executing diffoscope
+[2023-04-16 02:39:17] INFO root fetch - processPackages [hassle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hassle-2.5.0.tar.gz tmp/hassle-2.6.0.tar.gz --markdown 20230416/h/hassle/2.5.0-2.6.0/diff.md --exclude *.pyd
+[2023-04-16 02:39:17] INFO root fetch - processPackages [django-reusable]: executing diffoscope
+[2023-04-16 02:39:17] INFO root fetch - processPackages [django-reusable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-reusable-9.1.tar.gz tmp/django-reusable-9.2.tar.gz --markdown 20230416/d/django-reusable/9.1-9.2/diff.md --exclude *.pyd
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/cf/3f/c60627fa81652282fca8393f7f994b668dbc2e8b32a7bd88919578cb4d9e/ai-talks-0.8.993.tar.gz
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/cf/3f/c60627fa81652282fca8393f7f994b668dbc2e8b32a7bd88919578cb4d9e/ai-talks-0.8.993.tar.gz
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ai-talks]: executing diffoscope
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ai-talks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai-talks-0.8.992.tar.gz tmp/ai-talks-0.8.993.tar.gz --markdown 20230416/a/ai-talks/0.8.992-0.8.993/diff.md --exclude *.pyd
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ai-talks]: executing diffoscope
+[2023-04-16 02:39:17] INFO root fetch - processPackages [ai-talks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai-talks-0.8.992.tar.gz tmp/ai-talks-0.8.993.tar.gz --markdown 20230416/a/ai-talks/0.8.992-0.8.993/diff.md --exclude *.pyd
+[2023-04-16 02:39:18] INFO root fetch - main [MainThread]: End processing [pylity]: success
+[2023-04-16 02:39:18] INFO root fetch - main [MainThread]: End processing [ai-talks]: success
+[2023-04-16 02:39:19] INFO root fetch - main [MainThread]: End processing [ai-talks]: success
+[2023-04-16 02:39:19] INFO root fetch - main [MainThread]: End processing [django-reusable]: success
+[2023-04-16 02:39:19] INFO root fetch - main [MainThread]: End processing [hassle]: success
+[2023-04-16 02:39:19] INFO root fetch - main [MainThread]: Store serial: [17722901]
