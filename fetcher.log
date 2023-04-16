@@ -9237,3 +9237,70 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 15:27:24] INFO root fetch - main [MainThread]: End processing [oddrn-generator]: success
 [2023-04-16 15:27:25] INFO root fetch - main [MainThread]: End processing [gbd-tools]: success
 [2023-04-16 15:27:25] INFO root fetch - main [MainThread]: Store serial: [17727284]
+[2023-04-16 15:32:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727284]
+[2023-04-16 15:32:34] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastestimator-nightly
+[2023-04-16 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spiderYa
+[2023-04-16 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SEKKAYBOT
+[2023-04-16 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cryptographyComplements
+[2023-04-16 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: OmniBridge
+[2023-04-16 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pandasflow
+[2023-04-16 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: robyn
+[2023-04-16 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ecasbot
+[2023-04-16 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dknovautils
+[2023-04-16 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hftbacktest
+[2023-04-16 15:32:34] INFO root fetch - processPackages [cryptographyComplements]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-16 15:32:34] INFO root fetch - processPackages [ecasbot]: New version: [1.8.2] Old Version: [1.8.1]
+[2023-04-16 15:32:34] INFO root fetch - processPackages [spiderYa]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 15:32:34] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 15:32:34] INFO root fetch - processPackages [pandasflow]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-16 15:32:34] INFO root fetch - processPackages [SEKKAYBOT]: New version: [0.22.265] Old Version: [0.22.264]
+[2023-04-16 15:32:34] INFO root fetch - processPackages [robyn]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-16 15:32:34] INFO root fetch - processPackages [hftbacktest]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-16 15:32:34] INFO root fetch - processPackages [dknovautils]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 15:32:34] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-16 15:32:34] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230416/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 15:32:34] INFO root fetch - processPackages [cryptographyComplements]: Downloading https://files.pythonhosted.org/packages/9e/48/02c032fdb3b7a9c08cdef63d8962cf2380e6692f324f7a0da06bead482ca/cryptographyComplements-0.2.6.tar.gz
+[2023-04-16 15:32:34] INFO root fetch - processPackages [fastestimator-nightly]: New version: [1.5.0.dev202304161331] Old Version: [1.5.0.dev202304151323]
+[2023-04-16 15:32:34] INFO root fetch - processPackages [spiderYa]: Downloading https://files.pythonhosted.org/packages/7e/01/c1038d836863ef1c5fbd8344f94273783e8093a513381465af183e9dbfe3/spiderYa-0.0.9.tar.gz
+[2023-04-16 15:32:34] INFO root fetch - processPackages [SEKKAYBOT]: Downloading https://files.pythonhosted.org/packages/25/b2/2d4757c8e26a51af1dd47368ec5e8583748358aec7dc7a3407d160a8d0ad/SEKKAYBOT-0.22.265.tar.gz
+[2023-04-16 15:32:34] INFO root fetch - processPackages [ecasbot]: Downloading https://files.pythonhosted.org/packages/58/6d/39f2bb59d018259dcf6641b489e5d263cd7a8b7a13f6e3d6a090d582eee6/ecasbot-1.8.1.tar.gz
+[2023-04-16 15:32:34] INFO root fetch - processPackages [robyn]: Downloading https://files.pythonhosted.org/packages/db/e8/d0c20074330916a3895c96c270b171a9247666e837b1deb1ff2efb953da5/robyn-0.8.1.tar.gz
+[2023-04-16 15:32:34] INFO root fetch - processPackages [dknovautils]: Downloading https://files.pythonhosted.org/packages/63/0f/78fde5b2aa2cc20ccc5bf4d87ac3569b8c2ccdebef7bfe941d4ea8f2cb66/dknovautils-0.0.2.tar.gz
+[2023-04-16 15:32:34] INFO root fetch - processPackages [hftbacktest]: Downloading https://files.pythonhosted.org/packages/70/9c/e9a6dcebedf931bbfbcb9efa915212b9af26c19e88e935dec00a87f8e153/hftbacktest-1.5.0.tar.gz
+[2023-04-16 15:32:34] INFO root fetch - processPackages [SEKKAYBOT]: executing diffoscope
+[2023-04-16 15:32:34] INFO root fetch - processPackages [SEKKAYBOT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SEKKAYBOT-0.22.264.tar.gz tmp/SEKKAYBOT-0.22.265.tar.gz --markdown 20230416/S/SEKKAYBOT/0.22.264-0.22.265/diff.md --exclude *.pyd
+[2023-04-16 15:32:34] INFO root fetch - processPackages [pandasflow]: Downloading https://files.pythonhosted.org/packages/69/87/cf73b575c31f84e0f39ce08101d5352e744800630642aeb60457ef45fcfc/pandasflow-0.1.7.tar.gz
+[2023-04-16 15:32:34] INFO root fetch - processPackages [cryptographyComplements]: Downloading https://files.pythonhosted.org/packages/a1/3d/940aab61fcd6bee9f12ecf50692422cfe606725f5241aa1ed27076754c86/cryptographyComplements-0.2.7.tar.gz
+[2023-04-16 15:32:34] INFO root fetch - processPackages [pandasflow]: executing diffoscope
+[2023-04-16 15:32:34] INFO root fetch - processPackages [pandasflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandasflow-0.1.6.tar.gz tmp/pandasflow-0.1.7.tar.gz --markdown 20230416/p/pandasflow/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-16 15:32:34] INFO root fetch - processPackages [fastestimator-nightly]: Downloading https://files.pythonhosted.org/packages/48/a5/406874e67f2131fa362d58e33d26e45417c4625d983907d03fae767f7750/fastestimator-nightly-1.5.0.dev202304161331.tar.gz
+[2023-04-16 15:32:34] INFO root fetch - processPackages [robyn]: Downloading https://files.pythonhosted.org/packages/9e/05/799d2992e229948de022111c077e3db76a1ebca39c6bf7f3ab9043b7a8e3/robyn-0.9.0.tar.gz
+[2023-04-16 15:32:34] INFO root fetch - processPackages [cryptographyComplements]: executing diffoscope
+[2023-04-16 15:32:34] INFO root fetch - processPackages [cryptographyComplements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cryptographyComplements-0.2.6.tar.gz tmp/cryptographyComplements-0.2.7.tar.gz --markdown 20230416/c/cryptographyComplements/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-16 15:32:34] INFO root fetch - processPackages [ecasbot]: Downloading https://files.pythonhosted.org/packages/8c/9d/1d76f7c1c0b9535d851bd6b08d9ff51a4913cfd1859665f5f2264df68e7a/ecasbot-1.8.2.tar.gz
+[2023-04-16 15:32:34] INFO root fetch - processPackages [hftbacktest]: Downloading https://files.pythonhosted.org/packages/28/f3/6d811e819cc77388507a61bfcb39910ff9516c7c53fcec3c83c2e76ae70c/hftbacktest-1.5.1.tar.gz
+[2023-04-16 15:32:35] INFO root fetch - processPackages [dknovautils]: Downloading https://files.pythonhosted.org/packages/76/d7/594f5c64deb8f252eb9a9ad156ad637114776d191e5ca13f8375bcd2d093/dknovautils-0.0.3.tar.gz
+[2023-04-16 15:32:35] INFO root fetch - processPackages [fastestimator-nightly]: executing diffoscope
+[2023-04-16 15:32:35] INFO root fetch - processPackages [fastestimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastestimator-nightly-1.5.0.dev202304151323.tar.gz tmp/fastestimator-nightly-1.5.0.dev202304161331.tar.gz --markdown 20230416/f/fastestimator-nightly/1.5.0.dev202304151323-1.5.0.dev202304161331/diff.md --exclude *.pyd
+[2023-04-16 15:32:35] INFO root fetch - processPackages [ecasbot]: executing diffoscope
+[2023-04-16 15:32:35] INFO root fetch - processPackages [ecasbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecasbot-1.8.1.tar.gz tmp/ecasbot-1.8.2.tar.gz --markdown 20230416/e/ecasbot/1.8.1-1.8.2/diff.md --exclude *.pyd
+[2023-04-16 15:32:35] INFO root fetch - processPackages [hftbacktest]: executing diffoscope
+[2023-04-16 15:32:35] INFO root fetch - processPackages [hftbacktest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hftbacktest-1.5.0.tar.gz tmp/hftbacktest-1.5.1.tar.gz --markdown 20230416/h/hftbacktest/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-16 15:32:35] INFO root fetch - processPackages [dknovautils]: executing diffoscope
+[2023-04-16 15:32:35] INFO root fetch - processPackages [dknovautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dknovautils-0.0.2.tar.gz tmp/dknovautils-0.0.3.tar.gz --markdown 20230416/d/dknovautils/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 15:32:35] INFO root fetch - processPackages [spiderYa]: executing diffoscope
+[2023-04-16 15:32:35] INFO root fetch - processPackages [spiderYa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderYa-0.0.8.tar.gz tmp/spiderYa-0.0.9.tar.gz --markdown 20230416/s/spiderYa/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 15:32:35] INFO root fetch - processPackages [robyn]: executing diffoscope
+[2023-04-16 15:32:35] INFO root fetch - processPackages [robyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robyn-0.8.1.tar.gz tmp/robyn-0.9.0.tar.gz --markdown 20230416/r/robyn/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 15:32:36] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-16 15:32:36] INFO root fetch - main [MainThread]: End processing [pandasflow]: success
+[2023-04-16 15:32:36] INFO root fetch - main [MainThread]: End processing [SEKKAYBOT]: success
+[2023-04-16 15:32:36] INFO root fetch - main [MainThread]: End processing [cryptographyComplements]: success
+[2023-04-16 15:32:36] INFO root fetch - main [MainThread]: End processing [ecasbot]: success
+[2023-04-16 15:32:36] INFO root fetch - main [MainThread]: End processing [dknovautils]: success
+[2023-04-16 15:32:37] INFO root fetch - main [MainThread]: End processing [hftbacktest]: success
+[2023-04-16 15:32:37] INFO root fetch - main [MainThread]: End processing [robyn]: success
+[2023-04-16 15:32:38] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
+[2023-04-16 15:32:44] INFO root fetch - main [MainThread]: End processing [fastestimator-nightly]: success
+[2023-04-16 15:32:44] INFO root fetch - main [MainThread]: Store serial: [17727343]
