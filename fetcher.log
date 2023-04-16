@@ -2853,3 +2853,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 06:01:06] INFO root fetch - processPackages [highcharts-gantt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/highcharts_gantt-1.0.0rc6.tar.gz tmp/highcharts_gantt-1.0.1.tar.gz --markdown 20230416/h/highcharts-gantt/1.0.0rc6-1.0.1/diff.md --exclude *.pyd
 [2023-04-16 06:01:42] INFO root fetch - main [MainThread]: End processing [highcharts-gantt]: success
 [2023-04-16 06:01:42] INFO root fetch - main [MainThread]: Store serial: [17723599]
+[2023-04-16 06:06:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723599]
+[2023-04-16 06:06:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-16 06:06:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: domain-admin
+[2023-04-16 06:06:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-geoacumen
+[2023-04-16 06:06:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: starlette-async-jinja
+[2023-04-16 06:06:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mnemocards
+[2023-04-16 06:06:52] INFO root fetch - processPackages [domain-admin]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-16 06:06:52] WARNING root fetch - processPackages [starlette-async-jinja]: Skipping, unable to determine old version
+[2023-04-16 06:06:52] INFO root fetch - main [MainThread]: End processing [starlette-async-jinja] error
+[2023-04-16 06:06:52] INFO root fetch - processPackages [mnemocards]: New version: [1.0.0b0] Old Version: [1.0.0a0]
+[2023-04-16 06:06:52] INFO root fetch - processPackages [python-geoacumen]: New version: [2023.4.9] Old Version: [2023.4.2]
+[2023-04-16 06:06:52] INFO root fetch - processPackages [domain-admin]: Downloading https://files.pythonhosted.org/packages/12/fd/408b2019569509ef3185c0e2a8aac6581beff09247221f0099b89eb5a53e/domain-admin-1.2.8.tar.gz
+[2023-04-16 06:06:52] INFO root fetch - processPackages [mnemocards]: Downloading https://files.pythonhosted.org/packages/ec/11/d117bac8b8fd1d4cdc28b3e7dfc51bea2235e814c6a0f61efe33d59a0a1e/mnemocards-1.0.0a0.tar.gz
+[2023-04-16 06:06:52] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/04/27/bd8312bc34b1a0cdd9951c91daef0bf46af772cdd13239ef503a9f0d5afa/python-geoacumen-2023.4.2.tar.gz
+[2023-04-16 06:06:52] INFO root fetch - processPackages [domain-admin]: Downloading https://files.pythonhosted.org/packages/25/50/bda7d4fb755638b0e212e1f3e7f778a08590ed8127424a05cc3432d28958/domain-admin-1.2.9.tar.gz
+[2023-04-16 06:06:52] INFO root fetch - processPackages [domain-admin]: executing diffoscope
+[2023-04-16 06:06:52] INFO root fetch - processPackages [domain-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domain-admin-1.2.8.tar.gz tmp/domain-admin-1.2.9.tar.gz --markdown 20230416/d/domain-admin/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-16 06:06:52] INFO root fetch - processPackages [mnemocards]: Downloading https://files.pythonhosted.org/packages/e6/17/bb3967dc37782c07c1cd64487a665bb6712ddc93624b424cf17c78f67281/mnemocards-1.0.0b0.tar.gz
+[2023-04-16 06:06:53] INFO root fetch - processPackages [mnemocards]: executing diffoscope
+[2023-04-16 06:06:53] INFO root fetch - processPackages [mnemocards]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mnemocards-1.0.0a0.tar.gz tmp/mnemocards-1.0.0b0.tar.gz --markdown 20230416/m/mnemocards/1.0.0a0-1.0.0b0/diff.md --exclude *.pyd
+[2023-04-16 06:06:53] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/5f/e2/00a753a65c099d5dc1e7e08b33007a36c2242ef2f41953a24324a98eb31e/python-geoacumen-2023.4.9.tar.gz
+[2023-04-16 06:06:54] INFO root fetch - processPackages [python-geoacumen]: executing diffoscope
+[2023-04-16 06:06:54] INFO root fetch - processPackages [python-geoacumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-geoacumen-2023.4.2.tar.gz tmp/python-geoacumen-2023.4.9.tar.gz --markdown 20230416/p/python-geoacumen/2023.4.2-2023.4.9/diff.md --exclude *.pyd
+[2023-04-16 06:06:54] INFO root fetch - main [MainThread]: End processing [mnemocards]: success
+[2023-04-16 06:06:54] INFO root fetch - main [MainThread]: End processing [domain-admin]: success
+[2023-04-16 06:06:55] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
+[2023-04-16 06:06:55] INFO root fetch - main [MainThread]: Store serial: [17723613]
