@@ -13696,3 +13696,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 22:36:43] INFO root fetch - main [MainThread]: End processing [pdm-conda]: success
 [2023-04-16 22:36:44] INFO root fetch - main [MainThread]: End processing [imops]: success
 [2023-04-16 22:36:44] INFO root fetch - main [MainThread]: Store serial: [17730087]
+[2023-04-16 22:41:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17730087]
+[2023-04-16 22:41:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 22:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: otoe
+[2023-04-16 22:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fhs-iptv-tools
+[2023-04-16 22:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: predictionguard
+[2023-04-16 22:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xia-engine-terraform
+[2023-04-16 22:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: otoe
+[2023-04-16 22:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: graphscope
+[2023-04-16 22:41:53] INFO root fetch - processPackages [otoe]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-16 22:41:53] INFO root fetch - processPackages [otoe]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-16 22:41:53] INFO root fetch - processPackages [predictionguard]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-16 22:41:53] INFO root fetch - processPackages [fhs-iptv-tools]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-16 22:41:53] INFO root fetch - processPackages [xia-engine-terraform]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-16 22:41:53] INFO root fetch - processPackages [graphscope]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-16 22:41:53] INFO root fetch - processPackages [otoe]: Downloading https://files.pythonhosted.org/packages/50/6a/ea8b411c10fb1162cd62e9512b9e1e5a6108ff5a41f026aa90ef0d8122af/otoe-0.0.5.tar.gz
+[2023-04-16 22:41:53] INFO root fetch - processPackages [otoe]: Downloading https://files.pythonhosted.org/packages/50/6a/ea8b411c10fb1162cd62e9512b9e1e5a6108ff5a41f026aa90ef0d8122af/otoe-0.0.5.tar.gz
+[2023-04-16 22:41:53] INFO root fetch - processPackages [graphscope]: executing diffoscope
+[2023-04-16 22:41:53] INFO root fetch - processPackages [graphscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphscope-0.9.0-py2.py3-none-macosx_10_9_x86_64.whl.zip tmp/graphscope-0.9.1-py2.py3-none-macosx_11_0_arm64.whl.zip --markdown 20230416/g/graphscope/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-16 22:41:53] INFO root fetch - processPackages [xia-engine-terraform]: Downloading https://files.pythonhosted.org/packages/94/34/498c212e1c3305c252db127469c25556d9399bc903a53b33ad068d66abde/xia_engine_terraform-0.0.4-cp39-none-win_amd64.whl
+[2023-04-16 22:41:53] INFO root fetch - processPackages [predictionguard]: Downloading https://files.pythonhosted.org/packages/66/11/53ffb761ce042308d040bcd40155b7f5d4334b081fbaf66b6dedc9de8187/predictionguard-0.2.3.tar.gz
+[2023-04-16 22:41:53] INFO root fetch - processPackages [fhs-iptv-tools]: Downloading https://files.pythonhosted.org/packages/66/ea/dc55ac035c4eb0702d70b49a860d4471d7c9896b917a9697c7b5c78cc8ed/fhs-iptv-tools-0.8.8.tar.gz
+[2023-04-16 22:41:53] INFO root fetch - processPackages [otoe]: Downloading https://files.pythonhosted.org/packages/f2/c9/13359d5433540a6b1cbef90ed083e0f7b2a8773d3c99bd8da03e212a7717/otoe-0.0.6.tar.gz
+[2023-04-16 22:41:53] INFO root fetch - processPackages [predictionguard]: Downloading https://files.pythonhosted.org/packages/aa/d7/4d0d78e08b35360038ea6167623c00910ddae6168e77dba805ddc72e0935/predictionguard-0.2.4.tar.gz
+[2023-04-16 22:41:53] INFO root fetch - processPackages [otoe]: Downloading https://files.pythonhosted.org/packages/f2/c9/13359d5433540a6b1cbef90ed083e0f7b2a8773d3c99bd8da03e212a7717/otoe-0.0.6.tar.gz
+[2023-04-16 22:41:53] INFO root fetch - processPackages [fhs-iptv-tools]: Downloading https://files.pythonhosted.org/packages/25/60/aeeb29c9b1783f1f667ebde646b17e6bb31c71660daf8827197fa8eba085/fhs-iptv-tools-0.8.9.tar.gz
+[2023-04-16 22:41:53] INFO root fetch - processPackages [xia-engine-terraform]: Downloading https://files.pythonhosted.org/packages/90/1b/35b635dbc378d2da24e3592498ce4dbb969c070fbbedf9e1b16a81a93baf/xia_engine_terraform-0.0.5-cp39-none-win_amd64.whl
+[2023-04-16 22:41:53] INFO root fetch - processPackages [fhs-iptv-tools]: executing diffoscope
+[2023-04-16 22:41:53] INFO root fetch - processPackages [fhs-iptv-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhs-iptv-tools-0.8.8.tar.gz tmp/fhs-iptv-tools-0.8.9.tar.gz --markdown 20230416/f/fhs-iptv-tools/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-16 22:41:53] INFO root fetch - processPackages [otoe]: executing diffoscope
+[2023-04-16 22:41:53] INFO root fetch - processPackages [otoe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otoe-0.0.5.tar.gz tmp/otoe-0.0.6.tar.gz --markdown 20230416/o/otoe/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-16 22:41:53] INFO root fetch - processPackages [otoe]: executing diffoscope
+[2023-04-16 22:41:53] INFO root fetch - processPackages [otoe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otoe-0.0.5.tar.gz tmp/otoe-0.0.6.tar.gz --markdown 20230416/o/otoe/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-16 22:41:53] INFO root fetch - processPackages [predictionguard]: executing diffoscope
+[2023-04-16 22:41:53] INFO root fetch - processPackages [predictionguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/predictionguard-0.2.3.tar.gz tmp/predictionguard-0.2.4.tar.gz --markdown 20230416/p/predictionguard/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-16 22:41:53] INFO root fetch - processPackages [xia-engine-terraform]: executing diffoscope
+[2023-04-16 22:41:53] INFO root fetch - processPackages [xia-engine-terraform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine_terraform-0.0.4-cp39-none-win_amd64.whl.zip tmp/xia_engine_terraform-0.0.5-cp39-none-win_amd64.whl.zip --markdown 20230416/x/xia-engine-terraform/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-16 22:41:54] INFO root fetch - main [MainThread]: End processing [graphscope]: success
+[2023-04-16 22:41:54] INFO root fetch - main [MainThread]: End processing [otoe]: success
+[2023-04-16 22:41:54] INFO root fetch - main [MainThread]: End processing [otoe]: success
+[2023-04-16 22:41:54] INFO root fetch - main [MainThread]: End processing [predictionguard]: success
+[2023-04-16 22:41:54] INFO root fetch - main [MainThread]: End processing [xia-engine-terraform]: success
+[2023-04-16 22:41:55] INFO root fetch - main [MainThread]: End processing [fhs-iptv-tools]: success
+[2023-04-16 22:41:55] INFO root fetch - main [MainThread]: Store serial: [17730105]
