@@ -2084,3 +2084,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 03:48:10] INFO root fetch - processPackages [cdk-lambda-layer-zip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-zip-2.0.98.tar.gz tmp/cdk-lambda-layer-zip-2.0.99.tar.gz --markdown 20230416/c/cdk-lambda-layer-zip/2.0.98-2.0.99/diff.md --exclude *.pyd
 [2023-04-16 03:48:12] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-zip]: success
 [2023-04-16 03:48:12] INFO root fetch - main [MainThread]: Store serial: [17723187]
+[2023-04-16 03:53:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723187]
+[2023-04-16 03:53:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-16 03:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kicad-package-manager
+[2023-04-16 03:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arklibrary
+[2023-04-16 03:53:21] INFO root fetch - processPackages [kicad-package-manager]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-16 03:53:21] INFO root fetch - processPackages [arklibrary]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 03:53:21] INFO root fetch - processPackages [kicad-package-manager]: Downloading https://files.pythonhosted.org/packages/76/29/125362c734479944fde277266c798c7356619eccc162d9f31db86d0bfc90/kicad_package_manager-0.0.7.tar.gz
+[2023-04-16 03:53:21] INFO root fetch - processPackages [arklibrary]: Downloading https://files.pythonhosted.org/packages/63/94/c6caa41b15793490c4bb6706e6c54b1ce6571f4f450de478d00277d59de9/arklibrary-1.0.2.tar.gz
+[2023-04-16 03:53:21] INFO root fetch - processPackages [kicad-package-manager]: executing diffoscope
+[2023-04-16 03:53:21] INFO root fetch - processPackages [kicad-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kicad_package_manager-0.0.6.tar.gz tmp/kicad_package_manager-0.0.7.tar.gz --markdown 20230416/k/kicad-package-manager/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-16 03:53:21] INFO root fetch - processPackages [arklibrary]: executing diffoscope
+[2023-04-16 03:53:21] INFO root fetch - processPackages [arklibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arklibrary-1.0.1.tar.gz tmp/arklibrary-1.0.2.tar.gz --markdown 20230416/a/arklibrary/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 03:53:22] INFO root fetch - main [MainThread]: End processing [kicad-package-manager]: success
+[2023-04-16 03:53:22] INFO root fetch - main [MainThread]: End processing [arklibrary]: success
+[2023-04-16 03:53:22] INFO root fetch - main [MainThread]: Store serial: [17723193]
