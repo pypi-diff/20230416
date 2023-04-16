@@ -4215,3 +4215,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 09:11:57] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
 [2023-04-16 09:11:58] INFO root fetch - main [MainThread]: End processing [SrbAI]: success
 [2023-04-16 09:11:58] INFO root fetch - main [MainThread]: Store serial: [17724422]
+[2023-04-16 09:17:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724422]
+[2023-04-16 09:17:06] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 09:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tl-typewriter
+[2023-04-16 09:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cabinet
+[2023-04-16 09:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pomegranate
+[2023-04-16 09:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: image-reward
+[2023-04-16 09:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: renus
+[2023-04-16 09:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: single-instance-win
+[2023-04-16 09:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: single-instance-win
+[2023-04-16 09:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: qasimpdf
+[2023-04-16 09:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: splatnet3-scraper
+[2023-04-16 09:17:06] INFO root fetch - processPackages [tl-typewriter]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-16 09:17:06] INFO root fetch - processPackages [pomegranate]: New version: [1.0.0] Old Version: [0.9.0]
+[2023-04-16 09:17:06] INFO root fetch - processPackages [cabinet]: New version: [2023.4.9.1] Old Version: [2023.4.16.1]
+[2023-04-16 09:17:06] INFO root fetch - processPackages [renus]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-16 09:17:06] INFO root fetch - processPackages [image-reward]: New version: [0.95] Old Version: [0.94]
+[2023-04-16 09:17:06] INFO root fetch - processPackages [single-instance-win]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 09:17:06] INFO root fetch - processPackages [single-instance-win]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 09:17:06] INFO root fetch - processPackages [splatnet3-scraper]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-04-16 09:17:06] INFO root fetch - processPackages [splatnet3-scraper]: executing diffoscope
+[2023-04-16 09:17:06] INFO root fetch - processPackages [splatnet3-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splatnet3_scraper-0.7.3.tar.gz tmp/splatnet3_scraper-0.7.4.tar.gz --markdown 20230416/s/splatnet3-scraper/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-04-16 09:17:06] WARNING root fetch - processPackages [qasimpdf]: Skipping, unable to determine old version
+[2023-04-16 09:17:06] INFO root fetch - main [MainThread]: End processing [qasimpdf] error
+[2023-04-16 09:17:06] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/b7/3a/122e5d990b7276a50dd06ec0c5e09678b99d51e21d208fd249a6d395e481/cabinet-2023.4.16.1.tar.gz
+[2023-04-16 09:17:06] INFO root fetch - processPackages [tl-typewriter]: Downloading https://files.pythonhosted.org/packages/78/4e/c75797c0bce43b54e6f3485cbdf7faff09743e70b98e1761beaedecdd672/tl_typewriter-0.1.tar.gz
+[2023-04-16 09:17:06] INFO root fetch - processPackages [single-instance-win]: Downloading https://files.pythonhosted.org/packages/3d/1a/4ff839d3644fdd679e73cfda22643cdb4622199220bf6b237481f95f0055/single-instance-win-1.0.0.tar.gz
+[2023-04-16 09:17:06] INFO root fetch - processPackages [single-instance-win]: Downloading https://files.pythonhosted.org/packages/3d/1a/4ff839d3644fdd679e73cfda22643cdb4622199220bf6b237481f95f0055/single-instance-win-1.0.0.tar.gz
+[2023-04-16 09:17:06] INFO root fetch - processPackages [renus]: Downloading https://files.pythonhosted.org/packages/0a/ae/a3d6fc678533afa532664801a0e6fbc41797c46aa419a43fe849317e4ad1/renus-1.0.9.tar.gz
+[2023-04-16 09:17:06] INFO root fetch - processPackages [pomegranate]: Downloading https://files.pythonhosted.org/packages/1c/68/c4ef8a696656f08515b1a9c224136962a9c7485b755fd5d1ea51d3699f4e/pomegranate-0.9.0.tar.gz
+[2023-04-16 09:17:07] INFO root fetch - processPackages [renus]: executing diffoscope
+[2023-04-16 09:17:07] INFO root fetch - processPackages [renus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renus-1.0.8.tar.gz tmp/renus-1.0.9.tar.gz --markdown 20230416/r/renus/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-16 09:17:07] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/de/f6/3e099716d47b80d3a1a45e5a9cf645dcc665873b20ab320477bdddbf866e/image-reward-0.95.tar.gz
+[2023-04-16 09:17:07] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/25/2e/8a24fd5ff7eb020430a34daa1405a587f6dde75bc959553265ed25a6a14c/cabinet-2023.4.9.1.tar.gz
+[2023-04-16 09:17:07] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-16 09:17:07] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-0.94.tar.gz tmp/image-reward-0.95.tar.gz --markdown 20230416/i/image-reward/0.94-0.95/diff.md --exclude *.pyd
+[2023-04-16 09:17:07] INFO root fetch - processPackages [single-instance-win]: Downloading https://files.pythonhosted.org/packages/b7/60/a79b11ee00ca291abb8fd2cefd2a752d3699470e851da31c2dbe1446b536/single-instance-win-1.0.1.tar.gz
+[2023-04-16 09:17:07] INFO root fetch - processPackages [single-instance-win]: Downloading https://files.pythonhosted.org/packages/b7/60/a79b11ee00ca291abb8fd2cefd2a752d3699470e851da31c2dbe1446b536/single-instance-win-1.0.1.tar.gz
+[2023-04-16 09:17:07] INFO root fetch - processPackages [tl-typewriter]: Downloading https://files.pythonhosted.org/packages/76/55/8e926a2e327da5ada82dda07bab4ecea7fca315e62a9daf2b867375d5814/tl_typewriter-0.1.1.tar.gz
+[2023-04-16 09:17:07] INFO root fetch - processPackages [cabinet]: executing diffoscope
+[2023-04-16 09:17:07] INFO root fetch - processPackages [cabinet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cabinet-2023.4.16.1.tar.gz tmp/cabinet-2023.4.9.1.tar.gz --markdown 20230416/c/cabinet/2023.4.16.1-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-16 09:17:07] INFO root fetch - processPackages [tl-typewriter]: executing diffoscope
+[2023-04-16 09:17:07] INFO root fetch - processPackages [tl-typewriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tl_typewriter-0.1.tar.gz tmp/tl_typewriter-0.1.1.tar.gz --markdown 20230416/t/tl-typewriter/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 09:17:07] INFO root fetch - processPackages [single-instance-win]: executing diffoscope
+[2023-04-16 09:17:07] INFO root fetch - processPackages [single-instance-win]: executing diffoscope
+[2023-04-16 09:17:07] INFO root fetch - processPackages [single-instance-win]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/single-instance-win-1.0.0.tar.gz tmp/single-instance-win-1.0.1.tar.gz --markdown 20230416/s/single-instance-win/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 09:17:07] INFO root fetch - processPackages [single-instance-win]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/single-instance-win-1.0.0.tar.gz tmp/single-instance-win-1.0.1.tar.gz --markdown 20230416/s/single-instance-win/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 09:17:08] INFO root fetch - processPackages [pomegranate]: Downloading https://files.pythonhosted.org/packages/8c/5f/5561bda6c4d44d2bb9006f2f7b389f29907c5405dfbebd40f87cbcec7a7d/pomegranate-1.0.0.tar.gz
+[2023-04-16 09:17:08] INFO root fetch - processPackages [pomegranate]: executing diffoscope
+[2023-04-16 09:17:08] INFO root fetch - processPackages [pomegranate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pomegranate-0.9.0.tar.gz tmp/pomegranate-1.0.0.tar.gz --markdown 20230416/p/pomegranate/0.9.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-16 09:17:08] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-16 09:17:08] INFO root fetch - main [MainThread]: End processing [renus]: success
+[2023-04-16 09:17:08] INFO root fetch - main [MainThread]: End processing [single-instance-win]: success
+[2023-04-16 09:17:08] INFO root fetch - main [MainThread]: End processing [tl-typewriter]: success
+[2023-04-16 09:17:08] INFO root fetch - main [MainThread]: End processing [single-instance-win]: success
+[2023-04-16 09:17:08] INFO root fetch - main [MainThread]: End processing [cabinet]: success
+[2023-04-16 09:17:08] INFO root fetch - main [MainThread]: End processing [splatnet3-scraper]: success
+[2023-04-16 09:17:09] INFO root fetch - main [MainThread]: End processing [pomegranate]: success
+[2023-04-16 09:17:09] INFO root fetch - main [MainThread]: Store serial: [17724448]
