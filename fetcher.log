@@ -2642,3 +2642,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 05:32:12] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-commission]: success
 [2023-04-16 05:32:12] INFO root fetch - main [MainThread]: End processing [odoo13-addon-sale-commission]: success
 [2023-04-16 05:32:12] INFO root fetch - main [MainThread]: Store serial: [17723473]
+[2023-04-16 05:37:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723473]
+[2023-04-16 05:37:22] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ac-websocket-server
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-upload-to
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kosis
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: limpy
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: highcharts-core
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rsrch
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scsm
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cornac
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: adsb-tools
+[2023-04-16 05:37:22] INFO root fetch - processPackages [kosis]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ac-websocket-server]: New version: [0.2.dev9] Old Version: [0.2.dev8]
+[2023-04-16 05:37:22] INFO root fetch - processPackages [highcharts-core]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 05:37:22] WARNING root fetch - processPackages [limpy]: Skipping, unable to determine old version
+[2023-04-16 05:37:22] INFO root fetch - main [MainThread]: End processing [limpy] error
+[2023-04-16 05:37:22] INFO root fetch - processPackages [django-upload-to]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-16 05:37:22] INFO root fetch - processPackages [rsrch]: New version: [0.1.4] Old Version: [0.1.2]
+[2023-04-16 05:37:22] INFO root fetch - processPackages [scsm]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-16 05:37:22] INFO root fetch - processPackages [kosis]: Downloading https://files.pythonhosted.org/packages/29/71/c93e359f862ebe6b7e41a1c37a7fa6f4ba0e2ea9af2bfc6c089385e2ecc5/kosis-0.1.4.tar.gz
+[2023-04-16 05:37:22] INFO root fetch - processPackages [adsb-tools]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 05:37:22] INFO root fetch - processPackages [django-upload-to]: Downloading https://files.pythonhosted.org/packages/ae/8d/362c8a3c543d1028112e730d85a1080e61b92ef56c5dc72210aa9d60c556/django_upload_to-0.3.0.tar.gz
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ac-websocket-server]: Downloading https://files.pythonhosted.org/packages/3d/93/f6cdcfd6bd93c2e191329aad387227996055702961c1baff0d8a2b3b9db1/ac-websocket-server-0.2.dev8.tar.gz
+[2023-04-16 05:37:22] INFO root fetch - processPackages [highcharts-core]: Downloading https://files.pythonhosted.org/packages/80/b3/2eefc8d5fc5e8bcd1f99e17e4bffffe7b7a6be98680f8c19199276b782a6/highcharts_core-1.0.2.tar.gz
+[2023-04-16 05:37:22] INFO root fetch - processPackages [cornac]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-16 05:37:22] INFO root fetch - processPackages [django-upload-to]: executing diffoscope
+[2023-04-16 05:37:22] INFO root fetch - processPackages [django-upload-to]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_upload_to-0.2.0.tar.gz tmp/django_upload_to-0.3.0.tar.gz --markdown 20230416/d/django-upload-to/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 05:37:22] INFO root fetch - processPackages [scsm]: Downloading https://files.pythonhosted.org/packages/44/51/c8fbae8f62c7d968ccf4b11871a2498362649a8eab2292fb60b2aadb6143/scsm-0.2.7.tar.gz
+[2023-04-16 05:37:22] INFO root fetch - processPackages [rsrch]: Downloading https://files.pythonhosted.org/packages/1c/5a/43fee231da9024f5e64ca9d26770015fff39603e5800a08bd88ba9ead2b0/rsrch-0.1.2.tar.gz
+[2023-04-16 05:37:22] INFO root fetch - processPackages [highcharts-core]: executing diffoscope
+[2023-04-16 05:37:22] INFO root fetch - processPackages [highcharts-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/highcharts_core-1.0.1.tar.gz tmp/highcharts_core-1.0.2.tar.gz --markdown 20230416/h/highcharts-core/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 05:37:22] INFO root fetch - processPackages [cornac]: Downloading https://files.pythonhosted.org/packages/05/07/74994927058219b1c0801b0997cd0a25ab288713fbdcc2187002b59230b5/cornac-1.8.0.tar.gz
+[2023-04-16 05:37:22] INFO root fetch - processPackages [kosis]: Downloading https://files.pythonhosted.org/packages/78/5f/0ae2a56a303010198d32356a2c7d7ad2a2ea7d9737b6ca49b7ebf9dd191d/kosis-0.1.5.tar.gz
+[2023-04-16 05:37:22] INFO root fetch - processPackages [kosis]: executing diffoscope
+[2023-04-16 05:37:22] INFO root fetch - processPackages [kosis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kosis-0.1.4.tar.gz tmp/kosis-0.1.5.tar.gz --markdown 20230416/k/kosis/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ac-websocket-server]: Downloading https://files.pythonhosted.org/packages/9c/6b/f07bd25edc15fd9df83db329b9066f3c2d42c9c59b20065bf624de870e17/ac-websocket-server-0.2.dev9.tar.gz
+[2023-04-16 05:37:22] INFO root fetch - processPackages [adsb-tools]: executing diffoscope
+[2023-04-16 05:37:22] INFO root fetch - processPackages [adsb-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adsb_tools-0.1.8.tar.gz tmp/adsb_tools-0.1.9.tar.gz --markdown 20230416/a/adsb-tools/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ac-websocket-server]: executing diffoscope
+[2023-04-16 05:37:22] INFO root fetch - processPackages [ac-websocket-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ac-websocket-server-0.2.dev8.tar.gz tmp/ac-websocket-server-0.2.dev9.tar.gz --markdown 20230416/a/ac-websocket-server/0.2.dev8-0.2.dev9/diff.md --exclude *.pyd
+[2023-04-16 05:37:22] INFO root fetch - processPackages [scsm]: Downloading https://files.pythonhosted.org/packages/46/b0/72ed4b6d9dfab879d7a8d63113e9d095bccab5158571ca19836669902c54/scsm-0.2.8.tar.gz
+[2023-04-16 05:37:22] INFO root fetch - processPackages [rsrch]: Downloading https://files.pythonhosted.org/packages/06/86/a875665a7cc84905a16fbb6fcabe34f2825cb704774f364d397a740f1ce3/rsrch-0.1.4.tar.gz
+[2023-04-16 05:37:22] INFO root fetch - processPackages [rsrch]: executing diffoscope
+[2023-04-16 05:37:22] INFO root fetch - processPackages [rsrch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rsrch-0.1.2.tar.gz tmp/rsrch-0.1.4.tar.gz --markdown 20230416/r/rsrch/0.1.2-0.1.4/diff.md --exclude *.pyd
+[2023-04-16 05:37:22] INFO root fetch - processPackages [scsm]: executing diffoscope
+[2023-04-16 05:37:22] INFO root fetch - processPackages [scsm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scsm-0.2.7.tar.gz tmp/scsm-0.2.8.tar.gz --markdown 20230416/s/scsm/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-16 05:37:23] INFO root fetch - main [MainThread]: End processing [django-upload-to]: success
+[2023-04-16 05:37:23] INFO root fetch - main [MainThread]: End processing [adsb-tools]: success
+[2023-04-16 05:37:23] INFO root fetch - main [MainThread]: End processing [kosis]: success
+[2023-04-16 05:37:23] INFO root fetch - main [MainThread]: End processing [ac-websocket-server]: success
+[2023-04-16 05:37:24] INFO root fetch - processPackages [cornac]: Downloading https://files.pythonhosted.org/packages/fe/41/dbca7be6102f78aa7cfa474e2f6bafccb3de33eeb6f64e5531d06973e28f/cornac-1.9.0.tar.gz
+[2023-04-16 05:37:24] INFO root fetch - main [MainThread]: End processing [scsm]: success
+[2023-04-16 05:37:24] INFO root fetch - main [MainThread]: End processing [rsrch]: success
+[2023-04-16 05:37:25] INFO root fetch - processPackages [cornac]: executing diffoscope
+[2023-04-16 05:37:25] INFO root fetch - processPackages [cornac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cornac-1.8.0.tar.gz tmp/cornac-1.9.0.tar.gz --markdown 20230416/c/cornac/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-16 05:37:44] INFO root fetch - main [MainThread]: End processing [highcharts-core]: success
+[2023-04-16 05:39:17] INFO root fetch - main [MainThread]: End processing [cornac]: success
+[2023-04-16 05:39:17] INFO root fetch - main [MainThread]: Store serial: [17723509]
