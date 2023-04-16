@@ -10325,3 +10325,35 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 17:04:31] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
 [2023-04-16 17:04:32] INFO root fetch - main [MainThread]: End processing [reqsnaked]: success
 [2023-04-16 17:04:32] INFO root fetch - main [MainThread]: Store serial: [17727979]
+[2023-04-16 17:09:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727979]
+[2023-04-16 17:09:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 17:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dvadmin-third
+[2023-04-16 17:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrappo
+[2023-04-16 17:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pinax-teams
+[2023-04-16 17:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rolv
+[2023-04-16 17:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pynamer
+[2023-04-16 17:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: revChatGPT
+[2023-04-16 17:09:41] INFO root fetch - processPackages [dvadmin-third]: New version: [5.0.0] Old Version: [4.1.0]
+[2023-04-16 17:09:41] INFO root fetch - processPackages [pinax-teams]: New version: [3.0.0] Old Version: [2.0.0]
+[2023-04-16 17:09:41] WARNING root fetch - processPackages [rolv]: Skipping, unable to determine old version
+[2023-04-16 17:09:41] INFO root fetch - main [MainThread]: End processing [rolv] error
+[2023-04-16 17:09:41] WARNING root fetch - processPackages [scrappo]: Skipping, unable to determine old version
+[2023-04-16 17:09:41] INFO root fetch - main [MainThread]: End processing [scrappo] error
+[2023-04-16 17:09:41] WARNING root fetch - processPackages [pynamer]: Skipping, unable to determine old version
+[2023-04-16 17:09:41] INFO root fetch - main [MainThread]: End processing [pynamer] error
+[2023-04-16 17:09:41] INFO root fetch - processPackages [dvadmin-third]: Downloading https://files.pythonhosted.org/packages/60/9c/5a6af4f1988699ff24d594246ab1f71e0859b1a818e428cf1d1c5f2ce755/dvadmin-third-4.1.0.tar.gz
+[2023-04-16 17:09:41] INFO root fetch - processPackages [pinax-teams]: Downloading https://files.pythonhosted.org/packages/95/e8/b657414623fd0ff29d62a59d2441994b7d4ce379260cd5d2d44924d7d186/pinax-teams-2.0.0.tar.gz
+[2023-04-16 17:09:41] INFO root fetch - processPackages [revChatGPT]: New version: [4.2.3] Old Version: [4.2.2]
+[2023-04-16 17:09:41] INFO root fetch - processPackages [pinax-teams]: Downloading https://files.pythonhosted.org/packages/a9/71/45965bd5f044fb3e5a0f5faacf7d88fb41def8a90b99e9c815499edd1e2d/pinax-teams-3.0.0.tar.gz
+[2023-04-16 17:09:41] INFO root fetch - processPackages [dvadmin-third]: Downloading https://files.pythonhosted.org/packages/b0/fd/f1271e039085908bf4fecb817b059628b7ae823c164748ec5cbb152427ed/dvadmin-third-5.0.0.tar.gz
+[2023-04-16 17:09:41] INFO root fetch - processPackages [pinax-teams]: executing diffoscope
+[2023-04-16 17:09:41] INFO root fetch - processPackages [pinax-teams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinax-teams-2.0.0.tar.gz tmp/pinax-teams-3.0.0.tar.gz --markdown 20230416/p/pinax-teams/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-04-16 17:09:41] INFO root fetch - processPackages [dvadmin-third]: executing diffoscope
+[2023-04-16 17:09:41] INFO root fetch - processPackages [dvadmin-third]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvadmin-third-4.1.0.tar.gz tmp/dvadmin-third-5.0.0.tar.gz --markdown 20230416/d/dvadmin-third/4.1.0-5.0.0/diff.md --exclude *.pyd
+[2023-04-16 17:09:41] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/01/68/2ebf4ffd40b56e4ca164940f6cc9a8022995e75240766cf1331db3a4c0af/revChatGPT-4.2.3-py3-none-any.whl
+[2023-04-16 17:09:42] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-04-16 17:09:42] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-4.2.2.tar.gz tmp/revChatGPT-4.2.3-py3-none-any.whl.zip --markdown 20230416/r/revChatGPT/4.2.2-4.2.3/diff.md --exclude *.pyd
+[2023-04-16 17:09:42] INFO root fetch - main [MainThread]: End processing [pinax-teams]: success
+[2023-04-16 17:09:43] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
+[2023-04-16 17:09:57] INFO root fetch - main [MainThread]: End processing [dvadmin-third]: success
+[2023-04-16 17:09:57] INFO root fetch - main [MainThread]: Store serial: [17728005]
