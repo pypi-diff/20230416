@@ -7455,3 +7455,65 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 13:20:11] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
 [2023-04-16 13:20:11] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-treehelp]: success
 [2023-04-16 13:20:11] INFO root fetch - main [MainThread]: Store serial: [17726335]
+[2023-04-16 13:25:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726335]
+[2023-04-16 13:25:20] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-16 13:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: minolz
+[2023-04-16 13:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TextAdventures
+[2023-04-16 13:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pertpy
+[2023-04-16 13:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchserve-nightly
+[2023-04-16 13:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torch-model-archiver-nightly
+[2023-04-16 13:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torch-workflow-archiver-nightly
+[2023-04-16 13:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torchrec-nightly
+[2023-04-16 13:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nats-client-py
+[2023-04-16 13:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: osbeautify
+[2023-04-16 13:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: REMclust
+[2023-04-16 13:25:20] WARNING root fetch - processPackages [minolz]: Skipping, unable to determine old version
+[2023-04-16 13:25:20] INFO root fetch - processPackages [minolz]: Start processing: arrendatools-plantillas
+[2023-04-16 13:25:20] INFO root fetch - main [MainThread]: End processing [minolz] error
+[2023-04-16 13:25:20] INFO root fetch - processPackages [TextAdventures]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 13:25:20] INFO root fetch - processPackages [pertpy]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-16 13:25:20] INFO root fetch - processPackages [arrendatools-plantillas]: New version: [1.0.3] Old Version: [1.0.1]
+[2023-04-16 13:25:20] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-16 13:25:20] WARNING root fetch - processPackages [nats-client-py]: Skipping, unable to determine old version
+[2023-04-16 13:25:20] INFO root fetch - processPackages [nats-client-py]: Start processing: agnmol
+[2023-04-16 13:25:20] INFO root fetch - main [MainThread]: End processing [nats-client-py] error
+[2023-04-16 13:25:20] INFO root fetch - processPackages [REMclust]: New version: [1.0] Old Version: [0.2]
+[2023-04-16 13:25:20] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.4.9] Old Version: [2023.4.7]
+[2023-04-16 13:25:20] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-16 13:25:20] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-16 13:25:20] WARNING root fetch - processPackages [agnmol]: Skipping, unable to determine old version
+[2023-04-16 13:25:20] INFO root fetch - main [MainThread]: End processing [agnmol] error
+[2023-04-16 13:25:20] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/00/82/319f3c998c1b886c648e7560fce0ad6d68fa06b6b8807405ce7adbe77519/torchserve_nightly-2023.4.8-py3-none-any.whl
+[2023-04-16 13:25:20] WARNING root fetch - processPackages [osbeautify]: Skipping, unable to determine old version
+[2023-04-16 13:25:20] INFO root fetch - main [MainThread]: End processing [osbeautify] error
+[2023-04-16 13:25:20] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-04-16 13:25:20] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.4.7-py39-none-any.whl.zip tmp/torchrec_nightly-2023.4.9-py39-none-any.whl.zip --markdown 20230416/t/torchrec-nightly/2023.4.7-2023.4.9/diff.md --exclude *.pyd
+[2023-04-16 13:25:20] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-04-16 13:25:20] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.4.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230416/t/torch-workflow-archiver-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-16 13:25:20] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23695640>=10485760
+[2023-04-16 13:25:20] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-04-16 13:25:20] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-04-16 13:25:20] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.4.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230416/t/torch-model-archiver-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-16 13:25:20] INFO root fetch - processPackages [TextAdventures]: Downloading https://files.pythonhosted.org/packages/ab/6d/3bed2c5c9d69d4f06554c23cad15af59389b689cf5bc33f4f4e36fa1ad1f/TextAdventures-0.0.1.tar.gz
+[2023-04-16 13:25:20] INFO root fetch - processPackages [arrendatools-plantillas]: Downloading https://files.pythonhosted.org/packages/ed/fb/758c781456874dec47b9f2f8036edb495248204fea9300aed27c3985bd80/arrendatools_plantillas-1.0.3.tar.gz
+[2023-04-16 13:25:20] INFO root fetch - processPackages [REMclust]: Downloading https://files.pythonhosted.org/packages/4d/1d/fdb6755d9151bc82d9a4b91ce515a50abad9f0740d3def06ac4782628f31/REMclust-0.2.tar.gz
+[2023-04-16 13:25:20] INFO root fetch - processPackages [pertpy]: Downloading https://files.pythonhosted.org/packages/46/47/eb4c77bd4b1b2faca3e94aa79ee64f7011b6cb468b3cac39f8e2cc75f958/pertpy-0.3.0.tar.gz
+[2023-04-16 13:25:21] INFO root fetch - processPackages [arrendatools-plantillas]: executing diffoscope
+[2023-04-16 13:25:21] INFO root fetch - processPackages [arrendatools-plantillas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrendatools_plantillas-1.0.1.tar.gz tmp/arrendatools_plantillas-1.0.3.tar.gz --markdown 20230416/a/arrendatools-plantillas/1.0.1-1.0.3/diff.md --exclude *.pyd
+[2023-04-16 13:25:21] INFO root fetch - processPackages [TextAdventures]: Downloading https://files.pythonhosted.org/packages/ce/57/7c20b46a3d4d27ac991d63658a7caf87911554c6df720078e5404d28eb46/TextAdventures-0.0.2.tar.gz
+[2023-04-16 13:25:21] INFO root fetch - processPackages [REMclust]: Downloading https://files.pythonhosted.org/packages/02/97/c3a5ab1217234201d4c4c01811759f041d127e422a1b5e5dd6078890a840/REMclust-1.0.tar.gz
+[2023-04-16 13:25:21] INFO root fetch - processPackages [TextAdventures]: executing diffoscope
+[2023-04-16 13:25:21] INFO root fetch - processPackages [TextAdventures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TextAdventures-0.0.1.tar.gz tmp/TextAdventures-0.0.2.tar.gz --markdown 20230416/T/TextAdventures/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 13:25:21] INFO root fetch - processPackages [pertpy]: Downloading https://files.pythonhosted.org/packages/ca/3a/f29b4f6a8ec51bc7cfa7fd39c2e967799eca7f4f5f78ed971b9efd6493e8/pertpy-0.4.0.tar.gz
+[2023-04-16 13:25:21] INFO root fetch - processPackages [REMclust]: executing diffoscope
+[2023-04-16 13:25:21] INFO root fetch - processPackages [REMclust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/REMclust-0.2.tar.gz tmp/REMclust-1.0.tar.gz --markdown 20230416/R/REMclust/0.2-1.0/diff.md --exclude *.pyd
+[2023-04-16 13:25:21] INFO root fetch - processPackages [pertpy]: executing diffoscope
+[2023-04-16 13:25:21] INFO root fetch - processPackages [pertpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pertpy-0.3.0.tar.gz tmp/pertpy-0.4.0.tar.gz --markdown 20230416/p/pertpy/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-16 13:25:22] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-04-16 13:25:22] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-04-16 13:25:22] INFO root fetch - main [MainThread]: End processing [arrendatools-plantillas]: success
+[2023-04-16 13:25:22] INFO root fetch - main [MainThread]: End processing [REMclust]: success
+[2023-04-16 13:25:22] INFO root fetch - main [MainThread]: End processing [TextAdventures]: success
+[2023-04-16 13:25:22] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-04-16 13:25:22] INFO root fetch - main [MainThread]: End processing [pertpy]: success
+[2023-04-16 13:25:22] INFO root fetch - main [MainThread]: Store serial: [17726374]
