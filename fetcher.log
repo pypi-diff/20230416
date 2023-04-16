@@ -2250,3 +2250,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 04:24:37] INFO root fetch - main [MainThread]: End processing [ledes-parser]: success
 [2023-04-16 04:24:38] INFO root fetch - main [MainThread]: End processing [minitrade]: success
 [2023-04-16 04:24:38] INFO root fetch - main [MainThread]: Store serial: [17723276]
+[2023-04-16 04:29:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723276]
+[2023-04-16 04:29:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: html4quiz
+[2023-04-16 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llama-cpp-python
+[2023-04-16 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monailabel-weekly
+[2023-04-16 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iam-actions
+[2023-04-16 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-property-based-testing
+[2023-04-16 04:29:46] INFO root fetch - processPackages [html4quiz]: New version: [0.0.24] Old Version: [0.0.23]
+[2023-04-16 04:29:46] INFO root fetch - processPackages [llama-cpp-python]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 04:29:46] INFO root fetch - processPackages [monailabel-weekly]: New version: [0.5.dev2316] Old Version: [0.5.dev2315]
+[2023-04-16 04:29:46] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230416] Old Version: [1.2.20230415]
+[2023-04-16 04:29:47] WARNING root fetch - processPackages [python-property-based-testing]: Skipping, unable to determine old version
+[2023-04-16 04:29:47] INFO root fetch - main [MainThread]: End processing [python-property-based-testing] error
+[2023-04-16 04:29:47] INFO root fetch - processPackages [monailabel-weekly]: Downloading https://files.pythonhosted.org/packages/9c/d5/9983deb4624f184538f71ce99e7e4fcc4a30c46e0c8a4bdbc5a988c613fe/monailabel_weekly-0.5.dev2315-py3-none-any.whl
+[2023-04-16 04:29:47] INFO root fetch - processPackages [llama-cpp-python]: Downloading https://files.pythonhosted.org/packages/7e/3b/b5f7e1ec5f43a4e980733c63bd4f05e1b7e14fd3b7aa72d9ca91f2415323/llama_cpp_python-0.1.8.tar.gz
+[2023-04-16 04:29:47] INFO root fetch - processPackages [html4quiz]: Downloading https://files.pythonhosted.org/packages/4c/7e/34114f3e733ef219395291ef3a6921089b9f9c4c402f36c21b3e13f4d248/html4quiz-0.0.24.tar.gz
+[2023-04-16 04:29:47] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/a5/e4/d9f39597d55000641add0bdaa1a329c13f50136654fe5e112fac9af33357/iam_actions-1.2.20230416.tar.gz
+[2023-04-16 04:29:47] INFO root fetch - processPackages [html4quiz]: executing diffoscope
+[2023-04-16 04:29:47] INFO root fetch - processPackages [html4quiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html4quiz-0.0.23.tar.gz tmp/html4quiz-0.0.24.tar.gz --markdown 20230416/h/html4quiz/0.0.23-0.0.24/diff.md --exclude *.pyd
+[2023-04-16 04:29:47] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-04-16 04:29:47] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230415.tar.gz tmp/iam_actions-1.2.20230416.tar.gz --markdown 20230416/i/iam-actions/1.2.20230415-1.2.20230416/diff.md --exclude *.pyd
+[2023-04-16 04:29:47] INFO root fetch - processPackages [llama-cpp-python]: Downloading https://files.pythonhosted.org/packages/9f/24/45a5a3beee1354f668d916eb1a2146835a0eda4dbad0da45252170e105a6/llama_cpp_python-0.1.9.tar.gz
+[2023-04-16 04:29:47] INFO root fetch - processPackages [llama-cpp-python]: executing diffoscope
+[2023-04-16 04:29:47] INFO root fetch - processPackages [llama-cpp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_python-0.1.8.tar.gz tmp/llama_cpp_python-0.1.9.tar.gz --markdown 20230416/l/llama-cpp-python/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 04:29:48] INFO root fetch - main [MainThread]: End processing [html4quiz]: success
+[2023-04-16 04:29:48] INFO root fetch - main [MainThread]: End processing [llama-cpp-python]: success
+[2023-04-16 04:29:48] INFO root fetch - processPackages [monailabel-weekly]: Downloading https://files.pythonhosted.org/packages/6a/ae/2c29a8b8c32f06fbc8b1619cbae55f29b312a7c78cc4a4a8dd058794fe3b/monailabel_weekly-0.5.dev2316-py3-none-any.whl
+[2023-04-16 04:29:49] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-04-16 04:29:49] INFO root fetch - processPackages [monailabel-weekly]: executing diffoscope
+[2023-04-16 04:29:49] INFO root fetch - processPackages [monailabel-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monailabel_weekly-0.5.dev2315-py3-none-any.whl.zip tmp/monailabel_weekly-0.5.dev2316-py3-none-any.whl.zip --markdown 20230416/m/monailabel-weekly/0.5.dev2315-0.5.dev2316/diff.md --exclude *.pyd
+[2023-04-16 04:29:57] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
+[2023-04-16 04:29:57] INFO root fetch - main [MainThread]: Store serial: [17723291]
