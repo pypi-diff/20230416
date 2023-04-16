@@ -3394,3 +3394,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 07:33:38] INFO root fetch - main [MainThread]: End processing [sphinxawesome-theme]: success
 [2023-04-16 07:33:38] INFO root fetch - main [MainThread]: End processing [robotoff]: success
 [2023-04-16 07:33:38] INFO root fetch - main [MainThread]: Store serial: [17723950]
+[2023-04-16 07:38:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723950]
+[2023-04-16 07:38:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-16 07:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coconut-develop
+[2023-04-16 07:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sparrow-order-lib
+[2023-04-16 07:38:48] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.0a0.dev9] Old Version: [3.0.0a0.dev8]
+[2023-04-16 07:38:48] INFO root fetch - processPackages [sparrow-order-lib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 07:38:48] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-04-16 07:38:48] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.0a0.dev8.tar.gz tmp/coconut-develop-3.0.0a0.dev9.tar.gz --markdown 20230416/c/coconut-develop/3.0.0a0.dev8-3.0.0a0.dev9/diff.md --exclude *.pyd
+[2023-04-16 07:38:48] INFO root fetch - processPackages [sparrow-order-lib]: Downloading https://files.pythonhosted.org/packages/fa/ad/c7ee7e685e7c6c08e6d6065032e35cdad113c4e0a12ef70d877959b42052/sparrow-order-lib-0.1.8.tar.gz
+[2023-04-16 07:38:48] INFO root fetch - processPackages [sparrow-order-lib]: Downloading https://files.pythonhosted.org/packages/a9/2c/b12f3c4993a0eaaf36185b68638fdd679d5f7439756590886545fcd2b7e7/sparrow-order-lib-0.1.9.tar.gz
+[2023-04-16 07:38:48] INFO root fetch - processPackages [sparrow-order-lib]: executing diffoscope
+[2023-04-16 07:38:48] INFO root fetch - processPackages [sparrow-order-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow-order-lib-0.1.8.tar.gz tmp/sparrow-order-lib-0.1.9.tar.gz --markdown 20230416/s/sparrow-order-lib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 07:38:50] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-04-16 07:38:50] INFO root fetch - main [MainThread]: End processing [sparrow-order-lib]: success
+[2023-04-16 07:38:50] INFO root fetch - main [MainThread]: Store serial: [17723954]
