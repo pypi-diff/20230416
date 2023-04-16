@@ -6965,3 +6965,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 12:18:59] INFO root fetch - main [MainThread]: End processing [hahomematic]: success
 [2023-04-16 12:18:59] INFO root fetch - main [MainThread]: End processing [DedupliPy]: success
 [2023-04-16 12:18:59] INFO root fetch - main [MainThread]: Store serial: [17725982]
+[2023-04-16 12:24:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17725982]
+[2023-04-16 12:24:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 12:24:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-spacy-redact-message
+[2023-04-16 12:24:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: haki-crawler
+[2023-04-16 12:24:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pylywsdxx
+[2023-04-16 12:24:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robotoff
+[2023-04-16 12:24:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vollseg
+[2023-04-16 12:24:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nitrado
+[2023-04-16 12:24:08] WARNING root fetch - processPackages [haki-crawler]: Skipping, unable to determine old version
+[2023-04-16 12:24:08] INFO root fetch - main [MainThread]: End processing [haki-crawler] error
+[2023-04-16 12:24:08] INFO root fetch - processPackages [pylywsdxx]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-16 12:24:08] INFO root fetch - processPackages [py-spacy-redact-message]: New version: [0.0.23] Old Version: [0.0.22]
+[2023-04-16 12:24:08] INFO root fetch - processPackages [robotoff]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-16 12:24:08] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 12:24:08] INFO root fetch - processPackages [nitrado]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 12:24:08] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 12:24:08] INFO root fetch - processPackages [robotoff]: executing diffoscope
+[2023-04-16 12:24:08] INFO root fetch - processPackages [robotoff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotoff-1.8.0.tar.gz tmp/robotoff-1.9.0.tar.gz --markdown 20230416/r/robotoff/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-16 12:24:08] INFO root fetch - processPackages [pylywsdxx]: Downloading https://files.pythonhosted.org/packages/38/66/96803718dbbe9490f1ba0b9426f06d3f2ff249de378e5db462f6c2760606/pylywsdxx-1.2.1.tar.gz
+[2023-04-16 12:24:08] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 12:24:08] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 12:24:08] INFO root fetch - processPackages [py-spacy-redact-message]: Downloading https://files.pythonhosted.org/packages/2c/39/40adf3ee1e3b764c1e71556d32cfc3cbcb6472f4b5d71afe33c1d2656ce0/py_spacy_redact_message-0.0.23.tar.gz
+[2023-04-16 12:24:08] INFO root fetch - processPackages [nitrado]: Downloading https://files.pythonhosted.org/packages/90/dc/bd7a283727fe81e98ec92ce215d298a242cf15ead35412c0fc15986effc5/nitrado-1.0.2.tar.gz
+[2023-04-16 12:24:08] INFO root fetch - processPackages [py-spacy-redact-message]: executing diffoscope
+[2023-04-16 12:24:08] INFO root fetch - processPackages [py-spacy-redact-message]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_spacy_redact_message-0.0.22.tar.gz tmp/py_spacy_redact_message-0.0.23.tar.gz --markdown 20230416/p/py-spacy-redact-message/0.0.22-0.0.23/diff.md --exclude *.pyd
+[2023-04-16 12:24:08] INFO root fetch - processPackages [pylywsdxx]: Downloading https://files.pythonhosted.org/packages/7b/1a/1ea11be57534bdb967f775a14439e4721dc943d4e60d5c9d22f151cfa734/pylywsdxx-1.2.2.tar.gz
+[2023-04-16 12:24:08] INFO root fetch - processPackages [nitrado]: executing diffoscope
+[2023-04-16 12:24:08] INFO root fetch - processPackages [nitrado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nitrado-1.0.1.tar.gz tmp/nitrado-1.0.2.tar.gz --markdown 20230416/n/nitrado/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 12:24:08] INFO root fetch - processPackages [pylywsdxx]: executing diffoscope
+[2023-04-16 12:24:08] INFO root fetch - processPackages [pylywsdxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylywsdxx-1.2.1.tar.gz tmp/pylywsdxx-1.2.2.tar.gz --markdown 20230416/p/pylywsdxx/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-16 12:24:09] INFO root fetch - main [MainThread]: End processing [py-spacy-redact-message]: success
+[2023-04-16 12:24:09] INFO root fetch - main [MainThread]: End processing [nitrado]: success
+[2023-04-16 12:24:09] INFO root fetch - main [MainThread]: End processing [pylywsdxx]: success
+[2023-04-16 12:24:10] INFO root fetch - main [MainThread]: End processing [robotoff]: success
+[2023-04-16 12:24:10] INFO root fetch - main [MainThread]: Store serial: [17726017]
