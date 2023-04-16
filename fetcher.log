@@ -8764,3 +8764,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 14:44:46] INFO root fetch - main [MainThread]: End processing [Liara]: success
 [2023-04-16 14:44:54] INFO root fetch - main [MainThread]: End processing [clevertouch]: success
 [2023-04-16 14:44:54] INFO root fetch - main [MainThread]: Store serial: [17726988]
+[2023-04-16 14:49:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726988]
+[2023-04-16 14:50:04] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 14:50:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gptrim
+[2023-04-16 14:50:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygedcom
+[2023-04-16 14:50:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bristol
+[2023-04-16 14:50:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: frasa
+[2023-04-16 14:50:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wikipediarevs
+[2023-04-16 14:50:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pymstodo
+[2023-04-16 14:50:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dxsp
+[2023-04-16 14:50:04] INFO root fetch - processPackages [pygedcom]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-16 14:50:04] WARNING root fetch - processPackages [gptrim]: Skipping, unable to determine old version
+[2023-04-16 14:50:04] INFO root fetch - main [MainThread]: End processing [gptrim] error
+[2023-04-16 14:50:04] INFO root fetch - processPackages [bristol]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-16 14:50:04] INFO root fetch - processPackages [pymstodo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 14:50:04] INFO root fetch - processPackages [wikipediarevs]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-04-16 14:50:04] INFO root fetch - processPackages [frasa]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-16 14:50:04] INFO root fetch - processPackages [dxsp]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-16 14:50:05] INFO root fetch - processPackages [pygedcom]: Downloading https://files.pythonhosted.org/packages/69/16/b1f2b5073cba4efef722f35d6b27133b4fb2ba62209e91a6f2ca5f4e1cfa/pygedcom-0.2.0.tar.gz
+[2023-04-16 14:50:05] INFO root fetch - processPackages [bristol]: Downloading https://files.pythonhosted.org/packages/08/f8/85edd83da9d9c7ceadc1b8b802086ee6a34e5f60543bcb223aaaed37082f/bristol-0.2.8.tar.gz
+[2023-04-16 14:50:05] INFO root fetch - processPackages [pymstodo]: Downloading https://files.pythonhosted.org/packages/de/5e/7ffe96b32388026792d97b95997f354b3c84731511d87b0b4d92c78a6bda/pymstodo-0.0.8.tar.gz
+[2023-04-16 14:50:05] INFO root fetch - processPackages [wikipediarevs]: Downloading https://files.pythonhosted.org/packages/50/dd/03917d6f2ffc6f75c2591d7f269e2d75065f3c6bcb1885cea794ea90e816/wikipediarevs-0.0.2.tar.gz
+[2023-04-16 14:50:05] INFO root fetch - processPackages [frasa]: Downloading https://files.pythonhosted.org/packages/3e/10/dd4686b4aa09f5bb79b867080c82c651f7e0061fbe261e84f66fd55751e3/frasa-0.1.2.tar.gz
+[2023-04-16 14:50:05] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/2d/88/1028e6c6f1375f897eeec2cb68f47a0849a1f94cd673b8b41766a5695d7a/dxsp-1.2.0.tar.gz
+[2023-04-16 14:50:05] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-16 14:50:05] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.1.0.tar.gz tmp/dxsp-1.2.0.tar.gz --markdown 20230416/d/dxsp/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-16 14:50:05] INFO root fetch - processPackages [bristol]: Downloading https://files.pythonhosted.org/packages/11/95/6c09f99d6863b8ddfac859180b9af2d75e4b7bf7899874aaee5325c48e1b/bristol-0.2.9.tar.gz
+[2023-04-16 14:50:05] INFO root fetch - processPackages [pygedcom]: Downloading https://files.pythonhosted.org/packages/fb/7a/48451d632c042a2bfea50591bb517e94cf4e479023c605a9aa4b52ad8fbd/pygedcom-0.2.1.tar.gz
+[2023-04-16 14:50:05] INFO root fetch - processPackages [pymstodo]: Downloading https://files.pythonhosted.org/packages/2b/f2/5d87c391389f8dbec8eb5ae4db704a33bd62acd3116ec24b57003c44b9f2/pymstodo-0.0.9.tar.gz
+[2023-04-16 14:50:05] INFO root fetch - processPackages [bristol]: executing diffoscope
+[2023-04-16 14:50:05] INFO root fetch - processPackages [bristol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bristol-0.2.8.tar.gz tmp/bristol-0.2.9.tar.gz --markdown 20230416/b/bristol/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-16 14:50:05] INFO root fetch - processPackages [wikipediarevs]: Downloading https://files.pythonhosted.org/packages/79/e4/d7f89c52229b221e17df3cdfdb2d369707044e875cbe4b151a5e1d5a0d66/wikipediarevs-0.1.0.tar.gz
+[2023-04-16 14:50:05] INFO root fetch - processPackages [frasa]: Downloading https://files.pythonhosted.org/packages/d7/d2/153ddf32c5ff8819f5580aa120788abb26c097d5bc27172f1be40ca68809/frasa-0.1.3.tar.gz
+[2023-04-16 14:50:05] INFO root fetch - processPackages [pymstodo]: executing diffoscope
+[2023-04-16 14:50:05] INFO root fetch - processPackages [pymstodo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymstodo-0.0.8.tar.gz tmp/pymstodo-0.0.9.tar.gz --markdown 20230416/p/pymstodo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 14:50:05] INFO root fetch - processPackages [pygedcom]: executing diffoscope
+[2023-04-16 14:50:05] INFO root fetch - processPackages [pygedcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygedcom-0.2.0.tar.gz tmp/pygedcom-0.2.1.tar.gz --markdown 20230416/p/pygedcom/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-16 14:50:05] INFO root fetch - processPackages [wikipediarevs]: executing diffoscope
+[2023-04-16 14:50:05] INFO root fetch - processPackages [wikipediarevs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wikipediarevs-0.0.2.tar.gz tmp/wikipediarevs-0.1.0.tar.gz --markdown 20230416/w/wikipediarevs/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-04-16 14:50:06] INFO root fetch - processPackages [frasa]: executing diffoscope
+[2023-04-16 14:50:06] INFO root fetch - processPackages [frasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frasa-0.1.2.tar.gz tmp/frasa-0.1.3.tar.gz --markdown 20230416/f/frasa/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-16 14:50:06] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-16 14:50:06] INFO root fetch - main [MainThread]: End processing [bristol]: success
+[2023-04-16 14:50:06] INFO root fetch - main [MainThread]: End processing [pymstodo]: success
+[2023-04-16 14:50:06] INFO root fetch - main [MainThread]: End processing [wikipediarevs]: success
+[2023-04-16 14:50:07] INFO root fetch - main [MainThread]: End processing [pygedcom]: success
+[2023-04-16 14:50:08] INFO root fetch - main [MainThread]: End processing [frasa]: success
+[2023-04-16 14:50:08] INFO root fetch - main [MainThread]: Store serial: [17727013]
