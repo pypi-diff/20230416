@@ -10566,3 +10566,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 17:25:57] INFO root fetch - main [MainThread]: End processing [gbd-tools]: success
 [2023-04-16 17:25:57] INFO root fetch - main [MainThread]: End processing [aistac-foundation]: success
 [2023-04-16 17:25:57] INFO root fetch - main [MainThread]: Store serial: [17728108]
+[2023-04-16 17:31:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728108]
+[2023-04-16 17:31:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 17:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: capsolver-api
+[2023-04-16 17:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whisper-ctranslate2
+[2023-04-16 17:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nats-client-py
+[2023-04-16 17:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cochar
+[2023-04-16 17:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alas-ce0-client
+[2023-04-16 17:31:07] INFO root fetch - processPackages [whisper-ctranslate2]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 17:31:07] INFO root fetch - processPackages [capsolver-api]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-16 17:31:07] INFO root fetch - processPackages [cochar]: New version: [1.0.0a6] Old Version: [1.0.0a5]
+[2023-04-16 17:31:07] INFO root fetch - processPackages [alas-ce0-client]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-04-16 17:31:07] INFO root fetch - processPackages [nats-client-py]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-16 17:31:07] INFO root fetch - processPackages [cochar]: Downloading https://files.pythonhosted.org/packages/6a/e9/792f25eb0d9d7489e3118fbf68c25f7690668ebaf2d65fcc6719cde54f8f/cochar-1.0.0a5.tar.gz
+[2023-04-16 17:31:07] INFO root fetch - processPackages [nats-client-py]: Downloading https://files.pythonhosted.org/packages/37/37/ce0b30d327a9c58c3c96e271c271712124edcd8d1dd05e5227c6bb0d5042/nats-client-py-0.2.0.tar.gz
+[2023-04-16 17:31:07] INFO root fetch - processPackages [capsolver-api]: Downloading https://files.pythonhosted.org/packages/85/c6/f7f1c6ed002be379a49228af821e3cadb79c3fa2ee2d460a0df0acad6cab/capsolver_api-1.0.3.tar.gz
+[2023-04-16 17:31:07] INFO root fetch - processPackages [capsolver-api]: executing diffoscope
+[2023-04-16 17:31:07] INFO root fetch - processPackages [alas-ce0-client]: executing diffoscope
+[2023-04-16 17:31:07] INFO root fetch - processPackages [capsolver-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/capsolver_api-1.0.2.tar.gz tmp/capsolver_api-1.0.3.tar.gz --markdown 20230416/c/capsolver-api/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-16 17:31:07] INFO root fetch - processPackages [alas-ce0-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alas-ce0-client-4.0.8.tar.gz tmp/alas-ce0-client-4.0.9.tar.gz --markdown 20230416/a/alas-ce0-client/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-04-16 17:31:08] INFO root fetch - processPackages [nats-client-py]: Downloading https://files.pythonhosted.org/packages/f4/cd/0c5cc264952b74c482a3d5af33b9cfc8fb497eb1c8fbad671e57b9086502/nats-client-py-0.3.0.tar.gz
+[2023-04-16 17:31:08] INFO root fetch - processPackages [nats-client-py]: executing diffoscope
+[2023-04-16 17:31:08] INFO root fetch - processPackages [nats-client-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nats-client-py-0.2.0.tar.gz tmp/nats-client-py-0.3.0.tar.gz --markdown 20230416/n/nats-client-py/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 17:31:08] INFO root fetch - processPackages [whisper-ctranslate2]: Downloading https://files.pythonhosted.org/packages/76/88/6e124934f9b6a1e73c25fb14a73df3e9265844da745ba316cdf83547f5fd/whisper-ctranslate2-0.1.9.tar.gz
+[2023-04-16 17:31:08] INFO root fetch - processPackages [whisper-ctranslate2]: executing diffoscope
+[2023-04-16 17:31:08] INFO root fetch - processPackages [whisper-ctranslate2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper-ctranslate2-0.1.8.tar.gz tmp/whisper-ctranslate2-0.1.9.tar.gz --markdown 20230416/w/whisper-ctranslate2/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 17:31:08] INFO root fetch - processPackages [cochar]: Downloading https://files.pythonhosted.org/packages/46/a0/33893088c8eaf665df15d757fd4cb9b2c75cf24bf14ef777f98e78d0be10/cochar-1.0.0a6.tar.gz
+[2023-04-16 17:31:08] INFO root fetch - processPackages [cochar]: executing diffoscope
+[2023-04-16 17:31:08] INFO root fetch - processPackages [cochar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cochar-1.0.0a5.tar.gz tmp/cochar-1.0.0a6.tar.gz --markdown 20230416/c/cochar/1.0.0a5-1.0.0a6/diff.md --exclude *.pyd
+[2023-04-16 17:31:09] INFO root fetch - main [MainThread]: End processing [capsolver-api]: success
+[2023-04-16 17:31:09] INFO root fetch - main [MainThread]: End processing [nats-client-py]: success
+[2023-04-16 17:31:09] INFO root fetch - main [MainThread]: End processing [alas-ce0-client]: success
+[2023-04-16 17:31:09] INFO root fetch - main [MainThread]: End processing [whisper-ctranslate2]: success
+[2023-04-16 17:31:09] INFO root fetch - main [MainThread]: End processing [cochar]: success
+[2023-04-16 17:31:09] INFO root fetch - main [MainThread]: Store serial: [17728122]
