@@ -13026,3 +13026,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 21:18:37] INFO root fetch - main [MainThread]: End processing [TheengsGateway]: success
 [2023-04-16 21:18:39] INFO root fetch - main [MainThread]: End processing [pypdf]: success
 [2023-04-16 21:18:39] INFO root fetch - main [MainThread]: Store serial: [17729607]
+[2023-04-16 21:23:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729607]
+[2023-04-16 21:23:47] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 21:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lazyfunc
+[2023-04-16 21:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: askpyro
+[2023-04-16 21:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: senor-octopus
+[2023-04-16 21:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysui-gadgets
+[2023-04-16 21:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: comwatt
+[2023-04-16 21:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: feloopy
+[2023-04-16 21:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sunnyday-IZPy
+[2023-04-16 21:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dress-diff
+[2023-04-16 21:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: SrbAI
+[2023-04-16 21:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: satgpt
+[2023-04-16 21:23:47] WARNING root fetch - processPackages [askpyro]: Skipping, unable to determine old version
+[2023-04-16 21:23:47] INFO root fetch - main [MainThread]: End processing [askpyro] error
+[2023-04-16 21:23:47] INFO root fetch - processPackages [senor-octopus]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-16 21:23:48] WARNING root fetch - processPackages [comwatt]: Skipping, unable to determine old version
+[2023-04-16 21:23:48] INFO root fetch - main [MainThread]: End processing [comwatt] error
+[2023-04-16 21:23:48] INFO root fetch - processPackages [lazyfunc]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 21:23:48] INFO root fetch - processPackages [feloopy]: New version: [0.2.4] Old Version: [0.2.31]
+[2023-04-16 21:23:48] INFO root fetch - processPackages [sunnyday-IZPy]: New version: [2.1.0] Old Version: [2.0.0]
+[2023-04-16 21:23:48] INFO root fetch - processPackages [pysui-gadgets]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 21:23:48] WARNING root fetch - processPackages [dress-diff]: Skipping, unable to determine old version
+[2023-04-16 21:23:48] INFO root fetch - processPackages [SrbAI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 21:23:48] INFO root fetch - main [MainThread]: End processing [dress-diff] error
+[2023-04-16 21:23:48] INFO root fetch - processPackages [SrbAI]: executing diffoscope
+[2023-04-16 21:23:48] INFO root fetch - processPackages [SrbAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SrbAI-0.0.8.tar.gz tmp/SrbAI-0.0.9.tar.gz --markdown 20230416/S/SrbAI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 21:23:48] INFO root fetch - processPackages [satgpt]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 21:23:48] INFO root fetch - processPackages [lazyfunc]: Downloading https://files.pythonhosted.org/packages/6e/01/404dffe66e0bf2539ba5114b7894bfd12e2a695f87745a32d0d35dd11e72/lazyfunc-0.1.0.tar.gz
+[2023-04-16 21:23:48] INFO root fetch - processPackages [senor-octopus]: Downloading https://files.pythonhosted.org/packages/0a/de/245d1bd687eb5a8a8567e07bd4185039bad8662b16d147717a1127c650d2/senor-octopus-0.1.9.tar.gz
+[2023-04-16 21:23:48] INFO root fetch - processPackages [feloopy]: Downloading https://files.pythonhosted.org/packages/bf/70/bd4b10d63c4e512f1923cc25d8faba3c29932f0717867d309a67f5024760/feloopy-0.2.4.tar.gz
+[2023-04-16 21:23:48] INFO root fetch - processPackages [satgpt]: Downloading https://files.pythonhosted.org/packages/b2/ce/c347d29a79c162ac578884addfad24cbd1a22be61fcb917a66b332a6caad/satgpt-0.0.1-py3-none-any.whl
+[2023-04-16 21:23:48] INFO root fetch - processPackages [pysui-gadgets]: executing diffoscope
+[2023-04-16 21:23:48] INFO root fetch - processPackages [pysui-gadgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysui_gadgets-0.0.8-py3-none-any.whl.zip tmp/pysui_gadgets-0.0.9-py3-none-any.whl.zip --markdown 20230416/p/pysui-gadgets/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 21:23:48] INFO root fetch - processPackages [sunnyday-IZPy]: Downloading https://files.pythonhosted.org/packages/6d/4d/30b50582d7d226143fbd57e8472674eefbe39b8603860635e15dfcda27dc/sunnyday-IZPy-2.1.0.tar.gz
+[2023-04-16 21:23:48] INFO root fetch - processPackages [feloopy]: executing diffoscope
+[2023-04-16 21:23:48] INFO root fetch - processPackages [feloopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feloopy-0.2.31.tar.gz tmp/feloopy-0.2.4.tar.gz --markdown 20230416/f/feloopy/0.2.31-0.2.4/diff.md --exclude *.pyd
+[2023-04-16 21:23:48] INFO root fetch - processPackages [sunnyday-IZPy]: executing diffoscope
+[2023-04-16 21:23:48] INFO root fetch - processPackages [sunnyday-IZPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunnyday-IZPy-2.0.0.tar.gz tmp/sunnyday-IZPy-2.1.0.tar.gz --markdown 20230416/s/sunnyday-IZPy/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2023-04-16 21:23:48] INFO root fetch - processPackages [lazyfunc]: Downloading https://files.pythonhosted.org/packages/e2/ac/35b92f0d66798647ced4031317ebc19f840f308a086647bfc14b08f62d0d/lazyfunc-0.2.0.tar.gz
+[2023-04-16 21:23:48] INFO root fetch - processPackages [senor-octopus]: Downloading https://files.pythonhosted.org/packages/bb/86/b824939331a03634dddf003ebf83f5ec1ad2107187defb885426f479628e/senor-octopus-0.2.0.tar.gz
+[2023-04-16 21:23:48] INFO root fetch - processPackages [lazyfunc]: executing diffoscope
+[2023-04-16 21:23:48] INFO root fetch - processPackages [lazyfunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazyfunc-0.1.0.tar.gz tmp/lazyfunc-0.2.0.tar.gz --markdown 20230416/l/lazyfunc/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 21:23:48] INFO root fetch - processPackages [senor-octopus]: executing diffoscope
+[2023-04-16 21:23:48] INFO root fetch - processPackages [senor-octopus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/senor-octopus-0.1.9.tar.gz tmp/senor-octopus-0.2.0.tar.gz --markdown 20230416/s/senor-octopus/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 21:23:48] INFO root fetch - processPackages [satgpt]: Downloading https://files.pythonhosted.org/packages/88/39/f1f2ae0638a1ad7a7071dc0886d930d638f10789d74ecc5c3727904d4ad9/satgpt-0.0.2.tar.gz
+[2023-04-16 21:23:48] INFO root fetch - processPackages [satgpt]: executing diffoscope
+[2023-04-16 21:23:48] INFO root fetch - processPackages [satgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satgpt-0.0.1-py3-none-any.whl.zip tmp/satgpt-0.0.2.tar.gz --markdown 20230416/s/satgpt/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 21:23:49] INFO root fetch - main [MainThread]: End processing [SrbAI]: success
+[2023-04-16 21:23:49] INFO root fetch - main [MainThread]: End processing [sunnyday-IZPy]: success
+[2023-04-16 21:23:49] INFO root fetch - main [MainThread]: End processing [pysui-gadgets]: success
+[2023-04-16 21:23:49] INFO root fetch - main [MainThread]: End processing [satgpt]: success
+[2023-04-16 21:23:49] INFO root fetch - main [MainThread]: End processing [senor-octopus]: success
+[2023-04-16 21:23:50] INFO root fetch - main [MainThread]: End processing [lazyfunc]: success
+[2023-04-16 21:23:50] INFO root fetch - main [MainThread]: End processing [feloopy]: success
+[2023-04-16 21:23:50] INFO root fetch - main [MainThread]: Store serial: [17729639]
