@@ -1823,3 +1823,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 03:16:55] INFO root fetch - main [MainThread]: End processing [cdk-lambda-subminute]: success
 [2023-04-16 03:16:56] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
 [2023-04-16 03:16:56] INFO root fetch - main [MainThread]: Store serial: [17723052]
+[2023-04-16 03:21:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723052]
+[2023-04-16 03:22:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-16 03:22:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rubpy
+[2023-04-16 03:22:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arkserver
+[2023-04-16 03:22:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scotthsieh-projen-statemachine
+[2023-04-16 03:22:04] INFO root fetch - processPackages [rubpy]: New version: [6.0.3] Old Version: [6.0.2]
+[2023-04-16 03:22:04] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-16 03:22:04] INFO root fetch - processPackages [arkserver]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 03:22:04] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: Downloading https://files.pythonhosted.org/packages/75/2e/d50f8b081603ac850ec9b5d5d5206498a7d302b7a6ea31adbd59cb01a4ae/scotthsieh_projen_statemachine-2.0.98.tar.gz
+[2023-04-16 03:22:04] INFO root fetch - processPackages [rubpy]: Downloading https://files.pythonhosted.org/packages/33/55/92ce0292d92610bbecec47fd2d2c6347d931c52919c398eefe6ec605d37f/rubpy-6.0.3.tar.gz
+[2023-04-16 03:22:04] INFO root fetch - processPackages [arkserver]: Downloading https://files.pythonhosted.org/packages/00/6c/5601828211030451b00891b7791b53eb96e881e774b1459bf6a072a3bd18/arkserver-0.0.8.tar.gz
+[2023-04-16 03:22:04] INFO root fetch - processPackages [rubpy]: executing diffoscope
+[2023-04-16 03:22:04] INFO root fetch - processPackages [rubpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rubpy-6.0.2.tar.gz tmp/rubpy-6.0.3.tar.gz --markdown 20230416/r/rubpy/6.0.2-6.0.3/diff.md --exclude *.pyd
+[2023-04-16 03:22:05] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: Downloading https://files.pythonhosted.org/packages/8d/5b/2a5beec8e0ad27c9cbe9feb5d73fadf98cf28ce1a01ad03f7abb00f14071/scotthsieh_projen_statemachine-2.0.99.tar.gz
+[2023-04-16 03:22:05] INFO root fetch - processPackages [arkserver]: Downloading https://files.pythonhosted.org/packages/9d/d3/0313c87a1b831120aa9d68a3dc87403f5fd7198db67d02f31f11753488e0/arkserver-0.0.9.tar.gz
+[2023-04-16 03:22:05] INFO root fetch - processPackages [arkserver]: executing diffoscope
+[2023-04-16 03:22:05] INFO root fetch - processPackages [arkserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkserver-0.0.8.tar.gz tmp/arkserver-0.0.9.tar.gz --markdown 20230416/a/arkserver/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 03:22:05] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: executing diffoscope
+[2023-04-16 03:22:05] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scotthsieh_projen_statemachine-2.0.98.tar.gz tmp/scotthsieh_projen_statemachine-2.0.99.tar.gz --markdown 20230416/s/scotthsieh-projen-statemachine/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-16 03:22:06] INFO root fetch - main [MainThread]: End processing [rubpy]: success
+[2023-04-16 03:22:06] INFO root fetch - main [MainThread]: End processing [arkserver]: success
+[2023-04-16 03:22:06] INFO root fetch - main [MainThread]: End processing [scotthsieh-projen-statemachine]: success
+[2023-04-16 03:22:06] INFO root fetch - main [MainThread]: Store serial: [17723060]
