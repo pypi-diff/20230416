@@ -2700,3 +2700,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 05:37:44] INFO root fetch - main [MainThread]: End processing [highcharts-core]: success
 [2023-04-16 05:39:17] INFO root fetch - main [MainThread]: End processing [cornac]: success
 [2023-04-16 05:39:17] INFO root fetch - main [MainThread]: Store serial: [17723509]
+[2023-04-16 05:44:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723509]
+[2023-04-16 05:44:26] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 05:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gpttui
+[2023-04-16 05:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pywebio
+[2023-04-16 05:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: acb
+[2023-04-16 05:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: splatnet3-scraper
+[2023-04-16 05:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: highcharts-stock
+[2023-04-16 05:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: curl-cffi
+[2023-04-16 05:44:26] INFO root fetch - processPackages [highcharts-stock]: New version: [1.0.1] Old Version: [1.0.0rc8]
+[2023-04-16 05:44:26] INFO root fetch - processPackages [gpttui]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 05:44:26] INFO root fetch - processPackages [splatnet3-scraper]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-16 05:44:26] INFO root fetch - processPackages [acb]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 05:44:26] INFO root fetch - processPackages [pywebio]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-04-16 05:44:26] INFO root fetch - processPackages [curl-cffi]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-04-16 05:44:26] INFO root fetch - processPackages [acb]: Downloading https://files.pythonhosted.org/packages/db/14/198dd0bdaaa54886c67a7319e2ecc14ba4bfd96518029c591fe02e31983d/acb-0.1.0.tar.gz
+[2023-04-16 05:44:26] INFO root fetch - processPackages [pywebio]: Downloading https://files.pythonhosted.org/packages/28/c9/cf2797eb7119aaee36fdbd2a7d33506426b59fd1d939692d618c073ca036/pywebio-1.8.0.tar.gz
+[2023-04-16 05:44:26] INFO root fetch - processPackages [gpttui]: Downloading https://files.pythonhosted.org/packages/e6/3b/fcb8ca6c1d9fd04de30672faf86ff7d1fdd9e7b80074e12d2ae24a43ced5/gpttui-0.1.0.tar.gz
+[2023-04-16 05:44:26] INFO root fetch - processPackages [highcharts-stock]: Downloading https://files.pythonhosted.org/packages/66/33/a34c8994b257fe8528e35964e1f8b8237738eb8d57fa4a2554192e4a18d8/highcharts_stock-1.0.0rc8.tar.gz
+[2023-04-16 05:44:26] INFO root fetch - processPackages [splatnet3-scraper]: Downloading https://files.pythonhosted.org/packages/63/28/94c7f767885ab15a3ebe5415248e92f96f0e30237434ff34f8a4ffde1f58/splatnet3_scraper-0.7.3.tar.gz
+[2023-04-16 05:44:26] INFO root fetch - processPackages [curl-cffi]: Downloading https://files.pythonhosted.org/packages/c1/c2/d883cbb2cedbe00a498a60903d38a6dcaacbecc35035badc0813e9b076cd/curl_cffi-0.5.4.tar.gz
+[2023-04-16 05:44:27] INFO root fetch - processPackages [splatnet3-scraper]: executing diffoscope
+[2023-04-16 05:44:27] INFO root fetch - processPackages [splatnet3-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splatnet3_scraper-0.7.2.tar.gz tmp/splatnet3_scraper-0.7.3.tar.gz --markdown 20230416/s/splatnet3-scraper/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-16 05:44:27] INFO root fetch - processPackages [gpttui]: Downloading https://files.pythonhosted.org/packages/43/c9/c4d1ec3659d166c414f4f49cb615ddf220b65959be4843ba29c5004fa8ef/gpttui-0.2.0.tar.gz
+[2023-04-16 05:44:27] INFO root fetch - processPackages [pywebio]: Downloading https://files.pythonhosted.org/packages/5d/b9/cfe12ec4cc8a6c67cce1b02e7597eecb86a634319e3fa976a054109d6556/pywebio-1.8.1.tar.gz
+[2023-04-16 05:44:27] INFO root fetch - processPackages [acb]: Downloading https://files.pythonhosted.org/packages/17/90/881a165bc2b1b9f0e914f3738071cd94ea0d65e841d4c7df2c6e5bf91724/acb-0.1.1.tar.gz
+[2023-04-16 05:44:27] INFO root fetch - processPackages [curl-cffi]: Downloading https://files.pythonhosted.org/packages/02/18/6d7a8b8a384354e41e1b5700d22aee0d35782f8968b8f5c13a75b6ff724a/curl_cffi-0.5.5-cp37-abi3-macosx_11_0_arm64.whl
+[2023-04-16 05:44:27] INFO root fetch - processPackages [gpttui]: executing diffoscope
+[2023-04-16 05:44:27] INFO root fetch - processPackages [gpttui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpttui-0.1.0.tar.gz tmp/gpttui-0.2.0.tar.gz --markdown 20230416/g/gpttui/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 05:44:27] INFO root fetch - processPackages [pywebio]: executing diffoscope
+[2023-04-16 05:44:27] INFO root fetch - processPackages [pywebio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywebio-1.8.0.tar.gz tmp/pywebio-1.8.1.tar.gz --markdown 20230416/p/pywebio/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-04-16 05:44:27] INFO root fetch - processPackages [acb]: executing diffoscope
+[2023-04-16 05:44:27] INFO root fetch - processPackages [acb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acb-0.1.0.tar.gz tmp/acb-0.1.1.tar.gz --markdown 20230416/a/acb/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 05:44:27] INFO root fetch - processPackages [curl-cffi]: executing diffoscope
+[2023-04-16 05:44:27] INFO root fetch - processPackages [curl-cffi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curl_cffi-0.5.4.tar.gz tmp/curl_cffi-0.5.5-cp37-abi3-macosx_11_0_arm64.whl.zip --markdown 20230416/c/curl-cffi/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-04-16 05:44:28] INFO root fetch - main [MainThread]: End processing [splatnet3-scraper]: success
+[2023-04-16 05:44:28] INFO root fetch - main [MainThread]: End processing [gpttui]: success
+[2023-04-16 05:44:28] INFO root fetch - main [MainThread]: End processing [acb]: success
+[2023-04-16 05:44:28] INFO root fetch - processPackages [highcharts-stock]: Downloading https://files.pythonhosted.org/packages/e9/40/c3dc68b1949cce64b595462da764c35bde8e6908e134415c823efac0595c/highcharts_stock-1.0.1.tar.gz
+[2023-04-16 05:44:28] INFO root fetch - main [MainThread]: End processing [curl-cffi]: success
+[2023-04-16 05:44:30] INFO root fetch - processPackages [highcharts-stock]: executing diffoscope
+[2023-04-16 05:44:30] INFO root fetch - processPackages [highcharts-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/highcharts_stock-1.0.0rc8.tar.gz tmp/highcharts_stock-1.0.1.tar.gz --markdown 20230416/h/highcharts-stock/1.0.0rc8-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 05:44:30] INFO root fetch - main [MainThread]: End processing [pywebio]: success
+[2023-04-16 05:45:03] INFO root fetch - main [MainThread]: End processing [highcharts-stock]: success
+[2023-04-16 05:45:03] INFO root fetch - main [MainThread]: Store serial: [17723542]
