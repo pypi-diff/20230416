@@ -6014,3 +6014,79 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 10:42:41] INFO root fetch - main [MainThread]: End processing [nonebot-desktop-wing]: success
 [2023-04-16 10:42:47] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2023-04-16 10:42:47] INFO root fetch - main [MainThread]: Store serial: [17725346]
+[2023-04-16 10:47:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17725346]
+[2023-04-16 10:47:59] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyobjc-framework-libxpc
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: raindancers-network.raindancers-cdk
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyQt-Fluent-Widgets
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kicad-package-manager
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: text2vec
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: classiq
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: easy-file-process
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: onvif-zeep-async
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ws.rsspull
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyspartn
+[2023-04-16 10:47:59] INFO root fetch - processPackages [pyobjc-framework-libxpc]: New version: [9.1b1] Old Version: [9.1]
+[2023-04-16 10:47:59] INFO root fetch - processPackages [kicad-package-manager]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 10:47:59] INFO root fetch - processPackages [text2vec]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-16 10:47:59] INFO root fetch - processPackages [classiq]: New version: [0.9.3] Old Version: [0.9.1]
+[2023-04-16 10:47:59] WARNING root fetch - processPackages [easy-file-process]: Skipping, unable to determine old version
+[2023-04-16 10:47:59] INFO root fetch - processPackages [easy-file-process]: Start processing: meilisearch-fastapi
+[2023-04-16 10:47:59] INFO root fetch - main [MainThread]: End processing [easy-file-process] error
+[2023-04-16 10:47:59] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-16 10:47:59] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-16 10:47:59] INFO root fetch - processPackages [pyspartn]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ws.rsspull]: New version: [2.5.0] Old Version: [2.4.0]
+[2023-04-16 10:47:59] INFO root fetch - processPackages [onvif-zeep-async]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-16 10:47:59] INFO root fetch - processPackages [meilisearch-fastapi]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-16 10:47:59] INFO root fetch - processPackages [kicad-package-manager]: executing diffoscope
+[2023-04-16 10:47:59] INFO root fetch - processPackages [kicad-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kicad_package_manager-0.0.8.tar.gz tmp/kicad_package_manager-0.0.9.tar.gz --markdown 20230416/k/kicad-package-manager/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 10:47:59] INFO root fetch - processPackages [pyobjc-framework-libxpc]: Downloading https://files.pythonhosted.org/packages/ae/f0/507a8203effdba5cb513dd7a180cb2543a7c438c6309387039e67d6bbfff/pyobjc_framework_libxpc-9.1-cp39-cp39-macosx_10_9_universal2.whl
+[2023-04-16 10:47:59] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-04-16 10:47:59] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-1.2.8.tar.gz tmp/onvif-zeep-async-1.2.9.tar.gz --markdown 20230416/o/onvif-zeep-async/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-16 10:47:59] INFO root fetch - processPackages [text2vec]: Downloading https://files.pythonhosted.org/packages/51/f8/14e4f02a2cc5fe9c172b719bfa5bb62477feb67eab177519cc5ff6f14642/text2vec-1.1.7.tar.gz
+[2023-04-16 10:47:59] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: Downloading https://files.pythonhosted.org/packages/ea/54/6bf13cb9d57a01641363fc9468f24695092a5666812a549bcd43fa803f56/raindancers-network.raindancers-cdk-1.9.8.tar.gz
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ws.rsspull]: Downloading https://files.pythonhosted.org/packages/3f/4a/9883165070e25ef349ab11c8a6d23cb304f7e826350ba75f3d4ade828ec8/ws.rsspull-2.4.0.tar.gz
+[2023-04-16 10:47:59] INFO root fetch - processPackages [classiq]: Downloading https://files.pythonhosted.org/packages/62/bd/a743e4141094b0e9dc17aeac1cedfe15efc910502e7411611d5cdf9d1878/classiq-0.9.1-py3-none-any.whl
+[2023-04-16 10:47:59] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/e1/d2/7b9ac79d46473b2d2dc6d03e4faecc0b84ed3770bbe6b5e4e66ccccbc00d/PyQt-Fluent-Widgets-0.7.1.tar.gz
+[2023-04-16 10:47:59] INFO root fetch - processPackages [meilisearch-fastapi]: Downloading https://files.pythonhosted.org/packages/34/1a/5ce93e0349259c0f35be8762af2aa63b54d086045c538f35722107b688c7/meilisearch-fastapi-0.9.1.tar.gz
+[2023-04-16 10:47:59] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: executing diffoscope
+[2023-04-16 10:47:59] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt-Fluent-Widgets-0.7.0.tar.gz tmp/PyQt-Fluent-Widgets-0.7.1.tar.gz --markdown 20230416/P/PyQt-Fluent-Widgets/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-16 10:47:59] INFO root fetch - processPackages [pyspartn]: Downloading https://files.pythonhosted.org/packages/fd/85/56b12e59dfffeaa1ea56e141e2e3873695f39882866d02bd6395ba2195ea/pyspartn-0.1.6.tar.gz
+[2023-04-16 10:47:59] INFO root fetch - processPackages [pyspartn]: executing diffoscope
+[2023-04-16 10:47:59] INFO root fetch - processPackages [pyspartn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspartn-0.1.5.tar.gz tmp/pyspartn-0.1.6.tar.gz --markdown 20230416/p/pyspartn/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ws.rsspull]: Downloading https://files.pythonhosted.org/packages/df/3d/bfefc9acd87f6222b9e940b20b81d6ac241b636686426ade7fdeb4d8a33c/ws.rsspull-2.5.0.tar.gz
+[2023-04-16 10:47:59] INFO root fetch - processPackages [pyobjc-framework-libxpc]: Downloading https://files.pythonhosted.org/packages/48/e6/ca3f7bcbf3fd17bfe54091bf47cd9c90f19df3fca05fcc82aaa90e1582b4/pyobjc-framework-libxpc-9.1b1.tar.gz
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ws.rsspull]: executing diffoscope
+[2023-04-16 10:47:59] INFO root fetch - processPackages [ws.rsspull]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ws.rsspull-2.4.0.tar.gz tmp/ws.rsspull-2.5.0.tar.gz --markdown 20230416/w/ws.rsspull/2.4.0-2.5.0/diff.md --exclude *.pyd
+[2023-04-16 10:47:59] INFO root fetch - processPackages [text2vec]: Downloading https://files.pythonhosted.org/packages/d9/8c/59ad3a0df8696bee7f3fd724c602dd66a775f4aaa1f6488e2437c98018cd/text2vec-1.1.8.tar.gz
+[2023-04-16 10:47:59] INFO root fetch - processPackages [classiq]: Downloading https://files.pythonhosted.org/packages/e5/eb/9b39365fd2d7c2027f6610a884229059149ab9a3395be331767306762c07/classiq-0.9.3-py3-none-any.whl
+[2023-04-16 10:47:59] INFO root fetch - processPackages [classiq]: executing diffoscope
+[2023-04-16 10:47:59] INFO root fetch - processPackages [classiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classiq-0.9.1-py3-none-any.whl.zip tmp/classiq-0.9.3-py3-none-any.whl.zip --markdown 20230416/c/classiq/0.9.1-0.9.3/diff.md --exclude *.pyd
+[2023-04-16 10:47:59] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: Downloading https://files.pythonhosted.org/packages/9a/d5/818105d18635e2296178505d8da89a15b0b8c0c5ecdae0cbf83882f33347/raindancers-network.raindancers-cdk-1.9.9.tar.gz
+[2023-04-16 10:47:59] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: executing diffoscope
+[2023-04-16 10:47:59] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raindancers-network.raindancers-cdk-1.9.8.tar.gz tmp/raindancers-network.raindancers-cdk-1.9.9.tar.gz --markdown 20230416/r/raindancers-network.raindancers-cdk/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-16 10:47:59] INFO root fetch - processPackages [text2vec]: executing diffoscope
+[2023-04-16 10:47:59] INFO root fetch - processPackages [text2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2vec-1.1.7.tar.gz tmp/text2vec-1.1.8.tar.gz --markdown 20230416/t/text2vec/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-16 10:47:59] INFO root fetch - processPackages [meilisearch-fastapi]: Downloading https://files.pythonhosted.org/packages/12/2a/ff8287bd79864a0b3a17f173b27c8e3a5bac8d9038e6feb8c753d8c35645/meilisearch-fastapi-0.9.2.tar.gz
+[2023-04-16 10:47:59] INFO root fetch - processPackages [pyobjc-framework-libxpc]: executing diffoscope
+[2023-04-16 10:47:59] INFO root fetch - processPackages [pyobjc-framework-libxpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobjc_framework_libxpc-9.1-cp39-cp39-macosx_10_9_universal2.whl.zip tmp/pyobjc-framework-libxpc-9.1b1.tar.gz --markdown 20230416/p/pyobjc-framework-libxpc/9.1-9.1b1/diff.md --exclude *.pyd
+[2023-04-16 10:48:00] INFO root fetch - processPackages [meilisearch-fastapi]: executing diffoscope
+[2023-04-16 10:48:00] INFO root fetch - processPackages [meilisearch-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meilisearch-fastapi-0.9.1.tar.gz tmp/meilisearch-fastapi-0.9.2.tar.gz --markdown 20230416/m/meilisearch-fastapi/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-16 10:48:00] INFO root fetch - processPackages [kicad-package-manager]: Start processing: onnx2tf
+[2023-04-16 10:48:00] INFO root fetch - main [MainThread]: End processing [kicad-package-manager]: success
+[2023-04-16 10:48:00] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-04-16 10:48:01] INFO root fetch - main [MainThread]: End processing [ws.rsspull]: success
+[2023-04-16 10:48:01] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/e7/35/bb031455e6d1ebed6a7b6259dbb21620b3d8568a38859f1fce51b99fbb6f/onnx2tf-1.9.6.tar.gz
+[2023-04-16 10:48:01] INFO root fetch - main [MainThread]: End processing [raindancers-network.raindancers-cdk]: success
+[2023-04-16 10:48:01] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-04-16 10:48:01] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.5.tar.gz tmp/onnx2tf-1.9.6.tar.gz --markdown 20230416/o/onnx2tf/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-04-16 10:48:01] INFO root fetch - main [MainThread]: End processing [pyobjc-framework-libxpc]: success
+[2023-04-16 10:48:01] INFO root fetch - main [MainThread]: End processing [text2vec]: success
+[2023-04-16 10:48:01] INFO root fetch - main [MainThread]: End processing [meilisearch-fastapi]: success
+[2023-04-16 10:48:01] INFO root fetch - main [MainThread]: End processing [pyspartn]: success
+[2023-04-16 10:48:02] INFO root fetch - main [MainThread]: End processing [classiq]: success
+[2023-04-16 10:48:02] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-04-16 10:48:03] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
+[2023-04-16 10:48:03] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-04-16 10:48:03] INFO root fetch - main [MainThread]: Store serial: [17725390]
