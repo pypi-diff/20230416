@@ -7409,3 +7409,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 13:14:52] INFO root fetch - main [MainThread]: End processing [meter-digits-recognizer]: success
 [2023-04-16 13:14:55] INFO root fetch - main [MainThread]: End processing [dict-picker]: success
 [2023-04-16 13:14:55] INFO root fetch - main [MainThread]: Store serial: [17726308]
+[2023-04-16 13:20:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726308]
+[2023-04-16 13:20:10] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 13:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edamame
+[2023-04-16 13:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sparsecca
+[2023-04-16 13:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Turk-game
+[2023-04-16 13:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: katalytic-files
+[2023-04-16 13:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ddcci-plasmoid-backend
+[2023-04-16 13:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-treehelp
+[2023-04-16 13:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torchtnt-nightly
+[2023-04-16 13:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: taskiq-aio-kafka
+[2023-04-16 13:20:10] INFO root fetch - processPackages [nonebot-plugin-treehelp]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-04-16 13:20:10] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-16 13:20:10] INFO root fetch - processPackages [katalytic-files]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-16 13:20:10] WARNING root fetch - processPackages [taskiq-aio-kafka]: Skipping, unable to determine old version
+[2023-04-16 13:20:10] INFO root fetch - processPackages [Turk-game]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 13:20:10] INFO root fetch - main [MainThread]: End processing [taskiq-aio-kafka] error
+[2023-04-16 13:20:10] INFO root fetch - processPackages [edamame]: New version: [0.48] Old Version: [0.47]
+[2023-04-16 13:20:10] INFO root fetch - processPackages [ddcci-plasmoid-backend]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-16 13:20:10] WARNING root fetch - processPackages [sparsecca]: Skipping, unable to determine old version
+[2023-04-16 13:20:10] INFO root fetch - main [MainThread]: End processing [sparsecca] error
+[2023-04-16 13:20:10] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-04-16 13:20:10] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.4.8.tar.gz tmp/torchtnt-nightly-2023.4.9.tar.gz --markdown 20230416/t/torchtnt-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-16 13:20:10] INFO root fetch - processPackages [nonebot-plugin-treehelp]: Downloading https://files.pythonhosted.org/packages/79/ea/13795417d633c47542ec3664a25544810090691f80e26c0da4ff932704b4/nonebot_plugin_treehelp-0.0.5.tar.gz
+[2023-04-16 13:20:10] INFO root fetch - processPackages [Turk-game]: Downloading https://files.pythonhosted.org/packages/68/98/9083cc3fd7795ef2199e62b2e32b24c6b6ac996ccd5af5d12f1fdeb9837e/Turk_game-1.0.0.tar.gz
+[2023-04-16 13:20:10] INFO root fetch - processPackages [katalytic-files]: Downloading https://files.pythonhosted.org/packages/6a/f2/d253a3252482c0ab8f0bfd0fc696da798d18c00211ed51db7f73ce8d47e5/katalytic-files-0.6.1.tar.gz
+[2023-04-16 13:20:10] INFO root fetch - processPackages [edamame]: Downloading https://files.pythonhosted.org/packages/d0/57/507748da1e3309bd7253cdb6c53a6d70f5f19770cd0eaee26003a089aedf/edamame-0.48.tar.gz
+[2023-04-16 13:20:10] INFO root fetch - processPackages [ddcci-plasmoid-backend]: Downloading https://files.pythonhosted.org/packages/61/c6/b2f46b4a69ff00ac66d16058c42e419148441aae6879353f733ebca7b570/ddcci_plasmoid_backend-0.1.5.tar.gz
+[2023-04-16 13:20:10] INFO root fetch - processPackages [katalytic-files]: executing diffoscope
+[2023-04-16 13:20:10] INFO root fetch - processPackages [katalytic-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-files-0.6.0.tar.gz tmp/katalytic-files-0.6.1.tar.gz --markdown 20230416/k/katalytic-files/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-16 13:20:10] INFO root fetch - processPackages [edamame]: executing diffoscope
+[2023-04-16 13:20:10] INFO root fetch - processPackages [edamame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edamame-0.47.tar.gz tmp/edamame-0.48.tar.gz --markdown 20230416/e/edamame/0.47-0.48/diff.md --exclude *.pyd
+[2023-04-16 13:20:10] INFO root fetch - processPackages [Turk-game]: Downloading https://files.pythonhosted.org/packages/c0/12/d193aea9bfe419a9d75636e9c0fa3e3af77846dad5d90d856fdaa4797a13/Turk_game-1.0.1.tar.gz
+[2023-04-16 13:20:10] INFO root fetch - processPackages [ddcci-plasmoid-backend]: executing diffoscope
+[2023-04-16 13:20:10] INFO root fetch - processPackages [ddcci-plasmoid-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddcci_plasmoid_backend-0.1.4.tar.gz tmp/ddcci_plasmoid_backend-0.1.5.tar.gz --markdown 20230416/d/ddcci-plasmoid-backend/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-16 13:20:10] INFO root fetch - processPackages [Turk-game]: executing diffoscope
+[2023-04-16 13:20:10] INFO root fetch - processPackages [Turk-game]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Turk_game-1.0.0.tar.gz tmp/Turk_game-1.0.1.tar.gz --markdown 20230416/T/Turk-game/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 13:20:10] INFO root fetch - processPackages [nonebot-plugin-treehelp]: Downloading https://files.pythonhosted.org/packages/ee/97/be185d3100f9d6bfa5288f9db082bc1b97ce457a16335c462064e2c0cc22/nonebot_plugin_treehelp-0.1.0.tar.gz
+[2023-04-16 13:20:10] INFO root fetch - processPackages [nonebot-plugin-treehelp]: executing diffoscope
+[2023-04-16 13:20:10] INFO root fetch - processPackages [nonebot-plugin-treehelp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_treehelp-0.0.5.tar.gz tmp/nonebot_plugin_treehelp-0.1.0.tar.gz --markdown 20230416/n/nonebot-plugin-treehelp/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-04-16 13:20:11] INFO root fetch - main [MainThread]: End processing [katalytic-files]: success
+[2023-04-16 13:20:11] INFO root fetch - main [MainThread]: End processing [Turk-game]: success
+[2023-04-16 13:20:11] INFO root fetch - main [MainThread]: End processing [ddcci-plasmoid-backend]: success
+[2023-04-16 13:20:11] INFO root fetch - main [MainThread]: End processing [edamame]: success
+[2023-04-16 13:20:11] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-04-16 13:20:11] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-treehelp]: success
+[2023-04-16 13:20:11] INFO root fetch - main [MainThread]: Store serial: [17726335]
