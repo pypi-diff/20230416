@@ -7058,3 +7058,35 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 12:29:22] INFO root fetch - main [MainThread]: End processing [projen]: success
 [2023-04-16 12:29:23] INFO root fetch - main [MainThread]: End processing [auraboros]: success
 [2023-04-16 12:29:23] INFO root fetch - main [MainThread]: Store serial: [17726071]
+[2023-04-16 12:34:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726071]
+[2023-04-16 12:34:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 12:34:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytextrust
+[2023-04-16 12:34:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Pdf-check
+[2023-04-16 12:34:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: haki-crawler
+[2023-04-16 12:34:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-shiftmanager
+[2023-04-16 12:34:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torch-snippets
+[2023-04-16 12:34:31] INFO root fetch - processPackages [py-shiftmanager]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-16 12:34:31] INFO root fetch - processPackages [torch-snippets]: New version: [0.499.9] Old Version: [0.499.8]
+[2023-04-16 12:34:31] WARNING root fetch - processPackages [Pdf-check]: Skipping, unable to determine old version
+[2023-04-16 12:34:31] INFO root fetch - main [MainThread]: End processing [Pdf-check] error
+[2023-04-16 12:34:31] INFO root fetch - processPackages [haki-crawler]: New version: [0.4] Old Version: [0.3]
+[2023-04-16 12:34:31] INFO root fetch - processPackages [pytextrust]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-16 12:34:32] INFO root fetch - processPackages [haki-crawler]: Downloading https://files.pythonhosted.org/packages/1d/b5/2861e75807da451dcc37227d115e436711f9ceb23174ed704837a780e374/haki_crawler-0.3.tar.gz
+[2023-04-16 12:34:32] INFO root fetch - processPackages [torch-snippets]: Downloading https://files.pythonhosted.org/packages/a5/fa/ee158557aa83479dc9a248a64683b80d733081a215506ed081276be54ffb/torch_snippets-0.499.8.tar.gz
+[2023-04-16 12:34:32] INFO root fetch - processPackages [py-shiftmanager]: Downloading https://files.pythonhosted.org/packages/94/04/36a08752a141b0fe0f4ca06da42a133080e3e3ce7f84843889fd764c99a1/py_shiftmanager-0.1.5.tar.gz
+[2023-04-16 12:34:32] INFO root fetch - processPackages [pytextrust]: Downloading https://files.pythonhosted.org/packages/17/3e/b9b9614b6c42a9da024c38ccd2275880681ed5ade89fd37fd5e3ebbea23d/pytextrust-0.2.7-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-16 12:34:32] INFO root fetch - processPackages [haki-crawler]: Downloading https://files.pythonhosted.org/packages/b9/b0/5e58e3bde9490cb4d1b85186bc91c6736c5fe5267570970f873fa110b6b9/haki_crawler-0.4.tar.gz
+[2023-04-16 12:34:32] INFO root fetch - processPackages [py-shiftmanager]: executing diffoscope
+[2023-04-16 12:34:32] INFO root fetch - processPackages [py-shiftmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_shiftmanager-0.1.4.tar.gz tmp/py_shiftmanager-0.1.5.tar.gz --markdown 20230416/p/py-shiftmanager/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-16 12:34:32] INFO root fetch - processPackages [haki-crawler]: executing diffoscope
+[2023-04-16 12:34:32] INFO root fetch - processPackages [haki-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haki_crawler-0.3.tar.gz tmp/haki_crawler-0.4.tar.gz --markdown 20230416/h/haki-crawler/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-16 12:34:32] INFO root fetch - processPackages [pytextrust]: executing diffoscope
+[2023-04-16 12:34:32] INFO root fetch - processPackages [pytextrust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytextrust-0.2.6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pytextrust-0.2.7-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230416/p/pytextrust/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-16 12:34:32] INFO root fetch - processPackages [torch-snippets]: Downloading https://files.pythonhosted.org/packages/53/8e/c6a2edb0216a6a491a72807653642ab418c51adaceba7c808afd9be35aa9/torch_snippets-0.499.9.tar.gz
+[2023-04-16 12:34:33] INFO root fetch - processPackages [torch-snippets]: executing diffoscope
+[2023-04-16 12:34:33] INFO root fetch - processPackages [torch-snippets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_snippets-0.499.8.tar.gz tmp/torch_snippets-0.499.9.tar.gz --markdown 20230416/t/torch-snippets/0.499.8-0.499.9/diff.md --exclude *.pyd
+[2023-04-16 12:34:33] INFO root fetch - main [MainThread]: End processing [py-shiftmanager]: success
+[2023-04-16 12:34:33] INFO root fetch - main [MainThread]: End processing [haki-crawler]: success
+[2023-04-16 12:34:34] INFO root fetch - main [MainThread]: End processing [torch-snippets]: success
+[2023-04-16 12:34:56] INFO root fetch - main [MainThread]: End processing [pytextrust]: success
+[2023-04-16 12:34:56] INFO root fetch - main [MainThread]: Store serial: [17726093]
