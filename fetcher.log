@@ -10600,3 +10600,59 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 17:31:09] INFO root fetch - main [MainThread]: End processing [whisper-ctranslate2]: success
 [2023-04-16 17:31:09] INFO root fetch - main [MainThread]: End processing [cochar]: success
 [2023-04-16 17:31:09] INFO root fetch - main [MainThread]: Store serial: [17728122]
+[2023-04-16 17:36:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728122]
+[2023-04-16 17:36:19] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 17:36:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schemaorg-lite
+[2023-04-16 17:36:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matugen
+[2023-04-16 17:36:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fluke-api
+[2023-04-16 17:36:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: starlette-cache
+[2023-04-16 17:36:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: turbo-docs
+[2023-04-16 17:36:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: servey
+[2023-04-16 17:36:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Quarter-Lib
+[2023-04-16 17:36:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: policyengine-us
+[2023-04-16 17:36:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vau
+[2023-04-16 17:36:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nanoatp
+[2023-04-16 17:36:19] INFO root fetch - processPackages [turbo-docs]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-04-16 17:36:19] INFO root fetch - processPackages [schemaorg-lite]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 17:36:19] INFO root fetch - processPackages [fluke-api]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-16 17:36:19] WARNING root fetch - processPackages [starlette-cache]: Skipping, unable to determine old version
+[2023-04-16 17:36:19] INFO root fetch - main [MainThread]: End processing [starlette-cache] error
+[2023-04-16 17:36:19] WARNING root fetch - processPackages [matugen]: Skipping, unable to determine old version
+[2023-04-16 17:36:19] INFO root fetch - processPackages [vau]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-16 17:36:19] INFO root fetch - main [MainThread]: End processing [matugen] error
+[2023-04-16 17:36:19] INFO root fetch - processPackages [nanoatp]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 17:36:19] WARNING root fetch - processPackages [Quarter-Lib]: Skipping, unable to determine old version
+[2023-04-16 17:36:19] INFO root fetch - main [MainThread]: End processing [Quarter-Lib] error
+[2023-04-16 17:36:19] INFO root fetch - processPackages [servey]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-16 17:36:19] INFO root fetch - processPackages [policyengine-us]: New version: [0.293.1] Old Version: [0.293.0]
+[2023-04-16 17:36:19] INFO root fetch - processPackages [nanoatp]: executing diffoscope
+[2023-04-16 17:36:19] INFO root fetch - processPackages [nanoatp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanoatp-0.1.0.tar.gz tmp/nanoatp-0.2.0.tar.gz --markdown 20230416/n/nanoatp/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 17:36:19] INFO root fetch - processPackages [vau]: Downloading https://files.pythonhosted.org/packages/41/b1/53d3122f189bf3f7e29660a5d017647f4e32f8b85993f31da634e2b52e71/vau-0.0.1.tar.gz
+[2023-04-16 17:36:19] INFO root fetch - processPackages [schemaorg-lite]: Downloading https://files.pythonhosted.org/packages/65/be/c42149e0964fa2c26631d02a5ecfa1fc10c6b6191ef26ec288cbe22ea4ea/schemaorg_lite-0.1.0.tar.gz
+[2023-04-16 17:36:19] INFO root fetch - processPackages [fluke-api]: Downloading https://files.pythonhosted.org/packages/e4/7b/a60089e9935180403c678455f0fbdaa868a2dcd05022c4aec163cbdc08d8/fluke-api-0.2.0.tar.gz
+[2023-04-16 17:36:19] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/78/be/f2123d10e2bef679fffca8d1df7c85b12d2564221043df76fb2864c32b11/policyengine-us-0.293.1.tar.gz
+[2023-04-16 17:36:19] INFO root fetch - processPackages [turbo-docs]: Downloading https://files.pythonhosted.org/packages/3c/67/db52ebe1e76a87bd8a93d3331425e4bdd3ca009509ca824eeea220911c1d/turbo_docs-0.6.4.tar.gz
+[2023-04-16 17:36:19] INFO root fetch - processPackages [servey]: Downloading https://files.pythonhosted.org/packages/81/03/0c749a466a2c3307ba2c1fc413f4d8f19c7fce15d25ff3ab51832672b739/servey-2.7.9.tar.gz
+[2023-04-16 17:36:19] INFO root fetch - processPackages [turbo-docs]: executing diffoscope
+[2023-04-16 17:36:19] INFO root fetch - processPackages [turbo-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbo_docs-0.6.3.tar.gz tmp/turbo_docs-0.6.4.tar.gz --markdown 20230416/t/turbo-docs/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-04-16 17:36:19] INFO root fetch - processPackages [vau]: Downloading https://files.pythonhosted.org/packages/fa/13/78abf52c4f3da7d278c247fc8fb4cd0b39049267e1856b3675c7b70562f5/vau-0.1.0.tar.gz
+[2023-04-16 17:36:19] INFO root fetch - processPackages [servey]: executing diffoscope
+[2023-04-16 17:36:19] INFO root fetch - processPackages [servey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servey-2.7.8.tar.gz tmp/servey-2.7.9.tar.gz --markdown 20230416/s/servey/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-16 17:36:19] INFO root fetch - processPackages [fluke-api]: Downloading https://files.pythonhosted.org/packages/c9/c1/6ea01f7523fd5b35db477ed4f620d6e542e38b8871b0dc407bbc5781c8fe/fluke-api-0.3.0.tar.gz
+[2023-04-16 17:36:19] INFO root fetch - processPackages [fluke-api]: executing diffoscope
+[2023-04-16 17:36:19] INFO root fetch - processPackages [fluke-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluke-api-0.2.0.tar.gz tmp/fluke-api-0.3.0.tar.gz --markdown 20230416/f/fluke-api/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 17:36:19] INFO root fetch - processPackages [vau]: executing diffoscope
+[2023-04-16 17:36:19] INFO root fetch - processPackages [vau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vau-0.0.1.tar.gz tmp/vau-0.1.0.tar.gz --markdown 20230416/v/vau/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-16 17:36:19] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-16 17:36:19] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.293.0.tar.gz tmp/policyengine-us-0.293.1.tar.gz --markdown 20230416/p/policyengine-us/0.293.0-0.293.1/diff.md --exclude *.pyd
+[2023-04-16 17:36:20] INFO root fetch - main [MainThread]: End processing [nanoatp]: success
+[2023-04-16 17:36:20] INFO root fetch - processPackages [schemaorg-lite]: Downloading https://files.pythonhosted.org/packages/f6/e2/59a5dfc4464c2e618dc1976d1e057feb47d8f2154037e8bb6d51e384505d/schemaorg_lite-0.1.1.tar.gz
+[2023-04-16 17:36:20] INFO root fetch - processPackages [schemaorg-lite]: executing diffoscope
+[2023-04-16 17:36:20] INFO root fetch - processPackages [schemaorg-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schemaorg_lite-0.1.0.tar.gz tmp/schemaorg_lite-0.1.1.tar.gz --markdown 20230416/s/schemaorg-lite/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 17:36:20] INFO root fetch - main [MainThread]: End processing [turbo-docs]: success
+[2023-04-16 17:36:20] INFO root fetch - main [MainThread]: End processing [vau]: success
+[2023-04-16 17:36:21] INFO root fetch - main [MainThread]: End processing [fluke-api]: success
+[2023-04-16 17:36:22] INFO root fetch - main [MainThread]: End processing [servey]: success
+[2023-04-16 17:36:30] INFO root fetch - main [MainThread]: End processing [schemaorg-lite]: success
+[2023-04-16 17:37:29] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-04-16 17:37:29] INFO root fetch - main [MainThread]: Store serial: [17728158]
