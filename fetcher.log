@@ -2057,3 +2057,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 03:42:55] INFO root fetch - main [MainThread]: End processing [arkcloud]: success
 [2023-04-16 03:42:55] INFO root fetch - main [MainThread]: End processing [karpyncho-reload-urls]: success
 [2023-04-16 03:42:55] INFO root fetch - main [MainThread]: Store serial: [17723174]
+[2023-04-16 03:48:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723174]
+[2023-04-16 03:48:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-16 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-lambda-layer-zip
+[2023-04-16 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: casbin-sqlalchemy-adapter
+[2023-04-16 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: industrialucn
+[2023-04-16 03:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rsrch
+[2023-04-16 03:48:06] INFO root fetch - processPackages [casbin-sqlalchemy-adapter]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-16 03:48:06] INFO root fetch - processPackages [industrialucn]: New version: [0.2.0] Old Version: [0.1.7.2]
+[2023-04-16 03:48:06] WARNING root fetch - processPackages [rsrch]: Skipping, unable to determine old version
+[2023-04-16 03:48:06] INFO root fetch - main [MainThread]: End processing [rsrch] error
+[2023-04-16 03:48:06] INFO root fetch - processPackages [cdk-lambda-layer-zip]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-16 03:48:06] INFO root fetch - processPackages [industrialucn]: Downloading https://files.pythonhosted.org/packages/6a/48/c2871a24e605e881de4b6fe9c341ae33ef436469b40cd4a684eac275e520/industrialucn-0.1.7.2.tar.gz
+[2023-04-16 03:48:06] INFO root fetch - processPackages [casbin-sqlalchemy-adapter]: Downloading https://files.pythonhosted.org/packages/25/2e/6fa8b2870008c09fbee959ece078e1195ad51821e800de66d3bc2868d5dc/casbin_sqlalchemy_adapter-0.5.0.tar.gz
+[2023-04-16 03:48:06] INFO root fetch - processPackages [cdk-lambda-layer-zip]: Downloading https://files.pythonhosted.org/packages/1d/27/d1fc544671b580bd50a37fcaf08b46ef202bcbfb3614fe5c30ea67472789/cdk-lambda-layer-zip-2.0.98.tar.gz
+[2023-04-16 03:48:06] INFO root fetch - processPackages [industrialucn]: Downloading https://files.pythonhosted.org/packages/62/b3/bbc71f1c963222921b271d8b29230577272f6a657f8eba515b6e769bba93/industrialucn-0.2.0.tar.gz
+[2023-04-16 03:48:06] INFO root fetch - processPackages [casbin-sqlalchemy-adapter]: Downloading https://files.pythonhosted.org/packages/fc/0f/9ac478f57b4f8c43df7d98b4c9ebaa6296cd3ee7e4a157e4f1ad839c0754/casbin_sqlalchemy_adapter-0.5.1.tar.gz
+[2023-04-16 03:48:06] INFO root fetch - processPackages [casbin-sqlalchemy-adapter]: executing diffoscope
+[2023-04-16 03:48:06] INFO root fetch - processPackages [casbin-sqlalchemy-adapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/casbin_sqlalchemy_adapter-0.5.0.tar.gz tmp/casbin_sqlalchemy_adapter-0.5.1.tar.gz --markdown 20230416/c/casbin-sqlalchemy-adapter/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-16 03:48:06] INFO root fetch - processPackages [industrialucn]: executing diffoscope
+[2023-04-16 03:48:06] INFO root fetch - processPackages [industrialucn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/industrialucn-0.1.7.2.tar.gz tmp/industrialucn-0.2.0.tar.gz --markdown 20230416/i/industrialucn/0.1.7.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 03:48:07] INFO root fetch - main [MainThread]: End processing [casbin-sqlalchemy-adapter]: success
+[2023-04-16 03:48:07] INFO root fetch - main [MainThread]: End processing [industrialucn]: success
+[2023-04-16 03:48:08] INFO root fetch - processPackages [cdk-lambda-layer-zip]: Downloading https://files.pythonhosted.org/packages/28/94/861dd67b7f825d044739ac3fcc3c6a6a6b387f5da6aafce1db4f3baab42a/cdk-lambda-layer-zip-2.0.99.tar.gz
+[2023-04-16 03:48:10] INFO root fetch - processPackages [cdk-lambda-layer-zip]: executing diffoscope
+[2023-04-16 03:48:10] INFO root fetch - processPackages [cdk-lambda-layer-zip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-zip-2.0.98.tar.gz tmp/cdk-lambda-layer-zip-2.0.99.tar.gz --markdown 20230416/c/cdk-lambda-layer-zip/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-16 03:48:12] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-zip]: success
+[2023-04-16 03:48:12] INFO root fetch - main [MainThread]: Store serial: [17723187]
