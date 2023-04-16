@@ -2161,3 +2161,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 04:08:48] INFO root fetch - processPackages [arkdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdriver-1.0.3.tar.gz tmp/arkdriver-1.0.4.tar.gz --markdown 20230416/a/arkdriver/1.0.3-1.0.4/diff.md --exclude *.pyd
 [2023-04-16 04:08:49] INFO root fetch - main [MainThread]: End processing [arkdriver]: success
 [2023-04-16 04:08:49] INFO root fetch - main [MainThread]: Store serial: [17723231]
+[2023-04-16 04:13:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723231]
+[2023-04-16 04:13:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 04:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arkdata
+[2023-04-16 04:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poshare
+[2023-04-16 04:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: html4quiz
+[2023-04-16 04:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: behavecrackle
+[2023-04-16 04:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rsrch
+[2023-04-16 04:13:59] INFO root fetch - processPackages [html4quiz]: New version: [0.0.23] Old Version: [0.0.22]
+[2023-04-16 04:13:59] INFO root fetch - processPackages [poshare]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 04:13:59] INFO root fetch - processPackages [rsrch]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 04:13:59] INFO root fetch - processPackages [arkdata]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 04:13:59] WARNING root fetch - processPackages [behavecrackle]: Skipping, unable to determine old version
+[2023-04-16 04:13:59] INFO root fetch - main [MainThread]: End processing [behavecrackle] error
+[2023-04-16 04:13:59] INFO root fetch - processPackages [rsrch]: Downloading https://files.pythonhosted.org/packages/7f/ae/2042352b61ea8c6e1e18005920ad0681ba2637c0b7568c6bc51e6393ee33/rsrch-0.1.0.tar.gz
+[2023-04-16 04:13:59] INFO root fetch - processPackages [poshare]: Downloading https://files.pythonhosted.org/packages/12/72/6b006a2bd74e021c338a78ff30ccd6e9a2e7262c33d541edf2a2151c0095/poshare-0.1.0.tar.gz
+[2023-04-16 04:13:59] INFO root fetch - processPackages [html4quiz]: Downloading https://files.pythonhosted.org/packages/90/8d/3256510bc994094fb77a03fa97571b67b1fbc3ba1f9d5ac1e60df9576f49/html4quiz-0.0.23.tar.gz
+[2023-04-16 04:13:59] INFO root fetch - processPackages [arkdata]: Downloading https://files.pythonhosted.org/packages/aa/9d/894df0e26564b8e6a9b7f453bf3151c80b91a9e314b18b3a454ec948eef8/arkdata-1.0.2.tar.gz
+[2023-04-16 04:13:59] INFO root fetch - processPackages [arkdata]: executing diffoscope
+[2023-04-16 04:13:59] INFO root fetch - processPackages [arkdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdata-1.0.1.tar.gz tmp/arkdata-1.0.2.tar.gz --markdown 20230416/a/arkdata/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 04:13:59] INFO root fetch - processPackages [html4quiz]: executing diffoscope
+[2023-04-16 04:13:59] INFO root fetch - processPackages [html4quiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html4quiz-0.0.22.tar.gz tmp/html4quiz-0.0.23.tar.gz --markdown 20230416/h/html4quiz/0.0.22-0.0.23/diff.md --exclude *.pyd
+[2023-04-16 04:14:00] INFO root fetch - processPackages [poshare]: Downloading https://files.pythonhosted.org/packages/e9/1b/368c610d3577c489556e8634b16b3f3cd985b4f369112b21a559896a1900/poshare-0.2.0.tar.gz
+[2023-04-16 04:14:00] INFO root fetch - processPackages [poshare]: executing diffoscope
+[2023-04-16 04:14:00] INFO root fetch - processPackages [poshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poshare-0.1.0.tar.gz tmp/poshare-0.2.0.tar.gz --markdown 20230416/p/poshare/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 04:14:00] INFO root fetch - processPackages [rsrch]: Downloading https://files.pythonhosted.org/packages/b5/02/3d897f5eab0505e56eabd37289d3fffa3d9371158cc655dba1ecc38da1ff/rsrch-0.1.1.tar.gz
+[2023-04-16 04:14:00] INFO root fetch - processPackages [rsrch]: executing diffoscope
+[2023-04-16 04:14:00] INFO root fetch - processPackages [rsrch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rsrch-0.1.0.tar.gz tmp/rsrch-0.1.1.tar.gz --markdown 20230416/r/rsrch/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 04:14:00] INFO root fetch - main [MainThread]: End processing [html4quiz]: success
+[2023-04-16 04:14:01] INFO root fetch - main [MainThread]: End processing [poshare]: success
+[2023-04-16 04:14:01] INFO root fetch - main [MainThread]: End processing [arkdata]: success
+[2023-04-16 04:14:01] INFO root fetch - main [MainThread]: End processing [rsrch]: success
+[2023-04-16 04:14:01] INFO root fetch - main [MainThread]: Store serial: [17723248]
