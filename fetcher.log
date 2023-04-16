@@ -2304,3 +2304,16 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 04:35:08] INFO root fetch - main [MainThread]: End processing [ledes-parser]: success
 [2023-04-16 04:35:09] INFO root fetch - main [MainThread]: End processing [vocode]: success
 [2023-04-16 04:35:09] INFO root fetch - main [MainThread]: Store serial: [17723301]
+[2023-04-16 04:40:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723301]
+[2023-04-16 04:40:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-16 04:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: acb
+[2023-04-16 04:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: czsc
+[2023-04-16 04:40:18] WARNING root fetch - processPackages [acb]: Skipping, unable to determine old version
+[2023-04-16 04:40:18] INFO root fetch - main [MainThread]: End processing [acb] error
+[2023-04-16 04:40:18] INFO root fetch - processPackages [czsc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-16 04:40:18] INFO root fetch - processPackages [czsc]: Downloading https://files.pythonhosted.org/packages/ff/64/49e6809b474049632717e96f3a51bcdab728d63517d8ec0eb228e09ad52d/czsc-0.9.8.tar.gz
+[2023-04-16 04:40:19] INFO root fetch - processPackages [czsc]: Downloading https://files.pythonhosted.org/packages/65/2a/c6b0017939d88546e65732fc499326433b075adecda347c5aca412e4fe77/czsc-0.9.9.tar.gz
+[2023-04-16 04:40:19] INFO root fetch - processPackages [czsc]: executing diffoscope
+[2023-04-16 04:40:19] INFO root fetch - processPackages [czsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czsc-0.9.8.tar.gz tmp/czsc-0.9.9.tar.gz --markdown 20230416/c/czsc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-16 04:40:21] INFO root fetch - main [MainThread]: End processing [czsc]: success
+[2023-04-16 04:40:21] INFO root fetch - main [MainThread]: Store serial: [17723309]
