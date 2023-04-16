@@ -3532,3 +3532,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 07:54:22] INFO root fetch - main [MainThread]: End processing [robotpy-photonvision]: success
 [2023-04-16 07:54:22] INFO root fetch - main [MainThread]: End processing [odoo-addon-mgmtsystem-audit]: success
 [2023-04-16 07:54:22] INFO root fetch - main [MainThread]: Store serial: [17724022]
+[2023-04-16 07:59:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724022]
+[2023-04-16 07:59:32] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 07:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-mgmtsystem-audit
+[2023-04-16 07:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-mgmtsystem-action
+[2023-04-16 07:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-mgmtsystem-action
+[2023-04-16 07:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: komorebicpy
+[2023-04-16 07:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: db-simple
+[2023-04-16 07:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo13-addon-mrp-bom-tracking
+[2023-04-16 07:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo12-addon-mrp-bom-tracking
+[2023-04-16 07:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-mrp-bom-tracking
+[2023-04-16 07:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo14-addon-mrp-bom-tracking
+[2023-04-16 07:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: py3moin
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo13-addon-mrp-bom-tracking]: New version: [13.0.1.0.2.dev3] Old Version: [13.0.1.0.2.dev2]
+[2023-04-16 07:59:32] WARNING root fetch - processPackages [komorebicpy]: Skipping, unable to determine old version
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo-addon-mgmtsystem-audit]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo-addon-mrp-bom-tracking]: New version: [15.0.1.1.0.6] Old Version: [15.0.1.1.0.5]
+[2023-04-16 07:59:32] INFO root fetch - main [MainThread]: End processing [komorebicpy] error
+[2023-04-16 07:59:32] INFO root fetch - processPackages [db-simple]: New version: [0.2] Old Version: [0.1]
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo12-addon-mrp-bom-tracking]: New version: [12.0.1.0.1.99.dev3] Old Version: [12.0.1.0.1.99.dev2]
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo14-addon-mrp-bom-tracking]: New version: [14.0.1.1.1.dev5] Old Version: [14.0.1.1.1.dev4]
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: Downloading https://files.pythonhosted.org/packages/6a/96/990d5210de3a98ef04eae6553d5dd1064e8dfbac520714a7f44180498851/odoo_addon_mgmtsystem_action-16.0.1.0.0.8-py3-none-any.whl
+[2023-04-16 07:59:32] WARNING root fetch - processPackages [py3moin]: Skipping, unable to determine old version
+[2023-04-16 07:59:32] INFO root fetch - main [MainThread]: End processing [py3moin] error
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: Downloading https://files.pythonhosted.org/packages/6a/96/990d5210de3a98ef04eae6553d5dd1064e8dfbac520714a7f44180498851/odoo_addon_mgmtsystem_action-16.0.1.0.0.8-py3-none-any.whl
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo13-addon-mrp-bom-tracking]: Downloading https://files.pythonhosted.org/packages/74/f3/c11fa3190b820205078e7c9cc08e8cfb0fb55bf434aedc0e7bf173d23c84/odoo13_addon_mrp_bom_tracking-13.0.1.0.2.dev2-py3-none-any.whl
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo12-addon-mrp-bom-tracking]: Downloading https://files.pythonhosted.org/packages/8f/64/34909e699fd7c0256f5e4ee99d184c7305098604d0af2fc75243bf1af586/odoo12_addon_mrp_bom_tracking-12.0.1.0.1.99.dev2-py3-none-any.whl
+[2023-04-16 07:59:32] INFO root fetch - processPackages [db-simple]: Downloading https://files.pythonhosted.org/packages/a6/ab/f64f41df47ac1853c11de88fc8ff362196d607ed994ff4ea9bb95605567c/db_simple-0.1.tar.gz
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo-addon-mrp-bom-tracking]: Downloading https://files.pythonhosted.org/packages/e9/7f/2b2f02d7605a42edc841bddafdd52a2fc01eb5425197b8a01ca95491e509/odoo_addon_mrp_bom_tracking-15.0.1.1.0.5-py3-none-any.whl
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo14-addon-mrp-bom-tracking]: Downloading https://files.pythonhosted.org/packages/77/2e/7bef08e798f6e6e3a127bd1f16d70406ffcab9f40e242cd959a0815e09e9/odoo14_addon_mrp_bom_tracking-14.0.1.1.1.dev4-py3-none-any.whl
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo-addon-mgmtsystem-audit]: executing diffoscope
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo-addon-mgmtsystem-audit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mgmtsystem_audit-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_mgmtsystem_audit-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230416/o/odoo-addon-mgmtsystem-audit/16.0.1.0.0.8-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo13-addon-mrp-bom-tracking]: Downloading https://files.pythonhosted.org/packages/59/f3/e9466ea5c94d0c7561d46658628a4055a0b040edc56a07930d5c7ec363f3/odoo13_addon_mrp_bom_tracking-13.0.1.0.2.dev3-py3-none-any.whl
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo12-addon-mrp-bom-tracking]: Downloading https://files.pythonhosted.org/packages/b9/da/d96538b359da35b8f44fb32bb7b1922bcdbc1744e0f395f844c5a437280f/odoo12_addon_mrp_bom_tracking-12.0.1.0.1.99.dev3-py3-none-any.whl
+[2023-04-16 07:59:32] INFO root fetch - processPackages [db-simple]: Downloading https://files.pythonhosted.org/packages/19/f4/eac22ba863f119e9f18494dbd281d97605a2c4bff07a301e849933e89a6e/db_simple-0.2.tar.gz
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo14-addon-mrp-bom-tracking]: Downloading https://files.pythonhosted.org/packages/89/0a/d3a1bc591c7b3c713cf9647762838dc33a8a6169c4c4d3a2a45289349526/odoo14_addon_mrp_bom_tracking-14.0.1.1.1.dev5-py3-none-any.whl
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo-addon-mrp-bom-tracking]: Downloading https://files.pythonhosted.org/packages/0c/26/edc4040ae95b23cfe27ce6355ac4cb3575a55b9f1f2fe56481dfc7f36b86/odoo_addon_mrp_bom_tracking-15.0.1.1.0.6-py3-none-any.whl
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: Downloading https://files.pythonhosted.org/packages/e5/51/821ef1761b6f5dc3ddc5b1e461230517c8d26d392d910ef4daa141159a1f/odoo_addon_mgmtsystem_action-16.0.1.0.0.9-py3-none-any.whl
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: Downloading https://files.pythonhosted.org/packages/e5/51/821ef1761b6f5dc3ddc5b1e461230517c8d26d392d910ef4daa141159a1f/odoo_addon_mgmtsystem_action-16.0.1.0.0.9-py3-none-any.whl
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo13-addon-mrp-bom-tracking]: executing diffoscope
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo13-addon-mrp-bom-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_mrp_bom_tracking-13.0.1.0.2.dev2-py3-none-any.whl.zip tmp/odoo13_addon_mrp_bom_tracking-13.0.1.0.2.dev3-py3-none-any.whl.zip --markdown 20230416/o/odoo13-addon-mrp-bom-tracking/13.0.1.0.2.dev2-13.0.1.0.2.dev3/diff.md --exclude *.pyd
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo12-addon-mrp-bom-tracking]: executing diffoscope
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo12-addon-mrp-bom-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_mrp_bom_tracking-12.0.1.0.1.99.dev2-py3-none-any.whl.zip tmp/odoo12_addon_mrp_bom_tracking-12.0.1.0.1.99.dev3-py3-none-any.whl.zip --markdown 20230416/o/odoo12-addon-mrp-bom-tracking/12.0.1.0.1.99.dev2-12.0.1.0.1.99.dev3/diff.md --exclude *.pyd
+[2023-04-16 07:59:32] INFO root fetch - processPackages [db-simple]: executing diffoscope
+[2023-04-16 07:59:32] INFO root fetch - processPackages [db-simple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/db_simple-0.1.tar.gz tmp/db_simple-0.2.tar.gz --markdown 20230416/d/db-simple/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo14-addon-mrp-bom-tracking]: executing diffoscope
+[2023-04-16 07:59:32] INFO root fetch - processPackages [odoo14-addon-mrp-bom-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_mrp_bom_tracking-14.0.1.1.1.dev4-py3-none-any.whl.zip tmp/odoo14_addon_mrp_bom_tracking-14.0.1.1.1.dev5-py3-none-any.whl.zip --markdown 20230416/o/odoo14-addon-mrp-bom-tracking/14.0.1.1.1.dev4-14.0.1.1.1.dev5/diff.md --exclude *.pyd
+[2023-04-16 07:59:33] INFO root fetch - processPackages [odoo-addon-mrp-bom-tracking]: executing diffoscope
+[2023-04-16 07:59:33] INFO root fetch - processPackages [odoo-addon-mrp-bom-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mrp_bom_tracking-15.0.1.1.0.5-py3-none-any.whl.zip tmp/odoo_addon_mrp_bom_tracking-15.0.1.1.0.6-py3-none-any.whl.zip --markdown 20230416/o/odoo-addon-mrp-bom-tracking/15.0.1.1.0.5-15.0.1.1.0.6/diff.md --exclude *.pyd
+[2023-04-16 07:59:33] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: executing diffoscope
+[2023-04-16 07:59:33] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mgmtsystem_action-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_mgmtsystem_action-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230416/o/odoo-addon-mgmtsystem-action/16.0.1.0.0.8-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-16 07:59:33] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: executing diffoscope
+[2023-04-16 07:59:33] INFO root fetch - processPackages [odoo-addon-mgmtsystem-action]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mgmtsystem_action-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_mgmtsystem_action-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230416/o/odoo-addon-mgmtsystem-action/16.0.1.0.0.8-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-16 07:59:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-mgmtsystem-audit]: success
+[2023-04-16 07:59:34] INFO root fetch - main [MainThread]: End processing [odoo13-addon-mrp-bom-tracking]: success
+[2023-04-16 07:59:34] INFO root fetch - main [MainThread]: End processing [odoo14-addon-mrp-bom-tracking]: success
+[2023-04-16 07:59:34] INFO root fetch - main [MainThread]: End processing [db-simple]: success
+[2023-04-16 07:59:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-mrp-bom-tracking]: success
+[2023-04-16 07:59:34] INFO root fetch - main [MainThread]: End processing [odoo12-addon-mrp-bom-tracking]: success
+[2023-04-16 07:59:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-mgmtsystem-action]: success
+[2023-04-16 07:59:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-mgmtsystem-action]: success
+[2023-04-16 07:59:34] INFO root fetch - main [MainThread]: Store serial: [17724045]
