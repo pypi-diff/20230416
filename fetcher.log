@@ -10808,3 +10808,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 17:49:11] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-16 17:49:51] INFO root fetch - main [MainThread]: End processing [Apycula]: success
 [2023-04-16 17:49:51] INFO root fetch - main [MainThread]: Store serial: [17728235]
+[2023-04-16 17:55:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728235]
+[2023-04-16 17:55:14] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 17:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Python-Elo-System
+[2023-04-16 17:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lmao-nlp
+[2023-04-16 17:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: search-algos
+[2023-04-16 17:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: magyar
+[2023-04-16 17:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: planobs
+[2023-04-16 17:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: doji-core
+[2023-04-16 17:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ipsocgen
+[2023-04-16 17:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: adhan-time
+[2023-04-16 17:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: agentik
+[2023-04-16 17:55:14] INFO root fetch - processPackages [ipsocgen]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 17:55:14] INFO root fetch - processPackages [search-algos]: New version: [0.1] Old Version: [0.0.3]
+[2023-04-16 17:55:14] WARNING root fetch - processPackages [doji-core]: Skipping, unable to determine old version
+[2023-04-16 17:55:14] INFO root fetch - main [MainThread]: End processing [doji-core] error
+[2023-04-16 17:55:14] INFO root fetch - processPackages [lmao-nlp]: New version: [0.0.1b9] Old Version: [0.0.1b8]
+[2023-04-16 17:55:14] WARNING root fetch - processPackages [Python-Elo-System]: Skipping, unable to determine old version
+[2023-04-16 17:55:14] INFO root fetch - processPackages [planobs]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-16 17:55:14] INFO root fetch - main [MainThread]: End processing [Python-Elo-System] error
+[2023-04-16 17:55:14] INFO root fetch - processPackages [adhan-time]: New version: [0.3.2] Old Version: [0.3.0]
+[2023-04-16 17:55:14] INFO root fetch - processPackages [magyar]: New version: [2.9.3] Old Version: [2.9.2]
+[2023-04-16 17:55:14] INFO root fetch - processPackages [ipsocgen]: executing diffoscope
+[2023-04-16 17:55:14] INFO root fetch - processPackages [ipsocgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipsocgen-0.1.8.tar.gz tmp/ipsocgen-0.1.9.tar.gz --markdown 20230416/i/ipsocgen/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 17:55:14] WARNING root fetch - processPackages [agentik]: Skipping, unable to determine old version
+[2023-04-16 17:55:14] INFO root fetch - main [MainThread]: End processing [agentik] error
+[2023-04-16 17:55:14] INFO root fetch - processPackages [search-algos]: Downloading https://files.pythonhosted.org/packages/ae/a8/7bc85b1346bce9e59263fa6293363812799f8eb672e2d477470e02be2aed/search-algos-0.0.3.tar.gz
+[2023-04-16 17:55:14] INFO root fetch - processPackages [adhan-time]: Downloading https://files.pythonhosted.org/packages/8f/9b/5fcfd7b29328107d5b5fbfd02e8fc8f5d54ea275c6720e9a17812130bd3d/adhan_time-0.3.2.tar.gz
+[2023-04-16 17:55:14] INFO root fetch - processPackages [lmao-nlp]: Downloading https://files.pythonhosted.org/packages/bb/53/2494dd4da9da7dd00aac23b6f553ea4b5cf60ddaa1724cc99e0b11ee4ba6/lmao-nlp-0.0.1b9.tar.gz
+[2023-04-16 17:55:14] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/83/47/4e335f8f931538888e4b1a8a1cccb809c74db3eaeae4d946ee2431e2cbc2/magyar-2.9.2.tar.gz
+[2023-04-16 17:55:14] INFO root fetch - processPackages [planobs]: Downloading https://files.pythonhosted.org/packages/5b/42/77ad6416d56dc62c5415bfd180e70610fe675e9b3b38d278cbd04e380f44/planobs-0.7.0.tar.gz
+[2023-04-16 17:55:14] INFO root fetch - processPackages [search-algos]: executing diffoscope
+[2023-04-16 17:55:14] INFO root fetch - processPackages [search-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/search-algos-0.0.3.tar.gz tmp/search-algos-0.1.tar.gz --markdown 20230416/s/search-algos/0.0.3-0.1/diff.md --exclude *.pyd
+[2023-04-16 17:55:14] INFO root fetch - processPackages [adhan-time]: executing diffoscope
+[2023-04-16 17:55:14] INFO root fetch - processPackages [adhan-time]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adhan_time-0.3.0.tar.gz tmp/adhan_time-0.3.2.tar.gz --markdown 20230416/a/adhan-time/0.3.0-0.3.2/diff.md --exclude *.pyd
+[2023-04-16 17:55:14] INFO root fetch - processPackages [lmao-nlp]: executing diffoscope
+[2023-04-16 17:55:14] INFO root fetch - processPackages [lmao-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmao-nlp-0.0.1b8.tar.gz tmp/lmao-nlp-0.0.1b9.tar.gz --markdown 20230416/l/lmao-nlp/0.0.1b8-0.0.1b9/diff.md --exclude *.pyd
+[2023-04-16 17:55:14] WARNING root fetch - processPackages [planobs]: Skipping package: exceeds size limit 17902690>=10485760
+[2023-04-16 17:55:14] INFO root fetch - main [MainThread]: End processing [planobs] error
+[2023-04-16 17:55:14] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/5b/92/770b36d51b062ac99b7a9466a6204149fabc62c39df4a04ead2969db6695/magyar-2.9.3.tar.gz
+[2023-04-16 17:55:14] INFO root fetch - processPackages [magyar]: executing diffoscope
+[2023-04-16 17:55:14] INFO root fetch - processPackages [magyar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magyar-2.9.2.tar.gz tmp/magyar-2.9.3.tar.gz --markdown 20230416/m/magyar/2.9.2-2.9.3/diff.md --exclude *.pyd
+[2023-04-16 17:55:15] INFO root fetch - main [MainThread]: End processing [search-algos]: success
+[2023-04-16 17:55:15] INFO root fetch - main [MainThread]: End processing [adhan-time]: success
+[2023-04-16 17:55:15] INFO root fetch - main [MainThread]: End processing [lmao-nlp]: success
+[2023-04-16 17:55:15] INFO root fetch - main [MainThread]: End processing [magyar]: success
+[2023-04-16 17:55:15] INFO root fetch - main [MainThread]: End processing [ipsocgen]: success
+[2023-04-16 17:55:15] INFO root fetch - main [MainThread]: Store serial: [17728267]
