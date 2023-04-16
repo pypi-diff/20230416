@@ -14625,3 +14625,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 23:51:03] INFO root fetch - main [MainThread]: End processing [wg-utilities]: success
 [2023-04-16 23:51:12] INFO root fetch - main [MainThread]: End processing [textadventure]: success
 [2023-04-16 23:51:12] INFO root fetch - main [MainThread]: Store serial: [17730525]
+[2023-04-16 23:56:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17730525]
+[2023-04-16 23:56:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 23:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ac-websocket-server
+[2023-04-16 23:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nsk-pkg-sbx
+[2023-04-16 23:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pdm-conda
+[2023-04-16 23:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zhcode
+[2023-04-16 23:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: airthings-exporter
+[2023-04-16 23:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: TelegramNotificator
+[2023-04-16 23:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: export-ease
+[2023-04-16 23:56:21] INFO root fetch - processPackages [nsk-pkg-sbx]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 23:56:21] INFO root fetch - processPackages [ac-websocket-server]: New version: [0.2.dev9] Old Version: [0.2.dev8]
+[2023-04-16 23:56:21] INFO root fetch - processPackages [pdm-conda]: New version: [0.8.1b3] Old Version: [0.8.1b2]
+[2023-04-16 23:56:21] INFO root fetch - processPackages [zhcode]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-16 23:56:21] INFO root fetch - processPackages [TelegramNotificator]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-16 23:56:21] INFO root fetch - processPackages [airthings-exporter]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 23:56:21] INFO root fetch - processPackages [export-ease]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 23:56:21] INFO root fetch - processPackages [nsk-pkg-sbx]: Downloading https://files.pythonhosted.org/packages/28/ba/065ec8d06de8d927b07af8bd880bc825832004a5ab34ae7493df5fa06909/nsk_pkg_sbx-0.1.0.tar.gz
+[2023-04-16 23:56:21] INFO root fetch - processPackages [ac-websocket-server]: executing diffoscope
+[2023-04-16 23:56:21] INFO root fetch - processPackages [ac-websocket-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ac-websocket-server-0.2.dev8.tar.gz tmp/ac-websocket-server-0.2.dev9.tar.gz --markdown 20230416/a/ac-websocket-server/0.2.dev8-0.2.dev9/diff.md --exclude *.pyd
+[2023-04-16 23:56:21] INFO root fetch - processPackages [airthings-exporter]: Downloading https://files.pythonhosted.org/packages/f5/4b/b3ef2a7bb6308ffbea96124ff456aa66aedbe4844b2efe3cc0215e608d2d/airthings-exporter-0.0.1.tar.gz
+[2023-04-16 23:56:21] INFO root fetch - processPackages [export-ease]: Downloading https://files.pythonhosted.org/packages/1a/c6/f743a530213d6ab1ad84bfe4eb62fd6bb14756dec9e03ffd33450efd3d80/export_ease-0.0.1.tar.gz
+[2023-04-16 23:56:21] INFO root fetch - processPackages [pdm-conda]: Downloading https://files.pythonhosted.org/packages/53/07/683b04b15e82dc5f5de60e6041db78910bc2b3c5179d2ffdc6819b6e30b3/pdm_conda-0.8.1b3.tar.gz
+[2023-04-16 23:56:21] INFO root fetch - processPackages [TelegramNotificator]: Downloading https://files.pythonhosted.org/packages/b9/51/bb41b8ea708374192066ad7c931f5a3c39788070cb36f5dc98da5f3be4e4/TelegramNotificator-1.0.5.tar.gz
+[2023-04-16 23:56:21] INFO root fetch - processPackages [nsk-pkg-sbx]: Downloading https://files.pythonhosted.org/packages/09/da/dc5691908380d6cbeef6ce47a657acbb799bbe938d7918e794e2e0f3179b/nsk_pkg_sbx-0.1.1.tar.gz
+[2023-04-16 23:56:21] INFO root fetch - processPackages [zhcode]: Downloading https://files.pythonhosted.org/packages/4b/f6/5798c2c53cdd4923b8a6956335b4e5ddbe4de32bbcfb13b6be73779a77f2/zhcode-0.0.1.tar.gz
+[2023-04-16 23:56:21] INFO root fetch - processPackages [airthings-exporter]: Downloading https://files.pythonhosted.org/packages/39/45/a95685894402605e615ae578adcbf7c96b2c7b4cce275ad0cd9eef333742/airthings-exporter-0.0.2.tar.gz
+[2023-04-16 23:56:21] INFO root fetch - processPackages [pdm-conda]: executing diffoscope
+[2023-04-16 23:56:21] INFO root fetch - processPackages [pdm-conda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm_conda-0.8.1b2.tar.gz tmp/pdm_conda-0.8.1b3.tar.gz --markdown 20230416/p/pdm-conda/0.8.1b2-0.8.1b3/diff.md --exclude *.pyd
+[2023-04-16 23:56:21] INFO root fetch - processPackages [export-ease]: Downloading https://files.pythonhosted.org/packages/66/5f/9bd379b93eead443f76e5f11d2ca69a56974b6963278109ae405090507bc/export_ease-0.0.2.tar.gz
+[2023-04-16 23:56:21] INFO root fetch - processPackages [TelegramNotificator]: executing diffoscope
+[2023-04-16 23:56:21] INFO root fetch - processPackages [TelegramNotificator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TelegramNotificator-1.0.4.tar.gz tmp/TelegramNotificator-1.0.5.tar.gz --markdown 20230416/T/TelegramNotificator/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-16 23:56:21] INFO root fetch - processPackages [nsk-pkg-sbx]: executing diffoscope
+[2023-04-16 23:56:21] INFO root fetch - processPackages [nsk-pkg-sbx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsk_pkg_sbx-0.1.0.tar.gz tmp/nsk_pkg_sbx-0.1.1.tar.gz --markdown 20230416/n/nsk-pkg-sbx/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 23:56:21] INFO root fetch - processPackages [airthings-exporter]: executing diffoscope
+[2023-04-16 23:56:21] INFO root fetch - processPackages [airthings-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airthings-exporter-0.0.1.tar.gz tmp/airthings-exporter-0.0.2.tar.gz --markdown 20230416/a/airthings-exporter/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 23:56:21] INFO root fetch - processPackages [export-ease]: executing diffoscope
+[2023-04-16 23:56:21] INFO root fetch - processPackages [export-ease]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/export_ease-0.0.1.tar.gz tmp/export_ease-0.0.2.tar.gz --markdown 20230416/e/export-ease/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 23:56:21] INFO root fetch - processPackages [zhcode]: Downloading https://files.pythonhosted.org/packages/ec/53/bdd3739bfd7927b66bf3e55d2ed327eee8824252dfde2158208d472e0892/zhcode-0.1.0.tar.gz
+[2023-04-16 23:56:22] INFO root fetch - processPackages [zhcode]: executing diffoscope
+[2023-04-16 23:56:22] INFO root fetch - processPackages [zhcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhcode-0.0.1.tar.gz tmp/zhcode-0.1.0.tar.gz --markdown 20230416/z/zhcode/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-16 23:56:22] INFO root fetch - main [MainThread]: End processing [pdm-conda]: success
+[2023-04-16 23:56:23] INFO root fetch - main [MainThread]: End processing [export-ease]: success
+[2023-04-16 23:56:23] INFO root fetch - main [MainThread]: End processing [TelegramNotificator]: success
+[2023-04-16 23:56:23] INFO root fetch - main [MainThread]: End processing [nsk-pkg-sbx]: success
+[2023-04-16 23:56:23] INFO root fetch - main [MainThread]: End processing [airthings-exporter]: success
+[2023-04-16 23:56:23] INFO root fetch - main [MainThread]: End processing [zhcode]: success
+[2023-04-16 23:56:23] INFO root fetch - main [MainThread]: End processing [ac-websocket-server]: success
+[2023-04-16 23:56:23] INFO root fetch - main [MainThread]: Store serial: [17730546]
