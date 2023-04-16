@@ -3595,3 +3595,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 07:59:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-mgmtsystem-action]: success
 [2023-04-16 07:59:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-mgmtsystem-action]: success
 [2023-04-16 07:59:34] INFO root fetch - main [MainThread]: Store serial: [17724045]
+[2023-04-16 08:04:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724045]
+[2023-04-16 08:04:43] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 08:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py3moin
+[2023-04-16 08:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cy-root
+[2023-04-16 08:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hypothesis
+[2023-04-16 08:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: digital-unit
+[2023-04-16 08:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyg-nightly
+[2023-04-16 08:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scikit-robot
+[2023-04-16 08:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: artemis-common
+[2023-04-16 08:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fenjing
+[2023-04-16 08:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: node
+[2023-04-16 08:04:43] INFO root fetch - processPackages [cy-root]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 08:04:43] WARNING root fetch - processPackages [digital-unit]: Skipping, unable to determine old version
+[2023-04-16 08:04:43] INFO root fetch - main [MainThread]: End processing [digital-unit] error
+[2023-04-16 08:04:43] INFO root fetch - processPackages [fenjing]: New version: [0.1.3] Old Version: [0.1.0]
+[2023-04-16 08:04:43] INFO root fetch - processPackages [scikit-robot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 08:04:43] INFO root fetch - processPackages [artemis-common]: New version: [0.3.3b0] Old Version: [0.3.2b0]
+[2023-04-16 08:04:43] WARNING root fetch - processPackages [py3moin]: Skipping, unable to determine old version
+[2023-04-16 08:04:43] INFO root fetch - main [MainThread]: End processing [py3moin] error
+[2023-04-16 08:04:43] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230415] Old Version: [2.4.0.dev20230414]
+[2023-04-16 08:04:43] INFO root fetch - processPackages [hypothesis]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-04-16 08:04:43] INFO root fetch - processPackages [node]: New version: [1.2.1] Old Version: [1.2]
+[2023-04-16 08:04:43] INFO root fetch - processPackages [fenjing]: executing diffoscope
+[2023-04-16 08:04:43] INFO root fetch - processPackages [fenjing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fenjing-0.1.0.tar.gz tmp/fenjing-0.1.3.linux-x86_64.tar.gz --markdown 20230416/f/fenjing/0.1.0-0.1.3/diff.md --exclude *.pyd
+[2023-04-16 08:04:43] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-04-16 08:04:43] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg-nightly-2.4.0.dev20230414.tar.gz tmp/pyg-nightly-2.4.0.dev20230415.tar.gz --markdown 20230416/p/pyg-nightly/2.4.0.dev20230414-2.4.0.dev20230415/diff.md --exclude *.pyd
+[2023-04-16 08:04:43] INFO root fetch - processPackages [cy-root]: Downloading https://files.pythonhosted.org/packages/89/ab/989184bd5f43a4adadbad731680e76ccc1e1af8abafa30ce72bee7fe963b/cy-root-1.0.0.tar.gz
+[2023-04-16 08:04:43] INFO root fetch - processPackages [scikit-robot]: Downloading https://files.pythonhosted.org/packages/ea/5f/c190dc52a33c54ebfaa592b9e1ddf945c15b9ae65dd27d9826b5a9d792a2/scikit-robot-0.0.8.tar.gz
+[2023-04-16 08:04:43] INFO root fetch - processPackages [artemis-common]: Downloading https://files.pythonhosted.org/packages/38/88/90734faaefbc92635d08584880f5ebe1a77fd9cd62a7f1204a6c7b6f4d5e/artemis-common-0.3.3b0.tar.gz
+[2023-04-16 08:04:43] INFO root fetch - processPackages [hypothesis]: Downloading https://files.pythonhosted.org/packages/21/51/090644a56a1ccd0bd639535632ae004a14748414c625a4ee110764a147f5/hypothesis-6.9.1.tar.gz
+[2023-04-16 08:04:43] INFO root fetch - processPackages [node]: Downloading https://files.pythonhosted.org/packages/c7/e3/691f598b82ccf7236bb6ac08ac4f38829c65ea2e7b7aaecc7be2080ca36e/node-1.2.tar.gz
+[2023-04-16 08:04:43] INFO root fetch - processPackages [artemis-common]: executing diffoscope
+[2023-04-16 08:04:43] INFO root fetch - processPackages [artemis-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/artemis-common-0.3.2b0.tar.gz tmp/artemis-common-0.3.3b0.tar.gz --markdown 20230416/a/artemis-common/0.3.2b0-0.3.3b0/diff.md --exclude *.pyd
+[2023-04-16 08:04:43] INFO root fetch - processPackages [node]: Downloading https://files.pythonhosted.org/packages/eb/63/d2c9820b2dbf098c9d410162aa99347f6e06ad7813ded994f18993f67def/node-1.2.1.tar.gz
+[2023-04-16 08:04:44] INFO root fetch - processPackages [cy-root]: Downloading https://files.pythonhosted.org/packages/26/d0/776e2efd609f3ea6ea85425f4d095a481e2417d45e29ef2d2bf06634da0b/cy-root-1.0.1.tar.gz
+[2023-04-16 08:04:44] INFO root fetch - processPackages [cy-root]: executing diffoscope
+[2023-04-16 08:04:44] INFO root fetch - processPackages [cy-root]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cy-root-1.0.0.tar.gz tmp/cy-root-1.0.1.tar.gz --markdown 20230416/c/cy-root/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 08:04:44] INFO root fetch - processPackages [node]: executing diffoscope
+[2023-04-16 08:04:44] INFO root fetch - processPackages [node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/node-1.2.tar.gz tmp/node-1.2.1.tar.gz --markdown 20230416/n/node/1.2-1.2.1/diff.md --exclude *.pyd
+[2023-04-16 08:04:44] INFO root fetch - processPackages [hypothesis]: Downloading https://files.pythonhosted.org/packages/9f/55/ca134a35ade2848ccb6a38038cbdc144c8d975ba9f8535f980233784f3a5/hypothesis-6.9.2.tar.gz
+[2023-04-16 08:04:44] INFO root fetch - processPackages [scikit-robot]: Downloading https://files.pythonhosted.org/packages/de/72/5cfd650a69fa6c2eac08c9bce28f0517ba5662ee06a3bd9316c94d4bcc70/scikit-robot-0.0.9.tar.gz
+[2023-04-16 08:04:44] INFO root fetch - processPackages [hypothesis]: executing diffoscope
+[2023-04-16 08:04:44] INFO root fetch - processPackages [hypothesis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypothesis-6.9.1.tar.gz tmp/hypothesis-6.9.2.tar.gz --markdown 20230416/h/hypothesis/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-04-16 08:04:44] INFO root fetch - processPackages [scikit-robot]: executing diffoscope
+[2023-04-16 08:04:44] INFO root fetch - processPackages [scikit-robot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-robot-0.0.8.tar.gz tmp/scikit-robot-0.0.9.tar.gz --markdown 20230416/s/scikit-robot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 08:04:44] INFO root fetch - main [MainThread]: End processing [artemis-common]: success
+[2023-04-16 08:04:45] INFO root fetch - main [MainThread]: End processing [fenjing]: success
+[2023-04-16 08:04:45] INFO root fetch - main [MainThread]: End processing [node]: success
+[2023-04-16 08:04:46] INFO root fetch - main [MainThread]: End processing [scikit-robot]: success
+[2023-04-16 08:04:48] INFO root fetch - main [MainThread]: End processing [hypothesis]: success
+[2023-04-16 08:04:49] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-04-16 08:04:53] INFO root fetch - main [MainThread]: End processing [cy-root]: success
+[2023-04-16 08:04:53] INFO root fetch - main [MainThread]: Store serial: [17724096]
