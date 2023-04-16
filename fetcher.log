@@ -953,3 +953,47 @@
 [2023-04-16 02:04:59] INFO root fetch - main [MainThread]: End processing [cdk-aws-discord-notifiers]: success
 [2023-04-16 02:05:02] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2023-04-16 02:05:02] INFO root fetch - main [MainThread]: Store serial: [17722663]
+[2023-04-16 02:10:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722663]
+[2023-04-16 02:10:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 02:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-common
+[2023-04-16 02:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webint
+[2023-04-16 02:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openbb-nightly
+[2023-04-16 02:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdklabs.codepipeline-extensions
+[2023-04-16 02:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: constructs
+[2023-04-16 02:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: awc-cli
+[2023-04-16 02:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-skylight
+[2023-04-16 02:10:12] INFO root fetch - processPackages [awc-cli]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 02:10:12] INFO root fetch - processPackages [webint]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 02:10:12] INFO root fetch - processPackages [openbb-nightly]: New version: [3.0.0rc2.dev20230415] Old Version: [3.0.0rc2.dev20230414]
+[2023-04-16 02:10:12] INFO root fetch - processPackages [cdk-skylight]: New version: [1.1.98] Old Version: [1.1.97]
+[2023-04-16 02:10:12] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 02:10:12] INFO root fetch - processPackages [constructs]: New version: [3.4.99] Old Version: [3.4.98]
+[2023-04-16 02:10:12] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-16 02:10:12] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: Downloading https://files.pythonhosted.org/packages/df/6c/78f1bfa2ffc81709ec21b0077aff92b7460ad1f071d595e2d767653cedc0/cdklabs.codepipeline-extensions-0.0.98.tar.gz
+[2023-04-16 02:10:12] INFO root fetch - processPackages [cdk-skylight]: executing diffoscope
+[2023-04-16 02:10:12] INFO root fetch - processPackages [cdk-skylight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-skylight-1.1.97.tar.gz tmp/cdk-skylight-1.1.98.tar.gz --markdown 20230416/c/cdk-skylight/1.1.97-1.1.98/diff.md --exclude *.pyd
+[2023-04-16 02:10:12] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2023-04-16 02:10:12] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-3.0.0rc2.dev20230414.tar.gz tmp/openbb_nightly-3.0.0rc2.dev20230415.tar.gz --markdown 20230416/o/openbb-nightly/3.0.0rc2.dev20230414-3.0.0rc2.dev20230415/diff.md --exclude *.pyd
+[2023-04-16 02:10:12] INFO root fetch - processPackages [awc-cli]: Downloading https://files.pythonhosted.org/packages/83/b9/c8bb9e79fa6aa3bfc4c642e7a7844f1762dd150bf568b64b5b1d9aad5613/awc_cli-1.0.0-py2.py3-none-any.whl
+[2023-04-16 02:10:12] INFO root fetch - processPackages [webint]: executing diffoscope
+[2023-04-16 02:10:12] INFO root fetch - processPackages [webint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint-0.1.8.tar.gz tmp/webint-0.1.9.tar.gz --markdown 20230416/w/webint/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 02:10:12] INFO root fetch - processPackages [constructs]: Downloading https://files.pythonhosted.org/packages/e6/c8/05cf61f36e0e0457efb63d90051ef801f55cf0db4e5f92c27a28a57c5501/constructs-3.4.98.tar.gz
+[2023-04-16 02:10:12] WARNING root fetch - processPackages [cdklabs.codepipeline-extensions]: Skipping package: exceeds size limit 12637726>=10485760
+[2023-04-16 02:10:12] INFO root fetch - main [MainThread]: End processing [cdklabs.codepipeline-extensions] error
+[2023-04-16 02:10:12] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2023-04-16 02:10:12] INFO root fetch - processPackages [constructs]: Downloading https://files.pythonhosted.org/packages/0a/98/a9a1408d0c31908cc2c2129ea9ab047e19bc2d51b19406637848339f5c37/constructs-3.4.99.tar.gz
+[2023-04-16 02:10:12] INFO root fetch - processPackages [awc-cli]: Downloading https://files.pythonhosted.org/packages/35/f0/62d66cfe6f19582fd825f714e97677f1f25eab162fa4ac8a9f3e98575d98/awc_cli-1.0.1-py2.py3-none-any.whl
+[2023-04-16 02:10:13] INFO root fetch - processPackages [awc-cli]: executing diffoscope
+[2023-04-16 02:10:13] INFO root fetch - processPackages [awc-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awc_cli-1.0.0-py2.py3-none-any.whl.zip tmp/awc_cli-1.0.1-py2.py3-none-any.whl.zip --markdown 20230416/a/awc-cli/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 02:10:13] INFO root fetch - processPackages [constructs]: executing diffoscope
+[2023-04-16 02:10:13] INFO root fetch - processPackages [constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constructs-3.4.98.tar.gz tmp/constructs-3.4.99.tar.gz --markdown 20230416/c/constructs/3.4.98-3.4.99/diff.md --exclude *.pyd
+[2023-04-16 02:10:13] INFO root fetch - main [MainThread]: End processing [cdk-skylight]: success
+[2023-04-16 02:10:14] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2023-04-16 02:10:14] INFO root fetch - main [MainThread]: End processing [awc-cli]: success
+[2023-04-16 02:10:14] INFO root fetch - main [MainThread]: End processing [constructs]: success
+[2023-04-16 02:10:15] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2023-04-16 02:10:15] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20230416/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-16 02:10:16] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2023-04-16 02:10:20] INFO root fetch - main [MainThread]: End processing [webint]: success
+[2023-04-16 02:10:27] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2023-04-16 02:10:27] INFO root fetch - main [MainThread]: Store serial: [17722684]
