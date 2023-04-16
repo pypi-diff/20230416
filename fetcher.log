@@ -3938,3 +3938,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 08:41:37] INFO root fetch - main [MainThread]: End processing [EuclidSearchPackage]: success
 [2023-04-16 08:42:16] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-04-16 08:42:16] INFO root fetch - main [MainThread]: Store serial: [17724274]
+[2023-04-16 08:47:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724274]
+[2023-04-16 08:47:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 08:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EuclidSearchPackage
+[2023-04-16 08:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: naiss-osss-oreol
+[2023-04-16 08:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: md410-2023-conv-common
+[2023-04-16 08:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: netin
+[2023-04-16 08:47:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hiddifypanel
+[2023-04-16 08:47:25] INFO root fetch - processPackages [netin]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 08:47:25] INFO root fetch - processPackages [EuclidSearchPackage]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-16 08:47:25] INFO root fetch - processPackages [md410-2023-conv-common]: New version: [2.31.0] Old Version: [2.30.0]
+[2023-04-16 08:47:25] WARNING root fetch - processPackages [naiss-osss-oreol]: Skipping, unable to determine old version
+[2023-04-16 08:47:25] INFO root fetch - main [MainThread]: End processing [naiss-osss-oreol] error
+[2023-04-16 08:47:25] INFO root fetch - processPackages [hiddifypanel]: New version: [4.0.0.dev6] Old Version: [4.0.0.dev5]
+[2023-04-16 08:47:25] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-16 08:47:25] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-4.0.0.dev5-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-4.0.0.dev6-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230416/h/hiddifypanel/4.0.0.dev5-4.0.0.dev6/diff.md --exclude *.pyd
+[2023-04-16 08:47:25] INFO root fetch - processPackages [netin]: Downloading https://files.pythonhosted.org/packages/f7/ca/0b080879f5292e48c560633e1631d64bdb72503a5810397ac3566cbabef2/netin-1.0.0.tar.gz
+[2023-04-16 08:47:25] INFO root fetch - processPackages [EuclidSearchPackage]: Downloading https://files.pythonhosted.org/packages/01/d7/ec6b231478708b174997525e8a98582cec6d030a3563aac1099ad907c31b/EuclidSearchPackage-0.6.1.tar.gz
+[2023-04-16 08:47:26] INFO root fetch - processPackages [md410-2023-conv-common]: Downloading https://files.pythonhosted.org/packages/f8/13/54238cf3a911afa72d91e79fdceaf07a3d631e2a649bcdf88580c184233d/md410_2023_conv_common-2.30.0.tar.gz
+[2023-04-16 08:47:26] INFO root fetch - processPackages [EuclidSearchPackage]: executing diffoscope
+[2023-04-16 08:47:26] INFO root fetch - processPackages [EuclidSearchPackage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EuclidSearchPackage-0.6.0.tar.gz tmp/EuclidSearchPackage-0.6.1.tar.gz --markdown 20230416/E/EuclidSearchPackage/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-16 08:47:26] INFO root fetch - processPackages [netin]: Downloading https://files.pythonhosted.org/packages/74/48/ac838a5e46ee53b7122ac1f18ca58efaa406952a2deb4ae0c3a2392aa28b/netin-1.0.1.tar.gz
+[2023-04-16 08:47:26] INFO root fetch - processPackages [netin]: executing diffoscope
+[2023-04-16 08:47:26] INFO root fetch - processPackages [netin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netin-1.0.0.tar.gz tmp/netin-1.0.1.tar.gz --markdown 20230416/n/netin/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 08:47:26] INFO root fetch - processPackages [md410-2023-conv-common]: Downloading https://files.pythonhosted.org/packages/12/9e/df2fba1be856324b904ec8e97d64e8d9f2169dc24a623f90bf1473d90d99/md410_2023_conv_common-2.31.0.tar.gz
+[2023-04-16 08:47:26] INFO root fetch - processPackages [md410-2023-conv-common]: executing diffoscope
+[2023-04-16 08:47:26] INFO root fetch - processPackages [md410-2023-conv-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/md410_2023_conv_common-2.30.0.tar.gz tmp/md410_2023_conv_common-2.31.0.tar.gz --markdown 20230416/m/md410-2023-conv-common/2.30.0-2.31.0/diff.md --exclude *.pyd
+[2023-04-16 08:47:27] INFO root fetch - main [MainThread]: End processing [EuclidSearchPackage]: success
+[2023-04-16 08:47:27] INFO root fetch - main [MainThread]: End processing [netin]: success
+[2023-04-16 08:47:27] INFO root fetch - main [MainThread]: End processing [md410-2023-conv-common]: success
+[2023-04-16 08:47:47] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-04-16 08:47:47] INFO root fetch - main [MainThread]: Store serial: [17724290]
