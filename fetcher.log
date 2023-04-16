@@ -14041,3 +14041,65 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 23:08:36] INFO root fetch - main [MainThread]: End processing [hond]: success
 [2023-04-16 23:08:37] INFO root fetch - main [MainThread]: End processing [edc-randomization]: success
 [2023-04-16 23:08:37] INFO root fetch - main [MainThread]: Store serial: [17730253]
+[2023-04-16 23:13:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17730253]
+[2023-04-16 23:13:46] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 23:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: html4quiz
+[2023-04-16 23:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strplus
+[2023-04-16 23:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blaster-server
+[2023-04-16 23:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rpy2
+[2023-04-16 23:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: textadventure
+[2023-04-16 23:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Shiphelm
+[2023-04-16 23:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gitaudit
+[2023-04-16 23:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: python-web-io
+[2023-04-16 23:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ztfquery
+[2023-04-16 23:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: moto
+[2023-04-16 23:13:46] INFO root fetch - processPackages [strplus]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 23:13:46] INFO root fetch - processPackages [html4quiz]: New version: [0.0.27] Old Version: [0.0.26]
+[2023-04-16 23:13:46] INFO root fetch - processPackages [Shiphelm]: New version: [0.8.0] Old Version: [0.7.5]
+[2023-04-16 23:13:46] INFO root fetch - processPackages [blaster-server]: New version: [0.0.425b0] Old Version: [0.0.425]
+[2023-04-16 23:13:46] INFO root fetch - processPackages [gitaudit]: New version: [0.9.0] Old Version: [0.8.8]
+[2023-04-16 23:13:46] INFO root fetch - processPackages [textadventure]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-16 23:13:46] INFO root fetch - processPackages [python-web-io]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 23:13:46] INFO root fetch - processPackages [ztfquery]: New version: [1.8.4] Old Version: [1.8.1]
+[2023-04-16 23:13:46] INFO root fetch - processPackages [rpy2]: New version: [3.5.9] Old Version: [3.5.8]
+[2023-04-16 23:13:46] INFO root fetch - processPackages [moto]: New version: [4.1.8.dev9] Old Version: [4.1.8.dev8]
+[2023-04-16 23:13:46] INFO root fetch - processPackages [ztfquery]: executing diffoscope
+[2023-04-16 23:13:46] INFO root fetch - processPackages [ztfquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ztfquery-1.8.1.tar.gz tmp/ztfquery-1.8.4.tar.gz --markdown 20230416/z/ztfquery/1.8.1-1.8.4/diff.md --exclude *.pyd
+[2023-04-16 23:13:46] INFO root fetch - processPackages [strplus]: executing diffoscope
+[2023-04-16 23:13:46] INFO root fetch - processPackages [strplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strplus-0.0.8.tar.gz tmp/strplus-0.0.9.tar.gz --markdown 20230416/s/strplus/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 23:13:46] INFO root fetch - processPackages [python-web-io]: executing diffoscope
+[2023-04-16 23:13:46] INFO root fetch - processPackages [python-web-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_web_io-0.1.8.tar.gz tmp/python_web_io-0.1.9.tar.gz --markdown 20230416/p/python-web-io/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 23:13:46] INFO root fetch - processPackages [Shiphelm]: Downloading https://files.pythonhosted.org/packages/03/b8/f09975d562a4502db2e887f399a03e83f902d0cc5ef94bc47bc65fd816fe/Shiphelm-0.8.0.tar.gz
+[2023-04-16 23:13:46] INFO root fetch - processPackages [html4quiz]: Downloading https://files.pythonhosted.org/packages/4b/da/cdec78933c2b1d4e30525b31d9623c2007e3a6dd4e82d8feffef72b9106d/html4quiz-0.0.26.tar.gz
+[2023-04-16 23:13:46] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-16 23:13:46] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.8.dev8.tar.gz tmp/moto-4.1.8.dev9.tar.gz --markdown 20230416/m/moto/4.1.8.dev8-4.1.8.dev9/diff.md --exclude *.pyd
+[2023-04-16 23:13:46] INFO root fetch - processPackages [gitaudit]: Downloading https://files.pythonhosted.org/packages/2d/30/e3485fc05b26e6d8d4ef8c4523b201e1e9c27c1f31908756f521ca2c8274/gitaudit-0.8.8.tar.gz
+[2023-04-16 23:13:46] INFO root fetch - processPackages [rpy2]: Downloading https://files.pythonhosted.org/packages/a2/63/442160f69e1f163c24a73a3796b9ebd63c217b73941e4888734687e225d4/rpy2-3.5.8.tar.gz
+[2023-04-16 23:13:46] INFO root fetch - processPackages [Shiphelm]: executing diffoscope
+[2023-04-16 23:13:46] INFO root fetch - processPackages [Shiphelm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Shiphelm-0.7.5.tar.gz tmp/Shiphelm-0.8.0.tar.gz --markdown 20230416/S/Shiphelm/0.7.5-0.8.0/diff.md --exclude *.pyd
+[2023-04-16 23:13:46] INFO root fetch - processPackages [textadventure]: Downloading https://files.pythonhosted.org/packages/58/fd/79f1dcf8c2092b02be454b7a3b43c98bd2c23c7bd94bdd7fdad76d0495e1/textadventure-0.0.6.tar.gz
+[2023-04-16 23:13:46] INFO root fetch - processPackages [blaster-server]: Downloading https://files.pythonhosted.org/packages/56/33/754357dd90269e1d0780bd681f91a24d03cf4809aa6828b5553b01b05516/blaster-server-0.0.425b0.tar.gz
+[2023-04-16 23:13:46] INFO root fetch - processPackages [textadventure]: executing diffoscope
+[2023-04-16 23:13:46] INFO root fetch - processPackages [textadventure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textadventure-0.0.5.tar.gz tmp/textadventure-0.0.6.tar.gz --markdown 20230416/t/textadventure/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-16 23:13:46] INFO root fetch - processPackages [html4quiz]: Downloading https://files.pythonhosted.org/packages/24/39/d52c9b50c2d750aac68153f0c14cf47d243577404e3ede05a6793fbf2e62/html4quiz-0.0.27.tar.gz
+[2023-04-16 23:13:46] INFO root fetch - processPackages [html4quiz]: executing diffoscope
+[2023-04-16 23:13:46] INFO root fetch - processPackages [html4quiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html4quiz-0.0.26.tar.gz tmp/html4quiz-0.0.27.tar.gz --markdown 20230416/h/html4quiz/0.0.26-0.0.27/diff.md --exclude *.pyd
+[2023-04-16 23:13:46] INFO root fetch - processPackages [blaster-server]: executing diffoscope
+[2023-04-16 23:13:46] INFO root fetch - processPackages [blaster-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blaster-server-0.0.425.tar.gz tmp/blaster-server-0.0.425b0.tar.gz --markdown 20230416/b/blaster-server/0.0.425-0.0.425b0/diff.md --exclude *.pyd
+[2023-04-16 23:13:46] INFO root fetch - processPackages [gitaudit]: Downloading https://files.pythonhosted.org/packages/6d/54/70a010633ae2008eb8086ae94d16bdd384331aa2117faa3e29f8ccfbfd59/gitaudit-0.9.0.tar.gz
+[2023-04-16 23:13:46] INFO root fetch - processPackages [rpy2]: Downloading https://files.pythonhosted.org/packages/f9/d4/f817a523c4168c826a816f89a5a080fa2fd7ad939dbfece5eb5d01235070/rpy2-3.5.9.tar.gz
+[2023-04-16 23:13:46] INFO root fetch - processPackages [gitaudit]: executing diffoscope
+[2023-04-16 23:13:46] INFO root fetch - processPackages [gitaudit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitaudit-0.8.8.tar.gz tmp/gitaudit-0.9.0.tar.gz --markdown 20230416/g/gitaudit/0.8.8-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 23:13:46] INFO root fetch - processPackages [rpy2]: executing diffoscope
+[2023-04-16 23:13:46] INFO root fetch - processPackages [rpy2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpy2-3.5.8.tar.gz tmp/rpy2-3.5.9.tar.gz --markdown 20230416/r/rpy2/3.5.8-3.5.9/diff.md --exclude *.pyd
+[2023-04-16 23:13:47] INFO root fetch - main [MainThread]: End processing [python-web-io]: success
+[2023-04-16 23:13:47] INFO root fetch - main [MainThread]: End processing [strplus]: success
+[2023-04-16 23:13:48] INFO root fetch - main [MainThread]: End processing [textadventure]: success
+[2023-04-16 23:13:48] INFO root fetch - main [MainThread]: End processing [Shiphelm]: success
+[2023-04-16 23:13:48] INFO root fetch - main [MainThread]: End processing [ztfquery]: success
+[2023-04-16 23:13:48] INFO root fetch - main [MainThread]: End processing [html4quiz]: success
+[2023-04-16 23:13:49] INFO root fetch - main [MainThread]: End processing [gitaudit]: success
+[2023-04-16 23:13:49] INFO root fetch - main [MainThread]: End processing [rpy2]: success
+[2023-04-16 23:13:49] INFO root fetch - main [MainThread]: End processing [blaster-server]: success
+[2023-04-16 23:14:19] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-04-16 23:14:19] INFO root fetch - main [MainThread]: Store serial: [17730286]
