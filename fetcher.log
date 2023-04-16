@@ -6548,3 +6548,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 11:36:02] INFO root fetch - main [MainThread]: End processing [gnssrefl]: success
 [2023-04-16 11:36:04] INFO root fetch - main [MainThread]: End processing [novelWriter]: success
 [2023-04-16 11:36:04] INFO root fetch - main [MainThread]: Store serial: [17725658]
+[2023-04-16 11:41:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17725658]
+[2023-04-16 11:41:13] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 11:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clipped
+[2023-04-16 11:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qosic-sdk
+[2023-04-16 11:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kicad-package-manager
+[2023-04-16 11:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: casmarine
+[2023-04-16 11:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: example-package-test
+[2023-04-16 11:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: oelint-adv
+[2023-04-16 11:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: crc
+[2023-04-16 11:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: easy-file-process
+[2023-04-16 11:41:13] INFO root fetch - processPackages [crc]: New version: [4.2.0] Old Version: [4.1.0]
+[2023-04-16 11:41:13] INFO root fetch - processPackages [easy-file-process]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 11:41:13] INFO root fetch - processPackages [clipped]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-16 11:41:13] INFO root fetch - processPackages [oelint-adv]: New version: [3.9.4] Old Version: [3.9.3]
+[2023-04-16 11:41:13] INFO root fetch - processPackages [example-package-test]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 11:41:13] INFO root fetch - processPackages [qosic-sdk]: New version: [5.0.1] Old Version: [5.0.0]
+[2023-04-16 11:41:13] INFO root fetch - processPackages [casmarine]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-16 11:41:13] INFO root fetch - processPackages [kicad-package-manager]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 11:41:14] INFO root fetch - processPackages [kicad-package-manager]: executing diffoscope
+[2023-04-16 11:41:14] INFO root fetch - processPackages [kicad-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kicad_package_manager-0.0.8.tar.gz tmp/kicad_package_manager-0.0.9.tar.gz --markdown 20230416/k/kicad-package-manager/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 11:41:14] INFO root fetch - processPackages [easy-file-process]: Downloading https://files.pythonhosted.org/packages/8c/61/314def4b71ec9cae60307b2b19637e7a12881faefbc93cc63593a71c6ada/easy-file-process-0.1.0.tar.gz
+[2023-04-16 11:41:14] INFO root fetch - processPackages [example-package-test]: Downloading https://files.pythonhosted.org/packages/58/8b/953a2336b861f410bf8705c15063baad9e8bc5eb66167a8f94c98870bc3f/example_package_test-0.0.1.tar.gz
+[2023-04-16 11:41:14] INFO root fetch - processPackages [casmarine]: Downloading https://files.pythonhosted.org/packages/c0/9e/c6167d967da32da412af40325a614225cb0bb1551ecda5eef62a8e95ad3d/casmarine-1.1.0.tar.gz
+[2023-04-16 11:41:14] INFO root fetch - processPackages [crc]: Downloading https://files.pythonhosted.org/packages/55/d6/fc136c7c16de394c11b5caf6829300eaaa5f5226845cfab5c1991feb89e1/crc-4.1.0.tar.gz
+[2023-04-16 11:41:14] INFO root fetch - processPackages [clipped]: Downloading https://files.pythonhosted.org/packages/d6/4c/0d6557619cb15ad9053372caaa335cd39c2a85a315ba5ef04042a9a490e8/clipped-0.1.0.tar.gz
+[2023-04-16 11:41:14] INFO root fetch - processPackages [oelint-adv]: Downloading https://files.pythonhosted.org/packages/5e/9b/6e693a66319b81e460459bb792223a38e12abb584d60f7b9a4063cda4e97/oelint_adv-3.9.3.tar.gz
+[2023-04-16 11:41:14] INFO root fetch - processPackages [qosic-sdk]: Downloading https://files.pythonhosted.org/packages/65/01/2c1eac7915cde3e7cfb9f55f09c7abc8653cbc97ece60511b72af792612b/qosic_sdk-5.0.1.tar.gz
+[2023-04-16 11:41:14] INFO root fetch - processPackages [clipped]: executing diffoscope
+[2023-04-16 11:41:14] INFO root fetch - processPackages [clipped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipped-0.0.9.tar.gz tmp/clipped-0.1.0.tar.gz --markdown 20230416/c/clipped/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-16 11:41:14] INFO root fetch - processPackages [crc]: Downloading https://files.pythonhosted.org/packages/7d/21/ad20557ea1bb7510b138477e0d907ce6985be5308b51816a77e9d4fe870e/crc-4.2.0.tar.gz
+[2023-04-16 11:41:14] INFO root fetch - processPackages [easy-file-process]: Downloading https://files.pythonhosted.org/packages/03/df/7bf868efbf03b524b2235ad6231682d64a288ca307a6c50cd6655916ec99/easy-file-process-0.1.1.tar.gz
+[2023-04-16 11:41:14] INFO root fetch - processPackages [casmarine]: Downloading https://files.pythonhosted.org/packages/5c/8c/da7cf66c2a686419ef3ff1acd315c9c9c5cf08aa2feb48d3c9448a2badba/casmarine-1.1.1.tar.gz
+[2023-04-16 11:41:14] INFO root fetch - processPackages [qosic-sdk]: executing diffoscope
+[2023-04-16 11:41:14] INFO root fetch - processPackages [qosic-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qosic_sdk-5.0.0.tar.gz tmp/qosic_sdk-5.0.1.tar.gz --markdown 20230416/q/qosic-sdk/5.0.0-5.0.1/diff.md --exclude *.pyd
+[2023-04-16 11:41:14] INFO root fetch - processPackages [crc]: executing diffoscope
+[2023-04-16 11:41:14] INFO root fetch - processPackages [crc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crc-4.1.0.tar.gz tmp/crc-4.2.0.tar.gz --markdown 20230416/c/crc/4.1.0-4.2.0/diff.md --exclude *.pyd
+[2023-04-16 11:41:14] INFO root fetch - processPackages [example-package-test]: Downloading https://files.pythonhosted.org/packages/4d/2b/721510ad963dc664ee553354f9a9a73ad8535b7b2a46842c4076eaabfcec/example_package_test-0.0.2.tar.gz
+[2023-04-16 11:41:14] INFO root fetch - processPackages [easy-file-process]: executing diffoscope
+[2023-04-16 11:41:14] INFO root fetch - processPackages [easy-file-process]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy-file-process-0.1.0.tar.gz tmp/easy-file-process-0.1.1.tar.gz --markdown 20230416/e/easy-file-process/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 11:41:14] INFO root fetch - processPackages [casmarine]: executing diffoscope
+[2023-04-16 11:41:14] INFO root fetch - processPackages [casmarine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/casmarine-1.1.0.tar.gz tmp/casmarine-1.1.1.tar.gz --markdown 20230416/c/casmarine/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-16 11:41:14] INFO root fetch - processPackages [oelint-adv]: Downloading https://files.pythonhosted.org/packages/70/ef/260ffeeb3fd7470716269a3178856ea12e48647662bfc79127822419e048/oelint_adv-3.9.4.tar.gz
+[2023-04-16 11:41:14] INFO root fetch - processPackages [example-package-test]: executing diffoscope
+[2023-04-16 11:41:14] INFO root fetch - processPackages [example-package-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/example_package_test-0.0.1.tar.gz tmp/example_package_test-0.0.2.tar.gz --markdown 20230416/e/example-package-test/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 11:41:15] INFO root fetch - processPackages [oelint-adv]: executing diffoscope
+[2023-04-16 11:41:15] INFO root fetch - processPackages [oelint-adv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oelint_adv-3.9.3.tar.gz tmp/oelint_adv-3.9.4.tar.gz --markdown 20230416/o/oelint-adv/3.9.3-3.9.4/diff.md --exclude *.pyd
+[2023-04-16 11:41:15] INFO root fetch - main [MainThread]: End processing [kicad-package-manager]: success
+[2023-04-16 11:41:15] INFO root fetch - main [MainThread]: End processing [qosic-sdk]: success
+[2023-04-16 11:41:15] INFO root fetch - main [MainThread]: End processing [easy-file-process]: success
+[2023-04-16 11:41:15] INFO root fetch - main [MainThread]: End processing [crc]: success
+[2023-04-16 11:41:15] INFO root fetch - main [MainThread]: End processing [example-package-test]: success
+[2023-04-16 11:41:15] INFO root fetch - main [MainThread]: End processing [casmarine]: success
+[2023-04-16 11:41:16] INFO root fetch - main [MainThread]: End processing [clipped]: success
+[2023-04-16 11:41:16] INFO root fetch - main [MainThread]: End processing [oelint-adv]: success
+[2023-04-16 11:41:16] INFO root fetch - main [MainThread]: Store serial: [17725694]
