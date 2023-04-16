@@ -7330,3 +7330,35 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 13:04:11] INFO root fetch - main [MainThread]: End processing [SEKKAYBOT]: success
 [2023-04-16 13:04:11] INFO root fetch - main [MainThread]: End processing [croydon]: success
 [2023-04-16 13:04:11] INFO root fetch - main [MainThread]: Store serial: [17726212]
+[2023-04-16 13:09:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726212]
+[2023-04-16 13:09:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 13:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rst2gemtext
+[2023-04-16 13:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auraboros
+[2023-04-16 13:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-cast
+[2023-04-16 13:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: katalytic-data
+[2023-04-16 13:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ym-csv-pii-sanitizer
+[2023-04-16 13:09:21] WARNING root fetch - processPackages [ym-csv-pii-sanitizer]: Skipping, unable to determine old version
+[2023-04-16 13:09:21] INFO root fetch - main [MainThread]: End processing [ym-csv-pii-sanitizer] error
+[2023-04-16 13:09:21] INFO root fetch - processPackages [rst2gemtext]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-16 13:09:21] INFO root fetch - processPackages [django-cast]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-16 13:09:21] INFO root fetch - processPackages [katalytic-data]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 13:09:21] INFO root fetch - processPackages [auraboros]: New version: [0.9.0a0] Old Version: [0.8.0a0]
+[2023-04-16 13:09:21] INFO root fetch - processPackages [auraboros]: executing diffoscope
+[2023-04-16 13:09:21] INFO root fetch - processPackages [auraboros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auraboros-0.8.0a0.tar.gz tmp/auraboros-0.9.0a0.tar.gz --markdown 20230416/a/auraboros/0.8.0a0-0.9.0a0/diff.md --exclude *.pyd
+[2023-04-16 13:09:22] INFO root fetch - processPackages [rst2gemtext]: Downloading https://files.pythonhosted.org/packages/b7/30/de7dad2fcf6dc8ce91637331977e6fd53febe49c9f2c7c288d30040dfe6d/rst2gemtext-0.3.0.tar.gz
+[2023-04-16 13:09:22] INFO root fetch - processPackages [katalytic-data]: Downloading https://files.pythonhosted.org/packages/c6/69/6225170ac8a2396804ce5d97dcd1fd0562c5a931a7620f7f4bdff1b46999/katalytic-data-0.1.0.tar.gz
+[2023-04-16 13:09:22] INFO root fetch - processPackages [django-cast]: Downloading https://files.pythonhosted.org/packages/08/d0/6455a8c6cc1a455997e400140263ce181dbcef2b961935fa657f84fa4304/django-cast-0.2.8.tar.gz
+[2023-04-16 13:09:22] INFO root fetch - processPackages [katalytic-data]: Downloading https://files.pythonhosted.org/packages/b6/bc/e9aa64f655be6ccc8813795a6e7a26af23d7edb93c543d3b9f55b772c47c/katalytic-data-0.1.1.tar.gz
+[2023-04-16 13:09:22] INFO root fetch - processPackages [katalytic-data]: executing diffoscope
+[2023-04-16 13:09:22] INFO root fetch - processPackages [katalytic-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-data-0.1.0.tar.gz tmp/katalytic-data-0.1.1.tar.gz --markdown 20230416/k/katalytic-data/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 13:09:22] INFO root fetch - processPackages [rst2gemtext]: Downloading https://files.pythonhosted.org/packages/5e/da/1b033f8c8fbcf5050efc9d5d2a22ecabff4436470b04a6e821ccd5f38223/rst2gemtext-0.3.1.tar.gz
+[2023-04-16 13:09:22] INFO root fetch - processPackages [rst2gemtext]: executing diffoscope
+[2023-04-16 13:09:22] INFO root fetch - processPackages [rst2gemtext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rst2gemtext-0.3.0.tar.gz tmp/rst2gemtext-0.3.1.tar.gz --markdown 20230416/r/rst2gemtext/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-16 13:09:22] INFO root fetch - processPackages [django-cast]: Downloading https://files.pythonhosted.org/packages/1e/ba/729f0c86f18455387a69c10dd88886e8da0093c7771abb6bd65065a7b70c/django-cast-0.2.9.tar.gz
+[2023-04-16 13:09:22] INFO root fetch - processPackages [django-cast]: executing diffoscope
+[2023-04-16 13:09:22] INFO root fetch - processPackages [django-cast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-cast-0.2.8.tar.gz tmp/django-cast-0.2.9.tar.gz --markdown 20230416/d/django-cast/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-16 13:09:23] INFO root fetch - main [MainThread]: End processing [katalytic-data]: success
+[2023-04-16 13:09:23] INFO root fetch - main [MainThread]: End processing [auraboros]: success
+[2023-04-16 13:09:26] INFO root fetch - main [MainThread]: End processing [django-cast]: success
+[2023-04-16 13:09:31] INFO root fetch - main [MainThread]: End processing [rst2gemtext]: success
+[2023-04-16 13:09:31] INFO root fetch - main [MainThread]: Store serial: [17726228]
