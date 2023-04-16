@@ -1376,3 +1376,48 @@
 [2023-04-16 02:28:53] INFO root fetch - main [MainThread]: End processing [cdk-docker-image-deployment]: success
 [2023-04-16 02:28:53] INFO root fetch - main [MainThread]: End processing [cdktf-proxmox]: success
 [2023-04-16 02:28:53] INFO root fetch - main [MainThread]: Store serial: [17722854]
+[2023-04-16 02:33:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722854]
+[2023-04-16 02:34:02] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 02:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-04-16 02:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kicad-package-manager
+[2023-04-16 02:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cooodecooo
+[2023-04-16 02:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ai-talks
+[2023-04-16 02:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-web-io
+[2023-04-16 02:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: state-machine-semaphore
+[2023-04-16 02:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: canonical
+[2023-04-16 02:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: salmon-triplets
+[2023-04-16 02:34:02] WARNING root fetch - processPackages [cooodecooo]: Skipping, unable to determine old version
+[2023-04-16 02:34:02] INFO root fetch - main [MainThread]: End processing [cooodecooo] error
+[2023-04-16 02:34:02] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 02:34:02] INFO root fetch - processPackages [canonical]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-16 02:34:02] INFO root fetch - processPackages [ai-talks]: New version: [0.8.991] Old Version: [0.8.99]
+[2023-04-16 02:34:02] WARNING root fetch - processPackages [kicad-package-manager]: Skipping, unable to determine old version
+[2023-04-16 02:34:02] INFO root fetch - main [MainThread]: End processing [kicad-package-manager] error
+[2023-04-16 02:34:02] INFO root fetch - processPackages [python-web-io]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-16 02:34:02] INFO root fetch - processPackages [salmon-triplets]: New version: [1.0.0rc9] Old Version: [1.0.0rc8]
+[2023-04-16 02:34:02] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-16 02:34:02] INFO root fetch - processPackages [state-machine-semaphore]: Downloading https://files.pythonhosted.org/packages/fa/f7/eea494ef2079699969c054c97478b7e0d5db0ce186fbb2708d9a243b4366/state-machine-semaphore-0.1.98.tar.gz
+[2023-04-16 02:34:02] INFO root fetch - processPackages [canonical]: executing diffoscope
+[2023-04-16 02:34:02] INFO root fetch - processPackages [canonical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canonical-0.8.0.tar.gz tmp/canonical-0.9.0.tar.gz --markdown 20230416/c/canonical/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 02:34:02] INFO root fetch - processPackages [salmon-triplets]: executing diffoscope
+[2023-04-16 02:34:02] INFO root fetch - processPackages [salmon-triplets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salmon-triplets-1.0.0rc8.tar.gz tmp/salmon-triplets-1.0.0rc9.tar.gz --markdown 20230416/s/salmon-triplets/1.0.0rc8-1.0.0rc9/diff.md --exclude *.pyd
+[2023-04-16 02:34:02] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/26/1b/2d98082d5a50de544ac5b0df408479fcedd8e3cbc7361e0cb0e9f362a0af/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz
+[2023-04-16 02:34:02] INFO root fetch - processPackages [state-machine-semaphore]: Downloading https://files.pythonhosted.org/packages/80/0f/c73e069a7ceff3d9f61065aa4b5b338bc0b9f4f933b94a97692457bfa317/state-machine-semaphore-0.1.99.tar.gz
+[2023-04-16 02:34:02] INFO root fetch - processPackages [python-web-io]: Downloading https://files.pythonhosted.org/packages/62/c1/0975383be49fab591ad4b3fbe1ed75fbaee9b539379b4d13afc9694688fb/python_web_io-0.1.5.tar.gz
+[2023-04-16 02:34:02] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/68/6b/16350a99390dbce6f05ac2c3fb242871efd7f11310477b08b629e23a3f51/ai-talks-0.8.991.tar.gz
+[2023-04-16 02:34:02] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2023-04-16 02:34:02] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20230416/s/state-machine-semaphore/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-16 02:34:02] INFO root fetch - processPackages [python-web-io]: executing diffoscope
+[2023-04-16 02:34:02] INFO root fetch - processPackages [python-web-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_web_io-0.1.4.tar.gz tmp/python_web_io-0.1.5.tar.gz --markdown 20230416/p/python-web-io/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-16 02:34:02] INFO root fetch - processPackages [ai-talks]: executing diffoscope
+[2023-04-16 02:34:02] INFO root fetch - processPackages [ai-talks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai-talks-0.8.99.tar.gz tmp/ai-talks-0.8.991.tar.gz --markdown 20230416/a/ai-talks/0.8.99-0.8.991/diff.md --exclude *.pyd
+[2023-04-16 02:34:03] INFO root fetch - main [MainThread]: End processing [canonical]: success
+[2023-04-16 02:34:04] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2023-04-16 02:34:04] INFO root fetch - main [MainThread]: End processing [ai-talks]: success
+[2023-04-16 02:34:04] INFO root fetch - main [MainThread]: End processing [python-web-io]: success
+[2023-04-16 02:34:04] INFO root fetch - main [MainThread]: End processing [salmon-triplets]: success
+[2023-04-16 02:34:04] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/68/b7/1bc76974269d07601c13aaa5489dbaf5bfced52da0839a380231163281b2/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz
+[2023-04-16 02:34:05] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-04-16 02:34:05] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230416/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 02:34:07] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-04-16 02:34:07] INFO root fetch - main [MainThread]: Store serial: [17722881]
