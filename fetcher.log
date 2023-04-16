@@ -2570,3 +2570,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 05:21:51] INFO root fetch - main [MainThread]: End processing [ledes-parser]: success
 [2023-04-16 05:21:51] INFO root fetch - main [MainThread]: End processing [betwatch]: success
 [2023-04-16 05:21:51] INFO root fetch - main [MainThread]: Store serial: [17723439]
+[2023-04-16 05:26:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723439]
+[2023-04-16 05:26:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-16 05:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: konfuzio-sdk
+[2023-04-16 05:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: defisheye
+[2023-04-16 05:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jmdrs
+[2023-04-16 05:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dopt
+[2023-04-16 05:26:59] INFO root fetch - processPackages [jmdrs]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-16 05:26:59] INFO root fetch - processPackages [defisheye]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-16 05:26:59] INFO root fetch - processPackages [dopt]: New version: [0.0.5.11] Old Version: [0.0.3.9]
+[2023-04-16 05:26:59] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.2.9.dev20230104175944] Old Version: [0.2.9.dev20221227125623]
+[2023-04-16 05:26:59] INFO root fetch - processPackages [jmdrs]: Downloading https://files.pythonhosted.org/packages/04/a9/e1f85639a89f0dbafb7060adbd7a1d721dbafbd553460bb0f8ee664fddb0/jmdrs-1.0.4.tar.gz
+[2023-04-16 05:26:59] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2023-04-16 05:26:59] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.2.9.dev20221227125623.tar.gz tmp/konfuzio_sdk-0.2.9.dev20230104175944.tar.gz --markdown 20230416/k/konfuzio-sdk/0.2.9.dev20221227125623-0.2.9.dev20230104175944/diff.md --exclude *.pyd
+[2023-04-16 05:26:59] INFO root fetch - processPackages [dopt]: Downloading https://files.pythonhosted.org/packages/d3/86/53528a0432f3d2169b264409f3b20447d9b611c97347889e5d149792212b/dopt-0.0.3.9.tar.gz
+[2023-04-16 05:27:00] INFO root fetch - processPackages [defisheye]: Downloading https://files.pythonhosted.org/packages/9f/9c/489c2e3f1653a6872e4788c2db3b23e059123a96c8d4669934203e91f1ab/defisheye-1.2.0.tar.gz
+[2023-04-16 05:27:00] INFO root fetch - processPackages [defisheye]: executing diffoscope
+[2023-04-16 05:27:00] INFO root fetch - processPackages [defisheye]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/defisheye-1.1.0.tar.gz tmp/defisheye-1.2.0.tar.gz --markdown 20230416/d/defisheye/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-16 05:27:00] INFO root fetch - processPackages [jmdrs]: Downloading https://files.pythonhosted.org/packages/eb/64/0b16189434510e17857eb3f417ee82494ac3033534bb777dadedecab59c9/jmdrs-1.0.5.tar.gz
+[2023-04-16 05:27:00] INFO root fetch - processPackages [dopt]: Downloading https://files.pythonhosted.org/packages/27/a2/ff4f1473d55e9c0b5552dc0141cd8316f498d7fc2f44ba5f32244fb3f8b9/dopt-0.0.5.11.tar.gz
+[2023-04-16 05:27:00] INFO root fetch - processPackages [jmdrs]: executing diffoscope
+[2023-04-16 05:27:00] INFO root fetch - processPackages [dopt]: executing diffoscope
+[2023-04-16 05:27:00] INFO root fetch - processPackages [jmdrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jmdrs-1.0.4.tar.gz tmp/jmdrs-1.0.5.tar.gz --markdown 20230416/j/jmdrs/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-16 05:27:00] INFO root fetch - processPackages [dopt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dopt-0.0.3.9.tar.gz tmp/dopt-0.0.5.11.tar.gz --markdown 20230416/d/dopt/0.0.3.9-0.0.5.11/diff.md --exclude *.pyd
+[2023-04-16 05:27:01] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2023-04-16 05:27:01] INFO root fetch - main [MainThread]: End processing [defisheye]: success
+[2023-04-16 05:27:01] INFO root fetch - main [MainThread]: End processing [jmdrs]: success
+[2023-04-16 05:27:01] INFO root fetch - main [MainThread]: End processing [dopt]: success
+[2023-04-16 05:27:01] INFO root fetch - main [MainThread]: Store serial: [17723451]
