@@ -9782,3 +9782,76 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 16:09:39] INFO root fetch - main [MainThread]: End processing [e-qsl]: success
 [2023-04-16 16:09:40] INFO root fetch - main [MainThread]: End processing [quarkstudio]: success
 [2023-04-16 16:09:40] INFO root fetch - main [MainThread]: Store serial: [17727623]
+[2023-04-16 16:14:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727623]
+[2023-04-16 16:14:49] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spiderYa
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: typer-builder
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chemeq
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odbc2orm
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ecs-service-discovery
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbqq
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vollseg
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kenu
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gbd-tools
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: twitch-archiver
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ecs-service-discovery]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 16:14:49] INFO root fetch - processPackages [chemeq]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-16 16:14:49] INFO root fetch - processPackages [typer-builder]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-16 16:14:49] INFO root fetch - processPackages [spiderYa]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 16:14:49] INFO root fetch - processPackages [odbc2orm]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-16 16:14:49] INFO root fetch - processPackages [dbqq]: New version: [1.3.1] Old Version: [1.2.0]
+[2023-04-16 16:14:49] WARNING root fetch - processPackages [twitch-archiver]: Skipping, unable to determine old version
+[2023-04-16 16:14:49] INFO root fetch - processPackages [twitch-archiver]: Start processing: doveseed
+[2023-04-16 16:14:49] INFO root fetch - main [MainThread]: End processing [twitch-archiver] error
+[2023-04-16 16:14:49] INFO root fetch - processPackages [kenu]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-04-16 16:14:49] INFO root fetch - processPackages [gbd-tools]: New version: [4.3.8] Old Version: [4.3.7]
+[2023-04-16 16:14:49] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 16:14:49] INFO root fetch - processPackages [doveseed]: New version: [2.0.0a2] Old Version: [2.0.0a1]
+[2023-04-16 16:14:49] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 16:14:49] INFO root fetch - processPackages [spiderYa]: executing diffoscope
+[2023-04-16 16:14:49] INFO root fetch - processPackages [spiderYa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderYa-0.0.8.tar.gz tmp/spiderYa-0.0.9.tar.gz --markdown 20230416/s/spiderYa/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 16:14:49] INFO root fetch - processPackages [doveseed]: executing diffoscope
+[2023-04-16 16:14:49] INFO root fetch - processPackages [doveseed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doveseed-2.0.0a1.tar.gz tmp/doveseed-2.0.0a2.tar.gz --markdown 20230416/d/doveseed/2.0.0a1-2.0.0a2/diff.md --exclude *.pyd
+[2023-04-16 16:14:49] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 16:14:49] INFO root fetch - processPackages [vollseg]: Start processing: bdating-common
+[2023-04-16 16:14:49] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 16:14:49] INFO root fetch - processPackages [chemeq]: Downloading https://files.pythonhosted.org/packages/ac/5d/3461b0973707466d23eeda58d65843e53e41e5a74e9b2151c93ec3c2bd27/chemeq-0.1.2.tar.gz
+[2023-04-16 16:14:49] INFO root fetch - processPackages [typer-builder]: Downloading https://files.pythonhosted.org/packages/61/3f/0c7c8d3e66f45bf6c1765803b43da5b3cfe64cdd2d7f083c10578d9f944d/typer_builder-0.0.7.tar.gz
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ecs-service-discovery]: Downloading https://files.pythonhosted.org/packages/68/29/5796ddd5480e338838e848e1b98dbd049a99c21b010f364a25cc819126c8/ecs_service_discovery-0.1.1.tar.gz
+[2023-04-16 16:14:49] INFO root fetch - processPackages [kenu]: Downloading https://files.pythonhosted.org/packages/cc/80/06bef57f60829f21a7bd881c6ab9a1f9a7773806075762c53b931456a4b3/kenu-1.2.6.tar.gz
+[2023-04-16 16:14:49] INFO root fetch - processPackages [odbc2orm]: Downloading https://files.pythonhosted.org/packages/11/94/91cffb581f4fb34075d904aa98ee8034b140ab8a337f47b8f8f538b0bc49/odbc2orm-1.0.3.tar.gz
+[2023-04-16 16:14:49] INFO root fetch - processPackages [gbd-tools]: Downloading https://files.pythonhosted.org/packages/22/c7/61eb88550f4d8a4f4c9b2d76c4e89466e9f5106758eba232b997794c7b12/gbd_tools-4.3.8.tar.gz
+[2023-04-16 16:14:49] INFO root fetch - processPackages [kenu]: executing diffoscope
+[2023-04-16 16:14:49] INFO root fetch - processPackages [kenu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kenu-1.2.5.tar.gz tmp/kenu-1.2.6.tar.gz --markdown 20230416/k/kenu/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-04-16 16:14:49] INFO root fetch - processPackages [odbc2orm]: executing diffoscope
+[2023-04-16 16:14:49] INFO root fetch - processPackages [odbc2orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odbc2orm-1.0.2-cp38-cp38-win32.whl.zip tmp/odbc2orm-1.0.3.tar.gz --markdown 20230416/o/odbc2orm/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-16 16:14:49] INFO root fetch - processPackages [bdating-common]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-16 16:14:49] INFO root fetch - processPackages [gbd-tools]: executing diffoscope
+[2023-04-16 16:14:49] INFO root fetch - processPackages [gbd-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gbd_tools-4.3.7.tar.gz tmp/gbd_tools-4.3.8.tar.gz --markdown 20230416/g/gbd-tools/4.3.7-4.3.8/diff.md --exclude *.pyd
+[2023-04-16 16:14:49] INFO root fetch - processPackages [dbqq]: Downloading https://files.pythonhosted.org/packages/3e/83/765e255c07a075fa6d54a52bc6029ed5c7895746e8f9686de2da6b9ed047/dbqq-1.3.1.tar.gz
+[2023-04-16 16:14:49] INFO root fetch - processPackages [dbqq]: executing diffoscope
+[2023-04-16 16:14:49] INFO root fetch - processPackages [dbqq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbqq-1.2.0.tar.gz tmp/dbqq-1.3.1.tar.gz --markdown 20230416/d/dbqq/1.2.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-16 16:14:49] INFO root fetch - processPackages [typer-builder]: Downloading https://files.pythonhosted.org/packages/6f/f8/1e8faed3f944260cd91176cbd4b0e88349a719990f0b17a91a6115b1aa71/typer_builder-0.0.8.tar.gz
+[2023-04-16 16:14:49] INFO root fetch - processPackages [typer-builder]: executing diffoscope
+[2023-04-16 16:14:49] INFO root fetch - processPackages [typer-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typer_builder-0.0.7.tar.gz tmp/typer_builder-0.0.8.tar.gz --markdown 20230416/t/typer-builder/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-16 16:14:49] INFO root fetch - processPackages [chemeq]: Downloading https://files.pythonhosted.org/packages/4f/ff/4fdfd487fdb5dc613d141d1be7b64a304db61f59ba54dd394d86ba18ef2b/chemeq-0.1.3.tar.gz
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ecs-service-discovery]: Downloading https://files.pythonhosted.org/packages/d0/c3/d5c4d4a7115927f23e334899528c39d057650bb4113b9b07c619695d6cf8/ecs_service_discovery-0.1.2.tar.gz
+[2023-04-16 16:14:49] INFO root fetch - processPackages [chemeq]: executing diffoscope
+[2023-04-16 16:14:49] INFO root fetch - processPackages [chemeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chemeq-0.1.2.tar.gz tmp/chemeq-0.1.3.tar.gz --markdown 20230416/c/chemeq/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-16 16:14:49] INFO root fetch - processPackages [bdating-common]: Downloading https://files.pythonhosted.org/packages/b6/e8/182164ed551405a938d125b986db596ae2ec4c2e63f64a36150e891ba74b/bdating-common-0.9.8.tar.gz
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ecs-service-discovery]: executing diffoscope
+[2023-04-16 16:14:49] INFO root fetch - processPackages [ecs-service-discovery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecs_service_discovery-0.1.1.tar.gz tmp/ecs_service_discovery-0.1.2.tar.gz --markdown 20230416/e/ecs-service-discovery/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 16:14:50] INFO root fetch - processPackages [bdating-common]: Downloading https://files.pythonhosted.org/packages/5e/03/279ccb140de56fd96b4d934616aca37e5a50bff8f0684be248f712f24d5a/bdating-common-0.9.9.tar.gz
+[2023-04-16 16:14:50] INFO root fetch - processPackages [bdating-common]: executing diffoscope
+[2023-04-16 16:14:50] INFO root fetch - processPackages [bdating-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdating-common-0.9.8.tar.gz tmp/bdating-common-0.9.9.tar.gz --markdown 20230416/b/bdating-common/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-16 16:14:51] INFO root fetch - main [MainThread]: End processing [kenu]: success
+[2023-04-16 16:14:51] INFO root fetch - main [MainThread]: End processing [odbc2orm]: success
+[2023-04-16 16:14:51] INFO root fetch - main [MainThread]: End processing [doveseed]: success
+[2023-04-16 16:14:51] INFO root fetch - main [MainThread]: End processing [dbqq]: success
+[2023-04-16 16:14:51] INFO root fetch - main [MainThread]: End processing [typer-builder]: success
+[2023-04-16 16:14:51] INFO root fetch - main [MainThread]: End processing [ecs-service-discovery]: success
+[2023-04-16 16:14:51] INFO root fetch - main [MainThread]: End processing [bdating-common]: success
+[2023-04-16 16:14:51] INFO root fetch - main [MainThread]: End processing [chemeq]: success
+[2023-04-16 16:14:53] INFO root fetch - main [MainThread]: End processing [gbd-tools]: success
+[2023-04-16 16:14:54] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
+[2023-04-16 16:14:54] INFO root fetch - main [MainThread]: Store serial: [17727668]
