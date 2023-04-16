@@ -3755,3 +3755,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 08:15:34] INFO root fetch - main [MainThread]: End processing [rpl]: success
 [2023-04-16 08:15:39] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-04-16 08:15:39] INFO root fetch - main [MainThread]: Store serial: [17724138]
+[2023-04-16 08:20:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724138]
+[2023-04-16 08:20:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 08:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sprocket-carball
+[2023-04-16 08:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stim
+[2023-04-16 08:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mixalime
+[2023-04-16 08:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stimcirq
+[2023-04-16 08:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sinter
+[2023-04-16 08:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: digital-unit
+[2023-04-16 08:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fake-bpy-module-latest
+[2023-04-16 08:20:48] WARNING root fetch - processPackages [sprocket-carball]: Skipping, unable to determine old version
+[2023-04-16 08:20:48] INFO root fetch - main [MainThread]: End processing [sprocket-carball] error
+[2023-04-16 08:20:48] INFO root fetch - processPackages [mixalime]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-04-16 08:20:48] INFO root fetch - processPackages [digital-unit]: New version: [1.1] Old Version: [1.0]
+[2023-04-16 08:20:48] INFO root fetch - processPackages [stimcirq]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-04-16 08:20:48] INFO root fetch - processPackages [sinter]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-04-16 08:20:48] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230416] Old Version: [20230415]
+[2023-04-16 08:20:48] INFO root fetch - processPackages [stim]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-04-16 08:20:48] INFO root fetch - processPackages [mixalime]: executing diffoscope
+[2023-04-16 08:20:48] INFO root fetch - processPackages [mixalime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixalime-2.9.8.tar.gz tmp/mixalime-2.9.9.tar.gz --markdown 20230416/m/mixalime/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-04-16 08:20:48] INFO root fetch - processPackages [digital-unit]: Downloading https://files.pythonhosted.org/packages/c4/29/8f6363d6e5ae2631cab8f89b8065e6cf6fe36d0f6efe27e278d2999aa4df/digital_unit-1.0.tar.gz
+[2023-04-16 08:20:48] INFO root fetch - processPackages [sinter]: Downloading https://files.pythonhosted.org/packages/df/c6/cb2622852c76647e7b6ad9a7a7e10f4e2cac9ecdfd523ac68df0bfc130af/sinter-1.9.dev1656756326.tar.gz
+[2023-04-16 08:20:48] INFO root fetch - processPackages [stimcirq]: Downloading https://files.pythonhosted.org/packages/ec/fe/38fc995ba6685f64103f3cd62faa49cd869af074b36e401597d9d2b0278d/stimcirq-1.9.dev1656756326.tar.gz
+[2023-04-16 08:20:48] INFO root fetch - processPackages [stim]: Downloading https://files.pythonhosted.org/packages/3c/b5/73354eb92a2d990acfb9c201ee8681aa2f88c6bd8bebf6365b8315ce918f/stim-1.9.dev1656756326.tar.gz
+[2023-04-16 08:20:48] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/b2/dd/89d9e0c71d539c9f851a0c2ffac35167f57b1e2e91b09238a6ee211584bd/fake-bpy-module-latest-20230416.tar.gz
+[2023-04-16 08:20:48] INFO root fetch - processPackages [digital-unit]: Downloading https://files.pythonhosted.org/packages/f8/95/2eacd574a6f2727854f5016b6d71cb90b50abbac4ecfe4eec4e90c7c97e4/digital_unit-1.1.tar.gz
+[2023-04-16 08:20:48] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-04-16 08:20:48] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230415.tar.gz tmp/fake-bpy-module-latest-20230416.tar.gz --markdown 20230416/f/fake-bpy-module-latest/20230415-20230416/diff.md --exclude *.pyd
+[2023-04-16 08:20:48] INFO root fetch - processPackages [stimcirq]: Downloading https://files.pythonhosted.org/packages/a2/fe/5fa281db7d139ef59a3c4c47c96940bf9f3fab0d0017ea452412c0cfc8d3/stimcirq-1.9.dev1657429876.tar.gz
+[2023-04-16 08:20:48] INFO root fetch - processPackages [sinter]: Downloading https://files.pythonhosted.org/packages/fd/5e/bd22cf7318b95a6cb630aede242c37ca8e376f51d3c73522d4d3fafd60c3/sinter-1.9.dev1657429876.tar.gz
+[2023-04-16 08:20:48] INFO root fetch - processPackages [digital-unit]: executing diffoscope
+[2023-04-16 08:20:48] INFO root fetch - processPackages [digital-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digital_unit-1.0.tar.gz tmp/digital_unit-1.1.tar.gz --markdown 20230416/d/digital-unit/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-16 08:20:48] INFO root fetch - processPackages [stim]: Downloading https://files.pythonhosted.org/packages/0e/9c/5ba52c312bd56598b3625675b062eed876f9e2248d957e47c58050cad31a/stim-1.9.dev1657429876.tar.gz
+[2023-04-16 08:20:48] INFO root fetch - processPackages [stimcirq]: executing diffoscope
+[2023-04-16 08:20:48] INFO root fetch - processPackages [stimcirq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stimcirq-1.9.dev1656756326.tar.gz tmp/stimcirq-1.9.dev1657429876.tar.gz --markdown 20230416/s/stimcirq/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-04-16 08:20:48] INFO root fetch - processPackages [sinter]: executing diffoscope
+[2023-04-16 08:20:48] INFO root fetch - processPackages [sinter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinter-1.9.dev1656756326.tar.gz tmp/sinter-1.9.dev1657429876.tar.gz --markdown 20230416/s/sinter/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-04-16 08:20:49] INFO root fetch - processPackages [stim]: executing diffoscope
+[2023-04-16 08:20:49] INFO root fetch - processPackages [stim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stim-1.9.dev1656756326.tar.gz tmp/stim-1.9.dev1657429876.tar.gz --markdown 20230416/s/stim/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-04-16 08:20:49] INFO root fetch - main [MainThread]: End processing [mixalime]: success
+[2023-04-16 08:20:49] INFO root fetch - main [MainThread]: End processing [digital-unit]: success
+[2023-04-16 08:20:50] INFO root fetch - main [MainThread]: End processing [sinter]: success
+[2023-04-16 08:20:50] INFO root fetch - main [MainThread]: End processing [stimcirq]: success
+[2023-04-16 08:20:51] INFO root fetch - main [MainThread]: End processing [stim]: success
+[2023-04-16 08:20:57] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2023-04-16 08:20:57] INFO root fetch - main [MainThread]: Store serial: [17724184]
