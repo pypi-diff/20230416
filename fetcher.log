@@ -7588,3 +7588,52 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 13:35:53] INFO root fetch - main [MainThread]: End processing [igbpyutils]: success
 [2023-04-16 13:35:56] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-04-16 13:35:56] INFO root fetch - main [MainThread]: Store serial: [17726421]
+[2023-04-16 13:41:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726421]
+[2023-04-16 13:41:06] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simpleworkspace
+[2023-04-16 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycapacity
+[2023-04-16 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cellmap
+[2023-04-16 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: djoser
+[2023-04-16 13:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pmtiles
+[2023-04-16 13:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: textadventure
+[2023-04-16 13:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PyAltiumRunTop
+[2023-04-16 13:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Liara
+[2023-04-16 13:41:07] INFO root fetch - processPackages [simpleworkspace]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-04-16 13:41:07] INFO root fetch - processPackages [pycapacity]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-16 13:41:07] INFO root fetch - processPackages [pmtiles]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-04-16 13:41:07] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304161141] Old Version: [1.0.1.dev202304140937]
+[2023-04-16 13:41:07] INFO root fetch - processPackages [PyAltiumRunTop]: New version: [0.2.4.4] Old Version: [0.2.4.3]
+[2023-04-16 13:41:07] INFO root fetch - processPackages [Liara]: New version: [2.5.3] Old Version: [2.5.2]
+[2023-04-16 13:41:07] WARNING root fetch - processPackages [textadventure]: Skipping, unable to determine old version
+[2023-04-16 13:41:07] INFO root fetch - main [MainThread]: End processing [textadventure] error
+[2023-04-16 13:41:07] INFO root fetch - processPackages [djoser]: New version: [2.2.0a0] Old Version: [2.2.0]
+[2023-04-16 13:41:07] INFO root fetch - processPackages [PyAltiumRunTop]: executing diffoscope
+[2023-04-16 13:41:07] INFO root fetch - processPackages [PyAltiumRunTop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAltiumRunTop-0.2.4.3.tar.gz tmp/PyAltiumRunTop-0.2.4.4.tar.gz --markdown 20230416/P/PyAltiumRunTop/0.2.4.3-0.2.4.4/diff.md --exclude *.pyd
+[2023-04-16 13:41:07] INFO root fetch - processPackages [pycapacity]: Downloading https://files.pythonhosted.org/packages/96/0c/789805c9cfb2d2de6e15a3e89ffce39d1d928ec8da655700bdce886dfa62/pycapacity-1.2.8.tar.gz
+[2023-04-16 13:41:07] INFO root fetch - processPackages [djoser]: Downloading https://files.pythonhosted.org/packages/70/e0/8c7967ce2aa3c514262fe847fe66201367982ce62870555792851da32948/djoser-2.2.0.tar.gz
+[2023-04-16 13:41:07] INFO root fetch - processPackages [pmtiles]: Downloading https://files.pythonhosted.org/packages/d2/c0/0f3d43b27b5e04b625d1e35202a09b33bf260f719d553cee94d75a4ca324/pmtiles-3.1.0.tar.gz
+[2023-04-16 13:41:07] INFO root fetch - processPackages [Liara]: Downloading https://files.pythonhosted.org/packages/a0/bb/bcfae88dbbfaf81a17978bae59f959b120604ce1c70b6713e2b3f831113d/Liara-2.5.3.tar.gz
+[2023-04-16 13:41:07] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2023-04-16 13:41:07] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleWorkspace-1.1.98-py3-none-any.whl.zip tmp/SimpleWorkspace-1.1.99-py3-none-any.whl.zip --markdown 20230416/s/simpleworkspace/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-04-16 13:41:07] INFO root fetch - processPackages [Liara]: executing diffoscope
+[2023-04-16 13:41:07] INFO root fetch - processPackages [Liara]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Liara-2.5.2.tar.gz tmp/Liara-2.5.3.tar.gz --markdown 20230416/L/Liara/2.5.2-2.5.3/diff.md --exclude *.pyd
+[2023-04-16 13:41:07] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/14/2e/1215c6e9211593708a9e86af1ae842c35eb4749d99dc832eef7eec8b31dd/cellmap-1.0.1.dev202304161141-py3-none-any.whl
+[2023-04-16 13:41:07] INFO root fetch - processPackages [pycapacity]: Downloading https://files.pythonhosted.org/packages/b1/5d/540c59fa7103beed069e20461a920104c0cac70e3f814d6d264f05a6a715/pycapacity-1.2.9.tar.gz
+[2023-04-16 13:41:07] INFO root fetch - processPackages [djoser]: Downloading https://files.pythonhosted.org/packages/38/ec/e169c3271a477586ac45cfb78ae6eee3b3be4c99751e92eed28accebf4e5/djoser-2.2.0a0.tar.gz
+[2023-04-16 13:41:07] INFO root fetch - processPackages [pmtiles]: Downloading https://files.pythonhosted.org/packages/19/ef/9e16e7467ba63ec6cc8aa75839bc80762e1668611af4a0a88e6432fd30f8/pmtiles-3.1.1.tar.gz
+[2023-04-16 13:41:07] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-16 13:41:07] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304140937-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304161141-py3-none-any.whl.zip --markdown 20230416/c/cellmap/1.0.1.dev202304140937-1.0.1.dev202304161141/diff.md --exclude *.pyd
+[2023-04-16 13:41:07] INFO root fetch - processPackages [pycapacity]: executing diffoscope
+[2023-04-16 13:41:07] INFO root fetch - processPackages [pycapacity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycapacity-1.2.8.tar.gz tmp/pycapacity-1.2.9.tar.gz --markdown 20230416/p/pycapacity/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-16 13:41:07] INFO root fetch - processPackages [djoser]: executing diffoscope
+[2023-04-16 13:41:07] INFO root fetch - processPackages [djoser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djoser-2.2.0.tar.gz tmp/djoser-2.2.0a0.tar.gz --markdown 20230416/d/djoser/2.2.0-2.2.0a0/diff.md --exclude *.pyd
+[2023-04-16 13:41:07] INFO root fetch - processPackages [pmtiles]: executing diffoscope
+[2023-04-16 13:41:07] INFO root fetch - processPackages [pmtiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmtiles-3.1.0.tar.gz tmp/pmtiles-3.1.1.tar.gz --markdown 20230416/p/pmtiles/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-04-16 13:41:08] INFO root fetch - main [MainThread]: End processing [Liara]: success
+[2023-04-16 13:41:08] INFO root fetch - main [MainThread]: End processing [simpleworkspace]: success
+[2023-04-16 13:41:08] INFO root fetch - main [MainThread]: End processing [PyAltiumRunTop]: success
+[2023-04-16 13:41:08] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-04-16 13:41:08] INFO root fetch - main [MainThread]: End processing [pmtiles]: success
+[2023-04-16 13:41:09] INFO root fetch - main [MainThread]: End processing [pycapacity]: success
+[2023-04-16 13:41:09] INFO root fetch - main [MainThread]: End processing [djoser]: success
+[2023-04-16 13:41:09] INFO root fetch - main [MainThread]: Store serial: [17726445]
