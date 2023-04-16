@@ -2193,3 +2193,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 04:14:01] INFO root fetch - main [MainThread]: End processing [arkdata]: success
 [2023-04-16 04:14:01] INFO root fetch - main [MainThread]: End processing [rsrch]: success
 [2023-04-16 04:14:01] INFO root fetch - main [MainThread]: Store serial: [17723248]
+[2023-04-16 04:19:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723248]
+[2023-04-16 04:19:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 04:19:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: salmon-triplets
+[2023-04-16 04:19:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datamachine
+[2023-04-16 04:19:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sweetrpg-library-objects
+[2023-04-16 04:19:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ledes-parser
+[2023-04-16 04:19:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: monai-weekly
+[2023-04-16 04:19:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: coloraide
+[2023-04-16 04:19:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sweetrpg-web-core
+[2023-04-16 04:19:11] INFO root fetch - processPackages [ledes-parser]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-16 04:19:11] INFO root fetch - processPackages [salmon-triplets]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 04:19:11] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 04:19:11] INFO root fetch - processPackages [datamachine]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-16 04:19:11] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2023-04-16 04:19:11] INFO root fetch - processPackages [monai-weekly]: New version: [1.2.dev2316] Old Version: [1.2.dev2315]
+[2023-04-16 04:19:11] INFO root fetch - processPackages [coloraide]: New version: [2.2] Old Version: [2.1]
+[2023-04-16 04:19:11] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-04-16 04:19:11] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230416/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 04:19:11] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2023-04-16 04:19:11] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20230416/s/sweetrpg-library-objects/0.0.85-0.0.86/diff.md --exclude *.pyd
+[2023-04-16 04:19:11] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/6c/73/9f3b3d9ccb12940ec311f5faf6c5ccbdf57c16a3e85629a99b224eb3e8ad/monai-weekly-1.2.dev2315.tar.gz
+[2023-04-16 04:19:11] INFO root fetch - processPackages [ledes-parser]: Downloading https://files.pythonhosted.org/packages/fb/50/bb06c98af295af9b68d2301addc193f1eec203bb43322b88197ecfbaf8f4/ledes-parser-0.2.1.tar.gz
+[2023-04-16 04:19:11] INFO root fetch - processPackages [salmon-triplets]: Downloading https://files.pythonhosted.org/packages/8c/a9/56035ee792fa03a32a8287ebfa5de4bbd32a23fb0f8305f8dc30296aafbc/salmon-triplets-1.0.1.tar.gz
+[2023-04-16 04:19:11] INFO root fetch - processPackages [datamachine]: Downloading https://files.pythonhosted.org/packages/3d/a4/d1538314e1955b797a35f29e1bd04e287542b7173f702e03d5fe4b8b7ace/datamachine-0.0.4.tar.gz
+[2023-04-16 04:19:11] INFO root fetch - processPackages [ledes-parser]: executing diffoscope
+[2023-04-16 04:19:11] INFO root fetch - processPackages [ledes-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ledes-parser-0.2.0.tar.gz tmp/ledes-parser-0.2.1.tar.gz --markdown 20230416/l/ledes-parser/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-16 04:19:11] INFO root fetch - processPackages [datamachine]: executing diffoscope
+[2023-04-16 04:19:11] INFO root fetch - processPackages [datamachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamachine-0.0.3.tar.gz tmp/datamachine-0.0.4.tar.gz --markdown 20230416/d/datamachine/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-16 04:19:11] INFO root fetch - processPackages [coloraide]: Downloading https://files.pythonhosted.org/packages/6d/d5/bfeab121d85c1f76f874f7d3ef60597fa88dfac5171b7fdb1d887e3397d2/coloraide-2.1.tar.gz
+[2023-04-16 04:19:11] INFO root fetch - processPackages [salmon-triplets]: Downloading https://files.pythonhosted.org/packages/11/2b/31616444d3180f5b7042e9ffc8ceb8031e0a1714ea7cd27cd361e7780933/salmon-triplets-1.0.2.tar.gz
+[2023-04-16 04:19:11] WARNING root fetch - processPackages [coloraide]: Skipping package: exceeds size limit 12653467>=10485760
+[2023-04-16 04:19:11] INFO root fetch - main [MainThread]: End processing [coloraide] error
+[2023-04-16 04:19:11] INFO root fetch - processPackages [salmon-triplets]: executing diffoscope
+[2023-04-16 04:19:11] INFO root fetch - processPackages [salmon-triplets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salmon-triplets-1.0.1.tar.gz tmp/salmon-triplets-1.0.2.tar.gz --markdown 20230416/s/salmon-triplets/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 04:19:11] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/a0/22/ee81d1d6838c4e6cf14ebc8d2b3dad576fd7021564382133b09942899fc1/monai-weekly-1.2.dev2316.tar.gz
+[2023-04-16 04:19:12] INFO root fetch - processPackages [monai-weekly]: executing diffoscope
+[2023-04-16 04:19:12] INFO root fetch - processPackages [monai-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monai-weekly-1.2.dev2315.tar.gz tmp/monai-weekly-1.2.dev2316.tar.gz --markdown 20230416/m/monai-weekly/1.2.dev2315-1.2.dev2316/diff.md --exclude *.pyd
+[2023-04-16 04:19:12] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-04-16 04:19:12] INFO root fetch - main [MainThread]: End processing [datamachine]: success
+[2023-04-16 04:19:12] INFO root fetch - main [MainThread]: End processing [ledes-parser]: success
+[2023-04-16 04:19:12] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2023-04-16 04:19:12] INFO root fetch - main [MainThread]: End processing [salmon-triplets]: success
+[2023-04-16 04:19:27] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
+[2023-04-16 04:19:28] INFO root fetch - main [MainThread]: Store serial: [17723270]
