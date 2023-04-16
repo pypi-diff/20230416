@@ -12761,3 +12761,73 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 20:52:24] INFO root fetch - main [MainThread]: End processing [ssb-sgis]: success
 [2023-04-16 20:52:24] INFO root fetch - main [MainThread]: End processing [feloopy]: success
 [2023-04-16 20:52:24] INFO root fetch - main [MainThread]: Store serial: [17729446]
+[2023-04-16 20:57:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729446]
+[2023-04-16 20:57:34] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-16 20:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapi-all-out
+[2023-04-16 20:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psychoevals
+[2023-04-16 20:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gator-core
+[2023-04-16 20:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastHDMI
+[2023-04-16 20:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scatterd
+[2023-04-16 20:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: llama-inference
+[2023-04-16 20:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: paper-uploads
+[2023-04-16 20:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fedml
+[2023-04-16 20:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: st-text-annotator
+[2023-04-16 20:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: SrbAI
+[2023-04-16 20:57:34] INFO root fetch - processPackages [llama-inference]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 20:57:34] INFO root fetch - processPackages [fastHDMI]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-16 20:57:34] INFO root fetch - processPackages [psychoevals]: New version: [0.8] Old Version: [0.7]
+[2023-04-16 20:57:34] INFO root fetch - processPackages [scatterd]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-04-16 20:57:34] INFO root fetch - processPackages [gator-core]: New version: [2.0.0rc9] Old Version: [2.0.0rc8]
+[2023-04-16 20:57:34] INFO root fetch - processPackages [fedml]: New version: [0.8.3a9] Old Version: [0.8.3a6]
+[2023-04-16 20:57:34] INFO root fetch - processPackages [paper-uploads]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-16 20:57:34] INFO root fetch - processPackages [st-text-annotator]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-16 20:57:34] INFO root fetch - processPackages [fastapi-all-out]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-16 20:57:34] INFO root fetch - processPackages [SrbAI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 20:57:34] INFO root fetch - processPackages [gator-core]: executing diffoscope
+[2023-04-16 20:57:34] INFO root fetch - processPackages [gator-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gator_core-2.0.0rc8.tar.gz tmp/gator_core-2.0.0rc9.tar.gz --markdown 20230416/g/gator-core/2.0.0rc8-2.0.0rc9/diff.md --exclude *.pyd
+[2023-04-16 20:57:34] INFO root fetch - processPackages [fedml]: executing diffoscope
+[2023-04-16 20:57:34] INFO root fetch - processPackages [fedml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedml-0.8.3a6.tar.gz tmp/fedml-0.8.3a9.tar.gz --markdown 20230416/f/fedml/0.8.3a6-0.8.3a9/diff.md --exclude *.pyd
+[2023-04-16 20:57:34] INFO root fetch - processPackages [fastHDMI]: executing diffoscope
+[2023-04-16 20:57:34] INFO root fetch - processPackages [fastHDMI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastHDMI-1.2.8.tar.gz tmp/fastHDMI-1.2.9.tar.gz --markdown 20230416/f/fastHDMI/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-16 20:57:34] INFO root fetch - processPackages [fastapi-all-out]: Downloading https://files.pythonhosted.org/packages/6a/93/f4b4638254a744bc4596b884b7dd3fb4f56b9676ff8a891d051f8189b6e2/fastapi_all_out-0.2.1.tar.gz
+[2023-04-16 20:57:34] INFO root fetch - processPackages [llama-inference]: Downloading https://files.pythonhosted.org/packages/ef/fe/4ad4eb042b224515f37f7ab2299f0ebca5555e2c22ccd2234a43233bdb48/llama_inference-0.0.1.tar.gz
+[2023-04-16 20:57:34] INFO root fetch - processPackages [scatterd]: Downloading https://files.pythonhosted.org/packages/fa/29/b0219a8090dc9c9b3b94e566c1b50ccd7893e13f049a6ceb2d0b03edc8da/scatterd-1.2.5.tar.gz
+[2023-04-16 20:57:34] INFO root fetch - processPackages [paper-uploads]: Downloading https://files.pythonhosted.org/packages/8b/2a/1b0e71f778a671e3778bba2b6dac819321754b3a81e9c951d3bf85a14ebe/paper-uploads-0.9.2.tar.gz
+[2023-04-16 20:57:34] INFO root fetch - processPackages [SrbAI]: Downloading https://files.pythonhosted.org/packages/3f/28/5493904339416f90eb7bacd3d808f9d7ebc44746ef4888aff0d1a5b6d7c5/SrbAI-0.0.9.tar.gz
+[2023-04-16 20:57:34] INFO root fetch - processPackages [st-text-annotator]: Downloading https://files.pythonhosted.org/packages/35/ce/a2754f478429dbeef64b5a7a49978431c45250eaef563c5b0984e67eb465/st_text_annotator-0.1.7.tar.gz
+[2023-04-16 20:57:35] INFO root fetch - processPackages [psychoevals]: Downloading https://files.pythonhosted.org/packages/b0/ee/873fd3138387872798e43d4c7ce7b452358e53e1be03ba8cd044a469c1bc/psychoevals-0.8.tar.gz
+[2023-04-16 20:57:35] INFO root fetch - processPackages [SrbAI]: executing diffoscope
+[2023-04-16 20:57:35] INFO root fetch - processPackages [SrbAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SrbAI-0.0.8.tar.gz tmp/SrbAI-0.0.9.tar.gz --markdown 20230416/S/SrbAI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 20:57:35] INFO root fetch - processPackages [llama-inference]: Downloading https://files.pythonhosted.org/packages/b5/15/f11ee0924b6cdf494a37aca48d52358082b618d86fa644a17e859c06800c/llama_inference-0.0.2.tar.gz
+[2023-04-16 20:57:35] INFO root fetch - processPackages [st-text-annotator]: executing diffoscope
+[2023-04-16 20:57:35] INFO root fetch - processPackages [st-text-annotator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_text_annotator-0.1.6.tar.gz tmp/st_text_annotator-0.1.7.tar.gz --markdown 20230416/s/st-text-annotator/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-16 20:57:35] INFO root fetch - processPackages [scatterd]: Downloading https://files.pythonhosted.org/packages/07/73/dfeb31638ab19d8a31cba1ec8be4ee425b12700f012dcea69c453027db4f/scatterd-1.2.6.tar.gz
+[2023-04-16 20:57:35] INFO root fetch - processPackages [psychoevals]: executing diffoscope
+[2023-04-16 20:57:35] INFO root fetch - processPackages [psychoevals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychoevals-0.7.tar.gz tmp/psychoevals-0.8.tar.gz --markdown 20230416/p/psychoevals/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-16 20:57:35] INFO root fetch - processPackages [fastapi-all-out]: Downloading https://files.pythonhosted.org/packages/3b/50/5905f8bcfd753453b1d8daf8bd9433bac3a6d7197a04cd7930e321d8b4e7/fastapi_all_out-0.2.2.tar.gz
+[2023-04-16 20:57:35] INFO root fetch - processPackages [scatterd]: executing diffoscope
+[2023-04-16 20:57:35] INFO root fetch - processPackages [scatterd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatterd-1.2.5.tar.gz tmp/scatterd-1.2.6.tar.gz --markdown 20230416/s/scatterd/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-04-16 20:57:35] INFO root fetch - processPackages [llama-inference]: executing diffoscope
+[2023-04-16 20:57:35] INFO root fetch - processPackages [llama-inference]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_inference-0.0.1.tar.gz tmp/llama_inference-0.0.2.tar.gz --markdown 20230416/l/llama-inference/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 20:57:35] INFO root fetch - processPackages [fastapi-all-out]: executing diffoscope
+[2023-04-16 20:57:35] INFO root fetch - processPackages [fastapi-all-out]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_all_out-0.2.1.tar.gz tmp/fastapi_all_out-0.2.2.tar.gz --markdown 20230416/f/fastapi-all-out/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-16 20:57:35] INFO root fetch - processPackages [paper-uploads]: Downloading https://files.pythonhosted.org/packages/e0/ce/53f713d7b908859d15d386c9ddbfff7113740b450629e7a9abbb8cdf415d/paper-uploads-0.9.3.tar.gz
+[2023-04-16 20:57:35] INFO root fetch - processPackages [paper-uploads]: executing diffoscope
+[2023-04-16 20:57:35] INFO root fetch - processPackages [paper-uploads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-uploads-0.9.2.tar.gz tmp/paper-uploads-0.9.3.tar.gz --markdown 20230416/p/paper-uploads/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-16 20:57:36] INFO root fetch - processPackages [SrbAI]: Start processing: macicons
+[2023-04-16 20:57:36] INFO root fetch - main [MainThread]: End processing [SrbAI]: success
+[2023-04-16 20:57:36] INFO root fetch - processPackages [macicons]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-16 20:57:36] INFO root fetch - main [MainThread]: End processing [gator-core]: success
+[2023-04-16 20:57:36] INFO root fetch - main [MainThread]: End processing [scatterd]: success
+[2023-04-16 20:57:36] INFO root fetch - main [MainThread]: End processing [fastHDMI]: success
+[2023-04-16 20:57:36] INFO root fetch - processPackages [macicons]: Downloading https://files.pythonhosted.org/packages/27/58/d3469eea6efa51a9f867d0ce6877ff6e5d98e2f495092f2c4058217cbcc0/macicons-0.1.0.tar.gz
+[2023-04-16 20:57:36] INFO root fetch - main [MainThread]: End processing [llama-inference]: success
+[2023-04-16 20:57:37] INFO root fetch - main [MainThread]: End processing [psychoevals]: success
+[2023-04-16 20:57:37] INFO root fetch - processPackages [macicons]: executing diffoscope
+[2023-04-16 20:57:37] INFO root fetch - processPackages [macicons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macicons-0.0.9.tar.gz tmp/macicons-0.1.0.tar.gz --markdown 20230416/m/macicons/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-16 20:57:37] INFO root fetch - main [MainThread]: End processing [fastapi-all-out]: success
+[2023-04-16 20:57:37] INFO root fetch - main [MainThread]: End processing [st-text-annotator]: success
+[2023-04-16 20:57:38] INFO root fetch - main [MainThread]: End processing [macicons]: success
+[2023-04-16 20:57:41] INFO root fetch - main [MainThread]: End processing [paper-uploads]: success
+[2023-04-16 20:57:52] INFO root fetch - main [MainThread]: End processing [fedml]: success
+[2023-04-16 20:57:52] INFO root fetch - main [MainThread]: Store serial: [17729478]
