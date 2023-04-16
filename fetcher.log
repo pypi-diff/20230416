@@ -9901,3 +9901,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 16:20:06] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
 [2023-04-16 16:20:32] INFO root fetch - main [MainThread]: End processing [mimesis]: success
 [2023-04-16 16:20:32] INFO root fetch - main [MainThread]: Store serial: [17727702]
+[2023-04-16 16:25:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727702]
+[2023-04-16 16:25:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 16:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checkov
+[2023-04-16 16:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odbc2orm
+[2023-04-16 16:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spiderYa
+[2023-04-16 16:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gbd-tools
+[2023-04-16 16:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yutto
+[2023-04-16 16:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: helios-opentelemetry-sdk
+[2023-04-16 16:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lnbits
+[2023-04-16 16:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spiderYa
+[2023-04-16 16:25:40] INFO root fetch - processPackages [odbc2orm]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-16 16:25:40] WARNING root fetch - processPackages [lnbits]: Skipping, unable to determine old version
+[2023-04-16 16:25:40] INFO root fetch - main [MainThread]: End processing [lnbits] error
+[2023-04-16 16:25:40] INFO root fetch - processPackages [yutto]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2023-04-16 16:25:40] INFO root fetch - processPackages [spiderYa]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 16:25:40] INFO root fetch - processPackages [spiderYa]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 16:25:40] INFO root fetch - processPackages [helios-opentelemetry-sdk]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-16 16:25:40] INFO root fetch - processPackages [gbd-tools]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-04-16 16:25:41] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-16 16:25:41] INFO root fetch - processPackages [spiderYa]: executing diffoscope
+[2023-04-16 16:25:41] INFO root fetch - processPackages [spiderYa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderYa-0.0.8.tar.gz tmp/spiderYa-0.0.9.tar.gz --markdown 20230416/s/spiderYa/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 16:25:41] INFO root fetch - processPackages [spiderYa]: executing diffoscope
+[2023-04-16 16:25:41] INFO root fetch - processPackages [spiderYa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderYa-0.0.8.tar.gz tmp/spiderYa-0.0.9.tar.gz --markdown 20230416/s/spiderYa/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 16:25:41] INFO root fetch - processPackages [odbc2orm]: Downloading https://files.pythonhosted.org/packages/04/99/b4e7f5ae38eb87a84b548771487a858578ffc5d796fe3ebaab706e45c356/odbc2orm-1.0.4.tar.gz
+[2023-04-16 16:25:41] INFO root fetch - processPackages [helios-opentelemetry-sdk]: executing diffoscope
+[2023-04-16 16:25:41] INFO root fetch - processPackages [helios-opentelemetry-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helios-opentelemetry-sdk-1.0.8.tar.gz tmp/helios-opentelemetry-sdk-1.0.9.tar.gz --markdown 20230416/h/helios-opentelemetry-sdk/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-16 16:25:41] INFO root fetch - processPackages [gbd-tools]: Downloading https://files.pythonhosted.org/packages/22/1c/e22d4a05bfa335f30aa8f19e4de66392fa6fefcd0097cdb43eca33fc88b4/gbd_tools-4.3.9.tar.gz
+[2023-04-16 16:25:41] INFO root fetch - processPackages [yutto]: executing diffoscope
+[2023-04-16 16:25:41] INFO root fetch - processPackages [yutto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yutto-2.0.0b8.tar.gz tmp/yutto-2.0.0b9.tar.gz --markdown 20230416/y/yutto/2.0.0b8-2.0.0b9/diff.md --exclude *.pyd
+[2023-04-16 16:25:41] INFO root fetch - processPackages [odbc2orm]: executing diffoscope
+[2023-04-16 16:25:41] INFO root fetch - processPackages [odbc2orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odbc2orm-1.0.3.tar.gz tmp/odbc2orm-1.0.4.tar.gz --markdown 20230416/o/odbc2orm/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-16 16:25:41] INFO root fetch - processPackages [gbd-tools]: executing diffoscope
+[2023-04-16 16:25:41] INFO root fetch - processPackages [gbd-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gbd_tools-4.3.8.tar.gz tmp/gbd_tools-4.3.9.tar.gz --markdown 20230416/g/gbd-tools/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-04-16 16:25:41] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-16 16:25:41] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230416/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-16 16:25:42] INFO root fetch - main [MainThread]: End processing [odbc2orm]: success
+[2023-04-16 16:25:42] INFO root fetch - main [MainThread]: End processing [helios-opentelemetry-sdk]: success
+[2023-04-16 16:25:43] INFO root fetch - main [MainThread]: End processing [gbd-tools]: success
+[2023-04-16 16:25:43] INFO root fetch - main [MainThread]: End processing [yutto]: success
+[2023-04-16 16:25:44] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
+[2023-04-16 16:25:45] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
+[2023-04-16 16:26:21] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-04-16 16:26:21] INFO root fetch - main [MainThread]: Store serial: [17727729]
