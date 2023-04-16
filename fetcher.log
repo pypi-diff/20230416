@@ -2524,3 +2524,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 05:11:27] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.16.dev20230415.tar.gz tmp/GANDLF-0.0.16.dev20230416.tar.gz --markdown 20230416/G/GANDLF/0.0.16.dev20230415-0.0.16.dev20230416/diff.md --exclude *.pyd
 [2023-04-16 05:11:29] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
 [2023-04-16 05:11:29] INFO root fetch - main [MainThread]: Store serial: [17723414]
+[2023-04-16 05:16:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723414]
+[2023-04-16 05:16:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-16 05:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mcc-api
+[2023-04-16 05:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: napari-spreadsheet
+[2023-04-16 05:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo10-addon-account-payment-order
+[2023-04-16 05:16:38] INFO root fetch - processPackages [mcc-api]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 05:16:38] INFO root fetch - processPackages [napari-spreadsheet]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-16 05:16:38] INFO root fetch - processPackages [odoo10-addon-account-payment-order]: New version: [10.0.1.7.0.99.dev4] Old Version: [10.0.1.7.0.99.dev3]
+[2023-04-16 05:16:39] INFO root fetch - processPackages [mcc-api]: Downloading https://files.pythonhosted.org/packages/be/d0/5ecbf0e05ef775405694b42ec2bf921e775fa8f3858761eaf92d106bd05f/mcc_api-1.0.1.tar.gz
+[2023-04-16 05:16:39] INFO root fetch - processPackages [napari-spreadsheet]: Downloading https://files.pythonhosted.org/packages/db/b3/70bd593dedb436a3c449ff261bbbe13174defcfdb9c76bd7a08727fc7853/napari_spreadsheet-0.0.3.tar.gz
+[2023-04-16 05:16:39] INFO root fetch - processPackages [odoo10-addon-account-payment-order]: Downloading https://files.pythonhosted.org/packages/04/6b/0a47154e944a00513addb3c169e8a51077d2c271b26cfb0df39f71a3fcb3/odoo10_addon_account_payment_order-10.0.1.7.0.99.dev3-py2-none-any.whl
+[2023-04-16 05:16:39] INFO root fetch - processPackages [mcc-api]: Downloading https://files.pythonhosted.org/packages/9d/f0/46b0adcfaee36203e6accee4ea005ce53caa67aa540b8123a70876ffb9e0/mcc_api-1.0.2.tar.gz
+[2023-04-16 05:16:39] INFO root fetch - processPackages [napari-spreadsheet]: Downloading https://files.pythonhosted.org/packages/2d/88/b7acd788b99355c5286b1875ffa4e6343b60e99a431d0ee57257cc7560f0/napari_spreadsheet-0.0.4.tar.gz
+[2023-04-16 05:16:39] INFO root fetch - processPackages [mcc-api]: executing diffoscope
+[2023-04-16 05:16:39] INFO root fetch - processPackages [mcc-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcc_api-1.0.1.tar.gz tmp/mcc_api-1.0.2.tar.gz --markdown 20230416/m/mcc-api/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 05:16:39] INFO root fetch - processPackages [odoo10-addon-account-payment-order]: Downloading https://files.pythonhosted.org/packages/08/85/c84ebc56978188f0580442e96ceed76572d8b69c1690d97ce62a22064a44/odoo10_addon_account_payment_order-10.0.1.7.0.99.dev4-py2-none-any.whl
+[2023-04-16 05:16:39] INFO root fetch - processPackages [napari-spreadsheet]: executing diffoscope
+[2023-04-16 05:16:39] INFO root fetch - processPackages [napari-spreadsheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_spreadsheet-0.0.3.tar.gz tmp/napari_spreadsheet-0.0.4.tar.gz --markdown 20230416/n/napari-spreadsheet/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-16 05:16:39] INFO root fetch - processPackages [odoo10-addon-account-payment-order]: executing diffoscope
+[2023-04-16 05:16:39] INFO root fetch - processPackages [odoo10-addon-account-payment-order]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo10_addon_account_payment_order-10.0.1.7.0.99.dev3-py2-none-any.whl.zip tmp/odoo10_addon_account_payment_order-10.0.1.7.0.99.dev4-py2-none-any.whl.zip --markdown 20230416/o/odoo10-addon-account-payment-order/10.0.1.7.0.99.dev3-10.0.1.7.0.99.dev4/diff.md --exclude *.pyd
+[2023-04-16 05:16:40] INFO root fetch - main [MainThread]: End processing [napari-spreadsheet]: success
+[2023-04-16 05:16:40] INFO root fetch - main [MainThread]: End processing [mcc-api]: success
+[2023-04-16 05:16:41] INFO root fetch - main [MainThread]: End processing [odoo10-addon-account-payment-order]: success
+[2023-04-16 05:16:41] INFO root fetch - main [MainThread]: Store serial: [17723423]
