@@ -2380,3 +2380,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 04:50:44] INFO root fetch - main [MainThread]: End processing [wtforms-bootstrap5]: success
 [2023-04-16 04:50:45] INFO root fetch - main [MainThread]: End processing [osw]: success
 [2023-04-16 04:50:45] INFO root fetch - main [MainThread]: Store serial: [17723340]
+[2023-04-16 04:55:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723340]
+[2023-04-16 04:55:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-16 04:55:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chatsnack
+[2023-04-16 04:55:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hond
+[2023-04-16 04:55:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hond
+[2023-04-16 04:55:53] WARNING root fetch - processPackages [chatsnack]: Skipping, unable to determine old version
+[2023-04-16 04:55:53] INFO root fetch - main [MainThread]: End processing [chatsnack] error
+[2023-04-16 04:55:53] INFO root fetch - processPackages [hond]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-16 04:55:53] INFO root fetch - processPackages [hond]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-16 04:55:53] INFO root fetch - processPackages [hond]: Downloading https://files.pythonhosted.org/packages/6f/36/4b7a410afa67394b7e893c38b1b7ae2cdd1373d96e745f00dbf289e044b6/hond-1.0.3.tar.gz
+[2023-04-16 04:55:53] INFO root fetch - processPackages [hond]: Downloading https://files.pythonhosted.org/packages/6f/36/4b7a410afa67394b7e893c38b1b7ae2cdd1373d96e745f00dbf289e044b6/hond-1.0.3.tar.gz
+[2023-04-16 04:55:53] INFO root fetch - processPackages [hond]: Downloading https://files.pythonhosted.org/packages/e1/56/25ddaa26d108510a575654248609c87513f48e5f08c891f7054608230607/hond-1.0.4.tar.gz
+[2023-04-16 04:55:53] INFO root fetch - processPackages [hond]: Downloading https://files.pythonhosted.org/packages/e1/56/25ddaa26d108510a575654248609c87513f48e5f08c891f7054608230607/hond-1.0.4.tar.gz
+[2023-04-16 04:55:54] INFO root fetch - processPackages [hond]: executing diffoscope
+[2023-04-16 04:55:54] INFO root fetch - processPackages [hond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hond-1.0.3.tar.gz tmp/hond-1.0.4.tar.gz --markdown 20230416/h/hond/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-16 04:55:54] INFO root fetch - processPackages [hond]: executing diffoscope
+[2023-04-16 04:55:54] INFO root fetch - processPackages [hond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hond-1.0.3.tar.gz tmp/hond-1.0.4.tar.gz --markdown 20230416/h/hond/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-16 04:55:55] INFO root fetch - main [MainThread]: End processing [hond]: success
+[2023-04-16 04:55:55] INFO root fetch - main [MainThread]: End processing [hond]: success
+[2023-04-16 04:55:55] INFO root fetch - main [MainThread]: Store serial: [17723355]
