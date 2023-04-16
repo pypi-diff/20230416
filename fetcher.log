@@ -12697,3 +12697,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 20:41:43] INFO root fetch - main [MainThread]: End processing [easyexplore]: success
 [2023-04-16 20:41:47] INFO root fetch - main [MainThread]: End processing [pyspread]: success
 [2023-04-16 20:41:47] INFO root fetch - main [MainThread]: Store serial: [17729418]
+[2023-04-16 20:46:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729418]
+[2023-04-16 20:46:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 20:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: svg-flatten-wasi
+[2023-04-16 20:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gerbolyze
+[2023-04-16 20:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: peakrdl-python
+[2023-04-16 20:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gator-core
+[2023-04-16 20:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arrendatools-plantillas
+[2023-04-16 20:46:55] INFO root fetch - processPackages [svg-flatten-wasi]: New version: [3.1.5] Old Version: [3.0.9]
+[2023-04-16 20:46:55] INFO root fetch - processPackages [peakrdl-python]: New version: [0.6.0rc1] Old Version: [0.5.0]
+[2023-04-16 20:46:55] INFO root fetch - processPackages [gator-core]: New version: [2.0.0rc9] Old Version: [2.0.0rc8]
+[2023-04-16 20:46:55] INFO root fetch - processPackages [gerbolyze]: New version: [3.1.5] Old Version: [3.1.4]
+[2023-04-16 20:46:55] INFO root fetch - processPackages [arrendatools-plantillas]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-04-16 20:46:55] INFO root fetch - processPackages [svg-flatten-wasi]: Downloading https://files.pythonhosted.org/packages/29/d9/ac4e8c6228f3af557e85eeba474f67596d6a9d328f9942b2936c56a768dc/svg_flatten_wasi-3.0.9-py3-none-any.whl
+[2023-04-16 20:46:55] INFO root fetch - processPackages [peakrdl-python]: Downloading https://files.pythonhosted.org/packages/70/7c/6e297d7ac8b34027a35cf779a8636f00e9941064422c82b42828b5f9d123/peakrdl-python-0.5.0.tar.gz
+[2023-04-16 20:46:55] INFO root fetch - processPackages [gator-core]: Downloading https://files.pythonhosted.org/packages/04/df/c65c2ca592d956e657fb4e46cb77eb19c4aea428f20ad205e14694ec2a1c/gator_core-2.0.0rc8.tar.gz
+[2023-04-16 20:46:56] INFO root fetch - processPackages [arrendatools-plantillas]: Downloading https://files.pythonhosted.org/packages/f7/f3/99e72374aaa91ec4c755b4fc8ac6865c052de3a94ebff4daf6ef76f945b4/arrendatools_plantillas-1.1.0.tar.gz
+[2023-04-16 20:46:56] INFO root fetch - processPackages [gerbolyze]: Downloading https://files.pythonhosted.org/packages/f3/54/b206dd008a458a11e6f83c81d9e9bbaa4bdbeb94c7990ac7d9e597eb9eab/gerbolyze-3.1.5.tar.gz
+[2023-04-16 20:46:56] INFO root fetch - processPackages [arrendatools-plantillas]: executing diffoscope
+[2023-04-16 20:46:56] INFO root fetch - processPackages [arrendatools-plantillas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrendatools_plantillas-1.0.3.tar.gz tmp/arrendatools_plantillas-1.1.0.tar.gz --markdown 20230416/a/arrendatools-plantillas/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-04-16 20:46:56] INFO root fetch - processPackages [gerbolyze]: executing diffoscope
+[2023-04-16 20:46:56] INFO root fetch - processPackages [gerbolyze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gerbolyze-3.1.4.tar.gz tmp/gerbolyze-3.1.5.tar.gz --markdown 20230416/g/gerbolyze/3.1.4-3.1.5/diff.md --exclude *.pyd
+[2023-04-16 20:46:56] INFO root fetch - processPackages [peakrdl-python]: Downloading https://files.pythonhosted.org/packages/68/fe/cd419bf753e8ffe2c5bb1908180c3565047139a6b98cf7ad2d882df15e70/peakrdl-python-0.6.0rc1.tar.gz
+[2023-04-16 20:46:56] INFO root fetch - processPackages [svg-flatten-wasi]: Downloading https://files.pythonhosted.org/packages/a1/aa/6a45f921bcb1e91d19d79d3f482ae29cec8b11059e72c84395604cf98abc/svg_flatten_wasi-3.1.5-py3-none-any.whl
+[2023-04-16 20:46:56] INFO root fetch - processPackages [gator-core]: Downloading https://files.pythonhosted.org/packages/50/f2/69f6c939dd81e9d52993890f56a41033e9cca4f2719662202e37baac8431/gator_core-2.0.0rc9.tar.gz
+[2023-04-16 20:46:56] INFO root fetch - processPackages [peakrdl-python]: executing diffoscope
+[2023-04-16 20:46:56] INFO root fetch - processPackages [peakrdl-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peakrdl-python-0.5.0.tar.gz tmp/peakrdl-python-0.6.0rc1.tar.gz --markdown 20230416/p/peakrdl-python/0.5.0-0.6.0rc1/diff.md --exclude *.pyd
+[2023-04-16 20:46:56] INFO root fetch - processPackages [svg-flatten-wasi]: executing diffoscope
+[2023-04-16 20:46:56] INFO root fetch - processPackages [svg-flatten-wasi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/svg_flatten_wasi-3.0.9-py3-none-any.whl.zip tmp/svg_flatten_wasi-3.1.5-py3-none-any.whl.zip --markdown 20230416/s/svg-flatten-wasi/3.0.9-3.1.5/diff.md --exclude *.pyd
+[2023-04-16 20:46:56] INFO root fetch - processPackages [gator-core]: executing diffoscope
+[2023-04-16 20:46:56] INFO root fetch - processPackages [gator-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gator_core-2.0.0rc8.tar.gz tmp/gator_core-2.0.0rc9.tar.gz --markdown 20230416/g/gator-core/2.0.0rc8-2.0.0rc9/diff.md --exclude *.pyd
+[2023-04-16 20:46:57] INFO root fetch - main [MainThread]: End processing [arrendatools-plantillas]: success
+[2023-04-16 20:46:57] INFO root fetch - main [MainThread]: End processing [gerbolyze]: success
+[2023-04-16 20:46:57] INFO root fetch - main [MainThread]: End processing [peakrdl-python]: success
+[2023-04-16 20:46:57] INFO root fetch - main [MainThread]: End processing [gator-core]: success
+[2023-04-16 20:47:11] INFO root fetch - main [MainThread]: End processing [svg-flatten-wasi]: success
+[2023-04-16 20:47:11] INFO root fetch - main [MainThread]: Store serial: [17729431]
