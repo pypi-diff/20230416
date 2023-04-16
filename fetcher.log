@@ -12356,3 +12356,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 20:05:03] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230416/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
 [2023-04-16 20:05:05] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
 [2023-04-16 20:05:05] INFO root fetch - main [MainThread]: Store serial: [17729236]
+[2023-04-16 20:10:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729236]
+[2023-04-16 20:10:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 20:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyterlab-code-formatter
+[2023-04-16 20:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: core-universal
+[2023-04-16 20:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyawskit
+[2023-04-16 20:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: matugen
+[2023-04-16 20:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyds-cli
+[2023-04-16 20:10:14] INFO root fetch - processPackages [pyawskit]: New version: [0.1.65] Old Version: [0.1.64]
+[2023-04-16 20:10:14] INFO root fetch - processPackages [jupyterlab-code-formatter]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-04-16 20:10:14] INFO root fetch - processPackages [core-universal]: New version: [2.4.9] Old Version: [2.4.8]
+[2023-04-16 20:10:14] WARNING root fetch - processPackages [matugen]: Skipping, unable to determine old version
+[2023-04-16 20:10:14] INFO root fetch - main [MainThread]: End processing [matugen] error
+[2023-04-16 20:10:14] INFO root fetch - processPackages [pyds-cli]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-16 20:10:14] INFO root fetch - processPackages [pyawskit]: Downloading https://files.pythonhosted.org/packages/68/22/24db22c54aef00867ee18ab7b3574342db4a4aec613bcc393cc8cc4ea6c6/pyawskit-0.1.65.tar.gz
+[2023-04-16 20:10:14] INFO root fetch - processPackages [jupyterlab-code-formatter]: Downloading https://files.pythonhosted.org/packages/dd/82/1029c7045936b105e1cbd1f16bbdd047970f15cc72adc33ac7b45827d5d9/jupyterlab_code_formatter-1.6.0.tar.gz
+[2023-04-16 20:10:14] INFO root fetch - processPackages [core-universal]: Downloading https://files.pythonhosted.org/packages/21/d3/671229efeeae3c217ddde89070c91662c2dcde269cf929f23e3e02d8c451/core_universal-2.4.8-py2.py3-none-win_amd64.whl
+[2023-04-16 20:10:14] WARNING root fetch - processPackages [core-universal]: Skipping package: exceeds size limit 23920061>=10485760
+[2023-04-16 20:10:14] INFO root fetch - main [MainThread]: End processing [core-universal] error
+[2023-04-16 20:10:14] INFO root fetch - processPackages [pyds-cli]: Downloading https://files.pythonhosted.org/packages/a9/b8/c1258299ac24c8c18a881eb0dd57a549d8891314efd2b098c2a54fe42e3c/pyds-cli-0.1.4.tar.gz
+[2023-04-16 20:10:15] INFO root fetch - processPackages [pyawskit]: executing diffoscope
+[2023-04-16 20:10:15] INFO root fetch - processPackages [pyawskit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyawskit-0.1.64.tar.gz tmp/pyawskit-0.1.65.tar.gz --markdown 20230416/p/pyawskit/0.1.64-0.1.65/diff.md --exclude *.pyd
+[2023-04-16 20:10:15] INFO root fetch - processPackages [jupyterlab-code-formatter]: Downloading https://files.pythonhosted.org/packages/81/c7/f8548e26bdf659309630e27eaff9fe87eb99319a4c809c81c90e5cad72f9/jupyterlab_code_formatter-1.6.1.tar.gz
+[2023-04-16 20:10:15] INFO root fetch - processPackages [pyds-cli]: Downloading https://files.pythonhosted.org/packages/70/18/eb7ff68d6742ab2f941909e6120fb982434813a3ce5aa5a82e7740b4b0d0/pyds-cli-0.1.5.tar.gz
+[2023-04-16 20:10:15] INFO root fetch - processPackages [jupyterlab-code-formatter]: executing diffoscope
+[2023-04-16 20:10:15] INFO root fetch - processPackages [jupyterlab-code-formatter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_code_formatter-1.6.0.tar.gz tmp/jupyterlab_code_formatter-1.6.1.tar.gz --markdown 20230416/j/jupyterlab-code-formatter/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-04-16 20:10:15] INFO root fetch - processPackages [pyds-cli]: executing diffoscope
+[2023-04-16 20:10:15] INFO root fetch - processPackages [pyds-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyds-cli-0.1.4.tar.gz tmp/pyds-cli-0.1.5.tar.gz --markdown 20230416/p/pyds-cli/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-16 20:10:16] INFO root fetch - main [MainThread]: End processing [pyawskit]: success
+[2023-04-16 20:10:16] INFO root fetch - main [MainThread]: End processing [pyds-cli]: success
+[2023-04-16 20:10:17] INFO root fetch - main [MainThread]: End processing [jupyterlab-code-formatter]: success
+[2023-04-16 20:10:17] INFO root fetch - main [MainThread]: Store serial: [17729257]
