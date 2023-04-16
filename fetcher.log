@@ -2778,3 +2778,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 05:50:14] INFO root fetch - main [MainThread]: End processing [torchegranate]: success
 [2023-04-16 05:50:14] INFO root fetch - main [MainThread]: End processing [scikit-build-core]: success
 [2023-04-16 05:50:14] INFO root fetch - main [MainThread]: Store serial: [17723568]
+[2023-04-16 05:55:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723568]
+[2023-04-16 05:55:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 05:55:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gameyamlspiderandgenerator
+[2023-04-16 05:55:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-upload-to
+[2023-04-16 05:55:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: highcharts-maps
+[2023-04-16 05:55:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: imodelsx
+[2023-04-16 05:55:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pr-review-bot
+[2023-04-16 05:55:25] INFO root fetch - processPackages [highcharts-maps]: New version: [1.0.1] Old Version: [1.0.0rc6]
+[2023-04-16 05:55:25] INFO root fetch - processPackages [gameyamlspiderandgenerator]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-16 05:55:25] WARNING root fetch - processPackages [pr-review-bot]: Skipping, unable to determine old version
+[2023-04-16 05:55:25] INFO root fetch - main [MainThread]: End processing [pr-review-bot] error
+[2023-04-16 05:55:25] INFO root fetch - processPackages [imodelsx]: New version: [0.9] Old Version: [0.8]
+[2023-04-16 05:55:25] INFO root fetch - processPackages [django-upload-to]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-16 05:55:25] INFO root fetch - processPackages [highcharts-maps]: Downloading https://files.pythonhosted.org/packages/b4/2f/8c7c44ba172834cef7f4cb652cd40341ecccd423556b6a76970f7fcd3f7d/highcharts_maps-1.0.0rc6.tar.gz
+[2023-04-16 05:55:25] INFO root fetch - processPackages [imodelsx]: Downloading https://files.pythonhosted.org/packages/d5/f9/2d56764d32ee40aea23493b6fc2968b0791e761a96413e5a3d9bae38ba6f/imodelsx-0.8.tar.gz
+[2023-04-16 05:55:25] INFO root fetch - processPackages [django-upload-to]: Downloading https://files.pythonhosted.org/packages/ba/9b/d6d694b5ef7a40b3cf5fea4d2b9c576b21705e05194d625f6333abfb280e/django_upload_to-0.3.2.tar.gz
+[2023-04-16 05:55:25] INFO root fetch - processPackages [gameyamlspiderandgenerator]: Downloading https://files.pythonhosted.org/packages/a8/58/7db32542cd7fa74aca8d6e5b4aa799a1c040ef06b82fbe1da79c4b891bf3/gameyamlspiderandgenerator-1.1.0.tar.gz
+[2023-04-16 05:55:25] INFO root fetch - processPackages [django-upload-to]: executing diffoscope
+[2023-04-16 05:55:25] INFO root fetch - processPackages [django-upload-to]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_upload_to-0.3.1.tar.gz tmp/django_upload_to-0.3.2.tar.gz --markdown 20230416/d/django-upload-to/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-16 05:55:25] INFO root fetch - processPackages [gameyamlspiderandgenerator]: executing diffoscope
+[2023-04-16 05:55:25] INFO root fetch - processPackages [gameyamlspiderandgenerator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gameyamlspiderandgenerator-1.0.0.tar.gz tmp/gameyamlspiderandgenerator-1.1.0.tar.gz --markdown 20230416/g/gameyamlspiderandgenerator/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-16 05:55:26] INFO root fetch - processPackages [imodelsx]: Downloading https://files.pythonhosted.org/packages/9a/a6/ebfa9059ea8d305d2b71083145584142efa7669def05d5af8cc2db17c8ec/imodelsx-0.9.tar.gz
+[2023-04-16 05:55:26] INFO root fetch - processPackages [imodelsx]: executing diffoscope
+[2023-04-16 05:55:26] INFO root fetch - processPackages [imodelsx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imodelsx-0.8.tar.gz tmp/imodelsx-0.9.tar.gz --markdown 20230416/i/imodelsx/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-16 05:55:26] INFO root fetch - main [MainThread]: End processing [django-upload-to]: success
+[2023-04-16 05:55:26] INFO root fetch - main [MainThread]: End processing [gameyamlspiderandgenerator]: success
+[2023-04-16 05:55:27] INFO root fetch - main [MainThread]: End processing [imodelsx]: success
+[2023-04-16 05:55:28] INFO root fetch - processPackages [highcharts-maps]: Downloading https://files.pythonhosted.org/packages/31/96/72c013beafa481d561878019468d28a2c4d4ebb0ec18dedd8d93eef7b387/highcharts_maps-1.0.1.tar.gz
+[2023-04-16 05:55:29] INFO root fetch - processPackages [highcharts-maps]: executing diffoscope
+[2023-04-16 05:55:29] INFO root fetch - processPackages [highcharts-maps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/highcharts_maps-1.0.0rc6.tar.gz tmp/highcharts_maps-1.0.1.tar.gz --markdown 20230416/h/highcharts-maps/1.0.0rc6-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 05:55:51] INFO root fetch - main [MainThread]: End processing [highcharts-maps]: success
+[2023-04-16 05:55:51] INFO root fetch - main [MainThread]: Store serial: [17723583]
