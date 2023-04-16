@@ -9113,3 +9113,59 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 15:16:52] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
 [2023-04-16 15:16:52] INFO root fetch - main [MainThread]: End processing [kdfba]: success
 [2023-04-16 15:16:52] INFO root fetch - main [MainThread]: Store serial: [17727207]
+[2023-04-16 15:21:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727207]
+[2023-04-16 15:22:01] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 15:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psij-zmq
+[2023-04-16 15:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plesicdb
+[2023-04-16 15:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ultralytics
+[2023-04-16 15:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fschat
+[2023-04-16 15:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fbgemm-gpu-nightly
+[2023-04-16 15:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: uke
+[2023-04-16 15:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: psij-zmq
+[2023-04-16 15:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: AoE2ScenarioRms
+[2023-04-16 15:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: image-reward
+[2023-04-16 15:22:01] INFO root fetch - processPackages [fschat]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-16 15:22:01] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-16 15:22:01] INFO root fetch - processPackages [psij-zmq]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-16 15:22:01] INFO root fetch - processPackages [psij-zmq]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-16 15:22:01] INFO root fetch - processPackages [image-reward]: New version: [0.998] Old Version: [0.997]
+[2023-04-16 15:22:01] INFO root fetch - processPackages [plesicdb]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-16 15:22:01] INFO root fetch - processPackages [uke]: New version: [0.1.0.dev1] Old Version: [0.1.0.dev0]
+[2023-04-16 15:22:01] INFO root fetch - processPackages [ultralytics]: New version: [8.0.9] Old Version: [8.0.80]
+[2023-04-16 15:22:01] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/91/d7/37b19c2c14c34663f10ad284c315d7cdad71cbf7995d5e3bd737507ac655/fbgemm_gpu_nightly-2023.4.8-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-16 15:22:01] WARNING root fetch - processPackages [AoE2ScenarioRms]: Skipping, unable to determine old version
+[2023-04-16 15:22:01] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-16 15:22:01] INFO root fetch - main [MainThread]: End processing [AoE2ScenarioRms] error
+[2023-04-16 15:22:01] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-0.997.tar.gz tmp/image-reward-0.998.tar.gz --markdown 20230416/i/image-reward/0.997-0.998/diff.md --exclude *.pyd
+[2023-04-16 15:22:01] INFO root fetch - processPackages [psij-zmq]: Downloading https://files.pythonhosted.org/packages/84/0a/18ecaa24b6b6ef32d88b05445372a52adaf74b8b93bfbaaaedcc86f7424d/psij-zmq-0.3.0.tar.gz
+[2023-04-16 15:22:01] INFO root fetch - processPackages [psij-zmq]: Downloading https://files.pythonhosted.org/packages/84/0a/18ecaa24b6b6ef32d88b05445372a52adaf74b8b93bfbaaaedcc86f7424d/psij-zmq-0.3.0.tar.gz
+[2023-04-16 15:22:01] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/7b/49/a09b6fad3661dc70973d2f394071099eeeb08b708b0f1ed58eafa2cdae4f/ultralytics-8.0.80.tar.gz
+[2023-04-16 15:22:01] INFO root fetch - processPackages [plesicdb]: Downloading https://files.pythonhosted.org/packages/88/c6/1665f78d0306fa8d565eecfdcdfeeb0ff8f42c248d034fd4f6ed2037fa6c/plesicdb-2.0.1.tar.gz
+[2023-04-16 15:22:01] INFO root fetch - processPackages [fschat]: Downloading https://files.pythonhosted.org/packages/90/f4/a8f31cda679985c8de47ed30e943e7b4e497e82f53171104f943ef277471/fschat-0.2.1.tar.gz
+[2023-04-16 15:22:01] INFO root fetch - processPackages [uke]: Downloading https://files.pythonhosted.org/packages/7e/53/346b571ce5ba299df22e0022397e38f3bdc75e965da4fc131dca247cb1b2/uke-0.1.0.dev0.tar.gz
+[2023-04-16 15:22:01] INFO root fetch - processPackages [plesicdb]: executing diffoscope
+[2023-04-16 15:22:01] INFO root fetch - processPackages [plesicdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plesicdb-2.0.0.tar.gz tmp/plesicdb-2.0.1.tar.gz --markdown 20230416/p/plesicdb/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-16 15:22:01] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2023-04-16 15:22:01] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.0.80.tar.gz tmp/ultralytics-8.0.9.tar.gz --markdown 20230416/u/ultralytics/8.0.80-8.0.9/diff.md --exclude *.pyd
+[2023-04-16 15:22:01] INFO root fetch - processPackages [psij-zmq]: Downloading https://files.pythonhosted.org/packages/b7/0f/ff25f63151163f46db822b8ee983f8af2c9013a00c9d8011e3f184a46043/psij-zmq-0.4.0.tar.gz
+[2023-04-16 15:22:01] INFO root fetch - processPackages [psij-zmq]: Downloading https://files.pythonhosted.org/packages/b7/0f/ff25f63151163f46db822b8ee983f8af2c9013a00c9d8011e3f184a46043/psij-zmq-0.4.0.tar.gz
+[2023-04-16 15:22:02] INFO root fetch - processPackages [fschat]: Downloading https://files.pythonhosted.org/packages/d5/0f/2a25a4fb1920ae1b5fe477104181600b60fdcf72a2eb0d7af665f86479d5/fschat-0.2.2.tar.gz
+[2023-04-16 15:22:02] INFO root fetch - processPackages [uke]: Downloading https://files.pythonhosted.org/packages/60/23/fb4f445989fb9c391e6abfa3af1c42567cd4257840e9243441d0deefa33c/uke-0.1.0.dev1.tar.gz
+[2023-04-16 15:22:02] INFO root fetch - processPackages [psij-zmq]: executing diffoscope
+[2023-04-16 15:22:02] INFO root fetch - processPackages [psij-zmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psij-zmq-0.3.0.tar.gz tmp/psij-zmq-0.4.0.tar.gz --markdown 20230416/p/psij-zmq/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-16 15:22:02] INFO root fetch - processPackages [psij-zmq]: executing diffoscope
+[2023-04-16 15:22:02] INFO root fetch - processPackages [psij-zmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psij-zmq-0.3.0.tar.gz tmp/psij-zmq-0.4.0.tar.gz --markdown 20230416/p/psij-zmq/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-16 15:22:02] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 205605176>=10485760
+[2023-04-16 15:22:02] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-04-16 15:22:02] INFO root fetch - processPackages [fschat]: executing diffoscope
+[2023-04-16 15:22:02] INFO root fetch - processPackages [fschat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fschat-0.2.1.tar.gz tmp/fschat-0.2.2.tar.gz --markdown 20230416/f/fschat/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-16 15:22:02] INFO root fetch - processPackages [uke]: executing diffoscope
+[2023-04-16 15:22:02] INFO root fetch - processPackages [uke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uke-0.1.0.dev0.tar.gz tmp/uke-0.1.0.dev1.tar.gz --markdown 20230416/u/uke/0.1.0.dev0-0.1.0.dev1/diff.md --exclude *.pyd
+[2023-04-16 15:22:02] INFO root fetch - main [MainThread]: End processing [plesicdb]: success
+[2023-04-16 15:22:03] INFO root fetch - main [MainThread]: End processing [psij-zmq]: success
+[2023-04-16 15:22:03] INFO root fetch - main [MainThread]: End processing [uke]: success
+[2023-04-16 15:22:03] INFO root fetch - main [MainThread]: End processing [fschat]: success
+[2023-04-16 15:22:03] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-16 15:22:06] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2023-04-16 15:22:11] INFO root fetch - main [MainThread]: End processing [psij-zmq]: success
+[2023-04-16 15:22:11] INFO root fetch - main [MainThread]: Store serial: [17727233]
