@@ -11369,3 +11369,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 18:26:54] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-naturel-gpt]: success
 [2023-04-16 18:26:55] INFO root fetch - main [MainThread]: End processing [render-engine]: success
 [2023-04-16 18:26:55] INFO root fetch - main [MainThread]: Store serial: [17728544]
+[2023-04-16 18:32:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728544]
+[2023-04-16 18:32:05] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 18:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfobal
+[2023-04-16 18:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paella
+[2023-04-16 18:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wagtail-cjkcms
+[2023-04-16 18:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: transformers-supporter
+[2023-04-16 18:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: eds-utils
+[2023-04-16 18:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: JLC2KiCadLib
+[2023-04-16 18:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Lektor
+[2023-04-16 18:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hosh
+[2023-04-16 18:32:05] WARNING root fetch - processPackages [pyfobal]: Skipping, unable to determine old version
+[2023-04-16 18:32:05] INFO root fetch - main [MainThread]: End processing [pyfobal] error
+[2023-04-16 18:32:05] INFO root fetch - processPackages [Lektor]: New version: [3.4.0b5] Old Version: [3.4.0b4]
+[2023-04-16 18:32:05] INFO root fetch - processPackages [JLC2KiCadLib]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-16 18:32:05] INFO root fetch - processPackages [eds-utils]: New version: [0.3.0] Old Version: [0.2.5]
+[2023-04-16 18:32:05] INFO root fetch - processPackages [paella]: New version: [0.0.1.dev1] Old Version: [0.0.1.dev0]
+[2023-04-16 18:32:05] INFO root fetch - processPackages [wagtail-cjkcms]: New version: [23.4.1] Old Version: [23.3.1]
+[2023-04-16 18:32:05] INFO root fetch - processPackages [transformers-supporter]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-16 18:32:05] INFO root fetch - processPackages [hosh]: New version: [2.230416.1] Old Version: [2.230205.2]
+[2023-04-16 18:32:05] INFO root fetch - processPackages [eds-utils]: Downloading https://files.pythonhosted.org/packages/82/a4/fd6cbc0d1b707db5995d48621a9b69a3c3871d1f665fda599e14c1b3f9d7/eds-utils-0.2.5.tar.gz
+[2023-04-16 18:32:05] INFO root fetch - processPackages [paella]: Downloading https://files.pythonhosted.org/packages/20/f3/340132c7471842265fa91d3ae8f69c169ca50b97d6a8e2a22201690a41a6/paella-0.0.1.dev0-py3-none-any.whl
+[2023-04-16 18:32:05] INFO root fetch - processPackages [Lektor]: Downloading https://files.pythonhosted.org/packages/01/b2/27e1d17e8b0a930a3ca8435a8273b94cc21ba19a479f0edc51edc435fc4f/Lektor-3.4.0b4.tar.gz
+[2023-04-16 18:32:05] INFO root fetch - processPackages [JLC2KiCadLib]: Downloading https://files.pythonhosted.org/packages/cb/98/ccede9721435b39721a7933a153f2461f594407d748bea3fcf928d10bc0a/JLC2KiCadLib-1.0.8.tar.gz
+[2023-04-16 18:32:05] INFO root fetch - processPackages [wagtail-cjkcms]: Downloading https://files.pythonhosted.org/packages/bd/cd/dfa21ede6aecee8462e580398866656d9eb8576f95a663585da6efad27b8/wagtail-cjkcms-23.3.1.tar.gz
+[2023-04-16 18:32:05] INFO root fetch - processPackages [transformers-supporter]: Downloading https://files.pythonhosted.org/packages/bd/c4/1d7bcef7a1815b71e3a0987239473c92b406e4ef871a2757cb504f3094e3/transformers-supporter-0.0.7.tar.gz
+[2023-04-16 18:32:05] INFO root fetch - processPackages [hosh]: Downloading https://files.pythonhosted.org/packages/0a/9d/d6546eb2578703e6335219e5d24f1ae9d10897cfccec62cd59977c0a7bcc/hosh-2.230205.2.tar.gz
+[2023-04-16 18:32:05] INFO root fetch - processPackages [eds-utils]: Downloading https://files.pythonhosted.org/packages/a6/49/f5557eeb15ecb0f250e6a72ecc5ebff1a612b818d7494e1510a85bd7716f/eds-utils-0.3.0.tar.gz
+[2023-04-16 18:32:05] INFO root fetch - processPackages [paella]: Downloading https://files.pythonhosted.org/packages/a8/19/85e827438e53bebdd71fec6465ebff335ccf1c9cc06c2c2e9a20de3dc46d/paella-0.0.1.dev1-py3-none-any.whl
+[2023-04-16 18:32:05] INFO root fetch - processPackages [eds-utils]: executing diffoscope
+[2023-04-16 18:32:05] INFO root fetch - processPackages [eds-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eds-utils-0.2.5.tar.gz tmp/eds-utils-0.3.0.tar.gz --markdown 20230416/e/eds-utils/0.2.5-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 18:32:05] INFO root fetch - processPackages [hosh]: Downloading https://files.pythonhosted.org/packages/f3/91/c39d9342fb52c76604bc24895627622010289fa851892b144c473eb86718/hosh-2.230416.1.tar.gz
+[2023-04-16 18:32:05] INFO root fetch - processPackages [wagtail-cjkcms]: Downloading https://files.pythonhosted.org/packages/1f/3e/30a242fd4ab97f6553c92965a6812d9b78fe7304eda45639e6c029678e63/wagtail-cjkcms-23.4.1.tar.gz
+[2023-04-16 18:32:05] INFO root fetch - processPackages [transformers-supporter]: Downloading https://files.pythonhosted.org/packages/2d/b3/0a5ba4230b93d8b0af855a0cb099f7cd12620f36b5763aae64e4280f49ac/transformers-supporter-0.0.8.tar.gz
+[2023-04-16 18:32:05] INFO root fetch - processPackages [JLC2KiCadLib]: Downloading https://files.pythonhosted.org/packages/02/6e/ec1524fb03dd570156201c0e3f6c7014ee1762d01f88c926f5c22b756f5e/JLC2KiCadLib-1.0.9.tar.gz
+[2023-04-16 18:32:05] INFO root fetch - processPackages [wagtail-cjkcms]: executing diffoscope
+[2023-04-16 18:32:05] INFO root fetch - processPackages [paella]: executing diffoscope
+[2023-04-16 18:32:05] INFO root fetch - processPackages [paella]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paella-0.0.1.dev0-py3-none-any.whl.zip tmp/paella-0.0.1.dev1-py3-none-any.whl.zip --markdown 20230416/p/paella/0.0.1.dev0-0.0.1.dev1/diff.md --exclude *.pyd
+[2023-04-16 18:32:05] INFO root fetch - processPackages [wagtail-cjkcms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-cjkcms-23.3.1.tar.gz tmp/wagtail-cjkcms-23.4.1.tar.gz --markdown 20230416/w/wagtail-cjkcms/23.3.1-23.4.1/diff.md --exclude *.pyd
+[2023-04-16 18:32:05] INFO root fetch - processPackages [transformers-supporter]: executing diffoscope
+[2023-04-16 18:32:05] INFO root fetch - processPackages [transformers-supporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformers-supporter-0.0.7.tar.gz tmp/transformers-supporter-0.0.8.tar.gz --markdown 20230416/t/transformers-supporter/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-16 18:32:06] INFO root fetch - processPackages [hosh]: executing diffoscope
+[2023-04-16 18:32:06] INFO root fetch - processPackages [hosh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hosh-2.230205.2.tar.gz tmp/hosh-2.230416.1.tar.gz --markdown 20230416/h/hosh/2.230205.2-2.230416.1/diff.md --exclude *.pyd
+[2023-04-16 18:32:06] INFO root fetch - processPackages [JLC2KiCadLib]: executing diffoscope
+[2023-04-16 18:32:06] INFO root fetch - processPackages [JLC2KiCadLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JLC2KiCadLib-1.0.8.tar.gz tmp/JLC2KiCadLib-1.0.9.tar.gz --markdown 20230416/J/JLC2KiCadLib/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-16 18:32:06] INFO root fetch - processPackages [Lektor]: Downloading https://files.pythonhosted.org/packages/b0/d3/aa9a45bb64556b1df74d7a5cd3d2162e6000b1560ed1b62e248dd67abf37/lektor-3.4.0b5.tar.gz
+[2023-04-16 18:32:06] INFO root fetch - processPackages [Lektor]: executing diffoscope
+[2023-04-16 18:32:06] INFO root fetch - processPackages [Lektor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Lektor-3.4.0b4.tar.gz tmp/lektor-3.4.0b5.tar.gz --markdown 20230416/L/Lektor/3.4.0b4-3.4.0b5/diff.md --exclude *.pyd
+[2023-04-16 18:32:07] INFO root fetch - main [MainThread]: End processing [paella]: success
+[2023-04-16 18:32:07] INFO root fetch - main [MainThread]: End processing [eds-utils]: success
+[2023-04-16 18:32:07] INFO root fetch - main [MainThread]: End processing [JLC2KiCadLib]: success
+[2023-04-16 18:32:07] INFO root fetch - main [MainThread]: End processing [transformers-supporter]: success
+[2023-04-16 18:32:07] INFO root fetch - main [MainThread]: End processing [hosh]: success
+[2023-04-16 18:32:08] INFO root fetch - main [MainThread]: End processing [wagtail-cjkcms]: success
+[2023-04-16 18:32:14] INFO root fetch - main [MainThread]: End processing [Lektor]: success
+[2023-04-16 18:32:14] INFO root fetch - main [MainThread]: Store serial: [17728571]
