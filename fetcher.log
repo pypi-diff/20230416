@@ -1516,3 +1516,146 @@
 [2023-04-16 02:44:31] INFO root fetch - main [MainThread]: End processing [projen]: success
 [2023-04-16 02:44:40] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-04-16 02:44:40] INFO root fetch - main [MainThread]: Store serial: [17722926]
+[2023-04-16 02:49:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722926]
+[2023-04-16 02:49:48] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 02:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-web-io
+[2023-04-16 02:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pluralkit
+[2023-04-16 02:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycde
+[2023-04-16 02:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ai-talks
+[2023-04-16 02:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: glassppy
+[2023-04-16 02:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-upload-to
+[2023-04-16 02:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-databrew-cicd
+[2023-04-16 02:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vau
+[2023-04-16 02:49:48] INFO root fetch - processPackages [python-web-io]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-16 02:49:48] INFO root fetch - processPackages [pluralkit]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-16 02:49:48] INFO root fetch - processPackages [glassppy]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-16 02:49:48] INFO root fetch - processPackages [django-upload-to]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-16 02:49:48] WARNING root fetch - processPackages [vau]: Skipping, unable to determine old version
+[2023-04-16 02:49:48] INFO root fetch - processPackages [ai-talks]: New version: [0.8.996] Old Version: [0.8.994]
+[2023-04-16 02:49:48] INFO root fetch - main [MainThread]: End processing [vau] error
+[2023-04-16 02:49:48] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-16 02:49:48] INFO root fetch - processPackages [pycde]: New version: [0.2.1.dev9] Old Version: [0.2.1.dev80]
+[2023-04-16 02:49:49] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/9c/18/acad9d22fe20a13d93a1aee49739981e3ab739a2edcb478344aa0fc5b783/cdk_databrew_cicd-2.0.98.tar.gz
+[2023-04-16 02:49:49] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/db/00/ec7338288cdf728b5901663be337c3b66e7da2a1d7780bfccc6b6eefc511/pycde-0.2.1.dev80-cp39-cp39-win_amd64.whl
+[2023-04-16 02:49:49] INFO root fetch - processPackages [pluralkit]: Downloading https://files.pythonhosted.org/packages/9a/88/99097f626fd7a79a6ec4a97df9f22afeeecdfebdfffe0f2a72a69fd56f0a/pluralkit-1.1.1.tar.gz
+[2023-04-16 02:49:49] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/be/0d/4f1d6c429ed5d6e52204cc2169ef0e1e09fe0a46b29b8a26efc85244ae5a/ai-talks-0.8.994.tar.gz
+[2023-04-16 02:49:49] INFO root fetch - processPackages [python-web-io]: Downloading https://files.pythonhosted.org/packages/57/f8/7068d05d0b8f6c25efed8b670f04cf5a5179c17f3764e61a6b1da7a07f85/python_web_io-0.1.6.tar.gz
+[2023-04-16 02:49:49] INFO root fetch - processPackages [glassppy]: Downloading https://files.pythonhosted.org/packages/70/07/c10e7e9056f6513cf13f64158adad06e63011cf96aa0390a9575e02bef36/glassppy-1.0.5-cp310-cp310-manylinux_2_34_x86_64.whl
+[2023-04-16 02:49:49] INFO root fetch - processPackages [django-upload-to]: Downloading https://files.pythonhosted.org/packages/9c/2e/f2af3b1500d57d48c6c1b4f127b6e5d39a1993d4f85cd2986abfeca08312/django_upload_to-0.1.1.tar.gz
+[2023-04-16 02:49:49] INFO root fetch - processPackages [python-web-io]: executing diffoscope
+[2023-04-16 02:49:49] INFO root fetch - processPackages [python-web-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_web_io-0.1.5.tar.gz tmp/python_web_io-0.1.6.tar.gz --markdown 20230416/p/python-web-io/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-16 02:49:49] INFO root fetch - processPackages [glassppy]: executing diffoscope
+[2023-04-16 02:49:49] INFO root fetch - processPackages [glassppy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glassppy-1.0.4-cp310-cp310-manylinux_2_34_x86_64.whl.zip tmp/glassppy-1.0.5-cp310-cp310-manylinux_2_34_x86_64.whl.zip --markdown 20230416/g/glassppy/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-16 02:49:49] INFO root fetch - processPackages [django-upload-to]: Downloading https://files.pythonhosted.org/packages/1a/3d/a2f761a95ac386874bf6fdc147d4440989f6acec52db8fd8deef222c39e5/django_upload_to-0.2.0.tar.gz
+[2023-04-16 02:49:49] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/66/41/4c5089b171b28b627753bb3de1b4b696fdaeb4f78ef49dcb72a79fcb6e9d/cdk_databrew_cicd-2.0.99.tar.gz
+[2023-04-16 02:49:49] INFO root fetch - processPackages [pluralkit]: Downloading https://files.pythonhosted.org/packages/9a/8b/10d380b65390e62ae4d4c5901c2eccb2d494b970c1a9edecd73368282a64/pluralkit-1.1.2.tar.gz
+[2023-04-16 02:49:49] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/f6/9e/1d9b6d18bf29e0a5521dc97005f138e913efbb1253c4571bc24750914241/ai-talks-0.8.996.tar.gz
+[2023-04-16 02:49:49] INFO root fetch - processPackages [django-upload-to]: executing diffoscope
+[2023-04-16 02:49:49] INFO root fetch - processPackages [django-upload-to]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_upload_to-0.1.1.tar.gz tmp/django_upload_to-0.2.0.tar.gz --markdown 20230416/d/django-upload-to/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 02:49:49] INFO root fetch - processPackages [ai-talks]: executing diffoscope
+[2023-04-16 02:49:49] INFO root fetch - processPackages [ai-talks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai-talks-0.8.994.tar.gz tmp/ai-talks-0.8.996.tar.gz --markdown 20230416/a/ai-talks/0.8.994-0.8.996/diff.md --exclude *.pyd
+[2023-04-16 02:49:49] INFO root fetch - processPackages [pluralkit]: executing diffoscope
+[2023-04-16 02:49:49] INFO root fetch - processPackages [pluralkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pluralkit-1.1.1.tar.gz tmp/pluralkit-1.1.2.tar.gz --markdown 20230416/p/pluralkit/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-16 02:49:49] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-04-16 02:49:49] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230416/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-16 02:49:50] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/02/67/a0802e854af7f826dd695e46eb4ae1d0ab14c4a75671d50c34a7eb8074a8/pycde-0.2.1.dev9-cp39-cp39-win_amd64.whl
+[2023-04-16 02:49:50] INFO root fetch - main [MainThread]: End processing [python-web-io]: success
+[2023-04-16 02:49:50] INFO root fetch - main [MainThread]: End processing [ai-talks]: success
+[2023-04-16 02:49:50] INFO root fetch - main [MainThread]: End processing [django-upload-to]: success
+[2023-04-16 02:49:50] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2023-04-16 02:49:50] INFO root fetch - main [MainThread]: End processing [pluralkit]: success
+[2023-04-16 02:49:52] INFO root fetch - processPackages [pycde]: executing diffoscope
+[2023-04-16 02:49:52] INFO root fetch - processPackages [pycde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycde-0.2.1.dev80-cp39-cp39-win_amd64.whl.zip tmp/pycde-0.2.1.dev9-cp39-cp39-win_amd64.whl.zip --markdown 20230416/p/pycde/0.2.1.dev80-0.2.1.dev9/diff.md --exclude *.pyd
+[2023-04-16 02:50:05] INFO root fetch - main [MainThread]: End processing [glassppy]: success
+[2023-04-16 02:50:33] ERROR root fetch - processPackages [pycde]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140402212479392)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140402078260816)
+
+[2023-04-16 02:50:33] INFO root fetch - main [MainThread]: End processing [pycde] error
+[2023-04-16 02:50:33] INFO root fetch - main [MainThread]: Store serial: [17722954]
