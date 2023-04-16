@@ -3665,3 +3665,93 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 08:10:05] INFO root fetch - main [MainThread]: End processing [db-simple]: success
 [2023-04-16 08:10:21] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-04-16 08:10:21] INFO root fetch - main [MainThread]: Store serial: [17724115]
+[2023-04-16 08:15:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724115]
+[2023-04-16 08:15:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 08:15:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rpl
+[2023-04-16 08:15:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymathematics
+[2023-04-16 08:15:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flexdi
+[2023-04-16 08:15:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tatarubot2
+[2023-04-16 08:15:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pretext
+[2023-04-16 08:15:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: betanegbinfit
+[2023-04-16 08:15:32] INFO root fetch - processPackages [rpl]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-04-16 08:15:32] INFO root fetch - processPackages [tatarubot2]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 08:15:32] WARNING root fetch - processPackages [pymathematics]: Skipping, unable to determine old version
+[2023-04-16 08:15:32] INFO root fetch - main [MainThread]: End processing [pymathematics] error
+[2023-04-16 08:15:32] INFO root fetch - processPackages [flexdi]: New version: [0.3.0] Old Version: [0.2.3]
+[2023-04-16 08:15:32] INFO root fetch - processPackages [betanegbinfit]: New version: [1.8.3] Old Version: [1.8.2]
+[2023-04-16 08:15:32] INFO root fetch - processPackages [pretext]: New version: [1.5.3.dev20230415] Old Version: [1.5.3.dev20230414]
+[2023-04-16 08:15:32] INFO root fetch - processPackages [tatarubot2]: Downloading https://files.pythonhosted.org/packages/e1/42/54ee1174392f827f1074a94b8a107551e96a35d7c5e9376a6d19ecd6991e/tatarubot2-0.1.8.tar.gz
+[2023-04-16 08:15:32] INFO root fetch - processPackages [rpl]: Downloading https://files.pythonhosted.org/packages/48/8c/da3d490214ee20fe49db7cd19fee78c4dffb37455b307d4ae4405b1428e3/rpl-1.9.1.tar.gz
+[2023-04-16 08:15:32] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-04-16 08:15:32] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.5.3.dev20230414.tar.gz tmp/pretext-1.5.3.dev20230415.tar.gz --markdown 20230416/p/pretext/1.5.3.dev20230414-1.5.3.dev20230415/diff.md --exclude *.pyd
+[2023-04-16 08:15:32] INFO root fetch - processPackages [flexdi]: Downloading https://files.pythonhosted.org/packages/cb/a0/96a8c179ebb6432d0b253819e6e26d8ee369134071f81251214ab62f68cd/flexdi-0.2.3.tar.gz
+[2023-04-16 08:15:32] INFO root fetch - processPackages [betanegbinfit]: Downloading https://files.pythonhosted.org/packages/30/e6/f65284c7ef3d4d1bcacacbdab0bfe6603654d4f54e808ef485251e00554a/betanegbinfit-1.8.3.tar.gz
+[2023-04-16 08:15:32] INFO root fetch - processPackages [betanegbinfit]: executing diffoscope
+[2023-04-16 08:15:32] INFO root fetch - processPackages [betanegbinfit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betanegbinfit-1.8.2.tar.gz tmp/betanegbinfit-1.8.3.tar.gz --markdown 20230416/b/betanegbinfit/1.8.2-1.8.3/diff.md --exclude *.pyd
+[2023-04-16 08:15:33] INFO root fetch - processPackages [flexdi]: Downloading https://files.pythonhosted.org/packages/65/1a/daa2e9f22e992f7ebd6be1176ce7611ed702a54d89db0460bdf15d742513/flexdi-0.3.0.tar.gz
+[2023-04-16 08:15:33] INFO root fetch - processPackages [tatarubot2]: Downloading https://files.pythonhosted.org/packages/e6/5e/fd3c324c5fb6ba8b5bd5b330690ca2893c878e0f8aafcdcfd83f1f09475d/tatarubot2-0.1.9.tar.gz
+[2023-04-16 08:15:33] INFO root fetch - processPackages [flexdi]: executing diffoscope
+[2023-04-16 08:15:33] INFO root fetch - processPackages [flexdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flexdi-0.2.3.tar.gz tmp/flexdi-0.3.0.tar.gz --markdown 20230416/f/flexdi/0.2.3-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 08:15:33] INFO root fetch - processPackages [rpl]: Downloading https://files.pythonhosted.org/packages/a8/66/cf038e4e3b0b1895e2518c9bbfce0168f4ce16706ea957546643064d92f5/rpl-1.9.2.tar.gz
+[2023-04-16 08:15:33] INFO root fetch - processPackages [tatarubot2]: executing diffoscope
+[2023-04-16 08:15:33] INFO root fetch - processPackages [tatarubot2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tatarubot2-0.1.8.tar.gz tmp/tatarubot2-0.1.9.tar.gz --markdown 20230416/t/tatarubot2/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 08:15:33] INFO root fetch - processPackages [rpl]: executing diffoscope
+[2023-04-16 08:15:33] INFO root fetch - processPackages [rpl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpl-1.9.1.tar.gz tmp/rpl-1.9.2.tar.gz --markdown 20230416/r/rpl/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-04-16 08:15:33] INFO root fetch - main [MainThread]: End processing [betanegbinfit]: success
+[2023-04-16 08:15:34] INFO root fetch - main [MainThread]: End processing [flexdi]: success
+[2023-04-16 08:15:34] ERROR root fetch - processPackages [tatarubot2]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2023-04-16 08:15:34] INFO root fetch - main [MainThread]: End processing [tatarubot2] error
+[2023-04-16 08:15:34] INFO root fetch - main [MainThread]: End processing [rpl]: success
+[2023-04-16 08:15:39] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2023-04-16 08:15:39] INFO root fetch - main [MainThread]: Store serial: [17724138]
