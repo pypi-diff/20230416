@@ -3105,3 +3105,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 06:53:39] INFO root fetch - main [MainThread]: End processing [robotoff]: success
 [2023-04-16 06:53:48] INFO root fetch - main [MainThread]: End processing [odoo14-addon-iot-output-oca]: success
 [2023-04-16 06:53:48] INFO root fetch - main [MainThread]: Store serial: [17723753]
+[2023-04-16 06:58:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723753]
+[2023-04-16 06:58:57] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 06:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-iot-oca
+[2023-04-16 06:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-iot-output-oca
+[2023-04-16 06:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-iot-oca
+[2023-04-16 06:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unvtray
+[2023-04-16 06:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: buildarr-sonarr
+[2023-04-16 06:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: oaas-sdk-py
+[2023-04-16 06:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tflite-runtime-nightly
+[2023-04-16 06:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mls-api
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo14-addon-iot-oca]: New version: [14.0.1.0.1.dev8] Old Version: [14.0.1.0.1.dev7]
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo-addon-iot-output-oca]: New version: [15.0.1.0.0.7] Old Version: [15.0.1.0.0.6]
+[2023-04-16 06:58:57] INFO root fetch - processPackages [buildarr-sonarr]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo-addon-iot-oca]: New version: [15.0.1.0.0.9] Old Version: [15.0.1.0.0.8]
+[2023-04-16 06:58:57] INFO root fetch - processPackages [oaas-sdk-py]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 06:58:57] INFO root fetch - processPackages [unvtray]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 06:58:57] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.13.0.dev20230414] Old Version: [2.13.0.dev20230413]
+[2023-04-16 06:58:57] INFO root fetch - processPackages [oaas-sdk-py]: executing diffoscope
+[2023-04-16 06:58:57] INFO root fetch - processPackages [oaas-sdk-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oaas_sdk_py-0.1.0.tar.gz tmp/oaas_sdk_py-0.1.1.tar.gz --markdown 20230416/o/oaas-sdk-py/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 06:58:57] INFO root fetch - processPackages [mls-api]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo14-addon-iot-oca]: Downloading https://files.pythonhosted.org/packages/02/21/adf554cee3f4e4656acb913cecd8915c14666689e3b8f06d6fc0c6cea797/odoo14_addon_iot_oca-14.0.1.0.1.dev7-py3-none-any.whl
+[2023-04-16 06:58:57] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-04-16 06:58:57] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.13.0.dev20230413-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.13.0.dev20230414-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230416/t/tflite-runtime-nightly/2.13.0.dev20230413-2.13.0.dev20230414/diff.md --exclude *.pyd
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo-addon-iot-output-oca]: Downloading https://files.pythonhosted.org/packages/88/d6/0e644e732ba5a4d2ed91c8c187bbb2e64de1bf082b5ccb582c390b57a522/odoo_addon_iot_output_oca-15.0.1.0.0.6-py3-none-any.whl
+[2023-04-16 06:58:57] INFO root fetch - processPackages [buildarr-sonarr]: Downloading https://files.pythonhosted.org/packages/95/c0/5ad46a0855ce5ce6c9b7bfd78f2fc8bef499a1f6b3a21cb1848d4b2c8327/buildarr_sonarr-0.4.1.tar.gz
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo-addon-iot-oca]: Downloading https://files.pythonhosted.org/packages/52/a1/4ac3e523162d0f5c02859cd1ab6e2690f4f420b52155b4520fb0329263f1/odoo_addon_iot_oca-15.0.1.0.0.8-py3-none-any.whl
+[2023-04-16 06:58:57] INFO root fetch - processPackages [unvtray]: Downloading https://files.pythonhosted.org/packages/fa/9c/3f297abe03de7f6cf39de3f149ec8083b4fad562717fd1556a8d4d13145f/unvtray-0.1.0.tar.gz
+[2023-04-16 06:58:57] INFO root fetch - processPackages [mls-api]: Downloading https://files.pythonhosted.org/packages/81/1b/86b34f9c75c0f85a973834cc91321db25f7e6b1a751c57024cb0e6a65795/mls-api-1.0.8.tar.gz
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo14-addon-iot-oca]: Downloading https://files.pythonhosted.org/packages/14/98/d2e24be78d9afa3f3e4294d8bfa548da24996bef8f3524ba86fb129be6e4/odoo14_addon_iot_oca-14.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-16 06:58:57] INFO root fetch - processPackages [buildarr-sonarr]: Downloading https://files.pythonhosted.org/packages/51/cc/2583ddb254c5a72bc2ab1bb15d985bda402ab45b34ce8f2fb75ab1625ca6/buildarr_sonarr-0.5.0.tar.gz
+[2023-04-16 06:58:57] INFO root fetch - processPackages [unvtray]: Downloading https://files.pythonhosted.org/packages/03/30/c9f7389d3f34368e1e90dadcec02216d4ba92ea781cb02cdd9297c37fc17/unvtray-0.2.0.tar.gz
+[2023-04-16 06:58:57] INFO root fetch - processPackages [mls-api]: executing diffoscope
+[2023-04-16 06:58:57] INFO root fetch - processPackages [mls-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mls-api-1.0.7.tar.gz tmp/mls-api-1.0.8.tar.gz --markdown 20230416/m/mls-api/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-16 06:58:57] INFO root fetch - processPackages [buildarr-sonarr]: executing diffoscope
+[2023-04-16 06:58:57] INFO root fetch - processPackages [buildarr-sonarr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildarr_sonarr-0.4.1.tar.gz tmp/buildarr_sonarr-0.5.0.tar.gz --markdown 20230416/b/buildarr-sonarr/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo-addon-iot-output-oca]: Downloading https://files.pythonhosted.org/packages/ea/56/c4170f89c65bfbcf66e31c0d01ec31ef2e382aeecf7fbb02fb652072273d/odoo_addon_iot_output_oca-15.0.1.0.0.7-py3-none-any.whl
+[2023-04-16 06:58:57] INFO root fetch - processPackages [unvtray]: executing diffoscope
+[2023-04-16 06:58:57] INFO root fetch - processPackages [unvtray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unvtray-0.1.0.tar.gz tmp/unvtray-0.2.0.tar.gz --markdown 20230416/u/unvtray/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo14-addon-iot-oca]: executing diffoscope
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo14-addon-iot-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_iot_oca-14.0.1.0.1.dev7-py3-none-any.whl.zip tmp/odoo14_addon_iot_oca-14.0.1.0.1.dev8-py3-none-any.whl.zip --markdown 20230416/o/odoo14-addon-iot-oca/14.0.1.0.1.dev7-14.0.1.0.1.dev8/diff.md --exclude *.pyd
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo-addon-iot-oca]: Downloading https://files.pythonhosted.org/packages/90/c7/f9cac8e65b5e5e5b1d703bcf665993c2919ec18bbbf0af8b65fd24b5cc09/odoo_addon_iot_oca-15.0.1.0.0.9-py3-none-any.whl
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo-addon-iot-output-oca]: executing diffoscope
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo-addon-iot-output-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_iot_output_oca-15.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_iot_output_oca-15.0.1.0.0.7-py3-none-any.whl.zip --markdown 20230416/o/odoo-addon-iot-output-oca/15.0.1.0.0.6-15.0.1.0.0.7/diff.md --exclude *.pyd
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo-addon-iot-oca]: executing diffoscope
+[2023-04-16 06:58:57] INFO root fetch - processPackages [odoo-addon-iot-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_iot_oca-15.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_iot_oca-15.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230416/o/odoo-addon-iot-oca/15.0.1.0.0.8-15.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-16 06:58:58] INFO root fetch - main [MainThread]: End processing [oaas-sdk-py]: success
+[2023-04-16 06:58:59] INFO root fetch - main [MainThread]: End processing [odoo-addon-iot-output-oca]: success
+[2023-04-16 06:58:59] INFO root fetch - main [MainThread]: End processing [odoo-addon-iot-oca]: success
+[2023-04-16 06:58:59] INFO root fetch - main [MainThread]: End processing [odoo14-addon-iot-oca]: success
+[2023-04-16 06:58:59] INFO root fetch - main [MainThread]: End processing [buildarr-sonarr]: success
+[2023-04-16 06:58:59] INFO root fetch - main [MainThread]: End processing [mls-api]: success
+[2023-04-16 06:59:00] INFO root fetch - main [MainThread]: End processing [unvtray]: success
+[2023-04-16 06:59:32] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-04-16 06:59:32] INFO root fetch - main [MainThread]: Store serial: [17723782]
