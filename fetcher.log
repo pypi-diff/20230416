@@ -4611,3 +4611,75 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 09:49:07] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
 [2023-04-16 09:49:08] INFO root fetch - main [MainThread]: End processing [py-ocpi]: success
 [2023-04-16 09:49:08] INFO root fetch - main [MainThread]: Store serial: [17724644]
+[2023-04-16 09:54:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724644]
+[2023-04-16 09:54:18] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-16 09:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bluepy3
+[2023-04-16 09:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SynackAPI
+[2023-04-16 09:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyobjc
+[2023-04-16 09:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: signalyzer
+[2023-04-16 09:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: netin
+[2023-04-16 09:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sloslsoododldl-sosoajajk
+[2023-04-16 09:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tl-typewriter
+[2023-04-16 09:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: report-env
+[2023-04-16 09:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hyperdb-python
+[2023-04-16 09:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tahoma
+[2023-04-16 09:54:18] INFO root fetch - processPackages [netin]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-16 09:54:18] INFO root fetch - processPackages [SynackAPI]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-16 09:54:18] WARNING root fetch - processPackages [hyperdb-python]: Skipping, unable to determine old version
+[2023-04-16 09:54:18] INFO root fetch - processPackages [hyperdb-python]: Start processing: sloslsoododldl-sosoajajk
+[2023-04-16 09:54:18] INFO root fetch - processPackages [tl-typewriter]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-16 09:54:18] INFO root fetch - main [MainThread]: End processing [hyperdb-python] error
+[2023-04-16 09:54:18] INFO root fetch - processPackages [report-env]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 09:54:18] INFO root fetch - processPackages [SynackAPI]: executing diffoscope
+[2023-04-16 09:54:18] INFO root fetch - processPackages [SynackAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SynackAPI-0.4.2.tar.gz tmp/SynackAPI-0.4.3.tar.gz --markdown 20230416/S/SynackAPI/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-16 09:54:18] INFO root fetch - processPackages [signalyzer]: New version: [0.3.0] Old Version: [0.2.4]
+[2023-04-16 09:54:18] INFO root fetch - processPackages [bluepy3]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-16 09:54:18] INFO root fetch - processPackages [pyobjc]: New version: [9.1b1] Old Version: [9.1]
+[2023-04-16 09:54:18] INFO root fetch - processPackages [sloslsoododldl-sosoajajk]: New version: [2] Old Version: [1]
+[2023-04-16 09:54:18] INFO root fetch - processPackages [sloslsoododldl-sosoajajk]: New version: [2] Old Version: [1]
+[2023-04-16 09:54:18] INFO root fetch - processPackages [tahoma]: New version: [2.2.4] Old Version: [2.2.3]
+[2023-04-16 09:54:18] INFO root fetch - processPackages [report-env]: Downloading https://files.pythonhosted.org/packages/e1/6b/e4cb80d94f0c2e691a75286015e82a2b45fc4e7cdeb7fa0c607f60275753/report-env-0.0.1.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [tl-typewriter]: Downloading https://files.pythonhosted.org/packages/55/73/ebcf626e05899bf5a63cdf9f32440726d0dd3e7613af3125d9982b388a11/tl_typewriter-0.1.5.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [netin]: Downloading https://files.pythonhosted.org/packages/b7/c8/80aa544ece828287a4e52cadad729b59515de2ff5f34884cef0bd11210ad/netin-1.0.4.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [pyobjc]: Downloading https://files.pythonhosted.org/packages/bc/52/2136abe428e0b643be0191c7c328c0e0a39cb96c30a7984c5f06c592d3e5/pyobjc-9.1-py3-none-any.whl
+[2023-04-16 09:54:18] INFO root fetch - processPackages [bluepy3]: Downloading https://files.pythonhosted.org/packages/a7/e8/d5fe891cc5e8cfced2fc4b17b94159732c4778d9221d75f86aaf3682b67c/bluepy3-1.2.1.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [signalyzer]: Downloading https://files.pythonhosted.org/packages/46/0c/a4ec419477c83f10b82c84b17ccdc39bdf6f84ff5c62185cb69f89934f6c/signalyzer-0.2.4.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [sloslsoododldl-sosoajajk]: Downloading https://files.pythonhosted.org/packages/22/51/345ae82f158f1f3da67c2fc945664a1af6cf67d695c0c8e4ad62e0147933/sloslsoododldl-sosoajajk-1.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [tahoma]: Downloading https://files.pythonhosted.org/packages/b4/dd/d1d0b69819abde48daa03cb0d7a1fec7d3d2cde3a6b5a8aeb92105975d0a/tahoma-2.2.3.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [sloslsoododldl-sosoajajk]: Downloading https://files.pythonhosted.org/packages/22/51/345ae82f158f1f3da67c2fc945664a1af6cf67d695c0c8e4ad62e0147933/sloslsoododldl-sosoajajk-1.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [tl-typewriter]: executing diffoscope
+[2023-04-16 09:54:18] INFO root fetch - processPackages [tl-typewriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tl_typewriter-0.1.4.tar.gz tmp/tl_typewriter-0.1.5.tar.gz --markdown 20230416/t/tl-typewriter/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-16 09:54:18] INFO root fetch - processPackages [netin]: executing diffoscope
+[2023-04-16 09:54:18] INFO root fetch - processPackages [netin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netin-1.0.3.tar.gz tmp/netin-1.0.4.tar.gz --markdown 20230416/n/netin/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-16 09:54:18] INFO root fetch - processPackages [bluepy3]: Downloading https://files.pythonhosted.org/packages/15/59/b84a8597e185b336184b7b5b47f2656358a11abf3acb8a4bd3d7c6d1c51a/bluepy3-1.2.2.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [tahoma]: Downloading https://files.pythonhosted.org/packages/c4/5d/2af25906210fd2f24e03db230d5a837570f0b839b5c86251186bd00807a9/tahoma-2.2.4.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [report-env]: Downloading https://files.pythonhosted.org/packages/16/87/86ba67c0debcba1856dad5af0ebdded26d6e7825df89f310cb35ed2d41b0/report-env-0.0.2.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [sloslsoododldl-sosoajajk]: Downloading https://files.pythonhosted.org/packages/98/c4/32d8e475e06112860542c11868b882949a235899e43fb2bc437a6978aafb/sloslsoododldl-sosoajajk-2.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [sloslsoododldl-sosoajajk]: Downloading https://files.pythonhosted.org/packages/98/c4/32d8e475e06112860542c11868b882949a235899e43fb2bc437a6978aafb/sloslsoododldl-sosoajajk-2.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [signalyzer]: Downloading https://files.pythonhosted.org/packages/31/5f/6855d5732d2c59c83bbb518a43528936c3c5b4a9bcacfec926d0fb0eeeeb/signalyzer-0.3.0.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [pyobjc]: Downloading https://files.pythonhosted.org/packages/f1/c8/4cc5a0c7345a2733139416e62f9c270ffaa8c0428ac888c7f649bcff35fb/pyobjc-9.1b1.tar.gz
+[2023-04-16 09:54:18] INFO root fetch - processPackages [bluepy3]: executing diffoscope
+[2023-04-16 09:54:18] INFO root fetch - processPackages [bluepy3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluepy3-1.2.1.tar.gz tmp/bluepy3-1.2.2.tar.gz --markdown 20230416/b/bluepy3/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-16 09:54:18] INFO root fetch - processPackages [tahoma]: executing diffoscope
+[2023-04-16 09:54:18] INFO root fetch - processPackages [tahoma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tahoma-2.2.3.tar.gz tmp/tahoma-2.2.4.tar.gz --markdown 20230416/t/tahoma/2.2.3-2.2.4/diff.md --exclude *.pyd
+[2023-04-16 09:54:18] INFO root fetch - processPackages [report-env]: executing diffoscope
+[2023-04-16 09:54:18] INFO root fetch - processPackages [report-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/report-env-0.0.1.tar.gz tmp/report-env-0.0.2.tar.gz --markdown 20230416/r/report-env/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 09:54:18] INFO root fetch - processPackages [sloslsoododldl-sosoajajk]: executing diffoscope
+[2023-04-16 09:54:18] INFO root fetch - processPackages [sloslsoododldl-sosoajajk]: executing diffoscope
+[2023-04-16 09:54:18] INFO root fetch - processPackages [sloslsoododldl-sosoajajk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sloslsoododldl-sosoajajk-1.tar.gz tmp/sloslsoododldl-sosoajajk-2.tar.gz --markdown 20230416/s/sloslsoododldl-sosoajajk/1-2/diff.md --exclude *.pyd
+[2023-04-16 09:54:18] INFO root fetch - processPackages [sloslsoododldl-sosoajajk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sloslsoododldl-sosoajajk-1.tar.gz tmp/sloslsoododldl-sosoajajk-2.tar.gz --markdown 20230416/s/sloslsoododldl-sosoajajk/1-2/diff.md --exclude *.pyd
+[2023-04-16 09:54:18] INFO root fetch - processPackages [pyobjc]: executing diffoscope
+[2023-04-16 09:54:18] INFO root fetch - processPackages [pyobjc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobjc-9.1-py3-none-any.whl.zip tmp/pyobjc-9.1b1.tar.gz --markdown 20230416/p/pyobjc/9.1-9.1b1/diff.md --exclude *.pyd
+[2023-04-16 09:54:19] INFO root fetch - processPackages [signalyzer]: executing diffoscope
+[2023-04-16 09:54:19] INFO root fetch - processPackages [signalyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/signalyzer-0.2.4.tar.gz tmp/signalyzer-0.3.0.tar.gz --markdown 20230416/s/signalyzer/0.2.4-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 09:54:19] INFO root fetch - main [MainThread]: End processing [tl-typewriter]: success
+[2023-04-16 09:54:20] INFO root fetch - main [MainThread]: End processing [report-env]: success
+[2023-04-16 09:54:20] INFO root fetch - main [MainThread]: End processing [pyobjc]: success
+[2023-04-16 09:54:20] INFO root fetch - main [MainThread]: End processing [sloslsoododldl-sosoajajk]: success
+[2023-04-16 09:54:20] INFO root fetch - main [MainThread]: End processing [sloslsoododldl-sosoajajk]: success
+[2023-04-16 09:54:20] INFO root fetch - main [MainThread]: End processing [tahoma]: success
+[2023-04-16 09:54:20] INFO root fetch - main [MainThread]: End processing [bluepy3]: success
+[2023-04-16 09:54:20] INFO root fetch - main [MainThread]: End processing [netin]: success
+[2023-04-16 09:54:21] INFO root fetch - main [MainThread]: End processing [SynackAPI]: success
+[2023-04-16 09:54:40] INFO root fetch - main [MainThread]: End processing [signalyzer]: success
+[2023-04-16 09:54:40] INFO root fetch - main [MainThread]: Store serial: [17724681]
