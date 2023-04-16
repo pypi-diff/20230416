@@ -12109,3 +12109,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 19:38:02] INFO root fetch - main [MainThread]: End processing [trame-vtk]: success
 [2023-04-16 19:38:08] INFO root fetch - main [MainThread]: End processing [compoundwidgets]: success
 [2023-04-16 19:38:08] INFO root fetch - main [MainThread]: Store serial: [17729075]
+[2023-04-16 19:43:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729075]
+[2023-04-16 19:43:18] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 19:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aa-rss-to-discord
+[2023-04-16 19:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dyntastic
+[2023-04-16 19:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ml-botting-core
+[2023-04-16 19:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: econdata
+[2023-04-16 19:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: paper-admin
+[2023-04-16 19:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: alnoda-wrk
+[2023-04-16 19:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyproject-generator
+[2023-04-16 19:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: apple-reading-list-to-sqlite
+[2023-04-16 19:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: typer-builder
+[2023-04-16 19:43:18] INFO root fetch - processPackages [paper-admin]: New version: [6.0.0rc1] Old Version: [5.0.0]
+[2023-04-16 19:43:18] INFO root fetch - processPackages [dyntastic]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-16 19:43:18] WARNING root fetch - processPackages [apple-reading-list-to-sqlite]: Skipping, unable to determine old version
+[2023-04-16 19:43:18] INFO root fetch - main [MainThread]: End processing [apple-reading-list-to-sqlite] error
+[2023-04-16 19:43:18] WARNING root fetch - processPackages [econdata]: Skipping, unable to determine old version
+[2023-04-16 19:43:18] INFO root fetch - processPackages [ml-botting-core]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 19:43:18] INFO root fetch - processPackages [aa-rss-to-discord]: New version: [1.5.0] Old Version: [1.4.2]
+[2023-04-16 19:43:18] INFO root fetch - processPackages [alnoda-wrk]: New version: [0.4.1] Old Version: [0.3.9]
+[2023-04-16 19:43:18] INFO root fetch - main [MainThread]: End processing [econdata] error
+[2023-04-16 19:43:18] INFO root fetch - processPackages [pyproject-generator]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 19:43:18] INFO root fetch - processPackages [typer-builder]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 19:43:18] INFO root fetch - processPackages [dyntastic]: executing diffoscope
+[2023-04-16 19:43:18] INFO root fetch - processPackages [dyntastic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyntastic-0.8.2.tar.gz tmp/dyntastic-0.9.0.tar.gz --markdown 20230416/d/dyntastic/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 19:43:18] INFO root fetch - processPackages [ml-botting-core]: Downloading https://files.pythonhosted.org/packages/77/fe/96c7891b1553f4514004e75f2c6319e1dde4cd962afc0132d1efaec231c0/ml_botting_core-0.0.3.tar.gz
+[2023-04-16 19:43:18] INFO root fetch - processPackages [paper-admin]: Downloading https://files.pythonhosted.org/packages/ab/43/3eabcf3c8516a12fea4d2b0999c46df83480e80cc18821ce5e3d0c1ecd71/paper-admin-5.0.0.tar.gz
+[2023-04-16 19:43:18] INFO root fetch - processPackages [typer-builder]: Downloading https://files.pythonhosted.org/packages/cc/5a/be51429e3ff6f998d9499a65e8e49570549c2f2ebcb79d4b088ff591fc15/typer_builder-0.0.9.tar.gz
+[2023-04-16 19:43:18] INFO root fetch - processPackages [ml-botting-core]: executing diffoscope
+[2023-04-16 19:43:18] INFO root fetch - processPackages [ml-botting-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-botting-core-0.0.2.tar.gz tmp/ml_botting_core-0.0.3.tar.gz --markdown 20230416/m/ml-botting-core/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 19:43:19] INFO root fetch - processPackages [pyproject-generator]: Downloading https://files.pythonhosted.org/packages/25/95/1bbd85758b07f6934dfedc10740ee4c418f39f502c55ec1cc010bccbf270/pyproject-generator-0.0.3.tar.gz
+[2023-04-16 19:43:19] INFO root fetch - processPackages [alnoda-wrk]: Downloading https://files.pythonhosted.org/packages/53/22/fb43704b703fb691bb68bedd8aefceaa808817f26b47faaa14ccaab99e94/alnoda_wrk-0.4.1.tar.gz
+[2023-04-16 19:43:19] INFO root fetch - processPackages [aa-rss-to-discord]: Downloading https://files.pythonhosted.org/packages/26/a3/3ada1aec6a4c024c5cb990cc65fcd4f3850a001a0edfc1908e8418e4a269/aa_rss_to_discord-1.5.0.tar.gz
+[2023-04-16 19:43:19] INFO root fetch - processPackages [typer-builder]: executing diffoscope
+[2023-04-16 19:43:19] INFO root fetch - processPackages [typer-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typer_builder-0.0.8.tar.gz tmp/typer_builder-0.0.9.tar.gz --markdown 20230416/t/typer-builder/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 19:43:19] INFO root fetch - processPackages [aa-rss-to-discord]: executing diffoscope
+[2023-04-16 19:43:19] INFO root fetch - processPackages [aa-rss-to-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_rss_to_discord-1.4.2.tar.gz tmp/aa_rss_to_discord-1.5.0.tar.gz --markdown 20230416/a/aa-rss-to-discord/1.4.2-1.5.0/diff.md --exclude *.pyd
+[2023-04-16 19:43:19] INFO root fetch - processPackages [pyproject-generator]: executing diffoscope
+[2023-04-16 19:43:19] INFO root fetch - processPackages [pyproject-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject-generator-0.0.2.tar.gz tmp/pyproject-generator-0.0.3.tar.gz --markdown 20230416/p/pyproject-generator/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 19:43:19] INFO root fetch - processPackages [paper-admin]: Downloading https://files.pythonhosted.org/packages/38/de/9b44536487c9653fd2029e6fa158002b02d5328ea211424e61f832b3fd17/paper-admin-6.0.0rc1.tar.gz
+[2023-04-16 19:43:19] INFO root fetch - processPackages [alnoda-wrk]: executing diffoscope
+[2023-04-16 19:43:19] INFO root fetch - processPackages [alnoda-wrk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alnoda_wrk-0.3.9.tar.gz tmp/alnoda_wrk-0.4.1.tar.gz --markdown 20230416/a/alnoda-wrk/0.3.9-0.4.1/diff.md --exclude *.pyd
+[2023-04-16 19:43:19] INFO root fetch - processPackages [paper-admin]: executing diffoscope
+[2023-04-16 19:43:19] INFO root fetch - processPackages [paper-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-admin-5.0.0.tar.gz tmp/paper-admin-6.0.0rc1.tar.gz --markdown 20230416/p/paper-admin/5.0.0-6.0.0rc1/diff.md --exclude *.pyd
+[2023-04-16 19:43:20] INFO root fetch - main [MainThread]: End processing [ml-botting-core]: success
+[2023-04-16 19:43:20] INFO root fetch - main [MainThread]: End processing [dyntastic]: success
+[2023-04-16 19:43:20] INFO root fetch - main [MainThread]: End processing [typer-builder]: success
+[2023-04-16 19:43:20] INFO root fetch - main [MainThread]: End processing [pyproject-generator]: success
+[2023-04-16 19:43:20] INFO root fetch - main [MainThread]: End processing [aa-rss-to-discord]: success
+[2023-04-16 19:43:20] INFO root fetch - main [MainThread]: End processing [alnoda-wrk]: success
+[2023-04-16 19:43:39] INFO root fetch - main [MainThread]: End processing [paper-admin]: success
+[2023-04-16 19:43:39] INFO root fetch - main [MainThread]: Store serial: [17729107]
