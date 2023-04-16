@@ -13975,3 +13975,69 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 23:03:24] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2023-04-16 23:03:24] INFO root fetch - main [MainThread]: End processing [edc-pdutils]: success
 [2023-04-16 23:03:24] INFO root fetch - main [MainThread]: Store serial: [17730224]
+[2023-04-16 23:08:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17730224]
+[2023-04-16 23:08:33] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 23:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: textadventure
+[2023-04-16 23:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-web-io
+[2023-04-16 23:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cagen
+[2023-04-16 23:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edc-randomization
+[2023-04-16 23:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hond
+[2023-04-16 23:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vau
+[2023-04-16 23:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tkinterweb
+[2023-04-16 23:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lnschema_core
+[2023-04-16 23:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vau
+[2023-04-16 23:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: geoipsets
+[2023-04-16 23:08:33] INFO root fetch - processPackages [python-web-io]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 23:08:33] INFO root fetch - processPackages [tkinterweb]: New version: [3.9.7] Old Version: [3.9.6]
+[2023-04-16 23:08:33] INFO root fetch - processPackages [vau]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-04-16 23:08:33] INFO root fetch - processPackages [vau]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-04-16 23:08:34] INFO root fetch - processPackages [lnschema_core]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-16 23:08:34] INFO root fetch - processPackages [geoipsets]: New version: [2.3.5] Old Version: [2.3.4]
+[2023-04-16 23:08:34] INFO root fetch - processPackages [vau]: Downloading https://files.pythonhosted.org/packages/b3/50/bcfe16ad600ae83902071cd9e454012a5c57f63d7416cfdd9645d8f3a51b/vau-0.0.2.tar.gz
+[2023-04-16 23:08:34] INFO root fetch - processPackages [vau]: Downloading https://files.pythonhosted.org/packages/b3/50/bcfe16ad600ae83902071cd9e454012a5c57f63d7416cfdd9645d8f3a51b/vau-0.0.2.tar.gz
+[2023-04-16 23:08:34] INFO root fetch - processPackages [lnschema_core]: executing diffoscope
+[2023-04-16 23:08:34] INFO root fetch - processPackages [lnschema_core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_core-0.8.1.tar.gz tmp/lnschema_core-0.9.0.tar.gz --markdown 20230416/l/lnschema_core/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 23:08:34] INFO root fetch - processPackages [python-web-io]: Downloading https://files.pythonhosted.org/packages/9e/d4/80a7863c2d02b6ff33997dc110b7163f2faf7498f0398a42aedbf19d9422/python_web_io-0.1.9.tar.gz
+[2023-04-16 23:08:34] INFO root fetch - processPackages [tkinterweb]: Downloading https://files.pythonhosted.org/packages/fb/88/c86c5a5baae51628333717b42e4fb53d2b159233ba97f5089fcb5e1f65cb/tkinterweb-3.9.6.tar.gz
+[2023-04-16 23:08:34] INFO root fetch - processPackages [geoipsets]: Downloading https://files.pythonhosted.org/packages/2c/2a/dca9104b55358177f9623912078522d404ee9d08d6f9bdc1214f9f56867b/geoipsets-2.3.4.tar.gz
+[2023-04-16 23:08:34] INFO root fetch - processPackages [python-web-io]: executing diffoscope
+[2023-04-16 23:08:34] INFO root fetch - processPackages [python-web-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_web_io-0.1.8.tar.gz tmp/python_web_io-0.1.9.tar.gz --markdown 20230416/p/python-web-io/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 23:08:34] INFO root fetch - processPackages [vau]: executing diffoscope
+[2023-04-16 23:08:34] INFO root fetch - processPackages [vau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vau-0.0.2.tar.gz tmp/vau-0.1.0.tar.gz --markdown 20230416/v/vau/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-04-16 23:08:34] INFO root fetch - processPackages [vau]: executing diffoscope
+[2023-04-16 23:08:34] INFO root fetch - processPackages [vau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vau-0.0.2.tar.gz tmp/vau-0.1.0.tar.gz --markdown 20230416/v/vau/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-04-16 23:08:34] INFO root fetch - processPackages [geoipsets]: Downloading https://files.pythonhosted.org/packages/9e/1d/a2220bcee6854a5f9c504de4a34474cc1e5b10f19afdbd7bee5415c2b6f0/geoipsets-2.3.5.tar.gz
+[2023-04-16 23:08:34] INFO root fetch - processPackages [tkinterweb]: Downloading https://files.pythonhosted.org/packages/00/e1/a22d4bc360d1eaed4590da7adf3b45a448f6055ca35ab8939a8019e0203f/tkinterweb-3.9.7.tar.gz
+[2023-04-16 23:08:34] INFO root fetch - processPackages [geoipsets]: executing diffoscope
+[2023-04-16 23:08:34] INFO root fetch - processPackages [geoipsets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geoipsets-2.3.4.tar.gz tmp/geoipsets-2.3.5.tar.gz --markdown 20230416/g/geoipsets/2.3.4-2.3.5/diff.md --exclude *.pyd
+[2023-04-16 23:08:34] INFO root fetch - processPackages [textadventure]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-16 23:08:34] INFO root fetch - processPackages [cagen]: New version: [0.2.0a5] Old Version: [0.2.0a4]
+[2023-04-16 23:08:34] INFO root fetch - processPackages [edc-randomization]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-16 23:08:35] INFO root fetch - processPackages [cagen]: Downloading https://files.pythonhosted.org/packages/3b/36/dc9f031fc5f6c90ba53f52d79af805762402a07f06287e9bef1b0489f2ef/cagen-0.2.0a4.tar.gz
+[2023-04-16 23:08:35] INFO root fetch - processPackages [tkinterweb]: executing diffoscope
+[2023-04-16 23:08:35] INFO root fetch - processPackages [tkinterweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkinterweb-3.9.6.tar.gz tmp/tkinterweb-3.9.7.tar.gz --markdown 20230416/t/tkinterweb/3.9.6-3.9.7/diff.md --exclude *.pyd
+[2023-04-16 23:08:35] INFO root fetch - processPackages [edc-randomization]: Downloading https://files.pythonhosted.org/packages/89/58/a366502b90a9a63fc0705bbe32b9bbfd851b78d2a4a5c937c1900510b086/edc_randomization-0.3.8-py3-none-any.whl
+[2023-04-16 23:08:35] INFO root fetch - processPackages [textadventure]: Downloading https://files.pythonhosted.org/packages/55/69/7c169768aabe0a68ceec49b486e19488d4d263fae5ca64ee873c4a075d0d/textadventure-0.0.5.tar.gz
+[2023-04-16 23:08:35] INFO root fetch - processPackages [hond]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-16 23:08:35] INFO root fetch - processPackages [textadventure]: executing diffoscope
+[2023-04-16 23:08:35] INFO root fetch - processPackages [textadventure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textadventure-0.0.4.tar.gz tmp/textadventure-0.0.5.tar.gz --markdown 20230416/t/textadventure/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-16 23:08:35] INFO root fetch - processPackages [cagen]: Downloading https://files.pythonhosted.org/packages/1a/3e/44467b41f8191d903817506b10a2c63ce9fce2f5a7cd70343e3ba36bfa36/cagen-0.2.0a5.tar.gz
+[2023-04-16 23:08:35] INFO root fetch - processPackages [hond]: Downloading https://files.pythonhosted.org/packages/ad/87/4fa22b317f8e9ad8508c784dd3d2b2c6942a4dc45558c057c15e7e81e806/hond-2.0.2.tar.gz
+[2023-04-16 23:08:35] INFO root fetch - main [MainThread]: End processing [lnschema_core]: success
+[2023-04-16 23:08:35] INFO root fetch - main [MainThread]: End processing [vau]: success
+[2023-04-16 23:08:35] INFO root fetch - processPackages [hond]: executing diffoscope
+[2023-04-16 23:08:35] INFO root fetch - processPackages [hond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hond-2.0.1.tar.gz tmp/hond-2.0.2.tar.gz --markdown 20230416/h/hond/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-16 23:08:35] INFO root fetch - main [MainThread]: End processing [python-web-io]: success
+[2023-04-16 23:08:35] INFO root fetch - processPackages [cagen]: executing diffoscope
+[2023-04-16 23:08:35] INFO root fetch - processPackages [cagen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cagen-0.2.0a4.tar.gz tmp/cagen-0.2.0a5.tar.gz --markdown 20230416/c/cagen/0.2.0a4-0.2.0a5/diff.md --exclude *.pyd
+[2023-04-16 23:08:35] INFO root fetch - main [MainThread]: End processing [vau]: success
+[2023-04-16 23:08:35] INFO root fetch - processPackages [edc-randomization]: Downloading https://files.pythonhosted.org/packages/61/5b/4b82d8712c93515bde8a0695fa0cb2bb2299961f752a6028150ce09b27fd/edc_randomization-0.3.9-py3-none-any.whl
+[2023-04-16 23:08:36] INFO root fetch - processPackages [edc-randomization]: executing diffoscope
+[2023-04-16 23:08:36] INFO root fetch - processPackages [edc-randomization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_randomization-0.3.8-py3-none-any.whl.zip tmp/edc_randomization-0.3.9-py3-none-any.whl.zip --markdown 20230416/e/edc-randomization/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-16 23:08:36] INFO root fetch - main [MainThread]: End processing [geoipsets]: success
+[2023-04-16 23:08:36] INFO root fetch - main [MainThread]: End processing [cagen]: success
+[2023-04-16 23:08:36] INFO root fetch - main [MainThread]: End processing [tkinterweb]: success
+[2023-04-16 23:08:36] INFO root fetch - main [MainThread]: End processing [textadventure]: success
+[2023-04-16 23:08:36] INFO root fetch - main [MainThread]: End processing [hond]: success
+[2023-04-16 23:08:37] INFO root fetch - main [MainThread]: End processing [edc-randomization]: success
+[2023-04-16 23:08:37] INFO root fetch - main [MainThread]: Store serial: [17730253]
