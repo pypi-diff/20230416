@@ -13081,3 +13081,35 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 21:23:50] INFO root fetch - main [MainThread]: End processing [lazyfunc]: success
 [2023-04-16 21:23:50] INFO root fetch - main [MainThread]: End processing [feloopy]: success
 [2023-04-16 21:23:50] INFO root fetch - main [MainThread]: Store serial: [17729639]
+[2023-04-16 21:28:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729639]
+[2023-04-16 21:28:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 21:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stress-injector
+[2023-04-16 21:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adr
+[2023-04-16 21:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysarcat
+[2023-04-16 21:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mine
+[2023-04-16 21:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: FFmpyg-DavidRodriguezSoaresCUI
+[2023-04-16 21:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gisi
+[2023-04-16 21:28:58] INFO root fetch - processPackages [mine]: New version: [3.0.1] Old Version: [3.0]
+[2023-04-16 21:28:58] INFO root fetch - processPackages [pysarcat]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-16 21:28:58] WARNING root fetch - processPackages [adr]: Skipping, unable to determine old version
+[2023-04-16 21:28:58] INFO root fetch - processPackages [stress-injector]: New version: [0.7] Old Version: [0.5]
+[2023-04-16 21:28:58] INFO root fetch - main [MainThread]: End processing [adr] error
+[2023-04-16 21:28:58] WARNING root fetch - processPackages [FFmpyg-DavidRodriguezSoaresCUI]: Skipping, unable to determine old version
+[2023-04-16 21:28:58] INFO root fetch - main [MainThread]: End processing [FFmpyg-DavidRodriguezSoaresCUI] error
+[2023-04-16 21:28:58] WARNING root fetch - processPackages [gisi]: Skipping, unable to determine old version
+[2023-04-16 21:28:58] INFO root fetch - main [MainThread]: End processing [gisi] error
+[2023-04-16 21:28:58] INFO root fetch - processPackages [mine]: Downloading https://files.pythonhosted.org/packages/b3/38/4e867950601a7502d8e2ce5901f44cd2ee0e45f17f3fe9e238b4a49e0ffb/mine-3.0.tar.gz
+[2023-04-16 21:28:58] INFO root fetch - processPackages [pysarcat]: Downloading https://files.pythonhosted.org/packages/7e/16/19442158fcbc687e5e0e7660d83cf782372a6f35247e8d18f071a450302b/pysarcat-1.0.2-py3-none-any.whl
+[2023-04-16 21:28:59] INFO root fetch - processPackages [stress-injector]: Downloading https://files.pythonhosted.org/packages/2b/84/0854fd62bcbcf847ddaceef78521e48135a10728dabfbe0bd37e2acd12b2/stress_injector-0.7-py3-none-any.whl
+[2023-04-16 21:28:59] INFO root fetch - processPackages [mine]: Downloading https://files.pythonhosted.org/packages/c2/67/9076db44bee37fe6e2b2a69d1d2fcf76d91406327c30deb070c2d85cbcb4/mine-3.0.1.tar.gz
+[2023-04-16 21:28:59] INFO root fetch - processPackages [stress-injector]: executing diffoscope
+[2023-04-16 21:28:59] INFO root fetch - processPackages [stress-injector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stress_injector-0.5-py3-none-any.whl.zip tmp/stress_injector-0.7-py3-none-any.whl.zip --markdown 20230416/s/stress-injector/0.5-0.7/diff.md --exclude *.pyd
+[2023-04-16 21:28:59] INFO root fetch - processPackages [pysarcat]: Downloading https://files.pythonhosted.org/packages/97/6b/f9ce78f81ca1852c56f4b719541770d6c5bb43b6b7b39a9c08781c97c636/pysarcat-1.0.3-py3-none-any.whl
+[2023-04-16 21:28:59] INFO root fetch - processPackages [mine]: executing diffoscope
+[2023-04-16 21:28:59] INFO root fetch - processPackages [mine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mine-3.0.tar.gz tmp/mine-3.0.1.tar.gz --markdown 20230416/m/mine/3.0-3.0.1/diff.md --exclude *.pyd
+[2023-04-16 21:28:59] INFO root fetch - processPackages [pysarcat]: executing diffoscope
+[2023-04-16 21:28:59] INFO root fetch - processPackages [pysarcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysarcat-1.0.2-py3-none-any.whl.zip tmp/pysarcat-1.0.3-py3-none-any.whl.zip --markdown 20230416/p/pysarcat/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-16 21:29:00] INFO root fetch - main [MainThread]: End processing [stress-injector]: success
+[2023-04-16 21:29:00] INFO root fetch - main [MainThread]: End processing [pysarcat]: success
+[2023-04-16 21:29:00] INFO root fetch - main [MainThread]: End processing [mine]: success
+[2023-04-16 21:29:00] INFO root fetch - main [MainThread]: Store serial: [17729662]
