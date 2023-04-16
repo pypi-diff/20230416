@@ -2237,3 +2237,16 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 04:19:12] INFO root fetch - main [MainThread]: End processing [salmon-triplets]: success
 [2023-04-16 04:19:27] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
 [2023-04-16 04:19:28] INFO root fetch - main [MainThread]: Store serial: [17723270]
+[2023-04-16 04:24:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723270]
+[2023-04-16 04:24:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-16 04:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: minitrade
+[2023-04-16 04:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ledes-parser
+[2023-04-16 04:24:36] INFO root fetch - processPackages [ledes-parser]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-16 04:24:36] INFO root fetch - processPackages [minitrade]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 04:24:37] INFO root fetch - processPackages [ledes-parser]: executing diffoscope
+[2023-04-16 04:24:37] INFO root fetch - processPackages [ledes-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ledes-parser-0.2.0.tar.gz tmp/ledes-parser-0.2.1.tar.gz --markdown 20230416/l/ledes-parser/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-16 04:24:37] INFO root fetch - processPackages [minitrade]: executing diffoscope
+[2023-04-16 04:24:37] INFO root fetch - processPackages [minitrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minitrade-0.1.8.tar.gz tmp/minitrade-0.1.9.tar.gz --markdown 20230416/m/minitrade/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 04:24:37] INFO root fetch - main [MainThread]: End processing [ledes-parser]: success
+[2023-04-16 04:24:38] INFO root fetch - main [MainThread]: End processing [minitrade]: success
+[2023-04-16 04:24:38] INFO root fetch - main [MainThread]: Store serial: [17723276]
