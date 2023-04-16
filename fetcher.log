@@ -8811,3 +8811,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 14:50:07] INFO root fetch - main [MainThread]: End processing [pygedcom]: success
 [2023-04-16 14:50:08] INFO root fetch - main [MainThread]: End processing [frasa]: success
 [2023-04-16 14:50:08] INFO root fetch - main [MainThread]: Store serial: [17727013]
+[2023-04-16 14:55:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727013]
+[2023-04-16 14:55:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-16 14:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vollseg
+[2023-04-16 14:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: numbers-parser
+[2023-04-16 14:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psij-zmq
+[2023-04-16 14:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zebrazoom
+[2023-04-16 14:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pysarcat
+[2023-04-16 14:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: html4quiz
+[2023-04-16 14:55:17] INFO root fetch - processPackages [numbers-parser]: New version: [3.9.6] Old Version: [3.9.5]
+[2023-04-16 14:55:17] ERROR root fetch - processPackages [pysarcat]: Unable to get metadata: No such project 'pysarcat'
+[2023-04-16 14:55:17] INFO root fetch - main [MainThread]: End processing [pysarcat] error
+[2023-04-16 14:55:17] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 14:55:17] INFO root fetch - processPackages [html4quiz]: New version: [0.0.25] Old Version: [0.0.24]
+[2023-04-16 14:55:17] INFO root fetch - processPackages [zebrazoom]: New version: [1.9] Old Version: [1.8]
+[2023-04-16 14:55:17] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 14:55:17] WARNING root fetch - processPackages [psij-zmq]: Skipping, unable to determine old version
+[2023-04-16 14:55:17] INFO root fetch - main [MainThread]: End processing [psij-zmq] error
+[2023-04-16 14:55:17] INFO root fetch - processPackages [html4quiz]: executing diffoscope
+[2023-04-16 14:55:17] INFO root fetch - processPackages [html4quiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html4quiz-0.0.24.tar.gz tmp/html4quiz-0.0.25.tar.gz --markdown 20230416/h/html4quiz/0.0.24-0.0.25/diff.md --exclude *.pyd
+[2023-04-16 14:55:17] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 14:55:17] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 14:55:17] INFO root fetch - processPackages [numbers-parser]: Downloading https://files.pythonhosted.org/packages/cc/22/da91c1513a423ddf97c27e291dd9ef472c84d243da5e61a4db18e93fb5b1/numbers_parser-3.9.5.tar.gz
+[2023-04-16 14:55:17] INFO root fetch - processPackages [zebrazoom]: Downloading https://files.pythonhosted.org/packages/f8/26/fb333d50056298ab69d02c7c0e0fdaeae2e51fca825888178df88926b372/zebrazoom-1.8.tar.gz
+[2023-04-16 14:55:18] INFO root fetch - processPackages [numbers-parser]: Downloading https://files.pythonhosted.org/packages/9a/d5/1d1c7d68588ca8d4e67a154f9c65341f11888b60320db572580ba1f17844/numbers_parser-3.9.6.tar.gz
+[2023-04-16 14:55:18] INFO root fetch - processPackages [numbers-parser]: executing diffoscope
+[2023-04-16 14:55:18] INFO root fetch - processPackages [numbers-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numbers_parser-3.9.5.tar.gz tmp/numbers_parser-3.9.6.tar.gz --markdown 20230416/n/numbers-parser/3.9.5-3.9.6/diff.md --exclude *.pyd
+[2023-04-16 14:55:18] INFO root fetch - main [MainThread]: End processing [html4quiz]: success
+[2023-04-16 14:55:19] INFO root fetch - processPackages [zebrazoom]: Downloading https://files.pythonhosted.org/packages/29/37/9f2aaa64707bbcd24502e836857b6c572452e441dc5bb3229137d00bfa9b/zebrazoom-1.9.tar.gz
+[2023-04-16 14:55:19] INFO root fetch - main [MainThread]: End processing [numbers-parser]: success
+[2023-04-16 14:55:19] INFO root fetch - processPackages [zebrazoom]: executing diffoscope
+[2023-04-16 14:55:19] INFO root fetch - processPackages [zebrazoom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zebrazoom-1.8.tar.gz tmp/zebrazoom-1.9.tar.gz --markdown 20230416/z/zebrazoom/1.8-1.9/diff.md --exclude *.pyd
+[2023-04-16 14:55:22] INFO root fetch - main [MainThread]: End processing [zebrazoom]: success
+[2023-04-16 14:55:22] INFO root fetch - main [MainThread]: Store serial: [17727041]
