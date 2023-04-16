@@ -6305,3 +6305,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 11:04:16] INFO root fetch - main [MainThread]: End processing [meta-person]: success
 [2023-04-16 11:04:17] INFO root fetch - main [MainThread]: End processing [robin-sd-download]: success
 [2023-04-16 11:04:17] INFO root fetch - main [MainThread]: Store serial: [17725516]
+[2023-04-16 11:09:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17725516]
+[2023-04-16 11:09:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-16 11:09:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PySide6-Fluent-Widgets
+[2023-04-16 11:09:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymediawikidocker
+[2023-04-16 11:09:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aa-opcalendar
+[2023-04-16 11:09:26] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-16 11:09:26] INFO root fetch - processPackages [pymediawikidocker]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-16 11:09:26] INFO root fetch - processPackages [aa-opcalendar]: New version: [2.4.0] Old Version: [2.3.1]
+[2023-04-16 11:09:26] INFO root fetch - processPackages [pymediawikidocker]: executing diffoscope
+[2023-04-16 11:09:26] INFO root fetch - processPackages [pymediawikidocker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymediawikidocker-0.9.8.tar.gz tmp/pymediawikidocker-0.9.9.tar.gz --markdown 20230416/p/pymediawikidocker/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-16 11:09:26] INFO root fetch - processPackages [aa-opcalendar]: Downloading https://files.pythonhosted.org/packages/01/3e/45d77f2fdefd8f2ec6381ac1c87477ae25b1156e2d2cead2c188dfd76c44/aa-opcalendar-2.3.1.tar.gz
+[2023-04-16 11:09:26] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/7c/48/de968b645663beaec45281da953463665899a8f1a0d4616c6ac8323a14a9/PySide6-Fluent-Widgets-0.7.1.tar.gz
+[2023-04-16 11:09:26] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: executing diffoscope
+[2023-04-16 11:09:26] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide6-Fluent-Widgets-0.7.0.tar.gz tmp/PySide6-Fluent-Widgets-0.7.1.tar.gz --markdown 20230416/P/PySide6-Fluent-Widgets/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-16 11:09:26] INFO root fetch - processPackages [aa-opcalendar]: Downloading https://files.pythonhosted.org/packages/73/67/6877f0d36c5414e14a177ff66b148ab5894306f5631115b8f57a075fe8f1/aa-opcalendar-2.4.0.tar.gz
+[2023-04-16 11:09:26] INFO root fetch - processPackages [aa-opcalendar]: executing diffoscope
+[2023-04-16 11:09:26] INFO root fetch - processPackages [aa-opcalendar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-opcalendar-2.3.1.tar.gz tmp/aa-opcalendar-2.4.0.tar.gz --markdown 20230416/a/aa-opcalendar/2.3.1-2.4.0/diff.md --exclude *.pyd
+[2023-04-16 11:09:27] INFO root fetch - main [MainThread]: End processing [pymediawikidocker]: success
+[2023-04-16 11:09:27] INFO root fetch - main [MainThread]: End processing [aa-opcalendar]: success
+[2023-04-16 11:09:29] INFO root fetch - main [MainThread]: End processing [PySide6-Fluent-Widgets]: success
+[2023-04-16 11:09:29] INFO root fetch - main [MainThread]: Store serial: [17725527]
