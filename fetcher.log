@@ -9351,3 +9351,70 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 15:38:01] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-blive-danmaku]: success
 [2023-04-16 15:38:06] INFO root fetch - main [MainThread]: End processing [gptroles]: success
 [2023-04-16 15:38:06] INFO root fetch - main [MainThread]: Store serial: [17727382]
+[2023-04-16 15:43:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727382]
+[2023-04-16 15:43:16] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-16 15:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SqlalchemyMixin
+[2023-04-16 15:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: frasa
+[2023-04-16 15:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rssfixer
+[2023-04-16 15:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dknovautils
+[2023-04-16 15:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastapi-filter
+[2023-04-16 15:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odbc2orm
+[2023-04-16 15:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: robocorp-logging
+[2023-04-16 15:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: simplebox
+[2023-04-16 15:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lumigo-core
+[2023-04-16 15:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tf-nightly-intel
+[2023-04-16 15:43:17] INFO root fetch - processPackages [frasa]: New version: [0.1.51] Old Version: [0.1.50]
+[2023-04-16 15:43:17] INFO root fetch - processPackages [rssfixer]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-16 15:43:17] INFO root fetch - processPackages [dknovautils]: New version: [0.0.3] Old Version: [0.0.20]
+[2023-04-16 15:43:17] INFO root fetch - processPackages [robocorp-logging]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-16 15:43:17] INFO root fetch - processPackages [SqlalchemyMixin]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 15:43:17] WARNING root fetch - processPackages [odbc2orm]: Skipping, unable to determine old version
+[2023-04-16 15:43:17] INFO root fetch - processPackages [fastapi-filter]: New version: [0.6.0] Old Version: [0.5.4]
+[2023-04-16 15:43:17] INFO root fetch - processPackages [odbc2orm]: Start processing: caddo-file-parser
+[2023-04-16 15:43:17] INFO root fetch - main [MainThread]: End processing [odbc2orm] error
+[2023-04-16 15:43:17] WARNING root fetch - processPackages [simplebox]: Skipping, unable to determine old version
+[2023-04-16 15:43:17] INFO root fetch - main [MainThread]: End processing [simplebox] error
+[2023-04-16 15:43:17] INFO root fetch - processPackages [lumigo-core]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-16 15:43:17] INFO root fetch - processPackages [caddo-file-parser]: New version: [0.42.1] Old Version: [0.41.1]
+[2023-04-16 15:43:17] INFO root fetch - processPackages [dknovautils]: Downloading https://files.pythonhosted.org/packages/ec/0d/06e3bd02431040199c331a7744af2ab48fd029f545fe6c547529b4076c48/dknovautils-0.0.20.tar.gz
+[2023-04-16 15:43:17] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.13.0.dev20230416] Old Version: [2.13.0.dev20230415]
+[2023-04-16 15:43:17] INFO root fetch - processPackages [frasa]: Downloading https://files.pythonhosted.org/packages/69/95/d2d3c911757ff624399c0d0330e114479f03f2c803169f0bce7cc163c997/frasa-0.1.51.tar.gz
+[2023-04-16 15:43:17] INFO root fetch - processPackages [rssfixer]: Downloading https://files.pythonhosted.org/packages/93/9e/c9ebc7ffffe8c15b7aaca02b435f57114c8578eea203fd30ded595671247/rssfixer-0.0.2.tar.gz
+[2023-04-16 15:43:17] INFO root fetch - processPackages [SqlalchemyMixin]: Downloading https://files.pythonhosted.org/packages/00/85/479eac067ac3022c2a7573ed68163779027b6907f7d699321c850e5b54c5/SqlalchemyMixin-0.0.8.tar.gz
+[2023-04-16 15:43:17] INFO root fetch - processPackages [fastapi-filter]: Downloading https://files.pythonhosted.org/packages/c4/d8/7500872726265d90ff775e7d765aa767954a111c68cd695d1e23b69e0c5c/fastapi_filter-0.5.4.tar.gz
+[2023-04-16 15:43:17] INFO root fetch - processPackages [lumigo-core]: Downloading https://files.pythonhosted.org/packages/4e/3d/99d09fd28059f86b90f75d131b0004ce510174fabf4886c4730ff2034e7d/lumigo_core-0.0.5-py3-none-any.whl
+[2023-04-16 15:43:17] INFO root fetch - processPackages [caddo-file-parser]: Downloading https://files.pythonhosted.org/packages/20/29/99c7ca03fd68b9128c37b10b76acd133652ee2a6507747b6723ecd94cc7e/caddo-file-parser-0.41.1.tar.gz
+[2023-04-16 15:43:17] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/ce/e1/759e1e4334259d6a4bf166d5f4784b8f8bc2c67d3efe788a5a6fef5aada2/tf_nightly_intel-2.13.0.dev20230415-cp39-cp39-win_amd64.whl
+[2023-04-16 15:43:17] INFO root fetch - processPackages [rssfixer]: Downloading https://files.pythonhosted.org/packages/14/78/ba1ef96078a0f4d92597e925d6fcbf7301c8bacec9bf3fdd2b09d6fc5224/rssfixer-0.0.3.tar.gz
+[2023-04-16 15:43:17] INFO root fetch - processPackages [robocorp-logging]: Downloading https://files.pythonhosted.org/packages/23/7d/a2ef7bf05b2f5ab90466d601aa93192475e307f0815240ff8115315b9491/robocorp_logging-0.0.8.tar.gz
+[2023-04-16 15:43:17] INFO root fetch - processPackages [dknovautils]: executing diffoscope
+[2023-04-16 15:43:17] INFO root fetch - processPackages [dknovautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dknovautils-0.0.20.tar.gz tmp/dknovautils-0.0.3.tar.gz --markdown 20230416/d/dknovautils/0.0.20-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 15:43:17] INFO root fetch - processPackages [robocorp-logging]: executing diffoscope
+[2023-04-16 15:43:17] INFO root fetch - processPackages [robocorp-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robocorp_logging-0.0.7.tar.gz tmp/robocorp_logging-0.0.8.tar.gz --markdown 20230416/r/robocorp-logging/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-16 15:43:17] INFO root fetch - processPackages [rssfixer]: executing diffoscope
+[2023-04-16 15:43:17] INFO root fetch - processPackages [rssfixer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rssfixer-0.0.2.tar.gz tmp/rssfixer-0.0.3.tar.gz --markdown 20230416/r/rssfixer/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-16 15:43:17] INFO root fetch - processPackages [fastapi-filter]: Downloading https://files.pythonhosted.org/packages/c9/b8/24667e23c49ac882f380d93e18a63ec6c8becd1d9288e42b712abce23a78/fastapi_filter-0.6.0.tar.gz
+[2023-04-16 15:43:17] INFO root fetch - processPackages [lumigo-core]: Downloading https://files.pythonhosted.org/packages/fd/b3/38b695d81b4c3be8e9da44bcaf36ce0937b663f1d64c4acaa6e25a66cde3/lumigo_core-0.0.6-py3-none-any.whl
+[2023-04-16 15:43:17] INFO root fetch - processPackages [caddo-file-parser]: Downloading https://files.pythonhosted.org/packages/63/5c/2a055af63ebfe11aaaf9599067084ff6af50dc44938fa54ec2cfc8df0198/caddo-file-parser-0.42.1.tar.gz
+[2023-04-16 15:43:17] INFO root fetch - processPackages [SqlalchemyMixin]: Downloading https://files.pythonhosted.org/packages/87/ac/029433bb3b014b81ae195d5de2dec105940e4a87992995f1bddc4572f09e/SqlalchemyMixin-0.0.9.tar.gz
+[2023-04-16 15:43:17] INFO root fetch - processPackages [fastapi-filter]: executing diffoscope
+[2023-04-16 15:43:17] INFO root fetch - processPackages [fastapi-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_filter-0.5.4.tar.gz tmp/fastapi_filter-0.6.0.tar.gz --markdown 20230416/f/fastapi-filter/0.5.4-0.6.0/diff.md --exclude *.pyd
+[2023-04-16 15:43:17] INFO root fetch - processPackages [caddo-file-parser]: executing diffoscope
+[2023-04-16 15:43:17] INFO root fetch - processPackages [caddo-file-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caddo-file-parser-0.41.1.tar.gz tmp/caddo-file-parser-0.42.1.tar.gz --markdown 20230416/c/caddo-file-parser/0.41.1-0.42.1/diff.md --exclude *.pyd
+[2023-04-16 15:43:17] INFO root fetch - processPackages [lumigo-core]: executing diffoscope
+[2023-04-16 15:43:17] INFO root fetch - processPackages [lumigo-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lumigo_core-0.0.5-py3-none-any.whl.zip tmp/lumigo_core-0.0.6-py3-none-any.whl.zip --markdown 20230416/l/lumigo-core/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-16 15:43:17] INFO root fetch - processPackages [SqlalchemyMixin]: executing diffoscope
+[2023-04-16 15:43:17] INFO root fetch - processPackages [SqlalchemyMixin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SqlalchemyMixin-0.0.8.tar.gz tmp/SqlalchemyMixin-0.0.9.tar.gz --markdown 20230416/S/SqlalchemyMixin/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 15:43:17] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 178486490>=10485760
+[2023-04-16 15:43:17] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2023-04-16 15:43:18] INFO root fetch - processPackages [frasa]: executing diffoscope
+[2023-04-16 15:43:18] INFO root fetch - processPackages [frasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frasa-0.1.50.tar.gz tmp/frasa-0.1.51.tar.gz --markdown 20230416/f/frasa/0.1.50-0.1.51/diff.md --exclude *.pyd
+[2023-04-16 15:43:18] INFO root fetch - main [MainThread]: End processing [dknovautils]: success
+[2023-04-16 15:43:18] INFO root fetch - main [MainThread]: End processing [rssfixer]: success
+[2023-04-16 15:43:18] INFO root fetch - main [MainThread]: End processing [robocorp-logging]: success
+[2023-04-16 15:43:18] INFO root fetch - main [MainThread]: End processing [fastapi-filter]: success
+[2023-04-16 15:43:19] INFO root fetch - main [MainThread]: End processing [SqlalchemyMixin]: success
+[2023-04-16 15:43:19] INFO root fetch - main [MainThread]: End processing [caddo-file-parser]: success
+[2023-04-16 15:43:19] INFO root fetch - main [MainThread]: End processing [lumigo-core]: success
+[2023-04-16 15:43:23] INFO root fetch - main [MainThread]: End processing [frasa]: success
+[2023-04-16 15:43:23] INFO root fetch - main [MainThread]: Store serial: [17727414]
