@@ -6779,3 +6779,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 12:02:02] INFO root fetch - main [MainThread]: End processing [pyinterpolate]: success
 [2023-04-16 12:02:11] INFO root fetch - main [MainThread]: End processing [mergeconfigs]: success
 [2023-04-16 12:02:11] INFO root fetch - main [MainThread]: Store serial: [17725861]
+[2023-04-16 12:07:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17725861]
+[2023-04-16 12:07:21] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 12:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-cheroot
+[2023-04-16 12:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: assisted-service-client
+[2023-04-16 12:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fenrircore
+[2023-04-16 12:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-spacy-redact-message
+[2023-04-16 12:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonGPT
+[2023-04-16 12:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nanoatp
+[2023-04-16 12:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: uke
+[2023-04-16 12:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: GrePT
+[2023-04-16 12:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: haki-crawler
+[2023-04-16 12:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: deebot-client
+[2023-04-16 12:07:21] WARNING root fetch - processPackages [django-cheroot]: Skipping, unable to determine old version
+[2023-04-16 12:07:21] INFO root fetch - main [MainThread]: End processing [django-cheroot] error
+[2023-04-16 12:07:21] INFO root fetch - processPackages [PythonGPT]: New version: [1.0] Old Version: [0.1]
+[2023-04-16 12:07:21] INFO root fetch - processPackages [fenrircore]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-16 12:07:21] INFO root fetch - processPackages [py-spacy-redact-message]: New version: [0.0.22] Old Version: [0.0.21]
+[2023-04-16 12:07:21] WARNING root fetch - processPackages [uke]: Skipping, unable to determine old version
+[2023-04-16 12:07:21] INFO root fetch - main [MainThread]: End processing [uke] error
+[2023-04-16 12:07:21] INFO root fetch - processPackages [GrePT]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-16 12:07:21] INFO root fetch - processPackages [nanoatp]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 12:07:21] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-04-16 12:07:21] WARNING root fetch - processPackages [haki-crawler]: Skipping, unable to determine old version
+[2023-04-16 12:07:21] INFO root fetch - main [MainThread]: End processing [haki-crawler] error
+[2023-04-16 12:07:21] INFO root fetch - processPackages [deebot-client]: New version: [2.0.0b1] Old Version: [1.6.1]
+[2023-04-16 12:07:21] INFO root fetch - processPackages [py-spacy-redact-message]: Downloading https://files.pythonhosted.org/packages/a0/bd/f8e3487f9ebebfd4b68824839933a7eb6e1a36e87829a130b48ecc07da85/py_spacy_redact_message-0.0.21.tar.gz
+[2023-04-16 12:07:21] INFO root fetch - processPackages [PythonGPT]: Downloading https://files.pythonhosted.org/packages/fd/93/8a7852982d5912c1519a8178cfba30f2cd77d17cf46db00d9dbe1ef6d9fb/PythonGPT-0.1.tar.gz
+[2023-04-16 12:07:21] INFO root fetch - processPackages [GrePT]: Downloading https://files.pythonhosted.org/packages/0a/03/e185a817fa6e55578f2e4c7b7d8d8d1cd5709caae8a0d03e237c866d4acb/GrePT-1.0.2.tar.gz
+[2023-04-16 12:07:21] INFO root fetch - processPackages [nanoatp]: Downloading https://files.pythonhosted.org/packages/71/01/bdfe62f580af57acda42d3245e3972705c89f290261c285928da9355bfcc/nanoatp-0.1.0.tar.gz
+[2023-04-16 12:07:21] INFO root fetch - processPackages [deebot-client]: Downloading https://files.pythonhosted.org/packages/c5/0a/8d544734b60d6a6dd0b68f317f0839106676d99682b022f9734732b177f4/deebot-client-1.6.1.tar.gz
+[2023-04-16 12:07:21] INFO root fetch - processPackages [py-spacy-redact-message]: Downloading https://files.pythonhosted.org/packages/12/ae/653dcd145ec6f6087c612c1d879df815ae651c4459095960a48585e3b4d5/py_spacy_redact_message-0.0.22.tar.gz
+[2023-04-16 12:07:21] INFO root fetch - processPackages [fenrircore]: Downloading https://files.pythonhosted.org/packages/0d/bd/3cb407ef6dda870cf17490b67a37533287fde8b151ce8a3d2727ff879f99/fenrircore-0.7.0.tar.gz
+[2023-04-16 12:07:21] INFO root fetch - processPackages [PythonGPT]: Downloading https://files.pythonhosted.org/packages/2a/af/e5b2f373fe8645c50ffd08353e20d86b77a20f8da754293a7d39968791c2/PythonGPT-1.0.tar.gz
+[2023-04-16 12:07:21] INFO root fetch - processPackages [py-spacy-redact-message]: executing diffoscope
+[2023-04-16 12:07:21] INFO root fetch - processPackages [py-spacy-redact-message]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_spacy_redact_message-0.0.21.tar.gz tmp/py_spacy_redact_message-0.0.22.tar.gz --markdown 20230416/p/py-spacy-redact-message/0.0.21-0.0.22/diff.md --exclude *.pyd
+[2023-04-16 12:07:21] INFO root fetch - processPackages [nanoatp]: Downloading https://files.pythonhosted.org/packages/e4/b6/f3b21c69958cf528360c65b13420b424f24216fcb876fafb0591bc964438/nanoatp-0.2.0.tar.gz
+[2023-04-16 12:07:21] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-04-16 12:07:21] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230416/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-04-16 12:07:21] INFO root fetch - processPackages [PythonGPT]: executing diffoscope
+[2023-04-16 12:07:21] INFO root fetch - processPackages [PythonGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PythonGPT-0.1.tar.gz tmp/PythonGPT-1.0.tar.gz --markdown 20230416/P/PythonGPT/0.1-1.0/diff.md --exclude *.pyd
+[2023-04-16 12:07:21] INFO root fetch - processPackages [GrePT]: Downloading https://files.pythonhosted.org/packages/3c/78/764bde18f9d22364a7bc58d3cb670ee94abc8f5c74790745e8b3c2f2ec34/GrePT-1.1.0.tar.gz
+[2023-04-16 12:07:21] INFO root fetch - processPackages [fenrircore]: executing diffoscope
+[2023-04-16 12:07:21] INFO root fetch - processPackages [fenrircore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fenrircore-0.6.0.tar.gz tmp/fenrircore-0.7.0.tar.gz --markdown 20230416/f/fenrircore/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-16 12:07:21] INFO root fetch - processPackages [nanoatp]: executing diffoscope
+[2023-04-16 12:07:21] INFO root fetch - processPackages [nanoatp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanoatp-0.1.0.tar.gz tmp/nanoatp-0.2.0.tar.gz --markdown 20230416/n/nanoatp/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 12:07:21] INFO root fetch - processPackages [deebot-client]: Downloading https://files.pythonhosted.org/packages/15/77/c246fda58b8dc7311c2003f7fbb0767f5cd5ea433977fb6bb7ddff6ee1d4/deebot-client-2.0.0b1.tar.gz
+[2023-04-16 12:07:21] INFO root fetch - processPackages [GrePT]: executing diffoscope
+[2023-04-16 12:07:21] INFO root fetch - processPackages [GrePT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GrePT-1.0.2.tar.gz tmp/GrePT-1.1.0.tar.gz --markdown 20230416/G/GrePT/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-16 12:07:22] INFO root fetch - processPackages [deebot-client]: executing diffoscope
+[2023-04-16 12:07:22] INFO root fetch - processPackages [deebot-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deebot-client-1.6.1.tar.gz tmp/deebot-client-2.0.0b1.tar.gz --markdown 20230416/d/deebot-client/1.6.1-2.0.0b1/diff.md --exclude *.pyd
+[2023-04-16 12:07:22] INFO root fetch - main [MainThread]: End processing [py-spacy-redact-message]: success
+[2023-04-16 12:07:22] INFO root fetch - main [MainThread]: End processing [PythonGPT]: success
+[2023-04-16 12:07:23] INFO root fetch - main [MainThread]: End processing [fenrircore]: success
+[2023-04-16 12:07:23] INFO root fetch - main [MainThread]: End processing [nanoatp]: success
+[2023-04-16 12:07:23] INFO root fetch - main [MainThread]: End processing [GrePT]: success
+[2023-04-16 12:07:23] INFO root fetch - main [MainThread]: End processing [deebot-client]: success
+[2023-04-16 12:07:25] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-04-16 12:07:25] INFO root fetch - main [MainThread]: Store serial: [17725900]
