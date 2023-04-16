@@ -10855,3 +10855,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 17:55:15] INFO root fetch - main [MainThread]: End processing [magyar]: success
 [2023-04-16 17:55:15] INFO root fetch - main [MainThread]: End processing [ipsocgen]: success
 [2023-04-16 17:55:15] INFO root fetch - main [MainThread]: Store serial: [17728267]
+[2023-04-16 18:00:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728267]
+[2023-04-16 18:00:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-16 18:00:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mini-python
+[2023-04-16 18:00:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: griptape-tools
+[2023-04-16 18:00:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rosbag-merge
+[2023-04-16 18:00:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: agentic
+[2023-04-16 18:00:24] WARNING root fetch - processPackages [agentic]: Skipping, unable to determine old version
+[2023-04-16 18:00:24] INFO root fetch - main [MainThread]: End processing [agentic] error
+[2023-04-16 18:00:24] INFO root fetch - processPackages [griptape-tools]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-16 18:00:24] INFO root fetch - processPackages [rosbag-merge]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 18:00:24] INFO root fetch - processPackages [mini-python]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-16 18:00:24] INFO root fetch - processPackages [mini-python]: Downloading https://files.pythonhosted.org/packages/bb/2f/f5db53fb4c4c1f5a2352d8289fc172214dea89a3343a289c60c132d57ee2/mini_python-0.1.4.tar.gz
+[2023-04-16 18:00:24] INFO root fetch - processPackages [rosbag-merge]: Downloading https://files.pythonhosted.org/packages/f2/c7/c852af519a0bf2d3335c7b613343460ca3cfe4051626d3c6b1a83176c44b/rosbag_merge-0.1.2.tar.gz
+[2023-04-16 18:00:24] INFO root fetch - processPackages [griptape-tools]: Downloading https://files.pythonhosted.org/packages/b9/1f/bf3a84dd26fa8bcc88142f5d1369f05bfb3be6a5e349ec124f4fa0441d48/griptape_tools-0.5.3.tar.gz
+[2023-04-16 18:00:24] INFO root fetch - processPackages [rosbag-merge]: executing diffoscope
+[2023-04-16 18:00:24] INFO root fetch - processPackages [rosbag-merge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rosbag_merge-0.1.1.tar.gz tmp/rosbag_merge-0.1.2.tar.gz --markdown 20230416/r/rosbag-merge/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 18:00:25] INFO root fetch - processPackages [griptape-tools]: executing diffoscope
+[2023-04-16 18:00:25] INFO root fetch - processPackages [griptape-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griptape_tools-0.5.2.tar.gz tmp/griptape_tools-0.5.3.tar.gz --markdown 20230416/g/griptape-tools/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-16 18:00:25] INFO root fetch - processPackages [mini-python]: Downloading https://files.pythonhosted.org/packages/e8/f3/e4b1c685771ead7accbed131c6abeaf51a8d3002773ec682d2dd88af506f/mini_python-0.1.5.tar.gz
+[2023-04-16 18:00:25] INFO root fetch - processPackages [mini-python]: executing diffoscope
+[2023-04-16 18:00:25] INFO root fetch - processPackages [mini-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mini_python-0.1.4.tar.gz tmp/mini_python-0.1.5.tar.gz --markdown 20230416/m/mini-python/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-16 18:00:26] INFO root fetch - main [MainThread]: End processing [rosbag-merge]: success
+[2023-04-16 18:00:26] INFO root fetch - main [MainThread]: End processing [mini-python]: success
+[2023-04-16 18:00:35] INFO root fetch - main [MainThread]: End processing [griptape-tools]: success
+[2023-04-16 18:00:35] INFO root fetch - main [MainThread]: Store serial: [17728280]
