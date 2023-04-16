@@ -12160,3 +12160,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 19:43:20] INFO root fetch - main [MainThread]: End processing [alnoda-wrk]: success
 [2023-04-16 19:43:39] INFO root fetch - main [MainThread]: End processing [paper-admin]: success
 [2023-04-16 19:43:39] INFO root fetch - main [MainThread]: Store serial: [17729107]
+[2023-04-16 19:48:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729107]
+[2023-04-16 19:48:48] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 19:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: github-rest-api
+[2023-04-16 19:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apple-reading-list-to-sqlite
+[2023-04-16 19:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cursesplus
+[2023-04-16 19:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apple-reading-list-to-sqlite
+[2023-04-16 19:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: always-updates
+[2023-04-16 19:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: packitos
+[2023-04-16 19:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sympytorch
+[2023-04-16 19:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: qtpy-frameless-window
+[2023-04-16 19:48:48] INFO root fetch - processPackages [github-rest-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-16 19:48:48] INFO root fetch - processPackages [apple-reading-list-to-sqlite]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-16 19:48:48] INFO root fetch - processPackages [apple-reading-list-to-sqlite]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-16 19:48:48] INFO root fetch - processPackages [cursesplus]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-04-16 19:48:48] INFO root fetch - processPackages [qtpy-frameless-window]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 19:48:48] INFO root fetch - processPackages [packitos]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-16 19:48:48] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-16 19:48:48] INFO root fetch - processPackages [sympytorch]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 19:48:48] INFO root fetch - processPackages [qtpy-frameless-window]: executing diffoscope
+[2023-04-16 19:48:48] INFO root fetch - processPackages [qtpy-frameless-window]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QtPy-Frameless-Window-0.0.8.tar.gz tmp/QtPy-Frameless-Window-0.0.9.tar.gz --markdown 20230416/q/qtpy-frameless-window/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 19:48:48] INFO root fetch - processPackages [apple-reading-list-to-sqlite]: Downloading https://files.pythonhosted.org/packages/52/42/17694b551ecc397e4fd2c5e100dd6f877ebc4cff1633b4b3771fd259a787/apple_reading_list_to_sqlite-0.2.1.tar.gz
+[2023-04-16 19:48:48] INFO root fetch - processPackages [apple-reading-list-to-sqlite]: Downloading https://files.pythonhosted.org/packages/52/42/17694b551ecc397e4fd2c5e100dd6f877ebc4cff1633b4b3771fd259a787/apple_reading_list_to_sqlite-0.2.1.tar.gz
+[2023-04-16 19:48:48] INFO root fetch - processPackages [always-updates]: Downloading https://files.pythonhosted.org/packages/5a/dc/f0b9cc3dcafc81b230cec909ee0b7d6229e97b28093d8f6f51c2ace8468b/always_updates-99.8.tar.gz
+[2023-04-16 19:48:48] INFO root fetch - processPackages [packitos]: Downloading https://files.pythonhosted.org/packages/5c/47/2093b9d071eeb261fd2535a9da0230896be1d2f7238b23d00da98a2f18ab/packitos-0.8.1.tar.gz
+[2023-04-16 19:48:48] INFO root fetch - processPackages [sympytorch]: Downloading https://files.pythonhosted.org/packages/00/33/da6e3db1c7d7feb30cb7e51ea703a79b7f8ce2d25d9eabbe91c39d1e176a/sympytorch-0.1.1.tar.gz
+[2023-04-16 19:48:48] INFO root fetch - processPackages [cursesplus]: Downloading https://files.pythonhosted.org/packages/d8/6f/dc25aa62b163b747e5571d06b9aa10de5af1c735e323866c7c11963c3816/cursesplus-2.0.3.tar.gz
+[2023-04-16 19:48:49] INFO root fetch - processPackages [github-rest-api]: executing diffoscope
+[2023-04-16 19:48:49] INFO root fetch - processPackages [github-rest-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_rest_api-0.8.0.tar.gz tmp/github_rest_api-0.9.0.tar.gz --markdown 20230416/g/github-rest-api/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 19:48:49] INFO root fetch - processPackages [cursesplus]: executing diffoscope
+[2023-04-16 19:48:49] INFO root fetch - processPackages [cursesplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cursesplus-2.0.2.tar.gz tmp/cursesplus-2.0.3.tar.gz --markdown 20230416/c/cursesplus/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-04-16 19:48:49] INFO root fetch - processPackages [apple-reading-list-to-sqlite]: Downloading https://files.pythonhosted.org/packages/81/19/a8ab4fabfd5abb157fb10efb5f999d67d7b37e00c721316c986e60b4b044/apple_reading_list_to_sqlite-0.2.2.tar.gz
+[2023-04-16 19:48:49] INFO root fetch - processPackages [apple-reading-list-to-sqlite]: Downloading https://files.pythonhosted.org/packages/81/19/a8ab4fabfd5abb157fb10efb5f999d67d7b37e00c721316c986e60b4b044/apple_reading_list_to_sqlite-0.2.2.tar.gz
+[2023-04-16 19:48:49] INFO root fetch - processPackages [sympytorch]: Downloading https://files.pythonhosted.org/packages/02/81/c5b3d37dc8868ae2c6082c4b77502dcb4fbb2079d5d90fada0edd1ccdf19/sympytorch-0.1.2.tar.gz
+[2023-04-16 19:48:49] INFO root fetch - processPackages [apple-reading-list-to-sqlite]: executing diffoscope
+[2023-04-16 19:48:49] INFO root fetch - processPackages [apple-reading-list-to-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apple_reading_list_to_sqlite-0.2.1.tar.gz tmp/apple_reading_list_to_sqlite-0.2.2.tar.gz --markdown 20230416/a/apple-reading-list-to-sqlite/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-16 19:48:49] INFO root fetch - processPackages [apple-reading-list-to-sqlite]: executing diffoscope
+[2023-04-16 19:48:49] INFO root fetch - processPackages [apple-reading-list-to-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apple_reading_list_to_sqlite-0.2.1.tar.gz tmp/apple_reading_list_to_sqlite-0.2.2.tar.gz --markdown 20230416/a/apple-reading-list-to-sqlite/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-16 19:48:49] INFO root fetch - processPackages [always-updates]: Downloading https://files.pythonhosted.org/packages/b1/bd/641679b0c9c7b7c15f7084f8215f70f9189c0f4efd5633e45fe0a7f33ba5/always_updates-99.9.tar.gz
+[2023-04-16 19:48:49] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-16 19:48:49] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230416/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-16 19:48:49] INFO root fetch - processPackages [sympytorch]: executing diffoscope
+[2023-04-16 19:48:49] INFO root fetch - processPackages [sympytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sympytorch-0.1.1.tar.gz tmp/sympytorch-0.1.2.tar.gz --markdown 20230416/s/sympytorch/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 19:48:50] INFO root fetch - main [MainThread]: End processing [cursesplus]: success
+[2023-04-16 19:48:50] INFO root fetch - main [MainThread]: End processing [github-rest-api]: success
+[2023-04-16 19:48:50] INFO root fetch - main [MainThread]: End processing [apple-reading-list-to-sqlite]: success
+[2023-04-16 19:48:50] INFO root fetch - processPackages [packitos]: Downloading https://files.pythonhosted.org/packages/6a/56/790e643af99b402baa93360e3fa6d152247c44a8a1c76ced1f6d099107ab/packitos-0.9.0.tar.gz
+[2023-04-16 19:48:50] INFO root fetch - main [MainThread]: End processing [apple-reading-list-to-sqlite]: success
+[2023-04-16 19:48:50] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-04-16 19:48:50] INFO root fetch - main [MainThread]: End processing [qtpy-frameless-window]: success
+[2023-04-16 19:48:50] INFO root fetch - main [MainThread]: End processing [sympytorch]: success
+[2023-04-16 19:48:51] INFO root fetch - processPackages [packitos]: executing diffoscope
+[2023-04-16 19:48:51] INFO root fetch - processPackages [packitos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packitos-0.8.1.tar.gz tmp/packitos-0.9.0.tar.gz --markdown 20230416/p/packitos/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-16 19:48:54] INFO root fetch - main [MainThread]: End processing [packitos]: success
+[2023-04-16 19:48:54] INFO root fetch - main [MainThread]: Store serial: [17729133]
