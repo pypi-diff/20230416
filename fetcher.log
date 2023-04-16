@@ -9944,3 +9944,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 16:25:45] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
 [2023-04-16 16:26:21] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-04-16 16:26:21] INFO root fetch - main [MainThread]: Store serial: [17727729]
+[2023-04-16 16:31:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727729]
+[2023-04-16 16:31:32] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 16:31:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynamer
+[2023-04-16 16:31:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PGAPy
+[2023-04-16 16:31:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: calendar-widget
+[2023-04-16 16:31:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: strplus
+[2023-04-16 16:31:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: EdgeGPT
+[2023-04-16 16:31:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spiderYa
+[2023-04-16 16:31:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-simplewebsite-deploy
+[2023-04-16 16:31:32] INFO root fetch - processPackages [PGAPy]: New version: [2.2.1] Old Version: [2.2]
+[2023-04-16 16:31:32] INFO root fetch - processPackages [spiderYa]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 16:31:32] WARNING root fetch - processPackages [pynamer]: Skipping, unable to determine old version
+[2023-04-16 16:31:32] INFO root fetch - main [MainThread]: End processing [pynamer] error
+[2023-04-16 16:31:32] INFO root fetch - processPackages [calendar-widget]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-16 16:31:32] INFO root fetch - processPackages [strplus]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-16 16:31:32] INFO root fetch - processPackages [EdgeGPT]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 16:31:32] INFO root fetch - processPackages [cdk-simplewebsite-deploy]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-16 16:31:32] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-04-16 16:31:32] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.1.8.tar.gz tmp/EdgeGPT-0.1.9.tar.gz --markdown 20230416/E/EdgeGPT/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 16:31:32] INFO root fetch - processPackages [spiderYa]: executing diffoscope
+[2023-04-16 16:31:32] INFO root fetch - processPackages [spiderYa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderYa-0.0.8.tar.gz tmp/spiderYa-0.0.9.tar.gz --markdown 20230416/s/spiderYa/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 16:31:32] INFO root fetch - processPackages [calendar-widget]: Downloading https://files.pythonhosted.org/packages/a7/11/fe383057a72b8506a0b7790f937cb43fee9dc4acb24dbf88ba92f5429372/calendar_widget-1.0.0.tar.gz
+[2023-04-16 16:31:32] INFO root fetch - processPackages [PGAPy]: Downloading https://files.pythonhosted.org/packages/6f/67/cea582fc024d08dc668d0f54f6e24d423deebf512b031a366a58e3c2a3e4/PGAPy-2.2.tar.gz
+[2023-04-16 16:31:32] INFO root fetch - processPackages [cdk-simplewebsite-deploy]: Downloading https://files.pythonhosted.org/packages/02/09/509568941e2977294b6ec9c2c0e2cac9e1ce7100d236a2d2edb7092f92f6/cdk-simplewebsite-deploy-2.0.8.tar.gz
+[2023-04-16 16:31:32] INFO root fetch - processPackages [strplus]: Downloading https://files.pythonhosted.org/packages/7f/c2/518cbbad049f4f2b5a01d3b8ffd849ca5c6f2cc24329ecc2f037c578ebfb/strplus-0.0.8.tar.gz
+[2023-04-16 16:31:32] INFO root fetch - processPackages [PGAPy]: Downloading https://files.pythonhosted.org/packages/a3/db/d5b0328f39d191431494ca5d7de43617fae73509a35aea55f1273b43dc09/PGAPy-2.2.1.tar.gz
+[2023-04-16 16:31:32] INFO root fetch - processPackages [calendar-widget]: Downloading https://files.pythonhosted.org/packages/40/d0/20ccff16bd30593799d2412fc7cde44cdef9f7d238869d76c2f36b842169/calendar_widget-1.0.1.tar.gz
+[2023-04-16 16:31:32] INFO root fetch - processPackages [strplus]: executing diffoscope
+[2023-04-16 16:31:32] INFO root fetch - processPackages [strplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strplus-0.0.7.tar.gz tmp/strplus-0.0.8.tar.gz --markdown 20230416/s/strplus/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-16 16:31:32] INFO root fetch - processPackages [cdk-simplewebsite-deploy]: Downloading https://files.pythonhosted.org/packages/a5/35/77391fb27067de60169cb289bd2577928fdd4a47f364673fe38812583ee9/cdk-simplewebsite-deploy-2.0.9.tar.gz
+[2023-04-16 16:31:32] INFO root fetch - processPackages [calendar-widget]: executing diffoscope
+[2023-04-16 16:31:32] INFO root fetch - processPackages [calendar-widget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calendar_widget-1.0.0.tar.gz tmp/calendar_widget-1.0.1.tar.gz --markdown 20230416/c/calendar-widget/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-16 16:31:32] INFO root fetch - processPackages [PGAPy]: executing diffoscope
+[2023-04-16 16:31:32] INFO root fetch - processPackages [PGAPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PGAPy-2.2.tar.gz tmp/PGAPy-2.2.1.tar.gz --markdown 20230416/P/PGAPy/2.2-2.2.1/diff.md --exclude *.pyd
+[2023-04-16 16:31:33] INFO root fetch - processPackages [cdk-simplewebsite-deploy]: executing diffoscope
+[2023-04-16 16:31:33] INFO root fetch - processPackages [cdk-simplewebsite-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-simplewebsite-deploy-2.0.8.tar.gz tmp/cdk-simplewebsite-deploy-2.0.9.tar.gz --markdown 20230416/c/cdk-simplewebsite-deploy/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-16 16:31:33] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-04-16 16:31:33] INFO root fetch - main [MainThread]: End processing [strplus]: success
+[2023-04-16 16:31:33] INFO root fetch - main [MainThread]: End processing [calendar-widget]: success
+[2023-04-16 16:31:34] INFO root fetch - main [MainThread]: End processing [cdk-simplewebsite-deploy]: success
+[2023-04-16 16:31:35] INFO root fetch - main [MainThread]: End processing [PGAPy]: success
+[2023-04-16 16:31:35] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
+[2023-04-16 16:31:35] INFO root fetch - main [MainThread]: Store serial: [17727751]
