@@ -10926,3 +10926,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 18:05:49] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
 [2023-04-16 18:05:57] INFO root fetch - main [MainThread]: End processing [doji-core]: success
 [2023-04-16 18:05:57] INFO root fetch - main [MainThread]: Store serial: [17728306]
+[2023-04-16 18:11:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728306]
+[2023-04-16 18:11:06] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 18:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aa-discord-announcements
+[2023-04-16 18:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pySAR
+[2023-04-16 18:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: turbo-docs
+[2023-04-16 18:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ml-botting-core
+[2023-04-16 18:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mfrc522-python
+[2023-04-16 18:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: paella
+[2023-04-16 18:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pams
+[2023-04-16 18:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: webssh-embedded
+[2023-04-16 18:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mini-chini
+[2023-04-16 18:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: leuci-xyz
+[2023-04-16 18:11:06] WARNING root fetch - processPackages [ml-botting-core]: Skipping, unable to determine old version
+[2023-04-16 18:11:06] INFO root fetch - main [MainThread]: End processing [ml-botting-core] error
+[2023-04-16 18:11:06] WARNING root fetch - processPackages [paella]: Skipping, unable to determine old version
+[2023-04-16 18:11:06] INFO root fetch - main [MainThread]: End processing [paella] error
+[2023-04-16 18:11:06] INFO root fetch - processPackages [pySAR]: New version: [2.3.4] Old Version: [2.3.3]
+[2023-04-16 18:11:06] INFO root fetch - processPackages [aa-discord-announcements]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-16 18:11:06] INFO root fetch - processPackages [mfrc522-python]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 18:11:06] INFO root fetch - processPackages [pams]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 18:11:06] INFO root fetch - processPackages [webssh-embedded]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-16 18:11:06] INFO root fetch - processPackages [turbo-docs]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-04-16 18:11:06] WARNING root fetch - processPackages [mini-chini]: Skipping, unable to determine old version
+[2023-04-16 18:11:06] INFO root fetch - main [MainThread]: End processing [mini-chini] error
+[2023-04-16 18:11:06] INFO root fetch - processPackages [leuci-xyz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 18:11:06] INFO root fetch - processPackages [pams]: Downloading https://files.pythonhosted.org/packages/00/ec/c8a803f62df9fab9507e4d155c4618e91ac0c9a6aaacf96986d242de6e29/pams-0.0.8.tar.gz
+[2023-04-16 18:11:06] INFO root fetch - processPackages [pySAR]: Downloading https://files.pythonhosted.org/packages/e5/2a/2e5d1bdb7dc53c09df5f9be1d7c7fba6365061944045d87c90cc6f09c982/pySAR-2.3.3.tar.gz
+[2023-04-16 18:11:06] INFO root fetch - processPackages [mfrc522-python]: Downloading https://files.pythonhosted.org/packages/b6/d0/03e713b39c20e9036b07fae8e79b9749e8c04a4f7b82eefb2a7d4e55a2d0/mfrc522-python-0.0.1.tar.gz
+[2023-04-16 18:11:06] INFO root fetch - processPackages [turbo-docs]: Downloading https://files.pythonhosted.org/packages/4f/4f/183ca907a38766a6d42cebb42795b40efc9ca0915dc2fe6663f99a7ede68/turbo_docs-0.6.5.tar.gz
+[2023-04-16 18:11:06] INFO root fetch - processPackages [leuci-xyz]: Downloading https://files.pythonhosted.org/packages/eb/10/d9eee7a355b8ae704f58b8ac47ea3834448ba0ed26fef0f4a323f85a71ff/leuci-xyz-0.0.8.tar.gz
+[2023-04-16 18:11:06] INFO root fetch - processPackages [turbo-docs]: executing diffoscope
+[2023-04-16 18:11:06] INFO root fetch - processPackages [turbo-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbo_docs-0.6.4.tar.gz tmp/turbo_docs-0.6.5.tar.gz --markdown 20230416/t/turbo-docs/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-04-16 18:11:06] INFO root fetch - processPackages [webssh-embedded]: Downloading https://files.pythonhosted.org/packages/64/5b/da74c8a97297d1a2b515c13ca98fd3d10731a44893af61d06a55fbd181ef/webssh_embedded-1.0.4.tar.gz
+[2023-04-16 18:11:06] INFO root fetch - processPackages [aa-discord-announcements]: Downloading https://files.pythonhosted.org/packages/13/e5/6338c05c9ac1454f284335d2c4b338cf99a4874131fad2dfc332f99174da/aa_discord_announcements-1.1.0.tar.gz
+[2023-04-16 18:11:06] INFO root fetch - processPackages [aa-discord-announcements]: executing diffoscope
+[2023-04-16 18:11:06] INFO root fetch - processPackages [aa-discord-announcements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_discord_announcements-1.0.0.tar.gz tmp/aa_discord_announcements-1.1.0.tar.gz --markdown 20230416/a/aa-discord-announcements/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-16 18:11:06] INFO root fetch - processPackages [webssh-embedded]: executing diffoscope
+[2023-04-16 18:11:06] INFO root fetch - processPackages [webssh-embedded]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webssh_embedded-1.0.3.tar.gz tmp/webssh_embedded-1.0.4.tar.gz --markdown 20230416/w/webssh-embedded/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-16 18:11:06] INFO root fetch - processPackages [mfrc522-python]: Downloading https://files.pythonhosted.org/packages/a4/09/e5e81a841978a84506ff16d6e3ae1c4d57e4a12dc6fbfde77d11176abcad/mfrc522-python-0.0.2.tar.gz
+[2023-04-16 18:11:06] INFO root fetch - processPackages [pySAR]: Downloading https://files.pythonhosted.org/packages/84/8a/91ab71cc6f30f9160c6a81371ea8ccc686953ee6432f360c4eaadf351d1e/pySAR-2.3.4.tar.gz
+[2023-04-16 18:11:06] INFO root fetch - processPackages [pySAR]: executing diffoscope
+[2023-04-16 18:11:06] INFO root fetch - processPackages [pySAR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pySAR-2.3.3.tar.gz tmp/pySAR-2.3.4.tar.gz --markdown 20230416/p/pySAR/2.3.3-2.3.4/diff.md --exclude *.pyd
+[2023-04-16 18:11:06] INFO root fetch - processPackages [leuci-xyz]: Downloading https://files.pythonhosted.org/packages/49/e6/d2f3f483b024d52c15669628ff1c665f3c1b583ee1b375f3d0f4670aa662/leuci-xyz-0.0.9.tar.gz
+[2023-04-16 18:11:07] INFO root fetch - processPackages [mfrc522-python]: executing diffoscope
+[2023-04-16 18:11:07] INFO root fetch - processPackages [mfrc522-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mfrc522-python-0.0.1.tar.gz tmp/mfrc522-python-0.0.2.tar.gz --markdown 20230416/m/mfrc522-python/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 18:11:07] INFO root fetch - processPackages [leuci-xyz]: executing diffoscope
+[2023-04-16 18:11:07] INFO root fetch - processPackages [leuci-xyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-xyz-0.0.8.tar.gz tmp/leuci-xyz-0.0.9.tar.gz --markdown 20230416/l/leuci-xyz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 18:11:07] INFO root fetch - processPackages [pams]: Downloading https://files.pythonhosted.org/packages/1d/7e/11b270abe9234d1de5008e1d091e4a3d21feb230a6ea54b19997dcbbd366/pams-0.0.9.tar.gz
+[2023-04-16 18:11:07] INFO root fetch - processPackages [pams]: executing diffoscope
+[2023-04-16 18:11:07] INFO root fetch - processPackages [pams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pams-0.0.8.tar.gz tmp/pams-0.0.9.tar.gz --markdown 20230416/p/pams/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 18:11:07] INFO root fetch - main [MainThread]: End processing [turbo-docs]: success
+[2023-04-16 18:11:08] INFO root fetch - main [MainThread]: End processing [mfrc522-python]: success
+[2023-04-16 18:11:08] INFO root fetch - main [MainThread]: End processing [webssh-embedded]: success
+[2023-04-16 18:11:08] INFO root fetch - main [MainThread]: End processing [pySAR]: success
+[2023-04-16 18:11:08] INFO root fetch - main [MainThread]: End processing [leuci-xyz]: success
+[2023-04-16 18:11:08] INFO root fetch - main [MainThread]: End processing [pams]: success
+[2023-04-16 18:11:08] INFO root fetch - main [MainThread]: End processing [aa-discord-announcements]: success
+[2023-04-16 18:11:08] INFO root fetch - main [MainThread]: Store serial: [17728344]
