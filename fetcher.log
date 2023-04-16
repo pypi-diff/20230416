@@ -9304,3 +9304,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 15:32:38] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
 [2023-04-16 15:32:44] INFO root fetch - main [MainThread]: End processing [fastestimator-nightly]: success
 [2023-04-16 15:32:44] INFO root fetch - main [MainThread]: Store serial: [17727343]
+[2023-04-16 15:37:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727343]
+[2023-04-16 15:37:54] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 15:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cupcake
+[2023-04-16 15:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-blive-danmaku
+[2023-04-16 15:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xdat
+[2023-04-16 15:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tremolo
+[2023-04-16 15:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spiderYa
+[2023-04-16 15:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: auraboros
+[2023-04-16 15:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gptroles
+[2023-04-16 15:37:54] INFO root fetch - processPackages [cupcake]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-16 15:37:54] INFO root fetch - processPackages [spiderYa]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 15:37:54] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-16 15:37:54] INFO root fetch - processPackages [tremolo]: New version: [0.0.83] Old Version: [0.0.82]
+[2023-04-16 15:37:54] INFO root fetch - processPackages [xdat]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-16 15:37:54] INFO root fetch - processPackages [auraboros]: New version: [0.9.0a0] Old Version: [0.8.0a0]
+[2023-04-16 15:37:54] INFO root fetch - processPackages [gptroles]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-16 15:37:54] INFO root fetch - processPackages [spiderYa]: executing diffoscope
+[2023-04-16 15:37:54] INFO root fetch - processPackages [spiderYa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderYa-0.0.8.tar.gz tmp/spiderYa-0.0.9.tar.gz --markdown 20230416/s/spiderYa/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 15:37:54] INFO root fetch - processPackages [auraboros]: executing diffoscope
+[2023-04-16 15:37:54] INFO root fetch - processPackages [cupcake]: Downloading https://files.pythonhosted.org/packages/53/01/18648ce8f53cbf630c4d4f591445079f1f5a29d9a3c5fd6d78f0a2ff6ce0/cupcake-0.1.2.tar.gz
+[2023-04-16 15:37:54] INFO root fetch - processPackages [auraboros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auraboros-0.8.0a0.tar.gz tmp/auraboros-0.9.0a0.tar.gz --markdown 20230416/a/auraboros/0.8.0a0-0.9.0a0/diff.md --exclude *.pyd
+[2023-04-16 15:37:54] INFO root fetch - processPackages [xdat]: Downloading https://files.pythonhosted.org/packages/1f/59/50979d7bd38d3b54ebda88cfebaad892786056349707120dd15b0f3ac4a6/xdat-0.1.98.tar.gz
+[2023-04-16 15:37:54] INFO root fetch - processPackages [gptroles]: Downloading https://files.pythonhosted.org/packages/94/8f/ca28a08c47c97b9ad0043fd24c2c3c80d11d8f07b47504b8f541ca234442/gptroles-0.1.3.tar.gz
+[2023-04-16 15:37:54] INFO root fetch - processPackages [tremolo]: Downloading https://files.pythonhosted.org/packages/88/6e/924569921d703cfc9c7e303de5ad8ba35f2b54f4ec269e45758a0605d827/tremolo-0.0.83.tar.gz
+[2023-04-16 15:37:54] INFO root fetch - processPackages [tremolo]: executing diffoscope
+[2023-04-16 15:37:54] INFO root fetch - processPackages [tremolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tremolo-0.0.82.tar.gz tmp/tremolo-0.0.83.tar.gz --markdown 20230416/t/tremolo/0.0.82-0.0.83/diff.md --exclude *.pyd
+[2023-04-16 15:37:54] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: Downloading https://files.pythonhosted.org/packages/eb/f7/6c25af19b7a16ac356ed9c7eb243fa8f961438de91e912df49d461aa8b07/nonebot_plugin_blive_danmaku-0.2.3.tar.gz
+[2023-04-16 15:37:54] INFO root fetch - processPackages [xdat]: Downloading https://files.pythonhosted.org/packages/00/b5/44d6ceebadb7e9f19552d1b65fe724db78a16ae9e19ae608960562ff5d39/xdat-0.1.99.tar.gz
+[2023-04-16 15:37:54] INFO root fetch - processPackages [cupcake]: Downloading https://files.pythonhosted.org/packages/69/d0/d63d456a7eabd28c94462838075fc664ac33aaea659e6818d2076006a01e/cupcake-0.1.3.tar.gz
+[2023-04-16 15:37:55] INFO root fetch - processPackages [cupcake]: executing diffoscope
+[2023-04-16 15:37:55] INFO root fetch - processPackages [cupcake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cupcake-0.1.2.tar.gz tmp/cupcake-0.1.3.tar.gz --markdown 20230416/c/cupcake/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-16 15:37:55] INFO root fetch - processPackages [xdat]: executing diffoscope
+[2023-04-16 15:37:55] INFO root fetch - processPackages [xdat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xdat-0.1.98.tar.gz tmp/xdat-0.1.99.tar.gz --markdown 20230416/x/xdat/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-16 15:37:55] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: Downloading https://files.pythonhosted.org/packages/e5/f5/0f5b9442b0497d8689114214769fb4414a92e811d7348ab4c8a7963a11c1/nonebot_plugin_blive_danmaku-0.2.4.tar.gz
+[2023-04-16 15:37:55] INFO root fetch - processPackages [gptroles]: Downloading https://files.pythonhosted.org/packages/df/6a/b0de03a66dd48435666ac9a403a38e7e5ef5bd0a0f9a40aa01684cedbc1c/gptroles-0.1.4.tar.gz
+[2023-04-16 15:37:55] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: executing diffoscope
+[2023-04-16 15:37:55] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_blive_danmaku-0.2.3.tar.gz tmp/nonebot_plugin_blive_danmaku-0.2.4.tar.gz --markdown 20230416/n/nonebot-plugin-blive-danmaku/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-16 15:37:55] INFO root fetch - processPackages [gptroles]: executing diffoscope
+[2023-04-16 15:37:55] INFO root fetch - processPackages [gptroles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptroles-0.1.3.tar.gz tmp/gptroles-0.1.4.tar.gz --markdown 20230416/g/gptroles/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-16 15:37:56] INFO root fetch - main [MainThread]: End processing [cupcake]: success
+[2023-04-16 15:37:56] INFO root fetch - main [MainThread]: End processing [tremolo]: success
+[2023-04-16 15:37:56] INFO root fetch - main [MainThread]: End processing [xdat]: success
+[2023-04-16 15:37:57] INFO root fetch - main [MainThread]: End processing [auraboros]: success
+[2023-04-16 15:38:00] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
+[2023-04-16 15:38:01] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-blive-danmaku]: success
+[2023-04-16 15:38:06] INFO root fetch - main [MainThread]: End processing [gptroles]: success
+[2023-04-16 15:38:06] INFO root fetch - main [MainThread]: Store serial: [17727382]
