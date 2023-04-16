@@ -12883,3 +12883,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 21:03:03] INFO root fetch - main [MainThread]: End processing [webslides]: success
 [2023-04-16 21:03:03] INFO root fetch - main [MainThread]: End processing [sdkite]: success
 [2023-04-16 21:03:03] INFO root fetch - main [MainThread]: Store serial: [17729504]
+[2023-04-16 21:08:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729504]
+[2023-04-16 21:08:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 21:08:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sunnyday-IZPy
+[2023-04-16 21:08:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: acro
+[2023-04-16 21:08:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ansible-variables
+[2023-04-16 21:08:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiogram-ext
+[2023-04-16 21:08:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: seleniumuser
+[2023-04-16 21:08:12] INFO root fetch - processPackages [sunnyday-IZPy]: New version: [2.0.0] Old Version: [1.0.0]
+[2023-04-16 21:08:12] INFO root fetch - processPackages [acro]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-16 21:08:12] INFO root fetch - processPackages [seleniumuser]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-16 21:08:12] INFO root fetch - processPackages [aiogram-ext]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 21:08:12] INFO root fetch - processPackages [ansible-variables]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-16 21:08:12] INFO root fetch - processPackages [acro]: Downloading https://files.pythonhosted.org/packages/6c/dc/c99868ee032f9bcff20eecd355958cb29d31de064f193530bee2b3044d2b/acro-0.0.5.tar.gz
+[2023-04-16 21:08:12] INFO root fetch - processPackages [sunnyday-IZPy]: Downloading https://files.pythonhosted.org/packages/5c/62/3d79523cc09c2df5c046c8aef6668e5f842c36ebd5c3b8831ce069501e85/sunnyday-IZPy-1.0.0.tar.gz
+[2023-04-16 21:08:12] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-16 21:08:12] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.0.8.tar.gz tmp/aiogram-ext-0.0.9.tar.gz --markdown 20230416/a/aiogram-ext/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 21:08:12] INFO root fetch - processPackages [seleniumuser]: Downloading https://files.pythonhosted.org/packages/31/f1/f4a6897d07238948f9e8117638cbfd5b3151300313e18db5c5e5ff79b01a/seleniumuser-1.1.0.tar.gz
+[2023-04-16 21:08:12] INFO root fetch - processPackages [ansible-variables]: Downloading https://files.pythonhosted.org/packages/27/47/883482359da9f0f96d207dc874d1119b1da69d5fa84f0923998a95bf05ee/ansible-variables-0.4.1.tar.gz
+[2023-04-16 21:08:13] INFO root fetch - processPackages [sunnyday-IZPy]: Downloading https://files.pythonhosted.org/packages/33/94/92fb7f33390cb8f7a75a2c78d7768ee78288e999ba06805cd7ebf2276d8a/sunnyday-IZPy-2.0.0.tar.gz
+[2023-04-16 21:08:13] INFO root fetch - processPackages [acro]: Downloading https://files.pythonhosted.org/packages/7b/9d/b37fea3fe0c613b85c3feaa0150da0025c68ea96a4d8dd0d87f09e415155/acro-0.0.6.tar.gz
+[2023-04-16 21:08:13] INFO root fetch - processPackages [ansible-variables]: executing diffoscope
+[2023-04-16 21:08:13] INFO root fetch - processPackages [ansible-variables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible-variables-0.4.0.tar.gz tmp/ansible-variables-0.4.1.tar.gz --markdown 20230416/a/ansible-variables/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-16 21:08:13] INFO root fetch - processPackages [seleniumuser]: Downloading https://files.pythonhosted.org/packages/28/80/393a597fe8e7845187b7fc3cabc703dcd53034bd6663076bc81fcb47356c/seleniumuser-1.1.1.tar.gz
+[2023-04-16 21:08:13] INFO root fetch - processPackages [sunnyday-IZPy]: executing diffoscope
+[2023-04-16 21:08:13] INFO root fetch - processPackages [acro]: executing diffoscope
+[2023-04-16 21:08:13] INFO root fetch - processPackages [sunnyday-IZPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunnyday-IZPy-1.0.0.tar.gz tmp/sunnyday-IZPy-2.0.0.tar.gz --markdown 20230416/s/sunnyday-IZPy/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-16 21:08:13] INFO root fetch - processPackages [acro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acro-0.0.5.tar.gz tmp/acro-0.0.6.tar.gz --markdown 20230416/a/acro/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-16 21:08:13] INFO root fetch - processPackages [seleniumuser]: executing diffoscope
+[2023-04-16 21:08:13] INFO root fetch - processPackages [seleniumuser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seleniumuser-1.1.0.tar.gz tmp/seleniumuser-1.1.1.tar.gz --markdown 20230416/s/seleniumuser/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-16 21:08:14] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-16 21:08:14] INFO root fetch - main [MainThread]: End processing [ansible-variables]: success
+[2023-04-16 21:08:14] INFO root fetch - main [MainThread]: End processing [acro]: success
+[2023-04-16 21:08:14] INFO root fetch - main [MainThread]: End processing [sunnyday-IZPy]: success
+[2023-04-16 21:08:14] INFO root fetch - main [MainThread]: End processing [seleniumuser]: success
+[2023-04-16 21:08:14] INFO root fetch - main [MainThread]: Store serial: [17729518]
