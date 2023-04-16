@@ -7981,3 +7981,86 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 14:18:24] INFO root fetch - main [MainThread]: End processing [aiogram-dialog]: success
 [2023-04-16 14:18:24] INFO root fetch - main [MainThread]: End processing [auraboros]: success
 [2023-04-16 14:18:24] INFO root fetch - main [MainThread]: Store serial: [17726612]
+[2023-04-16 14:23:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726612]
+[2023-04-16 14:23:33] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-16 14:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfollower
+[2023-04-16 14:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: image-reward
+[2023-04-16 14:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: erscipcard
+[2023-04-16 14:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: katalytic-data
+[2023-04-16 14:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: copied
+[2023-04-16 14:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: huddu
+[2023-04-16 14:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rp2040-pio-emulator
+[2023-04-16 14:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: randgenlib
+[2023-04-16 14:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: robotic
+[2023-04-16 14:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bunnynet
+[2023-04-16 14:23:33] INFO root fetch - processPackages [pyfollower]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 14:23:33] INFO root fetch - processPackages [erscipcard]: New version: [1.17.4] Old Version: [1.17.2]
+[2023-04-16 14:23:33] INFO root fetch - processPackages [image-reward]: New version: [0.993] Old Version: [0.992]
+[2023-04-16 14:23:33] INFO root fetch - processPackages [katalytic-data]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-16 14:23:33] WARNING root fetch - processPackages [copied]: Skipping, unable to determine old version
+[2023-04-16 14:23:33] INFO root fetch - processPackages [copied]: Start processing: scriv
+[2023-04-16 14:23:33] INFO root fetch - main [MainThread]: End processing [copied] error
+[2023-04-16 14:23:33] INFO root fetch - processPackages [huddu]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-16 14:23:33] INFO root fetch - processPackages [robotic]: New version: [0.0b2] Old Version: [0.0a2]
+[2023-04-16 14:23:33] INFO root fetch - processPackages [randgenlib]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-16 14:23:33] INFO root fetch - processPackages [bunnynet]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-16 14:23:33] INFO root fetch - processPackages [rp2040-pio-emulator]: New version: [0.80.0] Old Version: [0.79.0]
+[2023-04-16 14:23:33] INFO root fetch - processPackages [scriv]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-04-16 14:23:33] INFO root fetch - processPackages [huddu]: Downloading https://files.pythonhosted.org/packages/19/eb/8595ab82d1a819e1c46d0a81fa10b2e8ff3ef807ca504b93a87f9cc6e64c/huddu-1.1.8.tar.gz
+[2023-04-16 14:23:33] INFO root fetch - processPackages [erscipcard]: Downloading https://files.pythonhosted.org/packages/2e/0c/48035ee267e894b341bb1fdd86fb55cd8266d8b2b3e7a53b8ac8d3dbd682/erscipcard-1.17.2.tar.gz
+[2023-04-16 14:23:33] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/50/c0/ccb06ac83fad75ef2453aa2101c17d2ba26c74acf6eed5b8f4a06c836b38/image-reward-0.993.tar.gz
+[2023-04-16 14:23:33] INFO root fetch - processPackages [bunnynet]: Downloading https://files.pythonhosted.org/packages/3b/54/23cc8536a5086c73a9c43dc7639d3e3d8c4a35fd108239d257006fb66b36/bunnynet-0.3.0.tar.gz
+[2023-04-16 14:23:33] INFO root fetch - processPackages [katalytic-data]: Downloading https://files.pythonhosted.org/packages/94/a8/630c19be0afa0ab46a81355359cfbb4212a74b45ad7b2bd03d401986db27/katalytic-data-0.2.0.tar.gz
+[2023-04-16 14:23:33] INFO root fetch - processPackages [pyfollower]: Downloading https://files.pythonhosted.org/packages/b5/0e/778822e99b1c278e21132a9917a4531090aebee66df98093f7163b0bfe21/pyfollower-0.1.2.tar.gz
+[2023-04-16 14:23:33] INFO root fetch - processPackages [robotic]: Downloading https://files.pythonhosted.org/packages/9b/4b/6e91a78156f6e4390d4e286d7e1b58222ec3fbdf60abe560752f1778f462/robotic-0.0a2-cp37-cp37m-manylinux2010_x86_64.whl
+[2023-04-16 14:23:33] INFO root fetch - processPackages [rp2040-pio-emulator]: Downloading https://files.pythonhosted.org/packages/93/dc/6356696af45cf712d9835b1058ab6edb8ea2b523979616e23b405cc3adc9/rp2040_pio_emulator-0.79.0-1-py3-none-any.whl
+[2023-04-16 14:23:33] INFO root fetch - processPackages [scriv]: Downloading https://files.pythonhosted.org/packages/79/8d/d0070d8d92ee89943f077b8fe4a17b7f8ed70b740f9084915d09c49ba011/scriv-1.2.1.tar.gz
+[2023-04-16 14:23:33] INFO root fetch - processPackages [randgenlib]: Downloading https://files.pythonhosted.org/packages/9c/bc/1f7f176bcc1c0520e21594c7bfbbf708e645c16d7b0b4bd8c672f71f7144/randgenlib-1.0.3.tar.gz
+[2023-04-16 14:23:33] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-16 14:23:33] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-0.992.tar.gz tmp/image-reward-0.993.tar.gz --markdown 20230416/i/image-reward/0.992-0.993/diff.md --exclude *.pyd
+[2023-04-16 14:23:33] INFO root fetch - processPackages [huddu]: Downloading https://files.pythonhosted.org/packages/ac/e5/cf3de5ac26cef8aa2cacf0486951b188cf33dd877cd5c9a7e6c5ff6ab224/huddu-1.1.9.tar.gz
+[2023-04-16 14:23:33] INFO root fetch - processPackages [katalytic-data]: executing diffoscope
+[2023-04-16 14:23:33] INFO root fetch - processPackages [bunnynet]: executing diffoscope
+[2023-04-16 14:23:33] INFO root fetch - processPackages [katalytic-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-data-0.1.1.tar.gz tmp/katalytic-data-0.2.0.tar.gz --markdown 20230416/k/katalytic-data/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 14:23:33] INFO root fetch - processPackages [bunnynet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bunnynet-0.2.0.tar.gz tmp/bunnynet-0.3.0.tar.gz --markdown 20230416/b/bunnynet/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-16 14:23:33] INFO root fetch - processPackages [pyfollower]: executing diffoscope
+[2023-04-16 14:23:33] INFO root fetch - processPackages [pyfollower]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfollower-0.1.1-cp38-cp38-win_amd64.whl.zip tmp/pyfollower-0.1.2.tar.gz --markdown 20230416/p/pyfollower/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 14:23:33] INFO root fetch - processPackages [scriv]: Downloading https://files.pythonhosted.org/packages/d6/c2/30a6947ac713d523e6870efd7ab44741cb8768ffb61bafde96b03ded89a1/scriv-1.3.0.tar.gz
+[2023-04-16 14:23:33] INFO root fetch - processPackages [rp2040-pio-emulator]: Downloading https://files.pythonhosted.org/packages/c9/11/f5ef22205bc148bf873362871015696dcc56c252ae916b28080bd3be2d15/rp2040_pio_emulator-0.80.0.tar.gz
+[2023-04-16 14:23:33] INFO root fetch - processPackages [huddu]: executing diffoscope
+[2023-04-16 14:23:33] INFO root fetch - processPackages [huddu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huddu-1.1.8.tar.gz tmp/huddu-1.1.9.tar.gz --markdown 20230416/h/huddu/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-16 14:23:34] INFO root fetch - processPackages [randgenlib]: executing diffoscope
+[2023-04-16 14:23:34] INFO root fetch - processPackages [randgenlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/randgenlib-1.0.2.tar.gz tmp/randgenlib-1.0.3.tar.gz --markdown 20230416/r/randgenlib/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-16 14:23:34] WARNING root fetch - processPackages [robotic]: Skipping package: exceeds size limit 32239974>=10485760
+[2023-04-16 14:23:34] INFO root fetch - processPackages [robotic]: Start processing: deci-lab-client
+[2023-04-16 14:23:34] INFO root fetch - main [MainThread]: End processing [robotic] error
+[2023-04-16 14:23:34] INFO root fetch - processPackages [scriv]: executing diffoscope
+[2023-04-16 14:23:34] INFO root fetch - processPackages [scriv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scriv-1.2.1.tar.gz tmp/scriv-1.3.0.tar.gz --markdown 20230416/s/scriv/1.2.1-1.3.0/diff.md --exclude *.pyd
+[2023-04-16 14:23:34] INFO root fetch - processPackages [rp2040-pio-emulator]: executing diffoscope
+[2023-04-16 14:23:34] INFO root fetch - processPackages [rp2040-pio-emulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rp2040_pio_emulator-0.79.0-1-py3-none-any.whl.zip tmp/rp2040_pio_emulator-0.80.0.tar.gz --markdown 20230416/r/rp2040-pio-emulator/0.79.0-0.80.0/diff.md --exclude *.pyd
+[2023-04-16 14:23:34] INFO root fetch - processPackages [deci-lab-client]: New version: [4.9.0] Old Version: [4.8.0]
+[2023-04-16 14:23:34] INFO root fetch - processPackages [erscipcard]: Downloading https://files.pythonhosted.org/packages/1b/c1/2d237b3d04ad15dd7926117fa028173d4e5ad45e97a9da67a6c4cd436bef/erscipcard-1.17.4.tar.gz
+[2023-04-16 14:23:34] INFO root fetch - processPackages [deci-lab-client]: Downloading https://files.pythonhosted.org/packages/4a/1d/baa05934115d01f3f65fb2ed19a96059fd951700dcf1759ee8c406cacfd2/deci_lab_client-4.8.0-py3-none-any.whl
+[2023-04-16 14:23:34] INFO root fetch - processPackages [erscipcard]: executing diffoscope
+[2023-04-16 14:23:34] INFO root fetch - processPackages [erscipcard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/erscipcard-1.17.2.tar.gz tmp/erscipcard-1.17.4.tar.gz --markdown 20230416/e/erscipcard/1.17.2-1.17.4/diff.md --exclude *.pyd
+[2023-04-16 14:23:34] INFO root fetch - processPackages [deci-lab-client]: Downloading https://files.pythonhosted.org/packages/c2/d1/239a83086984183a3e35ede4e9ac68f4e07fbb14ef8a9000b400985b07ca/deci_lab_client-4.9.0-py3-none-any.whl
+[2023-04-16 14:23:35] INFO root fetch - processPackages [deci-lab-client]: executing diffoscope
+[2023-04-16 14:23:35] INFO root fetch - processPackages [deci-lab-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deci_lab_client-4.8.0-py3-none-any.whl.zip tmp/deci_lab_client-4.9.0-py3-none-any.whl.zip --markdown 20230416/d/deci-lab-client/4.8.0-4.9.0/diff.md --exclude *.pyd
+[2023-04-16 14:23:35] INFO root fetch - processPackages [huddu]: Start processing: copied
+[2023-04-16 14:23:35] INFO root fetch - main [MainThread]: End processing [huddu]: success
+[2023-04-16 14:23:35] INFO root fetch - processPackages [copied]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-16 14:23:35] INFO root fetch - main [MainThread]: End processing [katalytic-data]: success
+[2023-04-16 14:23:35] INFO root fetch - main [MainThread]: End processing [pyfollower]: success
+[2023-04-16 14:23:35] INFO root fetch - main [MainThread]: End processing [randgenlib]: success
+[2023-04-16 14:23:35] INFO root fetch - main [MainThread]: End processing [bunnynet]: success
+[2023-04-16 14:23:35] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-16 14:23:35] INFO root fetch - main [MainThread]: End processing [rp2040-pio-emulator]: success
+[2023-04-16 14:23:35] INFO root fetch - processPackages [copied]: Downloading https://files.pythonhosted.org/packages/30/de/0f548c8a643388ec796364fcf0db4e0f124acd9ad680ec568ea48ca09023/copied-0.1.0.tar.gz
+[2023-04-16 14:23:36] INFO root fetch - processPackages [copied]: Downloading https://files.pythonhosted.org/packages/77/e8/af934e697e1dd17a536bca9e3659b40b47b17b31acced8a7c8ca9ad18eaa/copied-0.1.1-py3-none-any.whl
+[2023-04-16 14:23:36] INFO root fetch - main [MainThread]: End processing [scriv]: success
+[2023-04-16 14:23:36] INFO root fetch - processPackages [copied]: executing diffoscope
+[2023-04-16 14:23:36] INFO root fetch - processPackages [copied]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copied-0.1.0.tar.gz tmp/copied-0.1.1-py3-none-any.whl.zip --markdown 20230416/c/copied/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-16 14:23:37] INFO root fetch - main [MainThread]: End processing [copied]: success
+[2023-04-16 14:23:37] INFO root fetch - main [MainThread]: End processing [deci-lab-client]: success
+[2023-04-16 14:23:37] INFO root fetch - main [MainThread]: End processing [erscipcard]: success
+[2023-04-16 14:23:37] INFO root fetch - main [MainThread]: Store serial: [17726653]
