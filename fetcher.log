@@ -12831,3 +12831,55 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 20:57:41] INFO root fetch - main [MainThread]: End processing [paper-uploads]: success
 [2023-04-16 20:57:52] INFO root fetch - main [MainThread]: End processing [fedml]: success
 [2023-04-16 20:57:52] INFO root fetch - main [MainThread]: Store serial: [17729478]
+[2023-04-16 21:02:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729478]
+[2023-04-16 21:03:01] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 21:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioruuvigateway
+[2023-04-16 21:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Shiphelm
+[2023-04-16 21:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gator-core
+[2023-04-16 21:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webslides
+[2023-04-16 21:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webslides
+[2023-04-16 21:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sdkite
+[2023-04-16 21:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: printbuddies
+[2023-04-16 21:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jnorm
+[2023-04-16 21:03:01] INFO root fetch - processPackages [aioruuvigateway]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-04-16 21:03:01] INFO root fetch - processPackages [webslides]: New version: [0.5.5] Old Version: [0.1.5]
+[2023-04-16 21:03:01] INFO root fetch - processPackages [gator-core]: New version: [2.0.0rc9] Old Version: [2.0.0rc8]
+[2023-04-16 21:03:01] INFO root fetch - processPackages [Shiphelm]: New version: [0.7.5] Old Version: [0.7.3]
+[2023-04-16 21:03:01] INFO root fetch - processPackages [webslides]: New version: [0.5.5] Old Version: [0.1.5]
+[2023-04-16 21:03:01] WARNING root fetch - processPackages [jnorm]: Skipping, unable to determine old version
+[2023-04-16 21:03:01] INFO root fetch - main [MainThread]: End processing [jnorm] error
+[2023-04-16 21:03:01] INFO root fetch - processPackages [sdkite]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-16 21:03:01] INFO root fetch - processPackages [printbuddies]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-16 21:03:01] INFO root fetch - processPackages [gator-core]: executing diffoscope
+[2023-04-16 21:03:01] INFO root fetch - processPackages [gator-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gator_core-2.0.0rc8.tar.gz tmp/gator_core-2.0.0rc9.tar.gz --markdown 20230416/g/gator-core/2.0.0rc8-2.0.0rc9/diff.md --exclude *.pyd
+[2023-04-16 21:03:01] INFO root fetch - processPackages [webslides]: Downloading https://files.pythonhosted.org/packages/ca/f6/97bd7280630032b3ac4aa9d28ff1ddc532784070dc982768e7d428f3ce5d/webslides-0.1.5.tar.gz
+[2023-04-16 21:03:01] INFO root fetch - processPackages [aioruuvigateway]: Downloading https://files.pythonhosted.org/packages/ca/6d/2e66ac464dd60c9b4cb9ec1e6416d6b984da2e0ff0a49bb76f52efcae0b7/aioruuvigateway-0.0.2.tar.gz
+[2023-04-16 21:03:01] INFO root fetch - processPackages [webslides]: Downloading https://files.pythonhosted.org/packages/ca/f6/97bd7280630032b3ac4aa9d28ff1ddc532784070dc982768e7d428f3ce5d/webslides-0.1.5.tar.gz
+[2023-04-16 21:03:01] INFO root fetch - processPackages [printbuddies]: Downloading https://files.pythonhosted.org/packages/ff/e8/3920659c1059a0e3e625018853281ec4af9e78d7af09c81e4280ee61b992/printbuddies-1.0.2.tar.gz
+[2023-04-16 21:03:01] INFO root fetch - processPackages [sdkite]: Downloading https://files.pythonhosted.org/packages/5a/17/e549459aa4001c5024cba654ac39bce3b42205717ebf735163dfd774295c/sdkite-0.3.0.tar.gz
+[2023-04-16 21:03:01] INFO root fetch - processPackages [Shiphelm]: Downloading https://files.pythonhosted.org/packages/fd/d0/619c38817539cdfc5db1158966e7e43b8e5daea500f690fb646a4619c286/Shiphelm-0.7.5.tar.gz
+[2023-04-16 21:03:01] INFO root fetch - processPackages [aioruuvigateway]: Downloading https://files.pythonhosted.org/packages/66/6f/37b79a9f684f4fc87f23f93fa4fdbda5c4c1aee1e7589f9b546f4a601adc/aioruuvigateway-0.1.0.tar.gz
+[2023-04-16 21:03:01] INFO root fetch - processPackages [sdkite]: Downloading https://files.pythonhosted.org/packages/a7/48/1f62126e9fdcebfa087839e73c7f2649a456ea9ea01aa2ae5506935938dd/sdkite-0.4.0.tar.gz
+[2023-04-16 21:03:01] INFO root fetch - processPackages [webslides]: Downloading https://files.pythonhosted.org/packages/ed/3a/db79af29d33259c374c349f829e7497c4129056de00e2d9eb3d5b01e4790/webslides-0.5.5.tar.gz
+[2023-04-16 21:03:01] INFO root fetch - processPackages [webslides]: Downloading https://files.pythonhosted.org/packages/ed/3a/db79af29d33259c374c349f829e7497c4129056de00e2d9eb3d5b01e4790/webslides-0.5.5.tar.gz
+[2023-04-16 21:03:01] INFO root fetch - processPackages [printbuddies]: Downloading https://files.pythonhosted.org/packages/fc/c4/ba26cdbca8024c7456c20c342c7c4b891eb758826a90baa428e7937ea0f1/printbuddies-1.1.0.tar.gz
+[2023-04-16 21:03:01] INFO root fetch - processPackages [Shiphelm]: executing diffoscope
+[2023-04-16 21:03:01] INFO root fetch - processPackages [Shiphelm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Shiphelm-0.7.3.tar.gz tmp/Shiphelm-0.7.5.tar.gz --markdown 20230416/S/Shiphelm/0.7.3-0.7.5/diff.md --exclude *.pyd
+[2023-04-16 21:03:01] INFO root fetch - processPackages [aioruuvigateway]: executing diffoscope
+[2023-04-16 21:03:01] INFO root fetch - processPackages [aioruuvigateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioruuvigateway-0.0.2.tar.gz tmp/aioruuvigateway-0.1.0.tar.gz --markdown 20230416/a/aioruuvigateway/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-04-16 21:03:01] INFO root fetch - processPackages [sdkite]: executing diffoscope
+[2023-04-16 21:03:01] INFO root fetch - processPackages [sdkite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdkite-0.3.0.tar.gz tmp/sdkite-0.4.0.tar.gz --markdown 20230416/s/sdkite/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-16 21:03:01] INFO root fetch - processPackages [printbuddies]: executing diffoscope
+[2023-04-16 21:03:01] INFO root fetch - processPackages [printbuddies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/printbuddies-1.0.2.tar.gz tmp/printbuddies-1.1.0.tar.gz --markdown 20230416/p/printbuddies/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-16 21:03:01] INFO root fetch - processPackages [webslides]: executing diffoscope
+[2023-04-16 21:03:01] INFO root fetch - processPackages [webslides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webslides-0.1.5.tar.gz tmp/webslides-0.5.5.tar.gz --markdown 20230416/w/webslides/0.1.5-0.5.5/diff.md --exclude *.pyd
+[2023-04-16 21:03:02] INFO root fetch - processPackages [webslides]: executing diffoscope
+[2023-04-16 21:03:02] INFO root fetch - processPackages [webslides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webslides-0.1.5.tar.gz tmp/webslides-0.5.5.tar.gz --markdown 20230416/w/webslides/0.1.5-0.5.5/diff.md --exclude *.pyd
+[2023-04-16 21:03:02] INFO root fetch - main [MainThread]: End processing [gator-core]: success
+[2023-04-16 21:03:03] INFO root fetch - main [MainThread]: End processing [Shiphelm]: success
+[2023-04-16 21:03:03] INFO root fetch - main [MainThread]: End processing [aioruuvigateway]: success
+[2023-04-16 21:03:03] INFO root fetch - main [MainThread]: End processing [printbuddies]: success
+[2023-04-16 21:03:03] INFO root fetch - main [MainThread]: End processing [webslides]: success
+[2023-04-16 21:03:03] INFO root fetch - main [MainThread]: End processing [webslides]: success
+[2023-04-16 21:03:03] INFO root fetch - main [MainThread]: End processing [sdkite]: success
+[2023-04-16 21:03:03] INFO root fetch - main [MainThread]: Store serial: [17729504]
