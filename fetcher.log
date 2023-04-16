@@ -2317,3 +2317,19 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-16 04:40:19] INFO root fetch - processPackages [czsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czsc-0.9.8.tar.gz tmp/czsc-0.9.9.tar.gz --markdown 20230416/c/czsc/0.9.8-0.9.9/diff.md --exclude *.pyd
 [2023-04-16 04:40:21] INFO root fetch - main [MainThread]: End processing [czsc]: success
 [2023-04-16 04:40:21] INFO root fetch - main [MainThread]: Store serial: [17723309]
+[2023-04-16 04:45:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17723309]
+[2023-04-16 04:45:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-16 04:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flarespy
+[2023-04-16 04:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datamachine
+[2023-04-16 04:45:31] INFO root fetch - processPackages [flarespy]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-16 04:45:31] INFO root fetch - processPackages [datamachine]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-16 04:45:31] INFO root fetch - processPackages [flarespy]: Downloading https://files.pythonhosted.org/packages/be/28/46b7f70aeee96e24f2745d9ce47804b6bcc8082a8930ede651989102d061/flarespy-0.5.1.tar.gz
+[2023-04-16 04:45:31] INFO root fetch - processPackages [datamachine]: Downloading https://files.pythonhosted.org/packages/26/8d/c828b25dbd212e435c1917ae150635d1654df288ced68b367767133054d6/datamachine-0.0.5.tar.gz
+[2023-04-16 04:45:31] INFO root fetch - processPackages [datamachine]: executing diffoscope
+[2023-04-16 04:45:31] INFO root fetch - processPackages [datamachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamachine-0.0.4.tar.gz tmp/datamachine-0.0.5.tar.gz --markdown 20230416/d/datamachine/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-16 04:45:31] INFO root fetch - processPackages [flarespy]: Downloading https://files.pythonhosted.org/packages/16/85/63bef25555f07f09cb14e4b2338e1f3687969d6c3636cc7bf2351527ffab/flarespy-0.5.2.tar.gz
+[2023-04-16 04:45:32] INFO root fetch - processPackages [flarespy]: executing diffoscope
+[2023-04-16 04:45:32] INFO root fetch - processPackages [flarespy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flarespy-0.5.1.tar.gz tmp/flarespy-0.5.2.tar.gz --markdown 20230416/f/flarespy/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-16 04:45:32] INFO root fetch - main [MainThread]: End processing [datamachine]: success
+[2023-04-16 04:45:32] INFO root fetch - main [MainThread]: End processing [flarespy]: success
+[2023-04-16 04:45:32] INFO root fetch - main [MainThread]: Store serial: [17723316]
