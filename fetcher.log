@@ -10219,3 +10219,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 16:53:49] INFO root fetch - main [MainThread]: End processing [GeoAlchemy2]: success
 [2023-04-16 16:54:03] INFO root fetch - main [MainThread]: End processing [django-data-browser]: success
 [2023-04-16 16:54:03] INFO root fetch - main [MainThread]: Store serial: [17727912]
+[2023-04-16 16:59:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727912]
+[2023-04-16 16:59:13] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 16:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: artemis-common
+[2023-04-16 16:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ecs-composex
+[2023-04-16 16:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: imagemangler
+[2023-04-16 16:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cbra
+[2023-04-16 16:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pywikibot
+[2023-04-16 16:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: st-ant-menu
+[2023-04-16 16:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: investor8-sdk
+[2023-04-16 16:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: auraboros
+[2023-04-16 16:59:14] INFO root fetch - processPackages [artemis-common]: New version: [0.3.4b0] Old Version: [0.3.3b0]
+[2023-04-16 16:59:14] INFO root fetch - processPackages [ecs-composex]: New version: [0.9.2] Old Version: [0.8.9]
+[2023-04-16 16:59:14] INFO root fetch - processPackages [investor8-sdk]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-16 16:59:14] INFO root fetch - processPackages [imagemangler]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-16 16:59:14] INFO root fetch - processPackages [st-ant-menu]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 16:59:14] INFO root fetch - processPackages [auraboros]: New version: [0.9.0a0] Old Version: [0.8.0a0]
+[2023-04-16 16:59:14] INFO root fetch - processPackages [pywikibot]: New version: [8.1.0] Old Version: [8.0.4]
+[2023-04-16 16:59:14] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a87]
+[2023-04-16 16:59:14] INFO root fetch - processPackages [investor8-sdk]: executing diffoscope
+[2023-04-16 16:59:14] INFO root fetch - processPackages [investor8-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/investor8-sdk-1.1.8.tar.gz tmp/investor8-sdk-1.1.9.tar.gz --markdown 20230416/i/investor8-sdk/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-16 16:59:14] INFO root fetch - processPackages [auraboros]: executing diffoscope
+[2023-04-16 16:59:14] INFO root fetch - processPackages [auraboros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auraboros-0.8.0a0.tar.gz tmp/auraboros-0.9.0a0.tar.gz --markdown 20230416/a/auraboros/0.8.0a0-0.9.0a0/diff.md --exclude *.pyd
+[2023-04-16 16:59:14] INFO root fetch - processPackages [ecs-composex]: Downloading https://files.pythonhosted.org/packages/71/65/25118bd168574eb25b00b44521d69a32ebbb8ff437dcc4638e6968c6cdb5/ecs_composex-0.8.9.tar.gz
+[2023-04-16 16:59:14] INFO root fetch - processPackages [st-ant-menu]: Downloading https://files.pythonhosted.org/packages/e3/6a/d1d301318a4789d06d6ad79561d5f50e12a279e2e6776e4a905d0efaf27f/st_ant_menu-0.0.1-py3-none-any.whl
+[2023-04-16 16:59:14] INFO root fetch - processPackages [cbra]: Downloading https://files.pythonhosted.org/packages/94/22/d19fe198e0a0c325c2d80181ea58aeac219d67877c276c210a5d65047177/cbra-2.0.0a87.tar.gz
+[2023-04-16 16:59:14] INFO root fetch - processPackages [artemis-common]: Downloading https://files.pythonhosted.org/packages/10/9e/83f6e04f616e7c877ca7ce0d9a4b511593ae4a57c899337b9143d0a78311/artemis-common-0.3.4b0.tar.gz
+[2023-04-16 16:59:14] INFO root fetch - processPackages [imagemangler]: Downloading https://files.pythonhosted.org/packages/6d/5f/6f92cd64eecbfd553d983a1beae9de608c3aa2e6ab932daed77280062514/imagemangler-0.1.6.tar.gz
+[2023-04-16 16:59:14] INFO root fetch - processPackages [pywikibot]: Downloading https://files.pythonhosted.org/packages/4d/37/c32b69073b6526bd91436b4a3128aaf1d3e550699e55b5684874e002b417/pywikibot-8.1.0.tar.gz
+[2023-04-16 16:59:14] INFO root fetch - processPackages [artemis-common]: executing diffoscope
+[2023-04-16 16:59:14] INFO root fetch - processPackages [artemis-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/artemis-common-0.3.3b0.tar.gz tmp/artemis-common-0.3.4b0.tar.gz --markdown 20230416/a/artemis-common/0.3.3b0-0.3.4b0/diff.md --exclude *.pyd
+[2023-04-16 16:59:14] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-04-16 16:59:14] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a87.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230416/c/cbra/2.0.0a87-3.0.0a7/diff.md --exclude *.pyd
+[2023-04-16 16:59:14] INFO root fetch - processPackages [st-ant-menu]: Downloading https://files.pythonhosted.org/packages/d2/6d/e0820d5326d985a6e42e12651602ba3f4fbf22ce4a964f11e2ff01943a3e/st_ant_menu-0.0.2-py3-none-any.whl
+[2023-04-16 16:59:14] INFO root fetch - processPackages [imagemangler]: executing diffoscope
+[2023-04-16 16:59:14] INFO root fetch - processPackages [imagemangler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imagemangler-0.1.5.tar.gz tmp/imagemangler-0.1.6.tar.gz --markdown 20230416/i/imagemangler/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-16 16:59:14] INFO root fetch - processPackages [pywikibot]: executing diffoscope
+[2023-04-16 16:59:14] INFO root fetch - processPackages [pywikibot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywikibot-8.0.4.tar.gz tmp/pywikibot-8.1.0.tar.gz --markdown 20230416/p/pywikibot/8.0.4-8.1.0/diff.md --exclude *.pyd
+[2023-04-16 16:59:14] INFO root fetch - processPackages [st-ant-menu]: executing diffoscope
+[2023-04-16 16:59:14] INFO root fetch - processPackages [st-ant-menu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_ant_menu-0.0.1-py3-none-any.whl.zip tmp/st_ant_menu-0.0.2-py3-none-any.whl.zip --markdown 20230416/s/st-ant-menu/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 16:59:14] INFO root fetch - processPackages [ecs-composex]: Downloading https://files.pythonhosted.org/packages/82/e2/6ac5b2b2eca42a9b9d8d90efb9d2bd1e3a36ec6a48879ad6635a60b3ec4a/ecs_composex-0.9.2.tar.gz
+[2023-04-16 16:59:15] INFO root fetch - processPackages [ecs-composex]: executing diffoscope
+[2023-04-16 16:59:15] INFO root fetch - processPackages [ecs-composex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecs_composex-0.8.9.tar.gz tmp/ecs_composex-0.9.2.tar.gz --markdown 20230416/e/ecs-composex/0.8.9-0.9.2/diff.md --exclude *.pyd
+[2023-04-16 16:59:15] INFO root fetch - main [MainThread]: End processing [artemis-common]: success
+[2023-04-16 16:59:15] INFO root fetch - main [MainThread]: End processing [imagemangler]: success
+[2023-04-16 16:59:16] INFO root fetch - main [MainThread]: End processing [st-ant-menu]: success
+[2023-04-16 16:59:17] INFO root fetch - main [MainThread]: End processing [pywikibot]: success
+[2023-04-16 16:59:18] INFO root fetch - main [MainThread]: End processing [ecs-composex]: success
+[2023-04-16 16:59:18] INFO root fetch - main [MainThread]: End processing [investor8-sdk]: success
+[2023-04-16 16:59:18] INFO root fetch - main [MainThread]: End processing [cbra]: success
+[2023-04-16 16:59:18] INFO root fetch - main [MainThread]: End processing [auraboros]: success
+[2023-04-16 16:59:18] INFO root fetch - main [MainThread]: Store serial: [17727947]
