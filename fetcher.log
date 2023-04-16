@@ -4508,3 +4508,47 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 09:32:48] INFO root fetch - main [MainThread]: End processing [pinuccio]: success
 [2023-04-16 09:32:49] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-rental]: success
 [2023-04-16 09:32:49] INFO root fetch - main [MainThread]: Store serial: [17724580]
+[2023-04-16 09:37:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724580]
+[2023-04-16 09:37:58] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 09:37:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netin
+[2023-04-16 09:37:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vollseg
+[2023-04-16 09:37:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: checkov
+[2023-04-16 09:37:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: skdoc
+[2023-04-16 09:37:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tl-typewriter
+[2023-04-16 09:37:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sloslsoododldl-sosoajajk
+[2023-04-16 09:37:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: report-env
+[2023-04-16 09:37:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: staticx
+[2023-04-16 09:37:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tl-typewriter
+[2023-04-16 09:37:58] WARNING root fetch - processPackages [skdoc]: Skipping, unable to determine old version
+[2023-04-16 09:37:58] INFO root fetch - main [MainThread]: End processing [skdoc] error
+[2023-04-16 09:37:58] INFO root fetch - processPackages [netin]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-16 09:37:58] INFO root fetch - processPackages [tl-typewriter]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 09:37:58] INFO root fetch - processPackages [tl-typewriter]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 09:37:58] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-16 09:37:58] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 09:37:58] WARNING root fetch - processPackages [sloslsoododldl-sosoajajk]: Skipping, unable to determine old version
+[2023-04-16 09:37:58] WARNING root fetch - processPackages [report-env]: Skipping, unable to determine old version
+[2023-04-16 09:37:58] INFO root fetch - main [MainThread]: End processing [sloslsoododldl-sosoajajk] error
+[2023-04-16 09:37:58] INFO root fetch - main [MainThread]: End processing [report-env] error
+[2023-04-16 09:37:58] INFO root fetch - processPackages [staticx]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-16 09:37:58] INFO root fetch - processPackages [netin]: executing diffoscope
+[2023-04-16 09:37:58] INFO root fetch - processPackages [netin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netin-1.0.2.tar.gz tmp/netin-1.0.3.tar.gz --markdown 20230416/n/netin/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-16 09:37:58] INFO root fetch - processPackages [tl-typewriter]: executing diffoscope
+[2023-04-16 09:37:58] INFO root fetch - processPackages [tl-typewriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tl_typewriter-0.1.1.tar.gz tmp/tl_typewriter-0.1.2.tar.gz --markdown 20230416/t/tl-typewriter/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 09:37:58] INFO root fetch - processPackages [tl-typewriter]: executing diffoscope
+[2023-04-16 09:37:58] INFO root fetch - processPackages [tl-typewriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tl_typewriter-0.1.1.tar.gz tmp/tl_typewriter-0.1.2.tar.gz --markdown 20230416/t/tl-typewriter/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 09:37:58] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-16 09:37:58] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230416/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-16 09:37:58] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 09:37:58] INFO root fetch - processPackages [staticx]: Downloading https://files.pythonhosted.org/packages/c8/5a/6a6c193182e04c2aedfd0309e0b09e05877fdee3806eb2e4beced80ddc94/staticx-0.9.0.tar.gz
+[2023-04-16 09:37:58] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 09:37:58] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 09:37:59] INFO root fetch - processPackages [staticx]: Downloading https://files.pythonhosted.org/packages/eb/c2/9cd485aa22131d1836f51315c7d2434b7e161ec118083fd1ad3019127245/staticx-0.9.1.tar.gz
+[2023-04-16 09:37:59] INFO root fetch - processPackages [staticx]: executing diffoscope
+[2023-04-16 09:37:59] INFO root fetch - processPackages [staticx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/staticx-0.9.0.tar.gz tmp/staticx-0.9.1.tar.gz --markdown 20230416/s/staticx/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-16 09:37:59] INFO root fetch - main [MainThread]: End processing [tl-typewriter]: success
+[2023-04-16 09:37:59] INFO root fetch - main [MainThread]: End processing [netin]: success
+[2023-04-16 09:37:59] INFO root fetch - main [MainThread]: End processing [tl-typewriter]: success
+[2023-04-16 09:38:00] INFO root fetch - main [MainThread]: End processing [staticx]: success
+[2023-04-16 09:38:38] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-04-16 09:38:38] INFO root fetch - main [MainThread]: Store serial: [17724607]
