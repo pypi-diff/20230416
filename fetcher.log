@@ -4136,3 +4136,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 09:01:13] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
 [2023-04-16 09:01:26] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2023-04-16 09:01:26] INFO root fetch - main [MainThread]: Store serial: [17724376]
+[2023-04-16 09:06:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724376]
+[2023-04-16 09:06:36] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-16 09:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlrun
+[2023-04-16 09:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netin
+[2023-04-16 09:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-purchase-request-to-requisition
+[2023-04-16 09:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: age-cda
+[2023-04-16 09:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: demisto-py
+[2023-04-16 09:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: streamlit-nightly
+[2023-04-16 09:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lctutil
+[2023-04-16 09:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: micropython-googlesheet
+[2023-04-16 09:06:36] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.9.3.dev20220601] Old Version: [1.9.3.dev20220531]
+[2023-04-16 09:06:36] INFO root fetch - processPackages [odoo-addon-purchase-request-to-requisition]: New version: [15.0.1.0.1.3] Old Version: [15.0.1.0.1.2]
+[2023-04-16 09:06:36] WARNING root fetch - processPackages [age-cda]: Skipping, unable to determine old version
+[2023-04-16 09:06:36] INFO root fetch - main [MainThread]: End processing [age-cda] error
+[2023-04-16 09:06:36] INFO root fetch - processPackages [lctutil]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-16 09:06:36] INFO root fetch - processPackages [demisto-py]: New version: [3.2.9] Old Version: [3.2.8]
+[2023-04-16 09:06:36] INFO root fetch - processPackages [mlrun]: New version: [1.3.1rc2] Old Version: [1.3.1rc1]
+[2023-04-16 09:06:36] INFO root fetch - processPackages [netin]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-16 09:06:36] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2023-04-16 09:06:36] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230416/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
+[2023-04-16 09:06:36] WARNING root fetch - processPackages [micropython-googlesheet]: Skipping, unable to determine old version
+[2023-04-16 09:06:36] INFO root fetch - main [MainThread]: End processing [micropython-googlesheet] error
+[2023-04-16 09:06:36] INFO root fetch - processPackages [odoo-addon-purchase-request-to-requisition]: Downloading https://files.pythonhosted.org/packages/bb/b0/e688f785bf1333682802795e656790cb781d99a6cd34e1b7c89d48d2b736/odoo_addon_purchase_request_to_requisition-15.0.1.0.1.2-py3-none-any.whl
+[2023-04-16 09:06:36] INFO root fetch - processPackages [mlrun]: Downloading https://files.pythonhosted.org/packages/ff/bb/c0c4dcb0413b1133bc3dd4229c5b68e95b8d122fdd2730486502802d30d8/mlrun-1.3.1rc1-py3-none-any.whl
+[2023-04-16 09:06:36] INFO root fetch - processPackages [demisto-py]: Downloading https://files.pythonhosted.org/packages/3f/3c/6e2d55a842893f3db676debe5b69a1a6aacaf84064491ae557c8f3cd3571/demisto-py-3.2.8.tar.gz
+[2023-04-16 09:06:36] INFO root fetch - processPackages [lctutil]: Downloading https://files.pythonhosted.org/packages/b1/ed/c8eac9cc392bf8957d0f0e5e2107da0a2ecf865fb169c4e9ebc8795cca54/lctutil-0.1.0.tar.gz
+[2023-04-16 09:06:36] INFO root fetch - processPackages [netin]: Downloading https://files.pythonhosted.org/packages/c5/67/85cbc0bf3092cb070b9d0db20e71e82fea35b38278594741a13135a85bed/netin-1.0.3.tar.gz
+[2023-04-16 09:06:36] INFO root fetch - processPackages [netin]: executing diffoscope
+[2023-04-16 09:06:36] INFO root fetch - processPackages [netin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netin-1.0.2.tar.gz tmp/netin-1.0.3.tar.gz --markdown 20230416/n/netin/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-16 09:06:36] INFO root fetch - processPackages [odoo-addon-purchase-request-to-requisition]: Downloading https://files.pythonhosted.org/packages/02/96/113203205990c72764244465031b673c4400b2af9d61cc6a65bca61c49b7/odoo_addon_purchase_request_to_requisition-15.0.1.0.1.3-py3-none-any.whl
+[2023-04-16 09:06:37] INFO root fetch - processPackages [demisto-py]: Downloading https://files.pythonhosted.org/packages/a3/04/b2369aa8944eeab76a081de7daca22d420138a75c3bba16dbdda13b85da5/demisto-py-3.2.9.tar.gz
+[2023-04-16 09:06:37] INFO root fetch - processPackages [odoo-addon-purchase-request-to-requisition]: executing diffoscope
+[2023-04-16 09:06:37] INFO root fetch - processPackages [odoo-addon-purchase-request-to-requisition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_purchase_request_to_requisition-15.0.1.0.1.2-py3-none-any.whl.zip tmp/odoo_addon_purchase_request_to_requisition-15.0.1.0.1.3-py3-none-any.whl.zip --markdown 20230416/o/odoo-addon-purchase-request-to-requisition/15.0.1.0.1.2-15.0.1.0.1.3/diff.md --exclude *.pyd
+[2023-04-16 09:06:37] INFO root fetch - processPackages [lctutil]: Downloading https://files.pythonhosted.org/packages/1c/0c/472057f32f17a29cbe83e8556f958a0208ff7aef6f481585f999ed4aca7e/lctutil-0.2.0.tar.gz
+[2023-04-16 09:06:37] INFO root fetch - processPackages [lctutil]: executing diffoscope
+[2023-04-16 09:06:37] INFO root fetch - processPackages [lctutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lctutil-0.1.0.tar.gz tmp/lctutil-0.2.0.tar.gz --markdown 20230416/l/lctutil/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 09:06:37] INFO root fetch - processPackages [demisto-py]: executing diffoscope
+[2023-04-16 09:06:37] INFO root fetch - processPackages [demisto-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demisto-py-3.2.8.tar.gz tmp/demisto-py-3.2.9.tar.gz --markdown 20230416/d/demisto-py/3.2.8-3.2.9/diff.md --exclude *.pyd
+[2023-04-16 09:06:37] INFO root fetch - processPackages [mlrun]: Downloading https://files.pythonhosted.org/packages/f2/78/6ea83b378977c0321347ddbe30d05fe2e5c758a84abbb3a7504adcdf322f/mlrun-1.3.1rc2-py3-none-any.whl
+[2023-04-16 09:06:37] INFO root fetch - processPackages [mlrun]: executing diffoscope
+[2023-04-16 09:06:37] INFO root fetch - processPackages [mlrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrun-1.3.1rc1-py3-none-any.whl.zip tmp/mlrun-1.3.1rc2-py3-none-any.whl.zip --markdown 20230416/m/mlrun/1.3.1rc1-1.3.1rc2/diff.md --exclude *.pyd
+[2023-04-16 09:06:38] INFO root fetch - main [MainThread]: End processing [netin]: success
+[2023-04-16 09:06:38] INFO root fetch - main [MainThread]: End processing [lctutil]: success
+[2023-04-16 09:06:38] INFO root fetch - main [MainThread]: End processing [odoo-addon-purchase-request-to-requisition]: success
+[2023-04-16 09:06:40] INFO root fetch - main [MainThread]: End processing [demisto-py]: success
+[2023-04-16 09:06:42] INFO root fetch - main [MainThread]: End processing [mlrun]: success
+[2023-04-16 09:06:48] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2023-04-16 09:06:48] INFO root fetch - main [MainThread]: Store serial: [17724401]
