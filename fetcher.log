@@ -13494,3 +13494,35 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 22:10:42] INFO root fetch - main [MainThread]: End processing [openschema]: success
 [2023-04-16 22:10:46] INFO root fetch - main [MainThread]: End processing [backtrader]: success
 [2023-04-16 22:10:46] INFO root fetch - main [MainThread]: Store serial: [17729885]
+[2023-04-16 22:15:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17729885]
+[2023-04-16 22:15:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-16 22:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jeff-api
+[2023-04-16 22:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: email-validator
+[2023-04-16 22:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: accurating
+[2023-04-16 22:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jeff-api
+[2023-04-16 22:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: environment-framework
+[2023-04-16 22:15:55] INFO root fetch - processPackages [jeff-api]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 22:15:55] INFO root fetch - processPackages [jeff-api]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 22:15:55] INFO root fetch - processPackages [accurating]: New version: [0.3] Old Version: [0.2]
+[2023-04-16 22:15:55] INFO root fetch - processPackages [email-validator]: New version: [2.0.0.post1] Old Version: [2.0.0.dev4]
+[2023-04-16 22:15:55] WARNING root fetch - processPackages [environment-framework]: Skipping, unable to determine old version
+[2023-04-16 22:15:55] INFO root fetch - main [MainThread]: End processing [environment-framework] error
+[2023-04-16 22:15:55] INFO root fetch - processPackages [jeff-api]: Downloading https://files.pythonhosted.org/packages/72/3e/04201f24dfb5e2265ad3d7e11003711a5fbc314e4d8fdf6a55f718255faf/jeff_api-1.0.1.tar.gz
+[2023-04-16 22:15:55] INFO root fetch - processPackages [accurating]: Downloading https://files.pythonhosted.org/packages/22/1b/3b1f8bd1d355ec29174e717cff49a70bd4d2ed274bdbb0423811e33cf803/accurating-0.3.tar.gz
+[2023-04-16 22:15:55] INFO root fetch - processPackages [jeff-api]: Downloading https://files.pythonhosted.org/packages/72/3e/04201f24dfb5e2265ad3d7e11003711a5fbc314e4d8fdf6a55f718255faf/jeff_api-1.0.1.tar.gz
+[2023-04-16 22:15:56] INFO root fetch - processPackages [email-validator]: Downloading https://files.pythonhosted.org/packages/82/5c/68e7e6e35d73813a134f377643f251330caa8c52fea9940447efa2db77ae/email_validator-2.0.0.post1.tar.gz
+[2023-04-16 22:15:56] INFO root fetch - processPackages [accurating]: executing diffoscope
+[2023-04-16 22:15:56] INFO root fetch - processPackages [accurating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accurating-0.2.tar.gz tmp/accurating-0.3.tar.gz --markdown 20230416/a/accurating/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-16 22:15:56] INFO root fetch - processPackages [email-validator]: executing diffoscope
+[2023-04-16 22:15:56] INFO root fetch - processPackages [email-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/email_validator-2.0.0.dev4.tar.gz tmp/email_validator-2.0.0.post1.tar.gz --markdown 20230416/e/email-validator/2.0.0.dev4-2.0.0.post1/diff.md --exclude *.pyd
+[2023-04-16 22:15:56] INFO root fetch - processPackages [jeff-api]: Downloading https://files.pythonhosted.org/packages/36/33/44499c5bd39de1159ab18315466d78baa8f01dc562e6f632ad6036d9fd71/jeff_api-1.0.2.tar.gz
+[2023-04-16 22:15:56] INFO root fetch - processPackages [jeff-api]: Downloading https://files.pythonhosted.org/packages/36/33/44499c5bd39de1159ab18315466d78baa8f01dc562e6f632ad6036d9fd71/jeff_api-1.0.2.tar.gz
+[2023-04-16 22:15:56] INFO root fetch - processPackages [jeff-api]: executing diffoscope
+[2023-04-16 22:15:56] INFO root fetch - processPackages [jeff-api]: executing diffoscope
+[2023-04-16 22:15:56] INFO root fetch - processPackages [jeff-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeff_api-1.0.1.tar.gz tmp/jeff_api-1.0.2.tar.gz --markdown 20230416/j/jeff-api/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 22:15:56] INFO root fetch - processPackages [jeff-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeff_api-1.0.1.tar.gz tmp/jeff_api-1.0.2.tar.gz --markdown 20230416/j/jeff-api/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 22:15:57] INFO root fetch - main [MainThread]: End processing [accurating]: success
+[2023-04-16 22:15:57] INFO root fetch - main [MainThread]: End processing [email-validator]: success
+[2023-04-16 22:15:57] INFO root fetch - main [MainThread]: End processing [jeff-api]: success
+[2023-04-16 22:15:57] INFO root fetch - main [MainThread]: End processing [jeff-api]: success
+[2023-04-16 22:15:57] INFO root fetch - main [MainThread]: Store serial: [17729901]
