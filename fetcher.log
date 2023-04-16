@@ -11899,3 +11899,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 19:17:04] INFO root fetch - main [MainThread]: End processing [datamodel-code-generator]: success
 [2023-04-16 19:17:04] INFO root fetch - main [MainThread]: End processing [prunerr]: success
 [2023-04-16 19:17:04] INFO root fetch - main [MainThread]: Store serial: [17728954]
+[2023-04-16 19:22:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17728954]
+[2023-04-16 19:22:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-16 19:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: omfit-classes
+[2023-04-16 19:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhgtmap
+[2023-04-16 19:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aa-forum
+[2023-04-16 19:22:13] WARNING root fetch - processPackages [pyhgtmap]: Skipping, unable to determine old version
+[2023-04-16 19:22:13] INFO root fetch - main [MainThread]: End processing [pyhgtmap] error
+[2023-04-16 19:22:13] INFO root fetch - processPackages [omfit-classes]: New version: [3.2023.7.2] Old Version: [3.2023.5.2]
+[2023-04-16 19:22:14] INFO root fetch - processPackages [aa-forum]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-16 19:22:14] INFO root fetch - processPackages [omfit-classes]: Downloading https://files.pythonhosted.org/packages/2e/d0/286a2112764912a96e74856a5d9f479c33b47dabf2f052791fbbd46a1804/omfit_classes-3.2023.5.2.tar.gz
+[2023-04-16 19:22:14] INFO root fetch - processPackages [aa-forum]: executing diffoscope
+[2023-04-16 19:22:14] INFO root fetch - processPackages [aa-forum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_forum-1.8.1.tar.gz tmp/aa_forum-1.9.0.tar.gz --markdown 20230416/a/aa-forum/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-16 19:22:14] INFO root fetch - processPackages [omfit-classes]: Downloading https://files.pythonhosted.org/packages/34/47/4689b08a3026fba7d0b3fa8734ba24c4073c3e36d54bd50195efa78882da/omfit_classes-3.2023.7.2.tar.gz
+[2023-04-16 19:22:15] INFO root fetch - processPackages [omfit-classes]: executing diffoscope
+[2023-04-16 19:22:15] INFO root fetch - processPackages [omfit-classes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omfit_classes-3.2023.5.2.tar.gz tmp/omfit_classes-3.2023.7.2.tar.gz --markdown 20230416/o/omfit-classes/3.2023.5.2-3.2023.7.2/diff.md --exclude *.pyd
+[2023-04-16 19:22:16] INFO root fetch - main [MainThread]: End processing [aa-forum]: success
+[2023-04-16 19:22:21] INFO root fetch - main [MainThread]: End processing [omfit-classes]: success
+[2023-04-16 19:22:21] INFO root fetch - main [MainThread]: Store serial: [17728964]
