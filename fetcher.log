@@ -4314,3 +4314,73 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 09:22:20] INFO root fetch - main [MainThread]: End processing [erutils]: success
 [2023-04-16 09:22:20] INFO root fetch - main [MainThread]: End processing [age-cda]: success
 [2023-04-16 09:22:20] INFO root fetch - main [MainThread]: Store serial: [17724471]
+[2023-04-16 09:27:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17724471]
+[2023-04-16 09:27:29] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-16 09:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bmb-martlet-organization-client
+[2023-04-16 09:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asaman
+[2023-04-16 09:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyenv-validator
+[2023-04-16 09:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SynackAPI
+[2023-04-16 09:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: image-reward
+[2023-04-16 09:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: newnewid
+[2023-04-16 09:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cointables
+[2023-04-16 09:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chope
+[2023-04-16 09:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo12-addon-sale-cancel-reason
+[2023-04-16 09:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: odoo12-addon-sale-isolated-quotation
+[2023-04-16 09:27:29] INFO root fetch - processPackages [asaman]: New version: [0.2.0] Old Version: [0.1.6]
+[2023-04-16 09:27:29] WARNING root fetch - processPackages [pyenv-validator]: Skipping, unable to determine old version
+[2023-04-16 09:27:29] INFO root fetch - processPackages [pyenv-validator]: Start processing: image-reward
+[2023-04-16 09:27:29] WARNING root fetch - processPackages [cointables]: Skipping, unable to determine old version
+[2023-04-16 09:27:29] INFO root fetch - main [MainThread]: End processing [pyenv-validator] error
+[2023-04-16 09:27:29] INFO root fetch - processPackages [cointables]: Start processing: odoo13-addon-sale-cancel-reason
+[2023-04-16 09:27:29] INFO root fetch - main [MainThread]: End processing [cointables] error
+[2023-04-16 09:27:29] INFO root fetch - processPackages [image-reward]: New version: [0.96] Old Version: [0.95]
+[2023-04-16 09:27:29] INFO root fetch - processPackages [bmb-martlet-organization-client]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-16 09:27:29] INFO root fetch - processPackages [SynackAPI]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-16 09:27:29] INFO root fetch - processPackages [odoo12-addon-sale-cancel-reason]: New version: [12.0.1.2.0.99.dev9] Old Version: [12.0.1.2.0.99.dev8]
+[2023-04-16 09:27:29] WARNING root fetch - processPackages [newnewid]: Skipping, unable to determine old version
+[2023-04-16 09:27:29] INFO root fetch - main [MainThread]: End processing [newnewid] error
+[2023-04-16 09:27:29] INFO root fetch - processPackages [chope]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 09:27:29] INFO root fetch - processPackages [image-reward]: New version: [0.96] Old Version: [0.95]
+[2023-04-16 09:27:29] INFO root fetch - processPackages [odoo12-addon-sale-isolated-quotation]: New version: [12.0.1.1.0.99.dev5] Old Version: [12.0.1.1.0.99.dev4]
+[2023-04-16 09:27:29] INFO root fetch - processPackages [bmb-martlet-organization-client]: executing diffoscope
+[2023-04-16 09:27:29] INFO root fetch - processPackages [bmb-martlet-organization-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmb_martlet_organization_client-0.98.0-py3-none-any.whl.zip tmp/bmb_martlet_organization_client-0.99.0-py3-none-any.whl.zip --markdown 20230416/b/bmb-martlet-organization-client/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-16 09:27:29] INFO root fetch - processPackages [odoo13-addon-sale-cancel-reason]: New version: [13.0.1.0.1.dev7] Old Version: [13.0.1.0.1.dev6]
+[2023-04-16 09:27:29] INFO root fetch - processPackages [SynackAPI]: Downloading https://files.pythonhosted.org/packages/3e/44/1d8c2731c2747e19a9c1825805830df4612745c4f31123753aeac6705f39/SynackAPI-0.4.3.tar.gz
+[2023-04-16 09:27:29] INFO root fetch - processPackages [asaman]: Downloading https://files.pythonhosted.org/packages/2e/eb/2b360ae34bbf16441172384a03f717918297b40193179d83a4f38e5b2822/asaman-0.1.6.tar.gz
+[2023-04-16 09:27:29] INFO root fetch - processPackages [chope]: Downloading https://files.pythonhosted.org/packages/ea/10/b4b838dc7440bb88bc64549867e386e4730b66336897a9f16212c9b14145/chope-0.1.1.tar.gz
+[2023-04-16 09:27:29] INFO root fetch - processPackages [odoo12-addon-sale-cancel-reason]: Downloading https://files.pythonhosted.org/packages/9f/b5/55e3a65bc2b9b2a249985cfc9568274941f3533b4f43afea5e389cb4c2fc/odoo12_addon_sale_cancel_reason-12.0.1.2.0.99.dev8-py3-none-any.whl
+[2023-04-16 09:27:29] INFO root fetch - processPackages [SynackAPI]: executing diffoscope
+[2023-04-16 09:27:29] INFO root fetch - processPackages [SynackAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SynackAPI-0.4.2.tar.gz tmp/SynackAPI-0.4.3.tar.gz --markdown 20230416/S/SynackAPI/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-16 09:27:29] INFO root fetch - processPackages [odoo12-addon-sale-isolated-quotation]: Downloading https://files.pythonhosted.org/packages/ef/31/8d17953072b141f2a784da06818d34101f478b09eafc0b9025a553a746bf/odoo12_addon_sale_isolated_quotation-12.0.1.1.0.99.dev4-py3-none-any.whl
+[2023-04-16 09:27:29] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/fd/28/eeafc779583a2792719606e0a23a3b44decceb0d415ba3e2bb6eb3a1a05e/image-reward-0.96.tar.gz
+[2023-04-16 09:27:29] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/fd/28/eeafc779583a2792719606e0a23a3b44decceb0d415ba3e2bb6eb3a1a05e/image-reward-0.96.tar.gz
+[2023-04-16 09:27:29] INFO root fetch - processPackages [odoo13-addon-sale-cancel-reason]: Downloading https://files.pythonhosted.org/packages/b2/e1/071051b848b6ca8fb5103bfe06f6bce57015dca6b1482aac92853ce987d0/odoo13_addon_sale_cancel_reason-13.0.1.0.1.dev6-py3-none-any.whl
+[2023-04-16 09:27:29] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-16 09:27:29] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-0.95.tar.gz tmp/image-reward-0.96.tar.gz --markdown 20230416/i/image-reward/0.95-0.96/diff.md --exclude *.pyd
+[2023-04-16 09:27:29] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-16 09:27:29] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-0.95.tar.gz tmp/image-reward-0.96.tar.gz --markdown 20230416/i/image-reward/0.95-0.96/diff.md --exclude *.pyd
+[2023-04-16 09:27:29] INFO root fetch - processPackages [chope]: Downloading https://files.pythonhosted.org/packages/c3/ed/6b488038f0b08156f191dce91c8269186b5fae6dcd015c87a944edf9f7fb/chope-0.1.2.tar.gz
+[2023-04-16 09:27:29] INFO root fetch - processPackages [chope]: executing diffoscope
+[2023-04-16 09:27:29] INFO root fetch - processPackages [chope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chope-0.1.1.tar.gz tmp/chope-0.1.2.tar.gz --markdown 20230416/c/chope/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 09:27:29] INFO root fetch - processPackages [asaman]: Downloading https://files.pythonhosted.org/packages/80/c9/3792a2134fb9616bea442ed1cb4330065a24dd790212b8cc7ab7ba64db3e/asaman-0.2.0.tar.gz
+[2023-04-16 09:27:29] INFO root fetch - processPackages [odoo12-addon-sale-cancel-reason]: Downloading https://files.pythonhosted.org/packages/6c/52/15ee92751f6d78784da7b3bcd31dc805bf98de03aa405e4a3967b9bae9bb/odoo12_addon_sale_cancel_reason-12.0.1.2.0.99.dev9-py3-none-any.whl
+[2023-04-16 09:27:29] INFO root fetch - processPackages [asaman]: executing diffoscope
+[2023-04-16 09:27:29] INFO root fetch - processPackages [asaman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asaman-0.1.6.tar.gz tmp/asaman-0.2.0.tar.gz --markdown 20230416/a/asaman/0.1.6-0.2.0/diff.md --exclude *.pyd
+[2023-04-16 09:27:29] INFO root fetch - processPackages [odoo12-addon-sale-cancel-reason]: executing diffoscope
+[2023-04-16 09:27:29] INFO root fetch - processPackages [odoo12-addon-sale-cancel-reason]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_sale_cancel_reason-12.0.1.2.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_sale_cancel_reason-12.0.1.2.0.99.dev9-py3-none-any.whl.zip --markdown 20230416/o/odoo12-addon-sale-cancel-reason/12.0.1.2.0.99.dev8-12.0.1.2.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-16 09:27:29] INFO root fetch - processPackages [odoo13-addon-sale-cancel-reason]: Downloading https://files.pythonhosted.org/packages/94/8b/31e338f88928054c1a7d1beff238937a1172c46ef25ad6c0202e8b0c0471/odoo13_addon_sale_cancel_reason-13.0.1.0.1.dev7-py3-none-any.whl
+[2023-04-16 09:27:30] INFO root fetch - processPackages [odoo12-addon-sale-isolated-quotation]: Downloading https://files.pythonhosted.org/packages/53/0a/f4e610e77523206b0fbd03198c3d9a8a881bf856d7f0c40ab43d0e438bc1/odoo12_addon_sale_isolated_quotation-12.0.1.1.0.99.dev5-py3-none-any.whl
+[2023-04-16 09:27:30] INFO root fetch - processPackages [odoo13-addon-sale-cancel-reason]: executing diffoscope
+[2023-04-16 09:27:30] INFO root fetch - processPackages [odoo13-addon-sale-cancel-reason]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_sale_cancel_reason-13.0.1.0.1.dev6-py3-none-any.whl.zip tmp/odoo13_addon_sale_cancel_reason-13.0.1.0.1.dev7-py3-none-any.whl.zip --markdown 20230416/o/odoo13-addon-sale-cancel-reason/13.0.1.0.1.dev6-13.0.1.0.1.dev7/diff.md --exclude *.pyd
+[2023-04-16 09:27:30] INFO root fetch - processPackages [odoo12-addon-sale-isolated-quotation]: executing diffoscope
+[2023-04-16 09:27:30] INFO root fetch - processPackages [odoo12-addon-sale-isolated-quotation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_sale_isolated_quotation-12.0.1.1.0.99.dev4-py3-none-any.whl.zip tmp/odoo12_addon_sale_isolated_quotation-12.0.1.1.0.99.dev5-py3-none-any.whl.zip --markdown 20230416/o/odoo12-addon-sale-isolated-quotation/12.0.1.1.0.99.dev4-12.0.1.1.0.99.dev5/diff.md --exclude *.pyd
+[2023-04-16 09:27:30] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-16 09:27:30] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-16 09:27:31] INFO root fetch - main [MainThread]: End processing [chope]: success
+[2023-04-16 09:27:31] INFO root fetch - main [MainThread]: End processing [asaman]: success
+[2023-04-16 09:27:31] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-cancel-reason]: success
+[2023-04-16 09:27:31] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-isolated-quotation]: success
+[2023-04-16 09:27:31] INFO root fetch - main [MainThread]: End processing [SynackAPI]: success
+[2023-04-16 09:27:31] INFO root fetch - main [MainThread]: End processing [odoo13-addon-sale-cancel-reason]: success
+[2023-04-16 09:27:34] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
+[2023-04-16 09:27:34] INFO root fetch - main [MainThread]: Store serial: [17724509]
