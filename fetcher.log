@@ -8966,3 +8966,71 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 15:06:25] INFO root fetch - main [MainThread]: End processing [agstoolbox]: success
 [2023-04-16 15:06:26] INFO root fetch - main [MainThread]: End processing [frasa]: success
 [2023-04-16 15:06:26] INFO root fetch - main [MainThread]: Store serial: [17727125]
+[2023-04-16 15:11:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727125]
+[2023-04-16 15:11:36] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-16 15:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vollseg
+[2023-04-16 15:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-pytorch
+[2023-04-16 15:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: image-reward
+[2023-04-16 15:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-scipy
+[2023-04-16 15:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonGPT
+[2023-04-16 15:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: carate
+[2023-04-16 15:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spiderYa
+[2023-04-16 15:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xpywm
+[2023-04-16 15:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: presslink
+[2023-04-16 15:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nbdev-sphinx
+[2023-04-16 15:11:36] INFO root fetch - processPackages [PythonGPT]: New version: [0.2] Old Version: [0.1]
+[2023-04-16 15:11:36] WARNING root fetch - processPackages [presslink]: Skipping, unable to determine old version
+[2023-04-16 15:11:36] INFO root fetch - processPackages [presslink]: Start processing: copied
+[2023-04-16 15:11:36] INFO root fetch - main [MainThread]: End processing [presslink] error
+[2023-04-16 15:11:36] INFO root fetch - processPackages [xpywm]: New version: [1.9] Old Version: [1.8]
+[2023-04-16 15:11:36] INFO root fetch - processPackages [spiderYa]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-16 15:11:36] INFO root fetch - processPackages [carate]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-16 15:11:36] INFO root fetch - processPackages [image-reward]: New version: [0.997] Old Version: [0.996]
+[2023-04-16 15:11:36] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-16 15:11:36] INFO root fetch - processPackages [copied]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-16 15:11:36] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 15:11:36] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 15:11:36] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 15:11:36] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-04-16 15:11:36] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230416/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 15:11:36] INFO root fetch - processPackages [PythonGPT]: executing diffoscope
+[2023-04-16 15:11:36] INFO root fetch - processPackages [PythonGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PythonGPT-0.1.tar.gz tmp/PythonGPT-0.2-py3-none-any.whl.zip --markdown 20230416/P/PythonGPT/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-16 15:11:36] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-04-16 15:11:36] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230416/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 15:11:36] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-04-16 15:11:36] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230416/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 15:11:36] INFO root fetch - processPackages [spiderYa]: Downloading https://files.pythonhosted.org/packages/b8/f8/f45eca7a9ff0c3d05defbf926d97c4e96c93099bb0e93f33dd92cabba589/spiderYa-0.0.4.tar.gz
+[2023-04-16 15:11:36] INFO root fetch - processPackages [xpywm]: Downloading https://files.pythonhosted.org/packages/79/9c/588573acb96c980597ecf516f53ecc6d0d5f2bb4849b3f8a00dcc6a91667/xpywm-1.8.tar.gz
+[2023-04-16 15:11:36] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/94/bb/316491dc2e8bb917c760394f25b93eef47b9009d1af88f02107411092d8a/image-reward-0.997.tar.gz
+[2023-04-16 15:11:36] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-16 15:11:36] INFO root fetch - processPackages [copied]: Downloading https://files.pythonhosted.org/packages/e7/72/a45f145b4cd74c2121ae93ec2da4ced260b7d81bae3e5712674f00199d9a/copied-0.1.2.tar.gz
+[2023-04-16 15:11:36] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-16 15:11:36] INFO root fetch - processPackages [vollseg]: Start processing: nbdev-django
+[2023-04-16 15:11:36] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-16 15:11:36] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-16 15:11:36] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-0.996.tar.gz tmp/image-reward-0.997.tar.gz --markdown 20230416/i/image-reward/0.996-0.997/diff.md --exclude *.pyd
+[2023-04-16 15:11:36] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-16 15:11:36] INFO root fetch - processPackages [copied]: executing diffoscope
+[2023-04-16 15:11:36] INFO root fetch - processPackages [copied]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copied-0.1.1-py3-none-any.whl.zip tmp/copied-0.1.2.tar.gz --markdown 20230416/c/copied/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-16 15:11:36] INFO root fetch - processPackages [carate]: Downloading https://files.pythonhosted.org/packages/3e/6c/f2ed87f9b4818cc9a2391bec78000cc64b18c1d3e3b848d06234d2624a8f/carate-0.3.7.tar.gz
+[2023-04-16 15:11:36] INFO root fetch - processPackages [carate]: executing diffoscope
+[2023-04-16 15:11:36] INFO root fetch - processPackages [carate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carate-0.3.6.tar.gz tmp/carate-0.3.7.tar.gz --markdown 20230416/c/carate/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-16 15:11:36] INFO root fetch - processPackages [spiderYa]: Downloading https://files.pythonhosted.org/packages/1f/96/3a4fe6b59e4eb1157292d33e8ef89e0850ced7209ce89d7ddddfa7fc0553/spiderYa-0.0.5.tar.gz
+[2023-04-16 15:11:36] INFO root fetch - processPackages [spiderYa]: executing diffoscope
+[2023-04-16 15:11:36] INFO root fetch - processPackages [spiderYa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderYa-0.0.4.tar.gz tmp/spiderYa-0.0.5.tar.gz --markdown 20230416/s/spiderYa/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-16 15:11:36] INFO root fetch - processPackages [xpywm]: Downloading https://files.pythonhosted.org/packages/20/d3/dd7eed0b4b010d70f90c186e3532569d9e44b8285092f254bd100e44c926/xpywm-1.9.tar.gz
+[2023-04-16 15:11:36] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-16 15:11:36] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230416/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-16 15:11:37] INFO root fetch - processPackages [xpywm]: executing diffoscope
+[2023-04-16 15:11:37] INFO root fetch - processPackages [xpywm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpywm-1.8.tar.gz tmp/xpywm-1.9.tar.gz --markdown 20230416/x/xpywm/1.8-1.9/diff.md --exclude *.pyd
+[2023-04-16 15:11:37] INFO root fetch - main [MainThread]: End processing [PythonGPT]: success
+[2023-04-16 15:11:38] INFO root fetch - main [MainThread]: End processing [copied]: success
+[2023-04-16 15:11:38] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-16 15:11:38] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-04-16 15:11:38] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
+[2023-04-16 15:11:38] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-04-16 15:11:38] INFO root fetch - main [MainThread]: End processing [xpywm]: success
+[2023-04-16 15:11:38] INFO root fetch - main [MainThread]: End processing [carate]: success
+[2023-04-16 15:11:39] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-04-16 15:11:39] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-04-16 15:11:39] INFO root fetch - main [MainThread]: Store serial: [17727162]
