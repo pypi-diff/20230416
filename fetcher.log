@@ -13739,3 +13739,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 22:41:54] INFO root fetch - main [MainThread]: End processing [xia-engine-terraform]: success
 [2023-04-16 22:41:55] INFO root fetch - main [MainThread]: End processing [fhs-iptv-tools]: success
 [2023-04-16 22:41:55] INFO root fetch - main [MainThread]: Store serial: [17730105]
+[2023-04-16 22:46:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17730105]
+[2023-04-16 22:47:03] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 22:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: peaqevcore
+[2023-04-16 22:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytreeclass
+[2023-04-16 22:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kcli
+[2023-04-16 22:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyrocumulus
+[2023-04-16 22:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: otoe
+[2023-04-16 22:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: texproject
+[2023-04-16 22:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: oauthAPImojang
+[2023-04-16 22:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: crcengine
+[2023-04-16 22:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: clara-ai
+[2023-04-16 22:47:04] INFO root fetch - processPackages [otoe]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-16 22:47:04] WARNING root fetch - processPackages [oauthAPImojang]: Skipping, unable to determine old version
+[2023-04-16 22:47:04] INFO root fetch - main [MainThread]: End processing [oauthAPImojang] error
+[2023-04-16 22:47:04] INFO root fetch - processPackages [clara-ai]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-16 22:47:04] INFO root fetch - processPackages [crcengine]: New version: [0.4a2] Old Version: [0.4.0]
+[2023-04-16 22:47:04] INFO root fetch - processPackages [kcli]: New version: [99.0.202304161549] Old Version: [99.0.202304151543]
+[2023-04-16 22:47:04] INFO root fetch - processPackages [pyrocumulus]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-16 22:47:04] INFO root fetch - processPackages [pytreeclass]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-16 22:47:04] INFO root fetch - processPackages [texproject]: New version: [0.8.7] Old Version: [0.8.6]
+[2023-04-16 22:47:04] INFO root fetch - processPackages [otoe]: executing diffoscope
+[2023-04-16 22:47:04] INFO root fetch - processPackages [otoe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otoe-0.0.5.tar.gz tmp/otoe-0.0.6.tar.gz --markdown 20230416/o/otoe/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-16 22:47:04] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-04-16 22:47:04] INFO root fetch - processPackages [clara-ai]: executing diffoscope
+[2023-04-16 22:47:04] INFO root fetch - processPackages [clara-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clara_ai-0.0.5.tar.gz tmp/clara_ai-0.0.6.tar.gz --markdown 20230416/c/clara-ai/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-16 22:47:04] INFO root fetch - processPackages [crcengine]: executing diffoscope
+[2023-04-16 22:47:04] INFO root fetch - processPackages [crcengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crcengine-0.4.0.tar.gz tmp/crcengine-0.4a2.tar.gz --markdown 20230416/c/crcengine/0.4.0-0.4a2/diff.md --exclude *.pyd
+[2023-04-16 22:47:04] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-16 22:47:04] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304151543-py3-none-any.whl.zip tmp/kcli-99.0.202304161549-py3-none-any.whl.zip --markdown 20230416/k/kcli/99.0.202304151543-99.0.202304161549/diff.md --exclude *.pyd
+[2023-04-16 22:47:04] INFO root fetch - processPackages [texproject]: Downloading https://files.pythonhosted.org/packages/7b/26/1b73d3554bc532bf2957a69f210feecebca1a933196be29f629480d9e133/texproject-0.8.6.tar.gz
+[2023-04-16 22:47:04] INFO root fetch - processPackages [pyrocumulus]: Downloading https://files.pythonhosted.org/packages/94/16/0b6adaba06e77e4c90ff8b734524e41e963fd56914684fa660d76a6602e8/pyrocumulus-0.9.2.tar.gz
+[2023-04-16 22:47:04] INFO root fetch - processPackages [pytreeclass]: Downloading https://files.pythonhosted.org/packages/4c/36/4d3092f1ac12267ea54227a4c2a0d7cee41cade0f8dc777130fef3563cb5/pytreeclass-0.2.8.tar.gz
+[2023-04-16 22:47:04] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-04-16 22:47:04] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230416/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-04-16 22:47:04] INFO root fetch - processPackages [texproject]: Downloading https://files.pythonhosted.org/packages/5c/e2/4df80ab565b6ab27d31704a6c6ef15339d8459a11ea0d4c49292aae7d6ad/texproject-0.8.7.tar.gz
+[2023-04-16 22:47:04] INFO root fetch - processPackages [pytreeclass]: executing diffoscope
+[2023-04-16 22:47:04] INFO root fetch - processPackages [pytreeclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytreeclass-0.2.7.tar.gz tmp/pytreeclass-0.2.8.tar.gz --markdown 20230416/p/pytreeclass/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-16 22:47:04] INFO root fetch - processPackages [pyrocumulus]: Downloading https://files.pythonhosted.org/packages/f8/c9/9ce340495f8023416f061ec1ff80e24eb637ff2c73cf7f97bd060fd0fc55/pyrocumulus-0.9.3.tar.gz
+[2023-04-16 22:47:04] INFO root fetch - processPackages [texproject]: executing diffoscope
+[2023-04-16 22:47:04] INFO root fetch - processPackages [texproject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/texproject-0.8.6.tar.gz tmp/texproject-0.8.7.tar.gz --markdown 20230416/t/texproject/0.8.6-0.8.7/diff.md --exclude *.pyd
+[2023-04-16 22:47:04] INFO root fetch - processPackages [pyrocumulus]: executing diffoscope
+[2023-04-16 22:47:04] INFO root fetch - processPackages [pyrocumulus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrocumulus-0.9.2.tar.gz tmp/pyrocumulus-0.9.3.tar.gz --markdown 20230416/p/pyrocumulus/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-16 22:47:05] INFO root fetch - main [MainThread]: End processing [otoe]: success
+[2023-04-16 22:47:05] INFO root fetch - main [MainThread]: End processing [clara-ai]: success
+[2023-04-16 22:47:05] INFO root fetch - main [MainThread]: End processing [crcengine]: success
+[2023-04-16 22:47:06] INFO root fetch - main [MainThread]: End processing [texproject]: success
+[2023-04-16 22:47:06] INFO root fetch - main [MainThread]: End processing [pytreeclass]: success
+[2023-04-16 22:47:06] INFO root fetch - main [MainThread]: End processing [pyrocumulus]: success
+[2023-04-16 22:47:07] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-04-16 22:47:12] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-16 22:47:12] INFO root fetch - main [MainThread]: Store serial: [17730132]
