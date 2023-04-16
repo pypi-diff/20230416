@@ -7257,3 +7257,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 12:53:49] INFO root fetch - main [MainThread]: End processing [django-cookie-consent-gutsh]: success
 [2023-04-16 12:53:50] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-es-vat-book]: success
 [2023-04-16 12:53:50] INFO root fetch - main [MainThread]: Store serial: [17726176]
+[2023-04-16 12:58:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726176]
+[2023-04-16 12:58:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-16 12:58:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-spacy-redact-message
+[2023-04-16 12:58:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-spacy-redact-message
+[2023-04-16 12:58:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: haki-crawler
+[2023-04-16 12:58:59] INFO root fetch - processPackages [py-spacy-redact-message]: New version: [0.0.26] Old Version: [0.0.25]
+[2023-04-16 12:58:59] INFO root fetch - processPackages [py-spacy-redact-message]: New version: [0.0.26] Old Version: [0.0.25]
+[2023-04-16 12:58:59] INFO root fetch - processPackages [haki-crawler]: New version: [0.5] Old Version: [0.4]
+[2023-04-16 12:58:59] INFO root fetch - processPackages [py-spacy-redact-message]: Downloading https://files.pythonhosted.org/packages/2f/aa/529cbc4a18fd76734a58cc5aefc55139bf831928890e23559c61dae43659/py_spacy_redact_message-0.0.25.tar.gz
+[2023-04-16 12:58:59] INFO root fetch - processPackages [py-spacy-redact-message]: Downloading https://files.pythonhosted.org/packages/2f/aa/529cbc4a18fd76734a58cc5aefc55139bf831928890e23559c61dae43659/py_spacy_redact_message-0.0.25.tar.gz
+[2023-04-16 12:58:59] INFO root fetch - processPackages [haki-crawler]: Downloading https://files.pythonhosted.org/packages/5d/33/4816044c238ed09b29dd457f6b11d8bcf0917e87dbb615d2838d6b8968f3/haki_crawler-0.5.tar.gz
+[2023-04-16 12:58:59] INFO root fetch - processPackages [haki-crawler]: executing diffoscope
+[2023-04-16 12:58:59] INFO root fetch - processPackages [haki-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haki_crawler-0.4.tar.gz tmp/haki_crawler-0.5.tar.gz --markdown 20230416/h/haki-crawler/0.4-0.5/diff.md --exclude *.pyd
+[2023-04-16 12:58:59] INFO root fetch - processPackages [py-spacy-redact-message]: Downloading https://files.pythonhosted.org/packages/e3/11/66dae4a96fe655ab91d1a2935658db7d66fdac6ceea1088edbfaff2e36ab/py_spacy_redact_message-0.0.26.tar.gz
+[2023-04-16 12:58:59] INFO root fetch - processPackages [py-spacy-redact-message]: Downloading https://files.pythonhosted.org/packages/e3/11/66dae4a96fe655ab91d1a2935658db7d66fdac6ceea1088edbfaff2e36ab/py_spacy_redact_message-0.0.26.tar.gz
+[2023-04-16 12:58:59] INFO root fetch - processPackages [py-spacy-redact-message]: executing diffoscope
+[2023-04-16 12:58:59] INFO root fetch - processPackages [py-spacy-redact-message]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_spacy_redact_message-0.0.25.tar.gz tmp/py_spacy_redact_message-0.0.26.tar.gz --markdown 20230416/p/py-spacy-redact-message/0.0.25-0.0.26/diff.md --exclude *.pyd
+[2023-04-16 12:58:59] INFO root fetch - processPackages [py-spacy-redact-message]: executing diffoscope
+[2023-04-16 12:58:59] INFO root fetch - processPackages [py-spacy-redact-message]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_spacy_redact_message-0.0.25.tar.gz tmp/py_spacy_redact_message-0.0.26.tar.gz --markdown 20230416/p/py-spacy-redact-message/0.0.25-0.0.26/diff.md --exclude *.pyd
+[2023-04-16 12:59:00] INFO root fetch - main [MainThread]: End processing [haki-crawler]: success
+[2023-04-16 12:59:00] INFO root fetch - main [MainThread]: End processing [py-spacy-redact-message]: success
+[2023-04-16 12:59:00] INFO root fetch - main [MainThread]: End processing [py-spacy-redact-message]: success
+[2023-04-16 12:59:00] INFO root fetch - main [MainThread]: Store serial: [17726187]
