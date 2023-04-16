@@ -9724,3 +9724,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 16:04:24] INFO root fetch - main [MainThread]: End processing [fireblocks-sdk]: success
 [2023-04-16 16:04:24] INFO root fetch - main [MainThread]: End processing [spiderYa]: success
 [2023-04-16 16:04:24] INFO root fetch - main [MainThread]: Store serial: [17727583]
+[2023-04-16 16:09:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17727583]
+[2023-04-16 16:09:35] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-16 16:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: e-qsl
+[2023-04-16 16:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kenu
+[2023-04-16 16:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypsn
+[2023-04-16 16:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apidevtools
+[2023-04-16 16:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AoE2ScenarioRms
+[2023-04-16 16:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hond
+[2023-04-16 16:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kenu
+[2023-04-16 16:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odbc2orm
+[2023-04-16 16:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: quarkstudio
+[2023-04-16 16:09:35] INFO root fetch - processPackages [e-qsl]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-16 16:09:35] INFO root fetch - processPackages [odbc2orm]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-16 16:09:35] WARNING root fetch - processPackages [pypsn]: Skipping, unable to determine old version
+[2023-04-16 16:09:35] INFO root fetch - main [MainThread]: End processing [pypsn] error
+[2023-04-16 16:09:35] INFO root fetch - processPackages [kenu]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-16 16:09:35] INFO root fetch - processPackages [hond]: New version: [2.0.0] Old Version: [1.0.4]
+[2023-04-16 16:09:35] INFO root fetch - processPackages [AoE2ScenarioRms]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-16 16:09:35] INFO root fetch - processPackages [apidevtools]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-04-16 16:09:35] INFO root fetch - processPackages [kenu]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-16 16:09:35] INFO root fetch - processPackages [quarkstudio]: New version: [6.5.0rc3] Old Version: [6.5.0rc2]
+[2023-04-16 16:09:35] INFO root fetch - processPackages [kenu]: Downloading https://files.pythonhosted.org/packages/d3/d1/e9c94110832959690403f2d8885a8b8540c895169c8c7bfef03ed7afea6e/kenu-1.2.4.tar.gz
+[2023-04-16 16:09:35] INFO root fetch - processPackages [kenu]: Downloading https://files.pythonhosted.org/packages/d3/d1/e9c94110832959690403f2d8885a8b8540c895169c8c7bfef03ed7afea6e/kenu-1.2.4.tar.gz
+[2023-04-16 16:09:35] INFO root fetch - processPackages [e-qsl]: Downloading https://files.pythonhosted.org/packages/ac/9a/1e15392b38d6426f0e6d4af9098f5238dd756cb7852e75258f1287f84131/e-qsl-0.1.7.tar.gz
+[2023-04-16 16:09:35] INFO root fetch - processPackages [apidevtools]: Downloading https://files.pythonhosted.org/packages/4f/c9/f96d52e8c9df4ead7dde22f133eb4314097128d4bb24d0d9fd5f82cc96cd/apidevtools-3.1.9.tar.gz
+[2023-04-16 16:09:35] INFO root fetch - processPackages [hond]: Downloading https://files.pythonhosted.org/packages/01/12/0ff3c9b9f482bd3e6b0c3628d57dae1f8f4f866b6513245c0c591e82d79a/hond-2.0.0.tar.gz
+[2023-04-16 16:09:35] INFO root fetch - processPackages [AoE2ScenarioRms]: Downloading https://files.pythonhosted.org/packages/50/85/dcc6aebdf28b8fbe8e932a42f64e1fac668f8d49a96e44e9e61b9a7f7ca3/AoE2ScenarioRms-0.2.5.tar.gz
+[2023-04-16 16:09:35] INFO root fetch - processPackages [odbc2orm]: Downloading https://files.pythonhosted.org/packages/1d/42/692446dde865a3c0b9f2383ecc6e90e0be8ec5e70c6b191dbb57ee2bb7a7/odbc2orm-1.0.2-cp38-cp38-win32.whl
+[2023-04-16 16:09:35] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/14/99/dd1dec2a112050027f5576549df4202bc11a1e452a9e6ef34f7cc313bcfe/quarkstudio-6.5.0rc2-cp311-cp311-win_amd64.whl
+[2023-04-16 16:09:35] INFO root fetch - processPackages [hond]: executing diffoscope
+[2023-04-16 16:09:35] INFO root fetch - processPackages [hond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hond-1.0.4.tar.gz tmp/hond-2.0.0.tar.gz --markdown 20230416/h/hond/1.0.4-2.0.0/diff.md --exclude *.pyd
+[2023-04-16 16:09:35] INFO root fetch - processPackages [apidevtools]: executing diffoscope
+[2023-04-16 16:09:35] INFO root fetch - processPackages [apidevtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apidevtools-3.1.8.tar.gz tmp/apidevtools-3.1.9.tar.gz --markdown 20230416/a/apidevtools/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-04-16 16:09:35] INFO root fetch - processPackages [AoE2ScenarioRms]: executing diffoscope
+[2023-04-16 16:09:35] INFO root fetch - processPackages [AoE2ScenarioRms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AoE2ScenarioRms-0.2.4.tar.gz tmp/AoE2ScenarioRms-0.2.5.tar.gz --markdown 20230416/A/AoE2ScenarioRms/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-16 16:09:35] INFO root fetch - processPackages [odbc2orm]: executing diffoscope
+[2023-04-16 16:09:35] INFO root fetch - processPackages [odbc2orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odbc2orm-1.0.1.tar.gz tmp/odbc2orm-1.0.2-cp38-cp38-win32.whl.zip --markdown 20230416/o/odbc2orm/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-16 16:09:35] INFO root fetch - processPackages [e-qsl]: Downloading https://files.pythonhosted.org/packages/1d/e4/f98965ad46a5e52221c2dcd82f071628344eaebbb5dda2e663e2f69749cc/e-qsl-0.1.8.tar.gz
+[2023-04-16 16:09:35] INFO root fetch - processPackages [kenu]: Downloading https://files.pythonhosted.org/packages/14/b0/a59ba2d70222afd831c5e06a1ad837a191f52c6557fbffbabfc50c2022f7/kenu-1.2.5.tar.gz
+[2023-04-16 16:09:35] INFO root fetch - processPackages [kenu]: Downloading https://files.pythonhosted.org/packages/14/b0/a59ba2d70222afd831c5e06a1ad837a191f52c6557fbffbabfc50c2022f7/kenu-1.2.5.tar.gz
+[2023-04-16 16:09:35] INFO root fetch - processPackages [kenu]: executing diffoscope
+[2023-04-16 16:09:35] INFO root fetch - processPackages [kenu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kenu-1.2.4.tar.gz tmp/kenu-1.2.5.tar.gz --markdown 20230416/k/kenu/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-16 16:09:35] INFO root fetch - processPackages [kenu]: executing diffoscope
+[2023-04-16 16:09:35] INFO root fetch - processPackages [kenu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kenu-1.2.4.tar.gz tmp/kenu-1.2.5.tar.gz --markdown 20230416/k/kenu/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-16 16:09:36] INFO root fetch - processPackages [e-qsl]: executing diffoscope
+[2023-04-16 16:09:36] INFO root fetch - processPackages [e-qsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e-qsl-0.1.7.tar.gz tmp/e-qsl-0.1.8.tar.gz --markdown 20230416/e/e-qsl/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-16 16:09:36] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/89/78/7d9627332c16802800447e3517d0a9e1141684622b91f572d6b59a269828/quarkstudio-6.5.0rc3-cp311-cp311-win_amd64.whl
+[2023-04-16 16:09:36] INFO root fetch - main [MainThread]: End processing [odbc2orm]: success
+[2023-04-16 16:09:37] INFO root fetch - main [MainThread]: End processing [kenu]: success
+[2023-04-16 16:09:37] INFO root fetch - main [MainThread]: End processing [kenu]: success
+[2023-04-16 16:09:37] INFO root fetch - main [MainThread]: End processing [hond]: success
+[2023-04-16 16:09:37] INFO root fetch - main [MainThread]: End processing [apidevtools]: success
+[2023-04-16 16:09:37] INFO root fetch - main [MainThread]: End processing [AoE2ScenarioRms]: success
+[2023-04-16 16:09:37] INFO root fetch - processPackages [quarkstudio]: executing diffoscope
+[2023-04-16 16:09:37] INFO root fetch - processPackages [quarkstudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarkstudio-6.5.0rc2-cp311-cp311-win_amd64.whl.zip tmp/quarkstudio-6.5.0rc3-cp311-cp311-win_amd64.whl.zip --markdown 20230416/q/quarkstudio/6.5.0rc2-6.5.0rc3/diff.md --exclude *.pyd
+[2023-04-16 16:09:39] INFO root fetch - main [MainThread]: End processing [e-qsl]: success
+[2023-04-16 16:09:40] INFO root fetch - main [MainThread]: End processing [quarkstudio]: success
+[2023-04-16 16:09:40] INFO root fetch - main [MainThread]: Store serial: [17727623]
