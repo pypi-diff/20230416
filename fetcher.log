@@ -879,3 +879,77 @@
 [2023-04-16 01:59:47] INFO root fetch - main [MainThread]: End processing [talqual]: success
 [2023-04-16 01:59:48] INFO root fetch - main [MainThread]: End processing [openhasp-config-manager]: success
 [2023-04-16 01:59:48] INFO root fetch - main [MainThread]: Store serial: [17722624]
+[2023-04-16 02:04:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722624]
+[2023-04-16 02:04:56] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-16 02:04:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchdatasets-nightly
+[2023-04-16 02:04:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ai-talks
+[2023-04-16 02:04:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mct-nightly
+[2023-04-16 02:04:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ledes-parser
+[2023-04-16 02:04:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaxkern-nightly
+[2023-04-16 02:04:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wield.control
+[2023-04-16 02:04:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jaxutils-nightly
+[2023-04-16 02:04:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: competitor-intelligence-dev
+[2023-04-16 02:04:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ai-talks
+[2023-04-16 02:04:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: torchlayers-nightly
+[2023-04-16 02:04:56] WARNING root fetch - processPackages [ledes-parser]: Skipping, unable to determine old version
+[2023-04-16 02:04:56] INFO root fetch - processPackages [ledes-parser]: Start processing: pipen-diagram
+[2023-04-16 02:04:56] INFO root fetch - main [MainThread]: End processing [ledes-parser] error
+[2023-04-16 02:04:56] INFO root fetch - processPackages [ai-talks]: New version: [0.8.9] Old Version: [0.8.8.8.8]
+[2023-04-16 02:04:56] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230415] Old Version: [0.0.8.dev20230414]
+[2023-04-16 02:04:56] INFO root fetch - processPackages [wield.control]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-16 02:04:56] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-04-16 02:04:56] INFO root fetch - processPackages [ai-talks]: New version: [0.8.9] Old Version: [0.8.8.8.8]
+[2023-04-16 02:04:56] INFO root fetch - processPackages [pipen-diagram]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-16 02:04:56] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9042023.post411] Old Version: [1.8.0.9032023.post431]
+[2023-04-16 02:04:57] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1681517208] Old Version: [1681430811]
+[2023-04-16 02:04:57] WARNING root fetch - processPackages [competitor-intelligence-dev]: Skipping, unable to determine old version
+[2023-04-16 02:04:57] INFO root fetch - processPackages [competitor-intelligence-dev]: Start processing: cdk-aws-discord-notifiers
+[2023-04-16 02:04:57] INFO root fetch - main [MainThread]: End processing [competitor-intelligence-dev] error
+[2023-04-16 02:04:57] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/9c/b1/146a5ecb0fe5f0d09fcc65f45b90f88799d56a718883a53f0e1456030130/mct-nightly-1.8.0.9032023.post431.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1681603414] Old Version: [1681516977]
+[2023-04-16 02:04:57] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/6c/46/0b06c4ed07da49579ba12e504b0288f83a2f176aa1adb7b8084ed4e21fd6/ai-talks-0.8.8.8.8.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-16 02:04:57] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/6c/46/0b06c4ed07da49579ba12e504b0288f83a2f176aa1adb7b8084ed4e21fd6/ai-talks-0.8.8.8.8.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [wield.control]: Downloading https://files.pythonhosted.org/packages/cb/20/5090ab8468502ad503d84689a1b192ccdc49ea358e7788261b8a92167e9c/wield.control-0.6.0.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [pipen-diagram]: Downloading https://files.pythonhosted.org/packages/70/d6/6aafaec9623f42954f2f3a905d48d534c8f15f2ea8d6b3ec8531e458cad6/pipen_diagram-0.4.0.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-04-16 02:04:57] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230414.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230415.tar.gz --markdown 20230416/j/jaxutils-nightly/0.0.8.dev20230414-0.0.8.dev20230415/diff.md --exclude *.pyd
+[2023-04-16 02:04:57] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-04-16 02:04:57] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1681430811.tar.gz tmp/torchlayers-nightly-1681517208.tar.gz --markdown 20230416/t/torchlayers-nightly/1681430811-1681517208/diff.md --exclude *.pyd
+[2023-04-16 02:04:57] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: Downloading https://files.pythonhosted.org/packages/5e/88/188c818e5b84a94c5a25adc83b16ab1a1ca7daffd3ad8bf0ebdedd17b189/cdk-aws-discord-notifiers-0.0.8.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/15/16/97490c39f95f97f1b8de896b5ed7cb784948f9a52a6891755c41f74302a8/mct-nightly-1.8.0.9042023.post411.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-04-16 02:04:57] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230416/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-04-16 02:04:57] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-04-16 02:04:57] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9032023.post431.tar.gz tmp/mct-nightly-1.8.0.9042023.post411.tar.gz --markdown 20230416/m/mct-nightly/1.8.0.9032023.post431-1.8.0.9042023.post411/diff.md --exclude *.pyd
+[2023-04-16 02:04:57] INFO root fetch - processPackages [pipen-diagram]: Downloading https://files.pythonhosted.org/packages/25/5b/954f6fd77ca23d335d0d443b712cdf97d55dafaf6952e54ab91a62da391c/pipen_diagram-0.5.0.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/c5/d6/ec4cc8872e03141790693960e12e16ca578b7c6fcdc732ba4439e74683f4/torchdatasets-nightly-1681603414.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/1b/91/d4724322f0f09a9f9c5b422895efa2159d2e124ab96179b722833dd72d41/ai-talks-0.8.9.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [ai-talks]: Downloading https://files.pythonhosted.org/packages/1b/91/d4724322f0f09a9f9c5b422895efa2159d2e124ab96179b722833dd72d41/ai-talks-0.8.9.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [wield.control]: Downloading https://files.pythonhosted.org/packages/54/6c/804011600cb34f77ceb448a7e00108f80897a5d8e50f2365d6cd7bdd5c5f/wield.control-0.6.1.tar.gz
+[2023-04-16 02:04:57] INFO root fetch - processPackages [pipen-diagram]: executing diffoscope
+[2023-04-16 02:04:57] INFO root fetch - processPackages [pipen-diagram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_diagram-0.4.0.tar.gz tmp/pipen_diagram-0.5.0.tar.gz --markdown 20230416/p/pipen-diagram/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-16 02:04:57] INFO root fetch - processPackages [ai-talks]: executing diffoscope
+[2023-04-16 02:04:57] INFO root fetch - processPackages [ai-talks]: executing diffoscope
+[2023-04-16 02:04:57] INFO root fetch - processPackages [ai-talks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai-talks-0.8.8.8.8.tar.gz tmp/ai-talks-0.8.9.tar.gz --markdown 20230416/a/ai-talks/0.8.8.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-16 02:04:57] INFO root fetch - processPackages [ai-talks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai-talks-0.8.8.8.8.tar.gz tmp/ai-talks-0.8.9.tar.gz --markdown 20230416/a/ai-talks/0.8.8.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-16 02:04:57] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-04-16 02:04:57] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1681516977.tar.gz tmp/torchdatasets-nightly-1681603414.tar.gz --markdown 20230416/t/torchdatasets-nightly/1681516977-1681603414/diff.md --exclude *.pyd
+[2023-04-16 02:04:57] INFO root fetch - processPackages [wield.control]: executing diffoscope
+[2023-04-16 02:04:57] INFO root fetch - processPackages [wield.control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wield.control-0.6.0.tar.gz tmp/wield.control-0.6.1.tar.gz --markdown 20230416/w/wield.control/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-16 02:04:57] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: Downloading https://files.pythonhosted.org/packages/64/4d/d26eadf6d10a1bd3e3d1a120851cb7b19a0875a9b579875d43952d28eaa6/cdk-aws-discord-notifiers-0.0.9.tar.gz
+[2023-04-16 02:04:58] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-04-16 02:04:58] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: executing diffoscope
+[2023-04-16 02:04:58] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aws-discord-notifiers-0.0.8.tar.gz tmp/cdk-aws-discord-notifiers-0.0.9.tar.gz --markdown 20230416/c/cdk-aws-discord-notifiers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-16 02:04:58] INFO root fetch - main [MainThread]: End processing [pipen-diagram]: success
+[2023-04-16 02:04:58] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-04-16 02:04:59] INFO root fetch - main [MainThread]: End processing [ai-talks]: success
+[2023-04-16 02:04:59] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-04-16 02:04:59] INFO root fetch - main [MainThread]: End processing [ai-talks]: success
+[2023-04-16 02:04:59] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-04-16 02:04:59] INFO root fetch - main [MainThread]: End processing [wield.control]: success
+[2023-04-16 02:04:59] INFO root fetch - main [MainThread]: End processing [cdk-aws-discord-notifiers]: success
+[2023-04-16 02:05:02] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-04-16 02:05:02] INFO root fetch - main [MainThread]: Store serial: [17722663]
