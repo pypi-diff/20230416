@@ -7000,3 +7000,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 12:24:09] INFO root fetch - main [MainThread]: End processing [pylywsdxx]: success
 [2023-04-16 12:24:10] INFO root fetch - main [MainThread]: End processing [robotoff]: success
 [2023-04-16 12:24:10] INFO root fetch - main [MainThread]: Store serial: [17726017]
+[2023-04-16 12:29:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726017]
+[2023-04-16 12:29:18] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-16 12:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: musiclib
+[2023-04-16 12:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auraboros
+[2023-04-16 12:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: typer-builder
+[2023-04-16 12:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: metisse
+[2023-04-16 12:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: carmine
+[2023-04-16 12:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: srf-weather
+[2023-04-16 12:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ultralytics
+[2023-04-16 12:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: digimat.bac0
+[2023-04-16 12:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: projen
+[2023-04-16 12:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sj-tool
+[2023-04-16 12:29:18] INFO root fetch - processPackages [auraboros]: New version: [0.9.0a0] Old Version: [0.8.0a0]
+[2023-04-16 12:29:18] INFO root fetch - processPackages [musiclib]: New version: [1.9.4] Old Version: [1.9.3]
+[2023-04-16 12:29:18] WARNING root fetch - processPackages [typer-builder]: Skipping, unable to determine old version
+[2023-04-16 12:29:18] WARNING root fetch - processPackages [srf-weather]: Skipping, unable to determine old version
+[2023-04-16 12:29:18] INFO root fetch - main [MainThread]: End processing [typer-builder] error
+[2023-04-16 12:29:18] WARNING root fetch - processPackages [metisse]: Skipping, unable to determine old version
+[2023-04-16 12:29:18] INFO root fetch - main [MainThread]: End processing [srf-weather] error
+[2023-04-16 12:29:18] INFO root fetch - main [MainThread]: End processing [metisse] error
+[2023-04-16 12:29:18] INFO root fetch - processPackages [digimat.bac0]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-16 12:29:18] INFO root fetch - processPackages [carmine]: New version: [0.1.4] Old Version: [0.0.3]
+[2023-04-16 12:29:18] INFO root fetch - processPackages [sj-tool]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-16 12:29:18] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-04-16 12:29:18] INFO root fetch - processPackages [ultralytics]: New version: [8.0.9] Old Version: [8.0.8]
+[2023-04-16 12:29:18] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-04-16 12:29:18] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230416/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-04-16 12:29:19] INFO root fetch - processPackages [carmine]: Downloading https://files.pythonhosted.org/packages/32/7b/40b67d25d871f806f8151d2a3d926ab616cc427f200a99880b6557bed796/carmine-0.0.3.tar.gz
+[2023-04-16 12:29:19] INFO root fetch - processPackages [musiclib]: Downloading https://files.pythonhosted.org/packages/c7/96/eee5bcb387a77e4dbda243eeb1c2dfa66409eb8c61e9b0dbe9ce99c8038f/musiclib-1.9.3.tar.gz
+[2023-04-16 12:29:19] INFO root fetch - processPackages [digimat.bac0]: Downloading https://files.pythonhosted.org/packages/e4/3b/157873a8bda3f334a597bb777f74061c68cefa85df01c4bda527daa791a7/digimat.bac0-0.0.1.tar.gz
+[2023-04-16 12:29:19] INFO root fetch - processPackages [sj-tool]: Downloading https://files.pythonhosted.org/packages/76/74/c277392066a6d9974881d1c1393c62cfdf9b750122ccebc6414fd89e59dc/sj_tool-1.0.6-py3-none-any.whl
+[2023-04-16 12:29:19] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/2a/00/6b1b3c37deba8ad12d08e1780ade1e35ecb0ebe962d487643d3412c51546/ultralytics-8.0.8.tar.gz
+[2023-04-16 12:29:19] INFO root fetch - processPackages [sj-tool]: Downloading https://files.pythonhosted.org/packages/f3/77/79d3866b28104ae15e916aec2b7b806b3ce1c2e21a2ebfafe2a6972e72a4/sj_tool-1.0.7-py3-none-any.whl
+[2023-04-16 12:29:19] INFO root fetch - processPackages [auraboros]: Downloading https://files.pythonhosted.org/packages/a4/20/55f4ac020696c635e7bf3f37e4d7274e1e7292f85e293a98ebc4f5dc1d8b/auraboros-0.9.0a0.tar.gz
+[2023-04-16 12:29:19] INFO root fetch - processPackages [sj-tool]: executing diffoscope
+[2023-04-16 12:29:19] INFO root fetch - processPackages [sj-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sj_tool-1.0.6-py3-none-any.whl.zip tmp/sj_tool-1.0.7-py3-none-any.whl.zip --markdown 20230416/s/sj-tool/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-16 12:29:19] INFO root fetch - processPackages [carmine]: Downloading https://files.pythonhosted.org/packages/1e/0f/6fa5b8a6abb4c4d67803426cc5a25c204abf6df396f1f998fc344d40042e/carmine-0.1.4.tar.gz
+[2023-04-16 12:29:19] INFO root fetch - processPackages [digimat.bac0]: Downloading https://files.pythonhosted.org/packages/33/94/a6f39fc19eb744a9d4bdf53f280b9a447b1ae4f4eaff373fe230c2775a12/digimat.bac0-0.0.2.tar.gz
+[2023-04-16 12:29:19] INFO root fetch - processPackages [carmine]: executing diffoscope
+[2023-04-16 12:29:19] INFO root fetch - processPackages [carmine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carmine-0.0.3.tar.gz tmp/carmine-0.1.4.tar.gz --markdown 20230416/c/carmine/0.0.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-16 12:29:19] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/db/d6/f896ad999e47dba47c4cd097bc080a322eec84fbd1596edff29e1fc5f89a/ultralytics-8.0.9.tar.gz
+[2023-04-16 12:29:19] INFO root fetch - processPackages [digimat.bac0]: executing diffoscope
+[2023-04-16 12:29:19] INFO root fetch - processPackages [digimat.bac0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digimat.bac0-0.0.1.tar.gz tmp/digimat.bac0-0.0.2.tar.gz --markdown 20230416/d/digimat.bac0/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-16 12:29:19] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2023-04-16 12:29:19] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.0.8.tar.gz tmp/ultralytics-8.0.9.tar.gz --markdown 20230416/u/ultralytics/8.0.8-8.0.9/diff.md --exclude *.pyd
+[2023-04-16 12:29:19] INFO root fetch - processPackages [musiclib]: Downloading https://files.pythonhosted.org/packages/cf/3a/f8dddb47ec312e3b0fa8dba8e3ea53138292e596a9d289c41f75cc4e69b7/musiclib-1.9.4.tar.gz
+[2023-04-16 12:29:19] INFO root fetch - processPackages [musiclib]: executing diffoscope
+[2023-04-16 12:29:19] INFO root fetch - processPackages [musiclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musiclib-1.9.3.tar.gz tmp/musiclib-1.9.4.tar.gz --markdown 20230416/m/musiclib/1.9.3-1.9.4/diff.md --exclude *.pyd
+[2023-04-16 12:29:20] INFO root fetch - main [MainThread]: End processing [digimat.bac0]: success
+[2023-04-16 12:29:20] INFO root fetch - main [MainThread]: End processing [sj-tool]: success
+[2023-04-16 12:29:20] INFO root fetch - main [MainThread]: End processing [carmine]: success
+[2023-04-16 12:29:20] INFO root fetch - main [MainThread]: End processing [musiclib]: success
+[2023-04-16 12:29:21] INFO root fetch - processPackages [auraboros]: executing diffoscope
+[2023-04-16 12:29:21] INFO root fetch - processPackages [auraboros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auraboros-0.8.0a0.tar.gz tmp/auraboros-0.9.0a0.tar.gz --markdown 20230416/a/auraboros/0.8.0a0-0.9.0a0/diff.md --exclude *.pyd
+[2023-04-16 12:29:21] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2023-04-16 12:29:22] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-04-16 12:29:23] INFO root fetch - main [MainThread]: End processing [auraboros]: success
+[2023-04-16 12:29:23] INFO root fetch - main [MainThread]: Store serial: [17726071]
