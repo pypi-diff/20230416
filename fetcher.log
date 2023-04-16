@@ -7517,3 +7517,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-16 13:25:22] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
 [2023-04-16 13:25:22] INFO root fetch - main [MainThread]: End processing [pertpy]: success
 [2023-04-16 13:25:22] INFO root fetch - main [MainThread]: Store serial: [17726374]
+[2023-04-16 13:30:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17726374]
+[2023-04-16 13:30:32] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-16 13:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mgo-serializer
+[2023-04-16 13:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ediri-vultr
+[2023-04-16 13:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meter-digits-recognizer
+[2023-04-16 13:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchx-nightly
+[2023-04-16 13:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tl-typewriter
+[2023-04-16 13:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: botsy
+[2023-04-16 13:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mock
+[2023-04-16 13:30:32] WARNING root fetch - processPackages [botsy]: Skipping, unable to determine old version
+[2023-04-16 13:30:32] INFO root fetch - processPackages [tl-typewriter]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 13:30:32] INFO root fetch - main [MainThread]: End processing [botsy] error
+[2023-04-16 13:30:32] INFO root fetch - processPackages [meter-digits-recognizer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-16 13:30:32] INFO root fetch - processPackages [ediri-vultr]: New version: [2.14.0] Old Version: [2.13.0]
+[2023-04-16 13:30:32] INFO root fetch - processPackages [mgo-serializer]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-16 13:30:32] INFO root fetch - processPackages [mock]: New version: [5.0.2] Old Version: [5.0.1]
+[2023-04-16 13:30:32] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-16 13:30:32] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-04-16 13:30:32] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.4.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230416/t/torchx-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-16 13:30:32] INFO root fetch - processPackages [meter-digits-recognizer]: executing diffoscope
+[2023-04-16 13:30:32] INFO root fetch - processPackages [meter-digits-recognizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meter-digits-recognizer-0.1.8.tar.gz tmp/meter-digits-recognizer-0.1.9.tar.gz --markdown 20230416/m/meter-digits-recognizer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 13:30:32] INFO root fetch - processPackages [mock]: Downloading https://files.pythonhosted.org/packages/a9/c8/7f5fc5ee6a666d7e4ee7a3222bcb37ebebaea3697d7bf54517728f56bb28/mock-5.0.1.tar.gz
+[2023-04-16 13:30:32] INFO root fetch - processPackages [tl-typewriter]: Downloading https://files.pythonhosted.org/packages/8e/5c/0ccbc8f467b8c1f4bdf773c261caf25848e69a2adea9ede684db2296ee56/tl_typewriter-0.1.9.tar.gz
+[2023-04-16 13:30:32] INFO root fetch - processPackages [mgo-serializer]: Downloading https://files.pythonhosted.org/packages/8a/64/48dbacd7a9479fb0ea41469a7d9b396b6396ab7df4c1d6f0582f22e4dda0/mgo_serializer-0.1.3.tar.gz
+[2023-04-16 13:30:32] INFO root fetch - processPackages [ediri-vultr]: Downloading https://files.pythonhosted.org/packages/51/63/872e5c9e3c23a7fbd3c76c329479aec52d47e559d79e87cc07ebd14ac734/ediri_vultr-2.13.0.tar.gz
+[2023-04-16 13:30:32] INFO root fetch - processPackages [mgo-serializer]: executing diffoscope
+[2023-04-16 13:30:32] INFO root fetch - processPackages [mgo-serializer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mgo_serializer-0.1.2.tar.gz tmp/mgo_serializer-0.1.3.tar.gz --markdown 20230416/m/mgo-serializer/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-16 13:30:32] INFO root fetch - processPackages [tl-typewriter]: executing diffoscope
+[2023-04-16 13:30:32] INFO root fetch - processPackages [tl-typewriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tl_typewriter-0.1.8.tar.gz tmp/tl_typewriter-0.1.9.tar.gz --markdown 20230416/t/tl-typewriter/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-16 13:30:32] INFO root fetch - processPackages [mock]: Downloading https://files.pythonhosted.org/packages/71/c8/84310fa618bebe51a533d8fd3a71e8ab406a10d8a388061a9e8e628da65a/mock-5.0.2.tar.gz
+[2023-04-16 13:30:32] INFO root fetch - processPackages [mock]: executing diffoscope
+[2023-04-16 13:30:32] INFO root fetch - processPackages [mock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mock-5.0.1.tar.gz tmp/mock-5.0.2.tar.gz --markdown 20230416/m/mock/5.0.1-5.0.2/diff.md --exclude *.pyd
+[2023-04-16 13:30:32] INFO root fetch - processPackages [ediri-vultr]: Downloading https://files.pythonhosted.org/packages/36/4a/1bade58105d98073759e5b072274b1c3c9b3ed8f96b8de8cf14914da6f53/ediri_vultr-2.14.0.tar.gz
+[2023-04-16 13:30:33] INFO root fetch - processPackages [ediri-vultr]: executing diffoscope
+[2023-04-16 13:30:33] INFO root fetch - processPackages [ediri-vultr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230416:/home/abi/fetcher/20230416:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ediri_vultr-2.13.0.tar.gz tmp/ediri_vultr-2.14.0.tar.gz --markdown 20230416/e/ediri-vultr/2.13.0-2.14.0/diff.md --exclude *.pyd
+[2023-04-16 13:30:33] INFO root fetch - main [MainThread]: End processing [tl-typewriter]: success
+[2023-04-16 13:30:34] INFO root fetch - main [MainThread]: End processing [mgo-serializer]: success
+[2023-04-16 13:30:34] INFO root fetch - main [MainThread]: End processing [mock]: success
+[2023-04-16 13:30:34] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-04-16 13:30:34] INFO root fetch - main [MainThread]: End processing [ediri-vultr]: success
+[2023-04-16 13:30:42] INFO root fetch - main [MainThread]: End processing [meter-digits-recognizer]: success
+[2023-04-16 13:30:42] INFO root fetch - main [MainThread]: Store serial: [17726395]
